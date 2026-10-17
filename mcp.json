@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "cmf-study": {
+      "command": "D:\\Dev\\StudyApp\\target\\release\\sfzklearning-mcp.exe",
+      "args": []
+    }
+  }
+}

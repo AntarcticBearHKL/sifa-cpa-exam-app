@@ -1,0 +1,16 @@
+# Build output
+/target
+
+# Local user records. Personal data: favourites, notes, per-question stats,
+# wrong-question ids, the MCP context file. NEVER commit these.
+/state
+
+# Editor / OS noise
+*.swp
+*~
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Local scratch
+*.tmp

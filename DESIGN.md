@@ -1,0 +1,390 @@
+> **快照说明 / Snapshot notice**
+>
+> 本文档是 **0.01 版本之前** 的架构与设计记录，保留作为「设计意图 + 踩坑记录」。
+> 部分内容**已过时**：统计功能已全部移除、应用已更名为 `sfzklearning`、
+> 做题视图已改为整窗专注模式（隐藏左栏与标题行）、滚动条已全局隐藏。
+> 与代码冲突时，**以代码为准**。
+
+---
+
+# sfzklearning — 法考 · 注会 学习助手（原生 Windows 桌面 + MCP）
+
+一个**原生 Windows 桌面应用**（Rust + eframe/egui，**无 web view / 无 HTML / 无 Tauri / 无 Electron**），
+用来**练习** `D:\Dev\StudyData\classified\{law,cpa}`（整理后的法考 / 注会 **CMF** 数据；
+原始语料归档在 `D:\Dev\StudyData\repo\`）；
+外加一个极小的 **stdio MCP 服务**（`sfzklearning-mcp`），只暴露一个工具
+`get_current_study_context`，把用户**当前正在做的题目及其关联知识点**交给 Agent 讲解。
+
+---
+
+## 1. 产出物
+
+| 文件 | 说明 |
+| --- | --- |
+| `target\release\sfzklearning.exe` | GUI（原生窗口，标题 `sfzklearning`） |
+| `target\release\sfzklearning-mcp.exe` | stdio MCP 服务（newline-delimited JSON-RPC 2.0） |
+| `target\release\classify.exe` | 数据管线：把语料按官方考纲归类并重算 `summary.json`（见 §10） |
+| `state\current.json` | GUI 写、MCP 读的“当前上下文”契约文件（含用户备注 / 收藏标记） |
+| `state\wrong-<domain>-<subjectId>.json` | 错题 id 持久化 |
+| `state\user.json` | **本地用户缓存**：收藏题目 id + 每题备注（无需登录） |
+| `src\lib.rs` | 数据类型 / 加载器 / current.json 契约 / `UserStore` |
+| `src\bin\studyapp\main.rs` | GUI 入口（约 18 行：`mod` 声明 + `fn main`） |
+| `src\bin\studyapp\app.rs` | `App` 状态 / 逻辑 / 持久化 / 快捷键 + `impl eframe::App` |
+| `src\bin\studyapp\app\` | 视图子模块：`shell.rs`（顶栏 / 左栏 / 页面标题 / 工作区）、`launcher.rs`（启动页）、`practice.rs`（练习设置 + 会话） |
+| `src\bin\studyapp\logic.rs` | 纯逻辑（无 UI）：筛选 / 洗牌 / 错题抽样 / 章节分组 / 搜索 / 判定 |
+| `src\bin\studyapp\win.rs` | 无边框窗口：DWM 毛玻璃 / 圆角 / 深色、边缘缩放、任意处拖动、`--probe` |
+| `src\bin\studyapp\theme\` | 设计令牌（`tokens.rs`，深/浅双模式）+ `Style`/`Visuals` 覆写 |
+| `src\bin\studyapp\anim\` | 缓动曲线 + `Animator`（答错抖动 / 重绘调度） |
+| `src\bin\studyapp\glass\` | 磨砂玻璃绘制原语（`paint.rs`）+ 自定义控件（`widgets.rs`） |
+| `src\bin\sfzklearning-mcp.rs` | MCP 服务 |
+| `src\bin\classify.rs` | 数据管线二进制（分层归类 + 单测，见 §10） |
+| `D:\Dev\StudyData\repo\` | 三方库原始数据归档（**只读来源**，逐字节拷贝） |
+| `D:\Dev\StudyData\classified\` | 整理后的数据（**app 现在读这里**）：`taxonomy.md/json` · `summary.json` · `subjects\` · `classification-report.md` |
+| `backup-preui\` | UI 改版前的原始源码备份（无版本控制时的回退点） |
+
+## 2. 依赖（版本互锁）
+
+```
+eframe = "0.36.2"
+egui = "0.36.2"
+egui_commonmark = "0.25.0"   # 基于 egui ^0.36.0，支持 GFM 表格
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+raw-window-handle = "0.6"    # 取到 Win32 HWND，供 DWM 给无边框窗口申请真毛玻璃
+```
+
+## 3. 数据根目录（app 默认读整理后的数据；语料只读）
+
+app 现在**不直接读语料**，而是读 `D:\Dev\StudyData\classified\` 下由 `classify` 归类好的数据。
+
+默认（`Domain::default_root()`）：
+
+* 法考：`D:\Dev\StudyData\classified\law`（env `CMF_LAW_DATA`，CLI `--law-data <path>`）
+* 注会：`D:\Dev\StudyData\classified\cpa`（env `CMF_CPA_DATA`，CLI `--cpa-data <path>`）
+
+优先级：**CLI > env > 默认**。原始语料仍然可达 —— 用 `--law-data` / `--cpa-data` / `CMF_LAW_DATA` / `CMF_CPA_DATA` 指回 `D:\Dev\Law\data` / `D:\Dev\CPA\data` 即可。
+
+`D:\Dev\StudyData\`：
+
+```
+repo\                    # 三方库原始数据归档（只读来源，逐字节拷贝）
+  law\  (44 files, 198 MB)
+  cpa\  (39 files,  91 MB)
+classified\              # 整理后的数据 —— app 现在读这里
+  law\
+    taxonomy.md / taxonomy.json     # 官方考点分类树（司法部《2026年国家统一法律职业资格考试大纲》，18 科目 / 205 章）
+    summary.json                    # 按实际文件重算的统计
+    subjects\<subjectId>.json       # 每科题目，chapter 已归位
+    classification-report.md        # 覆盖率报告
+  cpa\
+    taxonomy.md / taxonomy.json     # 中注协 2026 教材目录（7 科目 / 108 章）
+    summary.json / subjects\ / classification-report.md
+```
+
+读取的文件（全部只读）：
+
+* `<root>\summary.json` — 科目清单（`subjects[]`）
+* `<root>\subjects\index.json` — 当 `summary.json` 缺失时的回退
+* `<root>\subjects\<subjectId>.json` — 该科目的知识点与题目（按需惰性加载）
+
+> `D:\Dev\Law\` 与 `D:\Dev\CPA\` 下的语料**依旧只读、未被改动** —— 它们是原始摄取来源，被逐字节归档进 `repo\`，
+> 再由 `classify` 生成 `classified\`。app 与 `classify` 都不会写回它们。
+
+## 4. 构建
+
+```powershell
+$env:Path = "$env:USERPROFILE\.cargo\bin;$env:Path"
+cd D:\Dev\StudyApp
+cargo build --release
+```
+
+若报 `link.exe not found`，在 VC 环境中构建：
+
+```powershell
+cmd /c '"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Auxiliary\Build\vcvars64.bat" && cargo build --release'
+```
+
+## 5. 运行
+
+```powershell
+.\target\release\sfzklearning.exe                 # GUI
+# 自定义数据根目录 / 状态目录：
+.\target\release\sfzklearning.exe --law-data D:\Dev\Law\data --cpa-data D:\Dev\CPA\data --state-dir D:\Dev\StudyApp\state
+```
+
+环境变量：
+
+* `CMF_LAW_DATA` / `CMF_CPA_DATA` — 数据根目录
+* `CMF_STATE_DIR` — 状态目录（`current.json`、`user.json`、错题文件）
+* `CMF_START_DOMAIN` — 启动时默认领域：`law`（默认，若有数据）或 `cpa`
+* `CMF_START_SUBJECT` — 启动时默认科目 id（如 `kuaiji`）；缺失或找不到时取该领域的第一个科目
+
+状态目录解析顺序：`--state-dir` > `CMF_STATE_DIR` > `<exe>/../../state`（Cargo target 布局）> `D:\Dev\StudyApp\state`。
+两个二进制使用同一套解析逻辑，因此 MCP 一定读得到 GUI 写的文件。
+
+截图（当前架构，深/浅双模式）：`screenshots\dark-practice.png` 与 `screenshots\light-practice.png`
+（练习设置 —— 左栏「怎么练」+ 右栏章节多选）、`dark-launcher.png`（模式选择）。
+
+MCP 服务由 MCP 客户端（如 opencode / Claude Desktop）拉起，见 `mcp.json`：
+
+```json
+{ "mcpServers": { "cmf-study": { "command": "D:\\Dev\\StudyApp\\target\\release\\sfzklearning-mcp.exe", "args": [] } } }
+```
+
+## 6. GUI 使用
+
+**信息架构**：`启动模式选择 → 工作区（左栏模式导航 + 主区）`。现在**只有练习**：没有 学习 / 做题 的标签切换，
+进入工作区即是练习设置。
+
+* **顶栏**：左侧**模式按钮**（如 `法考`，回启动页）；右侧是 **深色 / 浅色** 分段开关
+  （立即生效、写入 `user.json`），再右是最小化 / 关闭。
+* **启动页（模式选择）**：两张卡（法考 / 注会），显示该模式的科目数、题量与知识点数。
+  选定后写入 `user.json` 的 `last_mode`，之后启动直接进工作区；顶栏左侧的**模式按钮**（如 `法考`）可随时回到启动页切换。
+* **左栏（模式导航）**：按官方分组列出科目 ——
+  **注会** = 专业阶段（六科：会计 / 审计 / 财务成本管理 / 税法 / 经济法 / 公司战略与风险管理）+ 综合阶段；
+  **法考** = **卷一 / 卷二**。每行显示科目名与该科目题量；底部显示错题数与收藏数。
+* **主区标题行**：科目名 + **`{N} 章 · {M} 题`**（`N` = 该科目题目里出现过的不同章节数，`M` = 题量）+ 右侧**已做 / 正确率**。
+* **练习设置**（进入工作区的默认视图，左右两栏，**没有下拉框**）：
+  * 左栏「怎么练」：**题型**（全部 / 选择题 / 记忆自测）、**来源**（可多选：`仅错题` / `仅收藏` / `未做过` / `做错过`）、
+    **题量**（全部 / 10 / 20 / 50）、**顺序**（顺序 / 随机）、**关键词搜索**（题干 / 解析）。
+  * 右栏「练哪些章节」：章节**多选列表**（每行带勾选框与该章题量），配 `全选` / `清空` / `反选`，
+    以及一个只影响显示、不改选择的**章节筛选框**；表头显示「已选 n / m 章」。**一章都不选 = 全部章节**。
+  * 实时显示「本范围共 N 题」；底部显示**汇总统计**（总正确率 / 累计作答 / 做过题目）。
+* 点 **开始练习** → **会话视图**：会话标签、`第 i / N 题`、本次正确率、进度条；
+  **题干以 18px 作为视觉焦点**；选项（单选 radio / 多选 checkbox）；**提交答案** → 判定 + 解析；
+  `上一题 / 下一题`；题目 meta 行显示**该题做过几次 · 正确几次 · 正确率**。
+* **错题随机 10 题**：从错题里随机抽 10 道开一局（会话标签为「错题随机抽查」）。
+* `options:[]` 的条目走**记忆 / 自测**（显示答案 → 记住了 / 没记住 自评）。
+
+**快捷键**（无边框窗口没有系统快捷键，所以由应用提供；文本框获得焦点时自动让位）：
+
+| 键 | 作用 |
+| --- | --- |
+| `←` / `→` | 做题会话中翻上一题 / 下一题 |
+| `Enter` | 会话中提交答案 |
+| `Esc` | 退出当前练习会话；工作区中返回模式选择页 |
+
+**每题统计**：每次作答都写进 `state\user.json` 的 `stats`（`attempts` / `correct` / `last`），
+所以「做过几次、正确率多少」是持久的、跨会话累积的。
+
+**题目 → 知识点** 关联：仍用 `q.knowledgePoints`（标题）在本科目 KP 里做**标题精确匹配**（重复标题取首个），
+结果写进 `state\current.json` 供 MCP 讲解；会话视图**已不再展示**这些关联 chip。
+
+**中文字体**：启动时从 `C:\Windows\Fonts` 依次尝试 `msyh.ttc`、`msyhbd.ttc`、`simhei.ttf`、`Deng.ttf`、`simsun.ttc`
+（`.ttc` 使用 collection index），注册为默认 Proportional + Monospace。找不到时**写 stderr**（不再有底部状态栏）。
+
+**备注 / 收藏（本地用户缓存，无需登录）**：会话里每题都有 `☆ 收藏` 与 `备注`。备注多行输入，
+**失焦或切题时自动保存**（打字过程中不写盘）。数据落在 `state\user.json`（`UserStore`），
+`D:\Dev\Law\` 与 `D:\Dev\CPA\` 语料**依旧只读**。收藏、备注与每题统计都会写进 `current.json`，MCP 也能读到。
+
+## 6.5 UI 设计系统（毛玻璃 / 排版 / 动效）
+
+GUI 拆成入口 + 六个模块：`main.rs`（入口，仅 `mod` 声明 + `fn main`）、
+`app.rs`（`App` 状态 / 逻辑 / 持久化 / 快捷键 + `impl eframe::App`，视图为 `app/` 下的子模块
+`shell.rs` / `launcher.rs` / `practice.rs`）、
+`logic.rs`（纯逻辑，无 UI，可单测）、`win.rs`（无边框窗口 / 毛玻璃 / 缩放 / 拖动）、
+`theme`（设计令牌 + `Style`/`Visuals` 覆写）、`anim`（缓动 + `Animator`）、
+`glass`（`paint.rs` 绘制原语 + `widgets.rs` 自定义控件）。
+
+**布局风格：整块分隔式（不是浮动卡片）**。窗口是一张**连续的磨砂面**，由发丝线分成几个区域：
+
+1. 底层是 `LayerId::background()` 上的一层**安静背景**（`paint::backdrop`）：柔和垂直渐变 + 几个近乎无彩色的软斑。
+   有系统 Acrylic 时改画一层平坦 scrim（`background.scrim`）—— 此时「背景」就是桌面本身。
+2. 每个区域是**平整的磨砂填充**（`glass::panel_fill`）：无圆角、无外间距、**无投影** —— 没有任何东西浮在背景上。
+3. 区域之间用**发丝分隔线**（`glass::divider_bottom` / `divider_right`，色 `glass.divider`）。
+4. **面板自身没有渐变。** 真实磨砂玻璃是均匀的，它的明暗变化**全部来自背后的光** —— 面板越透，透上来的层次越明显。
+5. 刻意**没有**的东西：边缘发光、顶边亮带、多彩色斑、强投影、颗粒噪点、圆角浮动卡片。那些是「玻璃拟态」装饰，不是玻璃。
+6. 窗口底色透明（`clear_color`），`panel_fill` 透明；**任何地方都不硬编码颜色**。
+
+**双模式配色：深色 / 浅色**。`theme/tokens.rs` 里 `Mode::{Dark, Light}` 各一套中性调色
+（深色不是蓝黑、浅色不是冷灰白），共用同一个**低饱和石板蓝**强调色。顶栏右侧的 **深色 / 浅色**
+分段开关立即切换，并驱动四个地方：`Tokens` 调色板、egui `Visuals::dark()/light()`、
+`ctx.set_theme(ThemePreference::…)`（原生窗口色）与 DWM 沉浸式深色标志（Dark=1 / Light=0）。
+选择写入 `state\user.json` 的 `theme`（缺省 `dark`），下次启动沿用。
+
+**整体布局**：`顶栏（模式 + 深色/浅色 + 窗口按钮）` / `左栏（按官方分组列科目 + 底部统计块）` /
+`主区（页面标题行：科目名 + 章节·题量 + 已做·正确率，再是当前视图）`。
+
+**调色 / 调质感** —— 全部集中在 `theme/tokens.rs`（`Palette::dark()` / `Palette::light()`）：
+
+| 想要的效果 | 改哪里 |
+| --- | --- |
+| 界面更黑 / 更灰 | `background.base_top` / `base_bottom`（深色 30→16；浅色 247→236） |
+| 背景更透（看到更多桌面） | `background.scrim` 的 alpha 调低（两种模式当前都是 228） |
+| 表面更亮 / 更分明 | `glass.fill` / `fill_strong` 的 alpha（深色白 18 / 32；浅色黑 12 / 20） |
+| 描边更淡 / 边缘不抢戏 | `glass.stroke`（深色白 **14**，低于 `fill` 18；浅色黑 22） |
+| 分隔线更明显 / 更淡 | `glass.divider` 的 alpha（深色 24；浅色 18） |
+| 下拉 / 提示浮层更亮或更暗 | `glass.solid`（浮层实心底色：深色 rgb(30,30,33) / 浅色 rgb(250,250,252)） |
+| 换色调 | `background.blobs` 与 `accent.*`（深色 rgb(110,132,168) / 浅色 rgb(72,94,130)） |
+
+> `scrim` 是两种模式的关键：它必须够不透明，否则窗口后面若是浅色桌面，深色 UI 会被冲成灰白；
+> 浅色模式的 scrim 则是**浅色且近乎实心**（`rgba(248,248,250,228)`）—— 理由完全相同，
+> 否则亮色桌面会把浅色 UI 洗淡（踩过这个坑）。
+
+> **选中 = 染色填充，不是描边。** 六个「选中 / 主要」状态（分段指示器、开关 chip、勾选框、主按钮、
+> chip、左栏选中行）一律用 `accent.soft` 系的**低透明染色填充**表达；描边保持中性（`glass.stroke`）
+> 或低透明强调色。满强度强调色的 1px 描边在近黑面上会读成「霓虹线框」，这是上一版最大的问题。
+
+> **浮层（提示气泡等）与面板相反：必须实心。** 面板的底是桌面，所以透明；而浮层的底是应用自身，
+> 一透明就会把下面的内容透上来，看起来像一张发白的磨砂浮卡（踩过这个坑）。所以浮层走 `glass.solid`
+> （不透明）+ 发丝描边 + **无投影** —— 与「整块分隔式」一致，不浮起来。`Frame::popup` / `Frame::menu`
+> 读的正是 `window_fill` / `menu_corner_radius` / `popup_shadow`。
+
+`theme/` 里八个测试守住两种模式的调色与浮层规则：`palette_is_dark_and_readable` /
+`light_palette_is_light_and_readable`（各自的底色 / 文字对比，浅色 scrim 浅且近乎实心，深色 scrim 深且近乎实心）/
+`accent_is_muted_not_saturated`（**两种模式**共守） / `surfaces_are_translucent_but_visible`（**两种模式**：
+表面够透但可辨、浮层实心且留在本模式色系） / `edges_recede_and_selection_is_a_tint`（描边低于表面、
+染色填充是透明色不是实心块） / `mode_ids_round_trip`（`user.json` 的 `theme` 值解析），
+以及 `popups_are_flush_not_floating_glass`（**两种模式**：`Frame::popup` 读的 `window_fill` 必须不透明、
+`popup_shadow` 必须为 `NONE`、无顶边亮带、`menu_corner_radius` 与按钮一致）
+和 `pressed_widgets_get_a_tint_not_a_neon_outline`（按下态只有低透明染色，没有满强度强调色描边）。
+
+**测试（不开窗口、不点鼠标）**：`cargo test --release` 直接跑 —— 共 **64 passed**
+（11 lib + 16 classify + 37 sfzklearning），UI 只负责渲染结果。
+
+* `logic.rs`（9 个）：按题型 / 章节（可多选）/ 来源（错题 · 收藏 · 未做过 · 做错过）/ 关键词筛选、
+  `chapter_counts` 章节计数、`draw_plan` 先排序再按题量截断、错题抽样只取错题且按上限截断、
+  `shuffled` 是排列且同种子确定、判定的边界（未选 / 无选项）。
+* `win.rs`（5 个）：headless 注入指针事件后断言窗口指令 —— 按**空白处**发 `StartDrag`、
+  按**控件上**不发、**八个边/角**各发对应方向的 `BeginResize`、按边缘**不**发 `StartDrag`、
+  悬停各边/角返回对应的缩放光标。
+* `theme/`（8 个）：深色调色板深且可读、浅色调色板浅且可读（逆不变量）、强调色不饱和（两种模式）、
+  表面够透但可辨（两种模式）、描边低于表面且选中是染色不是描边、`theme` 值解析往返、
+  **浮层实心且无投影**（两种模式，两个 style slot 都断言）、按下态无霓虹描边。
+* `glass/`（11 个）：`paint.rs` 的径向网格几何 / 边缘渐隐 / 退化输入不 panic / 软斑不出界 / alpha 混合，
+  `widgets.rs` 的指示器滑动与钳制 / 通道插值 / 统计文本 / 抖动只动 x / 内容置于平移后的矩形。
+* `anim/`（4 个）：`easing::clamp` 边界、`shake` 衰减端点与边界、抖动重启与结束、`is_live` / `prune`。
+
+**窗口：无边框 + 系统级毛玻璃（真穿透）**
+
+* `NativeOptions` 用 `with_decorations(false)` + `with_transparent(true)`：没有标题栏，客户区透明。
+* `win::apply_acrylic` 通过 DWM 申请 **Acrylic**（`DWMWA_SYSTEMBACKDROP_TYPE = DWMSBT_TRANSIENTWINDOW`）：
+  窗口背景由**系统真实模糊**它后面的桌面 / 其他软件 —— 不是应用内伪造的渐变。同时设圆角与深色模式。
+* 申请失败（老系统 / 远程桌面）**自动回退**为应用内不透明渐变背景，不会留下不可读的透明窗口。
+* **缩放窗口**：无边框窗口没有系统缩放边框，所以由 `win::chrome` 自己判定 ——
+  指针进入窗口边缘 8px（角 16px）时**设置对应的缩放光标**（`ResizeHorizontal` / `ResizeVertical` / `ResizeNwSe` / `ResizeNeSw`），
+  按下则发 `BeginResize` 触发**原生**缩放。光标提示是必需的：否则无边框窗口上根本看不出哪里能拖。
+* **拖动不限顶栏**：`win::chrome` 每帧检查指针 —— 按在**任何 egui 未在使用的区域**（也就是所有不可交互处）
+  都会拖动整个窗口。它**不用** `egui::Area`：全屏前台层会盖在所有面板之上
+  并吞掉全部点击（这是踩过的坑，代码里有注释）。
+* `win::chrome_button`：**用线条画**的最小化 / 关闭，避免字体缺字形（msyh 既没有窗口控制字形，也没有勾叉）。
+* 自检：`sfzklearning.exe --probe` 打印**从系统读回**的属性后立即退出，例如
+  `acrylic=true backdrop=3 (3=acrylic) dark=1 corner=2 (2=round)`（`dark` 跟随当前模式：深色 1 / 浅色 0）。
+
+**动效（刻意克制）**：
+
+* 分段选项卡的指示器随选中项**滑动并拉伸**（`animate_value_with_time`）。
+* 行悬停高亮。
+* 答错时选项块**短暂水平抖动**（`Animator::shake`，振幅 `anim::SHAKE_AMPLITUDE`；几何有单测 + headless egui 断言）。
+* **重绘调度**：`animate_*` 由 egui 自动按需重绘；手写时钟动画只在 `Animator::is_live()` 为真时
+  `request_repaint()`，空闲即让进程睡眠 —— 不空转烧 CPU。
+
+**改视觉时不可破坏的约束**：
+
+* 动画 / 悬停状态**绝不置 `dirty`**（否则每帧写 `current.json`，磁盘抖动 + 污染 MCP 契约）。
+* **egui 面板自带的分隔线要关掉**（`.show_separator_line(false)`）：`Panel` 默认会在自己的边界再画一条线
+  （用 `noninteractive.bg_stroke`），和 `glass::divider_top/bottom/right` 叠起来就会出现「多了一条分割线」。
+  所有发丝线一律由 `glass::divider_*` 用 `glass.divider` 画。
+* 自定义控件用 `Sense::CLICK`，**不要**用 `Sense::click()` —— 后者可获焦点，会让
+  `egui_wants_keyboard_input()` 变真，从而**杀死 `←/→` 键盘导航**。
+* `show_rows` 行高必须恒为 `glass::widgets::ROW_HEIGHT`，**不要**动画行高。
+* 含交互子元素（链接 / chip）的容器**不要**加 `Sense::CLICK`，否则吞掉子元素点击。
+* 不新建 `FontFamily`（只调字号），以免破坏 CJK 回退而出现豆腐块。
+
+## 7. `state\current.json` 契约
+
+GUI 在任何“当前题目 / 领域 / 科目”变化时写入（临时文件 + rename 原子替换）：
+
+```json
+{
+  "ts": "2026-10-15T03:49:09Z",
+  "domain": "cpa",
+  "tab": "practice",
+  "subjectId": "kuaiji",
+  "subjectName": "会计",
+  "question": {
+    "id": "...", "stem": "...", "type": "single_choice", "typeRaw": "single",
+    "chapter": "...", "year": null,
+    "options": [ { "label": "A", "text": "..." } ],
+    "answer": ["A"], "answerText": null, "explanation": "...",
+    "knowledgePoints": ["..."],
+    "source": { "repo": "...", "path": "...", "url": null }
+  },
+  "knowledgePoints": [
+    { "id": "...", "title": "...", "chapter": "...", "content": "...",
+      "mnemonic": null, "summary": null,
+      "source": { "repo": "...", "path": "...", "url": null } }
+  ]
+}
+```
+
+* `question` 不在做题会话中（如停留在练习设置）时为 `null`，`knowledgePoints` 也为空。
+* `tab` 字段保留但**恒为 `"practice"`** —— 学习 tab 已移除，现在只有练习。
+* `knowledgePoints` = 当前题目的关联知识点；会话视图不再展示这些 chip，但数据仍写入供 MCP 讲解。
+
+## 8. MCP 服务
+
+* 传输：**stdio**，**newline-delimited JSON-RPC 2.0**（一行一个 JSON 对象）。
+* 方法：`initialize`（`protocolVersion: "2024-11-05"`，`capabilities.tools: {}`，
+  `serverInfo: {name: "sfzklearning", version: "0.1.0"}`）、`notifications/initialized`（不回复）、`ping`、
+  `tools/list`、`tools/call`。
+* 未知方法 → 错误 `-32601`；解析失败 → `-32700`；**stdout 只输出协议**，日志走 **stderr**，任何坏输入都不会让进程崩溃。
+* 唯一工具：
+
+```json
+{
+  "name": "get_current_study_context",
+  "description": "返回用户当前正在做的题目及其关联知识点（含解析与出处），供 Agent 讲解",
+  "inputSchema": { "type": "object", "properties": {}, "additionalProperties": false }
+}
+```
+
+`tools/call` 读取 `state\current.json`，返回 `content:[{type:"text", text:"<markdown>"}]`
+（题目 + 选项 + 正确答案 + 解析 + 关联知识点（标题/章节/内容/出处））以及可选的 `structuredContent`。
+文件缺失时返回一条友好的中文提示，而不是报错。
+
+## 9. 出处
+
+每个知识点与题目都携带 `source { repo, path, nativeId, url }`，GUI 在**做题会话**中展示
+`repo · path · url`，并给出可点击的原文链接（当 `url` 存在时）。
+
+## 10. 数据管线：`classify`（语料 → 官方考纲）
+
+`classified\` 由 `classify.exe` 生成。它读一份科目语料 + 一棵官方考纲树，把每道题归到官方 **科目 → 章**，
+写出 `subjects\<id>.json` + 重算的 `summary.json` + `classification-report.md`。
+**四个参数都必填**；确定性、可重跑（同输入 → 逐字节相同输出，仅 `summary.json` 带 `generatedAt` 时间戳），**从不写回语料**：
+
+```powershell
+.\target\release\classify.exe --domain law `
+  --data-root D:\Dev\Law\data `
+  --taxonomy D:\Dev\StudyData\classified\law\taxonomy.json `
+  --out D:\Dev\StudyData\classified\law
+```
+
+* `--domain` — `law` 或 `cpa`
+* `--data-root` — 科目语料根目录（原始 CMF 数据）
+* `--taxonomy` — 官方考点分类树 `taxonomy.json`
+* `--out` — 输出目录（写入 `subjects\` / `summary.json` / `classification-report.md`）
+
+**分类分层（策展字段优先）**：
+
+| 层 | 依据 |
+| --- | --- |
+| Tier 1 | 题目自带的 `chapter` **精确命中官方章名**（或互相包含，取最长匹配） |
+| Tier 2 | 从 `chapter` 提取章号（`第X章` / `12.1`），唯一对应某章 |
+| Tier 3 | `knowledgePoints` 标题精确命中某章 |
+| Tier 4 | 兜底：加权 n-gram 混合（3.0×知识点 + 2.5×自带 chapter + 0.5×题干）；领先第二名不足 20% 则降级为 `low` |
+
+每题写 `chapter`（官方章名或 `null`）、`chapterOfficial`、`chapterConfidence`（`high` / `low` / `none`）。
+注会另有 `excluded` 桶，收纳初级 / 中级会计的串考污染。
+
+**当前实测（据实，不夸大）**：
+
+* 法考 52,775 题 / 注会 14,428 题，总量与语料**完全一致**。
+* 法考：high 31,698 · low 19,089 · none 1,988；注会：high 9,396 · low 3,561 · none 1,471。
+
+**已知局限**：法考约 71% / 注会约 54% 的题仍落到 Tier 4 —— 语料自带的 `chapter` 是**节级**标签，
+与官方章名对不上，且考纲对民法 / 商法 / 经济法 / 环境资源法 / 劳动社保 / 宪法**没有分节**。部分章因此**过度承接**
+（如商法 / 公司法约 4,100 题）。`low` / `none` 的含义是「**不可信**」—— app 会把它们照实呈现，而不是悄悄判错。
+
+`classify.rs` 有 **16 个单测**守住分层与去重逻辑（Tier 1–4、章号解析、CPA 串考排除、输出字段兼容）。

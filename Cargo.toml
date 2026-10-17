@@ -1,0 +1,37 @@
+[package]
+name = "sfzklearning"
+version = "0.0.1"
+edition = "2021"
+description = "法考 / 注会 native study helper (CMF data) + stdio MCP server"
+# Keep off so module files under src/bin/studyapp/ are never auto-discovered as binaries.
+autobins = false
+
+[lib]
+name = "sfzklearning"
+path = "src/lib.rs"
+
+[[bin]]
+name = "sfzklearning"
+path = "src/bin/studyapp/main.rs"
+
+[[bin]]
+name = "sfzklearning-mcp"
+path = "src/bin/sfzklearning-mcp.rs"
+
+[[bin]]
+name = "classify"
+path = "src/bin/classify.rs"
+
+[dependencies]
+# eframe 0.36.2 -> egui 0.36.2 (native window, no web view)
+eframe = "0.36.2"
+egui = "0.36.2"
+# egui_commonmark 0.25.0 is built against egui ^0.36.0 (supports GFM tables)
+egui_commonmark = "0.25.0"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+# Reaches the Win32 HWND so DWM can give the borderless window a real acrylic backdrop.
+raw-window-handle = "0.6"
+
+[profile.release]
+opt-level = 3
