@@ -6,7 +6,7 @@ use eframe::egui;
 use egui::RichText;
 use egui_commonmark::{CommonMarkCache, CommonMarkViewer};
 
-pub(crate) use crate::{anim, glass, logic, theme, win};
+pub(crate) use crate::{anim, diag, glass, logic, theme, win};
 
 use sfzklearning::{
     domain_root, load_subject, load_user_store, load_wrong_ids, now_iso, parse_cli_args,
@@ -15,18 +15,11 @@ use sfzklearning::{
     UserStore,
 };
 
-mod launcher;
 mod practice;
 mod settings;
 mod shell;
 
 const APP_TITLE: &str = "sfzklearning";
-
-#[derive(PartialEq, Eq, Clone, Copy)]
-enum Screen {
-    Launcher,
-    Workspace,
-}
 
 #[derive(Default)]
 struct DomainData {
@@ -40,8 +33,18 @@ struct Session {
     pos: usize,
     single: Option<String>,
     multi: Vec<String>,
+    /// 提交答案 was used: the choice question has been graded, so it counts.
     submitted: bool,
+    /// 显示答案 was used: the answer is visible without being graded. For a
+    /// choice question that means the correct options are highlighted and the
+    /// explanation is open, exactly like a submitted one — but nothing was
+    /// recorded, so the question still counts as 未做过 and comes back. For a
+    /// memory / self-test question it reveals the 参考答案 before the
+    /// self-assessment.
     shown: bool,
+    /// The current memory / self-test question has been rated 记住了 /
+    /// 没记住. Choice questions are judged by `submitted` / `shown` instead.
+    self_assessed: bool,
     answered: usize,
     correct: usize,
     label: String,
@@ -53,6 +56,7 @@ impl Session {
         self.multi.clear();
         self.submitted = false;
         self.shown = false;
+        self.self_assessed = false;
     }
     fn selection(&self, is_multi: bool) -> Vec<String> {
         if is_multi {
@@ -60,6 +64,13 @@ impl Session {
         } else {
             self.single.clone().into_iter().collect()
         }
+    }
+    /// 显示答案: reveal without grading. This deliberately records nothing —
+    /// no `answered` / `correct`, no per-question stats, no wrong-question
+    /// entry — so a revealed question stays 未做过 and comes up again; that is
+    /// the point of studying it.
+    fn reveal(&mut self) {
+        self.shown = true;
     }
 }
 
@@ -76,7 +87,6 @@ struct App {
     law: DomainData,
     cpa: DomainData,
 
-    screen: Screen,
     domain: Domain,
 
     subject_id: String,
@@ -92,6 +102,9 @@ struct App {
     set_chapters: HashSet<String>,
     set_sources: logic::Sources,
     set_draw: logic::Draw,
+    /// Numeric value used when `set_draw` is `Draw::Custom`; always kept in
+    /// the valid range by the input and by `Draw::limit`.
+    set_draw_custom: usize,
     set_order: logic::Order,
     set_chapter_filter: String,
     set_query: String,
@@ -115,12 +128,41 @@ struct App {
     /// (list key, index) of the last row the pointer hovered, for the rail.
     anim: anim::Animator,
     bg_phase: f32,
-    /// True when DWM accepted the acrylic backdrop, i.e. the window really shows
-    /// the desktop behind it and must therefore paint only a flat scrim.
-    acrylic: bool,
+    /// The captured, Gaussian-blurred desktop (see `glass::blur`). `None` when
+    /// no capture has succeeded, in which case `glass::backdrop` paints the
+    /// gradient fallback instead.
+    glass_texture: Option<egui::TextureHandle>,
+    /// Top-left of the capture, in physical screen pixels.
+    glass_origin: (i32, i32),
+    /// Size of the capture, in physical pixels.
+    glass_size: (usize, usize),
+    /// The window's outer rect as last seen, for change detection.
+    glass_geom: Option<egui::Rect>,
+    /// The outer rect at the last capture attempt. A capture happens only once
+    /// the geometry has settled (`GLASS_SETTLE`), so a drag does not capture
+    /// every frame.
+    glass_geom_at_capture: Option<egui::Rect>,
+    /// The 模糊度 setting at the last capture attempt, so moving that slider
+    /// re-captures immediately.
+    glass_blur_at_capture: Option<u8>,
+    /// `InputState::time` of the last geometry change (the debounce clock).
+    glass_settle_at: f64,
     probe_report: Option<String>,
     md_cache: CommonMarkCache,
     dirty: bool,
+}
+
+/// How long the window geometry must hold still before the desktop is captured
+/// again (seconds).
+const GLASS_SETTLE: f64 = 0.25;
+
+/// Capture rule for the frosted backdrop: capture when the 模糊度 setting
+/// changed (immediately — the slider must re-blur at once), or when the window
+/// geometry has settled after a move / resize (the very first capture is
+/// immediate). Anything else is skipped, so dragging does not capture every
+/// frame.
+fn needs_capture(moved: bool, first: bool, blur_changed: bool, settled: bool) -> bool {
+    blur_changed || (moved && (first || settled))
 }
 
 impl App {
@@ -132,19 +174,13 @@ impl App {
         let user = load_user_store(&state_dir);
 
         if let Some(w) = install_fonts(&cc.egui_ctx) {
-            eprintln!("[sfzklearning] {w}");
+            diag::log(&state_dir, &w);
         }
         let mode = theme::Mode::from_id(&user.theme);
         let tokens = theme::install(&cc.egui_ctx, mode);
 
         let hwnd = win::window_hwnd(cc);
-        let acrylic = match win::apply_acrylic(cc, mode) {
-            Ok(()) => true,
-            Err(e) => {
-                eprintln!("[sfzklearning] 系统毛玻璃不可用，回退为不透明背景: {e}");
-                false
-            }
-        };
+        win::apply_chrome(cc, mode);
         let probe_report = std::env::args()
             .any(|a| a == "--probe")
             .then(|| win::probe(cc));
@@ -153,7 +189,7 @@ impl App {
         let cpa = load_domain_data(&cpa_root);
         for (label, data) in [("law", &law), ("cpa", &cpa)] {
             if let Some(err) = &data.error {
-                eprintln!("[sfzklearning] {label} 数据加载失败: {err}");
+                diag::log(&state_dir, &format!("{label} 数据加载失败: {err}"));
             }
         }
 
@@ -186,7 +222,6 @@ impl App {
             hwnd,
             law,
             cpa,
-            screen: Screen::Workspace,
             domain,
             subject_id: String::new(),
             subject_name: String::new(),
@@ -197,6 +232,7 @@ impl App {
             set_chapters: HashSet::new(),
             set_sources: logic::Sources::default(),
             set_draw: logic::Draw::default(),
+            set_draw_custom: logic::DEFAULT_CUSTOM_DRAW,
             set_order: logic::Order::default(),
             set_chapter_filter: String::new(),
             set_query: String::new(),
@@ -212,16 +248,17 @@ impl App {
             reveal_epoch: 0,
             anim: anim::Animator::new(),
             bg_phase: 0.0,
-            acrylic,
+            glass_texture: None,
+            glass_origin: (0, 0),
+            glass_size: (0, 0),
+            glass_geom: None,
+            glass_geom_at_capture: None,
+            glass_blur_at_capture: None,
+            glass_settle_at: 0.0,
             probe_report,
             md_cache: CommonMarkCache::default(),
             dirty: true,
         };
-
-        // First run (or a forced mode) shows the launcher; otherwise go straight in.
-        if app.user.last_mode.is_none() || !forced.is_empty() {
-            app.screen = Screen::Launcher;
-        }
 
         let subs = app.data(app.domain).subjects.clone();
         let wanted = std::env::var("CMF_START_SUBJECT").unwrap_or_default();
@@ -295,7 +332,6 @@ impl App {
         }
         self.session = None;
         self.reload_subject();
-        self.screen = Screen::Workspace;
     }
 
     fn select_subject(&mut self, id: String) {
@@ -316,6 +352,7 @@ impl App {
         self.set_chapters.clear();
         self.set_sources = logic::Sources::default();
         self.set_draw = logic::Draw::default();
+        self.set_draw_custom = logic::DEFAULT_CUSTOM_DRAW;
         self.set_order = logic::Order::default();
         self.set_chapter_filter.clear();
         self.set_query.clear();
@@ -390,13 +427,14 @@ impl App {
                 self.set_draw,
                 self.set_order,
                 rand_seed(),
+                self.set_draw_custom,
             );
             let chapters = if self.set_chapters.is_empty() {
                 "全部章节".to_string()
             } else {
                 format!("{} 章", self.set_chapters.len())
             };
-            let tail = match self.set_draw.limit() {
+            let tail = match self.set_draw.limit(self.set_draw_custom) {
                 Some(n) => format!("{} {n} 题", self.set_order.label()),
                 None => self.set_order.label().to_string(),
             };
@@ -416,6 +454,7 @@ impl App {
             multi: Vec::new(),
             submitted: false,
             shown: false,
+            self_assessed: false,
             answered: 0,
             correct: 0,
             label,
@@ -463,12 +502,25 @@ impl App {
         self.dirty = true;
     }
 
+    /// 显示答案 for a choice question: reveal the correct options and the
+    /// explanation without grading. Records nothing (see [`Session::reveal`]);
+    /// only the reveal animation is re-armed.
+    fn reveal_answer(&mut self) {
+        let Some(sess) = self.session.as_mut() else {
+            return;
+        };
+        sess.reveal();
+        self.reveal_epoch = self.reveal_epoch.wrapping_add(1);
+        self.dirty = true;
+    }
+
     fn self_assess(&mut self, remembered: bool, _now: f64) {
         let Some(q) = self.session_question() else {
             return;
         };
         let qid = q.id.clone();
         if let Some(sess) = self.session.as_mut() {
+            sess.self_assessed = true;
             sess.answered += 1;
             if remembered {
                 sess.correct += 1;
@@ -483,6 +535,17 @@ impl App {
         self.persist_wrong();
         self.persist_user();
         self.next_question();
+    }
+
+    /// Is the current question judged, so 下一题 / `→` may move on? See
+    /// [`logic::can_advance`]. `←` 上一题 and `Esc` stay available, so the
+    /// gate is never a trap. A memory question's self-assessment advances by
+    /// itself, so this gate mostly guards against skipping it.
+    fn can_advance_now(&self) -> bool {
+        let (Some(q), Some(sess)) = (self.session_question(), self.session.as_ref()) else {
+            return false;
+        };
+        logic::can_advance(&q, sess.submitted, sess.shown, sess.self_assessed)
     }
 
     fn next_question(&mut self) {
@@ -539,8 +602,6 @@ impl App {
                 self.session = None;
                 self.note_draft_for = None;
                 self.dirty = true;
-            } else if self.screen == Screen::Workspace {
-                self.screen = Screen::Launcher;
             }
             return;
         }
@@ -549,7 +610,10 @@ impl App {
             if left {
                 self.prev_question();
             }
-            if right {
+            // `→` obeys the same gate as 下一题 ▶: the current question must be
+            // judged first. `←` and `Esc` stay available, so this is never a
+            // trap.
+            if right && self.can_advance_now() {
                 self.next_question();
             }
             if enter {
@@ -565,13 +629,13 @@ impl App {
     fn persist_wrong(&self) {
         let ids: Vec<String> = self.wrong_ids.iter().cloned().collect();
         if let Err(e) = save_wrong_ids(&self.state_dir, self.domain, &self.subject_id, &ids) {
-            eprintln!("[sfzklearning] 写入错题文件失败: {e}");
+            diag::log(&self.state_dir, &format!("写入错题文件失败: {e}"));
         }
     }
 
     fn persist_user(&self) {
         if let Err(e) = save_user_store(&self.state_dir, &self.user) {
-            eprintln!("[sfzklearning] 写入 user.json 失败: {e}");
+            diag::log(&self.state_dir, &format!("写入 user.json 失败: {e}"));
         }
     }
 
@@ -621,8 +685,92 @@ impl App {
     fn flush_state(&mut self) {
         let ctx = self.build_context();
         if let Err(e) = write_current(&self.state_dir, &ctx) {
-            eprintln!("[sfzklearning] 写入 current.json 失败: {e}");
+            diag::log(&self.state_dir, &format!("写入 current.json 失败: {e}"));
         }
+    }
+
+    // ------------------------------------------------------------------
+    // frosted glass: capture + Gaussian blur
+    // ------------------------------------------------------------------
+
+    /// Capture and blur the desktop when it is needed: once at startup, after
+    /// the window geometry has settled (moved or resized), and immediately
+    /// when the 模糊度 setting changes. A capture that fails keeps the previous
+    /// texture; with no texture at all, `glass::backdrop` paints the gradient
+    /// fallback, so the window is never unreadable.
+    fn refresh_glass(&mut self, ctx: &egui::Context, now: f64) {
+        let Some(outer) = ctx.input(|i| i.viewport().outer_rect) else {
+            return; // minimized or position unknown: keep what we have
+        };
+        if self.glass_geom != Some(outer) {
+            self.glass_geom = Some(outer);
+            self.glass_settle_at = now;
+        }
+
+        let first = self.glass_geom_at_capture.is_none();
+        let blur_changed = self.glass_blur_at_capture != Some(self.user.glass_blur);
+        let moved = self.glass_geom_at_capture != self.glass_geom;
+        let settled = now - self.glass_settle_at >= GLASS_SETTLE;
+        if needs_capture(moved, first, blur_changed, settled) {
+            self.capture_glass(ctx);
+        } else if moved {
+            // Come back once the geometry has held still; a drag keeps
+            // pushing this deadline out, so it captures only when it stops.
+            let wait = (self.glass_settle_at + GLASS_SETTLE - now).max(0.0);
+            ctx.request_repaint_after(std::time::Duration::from_secs_f64(wait));
+        }
+    }
+
+    /// One capture → downscale → Gaussian → texture. Records the attempt even
+    /// on failure, so a failing capture is not retried every frame.
+    fn capture_glass(&mut self, ctx: &egui::Context) {
+        self.glass_geom_at_capture = self.glass_geom;
+        self.glass_blur_at_capture = Some(self.user.glass_blur);
+
+        let Some(hwnd) = self.hwnd else {
+            return;
+        };
+        let Some(shot) = glass::blur::capture(hwnd) else {
+            return;
+        };
+        let (halvings, sigma) = glass::blur::params(self.user.glass_blur);
+        let (w, h, rgb) = glass::blur::downscale(&shot, halvings);
+        let blurred = glass::blur::gaussian(&rgb, w, h, sigma);
+        let image = glass::blur::to_color_image(&blurred, w, h);
+
+        self.glass_origin = shot.origin;
+        self.glass_size = (shot.width, shot.height);
+        match &mut self.glass_texture {
+            Some(handle) => handle.set(image, egui::TextureOptions::LINEAR),
+            None => {
+                self.glass_texture = Some(ctx.load_texture(
+                    "glass_desktop",
+                    image,
+                    egui::TextureOptions::LINEAR,
+                ));
+            }
+        }
+    }
+
+    /// UV rect of the window's content area inside the captured texture.
+    ///
+    /// The content rect (egui points, origin at the window's client area) is
+    /// converted to physical screen pixels and offset by the capture origin,
+    /// so the blurred desktop stays registered with the real desktop while the
+    /// window moves instead of sliding along with it.
+    fn glass_uv(&self, ctx: &egui::Context) -> egui::Rect {
+        let ppp = ctx.pixels_per_point();
+        let inner = ctx
+            .input(|i| i.viewport().inner_rect)
+            .map_or(egui::Pos2::ZERO, |r| r.min);
+        let origin = egui::vec2(self.glass_origin.0 as f32, self.glass_origin.1 as f32);
+        let size = egui::vec2(
+            self.glass_size.0.max(1) as f32,
+            self.glass_size.1.max(1) as f32,
+        );
+        let min = (inner.to_vec2() * ppp - origin) / size;
+        let extent = ctx.content_rect().size() * ppp / size;
+        egui::Rect::from_min_size(min.to_pos2(), extent)
     }
 }
 
@@ -635,8 +783,17 @@ impl eframe::App for App {
         let ctx = ui.ctx().clone();
         let now = ctx.input(|i| i.time);
 
+        // First, so the probe can report the real state and the first painted
+        // frame already shows the captured desktop.
+        self.refresh_glass(&ctx, now);
+
         if let Some(report) = self.probe_report.take() {
-            eprintln!("[sfzklearning][probe] acrylic={} {report}", self.acrylic);
+            let glass = if self.glass_texture.is_some() {
+                "captured"
+            } else {
+                "fallback"
+            };
+            diag::log(&self.state_dir, &format!("probe {report} glass={glass}"));
             ctx.send_viewport_cmd(egui::ViewportCommand::Close);
             return;
         }
@@ -644,20 +801,25 @@ impl eframe::App for App {
         if self.anim.is_live(now) {
             self.bg_phase += ctx.input(|i| i.stable_dt) * 0.35;
         }
-        glass::backdrop(&ctx, &self.tokens, self.bg_phase, !self.acrylic);
+        let desktop = self.glass_texture.as_ref().map(|texture| glass::DesktopGlass {
+            texture,
+            uv: self.glass_uv(&ctx),
+        });
+        glass::backdrop(
+            &ctx,
+            &self.tokens,
+            self.bg_phase,
+            desktop,
+            self.user.glass_transparency,
+        );
         win::chrome(&ctx);
         self.handle_keys(&ctx, now);
 
-        match self.screen {
-            Screen::Launcher => self.launcher(ui),
-            Screen::Workspace => {
-                self.header(ui);
-                if self.session.is_none() {
-                    self.rail(ui);
-                }
-                self.workspace(ui);
-            }
+        self.header(ui);
+        if self.session.is_none() {
+            self.rail(ui);
         }
+        self.workspace(ui);
 
         if self.settings_open {
             self.settings_modal(&ctx);
@@ -816,6 +978,12 @@ pub fn run() -> eframe::Result<()> {
             .with_decorations(false)
             .with_transparent(true)
             .with_resizable(true),
+        // `Glow` (OpenGL) rather than the default `Wgpu`: wgpu reports only
+        // `CompositeAlphaMode::Opaque` for a plain Win32 surface, so a wgpu
+        // window can never be translucent — and transparency is still needed
+        // for the rounded corners (the captured desktop itself is painted by
+        // the app, see `glass::blur`).
+        renderer: eframe::Renderer::Glow,
         ..Default::default()
     };
 
@@ -824,4 +992,94 @@ pub fn run() -> eframe::Result<()> {
         native_options,
         Box::new(|cc| Ok(Box::new(App::new(cc)))),
     )
+}
+
+#[cfg(test)]
+mod tests {
+    use super::{logic, needs_capture, Session};
+    use sfzklearning::{OptionItem, Question};
+
+    /// A one-question session with a picked answer, ready to be revealed.
+    fn choice_session() -> Session {
+        Session {
+            order: vec![0],
+            pos: 0,
+            single: Some("A".to_string()),
+            multi: Vec::new(),
+            submitted: false,
+            shown: false,
+            self_assessed: false,
+            answered: 0,
+            correct: 0,
+            label: "测试".to_string(),
+        }
+    }
+
+    fn choice_question() -> Question {
+        Question {
+            id: "q1".to_string(),
+            qtype: Some("single_choice".to_string()),
+            options: vec![OptionItem {
+                label: "A".to_string(),
+                text: "选项".to_string(),
+            }],
+            answer: vec!["A".to_string()],
+            ..Default::default()
+        }
+    }
+
+    /// 显示答案 opens the 下一题 gate without recording anything: no
+    /// `answered` / `correct` (and with them, no per-question stats and no
+    /// wrong-question entry) — the question stays 未做过 and comes up again.
+    #[test]
+    fn revealing_the_answer_records_nothing_and_opens_the_next_gate() {
+        let q = choice_question();
+        let mut s = choice_session();
+        assert!(
+            !logic::can_advance(&q, s.submitted, s.shown, s.self_assessed),
+            "nothing is judged yet: 下一题 must refuse"
+        );
+
+        s.reveal();
+        assert!(s.shown, "显示答案 reveals the answer");
+        assert!(!s.submitted, "and does not grade it");
+        assert_eq!(s.answered, 0, "revealing must not count as an answer");
+        assert_eq!(s.correct, 0);
+        assert!(
+            logic::can_advance(&q, s.submitted, s.shown, s.self_assessed),
+            "a revealed question may move on"
+        );
+
+        s.clear_answer();
+        assert!(!s.shown, "changing the question clears the reveal");
+        assert!(!s.self_assessed);
+    }
+
+    /// The capture debounce is pure logic, and it is where the first version
+    /// went wrong: a 模糊度 change must re-capture even when the window has not
+    /// moved, or the slider would update its number without the blur changing.
+    #[test]
+    fn glass_capture_is_debounced_but_blur_changes_apply_at_once() {
+        assert!(needs_capture(true, true, false, false), "first capture: now");
+        assert!(
+            !needs_capture(true, false, false, false),
+            "mid-drag: wait for the geometry to settle"
+        );
+        assert!(
+            needs_capture(true, false, false, true),
+            "settled geometry: capture"
+        );
+        assert!(
+            needs_capture(true, false, true, false),
+            "a blur change captures at once, even mid-drag"
+        );
+        assert!(
+            needs_capture(false, false, true, false),
+            "…and even when the window never moved"
+        );
+        assert!(
+            !needs_capture(false, false, false, true),
+            "nothing changed: no capture"
+        );
+    }
 }

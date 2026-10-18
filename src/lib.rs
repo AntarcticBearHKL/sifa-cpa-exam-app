@@ -53,11 +53,29 @@ impl Domain {
         }
     }
 
+    /// Where a domain's data is looked up when no CLI/env override is set.
+    ///
+    /// Portable layout first (`<exe>/data/<domain>` — the release zip unpacks
+    /// the binary and `data/` side by side), then the Cargo layout
+    /// (`target/<profile>/../../data/<domain>` → project root).
     pub fn default_root(self) -> PathBuf {
-        match self {
-            Domain::Law => PathBuf::from(r"D:\Dev\StudyData\classified\law"),
-            Domain::Cpa => PathBuf::from(r"D:\Dev\StudyData\classified\cpa"),
+        let id = self.id();
+        if let Ok(exe) = std::env::current_exe() {
+            if let Some(dir) = exe.parent() {
+                let beside = dir.join("data").join(id);
+                if beside.is_dir() {
+                    return beside;
+                }
+                if let Some(root) = dir.parent().and_then(|p| p.parent()) {
+                    let in_project = root.join("data").join(id);
+                    if in_project.is_dir() || root.join("Cargo.toml").is_file() {
+                        return in_project;
+                    }
+                }
+                return beside;
+            }
         }
+        PathBuf::from("data").join(id)
     }
 }
 
@@ -763,8 +781,9 @@ impl CurrentContext {
 
 /// Resolve the state directory.
 ///
-/// Order: explicit CLI `--state-dir` > `CMF_STATE_DIR` env > `<exe>/../../state`
-/// (the Cargo target layout: `target/release/../../state`) > `D:\Dev\StudyApp\state`.
+/// Order: explicit CLI `--state-dir` > `CMF_STATE_DIR` env > `<exe>/state`
+/// (portable: the binary and `state/` side by side) > `<exe>/../../state`
+/// (the Cargo layout: `target/release` → project root).
 pub fn resolve_state_dir(cli: Option<&str>) -> PathBuf {
     if let Some(p) = cli.filter(|s| !s.trim().is_empty()) {
         return PathBuf::from(p);
@@ -776,19 +795,20 @@ pub fn resolve_state_dir(cli: Option<&str>) -> PathBuf {
     }
     if let Ok(exe) = std::env::current_exe() {
         if let Some(dir) = exe.parent() {
-            // target/release -> target -> project root
+            let beside = dir.join("state");
+            if beside.is_dir() {
+                return beside;
+            }
             if let Some(root) = dir.parent().and_then(|p| p.parent()) {
-                let candidate = root.join("state");
-                if candidate.is_dir() {
-                    return candidate;
+                let in_project = root.join("state");
+                if in_project.is_dir() || root.join("Cargo.toml").is_file() {
+                    return in_project;
                 }
             }
-            if let Some(root) = dir.parent().and_then(|p| p.parent()) {
-                return root.join("state");
-            }
+            return beside;
         }
     }
-    PathBuf::from(r"D:\Dev\StudyApp\state")
+    PathBuf::from("state")
 }
 
 pub fn current_json_path(state_dir: &Path) -> PathBuf {
@@ -878,16 +898,35 @@ pub struct UserStore {
     /// Per-question practice record, keyed by question id.
     #[serde(default)]
     pub stats: std::collections::BTreeMap<String, QStat>,
-    /// Domain the user last studied (`law` / `cpa`), so the launcher can be skipped.
+    /// Domain the user last studied (`law` / `cpa`) — the startup domain, and what
+    /// the header's mode button writes when it toggles.
     #[serde(default)]
     pub last_mode: Option<String>,
     /// UI theme (`dark` / `light`). Absent or unknown values mean `dark`.
     #[serde(default = "default_theme")]
     pub theme: String,
+    /// Frosted-glass see-through, `0..=100` percent. Drives the scrim alpha:
+    /// `255 * (1 - value/100)` (0 opaque, 100 fully clear). Files written
+    /// before this field existed fall back to [`default_glass_transparency`].
+    #[serde(default = "default_glass_transparency")]
+    pub glass_transparency: u8,
+    /// Frosted-glass blur strength, `0..=100`. `0` keeps the captured desktop
+    /// sharp; larger values blur it more (see `glass::blur::params`).
+    #[serde(default = "default_glass_blur")]
+    pub glass_blur: u8,
 }
 
 fn default_theme() -> String {
     "dark".to_string()
+}
+
+/// ≈ today's scrim: `255 * (1 - 0.12) ≈ 224`.
+fn default_glass_transparency() -> u8 {
+    12
+}
+
+fn default_glass_blur() -> u8 {
+    45
 }
 
 impl Default for UserStore {
@@ -898,6 +937,8 @@ impl Default for UserStore {
             stats: std::collections::BTreeMap::new(),
             last_mode: None,
             theme: default_theme(),
+            glass_transparency: default_glass_transparency(),
+            glass_blur: default_glass_blur(),
         }
     }
 }
@@ -1179,6 +1220,8 @@ mod tests {
         assert!(store.toggle_favorite("cpa:b"));
         store.set_note("law:a", "hello", "2026-01-01T00:00:00Z");
         store.set_note("cpa:b", "world", "2026-01-02T00:00:00Z");
+        store.glass_transparency = 37;
+        store.glass_blur = 80;
 
         save_user_store(&dir, &store).unwrap();
         let loaded = load_user_store(&dir);
@@ -1189,6 +1232,42 @@ mod tests {
         assert_eq!(loaded.note("law:a"), Some("hello"));
         assert_eq!(loaded.note("cpa:b"), Some("world"));
         assert_eq!(loaded.note("law:a").map(str::to_string), store.note("law:a").map(str::to_string));
+        assert_eq!(loaded.glass_transparency, 37);
+        assert_eq!(loaded.glass_blur, 80);
+
+        let _ = fs::remove_dir_all(&dir);
+    }
+
+    /// The real compatibility risk: a `user.json` written before the glass
+    /// fields existed must still load, with the two settings at their defaults.
+    #[test]
+    fn user_store_without_glass_fields_deserializes() {
+        let dir = user_test_dir("legacy-glass");
+        let _ = fs::remove_dir_all(&dir);
+        fs::create_dir_all(&dir).unwrap();
+        fs::write(
+            user_store_path(&dir),
+            br#"{
+                "favorites": ["law:a"],
+                "notes": {"law:a": {"text": "hi", "updated": "t"}},
+                "stats": {},
+                "last_mode": "cpa",
+                "theme": "light"
+            }"#,
+        )
+        .unwrap();
+
+        let loaded = load_user_store(&dir);
+        assert!(loaded.is_favorite("law:a"), "the old fields still load");
+        assert_eq!(loaded.note("law:a"), Some("hi"));
+        assert_eq!(loaded.last_mode.as_deref(), Some("cpa"));
+        assert_eq!(loaded.theme, "light");
+        assert_eq!(
+            loaded.glass_transparency,
+            default_glass_transparency(),
+            "a legacy file keeps the default transparency"
+        );
+        assert_eq!(loaded.glass_blur, default_glass_blur());
 
         let _ = fs::remove_dir_all(&dir);
     }

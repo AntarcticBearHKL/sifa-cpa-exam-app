@@ -1,0 +1,163 @@
+{
+  "counts": {
+    "knowledgePoints": 7396,
+    "questions": 52775
+  },
+  "domain": "law",
+  "generatedAt": "2026-10-17T09:20:16Z",
+  "schemaVersion": "cmf-1.0",
+  "subjects": [
+    {
+      "group": "卷一",
+      "id": "xijinping-fazhi-sixiang",
+      "knowledgePoints": 532,
+      "name": "习近平法治思想",
+      "order": 1,
+      "questions": 1893
+    },
+    {
+      "group": "卷一",
+      "id": "falixue",
+      "knowledgePoints": 94,
+      "name": "法理学",
+      "order": 2,
+      "questions": 1476
+    },
+    {
+      "group": "卷一",
+      "id": "xianfa",
+      "knowledgePoints": 66,
+      "name": "宪法",
+      "order": 3,
+      "questions": 1321
+    },
+    {
+      "group": "卷一",
+      "id": "zhongguo-falvshi",
+      "knowledgePoints": 57,
+      "name": "中国法律史",
+      "order": 4,
+      "questions": 681
+    },
+    {
+      "group": "卷一",
+      "id": "guojifa",
+      "knowledgePoints": 502,
+      "name": "国际法",
+      "order": 5,
+      "questions": 2857
+    },
+    {
+      "group": "卷一",
+      "id": "sifa-zhidu",
+      "knowledgePoints": 32,
+      "name": "司法制度和法律职业道德",
+      "order": 6,
+      "questions": 908
+    },
+    {
+      "group": "卷一",
+      "id": "xingfa",
+      "knowledgePoints": 909,
+      "name": "刑法",
+      "order": 7,
+      "questions": 6233
+    },
+    {
+      "group": "卷一",
+      "id": "xingsufa",
+      "knowledgePoints": 712,
+      "name": "刑事诉讼法",
+      "order": 8,
+      "questions": 6784
+    },
+    {
+      "group": "卷一",
+      "id": "xingzhengfa",
+      "knowledgePoints": 671,
+      "name": "行政法与行政诉讼法",
+      "order": 9,
+      "questions": 4464
+    },
+    {
+      "group": "卷二",
+      "id": "minfa",
+      "knowledgePoints": 1748,
+      "name": "民法",
+      "order": 10,
+      "questions": 7215
+    },
+    {
+      "group": "卷二",
+      "id": "zhishichanquanfa",
+      "knowledgePoints": 48,
+      "name": "知识产权法",
+      "order": 11,
+      "questions": 792
+    },
+    {
+      "group": "卷二",
+      "id": "shangfa",
+      "knowledgePoints": 1215,
+      "name": "商法",
+      "order": 12,
+      "questions": 8190
+    },
+    {
+      "group": "卷二",
+      "id": "jingjifa",
+      "knowledgePoints": 36,
+      "name": "经济法",
+      "order": 13,
+      "questions": 1252
+    },
+    {
+      "group": "卷二",
+      "id": "huanjingziyuanfa",
+      "knowledgePoints": 13,
+      "name": "环境资源法",
+      "order": 14,
+      "questions": 282
+    },
+    {
+      "group": "卷二",
+      "id": "laodongshebao",
+      "knowledgePoints": 25,
+      "name": "劳动与社会保障法",
+      "order": 15,
+      "questions": 468
+    },
+    {
+      "group": "卷二",
+      "id": "guojisifa",
+      "knowledgePoints": 29,
+      "name": "国际私法",
+      "order": 16,
+      "questions": 1177
+    },
+    {
+      "group": "卷二",
+      "id": "guojijingjifa",
+      "knowledgePoints": 34,
+      "name": "国际经济法",
+      "order": 17,
+      "questions": 1131
+    },
+    {
+      "group": "卷二",
+      "id": "minsufa",
+      "knowledgePoints": 652,
+      "name": "民事诉讼法与仲裁制度",
+      "order": 18,
+      "questions": 5295
+    },
+    {
+      "group": null,
+      "id": "unknown",
+      "knowledgePoints": 21,
+      "name": "未分类",
+      "order": 999,
+      "questions": 356
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "counts": {
+    "knowledgePoints": 2950,
+    "questions": 14428
+  },
+  "domain": "cpa",
+  "generatedAt": "2026-10-17T09:20:22Z",
+  "schemaVersion": "cmf-1.0",
+  "subjects": [
+    {
+      "group": "专业阶段",
+      "id": "kuaiji",
+      "knowledgePoints": 243,
+      "name": "会计",
+      "order": 1,
+      "questions": 2290
+    },
+    {
+      "group": "专业阶段",
+      "id": "shenji",
+      "knowledgePoints": 581,
+      "name": "审计",
+      "order": 2,
+      "questions": 2151
+    },
+    {
+      "group": "专业阶段",
+      "id": "caiguan",
+      "knowledgePoints": 103,
+      "name": "财务成本管理",
+      "order": 3,
+      "questions": 2992
+    },
+    {
+      "group": "专业阶段",
+      "id": "shuifa",
+      "knowledgePoints": 939,
+      "name": "税法",
+      "order": 4,
+      "questions": 1748
+    },
+    {
+      "group": "专业阶段",
+      "id": "jingjifa",
+      "knowledgePoints": 723,
+      "name": "经济法",
+      "order": 5,
+      "questions": 3022
+    },
+    {
+      "group": "专业阶段",
+      "id": "zhanlue",
+      "knowledgePoints": 275,
+      "name": "公司战略与风险管理",
+      "order": 6,
+      "questions": 1196
+    },
+    {
+      "group": "综合阶段",
+      "id": "zonghe",
+      "knowledgePoints": 16,
+      "name": "职业能力综合测试",
+      "order": 7,
+      "questions": 0
+    },
+    {
+      "group": null,
+      "id": "unknown",
+      "knowledgePoints": 70,
+      "name": "未分类",
+      "order": 999,
+      "questions": 401
+    },
+    {
+      "group": null,
+      "id": "excluded",
+      "knowledgePoints": 0,
+      "name": "已排除（跨考试污染）",
+      "order": 1000,
+      "questions": 628
+    }
+  ]
+}

@@ -270,6 +270,150 @@ pub fn check_row(
     response
 }
 
+/// Compact integer field for inline numeric settings (the custom draw size).
+/// Built on egui's `DragValue`, so click-to-type and drag-to-nudge both work;
+/// the surrounding style is narrowed to the project's spacing and surface
+/// tokens so it keeps the same rhythm as the hand-painted controls.
+pub fn number_input(
+    ui: &mut Ui,
+    tokens: &Tokens,
+    value: &mut usize,
+    range: std::ops::RangeInclusive<usize>,
+) -> Response {
+    ui.scope(|ui| {
+        let style = ui.style_mut();
+        style.spacing.interact_size = Vec2::new(46.0, 30.0);
+        style.spacing.button_padding = Vec2::new(tokens.space.sm, tokens.space.xs);
+        let radius = CornerRadius::same(tokens.radius.lg);
+        style.visuals.widgets.inactive.corner_radius = radius;
+        style.visuals.widgets.hovered.corner_radius = radius;
+        style.visuals.widgets.active.corner_radius = radius;
+        style.visuals.widgets.inactive.bg_fill = tokens.palette.glass.fill_sunken;
+        style.visuals.widgets.inactive.weak_bg_fill = tokens.palette.glass.fill_sunken;
+        style.visuals.widgets.hovered.bg_fill = tokens.palette.glass.fill_strong;
+        style.visuals.widgets.hovered.weak_bg_fill = tokens.palette.glass.fill_strong;
+        style.visuals.widgets.inactive.bg_stroke =
+            Stroke::new(1.0, tokens.palette.glass.stroke);
+        style.visuals.widgets.hovered.bg_stroke =
+            Stroke::new(1.0, tokens.palette.glass.stroke);
+        style.explanation_tooltips = false;
+        ui.add(
+            egui::DragValue::new(value)
+                .range(range)
+                .speed(1.0)
+                .max_decimals(0),
+        )
+    })
+    .inner
+}
+
+/// Value of a `min..=max` slider at horizontal fraction `t` (clamped to
+/// `0.0..=1.0`). Pure, so the widget's geometry→value mapping is unit-tested
+/// without an egui context.
+pub(crate) fn slider_value_at(t: f32, min: u8, max: u8) -> u8 {
+    let t = t.clamp(0.0, 1.0);
+    let span = max.saturating_sub(min) as f32;
+    (min as f32 + t * span).round().clamp(min as f32, max as f32) as u8
+}
+
+/// Percent slider for the frosted-glass settings (0–100), with the value shown
+/// to its right. Styled like [`number_input`]: `glass.fill_sunken` track,
+/// `radius.lg` corners, ink tokens, and a tinted accent fill for the elapsed
+/// portion — never a full-strength accent outline.
+///
+/// Declared with `Sense::CLICK`, not `Sense::click()`: a focusable widget would
+/// make `egui_wants_keyboard_input()` true and kill the `←/→` session
+/// navigation. A held press is still tracked manually, so the value follows a
+/// drag across the track.
+pub fn slider(ui: &mut Ui, tokens: &Tokens, id_salt: &str, value: &mut u8) -> Response {
+    const TRACK_H: f32 = 6.0;
+    const ROW_H: f32 = 30.0;
+    const VALUE_W: f32 = 40.0;
+    const TRACK_W: f32 = 220.0;
+
+    let (rect, _) = ui.allocate_exact_size(
+        Vec2::new(TRACK_W + tokens.space.sm + VALUE_W, ROW_H),
+        Sense::hover(),
+    );
+    let track = Rect::from_min_size(
+        Pos2::new(rect.left(), rect.center().y - TRACK_H * 0.5),
+        Vec2::new(TRACK_W, TRACK_H),
+    );
+    // The hit area is the whole row height over the track width: the drawn
+    // track is a 6px line, which would be a cruel click target.
+    let hit = Rect::from_min_max(
+        Pos2::new(track.left(), rect.top()),
+        Pos2::new(track.right(), rect.bottom()),
+    );
+    let response = ui.interact(hit, ui.id().with(("slider", id_salt)), Sense::CLICK);
+
+    // Press-and-hold moves the value. `Sense::CLICK` keeps the widget out of
+    // egui's focus / drag machinery (a focusable slider would kill the `←/→`
+    // session navigation), but egui also *cancels* a click once the pointer
+    // travels past its click threshold — so the press is tracked by hand: it
+    // starts on the press frame and lasts until the button is released,
+    // wherever the pointer goes. `Sense::CLICK` is the only sense used.
+    let pointer_down = ui.ctx().input(|i| i.pointer.primary_down());
+    let press_id = response.id.with("press");
+    let owns_press = ui.ctx().data_mut(|d| {
+        let owns = response.is_pointer_button_down_on()
+            || (pointer_down && d.get_temp::<bool>(press_id).unwrap_or(false));
+        d.insert_temp(press_id, owns && pointer_down);
+        owns
+    });
+    if owns_press {
+        if let Some(pos) = ui.ctx().input(|i| i.pointer.latest_pos()) {
+            let t = (pos.x - track.left()) / track.width();
+            *value = slider_value_at(t, 0, 100);
+        }
+    }
+
+    let hover = motion::ease_bool(
+        ui.ctx(),
+        response.id.with("hover"),
+        response.hovered(),
+        motion::duration::FAST,
+        motion::curve::ENTER,
+    );
+    let t = *value as f32 / 100.0;
+    let painter = ui.painter();
+    let pill = CornerRadius::same(tokens.radius.pill);
+    painter.rect_filled(track, pill, tokens.palette.glass.fill_sunken);
+    if t > 0.0 {
+        let filled = Rect::from_min_size(
+            track.min,
+            Vec2::new((track.width() * t).max(TRACK_H), track.height()),
+        );
+        // The elapsed portion is a tinted fill; the edge stays neutral.
+        painter.rect_filled(
+            filled,
+            pill,
+            mix(tokens.palette.accent.soft, tokens.palette.accent.base, 0.5),
+        );
+    }
+    let handle = Pos2::new(track.left() + track.width() * t, track.center().y);
+    let disc = mix(
+        mix(tokens.palette.glass.solid, tokens.palette.accent.base, 0.55),
+        tokens.palette.ink.primary,
+        hover * 0.25,
+    );
+    painter.circle_filled(handle, 7.0, disc);
+    painter.circle_stroke(
+        handle,
+        7.0,
+        Stroke::new(1.0, tokens.palette.glass.stroke),
+    );
+    painter.text(
+        Pos2::new(rect.right(), rect.center().y),
+        Align2::RIGHT_CENTER,
+        format!("{value}%"),
+        FontId::proportional(12.5),
+        tokens.palette.ink.primary,
+    );
+
+    response
+}
+
 /// The one prominent action on a screen (e.g. 开始练习. Everything else uses
 /// the default button so the primary action actually stands out.
 pub fn primary_button(ui: &mut Ui, tokens: &Tokens, label: &str, enabled: bool) -> Response {
@@ -502,8 +646,17 @@ mod tests {
     }
 
     #[test]
-    fn shifted_block_moves_only_x() {
-        let next = Pos2::new(100.0, 50.0);
+    fn slider_value_at_maps_fraction_to_a_clamped_percent() {
+        assert_eq!(slider_value_at(0.0, 0, 100), 0);
+        assert_eq!(slider_value_at(1.0, 0, 100), 100);
+        assert_eq!(slider_value_at(0.5, 0, 100), 50);
+        assert_eq!(slider_value_at(-3.0, 0, 100), 0, "left of the track clamps");
+        assert_eq!(slider_value_at(9.0, 0, 100), 100, "right of the track clamps");
+        assert_eq!(slider_value_at(0.5, 0, 0), 0, "a degenerate range still works");
+    }
+
+    #[test]
+    fn shifted_block_moves_only_x() {        let next = Pos2::new(100.0, 50.0);
         let limit = Pos2::new(800.0, 600.0);
 
         let right = shifted_block(next, limit, 9.0);

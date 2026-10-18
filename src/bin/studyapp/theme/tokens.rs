@@ -2,9 +2,9 @@
 //!
 //! The palette is mode-aware: a neutral dark palette and its light mirror,
 //! sharing one muted slate accent. Surfaces are always translucent washes of
-//! ink over the sheet (light-on-dark, or dark-on-light), so the acrylic
-//! backdrop behind the window still shows through faintly. Either scrim stays
-//! near-opaque, because the transparent window sits over the OS desktop.
+//! ink over the sheet (light-on-dark, or dark-on-light), so the blurred
+//! desktop behind the window still shows through. Either scrim is translucent
+//! too, or the backdrop it sits on would be invisible.
 
 use std::collections::BTreeMap;
 
@@ -47,15 +47,16 @@ impl Mode {
 }
 
 /// The backdrop. Kept slightly graduated so surfaces have something to sit on,
-/// and only lightly opaque so the OS acrylic stays visible.
+/// and only lightly opaque so the blurred desktop stays visible.
 #[derive(Clone, Copy, Debug)]
 pub struct Background {
     pub base_top: Color32,
     pub base_bottom: Color32,
     /// Soft washes painted over the gradient, in order.
     pub blobs: [Color32; 5],
-    /// Flat translucent wash used *instead of* the gradient when the OS supplies
-    /// a real blurred backdrop — the gradient would otherwise hide the desktop.
+    /// Flat translucent wash painted *over* the captured blurred desktop (or
+    /// instead of the fallback gradient) — the desktop would otherwise be too
+    /// loud for body text. Its alpha is the 透明度 setting at paint time.
     pub scrim: Color32,
 }
 
@@ -190,9 +191,12 @@ impl Palette {
                     rgba(0, 0, 0, 40),
                     rgba(255, 255, 255, 10),
                 ],
-                // Near-opaque on purpose: the window is transparent over the OS
-                // acrylic, so a too-thin scrim lets a bright desktop wash the UI
-                // out. The light scrim below has the exact same job.
+                // Translucent so the window shows the desktop, but opaque enough
+                // that body text keeps its contrast over a bright one. Measured
+                // against `ink.primary` over a white desktop: α166 = 4.33:1
+                // (fails WCAG AA), α190 = 5.96:1, α210 = 7.86:1, α228 = 10.03:1.
+                // Guarded by
+                // `scrim_keeps_body_text_at_aa_over_the_worst_case_desktop`.
                 scrim: rgba(14, 14, 17, 228),
             },
             glass: Glass {
@@ -235,10 +239,8 @@ impl Palette {
                     rgba(0, 0, 0, 8),
                     rgba(255, 255, 255, 80),
                 ],
-                // LIGHT and near-opaque, for the same reason the dark scrim is
-                // dark and near-opaque: the window is transparent over the OS
-                // acrylic, so a light theme needs a light nearly-solid scrim or
-                // a bright desktop behind the window washes the UI out.
+                // The light mirror of the dark scrim, held at the same alpha so
+                // both modes obey one rule.
                 scrim: rgba(248, 248, 250, 228),
             },
             glass: Glass {
@@ -315,19 +317,75 @@ mod tests {
         assert!(span >= 8, "the backdrop needs some depth, got {span}");
 
         // The scrim keeps the transparent window legible over an arbitrary
-        // desktop: light mode needs a light, near-opaque one.
-        let scrim = t.palette.background.scrim;
+        // desktop, and must stay translucent or the desktop stops showing
+        // through. Read the channels un-premultiplied: `Color32` stores them
+        // scaled by alpha, so a raw `.r()` drops with the alpha it is meant to
+        // be checked against.
+        let [r, g, b, a] = t.palette.background.scrim.to_srgba_unmultiplied();
         assert!(
-            scrim.r() > 200 && scrim.g() > 200 && scrim.b() > 200 && scrim.a() >= 200,
-            "the light scrim must be light and near-opaque, got {scrim:?}"
+            r > 200 && g > 200 && b > 200 && (150..=240).contains(&a),
+            "the light scrim must be light and translucent, got {r},{g},{b},{a}"
         );
 
         // The dark scrim carries the same invariant upside-down.
-        let dark = Tokens::new(Mode::Dark).palette.background.scrim;
+        let [r, g, b, a] = Tokens::new(Mode::Dark)
+            .palette
+            .background
+            .scrim
+            .to_srgba_unmultiplied();
         assert!(
-            dark.r() < 60 && dark.a() >= 200,
-            "the dark scrim must stay dark and near-opaque, got {dark:?}"
+            r < 60 && g < 60 && b < 60 && (150..=240).contains(&a),
+            "the dark scrim must stay dark and translucent, got {r},{g},{b},{a}"
         );
+    }
+
+    /// The scrim is the only thing between the app's text and an arbitrary
+    /// desktop, so it has to hold body text at WCAG AA over the worst case for
+    /// its mode: a white desktop behind dark mode, a black one behind light.
+    #[test]
+    fn scrim_keeps_body_text_at_aa_over_the_worst_case_desktop() {
+        fn linear(c: f32) -> f32 {
+            if c <= 0.04045 {
+                c / 12.92
+            } else {
+                ((c + 0.055) / 1.055).powf(2.4)
+            }
+        }
+
+        fn luminance(c: Color32) -> f32 {
+            let [r, g, b, _] = c.to_srgba_unmultiplied();
+            let channel = |v: u8| linear(v as f32 / 255.0);
+            0.2126 * channel(r) + 0.7152 * channel(g) + 0.0722 * channel(b)
+        }
+
+        fn contrast(a: Color32, b: Color32) -> f32 {
+            let (x, y) = (luminance(a), luminance(b));
+            let (hi, lo) = if x > y { (x, y) } else { (y, x) };
+            (hi + 0.05) / (lo + 0.05)
+        }
+
+        // `src` composited over an opaque `dst`, both straight-alpha.
+        fn over(src: Color32, dst: Color32) -> Color32 {
+            let [sr, sg, sb, sa] = src.to_srgba_unmultiplied();
+            let [dr, dg, db, _] = dst.to_srgba_unmultiplied();
+            let a = sa as f32 / 255.0;
+            let mix = |s: u8, d: u8| (s as f32 * a + d as f32 * (1.0 - a)).round() as u8;
+            Color32::from_rgb(mix(sr, dr), mix(sg, dg), mix(sb, db))
+        }
+
+        for (mode, desktop, name) in [
+            (Mode::Dark, Color32::WHITE, "white"),
+            (Mode::Light, Color32::BLACK, "black"),
+        ] {
+            let t = Tokens::new(mode);
+            let sheet = over(t.palette.background.scrim, desktop);
+            let bg = over(t.palette.glass.fill, sheet);
+            let ratio = contrast(t.palette.ink.primary, bg);
+            assert!(
+                ratio >= 4.5,
+                "body text must stay at WCAG AA over a {name} desktop ({mode:?}), got {ratio:.2}:1"
+            );
+        }
     }
 
     #[test]

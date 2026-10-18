@@ -33,7 +33,7 @@ impl App {
         // A definite size gives the footer bar (`Panel::bottom`) bounded space
         // to dock into; an auto-sized modal would dock it at the screen edge.
         let area = egui::Modal::default_area(egui::Id::new("settings_modal"))
-            .default_size(egui::vec2(560.0, 400.0));
+            .default_size(egui::vec2(560.0, 460.0));
 
         let resp = egui::Modal::new(egui::Id::new("settings_modal"))
             .area(area)
@@ -118,6 +118,69 @@ impl App {
         ui.add_space(tokens.space.sm);
         ui.label(
             RichText::new("立即生效，并写入本地用户配置。")
+                .size(11.5)
+                .color(tokens.palette.ink.muted),
+        );
+
+        ui.add_space(tokens.space.lg);
+        ui.label(
+            RichText::new("毛玻璃")
+                .size(13.0)
+                .color(tokens.palette.ink.secondary),
+        );
+        ui.add_space(tokens.space.xs);
+
+        let label_w = egui::vec2(64.0, 30.0);
+        let mut changed = false;
+        let mut blur_changed = false;
+        ui.horizontal(|ui| {
+            ui.allocate_ui_with_layout(
+                label_w,
+                egui::Layout::left_to_right(egui::Align::Center),
+                |ui| {
+                    ui.label(
+                        RichText::new("透明度")
+                            .size(12.5)
+                            .color(tokens.palette.ink.muted),
+                    );
+                },
+            );
+            let before = self.user.glass_transparency;
+            glass::widgets::slider(
+                ui,
+                &tokens,
+                "glass_transparency",
+                &mut self.user.glass_transparency,
+            );
+            changed |= self.user.glass_transparency != before;
+        });
+        ui.horizontal(|ui| {
+            ui.allocate_ui_with_layout(
+                label_w,
+                egui::Layout::left_to_right(egui::Align::Center),
+                |ui| {
+                    ui.label(
+                        RichText::new("模糊度")
+                            .size(12.5)
+                            .color(tokens.palette.ink.muted),
+                    );
+                },
+            );
+            let before = self.user.glass_blur;
+            glass::widgets::slider(ui, &tokens, "glass_blur", &mut self.user.glass_blur);
+            blur_changed = self.user.glass_blur != before;
+        });
+        if changed || blur_changed {
+            self.persist_user();
+        }
+        if blur_changed {
+            // `refresh_glass` runs before the views, so make sure the next
+            // frame actually comes and re-captures with the new blur.
+            ui.ctx().request_repaint();
+        }
+        ui.add_space(tokens.space.xs);
+        ui.label(
+            RichText::new("透明度越低越实心；模糊度 0 保持桌面清晰。立即生效，并写入本地用户配置。")
                 .size(11.5)
                 .color(tokens.palette.ink.muted),
         );

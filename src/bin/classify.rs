@@ -7,9 +7,9 @@
 //! Invocation (all four arguments are required):
 //!
 //! ```text
-//! classify --domain law --data-root D:\Dev\Law\data \
-//!          --taxonomy D:\Dev\StudyData\classified\law\taxonomy.json \
-//!          --out D:\Dev\StudyData\classified\law
+//! classify --domain law --data-root D:\Dev\StudyApp\data\corpus\law \
+//!          --taxonomy D:\Dev\StudyApp\data\law\taxonomy.json \
+//!          --out D:\Dev\StudyApp\data\law
 //! ```
 //!
 //! The classification itself is deterministic: it uses only the corpus, the

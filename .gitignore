@@ -1,9 +1,17 @@
 # Build output
 /target
+# Release packaging (staged tree + zip), rebuilt by the packaging step
+/dist
 
 # Local user records. Personal data: favourites, notes, per-question stats,
 # wrong-question ids, the MCP context file. NEVER commit these.
 /state
+
+# Classifier input corpus (the `classify --data-root` sources). Dev-only: 89 MB,
+# not needed to run or build the app, and `classify` reproduces the shipped
+# `data/law` + `data/cpa` from it byte-for-byte. Keep the runtime data in
+# `data/law` + `data/cpa` tracked; only the upstream corpus is ignored.
+/data/corpus
 
 # Editor / OS noise
 *.swp

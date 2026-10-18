@@ -1,0 +1,202 @@
+{
+  "exam": "cpa",
+  "name": "注册会计师全国统一考试",
+  "edition": "2026",
+  "sources": [
+    "https://www.cicpa.org.cn/xxfb/tzgg/202603/t20260304_65840.html",
+    "https://www.cicpa.org.cn/xxfb/tzgg/202603/W020260304555799388364.pdf",
+    "https://www.cicpa.org.cn/xxfb/tzgg/202603/W020260304555799366109.pdf",
+    "https://czj.huaian.gov.cn/upload/2026-03/58df8a95-5766-45e9-b81e-698119e4c98c.pdf",
+    "https://www.cicpa.org.cn/xxfb/tzgg/202502/t20250228_65285.html",
+    "https://www.cicpa.org.cn/ztzl1/exam/exam_outline/",
+    "https://www.books.com.tw/products/CN16080797",
+    "https://www.hqwx.com/cpa-kaoshi/news/17706918468120.html",
+    "https://www.hqwx.com/cpa-kaoshi/news/17409718881986.html",
+    "https://www.hqwx.com/cpa-kaoshi/news/17409720799608.html",
+    "https://www.gaodun.com/cpa/1696408.html",
+    "https://www.gaodun.com/cpa/1675218.html",
+    "https://www.hqwx.com/cpa-kaoshi/news/17766553049187.html",
+    "https://www.hqwx.com/cpa-kaoshi/news/17760494519161.html",
+    "https://www.hqwx.com/cpa-kaoshi/news/17727028051484.html",
+    "https://github.com/CacinieP/CICPA-Learning",
+    "https://github.com/bitzhuwei/CPA.ProfessionalLevel",
+    "https://github.com/MachineryZ/CPA",
+    "https://github.com/iamWangJunjie/CPA-Learning"
+  ],
+  "stages": [
+    {
+      "id": "professional",
+      "name": "专业阶段",
+      "subjects": [
+        {
+          "id": "kuaiji",
+          "name": "会计",
+          "chapters": [
+            { "no": 1, "title": "总论", "sections": ["会计概述", "财务报告目标、会计基本假设和会计基础", "会计信息质量要求", "会计要素及其确认与计量", "财务报告", "可持续信息披露"], "confidence": "confirmed" },
+            { "no": 2, "title": "存货", "sections": ["存货的确认和初始计量", "发出存货的计量", "期末存货的计量", "存货的清查盘点", "存货的列示与披露"], "confidence": "confirmed" },
+            { "no": 3, "title": "固定资产", "sections": ["固定资产的确认和初始计量", "固定资产的后续计量", "固定资产的处置"], "confidence": "confirmed" },
+            { "no": 4, "title": "无形资产", "sections": ["无形资产的确认和初始计量", "内部研究开发支出的确认和计量", "无形资产的后续计量", "无形资产的处置", "无形资产的列示与披露"], "confidence": "confirmed" },
+            { "no": 5, "title": "投资性房地产", "sections": ["投资性房地产的特征与范围", "投资性房地产的确认和初始计量", "投资性房地产的后续计量", "投资性房地产的转换和处置"], "confidence": "confirmed" },
+            { "no": 6, "title": "长期股权投资与合营安排", "sections": ["基本概念", "长期股权投资的初始计量", "长期股权投资的后续计量", "长期股权投资核算方法的转换及处置", "合营安排"], "confidence": "confirmed" },
+            { "no": 7, "title": "资产减值", "sections": ["资产减值概述", "资产可收回金额的计量", "资产减值损失的确认与计量", "资产组的认定及减值处理", "商誉减值测试与处理"], "confidence": "confirmed" },
+            { "no": 8, "title": "负债", "sections": ["流动负债", "非流动负债"], "confidence": "confirmed" },
+            { "no": 9, "title": "职工薪酬", "sections": ["职工和职工薪酬的范围及分类", "短期薪酬的确认与计量", "离职后福利的确认与计量", "辞退福利的确认与计量", "其他长期职工福利的确认与计量"], "confidence": "confirmed" },
+            { "no": 10, "title": "股份支付", "sections": ["股份支付概述", "股份支付的确认和计量", "股份支付的应用举例"], "confidence": "confirmed" },
+            { "no": 11, "title": "借款费用", "sections": ["借款费用概述", "借款费用的确认", "借款费用的计量"], "confidence": "confirmed" },
+            { "no": 12, "title": "或有事项", "sections": ["或有事项概述", "或有事项的确认和计量", "或有事项会计处理的具体应用", "或有事项的列报"], "confidence": "confirmed" },
+            { "no": 13, "title": "金融工具", "sections": ["金融工具概述", "金融资产和金融负债的分类和重分类", "金融负债和权益工具的区分", "金融工具的计量", "金融资产转移", "套期会计", "金融工具的披露"], "confidence": "confirmed" },
+            { "no": 14, "title": "租赁", "sections": ["租赁概述", "承租人会计处理", "出租人会计处理", "特殊租赁业务的会计处理"], "confidence": "confirmed" },
+            { "no": 15, "title": "持有待售的非流动资产、处置组和终止经营", "sections": ["持有待售的非流动资产和处置组", "终止经营"], "confidence": "confirmed" },
+            { "no": 16, "title": "所有者权益", "sections": ["实收资本", "其他权益工具", "资本公积、其他综合收益及留存收益"], "confidence": "confirmed" },
+            { "no": 17, "title": "收入、费用和利润", "sections": ["收入", "费用", "利润"], "confidence": "confirmed" },
+            { "no": 18, "title": "政府补助", "sections": ["政府补助概述", "政府补助的会计处理", "政府补助的列报"], "confidence": "confirmed" },
+            { "no": 19, "title": "所得税", "sections": ["所得税会计的基本原理", "资产、负债的计税基础", "暂时性差异", "递延所得税资产及负债的确认和计量", "所得税费用的确认和计量", "所得税的列报"], "confidence": "confirmed" },
+            { "no": 20, "title": "非货币性资产交换", "sections": ["非货币性资产交换的概念", "非货币性资产交换的确认和计量", "非货币性资产交换的会计处理"], "confidence": "confirmed" },
+            { "no": 21, "title": "债务重组", "sections": ["债务重组的定义和方式", "债务重组的会计处理", "债务重组的相关披露"], "confidence": "confirmed" },
+            { "no": 22, "title": "外币折算", "sections": ["记账本位币的确定", "外币交易的会计处理", "外币财务报表折算"], "confidence": "confirmed" },
+            { "no": 23, "title": "财务报告", "sections": ["财务报表概述", "资产负债表", "利润表", "现金流量表", "所有者权益变动表", "财务报表附注披露", "中期财务报告"], "confidence": "confirmed" },
+            { "no": 24, "title": "会计政策、会计估计及其变更和差错更正", "sections": ["会计政策及其变更概述", "会计估计及其变更概述", "会计政策与会计估计变更的划分", "会计政策和会计估计变更的会计处理", "前期差错及其更正"], "confidence": "confirmed" },
+            { "no": 25, "title": "资产负债表日后事项", "sections": ["资产负债表日后事项概述", "调整事项的会计处理", "非调整事项的会计处理"], "confidence": "confirmed" },
+            { "no": 26, "title": "企业合并", "sections": ["企业合并概述", "企业合并的会计处理"], "confidence": "confirmed" },
+            { "no": 27, "title": "合并财务报表", "sections": ["合并范围的确定", "合并财务报表编制原则、前期准备事项及程序", "长期股权投资与所有者权益的合并处理(同一控制下企业合并)", "长期股权投资与所有者权益的合并处理(非同一控制下企业合并)", "内部商品交易的合并处理", "内部债权债务的合并处理", "内部固定资产、无形资产交易的合并处理"], "confidence": "unconfirmed" },
+            { "no": 28, "title": "每股收益", "sections": ["基本每股收益的计算", "稀释每股收益的计算", "每股收益的列报"], "confidence": "unconfirmed" },
+            { "no": 29, "title": "公允价值计量", "sections": ["公允价值计量要求", "公允价值计量的具体应用"], "confidence": "unconfirmed" },
+            { "no": 30, "title": "政府及民间非营利组织会计", "sections": ["政府会计概述", "政府单位特定业务的会计核算", "民间非营利组织特定业务的会计核算"], "confidence": "unconfirmed" }
+          ]
+        },
+        {
+          "id": "shenji",
+          "name": "审计",
+          "chapters": [
+            { "no": 1, "title": "审计概述", "sections": [], "confidence": "unconfirmed" },
+            { "no": 2, "title": "职业道德基本原则和概念框架", "sections": [], "confidence": "unconfirmed" },
+            { "no": 3, "title": "审计业务对独立性的要求", "sections": [], "confidence": "unconfirmed" },
+            { "no": 4, "title": "审计证据", "sections": [], "confidence": "unconfirmed" },
+            { "no": 5, "title": "审计抽样方法", "sections": [], "confidence": "unconfirmed" },
+            { "no": 6, "title": "审计计划", "sections": [], "confidence": "unconfirmed" },
+            { "no": 7, "title": "风险评估", "sections": [], "confidence": "unconfirmed" },
+            { "no": 8, "title": "风险应对", "sections": [], "confidence": "unconfirmed" },
+            { "no": 9, "title": "信息技术对审计的影响", "sections": [], "confidence": "unconfirmed" },
+            { "no": 10, "title": "销售与收款循环的审计", "sections": [], "confidence": "unconfirmed" },
+            { "no": 11, "title": "采购与付款循环的审计", "sections": [], "confidence": "unconfirmed" },
+            { "no": 12, "title": "生产与存货循环的审计", "sections": [], "confidence": "unconfirmed" },
+            { "no": 13, "title": "货币资金的审计", "sections": [], "confidence": "unconfirmed" },
+            { "no": 14, "title": "对舞弊和法律法规的考虑", "sections": [], "confidence": "unconfirmed" },
+            { "no": 15, "title": "审计沟通", "sections": [], "confidence": "unconfirmed" },
+            { "no": 16, "title": "集团财务报表审计的特殊考虑", "sections": [], "confidence": "unconfirmed" },
+            { "no": 17, "title": "会计估计和相关披露的审计", "sections": [], "confidence": "unconfirmed" },
+            { "no": 18, "title": "关联方的审计", "sections": [], "confidence": "unconfirmed" },
+            { "no": 19, "title": "完成审计工作", "sections": [], "confidence": "unconfirmed" },
+            { "no": 20, "title": "审计报告", "sections": [], "confidence": "unconfirmed" },
+            { "no": 21, "title": "审计工作底稿", "sections": [], "confidence": "unconfirmed" },
+            { "no": 22, "title": "企业内部控制审计", "sections": [], "confidence": "unconfirmed" },
+            { "no": 23, "title": "企业可持续信息鉴证", "sections": [], "confidence": "unconfirmed" },
+            { "no": 24, "title": "质量管理", "sections": [], "confidence": "unconfirmed" }
+          ]
+        },
+        {
+          "id": "caiguan",
+          "name": "财务成本管理",
+          "chapters": [
+            { "no": 1, "title": "财务管理概述", "sections": [], "confidence": "confirmed" },
+            { "no": 2, "title": "财务报表分析和财务预测", "sections": [], "confidence": "confirmed" },
+            { "no": 3, "title": "价值评估基础", "sections": [], "confidence": "confirmed" },
+            { "no": 4, "title": "资本成本", "sections": [], "confidence": "confirmed" },
+            { "no": 5, "title": "投资项目资本预算", "sections": ["投资项目的类型和评价程序", "投资项目的评价方法"], "confidence": "confirmed" },
+            { "no": 6, "title": "期权价值评估", "sections": [], "confidence": "confirmed" },
+            { "no": 7, "title": "企业价值评估", "sections": [], "confidence": "confirmed" },
+            { "no": 8, "title": "资本结构", "sections": [], "confidence": "confirmed" },
+            { "no": 9, "title": "长期筹资", "sections": [], "confidence": "confirmed" },
+            { "no": 10, "title": "股利分配、股票分割与股票回购", "sections": [], "confidence": "confirmed" },
+            { "no": 11, "title": "营运资本管理", "sections": [], "confidence": "confirmed" },
+            { "no": 12, "title": "成本管理会计的基础概念和基本理论", "sections": [], "confidence": "unconfirmed" },
+            { "no": 13, "title": "产品成本计算", "sections": [], "confidence": "unconfirmed" },
+            { "no": 14, "title": "标准成本法", "sections": [], "confidence": "unconfirmed" },
+            { "no": 15, "title": "作业成本法", "sections": [], "confidence": "unconfirmed" },
+            { "no": 16, "title": "本量利分析", "sections": [], "confidence": "unconfirmed" },
+            { "no": 17, "title": "短期经营决策", "sections": [], "confidence": "unconfirmed" },
+            { "no": 18, "title": "全面预算", "sections": [], "confidence": "unconfirmed" },
+            { "no": 19, "title": "责任会计", "sections": [], "confidence": "unconfirmed" },
+            { "no": 20, "title": "业绩评价", "sections": [], "confidence": "unconfirmed" }
+          ]
+        },
+        {
+          "id": "shuifa",
+          "name": "税法",
+          "chapters": [
+            { "no": 1, "title": "税法总论", "sections": [], "confidence": "confirmed" },
+            { "no": 2, "title": "增值税法", "sections": ["征税范围与纳税义务人", "税率与征收率", "一般计税方法应纳税额的计算", "简易计税方法", "进口环节增值税的征收", "出口和跨境业务增值税的退(免)税和征税", "特定应税行为的增值税计征方法", "税收优惠", "征收管理", "增值税发票的使用及管理"], "confidence": "unconfirmed" },
+            { "no": 3, "title": "消费税法", "sections": [], "confidence": "confirmed" },
+            { "no": 4, "title": "企业所得税法", "sections": [], "confidence": "confirmed" },
+            { "no": 5, "title": "个人所得税法", "sections": [], "confidence": "confirmed" },
+            { "no": 6, "title": "城市维护建设税法和烟叶税法", "sections": [], "confidence": "confirmed" },
+            { "no": 7, "title": "关税法和船舶吨税法", "sections": [], "confidence": "confirmed" },
+            { "no": 8, "title": "资源税法和环境保护税法", "sections": [], "confidence": "confirmed" },
+            { "no": 9, "title": "城镇土地使用税法和耕地占用税法", "sections": [], "confidence": "confirmed" },
+            { "no": 10, "title": "房产税法、契税法和土地增值税法", "sections": [], "confidence": "confirmed" },
+            { "no": 11, "title": "车辆购置税法、车船税法和印花税法", "sections": [], "confidence": "confirmed" },
+            { "no": 12, "title": "国际税收税务管理实务", "sections": [], "confidence": "confirmed" },
+            { "no": 13, "title": "税收征收管理法", "sections": [], "confidence": "confirmed" },
+            { "no": 14, "title": "税务行政法制", "sections": [], "confidence": "confirmed" }
+          ]
+        },
+        {
+          "id": "jingjifa",
+          "name": "经济法",
+          "chapters": [
+            { "no": 1, "title": "法律基本原理", "sections": ["法律基本概念", "法律关系", "习近平法治思想引领全面依法治国基本方略", "市场经济的法律调整与经济法律制度"], "confidence": "confirmed" },
+            { "no": 2, "title": "基本民事法律制度", "sections": ["民事法律行为制度", "代理制度", "诉讼时效制度"], "confidence": "confirmed" },
+            { "no": 3, "title": "物权法律制度", "sections": ["物权法律制度概述", "物权变动", "所有权", "用益物权", "担保物权"], "confidence": "confirmed" },
+            { "no": 4, "title": "合同法律制度", "sections": ["合同的基本理论", "订立", "效力", "履行", "保全", "担保", "变更和转让", "权利义务终止", "违约责任", "几类主要的典型合同"], "confidence": "confirmed" },
+            { "no": 5, "title": "合伙企业法律制度", "sections": ["概述", "普通合伙企业", "有限合伙企业", "解散和清算"], "confidence": "confirmed" },
+            { "no": 6, "title": "公司法律制度", "sections": ["公司概述", "公司基本法律制度", "股份有限公司", "有限责任公司", "国家出资公司组织机构的特别规定", "公司的财务、会计", "公司重大变更", "公司解散和清算"], "confidence": "confirmed" },
+            { "no": 7, "title": "证券法律制度", "sections": ["概述", "股票的发行", "公司债券的发行与交易", "股票的公开交易", "上市公司收购和重组", "证券欺诈的法律责任"], "confidence": "confirmed" },
+            { "no": 8, "title": "企业破产法律制度", "sections": ["概述", "破产申请与受理", "管理人制度", "债务人财产", "破产债权", "债权人会议", "重整程序", "和解制度", "破产清算程序", "关联企业合并破产"], "confidence": "confirmed" },
+            { "no": 9, "title": "票据与支付结算法律制度", "sections": ["支付结算概述", "票据法律制度", "非票据结算方式"], "confidence": "confirmed" },
+            { "no": 10, "title": "企业国有资产法律制度", "sections": ["概述", "产权登记制度", "评估管理制度", "交易管理制度"], "confidence": "confirmed" },
+            { "no": 11, "title": "反垄断法律制度", "sections": ["概述", "垄断协议规制", "滥用市场支配地位规制", "经营者集中反垄断审查", "滥用行政权力排除、限制竞争规制"], "confidence": "confirmed" },
+            { "no": 12, "title": "涉外经济法律制度", "sections": ["涉外投资法律制度", "对外贸易法律制度", "外汇管理法律制度"], "confidence": "confirmed" }
+          ]
+        },
+        {
+          "id": "zhanlue",
+          "name": "公司战略与风险管理",
+          "chapters": [
+            { "no": 1, "title": "战略与战略管理概述", "sections": ["公司战略的基本概念", "公司战略管理", "创新与创新战略管理"], "confidence": "confirmed" },
+            { "no": 2, "title": "战略分析", "sections": ["企业外部环境分析", "企业内部环境分析", "企业内外部环境综合分析", "市场环境分析"], "confidence": "confirmed" },
+            { "no": 3, "title": "战略选择", "sections": ["总体战略", "业务单位战略", "职能战略", "国际化经营战略"], "confidence": "confirmed" },
+            { "no": 4, "title": "战略实施", "sections": ["公司战略与组织结构", "公司战略与企业文化", "战略控制", "公司战略与数智化转型", "公司战略与可持续发展管理"], "confidence": "confirmed" },
+            { "no": 5, "title": "公司治理", "sections": ["公司治理概述", "公司治理的主要问题", "公司内部治理结构和外部治理机制", "管理实践发展与公司治理"], "confidence": "confirmed" },
+            { "no": 6, "title": "风险与风险管理概述", "sections": ["风险与风险管理的概念", "风险管理的目标与原则"], "confidence": "confirmed" },
+            { "no": 7, "title": "风险管理的流程、体系与方法", "sections": ["风险管理的流程", "风险管理体系", "风险管理的方法", "企业内部控制体系建设与监督"], "confidence": "confirmed" },
+            { "no": 8, "title": "企业面对的主要风险与应对", "sections": ["企业面对的主要风险", "风险应对策略"], "confidence": "confirmed" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comprehensive",
+      "name": "综合阶段",
+      "papers": [
+        { "id": "paper1", "name": "试卷一", "subjects": ["会计", "审计", "税法"], "note": "以鉴证业务为重点；含5分英文作答附加分" },
+        { "id": "paper2", "name": "试卷二", "subjects": ["财务成本管理", "公司战略与风险管理", "经济法"], "note": "以管理咨询和业务分析为重点" }
+      ]
+    }
+  ],
+  "editionNotes": [
+    "审计 2025年23章 → 2026年24章",
+    "财务成本管理 2025年19章 → 2026年20章",
+    "会计 2026年30章，与2025年章数不变",
+    "税法 2026年14章，与2025年章数不变",
+    "经济法 2026年12章，与2025年章数不变",
+    "公司战略与风险管理 2026年8章，与2025年章数不变",
+    "综合阶段无独立教材，仅《综合阶段考试大纲》（职业能力综合测试）",
+    "审计2026新增整章“企业可持续信息鉴证”（第23章），职业道德/独立性前置，“会计师事务所业务质量控制”改称“质量管理”（第24章），章序重排",
+    "财管2026新增第12章“成本管理会计的基础概念和基本理论”，原第12–19章顺延为第13–20章",
+    "会计2026内容微调（第1章增“人工智能在会计审计领域的应用”等），章节框架不变",
+    "税法2026第2章增值税法按新《增值税法》（2026-01-01施行）全面重写",
+    "经济法2026适配2025年修订《公司法》，第8章增“上市公司的破产重整”",
+    "战略2026新增“市场环境分析”“公司战略与可持续发展管理”，并由“战略创新管理”改名“创新与创新战略管理”",
+    "版本结论：最新为2026年版教材（2026-02/03出版，2026年8月已用该版考试）；2027版预计2027年2–3月出版"
+  ]
+}

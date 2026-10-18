@@ -197,12 +197,14 @@ impl App {
                                         logic::Draw::N10.label(),
                                         logic::Draw::N20.label(),
                                         logic::Draw::N50.label(),
+                                        logic::Draw::Custom.label(),
                                     ];
                                     let sel = match self.set_draw {
                                         logic::Draw::All => 0,
                                         logic::Draw::N10 => 1,
                                         logic::Draw::N20 => 2,
                                         logic::Draw::N50 => 3,
+                                        logic::Draw::Custom => 4,
                                     };
                                     if let Some(i) = glass::widgets::segmented(
                                         ui, &tokens, "set_draw", &sizes, sel,
@@ -211,8 +213,18 @@ impl App {
                                             1 => logic::Draw::N10,
                                             2 => logic::Draw::N20,
                                             3 => logic::Draw::N50,
+                                            4 => logic::Draw::Custom,
                                             _ => logic::Draw::All,
                                         };
+                                    }
+                                    if self.set_draw == logic::Draw::Custom {
+                                        ui.add_space(tokens.space.xs);
+                                        glass::widgets::number_input(
+                                            ui,
+                                            &tokens,
+                                            &mut self.set_draw_custom,
+                                            1..=logic::MAX_CUSTOM_DRAW,
+                                        );
                                     }
                                 },
                             );
@@ -431,11 +443,18 @@ impl App {
             let s = self.session.as_ref().unwrap();
             (s.pos + 1, s.order.len(), s.label.clone())
         };
-        let submitted = self
+        // `submitted` = graded with 提交答案; `answer_shown` = revealed with
+        // 显示答案 (nothing recorded); `self_assessed` = a memory / self-test
+        // question was rated 记住了 / 没记住. `revealed` is the shared "the
+        // answer is visible" state that drives the same rendering for a
+        // submitted and a merely revealed choice question.
+        let (submitted, answer_shown, self_assessed) = self
             .session
             .as_ref()
-            .map(|s| s.submitted)
-            .unwrap_or(false);
+            .map(|s| (s.submitted, s.shown, s.self_assessed))
+            .unwrap_or((false, false, false));
+        let revealed = submitted || answer_shown;
+        let can_next = logic::can_advance(&q, submitted, answer_shown, self_assessed);
         let wrong_now = self.wrong_ids.contains(&qid);
 
         let q_fade = motion::change_progress(
@@ -445,7 +464,7 @@ impl App {
             motion::duration::BASE,
             motion::curve::ENTER,
         );
-        let reveal = if submitted {
+        let reveal = if revealed {
             motion::change_progress(
                 ui.ctx(),
                 egui::Id::new("session_reveal"),
@@ -512,6 +531,7 @@ impl App {
         painter.rect_filled(done, egui::CornerRadius::same(2), tokens.palette.accent.base);
 
         let mut do_submit = false;
+        let mut do_reveal = false;
         let mut do_assess: Option<bool> = None;
         let mut do_next = false;
         let mut do_prev = false;
@@ -633,7 +653,9 @@ impl App {
             );
             ui.add_space(tokens.space.lg);
 
-            let interactive = q.is_choice() && !submitted;
+            // A revealed answer (submitted, or 显示答案) is no longer
+            // interactive: grading after seeing the answer is meaningless.
+            let interactive = q.is_choice() && !revealed;
             if interactive && shake.abs() > 0.01 {
                 let rect = glass::widgets::shifted_block(
                     ui.next_widget_position(),
@@ -650,7 +672,7 @@ impl App {
             }
 
             if q.is_choice() {
-                if submitted {
+                if revealed {
                     ui.scope(|ui| {
                         ui.set_opacity(reveal);
                         self.render_explanation(ui, &q);
@@ -737,7 +759,10 @@ impl App {
                         "next_q",
                         RichText::new("下一题 ▶").size(14.0),
                         egui::vec2(96.0, 34.0),
-                        true,
+                        // 下一题 waits until the current question is judged
+                        // (提交答案 / 显示答案 / 自评). `←` and `Esc` stay
+                        // available, so the gate is never a trap.
+                        can_next,
                     )
                     .clicked()
                     {
@@ -746,9 +771,9 @@ impl App {
                     ui.add_space(tokens.space.sm);
                     ui.label(
                         RichText::new(if q.is_choice() {
-                            "◀ ▶ 翻题 · Enter 提交"
+                            "◀ 上一题 · Enter 提交 · 判定或显示答案后下一题"
                         } else {
-                            "◀ ▶ 翻题"
+                            "◀ 上一题 · 自评后才能下一题"
                         })
                         .size(11.5)
                         .color(tokens.palette.ink.muted),
@@ -776,21 +801,24 @@ impl App {
                                     );
                                 } else {
                                     ui.label(
-                                        RichText::new(format!(
-                                            "回答错误 · 正确答案：{}",
-                                            q.answer.join("、")
-                                        ))
-                                        .size(13.5)
-                                        .strong()
-                                        .color(
-                                            tokens
-                                                .palette
-                                                .accent
-                                                .danger
-                                                .gamma_multiply(reveal),
-                                        ),
+                                        RichText::new(logic::wrong_verdict(&q))
+                                            .size(13.5)
+                                            .strong()
+                                            .color(
+                                                tokens
+                                                    .palette
+                                                    .accent
+                                                    .danger
+                                                    .gamma_multiply(reveal),
+                                            ),
                                     );
                                 }
+                            } else if answer_shown {
+                                ui.label(
+                                    RichText::new("已显示答案 · 未作答")
+                                        .size(13.0)
+                                        .color(tokens.palette.ink.muted),
+                                );
                             } else {
                                 let can = self
                                     .session
@@ -803,6 +831,32 @@ impl App {
                                     do_submit = true;
                                 }
                             }
+
+                            // 显示答案 sits outside the branch above on purpose: it
+                            // stays available whether or not the question has been
+                            // submitted, so the answer can be looked at at any point.
+                            // It reveals the correct options and the explanation
+                            // without grading; once the answer is already on screen it
+                            // only re-arms the reveal animation. It is disabled — with
+                            // a hover saying why — only when the data has neither an
+                            // answer nor an explanation, so no empty reveal can open.
+                            ui.add_space(tokens.space.sm);
+                            let revealable = logic::can_reveal(&q);
+                            let reveal_btn = glass::widgets::button(
+                                ui,
+                                &tokens,
+                                "reveal_answer",
+                                RichText::new("显示答案").size(14.5),
+                                egui::vec2(112.0, 38.0),
+                                revealable,
+                            );
+                            if revealable {
+                                if reveal_btn.clicked() {
+                                    do_reveal = true;
+                                }
+                            } else {
+                                reveal_btn.on_disabled_hover_text("这道题在数据里没有答案");
+                            }
                         }
                     });
                 },
@@ -811,6 +865,9 @@ impl App {
 
         if do_submit {
             self.submit(now);
+        }
+        if do_reveal {
+            self.reveal_answer();
         }
         if let Some(remembered) = do_assess {
             self.self_assess(remembered, now);
@@ -826,7 +883,14 @@ impl App {
     fn render_options(&mut self, ui: &mut egui::Ui, q: &Question, reveal: f32) {
         let tokens = self.tokens;
         let is_multi = q.is_multi();
-        let submitted = self.session.as_ref().map(|s| s.submitted).unwrap_or(false);
+        // A revealed answer — submitted, or 显示答案 without grading — uses the
+        // same look: correct options highlighted, the picked ones marked, and
+        // the rows no longer clickable.
+        let revealed = self
+            .session
+            .as_ref()
+            .map(|s| s.submitted || s.shown)
+            .unwrap_or(false);
         let correct: Vec<String> = q
             .answer
             .iter()
@@ -851,7 +915,7 @@ impl App {
                 .unwrap_or(false);
             let is_correct = correct.iter().any(|c| c.eq_ignore_ascii_case(&o.label));
 
-            let text_color = if submitted {
+            let text_color = if revealed {
                 let target = if is_correct {
                     tokens.palette.accent.success
                 } else if selected {
@@ -865,7 +929,7 @@ impl App {
             };
             let wrap_w = (ui.available_width()
                 - 52.0
-                - if submitted { 104.0 } else { 40.0 })
+                - if revealed { 104.0 } else { 40.0 })
             .max(120.0);
             let galley = ui.painter().layout(
                 o.text.clone(),
@@ -874,14 +938,14 @@ impl App {
                 wrap_w,
             );
             let row_h = (galley.size().y + 26.0).max(50.0);
-            let sense = if submitted {
+            let sense = if revealed {
                 egui::Sense::hover()
             } else {
                 egui::Sense::CLICK
             };
             let (rect, resp) =
                 ui.allocate_exact_size(egui::vec2(ui.available_width(), row_h), sense);
-            let hovered = !submitted && resp.hovered();
+            let hovered = !revealed && resp.hovered();
 
             let hover = motion::ease_bool(
                 ui.ctx(),
@@ -905,7 +969,7 @@ impl App {
             };
             let pre_border = mix(tokens.palette.ink.muted, tokens.palette.accent.base, sel);
 
-            let fill = if submitted {
+            let fill = if revealed {
                 let target = if is_correct {
                     alpha(tokens.palette.accent.success, 30)
                 } else if selected {
@@ -917,7 +981,7 @@ impl App {
             } else {
                 pre_fill
             };
-            let border = if submitted {
+            let border = if revealed {
                 let target = if is_correct {
                     tokens.palette.accent.success
                 } else if selected {
@@ -981,7 +1045,7 @@ impl App {
                     text_color,
                 );
 
-                if submitted {
+                if revealed {
                     let tag = if is_correct {
                         Some(("正确答案", tokens.palette.accent.success))
                     } else if selected {
@@ -1007,7 +1071,7 @@ impl App {
                 }
             }
 
-            if !submitted && resp.clicked() {
+            if !revealed && resp.clicked() {
                 let mut changed = false;
                 if let Some(s) = self.session.as_mut() {
                     if is_multi {
@@ -1026,7 +1090,7 @@ impl App {
                     self.dirty = true;
                 }
             }
-            if !submitted {
+            if !revealed {
                 resp.on_hover_cursor(egui::CursorIcon::PointingHand);
             }
             ui.add_space(6.0);
@@ -1046,7 +1110,7 @@ impl App {
             ui.add_space(tokens.space.sm);
             if glass::widgets::primary_button(ui, &tokens, "显示答案", true).clicked() {
                 if let Some(s) = self.session.as_mut() {
-                    s.shown = true;
+                    s.reveal();
                 }
                 self.dirty = true;
             }
@@ -1077,6 +1141,11 @@ impl App {
     }
 
     fn render_explanation(&mut self, ui: &mut egui::Ui, q: &Question) {
+        // Nothing to say → draw nothing: an "empty explanation box" is noise,
+        // so the whole section (rule + header + placeholder) is skipped.
+        let Some(exp) = q.explanation.as_ref().filter(|s| !s.trim().is_empty()) else {
+            return;
+        };
         let tokens = self.tokens;
         ui.add_space(tokens.space.md);
         let (rule, _) = ui.allocate_exact_size(
@@ -1087,15 +1156,7 @@ impl App {
             .rect_filled(rule, 0.0, tokens.palette.glass.divider);
         ui.add_space(tokens.space.sm);
         ui.label(RichText::new("解析").size(15.0).strong());
-        match q.explanation.as_ref().filter(|s| !s.trim().is_empty()) {
-            Some(exp) => {
-                CommonMarkViewer::new().show(ui, &mut self.md_cache, exp);
-            }
-            None => {
-                ui.label(RichText::new("（无解析）").color(tokens.palette.ink.muted));
-            }
-        }
-
+        CommonMarkViewer::new().show(ui, &mut self.md_cache, exp);
     }
 }
 

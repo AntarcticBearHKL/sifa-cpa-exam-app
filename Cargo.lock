@@ -791,6 +791,7 @@ dependencies = [
  "egui-wgpu",
  "egui-winit",
  "egui_glow",
+ "glow",
  "glutin",
  "glutin-winit",
  "image",
@@ -2872,7 +2873,7 @@ dependencies = [
 
 [[package]]
 name = "sfzklearning"
-version = "0.0.1"
+version = "0.3.0"
 dependencies = [
  "eframe",
  "egui",

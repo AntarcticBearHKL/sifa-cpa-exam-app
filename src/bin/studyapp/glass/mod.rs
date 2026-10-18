@@ -4,23 +4,44 @@
 //! hairlines. Regions are flush — no outer gaps, no rounded cards, no shadows —
 //! so nothing appears to float on top of a background.
 
+pub mod blur;
 pub mod paint;
 pub mod widgets;
 
-use egui::{Context, Frame, LayerId, Rect, Ui};
+use egui::{Context, Frame, LayerId, Rect, TextureHandle, Ui};
 
 use crate::theme::Tokens;
 
-/// Call once per frame, before any panel is drawn. `solid` selects the painted
-/// gradient backdrop; when the OS supplies a real acrylic backdrop we paint only
-/// a flat scrim so the desktop stays visible through the window.
-pub fn backdrop(ctx: &Context, tokens: &Tokens, phase: f32, solid: bool) {
+/// The blurred desktop texture plus the UV rect of the window's content area
+/// inside it. Both are prepared by `App`, which owns the capture and the
+/// window's screen rect.
+pub struct DesktopGlass<'a> {
+    pub texture: &'a TextureHandle,
+    /// Where the content rect falls inside the capture, in UV coordinates.
+    /// Derived from the window's screen position, so the blurred desktop stays
+    /// registered with the real desktop while the window moves.
+    pub uv: Rect,
+}
+
+/// Call once per frame, before any panel is drawn. With `desktop` the backdrop
+/// is the captured, Gaussian-blurred desktop under a scrim whose alpha is the
+/// 透明度 setting; without it (capture unavailable) the painted gradient
+/// fallback is used instead, so the window is never unreadable.
+pub fn backdrop(
+    ctx: &Context,
+    tokens: &Tokens,
+    phase: f32,
+    desktop: Option<DesktopGlass<'_>>,
+    transparency: u8,
+) {
     let painter = ctx.layer_painter(LayerId::background());
     let rect = ctx.content_rect();
-    if solid {
-        paint::backdrop(&painter, rect, tokens, phase);
-    } else {
-        paint::scrim(&painter, rect, tokens);
+    match desktop {
+        Some(d) => {
+            paint::desktop(&painter, rect, d.texture, d.uv);
+            paint::scrim(&painter, rect, tokens, paint::scrim_alpha(transparency));
+        }
+        None => paint::backdrop(&painter, rect, tokens, phase),
     }
 }
 

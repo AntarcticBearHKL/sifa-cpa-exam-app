@@ -10,8 +10,8 @@
 # sfzklearning — 法考 · 注会 学习助手（原生 Windows 桌面 + MCP）
 
 一个**原生 Windows 桌面应用**（Rust + eframe/egui，**无 web view / 无 HTML / 无 Tauri / 无 Electron**），
-用来**练习** `D:\Dev\StudyData\classified\{law,cpa}`（整理后的法考 / 注会 **CMF** 数据；
-原始语料归档在 `D:\Dev\StudyData\repo\`）；
+用来**练习** `D:\Dev\StudyApp\data\{law,cpa}`（整理后的法考 / 注会 **CMF** 数据，随二进制一起分发；
+原始语料在 `data\corpus\{law,cpa}`，不参与分发）；
 外加一个极小的 **stdio MCP 服务**（`sfzklearning-mcp`），只暴露一个工具
 `get_current_study_context`，把用户**当前正在做的题目及其关联知识点**交给 Agent 讲解。
 
@@ -30,17 +30,17 @@
 | `src\lib.rs` | 数据类型 / 加载器 / current.json 契约 / `UserStore` |
 | `src\bin\studyapp\main.rs` | GUI 入口（约 18 行：`mod` 声明 + `fn main`） |
 | `src\bin\studyapp\app.rs` | `App` 状态 / 逻辑 / 持久化 / 快捷键 + `impl eframe::App` |
-| `src\bin\studyapp\app\` | 视图子模块：`shell.rs`（顶栏 / 左栏 / 页面标题 / 工作区）、`launcher.rs`（启动页）、`practice.rs`（练习设置 + 会话） |
+| `src\bin\studyapp\app\` | 视图子模块：`shell.rs`（顶栏 / 左栏 / 页面标题 / 工作区）、`practice.rs`（练习设置 + 会话）、`settings.rs`（设置弹窗） |
 | `src\bin\studyapp\logic.rs` | 纯逻辑（无 UI）：筛选 / 洗牌 / 错题抽样 / 章节分组 / 搜索 / 判定 |
-| `src\bin\studyapp\win.rs` | 无边框窗口：DWM 毛玻璃 / 圆角 / 深色、边缘缩放、任意处拖动、`--probe` |
+| `src\bin\studyapp\win.rs` | 无边框窗口：圆角 / 深色、边缘缩放、任意处拖动、`--probe`（不再向系统申请模糊） |
+| `src\bin\studyapp\diag.rs` | 诊断落盘（GUI 子系统无控制台，警告与 `--probe` 结果写 `<state_dir>\log.txt`） |
 | `src\bin\studyapp\theme\` | 设计令牌（`tokens.rs`，深/浅双模式）+ `Style`/`Visuals` 覆写 |
 | `src\bin\studyapp\anim\` | 缓动曲线 + `Animator`（答错抖动 / 重绘调度） |
-| `src\bin\studyapp\glass\` | 磨砂玻璃绘制原语（`paint.rs`）+ 自定义控件（`widgets.rs`） |
+| `src\bin\studyapp\glass\` | 磨砂玻璃：`blur.rs`（桌面截图 + 高斯模糊）+ `paint.rs`（绘制原语）+ `widgets.rs`（自定义控件） |
 | `src\bin\sfzklearning-mcp.rs` | MCP 服务 |
 | `src\bin\classify.rs` | 数据管线二进制（分层归类 + 单测，见 §10） |
-| `D:\Dev\StudyData\repo\` | 三方库原始数据归档（**只读来源**，逐字节拷贝） |
-| `D:\Dev\StudyData\classified\` | 整理后的数据（**app 现在读这里**）：`taxonomy.md/json` · `summary.json` · `subjects\` · `classification-report.md` |
-| `backup-preui\` | UI 改版前的原始源码备份（无版本控制时的回退点） |
+| `data\` | 整理后的数据（**app 读这里，随二进制分发**）：`taxonomy.md/json` · `summary.json` · `subjects\` · `classification-report.md` |
+| `data\corpus\` | 分类器的输入语料（**只读**），`classify --data-root` 的输入，**不参与分发**（已 gitignore） |
 
 ## 2. 依赖（版本互锁）
 
@@ -50,35 +50,35 @@ egui = "0.36.2"
 egui_commonmark = "0.25.0"   # 基于 egui ^0.36.0，支持 GFM 表格
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
-raw-window-handle = "0.6"    # 取到 Win32 HWND，供 DWM 给无边框窗口申请真毛玻璃
+raw-window-handle = "0.6"    # 取到 Win32 HWND，供 DWM 圆角 / 深色属性与屏幕截图使用
 ```
 
-## 3. 数据根目录（app 默认读整理后的数据；语料只读）
+## 3. 数据根目录（随二进制分发；语料只读）
 
-app 现在**不直接读语料**，而是读 `D:\Dev\StudyData\classified\` 下由 `classify` 归类好的数据。
+app **不直接读语料**，而是读 `data\` 下由 `classify` 归类好的数据。`data\` 与二进制一起走 ——
+clone 仓库或解压 release zip 就能跑，不需要任何绝对路径。
 
-默认（`Domain::default_root()`）：
+默认（`Domain::default_root()`）按顺序找：
 
-* 法考：`D:\Dev\StudyData\classified\law`（env `CMF_LAW_DATA`，CLI `--law-data <path>`）
-* 注会：`D:\Dev\StudyData\classified\cpa`（env `CMF_CPA_DATA`，CLI `--cpa-data <path>`）
+1. `<exe>\data\<domain>` —— 便携布局（release zip 把 exe 和 `data\` 并排放）
+2. `<exe>\..\..\data\<domain>` —— Cargo 布局（`target\<profile>` → 项目根）
 
-优先级：**CLI > env > 默认**。原始语料仍然可达 —— 用 `--law-data` / `--cpa-data` / `CMF_LAW_DATA` / `CMF_CPA_DATA` 指回 `D:\Dev\Law\data` / `D:\Dev\CPA\data` 即可。
+* 法考：`data\law`（env `CMF_LAW_DATA`，CLI `--law-data <path>`）
+* 注会：`data\cpa`（env `CMF_CPA_DATA`，CLI `--cpa-data <path>`）
 
-`D:\Dev\StudyData\`：
+优先级：**CLI > env > 默认**。分类器输入语料用 `--law-data` / `--cpa-data` / `CMF_LAW_DATA` / `CMF_CPA_DATA` 指向 `data\corpus\{law,cpa}`。
+
+`data\`：
 
 ```
-repo\                    # 三方库原始数据归档（只读来源，逐字节拷贝）
-  law\  (44 files, 198 MB)
-  cpa\  (39 files,  91 MB)
-classified\              # 整理后的数据 —— app 现在读这里
-  law\
-    taxonomy.md / taxonomy.json     # 官方考点分类树（司法部《2026年国家统一法律职业资格考试大纲》，18 科目 / 205 章）
-    summary.json                    # 按实际文件重算的统计
-    subjects\<subjectId>.json       # 每科题目，chapter 已归位
-    classification-report.md        # 覆盖率报告
-  cpa\
-    taxonomy.md / taxonomy.json     # 中注协 2026 教材目录（7 科目 / 108 章）
-    summary.json / subjects\ / classification-report.md
+law\
+  taxonomy.md / taxonomy.json     # 官方考点分类树（司法部《2026年国家统一法律职业资格考试大纲》，18 科目 / 205 章）
+  summary.json                    # 按实际文件重算的统计
+  subjects\<subjectId>.json       # 每科题目，chapter 已归位
+  classification-report.md        # 覆盖率报告
+cpa\
+  taxonomy.md / taxonomy.json     # 中注协 2026 教材目录（7 科目 / 108 章）
+  summary.json / subjects\ / classification-report.md
 ```
 
 读取的文件（全部只读）：
@@ -87,8 +87,8 @@ classified\              # 整理后的数据 —— app 现在读这里
 * `<root>\subjects\index.json` — 当 `summary.json` 缺失时的回退
 * `<root>\subjects\<subjectId>.json` — 该科目的知识点与题目（按需惰性加载）
 
-> `D:\Dev\Law\` 与 `D:\Dev\CPA\` 下的语料**依旧只读、未被改动** —— 它们是原始摄取来源，被逐字节归档进 `repo\`，
-> 再由 `classify` 生成 `classified\`。app 与 `classify` 都不会写回它们。
+> `data\corpus\{law,cpa}\subjects\` 是**分类器的输入**（只读），**不随 app 分发**（gitignore）。
+> app 与 `classify` 都不会写回它；`classify` 只写 `--out` 指向的 `data\{law,cpa}\`。
 
 ## 4. 构建
 
@@ -109,7 +109,7 @@ cmd /c '"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Auxiliary\Buil
 ```powershell
 .\target\release\sfzklearning.exe                 # GUI
 # 自定义数据根目录 / 状态目录：
-.\target\release\sfzklearning.exe --law-data D:\Dev\Law\data --cpa-data D:\Dev\CPA\data --state-dir D:\Dev\StudyApp\state
+.\target\release\sfzklearning.exe --law-data D:\Dev\StudyApp\data\corpus\law --cpa-data D:\Dev\StudyApp\data\corpus\cpa --state-dir D:\Dev\StudyApp\state
 ```
 
 环境变量：
@@ -119,11 +119,11 @@ cmd /c '"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Auxiliary\Buil
 * `CMF_START_DOMAIN` — 启动时默认领域：`law`（默认，若有数据）或 `cpa`
 * `CMF_START_SUBJECT` — 启动时默认科目 id（如 `kuaiji`）；缺失或找不到时取该领域的第一个科目
 
-状态目录解析顺序：`--state-dir` > `CMF_STATE_DIR` > `<exe>/../../state`（Cargo target 布局）> `D:\Dev\StudyApp\state`。
+状态目录解析顺序：`--state-dir` > `CMF_STATE_DIR` > `<exe>/state`（便携布局）> `<exe>/../../state`（Cargo target 布局）。
 两个二进制使用同一套解析逻辑，因此 MCP 一定读得到 GUI 写的文件。
 
-截图（当前架构，深/浅双模式）：`screenshots\dark-practice.png` 与 `screenshots\light-practice.png`
-（练习设置 —— 左栏「怎么练」+ 右栏章节多选）、`dark-launcher.png`（模式选择）。
+截图（深/浅双模式）：`screenshots\dark-practice.png` 与 `screenshots\light-practice.png`
+（练习设置 —— 左栏「怎么练」+ 右栏章节多选）。`dark-launcher.png` 是**已删除的启动页**的旧截图，仅作历史记录。
 
 MCP 服务由 MCP 客户端（如 opencode / Claude Desktop）拉起，见 `mcp.json`：
 
@@ -133,26 +133,27 @@ MCP 服务由 MCP 客户端（如 opencode / Claude Desktop）拉起，见 `mcp.
 
 ## 6. GUI 使用
 
-**信息架构**：`启动模式选择 → 工作区（左栏模式导航 + 主区）`。现在**只有练习**：没有 学习 / 做题 的标签切换，
-进入工作区即是练习设置。
+**信息架构**：**没有启动页** —— 启动即进工作区（左栏科目导航 + 主区练习设置）。
+现在**只有练习**：没有 学习 / 做题 的标签切换，进入工作区即是练习设置。
 
-* **顶栏**：左侧**模式按钮**（如 `法考`，回启动页）；右侧是 **深色 / 浅色** 分段开关
+* **顶栏**：左侧是**模式按钮**（`法考` / `注会`）—— **点击即在原地切到另一个考试模式**
+  （写入 `user.json` 的 `last_mode`，并自动选中该模式的第一个科目）；右侧是 **深色 / 浅色** 分段开关
   （立即生效、写入 `user.json`），再右是最小化 / 关闭。
-* **启动页（模式选择）**：两张卡（法考 / 注会），显示该模式的科目数、题量与知识点数。
-  选定后写入 `user.json` 的 `last_mode`，之后启动直接进工作区；顶栏左侧的**模式按钮**（如 `法考`）可随时回到启动页切换。
 * **左栏（模式导航）**：按官方分组列出科目 ——
   **注会** = 专业阶段（六科：会计 / 审计 / 财务成本管理 / 税法 / 经济法 / 公司战略与风险管理）+ 综合阶段；
-  **法考** = **卷一 / 卷二**。每行显示科目名与该科目题量；底部显示错题数与收藏数。
-* **主区标题行**：科目名 + **`{N} 章 · {M} 题`**（`N` = 该科目题目里出现过的不同章节数，`M` = 题量）+ 右侧**已做 / 正确率**。
+  **法考** = **卷一 / 卷二**。每行显示科目名与该科目题量。
+* **主区标题行**：科目名 + **`{N} 章 · {M} 题`**（`N` = 该科目题目里出现过的不同章节数，`M` = 题量）。
 * **练习设置**（进入工作区的默认视图，左右两栏，**没有下拉框**）：
   * 左栏「怎么练」：**题型**（全部 / 选择题 / 记忆自测）、**来源**（可多选：`仅错题` / `仅收藏` / `未做过` / `做错过`）、
-    **题量**（全部 / 10 / 20 / 50）、**顺序**（顺序 / 随机）、**关键词搜索**（题干 / 解析）。
+    **题量**（全部 / 10 / 20 / 50 / **自定义** —— 选自定义时右边出现数字输入框，范围 1–500；
+    预设项忽略自定义值，超出题库则取全部）、**顺序**（顺序 / 随机）、**关键词搜索**（题干 / 解析）。
   * 右栏「练哪些章节」：章节**多选列表**（每行带勾选框与该章题量），配 `全选` / `清空` / `反选`，
     以及一个只影响显示、不改选择的**章节筛选框**；表头显示「已选 n / m 章」。**一章都不选 = 全部章节**。
-  * 实时显示「本范围共 N 题」；底部显示**汇总统计**（总正确率 / 累计作答 / 做过题目）。
-* 点 **开始练习** → **会话视图**：会话标签、`第 i / N 题`、本次正确率、进度条；
-  **题干以 18px 作为视觉焦点**；选项（单选 radio / 多选 checkbox）；**提交答案** → 判定 + 解析；
-  `上一题 / 下一题`；题目 meta 行显示**该题做过几次 · 正确几次 · 正确率**。
+  * 实时显示「本范围共 N 题」。
+* 点 **开始练习** → **会话视图**（**整窗专注模式：隐藏左栏与标题行**）：会话标签、`第 i / N 题`、进度条；
+  **题干以 18px 作为视觉焦点**；选项（单选 radio / 多选 checkbox）；**提交答案** → 判定 + 解析，
+  或 **显示答案** → 看答案（不记录作答，题目仍是「未做过」）；判定 / 看答案后 `下一题 ▶` 才可用，
+  `←` 与 `Esc` 不受限（详见 §6.5）。
 * **错题随机 10 题**：从错题里随机抽 10 道开一局（会话标签为「错题随机抽查」）。
 * `options:[]` 的条目走**记忆 / 自测**（显示答案 → 记住了 / 没记住 自评）。
 
@@ -160,9 +161,9 @@ MCP 服务由 MCP 客户端（如 opencode / Claude Desktop）拉起，见 `mcp.
 
 | 键 | 作用 |
 | --- | --- |
-| `←` / `→` | 做题会话中翻上一题 / 下一题 |
+| `←` / `→` | 做题会话中翻上一题 / 下一题（`→` 需当前题已判定，与 `下一题 ▶` 同规则） |
 | `Enter` | 会话中提交答案 |
-| `Esc` | 退出当前练习会话；工作区中返回模式选择页 |
+| `Esc` | 退出当前练习会话 |
 
 **每题统计**：每次作答都写进 `state\user.json` 的 `stats`（`attempts` / `correct` / `last`），
 所以「做过几次、正确率多少」是持久的、跨会话累积的。
@@ -175,21 +176,22 @@ MCP 服务由 MCP 客户端（如 opencode / Claude Desktop）拉起，见 `mcp.
 
 **备注 / 收藏（本地用户缓存，无需登录）**：会话里每题都有 `☆ 收藏` 与 `备注`。备注多行输入，
 **失焦或切题时自动保存**（打字过程中不写盘）。数据落在 `state\user.json`（`UserStore`），
-`D:\Dev\Law\` 与 `D:\Dev\CPA\` 语料**依旧只读**。收藏、备注与每题统计都会写进 `current.json`，MCP 也能读到。
+`data\corpus\` 语料**依旧只读**。收藏、备注与每题统计都会写进 `current.json`，MCP 也能读到。
 
 ## 6.5 UI 设计系统（毛玻璃 / 排版 / 动效）
 
 GUI 拆成入口 + 六个模块：`main.rs`（入口，仅 `mod` 声明 + `fn main`）、
 `app.rs`（`App` 状态 / 逻辑 / 持久化 / 快捷键 + `impl eframe::App`，视图为 `app/` 下的子模块
-`shell.rs` / `launcher.rs` / `practice.rs`）、
-`logic.rs`（纯逻辑，无 UI，可单测）、`win.rs`（无边框窗口 / 毛玻璃 / 缩放 / 拖动）、
+`shell.rs` / `practice.rs` / `settings.rs`）、
+`logic.rs`（纯逻辑，无 UI，可单测）、`win.rs`（无边框窗口 / 圆角 / 缩放 / 拖动）、
 `theme`（设计令牌 + `Style`/`Visuals` 覆写）、`anim`（缓动 + `Animator`）、
-`glass`（`paint.rs` 绘制原语 + `widgets.rs` 自定义控件）。
+`glass`（`blur.rs` 桌面截图 + 高斯模糊、`paint.rs` 绘制原语、`widgets.rs` 自定义控件）。
 
 **布局风格：整块分隔式（不是浮动卡片）**。窗口是一张**连续的磨砂面**，由发丝线分成几个区域：
 
-1. 底层是 `LayerId::background()` 上的一层**安静背景**（`paint::backdrop`）：柔和垂直渐变 + 几个近乎无彩色的软斑。
-   有系统 Acrylic 时改画一层平坦 scrim（`background.scrim`）—— 此时「背景」就是桌面本身。
+1. 底层是 `LayerId::background()` 上的**桌面本身**：应用截图主显示器并做**真高斯模糊**（`glass::blur`），
+   按屏幕位置取 UV 画满客户区，再盖上 scrim（alpha = 透明度设置）。截图不可用时才退回
+   `paint::backdrop` 的柔和垂直渐变 + 软斑。
 2. 每个区域是**平整的磨砂填充**（`glass::panel_fill`）：无圆角、无外间距、**无投影** —— 没有任何东西浮在背景上。
 3. 区域之间用**发丝分隔线**（`glass::divider_bottom` / `divider_right`，色 `glass.divider`）。
 4. **面板自身没有渐变。** 真实磨砂玻璃是均匀的，它的明暗变化**全部来自背后的光** —— 面板越透，透上来的层次越明显。
@@ -210,7 +212,7 @@ GUI 拆成入口 + 六个模块：`main.rs`（入口，仅 `mod` 声明 + `fn ma
 | 想要的效果 | 改哪里 |
 | --- | --- |
 | 界面更黑 / 更灰 | `background.base_top` / `base_bottom`（深色 30→16；浅色 247→236） |
-| 背景更透（看到更多桌面） | `background.scrim` 的 alpha 调低（两种模式当前都是 228） |
+| 背景更透（看到更多桌面） | 设置 → 外观的**透明度**滑杆（scrim alpha = `255*(1-t/100)`，默认 12 → 224） |
 | 表面更亮 / 更分明 | `glass.fill` / `fill_strong` 的 alpha（深色白 18 / 32；浅色黑 12 / 20） |
 | 描边更淡 / 边缘不抢戏 | `glass.stroke`（深色白 **14**，低于 `fill` 18；浅色黑 22） |
 | 分隔线更明显 / 更淡 | `glass.divider` 的 alpha（深色 24；浅色 18） |
@@ -219,7 +221,8 @@ GUI 拆成入口 + 六个模块：`main.rs`（入口，仅 `mod` 声明 + `fn ma
 
 > `scrim` 是两种模式的关键：它必须够不透明，否则窗口后面若是浅色桌面，深色 UI 会被冲成灰白；
 > 浅色模式的 scrim 则是**浅色且近乎实心**（`rgba(248,248,250,228)`）—— 理由完全相同，
-> 否则亮色桌面会把浅色 UI 洗淡（踩过这个坑）。
+> 否则亮色桌面会把浅色 UI 洗淡（踩过这个坑）。现在它的 alpha 由**透明度**设置驱动
+> （默认 12 → 224，与旧的 228 基本一致）；颜色仍取自 `background.scrim`。
 
 > **选中 = 染色填充，不是描边。** 六个「选中 / 主要」状态（分段指示器、开关 chip、勾选框、主按钮、
 > chip、左栏选中行）一律用 `accent.soft` 系的**低透明染色填充**表达；描边保持中性（`glass.stroke`）
@@ -239,28 +242,57 @@ GUI 拆成入口 + 六个模块：`main.rs`（入口，仅 `mod` 声明 + `fn ma
 `popup_shadow` 必须为 `NONE`、无顶边亮带、`menu_corner_radius` 与按钮一致）
 和 `pressed_widgets_get_a_tint_not_a_neon_outline`（按下态只有低透明染色，没有满强度强调色描边）。
 
-**测试（不开窗口、不点鼠标）**：`cargo test --release` 直接跑 —— 共 **64 passed**
-（11 lib + 16 classify + 37 sfzklearning），UI 只负责渲染结果。
+**测试（不开窗口、不点鼠标）**：`cargo test` 直接跑 —— 共 **80 passed**
+（12 lib + 16 classify + 52 sfzklearning），UI 只负责渲染结果。
+另有 8 个**既有的** `epaint::TexturesDelta` panic（headless egui 测试丢弃纹理增量所致，
+2 `anim::motion` + 1 `glass::widgets` + 5 `win`），与毛玻璃改动无关，按原样保留。
 
-* `logic.rs`（9 个）：按题型 / 章节（可多选）/ 来源（错题 · 收藏 · 未做过 · 做错过）/ 关键词筛选、
+* `logic.rs`（12 个）：按题型 / 章节（可多选）/ 来源（错题 · 收藏 · 未做过 · 做错过）/ 关键词筛选、
   `chapter_counts` 章节计数、`draw_plan` 先排序再按题量截断、错题抽样只取错题且按上限截断、
-  `shuffled` 是排列且同种子确定、判定的边界（未选 / 无选项）。
+  `shuffled` 是排列且同种子确定、判定的边界（未选 / 无选项）、
+  **下一题的判定闸门**（提交 / 显示答案 / 自评）、**显示答案的可用性**（有答案或有解析）、
+  错答文案在无答案时的兜底。
 * `win.rs`（5 个）：headless 注入指针事件后断言窗口指令 —— 按**空白处**发 `StartDrag`、
   按**控件上**不发、**八个边/角**各发对应方向的 `BeginResize`、按边缘**不**发 `StartDrag`、
   悬停各边/角返回对应的缩放光标。
 * `theme/`（8 个）：深色调色板深且可读、浅色调色板浅且可读（逆不变量）、强调色不饱和（两种模式）、
   表面够透但可辨（两种模式）、描边低于表面且选中是染色不是描边、`theme` 值解析往返、
   **浮层实心且无投影**（两种模式，两个 style slot 都断言）、按下态无霓虹描边。
-* `glass/`（11 个）：`paint.rs` 的径向网格几何 / 边缘渐隐 / 退化输入不 panic / 软斑不出界 / alpha 混合，
-  `widgets.rs` 的指示器滑动与钳制 / 通道插值 / 统计文本 / 抖动只动 x / 内容置于平移后的矩形。
+* `glass/`（19 个）：`paint.rs` 的径向网格几何 / 边缘渐隐 / 退化输入不 panic / 软斑不出界 / alpha 混合 /
+  **透明度 → scrim alpha 映射**（0→255、100→0、单调、钳制、默认 ≈ 旧值）；
+  `blur.rs` 的**高斯模糊**（平坦图均值不变 / 阶跃边单调且平滑 / σ=0 精确复制 / 1×1 与 0 尺寸不 panic）、
+  `downscale`（ceil 半尺寸 / 平坦图保持平坦）、`params`（0 不模糊、越大越糊、halvings ≤ 3）；
+  `widgets.rs` 的指示器滑动与钳制 / 通道插值 / 统计文本 / 抖动只动 x / 内容置于平移后的矩形 /
+  **滑杆的几何 → 取值映射**。
+* `app.rs`（2 个）：毛玻璃**重截规则**（模糊度一变立即重截；拖动期间防抖、几何稳定后才截）；
+  **显示答案**只置 `shown`（不动 `answered` / `correct`），并打开 `下一题` 闸门。
 * `anim/`（4 个）：`easing::clamp` 边界、`shake` 衰减端点与边界、抖动重启与结束、`is_live` / `prune`。
+* `lib.rs`（12 个）：数据加载 / 判定 / `UserStore`（收藏 · 备注 · 统计 · 主题）往返，
+  以及 **`user.json` 缺 `glass_*` 字段仍能反序列化**（旧文件兼容）。
 
-**窗口：无边框 + 系统级毛玻璃（真穿透）**
+**窗口：无边框 + 应用内毛玻璃（桌面截图 + 真高斯模糊）**
 
-* `NativeOptions` 用 `with_decorations(false)` + `with_transparent(true)`：没有标题栏，客户区透明。
-* `win::apply_acrylic` 通过 DWM 申请 **Acrylic**（`DWMWA_SYSTEMBACKDROP_TYPE = DWMSBT_TRANSIENTWINDOW`）：
-  窗口背景由**系统真实模糊**它后面的桌面 / 其他软件 —— 不是应用内伪造的渐变。同时设圆角与深色模式。
-* 申请失败（老系统 / 远程桌面）**自动回退**为应用内不透明渐变背景，不会留下不可读的透明窗口。
+* `NativeOptions` 用 `with_decorations(false)` + `with_transparent(true)`：没有标题栏，客户区透明
+  （圆角处因此露出桌面）。**透明度仍然必需**，但背景不再依赖系统模糊。
+* **后端必须是 `glow`**：`renderer: eframe::Renderer::Glow`。默认的 `wgpu` 后端对普通 HWND 只报
+  `CompositeAlphaMode::Opaque`（wgpu-hal `dx12/adapter.rs`），**永远做不出半透明窗口**；
+  OpenGL 走 GDI 重定向表面，DWM 认它。
+* **模糊由应用自己做**（`glass/blur.rs`）：`BitBlt` 屏幕 DC 截**主显示器** → 2×2 降采样（`0..=3` 次）
+  → **可分离高斯模糊**（半径 `ceil(3σ)`，横向 + 纵向，边缘钳制）→ `TextureOptions::LINEAR` 纹理，
+  画满客户区后盖 scrim。截图期间窗口用 `SetLayeredWindowAttributes(hwnd, 0, 0, LWA_ALPHA)` 把自己
+  变全透明、截完立刻恢复 255 —— 不截到自己，且整个过程远短于一帧，DWM 看不到透明状态、不会闪。
+* **为什么不再用系统模糊**：`SetWindowCompositionAttribute` 的 accent policy **没有半径参数**，
+  「模糊度」滑杆在它上面根本无从实现；`DwmEnableBlurBehindWindow` 在 Windows 10/11 上是实测无效的
+  （16px 黑白网格：只调 blur-behind 与完全不调**逐字节相同**）。旧机制的历史实测数据保留：
+  accent policy 能把窗口内网格对比度从 12.4 压到 0.52；「窗口平移 500×120px」时，锐利背景有
+  39.9% 的像素跟着变，磨砂背景只剩 1.5%。现在 `win.rs` 不再向系统申请任何模糊。
+* **两个用户设置**（设置 → 外观，写入 `state\user.json`）：
+  **透明度** `0..=100`（scrim alpha = `255 * (1 - t/100)`，默认 12 ≈ 旧的 224）与
+  **模糊度** `0..=100`（映射到降采样次数 + sigma，集中在 `glass::blur::params`；0 = 桌面保持清晰）。
+* **注册到桌面**：纹理按窗口在屏幕上的位置取 UV（`App::glass_uv`），所以移动窗口时模糊的桌面
+  **不跟着窗口滑**，而是像真的贴在桌面上。窗口几何变化后**等 0.25s 再重截**（拖动/缩放中不截），
+  模糊度改变立即重截；截不到（远程桌面 / 老系统）时保留上一张，一张都没有则回退为应用内渐变背景
+  （`paint::backdrop`），窗口永远可读。
 * **缩放窗口**：无边框窗口没有系统缩放边框，所以由 `win::chrome` 自己判定 ——
   指针进入窗口边缘 8px（角 16px）时**设置对应的缩放光标**（`ResizeHorizontal` / `ResizeVertical` / `ResizeNwSe` / `ResizeNeSw`），
   按下则发 `BeginResize` 触发**原生**缩放。光标提示是必需的：否则无边框窗口上根本看不出哪里能拖。
@@ -268,8 +300,18 @@ GUI 拆成入口 + 六个模块：`main.rs`（入口，仅 `mod` 声明 + `fn ma
   都会拖动整个窗口。它**不用** `egui::Area`：全屏前台层会盖在所有面板之上
   并吞掉全部点击（这是踩过的坑，代码里有注释）。
 * `win::chrome_button`：**用线条画**的最小化 / 关闭，避免字体缺字形（msyh 既没有窗口控制字形，也没有勾叉）。
-* 自检：`sfzklearning.exe --probe` 打印**从系统读回**的属性后立即退出，例如
-  `acrylic=true backdrop=3 (3=acrylic) dark=1 corner=2 (2=round)`（`dark` 跟随当前模式：深色 1 / 浅色 0）。
+* 自检：`sfzklearning.exe --probe` 打印**从系统读回**的属性与毛玻璃状态后立即退出，例如
+  `probe dark=1 corner=2 (2=round) border=read-failed (=-2 none) glass=captured`
+  （`dark` 跟随当前模式：深色 1 / 浅色 0；`corner` 2 = 圆角；`border` 读到 `-2`（`DWMWA_COLOR_NONE`）
+  就是没有系统描边，这台机器上读不到，所以显示 `read-failed`；`glass` 表示桌面截图是否成功）。
+
+**做题会话：先判定，再下一题。** 每道题都必须先有结果才能翻页 —— 选择题走
+`选答案 → 提交答案 → 判定` 或 `显示答案 → 看答案`，两条路都会打开 `下一题 ▶`（以及 `→`）；
+记忆 / 自测题必须先「记住了 / 没记住」自评（自评后本就自动前进）。`←` 上一题与 `Esc` 退出不受影响，
+所以禁用态不会困住人。**显示答案刻意不记录任何作答**：它只把 `shown` 置真 —— 选择题按「提交后」的
+同一套渲染高亮正确项并展开解析 —— 不写 `answered` / `correct`、不写每题统计、不进错题集，
+题目仍是「未做过」，下次还会出现，这正是复习它的意义。数据里既没有答案也没有解析的题，
+按钮照常出现但**禁用**（悬停提示「这道题在数据里没有答案」），不会画出空解析框。
 
 **动效（刻意克制）**：
 
@@ -350,15 +392,15 @@ GUI 在任何“当前题目 / 领域 / 科目”变化时写入（临时文件 
 
 ## 10. 数据管线：`classify`（语料 → 官方考纲）
 
-`classified\` 由 `classify.exe` 生成。它读一份科目语料 + 一棵官方考纲树，把每道题归到官方 **科目 → 章**，
+`data\` 由 `classify.exe` 生成。它读一份科目语料 + 一棵官方考纲树，把每道题归到官方 **科目 → 章**，
 写出 `subjects\<id>.json` + 重算的 `summary.json` + `classification-report.md`。
 **四个参数都必填**；确定性、可重跑（同输入 → 逐字节相同输出，仅 `summary.json` 带 `generatedAt` 时间戳），**从不写回语料**：
 
 ```powershell
 .\target\release\classify.exe --domain law `
-  --data-root D:\Dev\Law\data `
-  --taxonomy D:\Dev\StudyData\classified\law\taxonomy.json `
-  --out D:\Dev\StudyData\classified\law
+  --data-root D:\Dev\StudyApp\data\corpus\law `
+  --taxonomy D:\Dev\StudyApp\data\law\taxonomy.json `
+  --out D:\Dev\StudyApp\data\law
 ```
 
 * `--domain` — `law` 或 `cpa`

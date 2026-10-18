@@ -1,0 +1,354 @@
+{
+  "exam": "law",
+  "name": "国家统一法律职业资格考试",
+  "edition": "2026",
+  "sources": [
+    "https://nje.examos.cn/EXAMSF/public/notices/1500.jsp",
+    "https://www.eol.cn/kaoshi/gwy/flzyzg/202607/t20260729_2761069.shtml",
+    "https://www.gov.cn/zhengce/2018-04/28/content_5713703.htm",
+    "https://detail.youzan.com/show/goods?alias=2x7rnuj1qz8nhps",
+    "http://www.law-lib.com/shopping/shopview_p.asp?id=99477",
+    "http://tl.zxhsd.com/kgsm/ts/big5/2025/05/20/6579417.shtml",
+    "https://www.yuntaigo.com/book.action?recordid=bm5hbm1oemM5Nzg3NTE5NzkwNDI0",
+    "https://shifaedu.cn/article/552",
+    "https://detail.youzan.com/show/goods?alias=2oqamtpwit5p93z",
+    "http://m.law-lib.com/shopping/shopview_p.asp?id=99481",
+    "https://book.kongfz.com/577673/10080513435/",
+    "http://m.law-lib.com/shopping/shopview_p.asp?id=99479",
+    "http://m.law-lib.com/shopping/shopview_p.asp?id=99483",
+    "https://m.etest8.com/product/book-10150.html",
+    "https://www.etest8.com/sifa/sichuan/juan2/13103754.html",
+    "https://product.suning.com/0071615541/12447282677.html",
+    "https://www.233.com/sf/book/202203/22144707353227.html",
+    "https://www.youlu.com/fakao/content/CB202505151125200000000299"
+  ],
+  "stages": [
+    {
+      "id": "paper1",
+      "name": "卷一",
+      "subjects": [
+        {
+          "id": "xijinping-fazhi-sixiang",
+          "name": "习近平法治思想",
+          "chapters": [
+            { "no": 1, "title": "习近平法治思想的形成发展及重大意义", "sections": ["习近平法治思想的形成发展", "习近平法治思想的重大意义"], "confidence": "confirmed" },
+            { "no": 2, "title": "习近平法治思想的核心要义", "sections": ["坚持党对全面依法治国的领导", "坚持以人民为中心", "坚持中国特色社会主义法治道路", "坚持依宪治国、依宪执政", "坚持在法治轨道上推进国家治理体系和治理能力现代化", "坚持建设中国特色社会主义法治体系", "坚持依法治国、依法执政、依法行政共同推进，法治国家、法治政府、法治社会一体建设", "坚持全面推进科学立法、严格执法、公正司法、全民守法", "坚持统筹推进国内法治和涉外法治", "坚持建设德才兼备的高素质法治工作队伍", "坚持抓住领导干部这个“关键少数”"], "confidence": "confirmed" },
+            { "no": 3, "title": "习近平法治思想的实践要求", "sections": ["充分发挥法治对经济社会发展的保障作用", "正确认识和处理全面依法治国一系列重大关系"], "confidence": "confirmed" }
+          ]
+        },
+        {
+          "id": "falixue",
+          "name": "法理学",
+          "chapters": [
+            { "no": 1, "title": "法的本体", "sections": ["法的概念", "法的价值", "法的要素", "法的渊源", "法的效力", "法律部门与法律体系", "法律关系", "法律责任"], "confidence": "confirmed" },
+            { "no": 2, "title": "法的运行", "sections": ["立法", "法的实施", "法适用的一般原理", "法律解释", "法律推理", "法律漏洞的填补"], "confidence": "confirmed" },
+            { "no": 3, "title": "法的演进", "sections": ["法的起源与历史类型", "法的传统与法律文化", "法系", "法的现代化", "法治理论"], "confidence": "confirmed" },
+            { "no": 4, "title": "法与社会", "sections": ["法与社会的一般理论", "法与经济", "法与政治", "法与道德", "法与宗教"], "confidence": "confirmed" }
+          ]
+        },        {
+          "id": "xianfa",
+          "name": "宪法",
+          "chapters": [
+            { "no": 1, "title": "宪法基本理论", "sections": [], "confidence": "unconfirmed" },
+            { "no": 2, "title": "国家的基本制度（上）", "sections": [], "confidence": "unconfirmed" },
+            { "no": 3, "title": "国家的基本制度（下）", "sections": [], "confidence": "unconfirmed" },
+            { "no": 4, "title": "公民的基本权利和义务", "sections": [], "confidence": "unconfirmed" },
+            { "no": 5, "title": "国家机构", "sections": [], "confidence": "unconfirmed" },
+            { "no": 6, "title": "宪法的实施与监督", "sections": [], "confidence": "unconfirmed" }
+          ]
+        },
+        {
+          "id": "zhongguo-falvshi",
+          "name": "中国法律史",
+          "chapters": [
+            { "no": 1, "title": "先秦时期的法律思想与制度", "sections": ["西周时期的法律思想与制度", "春秋战国时期的法律思想与制度"], "confidence": "confirmed" },
+            { "no": 2, "title": "秦汉至魏晋南北朝时期的法律思想与制度", "sections": ["秦汉时期的法律思想与制度", "魏晋南北朝时期的法律思想与制度"], "confidence": "confirmed" },
+            { "no": 3, "title": "隋唐宋元时期的法律思想与制度", "sections": ["隋唐时期的法律思想与制度", "宋元时期的法律思想与制度"], "confidence": "confirmed" },
+            { "no": 4, "title": "明清时期的法律思想与制度", "sections": ["明至清中期的法律思想与制度", "清末的法律思想与制度"], "confidence": "confirmed" },
+            { "no": 5, "title": "中华民国时期的法律思想与制度", "sections": ["中华民国时期的法律思想", "南京临时政府的法律制度", "北洋政府的法律制度", "南京国民政府的法律制度"], "confidence": "confirmed" },
+            { "no": 6, "title": "新民主主义革命时期民主政权法制", "sections": ["宪法", "司法制度"], "confidence": "confirmed" }
+          ]
+        },
+        {
+          "id": "guojifa",
+          "name": "国际法",
+          "chapters": [
+            { "no": 1, "title": "导论", "sections": ["国际法的概念、渊源与基本原则", "国际法与国内法的关系"], "confidence": "confirmed" },
+            { "no": 2, "title": "国际法的主体与国际法律责任", "sections": ["国际法主体", "国际法律责任的构成和形式", "国际责任制度的新发展"], "confidence": "confirmed" },
+            { "no": 3, "title": "国际法上的空间划分", "sections": ["国家领土", "海洋法", "国际航空法与外层空间法", "国际环境保护法"], "confidence": "confirmed" },
+            { "no": 4, "title": "国际法上的个人", "sections": ["国籍", "外国人的法律地位", "引渡和庇护", "国际人权法"], "confidence": "confirmed" },
+            { "no": 5, "title": "外交关系法与领事关系法", "sections": ["外交关系法", "领事关系法"], "confidence": "confirmed" },
+            { "no": 6, "title": "条约法", "sections": ["概述", "条约的缔结", "条约的效力、适用和解释", "条约的修订和终止"], "confidence": "confirmed" },
+            { "no": 7, "title": "国际争端的和平解决", "sections": ["国际争端与解决方法", "国际争端的法律解决方法"], "confidence": "confirmed" },
+            { "no": 8, "title": "战争与武装冲突法", "sections": ["概述", "对作战手段的限制和对战时平民及战争受难者的保护", "战争犯罪"], "confidence": "confirmed" }
+          ]
+        },        {
+          "id": "sifa-zhidu",
+          "name": "司法制度和法律职业道德",
+          "chapters": [
+            { "no": 1, "title": "中国特色社会主义司法制度", "sections": ["中国特色社会主义司法制度概述", "审判制度", "检察制度", "律师制度", "法律援助制度", "公证制度"], "confidence": "confirmed" },
+            { "no": 2, "title": "法官职业道德", "sections": ["法官职业道德概述", "法官职业责任"], "confidence": "confirmed" },
+            { "no": 3, "title": "检察官职业道德", "sections": ["检察官职业道德概述", "检察官职业责任"], "confidence": "confirmed" },
+            { "no": 4, "title": "律师职业道德", "sections": ["律师职业道德概述", "律师执业行为规范", "律师职业责任"], "confidence": "confirmed" },
+            { "no": 5, "title": "公证员职业道德", "sections": ["公证员职业道德概述", "公证职业责任"], "confidence": "confirmed" },
+            { "no": 6, "title": "其他法律职业人员职业道德", "sections": ["法律顾问职业道德", "仲裁员职业道德", "行政机关中从事行政处罚决定法制审核、行政复议、行政裁决的公务员职业道德"], "confidence": "confirmed" }
+          ]
+        },
+        {
+          "id": "xingfa",
+          "name": "刑法",
+          "chapters": [
+            { "no": 1, "title": "刑法概说", "sections": ["刑法的概念、性质、任务和机能", "刑法的基本原则", "刑法的适用范围"], "confidence": "confirmed" },
+            { "no": 2, "title": "犯罪概说", "sections": ["犯罪的概念", "犯罪的分类"], "confidence": "confirmed" },
+            { "no": 3, "title": "犯罪构成", "sections": ["犯罪构成概述", "犯罪客体", "犯罪客观要件", "犯罪主体", "犯罪主观要件"], "confidence": "confirmed" },
+            { "no": 4, "title": "犯罪排除事由", "sections": ["犯罪排除事由概述", "正当防卫", "紧急避险", "其他犯罪排除事由"], "confidence": "confirmed" },
+            { "no": 5, "title": "犯罪未完成形态", "sections": ["犯罪未完成形态概述", "犯罪预备", "犯罪未遂", "犯罪中止"], "confidence": "confirmed" },
+            { "no": 6, "title": "共同犯罪", "sections": ["共同犯罪概述", "共同犯罪的成立条件", "共同犯罪的形式", "共犯人的分类及其刑事责任", "共同犯罪的特殊问题"], "confidence": "confirmed" },
+            { "no": 7, "title": "单位犯罪", "sections": ["单位犯罪概述", "单位犯罪的定罪", "单位犯罪的处罚"], "confidence": "confirmed" },
+            { "no": 8, "title": "罪数形态", "sections": ["罪数的区分", "实质的一罪", "法定的一罪", "处断的一罪"], "confidence": "confirmed" },
+            { "no": 9, "title": "刑罚概说", "sections": ["刑罚的概念", "刑罚的目的"], "confidence": "confirmed" },
+            { "no": 10, "title": "刑罚种类", "sections": ["主刑", "附加刑", "非刑罚处罚措施"], "confidence": "confirmed" },
+            { "no": 11, "title": "刑罚裁量", "sections": ["量刑概述", "量刑情节", "量刑制度"], "confidence": "confirmed" },
+            { "no": 12, "title": "刑罚执行", "sections": ["减刑制度", "假释制度"], "confidence": "confirmed" },
+            { "no": 13, "title": "刑罚消灭", "sections": ["刑罚消灭概述", "时效", "赦免"], "confidence": "confirmed" },
+            { "no": 14, "title": "罪刑各论概说", "sections": ["刑法分则的体系", "刑法分则的条文结构"], "confidence": "confirmed" },
+            { "no": 15, "title": "危害国家安全罪", "sections": [], "confidence": "confirmed" },
+            { "no": 16, "title": "危害公共安全罪", "sections": [], "confidence": "confirmed" },
+            { "no": 17, "title": "破坏社会主义市场经济秩序罪", "sections": ["生产、销售伪劣商品罪", "走私罪", "妨害对公司、企业的管理秩序罪", "破坏金融管理秩序罪", "金融诈骗罪", "危害税收征管罪", "侵犯知识产权罪", "扰乱市场秩序罪"], "confidence": "confirmed" },
+            { "no": 18, "title": "侵犯公民人身权利、民主权利罪", "sections": [], "confidence": "confirmed" },
+            { "no": 19, "title": "侵犯财产罪", "sections": [], "confidence": "confirmed" },
+            { "no": 20, "title": "妨害社会管理秩序罪", "sections": ["扰乱公共秩序罪", "妨害司法罪", "妨害国（边）境管理罪", "妨害文物管理罪", "危害公共卫生罪", "破坏环境资源保护罪", "走私、贩卖、运输、制造毒品罪", "组织、强迫、引诱、容留、介绍卖淫罪", "制作、贩卖、传播淫秽物品罪"], "confidence": "confirmed" },
+            { "no": 21, "title": "危害国防利益罪", "sections": [], "confidence": "confirmed" },
+            { "no": 22, "title": "贪污贿赂罪", "sections": [], "confidence": "confirmed" },
+            { "no": 23, "title": "渎职罪", "sections": [], "confidence": "confirmed" },
+            { "no": 24, "title": "军人违反职责罪", "sections": [], "confidence": "confirmed" }
+          ]
+        },        {
+          "id": "xingsufa",
+          "name": "刑事诉讼法",
+          "chapters": [
+            { "no": 1, "title": "刑事诉讼法概述", "sections": ["刑事诉讼法的概念", "刑事诉讼法的制定目的与任务", "刑事诉讼的基本理念", "刑事诉讼的基本范畴"], "confidence": "confirmed" },
+            { "no": 2, "title": "刑事诉讼法的基本原则", "sections": ["基本原则概述", "侦查权、检察权、审判权由专门机关依法行使", "严格遵守法律程序", "法院、检察院依法独立行使职权", "分工负责、互相配合、互相制约", "检察院依法对刑事诉讼实行法律监督", "各民族公民有权使用本民族语言文字进行诉讼", "犯罪嫌疑人、被告人有权获得辩护", "未经法院依法判决，对任何人都不得确定有罪", "保障诉讼参与人的诉讼权利", "认罪认罚从宽", "具有法定情形不予追究刑事责任", "追究外国人刑事责任适用我国刑事诉讼法"], "confidence": "confirmed" },
+            { "no": 3, "title": "刑事诉讼中的专门机关和诉讼参与人", "sections": ["刑事诉讼中的专门机关", "诉讼参与人"], "confidence": "confirmed" },
+            { "no": 4, "title": "管辖", "sections": ["立案管辖", "审判管辖", "特殊情况的管辖"], "confidence": "confirmed" },
+            { "no": 5, "title": "回避", "sections": ["回避的理由、种类与适用人员", "回避的程序"], "confidence": "confirmed" },
+            { "no": 6, "title": "辩护与代理", "sections": ["辩护制度概述", "我国辩护制度的基本内容", "刑事代理"], "confidence": "confirmed" },
+            { "no": 7, "title": "刑事证据", "sections": ["刑事证据的概念和基本属性", "刑事证据的种类与审查认定", "刑事证据的分类", "刑事证据规则", "刑事诉讼证明"], "confidence": "confirmed" },
+            { "no": 8, "title": "强制措施", "sections": ["强制措施概述", "拘传", "取保候审", "监视居住", "拘留", "逮捕"], "confidence": "confirmed" },
+            { "no": 9, "title": "附带民事诉讼", "sections": ["附带民事诉讼概述", "附带民事诉讼当事人", "附带民事诉讼的提起", "附带民事诉讼的审判"], "confidence": "confirmed" },
+            { "no": 10, "title": "期间、送达", "sections": ["期间", "送达"], "confidence": "confirmed" },
+            { "no": 11, "title": "立案", "sections": ["立案的概念", "立案的材料来源和条件", "立案程序和立案监督"], "confidence": "confirmed" },
+            { "no": 12, "title": "侦查", "sections": ["侦查概述", "侦查行为", "侦查终结", "检察院对直接受理案件的侦查", "补充侦查", "对违法侦查行为的申诉、控告", "侦查监督"], "confidence": "confirmed" },
+            { "no": 13, "title": "起诉", "sections": ["起诉的概念和意义", "提起公诉的程序", "提起自诉的程序"], "confidence": "confirmed" },
+            { "no": 14, "title": "刑事审判概述", "sections": ["刑事审判的概念和任务", "刑事审判的模式", "刑事审判的原则", "审级制度", "审判组织"], "confidence": "confirmed" },
+            { "no": 15, "title": "第一审程序", "sections": ["第一审程序概述", "公诉案件第一审程序", "自诉案件第一审程序", "简易程序", "速裁程序", "判决、裁定和决定"], "confidence": "confirmed" },
+            { "no": 16, "title": "第二审程序", "sections": ["第二审程序的概念", "第二审程序的提起", "第二审程序的审判", "查封、扣押、冻结财物及其处理", "在法定刑以下判处刑罚的核准程序"], "confidence": "confirmed" },
+            { "no": 17, "title": "死刑复核程序", "sections": ["死刑复核程序概述", "判处死刑立即执行案件的复核程序", "判处死刑缓期二年执行案件的复核程序"], "confidence": "confirmed" },
+            { "no": 18, "title": "审判监督程序", "sections": ["审判监督程序的概念和特点", "审判监督程序的提起", "依照审判监督程序对案件的重新审判"], "confidence": "confirmed" },
+            { "no": 19, "title": "涉外刑事诉讼程序与司法协助制度", "sections": ["涉外刑事诉讼程序", "刑事司法协助"], "confidence": "confirmed" },
+            { "no": 20, "title": "执行", "sections": ["执行概述", "各种判决、裁定的执行程序", "执行的变更程序", "对新罪和申诉的处理", "检察院对执行的监督"], "confidence": "confirmed" },
+            { "no": 21, "title": "未成年人刑事案件诉讼程序", "sections": ["未成年人刑事案件诉讼程序概述", "未成年人刑事案件诉讼程序的方针与原则", "未成年人刑事案件诉讼制度与程序的具体规定"], "confidence": "confirmed" },
+            { "no": 22, "title": "当事人和解的公诉案件诉讼程序", "sections": [], "confidence": "confirmed" },
+            { "no": 23, "title": "缺席审判程序", "sections": ["缺席审判程序的案件范围与送达", "缺席审判的案件审理", "被告人到案后的救济程序"], "confidence": "confirmed" },
+            { "no": 24, "title": "犯罪嫌疑人、被告人逃匿、死亡案件违法所得的没收程序", "sections": ["没收程序概述", "犯罪嫌疑人、被告人逃匿、死亡案件违法所得的没收程序"], "confidence": "confirmed" },
+            { "no": 25, "title": "依法不负刑事责任的精神病人的强制医疗程序", "sections": [], "confidence": "confirmed" }
+          ]
+        },        {
+          "id": "xingzhengfa",
+          "name": "行政法与行政诉讼法",
+          "chapters": [
+            { "no": 1, "title": "行政法概述", "sections": ["行政法的基本概念", "行政法的法律渊源"], "confidence": "confirmed" },
+            { "no": 2, "title": "行政法的基本原则", "sections": ["行政法基本原则的内涵和构成", "行政法各项基本原则的要求"], "confidence": "confirmed" },
+            { "no": 3, "title": "行政机关组织法", "sections": ["行政机关组织法概述", "中央国家行政机关", "地方国家行政机关", "实施行政职能的非政府组织"], "confidence": "confirmed" },
+            { "no": 4, "title": "公务员法", "sections": ["公务员法概述", "公务员管理的基本制度"], "confidence": "confirmed" },
+            { "no": 5, "title": "抽象行政行为", "sections": ["抽象行政行为概述", "行政法规", "规章和有普遍约束力的决定、命令"], "confidence": "confirmed" },
+            { "no": 6, "title": "具体行政行为概述", "sections": ["具体行政行为的概念", "具体行政行为的成立和效力", "具体行政行为的一般合法要件"], "confidence": "confirmed" },
+            { "no": 7, "title": "行政处罚", "sections": ["行政处罚概述", "行政处罚的种类与设定", "行政处罚的实施机关、管辖与适用", "行政处罚的程序", "治安管理处罚"], "confidence": "confirmed" },
+            { "no": 8, "title": "行政强制", "sections": ["行政强制概述", "行政强制的种类和设定", "行政强制措施实施程序", "行政机关强制执行程序", "申请法院强制执行"], "confidence": "confirmed" },
+            { "no": 9, "title": "行政许可", "sections": ["行政许可概述", "行政许可的设定", "行政许可的实施机关", "行政许可的实施程序", "行政许可的费用", "监督检查", "行政许可诉讼"], "confidence": "confirmed" },
+            { "no": 10, "title": "其他行政行为", "sections": ["行政征收与征用", "行政确认", "行政合同", "行政给付", "行政奖励", "行政裁决"], "confidence": "confirmed" },
+            { "no": 11, "title": "行政程序与政府信息公开", "sections": ["行政程序概述", "行政程序的基本制度", "政府信息公开制度"], "confidence": "confirmed" },
+            { "no": 12, "title": "行政复议", "sections": ["行政复议概述", "行政复议范围", "行政复议参加人和行政复议机关", "行政复议的申请与受理", "行政复议的审理、决定和执行"], "confidence": "confirmed" },
+            { "no": 13, "title": "行政诉讼概述", "sections": ["行政诉讼的概念和特征", "行政诉讼法", "行政诉讼的基本原则"], "confidence": "confirmed" },
+            { "no": 14, "title": "行政诉讼的受案范围", "sections": ["概述", "应予受理的案件", "不予受理的案件"], "confidence": "confirmed" },
+            { "no": 15, "title": "行政诉讼的管辖", "sections": ["行政诉讼管辖概述", "级别管辖", "地域管辖", "裁定管辖"], "confidence": "confirmed" },
+            { "no": 16, "title": "行政诉讼参加人", "sections": ["概述", "行政诉讼的原告", "行政诉讼的被告", "行政诉讼的第三人", "共同诉讼人", "诉讼代理人"], "confidence": "confirmed" },
+            { "no": 17, "title": "行政诉讼程序", "sections": ["起诉与受理", "行政诉讼的第一审程序", "行政诉讼的第二审程序", "行政诉讼审判监督程序"], "confidence": "confirmed" },
+            { "no": 18, "title": "行政诉讼的特殊制度与规则", "sections": ["行政诉讼证据", "行政诉讼的法律适用", "行政案件审理中的特殊制度", "涉外行政诉讼"], "confidence": "confirmed" },
+            { "no": 19, "title": "行政案件的裁判与执行", "sections": ["行政诉讼的判决、裁定与决定", "行政诉讼的执行与非诉行政案件的执行"], "confidence": "confirmed" },
+            { "no": 20, "title": "国家赔偿概述", "sections": ["国家赔偿", "国家赔偿法", "国家赔偿的构成要件"], "confidence": "confirmed" },
+            { "no": 21, "title": "行政赔偿", "sections": ["行政赔偿概述", "行政赔偿范围", "行政赔偿请求人和赔偿义务机关", "行政赔偿程序"], "confidence": "confirmed" },
+            { "no": 22, "title": "司法赔偿", "sections": ["司法赔偿概述", "司法赔偿范围", "司法赔偿请求人和赔偿义务机关", "司法赔偿程序"], "confidence": "confirmed" },
+            { "no": 23, "title": "国家赔偿方式、标准和费用", "sections": ["国家赔偿的方式", "国家赔偿的计算标准", "国家赔偿费用"], "confidence": "confirmed" }
+          ]
+        }
+      ]
+    },    {
+      "id": "paper2",
+      "name": "卷二",
+      "subjects": [
+        {
+          "id": "minfa",
+          "name": "民法",
+          "chapters": [
+            { "no": 1, "title": "民法概述", "sections": [], "confidence": "unconfirmed" },
+            { "no": 2, "title": "自然人", "sections": [], "confidence": "unconfirmed" },
+            { "no": 3, "title": "法人和非法人组织", "sections": [], "confidence": "unconfirmed" },
+            { "no": 4, "title": "民事法律行为", "sections": [], "confidence": "unconfirmed" },
+            { "no": 5, "title": "代理", "sections": [], "confidence": "unconfirmed" },
+            { "no": 6, "title": "诉讼时效与期间", "sections": [], "confidence": "unconfirmed" },
+            { "no": 7, "title": "物权概述", "sections": [], "confidence": "unconfirmed" },
+            { "no": 8, "title": "所有权", "sections": [], "confidence": "unconfirmed" },
+            { "no": 9, "title": "用益物权", "sections": [], "confidence": "unconfirmed" },
+            { "no": 10, "title": "担保物权", "sections": [], "confidence": "unconfirmed" },
+            { "no": 11, "title": "占有", "sections": [], "confidence": "unconfirmed" },
+            { "no": 12, "title": "债与合同概述", "sections": [], "confidence": "unconfirmed" },
+            { "no": 13, "title": "合同的订立和效力", "sections": [], "confidence": "unconfirmed" },
+            { "no": 14, "title": "合同的履行", "sections": [], "confidence": "unconfirmed" },
+            { "no": 15, "title": "合同的保全和债的担保", "sections": [], "confidence": "unconfirmed" },
+            { "no": 16, "title": "合同的变更、转让和权利义务终止", "sections": [], "confidence": "unconfirmed" },
+            { "no": 17, "title": "违约责任", "sections": [], "confidence": "unconfirmed" },
+            { "no": 18, "title": "转移财产权利合同", "sections": [], "confidence": "unconfirmed" },
+            { "no": 19, "title": "完成工作交付成果合同", "sections": [], "confidence": "unconfirmed" },
+            { "no": 20, "title": "提供劳务合同", "sections": [], "confidence": "unconfirmed" },
+            { "no": 21, "title": "技术合同", "sections": [], "confidence": "unconfirmed" },
+            { "no": 22, "title": "保证合同、合伙合同", "sections": [], "confidence": "unconfirmed" },
+            { "no": 23, "title": "准合同", "sections": [], "confidence": "unconfirmed" },
+            { "no": 24, "title": "人格权概述", "sections": [], "confidence": "unconfirmed" },
+            { "no": 25, "title": "具体人格权", "sections": [], "confidence": "unconfirmed" },
+            { "no": 26, "title": "婚姻家庭概述", "sections": [], "confidence": "unconfirmed" },
+            { "no": 27, "title": "结婚和离婚", "sections": [], "confidence": "unconfirmed" },
+            { "no": 28, "title": "家庭关系", "sections": [], "confidence": "unconfirmed" },
+            { "no": 29, "title": "收养", "sections": [], "confidence": "unconfirmed" },
+            { "no": 30, "title": "继承概述", "sections": [], "confidence": "unconfirmed" },
+            { "no": 31, "title": "法定继承", "sections": [], "confidence": "unconfirmed" },
+            { "no": 32, "title": "遗嘱继承和遗赠", "sections": [], "confidence": "unconfirmed" },
+            { "no": 33, "title": "遗产的处理", "sections": [], "confidence": "unconfirmed" },
+            { "no": 34, "title": "侵权责任概述", "sections": [], "confidence": "unconfirmed" },
+            { "no": 35, "title": "特殊侵权责任", "sections": [], "confidence": "unconfirmed" }
+          ]
+        },
+        {
+          "id": "zhishichanquanfa",
+          "name": "知识产权法",
+          "chapters": [
+            { "no": 1, "title": "知识产权保护概述", "sections": [], "confidence": "unconfirmed" },
+            { "no": 2, "title": "著作权", "sections": [], "confidence": "unconfirmed" },
+            { "no": 3, "title": "专利权", "sections": [], "confidence": "unconfirmed" },
+            { "no": 4, "title": "商标权", "sections": [], "confidence": "unconfirmed" }
+          ]
+        },
+        {
+          "id": "shangfa",
+          "name": "商法",
+          "chapters": [
+            { "no": 1, "title": "公司法", "sections": ["公司法总则", "公司登记", "有限责任公司的设立与组织机构", "有限责任公司的股权转让", "股份有限公司的设立和组织机构", "股份有限公司的股份发行和转让", "国家出资公司组织机构的特别规定", "公司的董事、监事、高级管理人员的资格和义务", "公司债券", "公司的财务与会计制度", "公司合并、分立、增资、减资", "公司的解散与清算", "外国公司的分支机构"], "confidence": "confirmed" },
+            { "no": 2, "title": "合伙企业法", "sections": [], "confidence": "unconfirmed" },
+            { "no": 3, "title": "个人独资企业法", "sections": [], "confidence": "unconfirmed" },
+            { "no": 4, "title": "外商投资法", "sections": [], "confidence": "unconfirmed" },
+            { "no": 5, "title": "企业破产法", "sections": [], "confidence": "unconfirmed" },
+            { "no": 6, "title": "票据法", "sections": [], "confidence": "unconfirmed" },
+            { "no": 7, "title": "证券法", "sections": [], "confidence": "unconfirmed" },
+            { "no": 8, "title": "保险法", "sections": [], "confidence": "unconfirmed" },
+            { "no": 9, "title": "海商法", "sections": [], "confidence": "unconfirmed" },
+            { "no": 10, "title": "信托法", "sections": [], "confidence": "unconfirmed" }
+          ]
+        },        {
+          "id": "jingjifa",
+          "name": "经济法",
+          "chapters": [
+            { "no": 1, "title": "竞争法", "sections": [], "confidence": "unconfirmed" },
+            { "no": 2, "title": "消费者法", "sections": [], "confidence": "unconfirmed" },
+            { "no": 3, "title": "银行业法", "sections": [], "confidence": "unconfirmed" },
+            { "no": 4, "title": "财税法", "sections": [], "confidence": "unconfirmed" },
+            { "no": 5, "title": "土地法和房地产法", "sections": [], "confidence": "unconfirmed" }
+          ]
+        },
+        {
+          "id": "huanjingziyuanfa",
+          "name": "环境资源法",
+          "chapters": [
+            { "no": 1, "title": "生态环境保护法", "sections": [], "confidence": "unconfirmed" },
+            { "no": 2, "title": "自然资源法", "sections": [], "confidence": "unconfirmed" }
+          ]
+        },
+        {
+          "id": "laodongshebao",
+          "name": "劳动与社会保障法",
+          "chapters": [
+            { "no": 1, "title": "劳动法", "sections": [], "confidence": "unconfirmed" },
+            { "no": 2, "title": "社会保障法", "sections": ["社会保障法概述", "社会保险法"], "confidence": "confirmed" }
+          ]
+        },        {
+          "id": "guojisifa",
+          "name": "国际私法",
+          "chapters": [
+            { "no": 1, "title": "国际私法概述", "sections": ["国际私法的概念", "国际私法的范围", "国际私法的渊源"], "confidence": "confirmed" },
+            { "no": 2, "title": "国际私法的主体", "sections": ["自然人", "法人", "国家和国际组织", "外国人的民商事法律地位"], "confidence": "confirmed" },
+            { "no": 3, "title": "国际民商事法律冲突、冲突规范和准据法", "sections": ["国际民商事法律冲突", "冲突规范", "准据法"], "confidence": "confirmed" },
+            { "no": 4, "title": "适用冲突规范的制度", "sections": ["定性", "反致", "外国法的查明和解释", "公共秩序保留与强制性规定的直接适用", "法律规避"], "confidence": "confirmed" },
+            { "no": 5, "title": "国际民商事关系的法律适用", "sections": ["权利能力和行为能力", "物权", "债权", "商事关系", "婚姻家庭", "继承", "知识产权"], "confidence": "confirmed" },
+            { "no": 6, "title": "国际民商事争议的解决", "sections": ["国际民商事争议概述", "国际商事仲裁", "国际民事诉讼"], "confidence": "confirmed" },
+            { "no": 7, "title": "区际法律问题", "sections": ["区际法律冲突与区际冲突法", "区际司法协助"], "confidence": "confirmed" }
+          ]
+        },
+        {
+          "id": "guojijingjifa",
+          "name": "国际经济法",
+          "chapters": [
+            { "no": 1, "title": "导论", "sections": [], "confidence": "confirmed" },
+            { "no": 2, "title": "国际货物买卖", "sections": ["概述", "《国际贸易术语解释通则》", "《联合国国际货物销售合同公约》"], "confidence": "confirmed" },
+            { "no": 3, "title": "国际货物运输与保险", "sections": ["国际货物运输", "国际货物运输保险"], "confidence": "confirmed" },
+            { "no": 4, "title": "国际贸易支付", "sections": ["汇付与托收", "信用证"], "confidence": "confirmed" },
+            { "no": 5, "title": "对外贸易管理制度", "sections": ["中国的对外贸易法", "贸易救济措施"], "confidence": "confirmed" },
+            { "no": 6, "title": "世界贸易组织", "sections": ["世界贸易组织概述", "世界贸易组织的主要法律制度"], "confidence": "confirmed" },
+            { "no": 7, "title": "国际经济法领域的其他法律制度", "sections": ["知识产权的国际保护", "国际投资法", "国际融资法", "国际税法"], "confidence": "confirmed" }
+          ]
+        },
+        {
+          "id": "minsufa",
+          "name": "民事诉讼法与仲裁制度",
+          "chapters": [
+            { "no": 1, "title": "民事诉讼与民事诉讼法", "sections": ["民事诉讼", "民事诉讼法"], "confidence": "confirmed" },
+            { "no": 2, "title": "民事诉讼法的基本原则与基本制度", "sections": ["基本原则", "基本制度"], "confidence": "confirmed" },
+            { "no": 3, "title": "诉", "sections": ["诉的概念与特征", "诉的要素", "诉的分类", "反诉", "诉的合并与分离"], "confidence": "confirmed" },
+            { "no": 4, "title": "主管与管辖", "sections": ["民事诉讼主管", "管辖概述", "级别管辖", "地域管辖", "裁定管辖", "管辖权异议"], "confidence": "confirmed" },
+            { "no": 5, "title": "当事人", "sections": ["当事人概述", "原告与被告", "共同诉讼", "诉讼代表人", "第三人"], "confidence": "confirmed" },
+            { "no": 6, "title": "诉讼代理人", "sections": ["诉讼代理人概述", "法定诉讼代理人", "委托诉讼代理人"], "confidence": "confirmed" },
+            { "no": 7, "title": "民事证据", "sections": ["民事证据概述", "民事证据的种类", "民事证据的分类", "证据保全"], "confidence": "confirmed" },
+            { "no": 8, "title": "民事诉讼中的证明", "sections": ["证明对象", "证明责任", "证明标准", "证明程序"], "confidence": "confirmed" },
+            { "no": 9, "title": "人民法院调解", "sections": ["人民法院调解概述", "人民法院调解的原则", "人民法院调解的程序", "调解书及调解的效力"], "confidence": "confirmed" },
+            { "no": 10, "title": "民事诉讼保障制度", "sections": ["期间", "送达", "保全", "先予执行", "对妨害民事诉讼的强制措施"], "confidence": "confirmed" },
+            { "no": 11, "title": "普通程序", "sections": ["普通程序概述", "普通程序的基本程序阶段", "撤诉和缺席判决", "延期审理、诉讼中止和诉讼终结"], "confidence": "confirmed" },
+            { "no": 12, "title": "简易程序", "sections": ["简易程序的概念和适用范围", "简易程序的具体适用", "小额诉讼的特别规定"], "confidence": "confirmed" },
+            { "no": 13, "title": "第二审程序", "sections": ["第二审程序概述", "上诉的提起与受理", "上诉案件的审理", "上诉案件的裁判"], "confidence": "confirmed" },
+            { "no": 14, "title": "审判监督程序", "sections": ["审判监督程序概述", "基于审判监督权提起再审", "基于检察监督权的抗诉提起再审", "基于诉权的申请再审", "再审案件的审判程序"], "confidence": "confirmed" },
+            { "no": 15, "title": "公益诉讼与第三人撤销之诉", "sections": ["公益诉讼", "第三人撤销之诉"], "confidence": "confirmed" },
+            { "no": 16, "title": "民事裁判", "sections": ["民事裁判的概念", "判决", "裁定", "决定"], "confidence": "confirmed" },
+            { "no": 17, "title": "涉外民事诉讼程序", "sections": ["涉外民事诉讼程序概述", "涉外民事诉讼管辖", "涉外民事诉讼中的送达、调查取证、期间", "司法协助"], "confidence": "confirmed" },
+            { "no": 18, "title": "特别程序", "sections": ["特别程序的概念、特点和适用范围", "选民资格案件的审理", "宣告公民失踪案件的审理", "宣告公民死亡案件的审理", "指定遗产管理人案件的审理", "认定公民无民事行为能力、限制民事行为能力案件的审理", "认定财产无主案件的审理", "确认调解协议案件的审理", "实现担保物权案件的审理"], "confidence": "confirmed" },
+            { "no": 19, "title": "督促程序", "sections": ["督促程序概述", "支付令的申请、审查和发出", "对支付令的异议"], "confidence": "confirmed" },
+            { "no": 20, "title": "公示催告程序", "sections": ["公示催告程序概述", "公示催告的申请和受理", "公示催告案件的审理"], "confidence": "confirmed" },
+            { "no": 21, "title": "执行程序", "sections": ["执行程序概述", "执行开始", "执行措施及保全执行", "执行救济", "暂缓执行、执行中止和执行终结"], "confidence": "confirmed" },
+            { "no": 22, "title": "仲裁与仲裁法概述", "sections": ["仲裁概述", "仲裁法概述"], "confidence": "confirmed" },
+            { "no": 23, "title": "仲裁委员会和仲裁协会", "sections": ["仲裁委员会", "仲裁协会", "仲裁规则"], "confidence": "confirmed" },
+            { "no": 24, "title": "仲裁协议", "sections": ["仲裁协议概述", "仲裁协议的内容", "仲裁条款的独立性", "仲裁协议的效力", "仲裁协议的无效与失效"], "confidence": "confirmed" },
+            { "no": 25, "title": "仲裁程序", "sections": ["仲裁当事人与代理人", "申请与受理", "仲裁保全", "仲裁庭的组成", "仲裁审理", "仲裁中的和解、调解和裁决", "简易程序", "仲裁时效"], "confidence": "confirmed" },
+            { "no": 26, "title": "申请撤销仲裁裁决", "sections": ["申请撤销仲裁裁决的概念和特征", "申请撤销仲裁裁决的条件和理由", "法院对撤销仲裁裁决申请的处理及其法律后果"], "confidence": "confirmed" },
+            { "no": 27, "title": "仲裁裁决的执行与不予执行", "sections": ["仲裁裁决的执行", "仲裁裁决的不予执行", "仲裁裁决的中止执行、终结执行和恢复执行"], "confidence": "confirmed" },
+            { "no": 28, "title": "涉外仲裁", "sections": ["涉外仲裁的概念", "涉外仲裁机构", "涉外仲裁程序", "对涉外仲裁裁决的撤销和不予执行", "对涉外仲裁裁决和外国仲裁裁决的执行"], "confidence": "confirmed" }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "confidence=unconfirmed 仅表示该章的『节』未从官方目录还原；『章标题』本身均来自司法部《2026年国家统一法律职业资格考试大纲》官方目录，可靠。",
+    "宪法：章标题已由官方大纲确认；辅导用书本册列有完整节标题，但检索到的版本 OCR 缺损，未逐条还原（待确认）。",
+    "民法、知识产权法、经济法、环境资源法、劳动与社会保障法、商法（第二章起）：大纲只到『章』；辅导用书『节』目录本次未取得完整纯文本（待确认）。章标题均已官方确认。",
+    "2026 大纲相对 2025 的逐科目改动：仅从司法部新闻确认『调整习近平法治思想内容，将 生态环境法典/法治宣传教育法/国家发展规划法/民族团结进步促进法/反外国不当域外管辖条例 纳入，并修订 宪法、商法、环境资源法、国际法、民事诉讼法』；具体考点级增删未逐条比对。",
+    "环境资源法 第一章：2026 大纲为『生态环境保护法』；2025/2024 大纲为『环境保护法』。",
+    "卷二科目名两种写法并存：司法部公告用『民事诉讼法（含仲裁制度）』，大纲/辅导用书用『民事诉讼法与仲裁制度』——同一科目，本文件以『民事诉讼法与仲裁制度』为规范名。",
+    "卷别与科目清单经官方公告核验：试卷一 9 科、试卷二 9 科，2020 年起未变。"
+  ]
+}

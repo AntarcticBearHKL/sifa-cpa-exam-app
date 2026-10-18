@@ -1,6 +1,6 @@
 [package]
 name = "sfzklearning"
-version = "0.0.1"
+version = "0.3.0"
 edition = "2021"
 description = "法考 / 注会 native study helper (CMF data) + stdio MCP server"
 # Keep off so module files under src/bin/studyapp/ are never auto-discovered as binaries.
@@ -24,7 +24,12 @@ path = "src/bin/classify.rs"
 
 [dependencies]
 # eframe 0.36.2 -> egui 0.36.2 (native window, no web view)
-eframe = "0.36.2"
+# `glow` is added on top of the default features: the default `wgpu` backend
+# reports only `CompositeAlphaMode::Opaque` for a plain HWND surface
+# (wgpu-hal dx12/adapter.rs), so a wgpu window can never be translucent. The
+# OpenGL path composites through the GDI redirection surface, which DWM does
+# honour, so it is the only backend that can show the desktop through the glass.
+eframe = { version = "0.36.2", features = ["glow"] }
 egui = "0.36.2"
 # egui_commonmark 0.25.0 is built against egui ^0.36.0 (supports GFM tables)
 egui_commonmark = "0.25.0"

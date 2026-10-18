@@ -25,7 +25,15 @@ impl App {
                 .on_hover_text("切换考试模式")
                 .clicked()
                 {
-                    self.screen = Screen::Launcher;
+                    let next = match self.domain {
+                        Domain::Law => Domain::Cpa,
+                        Domain::Cpa => Domain::Law,
+                    };
+                    // An empty domain would open a workspace with no subjects;
+                    // `App::new` applies the same rule to the startup domain.
+                    if !self.data(next).subjects.is_empty() {
+                        self.enter_mode(next);
+                    }
                 }
 
                 ui.with_layout(egui::Layout::right_to_left(egui::Align::Center), |ui| {

@@ -1,6 +1,14 @@
-//! Windows window chrome for a borderless, transparent window: a real DWM
-//! acrylic backdrop plus the drag / resize / minimize / close affordances that
-//! the missing title bar would otherwise provide.
+//! Windows window chrome for a borderless, transparent window: the drag /
+//! resize / minimize / close affordances that the missing title bar would
+//! otherwise provide, plus the DWM attributes that round the corners and make
+//! the frame follow the app theme.
+//!
+//! The frosted backdrop is **not** an OS effect any more. The accent-policy
+//! blur (`SetWindowCompositionAttribute`) has no radius parameter, so it could
+//! never be made user-controllable, and `DwmEnableBlurBehindWindow` is a proven
+//! no-op on Windows 10/11 (measured byte-identical to leaving the window
+//! alone). The app now captures the desktop itself and Gaussian-blurs it —
+//! see `glass::blur` — so this module no longer asks the system for any blur.
 
 use egui::{CornerRadius, Pos2, Rect, ResizeDirection, Response, Sense, Ui};
 use raw_window_handle::{HasWindowHandle, RawWindowHandle};
@@ -10,16 +18,23 @@ use crate::theme::{Mode, Tokens};
 
 const DWMWA_USE_IMMERSIVE_DARK_MODE: u32 = 20;
 const DWMWA_WINDOW_CORNER_PREFERENCE: u32 = 33;
-const DWMWA_SYSTEMBACKDROP_TYPE: u32 = 38;
+const DWMWA_BORDER_COLOR: u32 = 34;
 
 const DWMWCP_ROUND: i32 = 2;
-/// Acrylic — blurs whatever is behind the window.
-const DWMSBT_TRANSIENTWINDOW: i32 = 3;
+/// `DWMWA_COLOR_NONE`: no frame line around the window.
+const DWMWA_COLOR_NONE: i32 = 0xFFFF_FFFEu32 as i32;
 
 #[link(name = "dwmapi")]
 extern "system" {
     fn DwmSetWindowAttribute(hwnd: isize, attr: u32, value: *const u8, size: u32) -> i32;
     fn DwmGetWindowAttribute(hwnd: isize, attr: u32, value: *mut u8, size: u32) -> i32;
+}
+
+#[link(name = "user32")]
+extern "system" {
+    fn GetWindowLongPtrW(hwnd: isize, index: i32) -> isize;
+    fn SetWindowLongPtrW(hwnd: isize, index: i32, value: isize) -> isize;
+    fn SetWindowPos(hwnd: isize, after: isize, x: i32, y: i32, cx: i32, cy: i32, flags: u32) -> i32;
 }
 
 fn hwnd_of(handle: impl HasWindowHandle) -> Option<isize> {
@@ -51,22 +66,41 @@ pub fn set_immersive_dark(hwnd: isize, dark: bool) {
     let _ = set_attr(hwnd, DWMWA_USE_IMMERSIVE_DARK_MODE, i32::from(dark));
 }
 
-/// Ask DWM for an acrylic backdrop. `Ok(())` means the compositor accepted it,
-/// i.e. the window really shows the desktop behind it, blurred.
-pub fn apply_acrylic(cc: &eframe::CreationContext<'_>, mode: Mode) -> Result<(), String> {
-    let hwnd = hwnd_of(cc).ok_or_else(|| "no Win32 window handle".to_string())?;
+/// Drop a leftover always-on-top bit: an external tool that set one would pin
+/// the window above every other app, and a borderless window is hard to move out
+/// of the way again.
+fn clear_topmost(hwnd: isize) {
+    const GWL_EXSTYLE: i32 = -20;
+    const WS_EX_TOPMOST: isize = 0x0000_0008;
+    const HWND_NOTOPMOST: isize = -2;
+    const SWP_PLAIN: u32 = 0x0001 | 0x0002 | 0x0010;
+    unsafe {
+        let ex = GetWindowLongPtrW(hwnd, GWL_EXSTYLE);
+        if ex & WS_EX_TOPMOST != 0 {
+            SetWindowLongPtrW(hwnd, GWL_EXSTYLE, ex & !WS_EX_TOPMOST);
+            SetWindowPos(hwnd, HWND_NOTOPMOST, 0, 0, 0, 0, SWP_PLAIN);
+        }
+    }
+}
+
+/// Apply the window chrome: immersive-dark frame for the current theme,
+/// rounded corners, no system border line, and no leftover always-on-top bit.
+///
+/// No OS blur is requested any more — the frosted backdrop is captured and
+/// blurred by the app itself (`glass::blur`), which is the only way the two
+/// user settings (透明度 / 模糊度) can exist.
+pub fn apply_chrome(cc: &eframe::CreationContext<'_>, mode: Mode) {
+    let Some(hwnd) = hwnd_of(cc) else {
+        return;
+    };
 
     set_immersive_dark(hwnd, mode == Mode::Dark);
     let _ = set_attr(hwnd, DWMWA_WINDOW_CORNER_PREFERENCE, DWMWCP_ROUND);
-
-    let hr = set_attr(hwnd, DWMWA_SYSTEMBACKDROP_TYPE, DWMSBT_TRANSIENTWINDOW);
-    if hr < 0 {
-        return Err(format!("backdrop HRESULT 0x{:08X}", hr as u32));
-    }
-    Ok(())
+    let _ = set_attr(hwnd, DWMWA_BORDER_COLOR, DWMWA_COLOR_NONE);
+    clear_topmost(hwnd);
 }
 
-/// Human-readable readback, used by `--probe` to prove the backdrop took effect
+/// Human-readable readback, used by `--probe` to confirm the chrome took effect
 /// without anyone touching the window.
 pub fn probe(cc: &eframe::CreationContext<'_>) -> String {
     let Some(hwnd) = hwnd_of(cc) else {
@@ -74,10 +108,10 @@ pub fn probe(cc: &eframe::CreationContext<'_>) -> String {
     };
     let show = |v: Option<i32>| v.map_or_else(|| "read-failed".to_string(), |n| n.to_string());
     format!(
-        "backdrop={} (3=acrylic) dark={} corner={} (2=round)",
-        show(get_attr(hwnd, DWMWA_SYSTEMBACKDROP_TYPE)),
+        "dark={} corner={} (2=round) border={} (=-2 none)",
         show(get_attr(hwnd, DWMWA_USE_IMMERSIVE_DARK_MODE)),
         show(get_attr(hwnd, DWMWA_WINDOW_CORNER_PREFERENCE)),
+        show(get_attr(hwnd, DWMWA_BORDER_COLOR)),
     )
 }
 

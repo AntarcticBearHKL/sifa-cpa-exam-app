@@ -42,6 +42,13 @@ pub struct Sources {
     pub missed: bool,
 }
 
+/// Default value shown by the 自定义 number field.
+pub const DEFAULT_CUSTOM_DRAW: usize = 20;
+
+/// Upper bound for a custom draw, so a stray input cannot ask for an absurd
+/// session size. The available pool is always the real cap anyway.
+pub const MAX_CUSTOM_DRAW: usize = 500;
+
 /// How many questions a session may take.
 #[derive(Clone, Copy, PartialEq, Eq, Debug, Default)]
 pub enum Draw {
@@ -50,6 +57,8 @@ pub enum Draw {
     N10,
     N20,
     N50,
+    /// An arbitrary count held separately on `App` (a label cannot carry it).
+    Custom,
 }
 
 impl Draw {
@@ -59,15 +68,19 @@ impl Draw {
             Draw::N10 => "10",
             Draw::N20 => "20",
             Draw::N50 => "50",
+            Draw::Custom => "自定义",
         }
     }
 
-    pub fn limit(self) -> Option<usize> {
+    /// The cap `draw_plan` applies. `custom` is only read by `Draw::Custom`
+    /// and is clamped so a zero or absurd value cannot slip through.
+    pub fn limit(self, custom: usize) -> Option<usize> {
         match self {
             Draw::All => None,
             Draw::N10 => Some(10),
             Draw::N20 => Some(20),
             Draw::N50 => Some(50),
+            Draw::Custom => Some(custom.clamp(1, MAX_CUSTOM_DRAW)),
         }
     }
 }
@@ -183,13 +196,20 @@ pub fn wrong_sample(
     out
 }
 
-/// Shuffle first when asked, then cap to the draw size.
-pub fn draw_plan(idx: Vec<usize>, draw: Draw, order: Order, seed: u64) -> Vec<usize> {
+/// Shuffle first when asked, then cap to the draw size. `custom` supplies the
+/// count for [`Draw::Custom`] and is ignored by the fixed presets.
+pub fn draw_plan(
+    idx: Vec<usize>,
+    draw: Draw,
+    order: Order,
+    seed: u64,
+    custom: usize,
+) -> Vec<usize> {
     let mut out = match order {
         Order::Sequential => idx,
         Order::Shuffled => shuffled(idx, seed),
     };
-    if let Some(n) = draw.limit() {
+    if let Some(n) = draw.limit(custom) {
         out.truncate(n);
     }
     out
@@ -218,6 +238,41 @@ pub fn judge(q: &Question, selection: &[String]) -> Option<bool> {
         return None;
     }
     Some(q.grade(selection))
+}
+
+/// May the session move on to the next question? The next question is gated
+/// on the current one having been judged: a choice question by submitting it
+/// (graded) or by revealing the answer with 显示答案 (`shown`); a memory /
+/// self-test question by its own self-assessment (记住了 / 没记住). `←` 上一题
+/// and `Esc` stay available, so the gate is never a trap.
+pub fn can_advance(q: &Question, submitted: bool, shown: bool, self_assessed: bool) -> bool {
+    if q.is_choice() {
+        submitted || shown
+    } else {
+        self_assessed
+    }
+}
+
+/// Whether 显示答案 can reveal anything for this question: correct option
+/// labels and/or an explanation. Questions with neither are common in the
+/// data; the button stays visible but disabled for them.
+pub fn can_reveal(q: &Question) -> bool {
+    !q.answer.is_empty()
+        || q
+            .explanation
+            .as_ref()
+            .is_some_and(|e| !e.trim().is_empty())
+}
+
+/// The footer verdict after a wrong choice answer. A question whose `answer`
+/// is empty (common in the data) gets a plain 回答错误 plus the reason instead
+/// of a dangling "正确答案：" with nothing after it.
+pub fn wrong_verdict(q: &Question) -> String {
+    if q.answer.is_empty() {
+        "回答错误 · 这道题在数据里没有答案".to_string()
+    } else {
+        format!("回答错误 · 正确答案：{}", q.answer.join("、"))
+    }
 }
 
 #[cfg(test)]
@@ -489,29 +544,112 @@ mod tests {
 
     #[test]
     fn draw_plan_orders_then_caps() {
-        let seq = draw_plan((0..4).collect(), Draw::All, Order::Sequential, 9);
+        let seq = draw_plan(
+            (0..4).collect(),
+            Draw::All,
+            Order::Sequential,
+            9,
+            DEFAULT_CUSTOM_DRAW,
+        );
         assert_eq!(seq, vec![0, 1, 2, 3], "sequential keeps subject order");
 
-        let capped = draw_plan((0..30).collect(), Draw::N20, Order::Sequential, 9);
+        let capped = draw_plan(
+            (0..30).collect(),
+            Draw::N20,
+            Order::Sequential,
+            9,
+            DEFAULT_CUSTOM_DRAW,
+        );
         assert_eq!(
             capped,
             (0..20).collect::<Vec<_>>(),
             "sequential + cap is the first N"
         );
 
-        let shuffled_all = draw_plan((0..4).collect(), Draw::All, Order::Shuffled, 9);
+        let shuffled_all = draw_plan(
+            (0..4).collect(),
+            Draw::All,
+            Order::Shuffled,
+            9,
+            DEFAULT_CUSTOM_DRAW,
+        );
         assert_eq!(
             shuffled_all,
             shuffled((0..4).collect(), 9),
             "shuffle happens before the cap"
         );
 
-        let shuffled_capped = draw_plan((0..30).collect(), Draw::N10, Order::Shuffled, 9);
+        let shuffled_capped = draw_plan(
+            (0..30).collect(),
+            Draw::N10,
+            Order::Shuffled,
+            9,
+            DEFAULT_CUSTOM_DRAW,
+        );
         assert_eq!(shuffled_capped.len(), 10);
         assert_eq!(shuffled_capped, shuffled((0..30).collect(), 9)[..10].to_vec());
 
-        let small_pool = draw_plan((0..3).collect(), Draw::N10, Order::Shuffled, 9);
+        let small_pool = draw_plan(
+            (0..3).collect(),
+            Draw::N10,
+            Order::Shuffled,
+            9,
+            DEFAULT_CUSTOM_DRAW,
+        );
         assert_eq!(small_pool.len(), 3, "a cap larger than the pool keeps everything");
+
+        let custom = draw_plan(
+            (0..30).collect(),
+            Draw::Custom,
+            Order::Sequential,
+            9,
+            7,
+        );
+        assert_eq!(custom, (0..7).collect::<Vec<_>>(), "custom caps at its own count");
+
+        let over_pool = draw_plan(
+            (0..3).collect(),
+            Draw::Custom,
+            Order::Sequential,
+            9,
+            10,
+        );
+        assert_eq!(
+            over_pool.len(),
+            3,
+            "a custom count larger than the pool keeps everything, like the presets"
+        );
+
+        let clamped_zero = draw_plan(
+            (0..3).collect(),
+            Draw::Custom,
+            Order::Sequential,
+            9,
+            0,
+        );
+        assert_eq!(clamped_zero.len(), 1, "a custom count is clamped to at least 1");
+
+        let exact = draw_plan(
+            (0..1000).collect(),
+            Draw::Custom,
+            Order::Sequential,
+            9,
+            7,
+        );
+        assert_eq!(exact.len(), 7, "自定义 draws exactly the requested count");
+
+        let clamped_max = draw_plan(
+            (0..1000).collect(),
+            Draw::Custom,
+            Order::Sequential,
+            9,
+            MAX_CUSTOM_DRAW + 500,
+        );
+        assert_eq!(
+            clamped_max.len(),
+            MAX_CUSTOM_DRAW,
+            "an absurd custom count is clamped down to the maximum"
+        );
     }
 
     #[test]
@@ -545,5 +683,58 @@ mod tests {
 
         let memory = &qs[3];
         assert_eq!(judge(memory, &[]), None, "no options -> not gradable");
+    }
+
+    /// 下一题 waits for a judgment: a submitted or revealed choice question
+    /// passes, an untouched one does not; a memory question needs its own
+    /// self-assessment (revealing the answer is not an assessment).
+    #[test]
+    fn next_is_gated_until_the_question_is_judged() {
+        let qs = questions();
+        let choice = &qs[0];
+        assert!(!can_advance(choice, false, false, false), "untouched: no next");
+        assert!(
+            !can_advance(choice, false, false, true),
+            "self-assessment does not judge a choice question"
+        );
+        assert!(can_advance(choice, true, false, false), "submitted: next");
+        assert!(can_advance(choice, false, true, false), "revealed: next");
+        assert!(can_advance(choice, true, true, false));
+
+        let memory = &qs[3];
+        assert!(!can_advance(memory, false, false, false), "not assessed: no next");
+        assert!(
+            !can_advance(memory, false, true, false),
+            "seeing the answer is not self-assessment"
+        );
+        assert!(!can_advance(memory, true, false, false), "submitting does not apply");
+        assert!(can_advance(memory, false, false, true), "self-assessed: next");
+    }
+
+    /// 显示答案 is only offered when there is something to show; an empty
+    /// `answer` with no explanation must not open an empty reveal.
+    #[test]
+    fn can_reveal_needs_an_answer_or_an_explanation() {
+        let mut q = q("q1", "single_choice", "第一章", 4, &["A"]);
+        assert!(can_reveal(&q), "an answer is enough");
+
+        q.answer.clear();
+        assert!(can_reveal(&q), "an explanation alone is still worth revealing");
+
+        q.explanation = None;
+        assert!(!can_reveal(&q), "nothing to show");
+
+        q.explanation = Some("   ".to_string());
+        assert!(!can_reveal(&q), "a blank explanation counts as none");
+    }
+
+    /// A wrong verdict must name the correct labels, or say why there are
+    /// none — never leave a dangling "正确答案：".
+    #[test]
+    fn wrong_verdict_names_the_answer_or_says_there_is_none() {
+        let mut q = q("q1", "single_choice", "第一章", 4, &["A", "C"]);
+        assert_eq!(wrong_verdict(&q), "回答错误 · 正确答案：A、C");
+        q.answer.clear();
+        assert_eq!(wrong_verdict(&q), "回答错误 · 这道题在数据里没有答案");
     }
 }

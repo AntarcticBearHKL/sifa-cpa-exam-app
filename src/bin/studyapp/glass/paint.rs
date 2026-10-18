@@ -1,7 +1,9 @@
 //! Low-level glass painting: the backdrop, the frosted surface and progress
 //! rings.
 //!
-//! egui cannot blur what is behind a panel, so a pane is built from three
+//! The backdrop is the captured, Gaussian-blurred desktop (see
+//! [`crate::glass::blur`]) with a scrim over it, or — when the capture is
+//! unavailable — the painted gradient fallback. A pane is built from three
 //! things and nothing more: a milky, near-colourless body, a faint contact
 //! shadow, and a hairline rim. No grain, no glow — real glass has neither.
 
@@ -122,14 +124,38 @@ pub fn fill(painter: &Painter, rect: Rect, tokens: &Tokens, strong: bool) {
     painter.rect_filled(rect, CornerRadius::ZERO, color);
 }
 
-/// Flat wash painted when the OS supplies a real blurred backdrop. Deliberately
-/// featureless: the desktop behind IS the background, and this only exists to
-/// keep text legible over arbitrary content.
-pub fn scrim(painter: &Painter, rect: Rect, tokens: &Tokens) {
-    painter.rect_filled(rect, CornerRadius::ZERO, tokens.palette.background.scrim);
+/// Draw the captured, Gaussian-blurred desktop across `rect`.
+///
+/// `uv` is the content rect's sub-rectangle of the capture texture, derived
+/// from the window's screen position relative to the capture origin — so while
+/// the window moves, the blurred desktop stays registered with the real
+/// desktop instead of sliding along with the window. `Color32::WHITE` tints
+/// nothing: the texture is drawn opaque.
+pub fn desktop(painter: &Painter, rect: Rect, texture: &egui::TextureHandle, uv: Rect) {
+    painter.image(texture.id(), rect, uv, Color32::WHITE);
 }
 
-/// Backdrop: a pale base plus a few very soft, almost achromatic washes. Kept
+/// Scrim alpha from the 透明度 setting: `0` → 255 (opaque), `100` → 0 (fully
+/// clear), clamped and monotonically decreasing in between.
+pub fn scrim_alpha(transparency: u8) -> u8 {
+    let t = transparency.min(100) as f32 / 100.0;
+    (255.0 * (1.0 - t)).round() as u8
+}
+
+/// Flat wash painted over the blurred desktop. Deliberately featureless: the
+/// blurred desktop behind IS the background, and this only exists to keep text
+/// legible over arbitrary content. Its opacity is the 透明度 setting.
+pub fn scrim(painter: &Painter, rect: Rect, tokens: &Tokens, alpha: u8) {
+    let [r, g, b, _] = tokens.palette.background.scrim.to_srgba_unmultiplied();
+    painter.rect_filled(
+        rect,
+        CornerRadius::ZERO,
+        Color32::from_rgba_unmultiplied(r, g, b, alpha),
+    );
+}
+
+/// Fallback backdrop, used only when the desktop capture is unavailable: a
+/// pale base plus a few very soft, almost achromatic washes. Kept
 /// low-frequency because that is what reads as "blurred" behind the panes.
 pub fn backdrop(painter: &Painter, rect: Rect, tokens: &Tokens, phase: f32) {
     let bg = &tokens.palette.background;
@@ -214,5 +240,42 @@ mod tests {
         assert_eq!(mix(black, white, -1.0), black);
         assert_eq!(mix(black, white, 2.0), white);
         assert!((mix(black, white, 0.5).r() as i32 - 128).abs() <= 1);
+    }
+
+    #[test]
+    fn scrim_alpha_maps_transparency_to_a_clamped_monotonic_alpha() {
+        assert_eq!(scrim_alpha(0), 255, "0% transparent is an opaque scrim");
+        assert_eq!(scrim_alpha(100), 0, "100% transparent paints nothing");
+        assert_eq!(scrim_alpha(200), 0, "above 100 is clamped");
+        assert_eq!(
+            scrim_alpha(12),
+            224,
+            "the default ≈ the scrim the app shipped with"
+        );
+
+        let mut prev = 255;
+        for t in 0..=100u8 {
+            let a = scrim_alpha(t);
+            assert!(a <= prev, "alpha must not rise with transparency at {t}");
+            prev = a;
+        }
+    }
+
+    /// The scrim keeps body text at WCAG AA over the worst-case desktop for
+    /// its mode — the same invariant `theme/tokens.rs` guards for the token,
+    /// now that the alpha is user-controlled: 0% transparency must not be
+    /// weaker than the default it replaces.
+    #[test]
+    fn the_default_scrim_alpha_is_not_weaker_than_the_token() {
+        let token_alpha = Tokens::new(crate::theme::Mode::Dark)
+            .palette
+            .background
+            .scrim
+            .a();
+        assert!(
+            scrim_alpha(12) >= token_alpha.saturating_sub(8),
+            "the default (12%) must stay near the shipped scrim alpha, got {} vs {token_alpha}",
+            scrim_alpha(12)
+        );
     }
 }
