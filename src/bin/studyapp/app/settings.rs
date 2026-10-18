@@ -169,13 +169,34 @@ impl App {
             let before = self.user.glass_blur;
             glass::widgets::slider(ui, &tokens, "glass_blur", &mut self.user.glass_blur);
             blur_changed = self.user.glass_blur != before;
+            // 重新采样背景 — the one deliberate capture. A move / resize no
+            // longer re-photographs the desktop (the stored shot follows the
+            // window), so this is the refresh for when the desktop *behind*
+            // the window has actually changed.
+            if glass::widgets::button(
+                ui,
+                &tokens,
+                "glass_resample",
+                RichText::new("重新采样背景").size(12.5),
+                egui::vec2(112.0, 26.0),
+                true,
+            )
+            .on_hover_text(
+                "重新截取一次桌面背景并重新模糊。移动 / 缩放窗口不会重截，只有桌面内容变了才需要手动刷新。",
+            )
+            .clicked()
+            {
+                self.glass_recapture = true;
+                ui.ctx().request_repaint();
+            }
         });
         if changed || blur_changed {
             self.persist_user();
         }
         if blur_changed {
             // `refresh_glass` runs before the views, so make sure the next
-            // frame actually comes and re-captures with the new blur.
+            // frame actually comes and re-blurs the stored capture with the
+            // new 模糊度 (no new screen capture).
             ui.ctx().request_repaint();
         }
         ui.add_space(tokens.space.xs);

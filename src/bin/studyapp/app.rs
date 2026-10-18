@@ -132,37 +132,71 @@ struct App {
     /// no capture has succeeded, in which case `glass::backdrop` paints the
     /// gradient fallback instead.
     glass_texture: Option<egui::TextureHandle>,
+    /// The window's outer rect as last seen, so a move / resize repaints the
+    /// backdrop with its new UV rect (the capture itself is never re-run).
+    glass_geom: Option<egui::Rect>,
+    /// The whole-monitor capture the texture was built from. Kept so a 模糊度
+    /// change re-blurs these pixels instead of photographing the screen again.
+    /// It is a *whole-monitor* shot and the UV rect is derived from the
+    /// window's screen position, so it stays registered with the desktop while
+    /// the window moves — which is why a move / resize never needs a capture.
+    glass_shot: Option<glass::blur::Shot>,
+    /// Which mechanism kept the window out of the last capture; reported by
+    /// `--probe` and written to `log.txt`.
+    glass_hide: Option<glass::blur::Hide>,
     /// Top-left of the capture, in physical screen pixels.
     glass_origin: (i32, i32),
     /// Size of the capture, in physical pixels.
     glass_size: (usize, usize),
-    /// The window's outer rect as last seen, for change detection.
-    glass_geom: Option<egui::Rect>,
-    /// The outer rect at the last capture attempt. A capture happens only once
-    /// the geometry has settled (`GLASS_SETTLE`), so a drag does not capture
-    /// every frame.
-    glass_geom_at_capture: Option<egui::Rect>,
-    /// The 模糊度 setting at the last capture attempt, so moving that slider
-    /// re-captures immediately.
-    glass_blur_at_capture: Option<u8>,
-    /// `InputState::time` of the last geometry change (the debounce clock).
-    glass_settle_at: f64,
+    /// The 模糊度 the current texture was built with, so moving that slider
+    /// re-runs downscale + Gaussian + the upload from [`App::glass_shot`].
+    glass_blur_at_render: Option<u8>,
+    /// A capture has been attempted (and may have failed), so a failing one is
+    /// not retried every frame.
+    glass_capture_attempted: bool,
+    /// A 重新采样背景 click asked for one more capture.
+    glass_recapture: bool,
+    /// How many times `glass::blur::capture` has run this session. Every
+    /// capture is logged, so a regression that starts re-capturing on move /
+    /// resize shows up in `log.txt` instead of only as a flicker.
+    glass_captures: u32,
     probe_report: Option<String>,
     md_cache: CommonMarkCache,
     dirty: bool,
 }
 
-/// How long the window geometry must hold still before the desktop is captured
-/// again (seconds).
-const GLASS_SETTLE: f64 = 0.25;
+/// What the frosted backdrop has to do this frame.
+#[derive(Clone, Copy, PartialEq, Eq, Debug)]
+enum GlassWork {
+    /// Nothing: the texture is current.
+    None,
+    /// Photograph the desktop once more (`SetWindowDisplayAffinity` or the
+    /// transparent-for-a-few-ms fallback; see `glass::blur::Hide`).
+    Capture,
+    /// Re-run downscale + Gaussian + the texture upload from the stored shot.
+    /// No screen access at all.
+    Reblur,
+}
 
-/// Capture rule for the frosted backdrop: capture when the 模糊度 setting
-/// changed (immediately — the slider must re-blur at once), or when the window
-/// geometry has settled after a move / resize (the very first capture is
-/// immediate). Anything else is skipped, so dragging does not capture every
-/// frame.
-fn needs_capture(moved: bool, first: bool, blur_changed: bool, settled: bool) -> bool {
-    blur_changed || (moved && (first || settled))
+/// Capture rule for the frosted backdrop, in one pure place so the tests can
+/// pin it down: capture **once** (or when 重新采样背景 asks for it), then never
+/// again for a move / resize — the stored shot is a whole-monitor image whose
+/// UV rect follows the window, so it stays registered to the desktop while the
+/// window moves and only goes stale when *other windows* change. A 模糊度
+/// change re-blurs the stored pixels; 透明度 never comes near the capture.
+fn glass_work(
+    capture_attempted: bool,
+    recapture: bool,
+    has_shot: bool,
+    blur_changed: bool,
+) -> GlassWork {
+    if recapture || !capture_attempted {
+        GlassWork::Capture
+    } else if has_shot && blur_changed {
+        GlassWork::Reblur
+    } else {
+        GlassWork::None
+    }
 }
 
 impl App {
@@ -249,12 +283,15 @@ impl App {
             anim: anim::Animator::new(),
             bg_phase: 0.0,
             glass_texture: None,
+            glass_shot: None,
+            glass_hide: None,
             glass_origin: (0, 0),
             glass_size: (0, 0),
+            glass_blur_at_render: None,
             glass_geom: None,
-            glass_geom_at_capture: None,
-            glass_blur_at_capture: None,
-            glass_settle_at: 0.0,
+            glass_capture_attempted: false,
+            glass_recapture: false,
+            glass_captures: 0,
             probe_report,
             md_cache: CommonMarkCache::default(),
             dirty: true,
@@ -693,53 +730,89 @@ impl App {
     // frosted glass: capture + Gaussian blur
     // ------------------------------------------------------------------
 
-    /// Capture and blur the desktop when it is needed: once at startup, after
-    /// the window geometry has settled (moved or resized), and immediately
-    /// when the 模糊度 setting changes. A capture that fails keeps the previous
-    /// texture; with no texture at all, `glass::backdrop` paints the gradient
-    /// fallback, so the window is never unreadable.
-    fn refresh_glass(&mut self, ctx: &egui::Context, now: f64) {
-        let Some(outer) = ctx.input(|i| i.viewport().outer_rect) else {
-            return; // minimized or position unknown: keep what we have
-        };
-        if self.glass_geom != Some(outer) {
-            self.glass_geom = Some(outer);
-            self.glass_settle_at = now;
+    /// Keeps the frosted backdrop current without ever re-photographing the
+    /// desktop because the window moved: the shot is a whole-monitor image and
+    /// its UV rect follows the window, so a move / resize only changes which
+    /// part of it is drawn (see [`App::glass_uv`]). What is left is the first
+    /// capture, a 模糊度 change (re-blur the stored pixels) and a deliberate
+    /// 重新采样背景. A capture that fails keeps the previous texture; with no
+    /// texture at all, `glass::backdrop` paints the gradient fallback, so the
+    /// window is never unreadable.
+    fn refresh_glass(&mut self, ctx: &egui::Context) {
+        // Geometry bookkeeping, still needed — but only to repaint with the new
+        // UV rect. A move / resize re-samples the stored shot (see
+        // [`App::glass_uv`]); it never captures.
+        let outer = ctx.input(|i| i.viewport().outer_rect);
+        if outer != self.glass_geom {
+            self.glass_geom = outer;
+            ctx.request_repaint();
         }
 
-        let first = self.glass_geom_at_capture.is_none();
-        let blur_changed = self.glass_blur_at_capture != Some(self.user.glass_blur);
-        let moved = self.glass_geom_at_capture != self.glass_geom;
-        let settled = now - self.glass_settle_at >= GLASS_SETTLE;
-        if needs_capture(moved, first, blur_changed, settled) {
-            self.capture_glass(ctx);
-        } else if moved {
-            // Come back once the geometry has held still; a drag keeps
-            // pushing this deadline out, so it captures only when it stops.
-            let wait = (self.glass_settle_at + GLASS_SETTLE - now).max(0.0);
-            ctx.request_repaint_after(std::time::Duration::from_secs_f64(wait));
+        let blur_changed = self.glass_blur_at_render != Some(self.user.glass_blur);
+        let work = glass_work(
+            self.glass_capture_attempted,
+            self.glass_recapture,
+            self.glass_shot.is_some(),
+            blur_changed,
+        );
+        match work {
+            GlassWork::Capture => {
+                self.glass_recapture = false;
+                self.glass_capture_attempted = true;
+                self.capture_glass(ctx);
+            }
+            GlassWork::Reblur => self.render_glass(ctx),
+            GlassWork::None => {}
         }
     }
 
-    /// One capture → downscale → Gaussian → texture. Records the attempt even
-    /// on failure, so a failing capture is not retried every frame.
+    /// One capture → store the shot → downscale → Gaussian → texture. The shot
+    /// stays in the state so later re-blurs never touch the screen again. The
+    /// attempt is recorded even on failure, so a failing capture is not
+    /// retried every frame (only the first frame, 重新采样背景 or a re-blur of
+    /// an existing shot come back here).
     fn capture_glass(&mut self, ctx: &egui::Context) {
-        self.glass_geom_at_capture = self.glass_geom;
-        self.glass_blur_at_capture = Some(self.user.glass_blur);
-
+        self.glass_captures = self.glass_captures.saturating_add(1);
+        let n = self.glass_captures;
         let Some(hwnd) = self.hwnd else {
+            diag::log(&self.state_dir, &format!("glass: capture #{n} skipped (no Win32 handle)"));
             return;
         };
-        let Some(shot) = glass::blur::capture(hwnd) else {
+        match glass::blur::capture(hwnd) {
+            Some((shot, hide)) => {
+                diag::log(
+                    &self.state_dir,
+                    &format!(
+                        "glass: capture #{n} ok (hide={} affinity_ret={})",
+                        hide.id(),
+                        hide.affinity_ret()
+                    ),
+                );
+                self.glass_hide = Some(hide);
+                self.glass_shot = Some(shot);
+                self.render_glass(ctx);
+            }
+            None => diag::log(
+                &self.state_dir,
+                &format!("glass: capture #{n} failed, keeping the previous shot"),
+            ),
+        }
+    }
+
+    /// Downscale + Gaussian + texture upload from the stored capture. Runs on
+    /// the first capture and whenever 模糊度 changes; no screen access.
+    fn render_glass(&mut self, ctx: &egui::Context) {
+        let Some(shot) = self.glass_shot.as_ref() else {
             return;
         };
         let (halvings, sigma) = glass::blur::params(self.user.glass_blur);
-        let (w, h, rgb) = glass::blur::downscale(&shot, halvings);
+        let (w, h, rgb) = glass::blur::downscale(shot, halvings);
         let blurred = glass::blur::gaussian(&rgb, w, h, sigma);
         let image = glass::blur::to_color_image(&blurred, w, h);
 
         self.glass_origin = shot.origin;
         self.glass_size = (shot.width, shot.height);
+        self.glass_blur_at_render = Some(self.user.glass_blur);
         match &mut self.glass_texture {
             Some(handle) => handle.set(image, egui::TextureOptions::LINEAR),
             None => {
@@ -757,21 +830,37 @@ impl App {
     /// The content rect (egui points, origin at the window's client area) is
     /// converted to physical screen pixels and offset by the capture origin,
     /// so the blurred desktop stays registered with the real desktop while the
-    /// window moves instead of sliding along with it.
+    /// window moves instead of sliding along with it. That is exactly why a
+    /// move / resize needs no new capture: it only changes this rect.
     fn glass_uv(&self, ctx: &egui::Context) -> egui::Rect {
-        let ppp = ctx.pixels_per_point();
         let inner = ctx
             .input(|i| i.viewport().inner_rect)
             .map_or(egui::Pos2::ZERO, |r| r.min);
-        let origin = egui::vec2(self.glass_origin.0 as f32, self.glass_origin.1 as f32);
-        let size = egui::vec2(
-            self.glass_size.0.max(1) as f32,
-            self.glass_size.1.max(1) as f32,
-        );
-        let min = (inner.to_vec2() * ppp - origin) / size;
-        let extent = ctx.content_rect().size() * ppp / size;
-        egui::Rect::from_min_size(min.to_pos2(), extent)
+        uv_in_capture(
+            inner.to_vec2(),
+            ctx.pixels_per_point(),
+            ctx.content_rect().size(),
+            egui::vec2(self.glass_origin.0 as f32, self.glass_origin.1 as f32),
+            egui::vec2(self.glass_size.0 as f32, self.glass_size.1 as f32),
+        )
     }
+}
+
+/// See [`App::glass_uv`]. Pure: `inner_min` and `content_size` are in egui
+/// points (window-relative for the size, screen-relative for the position),
+/// `ppp` converts them to physical pixels, and `origin` / `size` describe the
+/// capture in physical pixels.
+fn uv_in_capture(
+    inner_min: egui::Vec2,
+    ppp: f32,
+    content_size: egui::Vec2,
+    origin: egui::Vec2,
+    size: egui::Vec2,
+) -> egui::Rect {
+    let size = egui::vec2(size.x.max(1.0), size.y.max(1.0));
+    let min = (inner_min * ppp - origin) / size;
+    let extent = content_size * ppp / size;
+    egui::Rect::from_min_size(min.to_pos2(), extent)
 }
 
 impl eframe::App for App {
@@ -785,13 +874,16 @@ impl eframe::App for App {
 
         // First, so the probe can report the real state and the first painted
         // frame already shows the captured desktop.
-        self.refresh_glass(&ctx, now);
+        self.refresh_glass(&ctx);
 
         if let Some(report) = self.probe_report.take() {
-            let glass = if self.glass_texture.is_some() {
-                "captured"
-            } else {
-                "fallback"
+            let glass = match (&self.glass_texture, self.glass_hide) {
+                (Some(_), Some(hide)) => format!(
+                    "captured ({}, affinity_ret={})",
+                    hide.id(),
+                    hide.affinity_ret()
+                ),
+                _ => "fallback".to_string(),
             };
             diag::log(&self.state_dir, &format!("probe {report} glass={glass}"));
             ctx.send_viewport_cmd(egui::ViewportCommand::Close);
@@ -996,7 +1088,7 @@ pub fn run() -> eframe::Result<()> {
 
 #[cfg(test)]
 mod tests {
-    use super::{logic, needs_capture, Session};
+    use super::{glass_work, logic, uv_in_capture, GlassWork, Session};
     use sfzklearning::{OptionItem, Question};
 
     /// A one-question session with a picked answer, ready to be revealed.
@@ -1055,31 +1147,65 @@ mod tests {
         assert!(!s.self_assessed);
     }
 
-    /// The capture debounce is pure logic, and it is where the first version
-    /// went wrong: a 模糊度 change must re-capture even when the window has not
-    /// moved, or the slider would update its number without the blur changing.
+    /// The capture policy, which is where the flicker came from: a move /
+    /// resize must never capture again — the stored whole-monitor shot is
+    /// re-registered to the window's new position by its UV rect — and a 模糊度
+    /// change re-blurs the stored pixels instead of photographing the screen.
+    /// Only the first capture and a deliberate 重新采样背景 touch the screen.
     #[test]
-    fn glass_capture_is_debounced_but_blur_changes_apply_at_once() {
-        assert!(needs_capture(true, true, false, false), "first capture: now");
+    fn glass_captures_once_and_reblurs_instead_of_recapturing() {
+        // Startup: nothing captured yet.
+        assert_eq!(glass_work(false, false, false, false), GlassWork::Capture);
+
+        // Settled and nothing changed.
+        assert_eq!(glass_work(true, false, true, false), GlassWork::None);
+        // The window moved or resized: the stored shot stays valid, so the
+        // capture must NOT run again (this is the flash).
+        assert_eq!(glass_work(true, false, true, false), GlassWork::None);
+        // 模糊度 moved: re-blur the stored pixels, never a new capture.
+        assert_eq!(glass_work(true, false, true, true), GlassWork::Reblur);
+        // 重新采样背景: the one deliberate capture.
+        assert_eq!(glass_work(true, true, true, false), GlassWork::Capture);
+        assert_eq!(glass_work(true, true, true, true), GlassWork::Capture);
+        // A failed capture is not retried every frame...
+        assert_eq!(glass_work(true, false, false, true), GlassWork::None);
+        // ...but a recapture without a stored shot captures again.
+        assert_eq!(glass_work(true, true, false, false), GlassWork::Capture);
+    }
+
+    /// Moving the window re-registers the stored capture instead of replacing
+    /// it: the same texture is sampled from a different offset, so the blurred
+    /// desktop stays glued to the desktop and the crop does not slide along
+    /// with the window.
+    #[test]
+    fn the_stored_capture_follows_the_window_without_a_new_capture() {
+        let capture = egui::vec2(1920.0, 1080.0);
+        let content = egui::vec2(1320.0, 880.0);
+        let at = |x: f32| {
+            uv_in_capture(egui::vec2(x, 60.0), 1.0, content, egui::Vec2::ZERO, capture)
+        };
+
+        let a = at(300.0);
+        let b = at(500.0);
+        assert!((a.min.x - 300.0 / 1920.0).abs() < 1e-6, "crop at the window's own position");
         assert!(
-            !needs_capture(true, false, false, false),
-            "mid-drag: wait for the geometry to settle"
+            (b.min.x - a.min.x - 200.0 / 1920.0).abs() < 1e-6,
+            "moving 200px samples 200px further into the desktop"
         );
+        assert_eq!(a.size(), b.size(), "a move does not change the crop size");
         assert!(
-            needs_capture(true, false, false, true),
-            "settled geometry: capture"
+            (a.width() - content.x / capture.x).abs() < 1e-6,
+            "the crop is the content area in capture UV"
         );
-        assert!(
-            needs_capture(true, false, true, false),
-            "a blur change captures at once, even mid-drag"
-        );
-        assert!(
-            needs_capture(false, false, true, false),
-            "…and even when the window never moved"
-        );
-        assert!(
-            !needs_capture(false, false, false, true),
-            "nothing changed: no capture"
-        );
+
+        // High-DPI: the window rect is in points, the capture in physical px.
+        let hidpi =
+            uv_in_capture(egui::vec2(300.0, 60.0), 2.0, content, egui::Vec2::ZERO, capture);
+        assert!((hidpi.min.x - 600.0 / 1920.0).abs() < 1e-6);
+
+        // A degenerate capture size must not produce NaN.
+        let degenerate =
+            uv_in_capture(egui::Vec2::ZERO, 1.0, content, egui::Vec2::ZERO, egui::Vec2::ZERO);
+        assert!(degenerate.min.x.is_finite() && degenerate.width().is_finite());
     }
 }

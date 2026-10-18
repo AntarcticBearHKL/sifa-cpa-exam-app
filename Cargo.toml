@@ -1,6 +1,6 @@
 [package]
 name = "sfzklearning"
-version = "0.3.0"
+version = "0.4.0"
 edition = "2021"
 description = "法考 / 注会 native study helper (CMF data) + stdio MCP server"
 # Keep off so module files under src/bin/studyapp/ are never auto-discovered as binaries.

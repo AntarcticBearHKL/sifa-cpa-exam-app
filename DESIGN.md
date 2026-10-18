@@ -242,8 +242,8 @@ GUI 拆成入口 + 六个模块：`main.rs`（入口，仅 `mod` 声明 + `fn ma
 `popup_shadow` 必须为 `NONE`、无顶边亮带、`menu_corner_radius` 与按钮一致）
 和 `pressed_widgets_get_a_tint_not_a_neon_outline`（按下态只有低透明染色，没有满强度强调色描边）。
 
-**测试（不开窗口、不点鼠标）**：`cargo test` 直接跑 —— 共 **80 passed**
-（12 lib + 16 classify + 52 sfzklearning），UI 只负责渲染结果。
+**测试（不开窗口、不点鼠标）**：`cargo test` 直接跑 —— 共 **81 passed**
+（12 lib + 16 classify + 53 sfzklearning），UI 只负责渲染结果。
 另有 8 个**既有的** `epaint::TexturesDelta` panic（headless egui 测试丢弃纹理增量所致，
 2 `anim::motion` + 1 `glass::widgets` + 5 `win`），与毛玻璃改动无关，按原样保留。
 
@@ -264,8 +264,11 @@ GUI 拆成入口 + 六个模块：`main.rs`（入口，仅 `mod` 声明 + `fn ma
   `downscale`（ceil 半尺寸 / 平坦图保持平坦）、`params`（0 不模糊、越大越糊、halvings ≤ 3）；
   `widgets.rs` 的指示器滑动与钳制 / 通道插值 / 统计文本 / 抖动只动 x / 内容置于平移后的矩形 /
   **滑杆的几何 → 取值映射**。
-* `app.rs`（2 个）：毛玻璃**重截规则**（模糊度一变立即重截；拖动期间防抖、几何稳定后才截）；
-  **显示答案**只置 `shown`（不动 `answered` / `correct`），并打开 `下一题` 闸门。
+* `app.rs`（3 个）：毛玻璃**截图规则**（`glass_work`：第一帧截一次；**移动 / 缩放永不重截**；
+  模糊度改变走 `Reblur`，只重跑降采样 + 高斯 + 上传，不碰屏幕；`重新采样背景` 才截第二张；
+  失败的截图不每帧重试）、**取景几何**（`uv_in_capture`：窗口移动多少，取样就深入桌面多少 ——
+  同尺寸、无 NaN，含高 DPI）；**显示答案**只置 `shown`（不动 `answered` / `correct`），
+  并打开 `下一题` 闸门。
 * `anim/`（4 个）：`easing::clamp` 边界、`shake` 衰减端点与边界、抖动重启与结束、`is_live` / `prune`。
 * `lib.rs`（12 个）：数据加载 / 判定 / `UserStore`（收藏 · 备注 · 统计 · 主题）往返，
   以及 **`user.json` 缺 `glass_*` 字段仍能反序列化**（旧文件兼容）。
@@ -279,20 +282,34 @@ GUI 拆成入口 + 六个模块：`main.rs`（入口，仅 `mod` 声明 + `fn ma
   OpenGL 走 GDI 重定向表面，DWM 认它。
 * **模糊由应用自己做**（`glass/blur.rs`）：`BitBlt` 屏幕 DC 截**主显示器** → 2×2 降采样（`0..=3` 次）
   → **可分离高斯模糊**（半径 `ceil(3σ)`，横向 + 纵向，边缘钳制）→ `TextureOptions::LINEAR` 纹理，
-  画满客户区后盖 scrim。截图期间窗口用 `SetLayeredWindowAttributes(hwnd, 0, 0, LWA_ALPHA)` 把自己
-  变全透明、截完立刻恢复 255 —— 不截到自己，且整个过程远短于一帧，DWM 看不到透明状态、不会闪。
+  画满客户区后盖 scrim。截图时窗口**不能出现在自己的截图里**，两条路径（`glass::blur::Hide`）：
+  * **首选**：`SetWindowDisplayAffinity(hwnd, WDA_EXCLUDEFROMCAPTURE)`（`0x11`，Windows 10 2004+）。
+    合成器把窗口从所有截图中去掉、但照常画给用户看，所以**屏幕上什么都没有变**，没有透明帧可被
+    DWM 呈现 —— 这条路径不会闪。`BitBlt` 前后各一次调用（前 `0x11`、后 `WDA_NONE` `0x0`），
+    窗口只在这几毫秒里对截图隐藏，用户自己的截图照常包含它。
+  * **回退**（该调用失败，即 2004 之前的系统）：窗口用 `SetLayeredWindowAttributes(hwnd, 0, 0, LWA_ALPHA)`
+    把自己变全透明、截完立刻恢复 255 —— 远短于一帧，DWM 通常不会呈现这一帧。
+  `log.txt` / `--probe` 会记下**该调用的原始返回值**（`affinity_ret`，非 0 = 被接受），
+  所以「这台机器走的哪条路、系统答了什么」可事后查证。
 * **为什么不再用系统模糊**：`SetWindowCompositionAttribute` 的 accent policy **没有半径参数**，
   「模糊度」滑杆在它上面根本无从实现；`DwmEnableBlurBehindWindow` 在 Windows 10/11 上是实测无效的
   （16px 黑白网格：只调 blur-behind 与完全不调**逐字节相同**）。旧机制的历史实测数据保留：
   accent policy 能把窗口内网格对比度从 12.4 压到 0.52；「窗口平移 500×120px」时，锐利背景有
   39.9% 的像素跟着变，磨砂背景只剩 1.5%。现在 `win.rs` 不再向系统申请任何模糊。
-* **两个用户设置**（设置 → 外观，写入 `state\user.json`）：
+* **两个用户设置 + 一个动作**（设置 → 外观，写入 `state\user.json`）：
   **透明度** `0..=100`（scrim alpha = `255 * (1 - t/100)`，默认 12 ≈ 旧的 224）与
   **模糊度** `0..=100`（映射到降采样次数 + sigma，集中在 `glass::blur::params`；0 = 桌面保持清晰）。
-* **注册到桌面**：纹理按窗口在屏幕上的位置取 UV（`App::glass_uv`），所以移动窗口时模糊的桌面
-  **不跟着窗口滑**，而是像真的贴在桌面上。窗口几何变化后**等 0.25s 再重截**（拖动/缩放中不截），
-  模糊度改变立即重截；截不到（远程桌面 / 老系统）时保留上一张，一张都没有则回退为应用内渐变背景
-  （`paint::backdrop`），窗口永远可读。
+  旁边的 **`重新采样背景`**（次要按钮样式，带悬停说明）是**唯一会重新截图桌面的用户动作** ——
+  用于桌面内容变了之后手动刷新。
+* **只截一次**：截图是**整台主显示器**的一张图，纹理按窗口在屏幕上的位置取 UV（`App::glass_uv`），
+  所以移动窗口时模糊的桌面**不跟着窗口滑**，而是像真的贴在桌面上 —— 这也正是**移动 / 缩放窗口
+  不需要重截**的原因：它只改变取哪一块（`uv_in_capture`）。截图**只有两种情况**会发生：
+  **启动后的第一帧**，以及用户点击 **`重新采样背景`**。
+  **模糊度改变只重跑 `downscale` + `gaussian` + 纹理上传**（截图原图存在 `App::glass_shot`，
+  不再碰屏幕）；**透明度完全不碰截图**（只改 scrim alpha）。
+  截图只在**其他窗口**变化时才过时 —— 那正是 `重新采样背景` 的用途。
+  截不到（远程桌面 / 老系统）时保留上一张，一张都没有则回退为应用内渐变背景（`paint::backdrop`），
+  窗口永远可读。
 * **缩放窗口**：无边框窗口没有系统缩放边框，所以由 `win::chrome` 自己判定 ——
   指针进入窗口边缘 8px（角 16px）时**设置对应的缩放光标**（`ResizeHorizontal` / `ResizeVertical` / `ResizeNwSe` / `ResizeNeSw`），
   按下则发 `BeginResize` 触发**原生**缩放。光标提示是必需的：否则无边框窗口上根本看不出哪里能拖。
@@ -301,9 +318,12 @@ GUI 拆成入口 + 六个模块：`main.rs`（入口，仅 `mod` 声明 + `fn ma
   并吞掉全部点击（这是踩过的坑，代码里有注释）。
 * `win::chrome_button`：**用线条画**的最小化 / 关闭，避免字体缺字形（msyh 既没有窗口控制字形，也没有勾叉）。
 * 自检：`sfzklearning.exe --probe` 打印**从系统读回**的属性与毛玻璃状态后立即退出，例如
-  `probe dark=1 corner=2 (2=round) border=read-failed (=-2 none) glass=captured`
+  `probe dark=1 corner=2 (2=round) border=read-failed (=-2 none) glass=captured (display-affinity, affinity_ret=1)`
   （`dark` 跟随当前模式：深色 1 / 浅色 0；`corner` 2 = 圆角；`border` 读到 `-2`（`DWMWA_COLOR_NONE`）
-  就是没有系统描边，这台机器上读不到，所以显示 `read-failed`；`glass` 表示桌面截图是否成功）。
+  就是没有系统描边，这台机器上读不到，所以显示 `read-failed`；`glass` 表示桌面截图是否成功、
+  走的哪条隐藏路径、以及 `SetWindowDisplayAffinity` 的原始返回值 —— 非 0 就是被系统接受）。
+  每次截图都会往 `log.txt` 写一行 `glass: capture #N ok (hide=… affinity_ret=…)`，
+  所以「移动 / 缩放窗口后是否又偷偷截图」可以直接数日志，而不是靠肉眼判断。
 
 **做题会话：先判定，再下一题。** 每道题都必须先有结果才能翻页 —— 选择题走
 `选答案 → 提交答案 → 判定` 或 `显示答案 → 看答案`，两条路都会打开 `下一题 ▶`（以及 `→`）；

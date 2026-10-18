@@ -6,10 +6,17 @@
 //! monitor itself, blurs the shot and draws it under the scrim:
 //!
 //! 1. [`capture`] — `BitBlt` the screen DC into a top-down 32-bit DIB. The
-//!    window makes itself fully transparent (`LWA_ALPHA`, alpha 0) for the
-//!    duration of the blit so it does not capture itself, and restores alpha
-//!    255 immediately afterwards — hide → blit → restore stays well under one
-//!    vsync, so DWM never presents the transparent state.
+//!    window is kept out of its own screenshot for the duration of the blit,
+//!    by one of two paths (see [`Hide`]):
+//!    * `SetWindowDisplayAffinity(hwnd, WDA_EXCLUDEFROMCAPTURE)` — Windows 10
+//!      2004+. The compositor leaves the window out of every capture while the
+//!      call is in effect, and the user still sees it normally, so **nothing
+//!      ever changes on screen** and there is no transparent frame for DWM to
+//!      present. Cleared back to `WDA_NONE` right after the blit.
+//!    * Fallback, when that call fails (older Windows): the window is made
+//!      fully transparent (`LWA_ALPHA`, alpha 0) for the blit and restored to
+//!      alpha 255 immediately afterwards — hide → blit → restore stays well
+//!      under one vsync, so DWM normally never presents the transparent state.
 //! 2. [`downscale`] — repeated 2x2 box halvings. This is both a cheap pre-blur
 //!    and the reason the Gaussian stays affordable: it runs on 1/2^h of the
 //!    pixels.
@@ -116,6 +123,7 @@ extern "system" {
     fn SetLayeredWindowAttributes(hwnd: isize, key: u32, alpha: u8, flags: u32) -> i32;
     fn GetWindowLongPtrW(hwnd: isize, index: i32) -> isize;
     fn SetWindowLongPtrW(hwnd: isize, index: i32, value: isize) -> isize;
+    fn SetWindowDisplayAffinity(hwnd: isize, affinity: u32) -> i32;
 }
 
 const SM_CXSCREEN: i32 = 0;
@@ -127,8 +135,51 @@ const LWA_ALPHA: u32 = 0x0000_0002;
 const GWL_EXSTYLE: i32 = -20;
 const WS_EX_LAYERED: isize = 0x0008_0000;
 
+/// `WDA_NONE` — the window is captured like any other again.
+const WDA_NONE: u32 = 0x0000_0000;
+/// `WDA_EXCLUDEFROMCAPTURE` (Windows 10 2004+): the compositor draws the window
+/// normally for the user but leaves it out of screen captures.
+const WDA_EXCLUDEFROMCAPTURE: u32 = 0x0000_0011;
+
+/// Which mechanism kept the window out of its own screenshot.
+///
+/// Both variants carry the raw return value of the
+/// `SetWindowDisplayAffinity(hwnd, WDA_EXCLUDEFROMCAPTURE)` call they were
+/// chosen from, so `log.txt` / `--probe` report what the OS actually answered
+/// (non-zero = accepted) instead of only the path that was taken.
+#[derive(Clone, Copy, PartialEq, Eq, Debug)]
+pub enum Hide {
+    /// `SetWindowDisplayAffinity(WDA_EXCLUDEFROMCAPTURE)` was accepted
+    /// (`ret` non-zero): the window was never altered on screen, so DWM had no
+    /// transparent frame to present — the path that cannot flash.
+    DisplayAffinity { ret: i32 },
+    /// The call was refused (`ret` 0, pre-2004 Windows): the window was made
+    /// fully transparent for the blit and restored right after.
+    LayeredAlpha { ret: i32 },
+}
+
+impl Hide {
+    /// Stable id for the log / probe readback.
+    pub fn id(self) -> &'static str {
+        match self {
+            Hide::DisplayAffinity { .. } => "display-affinity",
+            Hide::LayeredAlpha { .. } => "layered-alpha",
+        }
+    }
+
+    /// The raw `SetWindowDisplayAffinity` return value this path came from.
+    /// Non-zero means the compositor accepted `WDA_EXCLUDEFROMCAPTURE`, so the
+    /// window was never hidden on screen.
+    pub fn affinity_ret(self) -> i32 {
+        match self {
+            Hide::DisplayAffinity { ret } | Hide::LayeredAlpha { ret } => ret,
+        }
+    }
+}
+
 /// `SetLayeredWindowAttributes` needs `WS_EX_LAYERED`; winit's transparent
-/// windows do not carry it, so it is added once, the first time we capture.
+/// windows do not carry it, so the fallback capture path adds it once. The
+/// `WDA_EXCLUDEFROMCAPTURE` path never touches the window's extended style.
 fn ensure_layered(hwnd: isize) {
     unsafe {
         let ex = GetWindowLongPtrW(hwnd, GWL_EXSTYLE);
@@ -140,11 +191,11 @@ fn ensure_layered(hwnd: isize) {
 
 /// Screenshot the primary monitor into a top-down BGRA buffer.
 ///
-/// The window is made fully transparent for the blit and restored to alpha 255
-/// right after it, so the shot shows the real desktop instead of our own UI.
-/// Returns `None` on any Win32 failure — the caller then falls back to the
-/// painted gradient.
-pub fn capture(hwnd: isize) -> Option<Shot> {
+/// The window is kept out of its own screenshot (see [`Hide`]) for the blit
+/// only, so the shot shows the real desktop instead of our own UI. Returns
+/// `None` on any Win32 failure — the caller then keeps its previous capture,
+/// or falls back to the painted gradient.
+pub fn capture(hwnd: isize) -> Option<(Shot, Hide)> {
     let width = unsafe { GetSystemMetrics(SM_CXSCREEN) };
     let height = unsafe { GetSystemMetrics(SM_CYSCREEN) };
     if width <= 0 || height <= 0 {
@@ -189,22 +240,51 @@ pub fn capture(hwnd: isize) -> Option<Shot> {
         }
         let old = SelectObject(mem, dib);
 
-        // Hide → blit → restore, back to back: DWM presents at vsync, so the
-        // fully transparent state is never shown to anyone.
-        ensure_layered(hwnd);
-        let hidden = SetLayeredWindowAttributes(hwnd, 0, 0, LWA_ALPHA) != 0;
+        // Hide → blit → unhide, back to back.
+        //
+        // Preferred path: `WDA_EXCLUDEFROMCAPTURE`. The compositor omits the
+        // window from the blit while the affinity is set and keeps drawing it
+        // for the user, so no frame ever changes on screen — unlike the
+        // transparent-for-a-few-ms trick below, whose alpha-0 frame DWM
+        // sometimes presents (the flash this app used to show).
+        // Fallback: the affinity call is not available (pre-2004 Windows), so
+        // the window goes fully transparent for the blit and back to 255 right
+        // after it — well under one vsync.
+        let affinity_ret = SetWindowDisplayAffinity(hwnd, WDA_EXCLUDEFROMCAPTURE);
+        let hidden = if affinity_ret != 0 {
+            true
+        } else {
+            ensure_layered(hwnd);
+            SetLayeredWindowAttributes(hwnd, 0, 0, LWA_ALPHA) != 0
+        };
         let blt = BitBlt(mem, 0, 0, width, height, screen, 0, 0, SRCCOPY);
-        SetLayeredWindowAttributes(hwnd, 0, 255, LWA_ALPHA);
+        if affinity_ret != 0 {
+            SetWindowDisplayAffinity(hwnd, WDA_NONE);
+        } else {
+            SetLayeredWindowAttributes(hwnd, 0, 255, LWA_ALPHA);
+        }
+        let hide = if affinity_ret != 0 {
+            Hide::DisplayAffinity {
+                ret: affinity_ret,
+            }
+        } else {
+            Hide::LayeredAlpha {
+                ret: affinity_ret,
+            }
+        };
 
         let shot = if hidden && blt != 0 {
             let bytes =
                 std::slice::from_raw_parts(bits as *const u8, w * h * 4).to_vec();
-            Some(Shot {
-                origin: (0, 0),
-                width: w,
-                height: h,
-                bgra: bytes,
-            })
+            Some((
+                Shot {
+                    origin: (0, 0),
+                    width: w,
+                    height: h,
+                    bgra: bytes,
+                },
+                hide,
+            ))
         } else {
             None
         };
