@@ -1,7 +1,8 @@
 //! Windows window chrome for a borderless, transparent window: the drag /
 //! resize / minimize / close affordances that the missing title bar would
-//! otherwise provide, plus the DWM attributes that round the corners and make
-//! the frame follow the app theme.
+//! otherwise provide, the DWM attributes that round the corners and make
+//! the frame follow the app theme, and the window's physical-pixel content
+//! rect that the frosted-glass crop is placed with.
 //!
 //! The frosted backdrop is **not** an OS effect any more. The accent-policy
 //! blur (`SetWindowCompositionAttribute`) has no radius parameter, so it could
@@ -35,6 +36,24 @@ extern "system" {
     fn GetWindowLongPtrW(hwnd: isize, index: i32) -> isize;
     fn SetWindowLongPtrW(hwnd: isize, index: i32, value: isize) -> isize;
     fn SetWindowPos(hwnd: isize, after: isize, x: i32, y: i32, cx: i32, cy: i32, flags: u32) -> i32;
+    fn GetClientRect(hwnd: isize, rect: *mut WinRect) -> i32;
+    fn ClientToScreen(hwnd: isize, point: *mut WinPoint) -> i32;
+}
+
+/// `RECT` from `GetClientRect`.
+#[repr(C)]
+struct WinRect {
+    left: i32,
+    top: i32,
+    right: i32,
+    bottom: i32,
+}
+
+/// `POINT` for `ClientToScreen`.
+#[repr(C)]
+struct WinPoint {
+    x: i32,
+    y: i32,
 }
 
 fn hwnd_of(handle: impl HasWindowHandle) -> Option<isize> {
@@ -58,6 +77,37 @@ fn get_attr(hwnd: isize, attr: u32) -> Option<i32> {
 /// so runtime code can flip DWM attributes without a `CreationContext`.
 pub fn window_hwnd(handle: impl HasWindowHandle) -> Option<isize> {
     hwnd_of(handle)
+}
+
+/// The window's **content (client) area** in physical screen pixels, straight
+/// from Win32: `GetClientRect` for the size, `ClientToScreen` for the position.
+///
+/// This is the rectangle the frosted-glass crop must match: the texture is
+/// drawn over egui's content rect, which on Windows *is* the client area (no
+/// safe-area insets). winit's frameless windows add a 1px shift for the drop
+/// shadow, so `GetWindowRect` would name the crop one pixel too high —
+/// `ClientToScreen` is the authoritative position instead. Physical pixels
+/// also mean no `pixels_per_point`: on a virtual screen spanning monitors with
+/// different DPI scales no single scale factor can name a position on all of
+/// them.
+pub fn content_rect(hwnd: isize) -> Option<Rect> {
+    let mut r = WinRect {
+        left: 0,
+        top: 0,
+        right: 0,
+        bottom: 0,
+    };
+    if unsafe { GetClientRect(hwnd, &mut r) } == 0 || r.right < r.left || r.bottom < r.top {
+        return None;
+    }
+    let mut origin = WinPoint { x: 0, y: 0 };
+    if unsafe { ClientToScreen(hwnd, &mut origin) } == 0 {
+        return None;
+    }
+    Some(Rect::from_min_size(
+        Pos2::new(origin.x as f32, origin.y as f32),
+        egui::vec2((r.right - r.left) as f32, (r.bottom - r.top) as f32),
+    ))
 }
 
 /// DWM's immersive-dark flag for the non-client frame: `1` for Dark, `0` for

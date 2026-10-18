@@ -189,7 +189,7 @@ GUI 拆成入口 + 六个模块：`main.rs`（入口，仅 `mod` 声明 + `fn ma
 
 **布局风格：整块分隔式（不是浮动卡片）**。窗口是一张**连续的磨砂面**，由发丝线分成几个区域：
 
-1. 底层是 `LayerId::background()` 上的**桌面本身**：应用截图主显示器并做**真高斯模糊**（`glass::blur`），
+1. 底层是 `LayerId::background()` 上的**桌面本身**：应用截图**整个虚拟屏幕**并做**真高斯模糊**（`glass::blur`），
    按屏幕位置取 UV 画满客户区，再盖上 scrim（alpha = 透明度设置）。截图不可用时才退回
    `paint::backdrop` 的柔和垂直渐变 + 软斑。
 2. 每个区域是**平整的磨砂填充**（`glass::panel_fill`）：无圆角、无外间距、**无投影** —— 没有任何东西浮在背景上。
@@ -242,8 +242,8 @@ GUI 拆成入口 + 六个模块：`main.rs`（入口，仅 `mod` 声明 + `fn ma
 `popup_shadow` 必须为 `NONE`、无顶边亮带、`menu_corner_radius` 与按钮一致）
 和 `pressed_widgets_get_a_tint_not_a_neon_outline`（按下态只有低透明染色，没有满强度强调色描边）。
 
-**测试（不开窗口、不点鼠标）**：`cargo test` 直接跑 —— 共 **81 passed**
-（12 lib + 16 classify + 53 sfzklearning），UI 只负责渲染结果。
+**测试（不开窗口、不点鼠标）**：`cargo test` 直接跑 —— 共 **83 passed**
+（12 lib + 16 classify + 55 sfzklearning），UI 只负责渲染结果。
 另有 8 个**既有的** `epaint::TexturesDelta` panic（headless egui 测试丢弃纹理增量所致，
 2 `anim::motion` + 1 `glass::widgets` + 5 `win`），与毛玻璃改动无关，按原样保留。
 
@@ -264,11 +264,12 @@ GUI 拆成入口 + 六个模块：`main.rs`（入口，仅 `mod` 声明 + `fn ma
   `downscale`（ceil 半尺寸 / 平坦图保持平坦）、`params`（0 不模糊、越大越糊、halvings ≤ 3）；
   `widgets.rs` 的指示器滑动与钳制 / 通道插值 / 统计文本 / 抖动只动 x / 内容置于平移后的矩形 /
   **滑杆的几何 → 取值映射**。
-* `app.rs`（3 个）：毛玻璃**截图规则**（`glass_work`：第一帧截一次；**移动 / 缩放永不重截**；
+* `app.rs`（5 个）：毛玻璃**截图规则**（`glass_work`：第一帧截一次；**移动 / 缩放永不重截**；
   模糊度改变走 `Reblur`，只重跑降采样 + 高斯 + 上传，不碰屏幕；`重新采样背景` 才截第二张；
   失败的截图不每帧重试）、**取景几何**（`uv_in_capture`：窗口移动多少，取样就深入桌面多少 ——
-  同尺寸、无 NaN，含高 DPI）；**显示答案**只置 `shown`（不动 `answered` / `correct`），
-  并打开 `下一题` 闸门。
+  同尺寸、无 NaN）、**合成多显示器布局**（右侧 / 左侧 / 上方 / 混合堆叠各一套虚拟屏幕与窗口矩形，
+  断言 UV 落点、裁剪尺寸，以及 UV 反算回物理像素的 0 px 误差；窗口不在截图内时仍然有限不 panic）、
+  **显示答案**只置 `shown`（不动 `answered` / `correct`），并打开 `下一题` 闸门。
 * `anim/`（4 个）：`easing::clamp` 边界、`shake` 衰减端点与边界、抖动重启与结束、`is_live` / `prune`。
 * `lib.rs`（12 个）：数据加载 / 判定 / `UserStore`（收藏 · 备注 · 统计 · 主题）往返，
   以及 **`user.json` 缺 `glass_*` 字段仍能反序列化**（旧文件兼容）。
@@ -280,7 +281,9 @@ GUI 拆成入口 + 六个模块：`main.rs`（入口，仅 `mod` 声明 + `fn ma
 * **后端必须是 `glow`**：`renderer: eframe::Renderer::Glow`。默认的 `wgpu` 后端对普通 HWND 只报
   `CompositeAlphaMode::Opaque`（wgpu-hal `dx12/adapter.rs`），**永远做不出半透明窗口**；
   OpenGL 走 GDI 重定向表面，DWM 认它。
-* **模糊由应用自己做**（`glass/blur.rs`）：`BitBlt` 屏幕 DC 截**主显示器** → 2×2 降采样（`0..=3` 次）
+* **模糊由应用自己做**（`glass/blur.rs`）：`BitBlt` 屏幕 DC 截**整个虚拟屏幕**（`SM_XVIRTUALSCREEN/Y` +
+  `SM_CXVIRTUALSCREEN/Y`；多显示器时虚拟原点是负的，`BitBlt` 的源坐标就用这个原点 ——
+  `GetDC(NULL)` 的 DC 本就覆盖整个虚拟桌面）→ 2×2 降采样（`0..=3` 次）
   → **可分离高斯模糊**（半径 `ceil(3σ)`，横向 + 纵向，边缘钳制）→ `TextureOptions::LINEAR` 纹理，
   画满客户区后盖 scrim。截图时窗口**不能出现在自己的截图里**，两条路径（`glass::blur::Hide`）：
   * **首选**：`SetWindowDisplayAffinity(hwnd, WDA_EXCLUDEFROMCAPTURE)`（`0x11`，Windows 10 2004+）。
@@ -301,7 +304,11 @@ GUI 拆成入口 + 六个模块：`main.rs`（入口，仅 `mod` 声明 + `fn ma
   **模糊度** `0..=100`（映射到降采样次数 + sigma，集中在 `glass::blur::params`；0 = 桌面保持清晰）。
   旁边的 **`重新采样背景`**（次要按钮样式，带悬停说明）是**唯一会重新截图桌面的用户动作** ——
   用于桌面内容变了之后手动刷新。
-* **只截一次**：截图是**整台主显示器**的一张图，纹理按窗口在屏幕上的位置取 UV（`App::glass_uv`），
+* **只截一次**：截图是**整个虚拟屏幕**的一张图，纹理按窗口的**物理像素客户区**取 UV（`App::glass_uv`；
+  矩形来自 Win32 `GetClientRect` + `ClientToScreen`，不再用 egui 点数 × `pixels_per_point` —— 多显示器
+  DPI 不同时单一缩放系数根本没法命名所有屏幕上的位置。**必须是客户区而不是 `GetWindowRect`**：winit 的
+  无边框窗口为投影阴影把客户区整体下移 1px，实测 `ClientToScreen(0,0)` = 窗口矩形 y + 1，直接用窗口矩形
+  会让背景整整偏 1px；实测两台显示器上 UV 反算回物理像素的误差都是 **0 px**），
   所以移动窗口时模糊的桌面**不跟着窗口滑**，而是像真的贴在桌面上 —— 这也正是**移动 / 缩放窗口
   不需要重截**的原因：它只改变取哪一块（`uv_in_capture`）。截图**只有两种情况**会发生：
   **启动后的第一帧**，以及用户点击 **`重新采样背景`**。
@@ -322,7 +329,9 @@ GUI 拆成入口 + 六个模块：`main.rs`（入口，仅 `mod` 声明 + `fn ma
   （`dark` 跟随当前模式：深色 1 / 浅色 0；`corner` 2 = 圆角；`border` 读到 `-2`（`DWMWA_COLOR_NONE`）
   就是没有系统描边，这台机器上读不到，所以显示 `read-failed`；`glass` 表示桌面截图是否成功、
   走的哪条隐藏路径、以及 `SetWindowDisplayAffinity` 的原始返回值 —— 非 0 就是被系统接受）。
-  每次截图都会往 `log.txt` 写一行 `glass: capture #N ok (hide=… affinity_ret=…)`，
+  每次截图都会往 `log.txt` 写一行
+  `glass: capture #N ok (hide=… affinity_ret=… origin=x,y size=WxH)`（`origin`/`size` 就是这次
+  截图读到的**虚拟屏幕**范围，单显示器时是 `0,0` + `1920x1080`），
   所以「移动 / 缩放窗口后是否又偷偷截图」可以直接数日志，而不是靠肉眼判断。
 
 **做题会话：先判定，再下一题。** 每道题都必须先有结果才能翻页 —— 选择题走

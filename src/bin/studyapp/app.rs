@@ -132,19 +132,26 @@ struct App {
     /// no capture has succeeded, in which case `glass::backdrop` paints the
     /// gradient fallback instead.
     glass_texture: Option<egui::TextureHandle>,
-    /// The window's outer rect as last seen, so a move / resize repaints the
-    /// backdrop with its new UV rect (the capture itself is never re-run).
-    glass_geom: Option<egui::Rect>,
-    /// The whole-monitor capture the texture was built from. Kept so a 模糊度
-    /// change re-blurs these pixels instead of photographing the screen again.
-    /// It is a *whole-monitor* shot and the UV rect is derived from the
-    /// window's screen position, so it stays registered with the desktop while
-    /// the window moves — which is why a move / resize never needs a capture.
+    /// The window's **content area** in physical screen pixels as last seen
+    /// (Win32 `GetClientRect` + `ClientToScreen`), so a move / resize repaints
+    /// the backdrop with its new UV rect. The rect is in the same physical
+    /// pixel space as the capture, so no `pixels_per_point` conversion is
+    /// involved — that is what lets the crop stay correct across monitors with
+    /// different DPI scales.
+    glass_content_px: Option<egui::Rect>,
+    /// The whole-virtual-screen capture the texture was built from. Kept so a
+    /// 模糊度 change re-blurs these pixels instead of photographing the screen
+    /// again. It is a *whole-screen* shot and the UV rect is derived from the
+    /// window's physical screen rect, so it stays registered with the desktop
+    /// while the window moves — which is why a move / resize never needs a
+    /// capture.
     glass_shot: Option<glass::blur::Shot>,
     /// Which mechanism kept the window out of the last capture; reported by
     /// `--probe` and written to `log.txt`.
     glass_hide: Option<glass::blur::Hide>,
-    /// Top-left of the capture, in physical screen pixels.
+    /// Top-left of the capture, in physical screen pixels: the virtual
+    /// screen's origin, negative when a monitor sits left of / above the
+    /// primary.
     glass_origin: (i32, i32),
     /// Size of the capture, in physical pixels.
     glass_size: (usize, usize),
@@ -288,7 +295,7 @@ impl App {
             glass_origin: (0, 0),
             glass_size: (0, 0),
             glass_blur_at_render: None,
-            glass_geom: None,
+            glass_content_px: None,
             glass_capture_attempted: false,
             glass_recapture: false,
             glass_captures: 0,
@@ -731,21 +738,25 @@ impl App {
     // ------------------------------------------------------------------
 
     /// Keeps the frosted backdrop current without ever re-photographing the
-    /// desktop because the window moved: the shot is a whole-monitor image and
-    /// its UV rect follows the window, so a move / resize only changes which
-    /// part of it is drawn (see [`App::glass_uv`]). What is left is the first
-    /// capture, a 模糊度 change (re-blur the stored pixels) and a deliberate
-    /// 重新采样背景. A capture that fails keeps the previous texture; with no
-    /// texture at all, `glass::backdrop` paints the gradient fallback, so the
-    /// window is never unreadable.
+    /// desktop because the window moved: the shot is a whole-virtual-screen
+    /// image and its UV rect follows the window, so a move / resize only
+    /// changes which part of it is drawn (see [`App::glass_uv`]). What is left
+    /// is the first capture, a 模糊度 change (re-blur the stored pixels) and a
+    /// deliberate 重新采样背景. A capture that fails keeps the previous
+    /// texture; with no texture at all, `glass::backdrop` paints the gradient
+    /// fallback, so the window is never unreadable.
     fn refresh_glass(&mut self, ctx: &egui::Context) {
         // Geometry bookkeeping, still needed — but only to repaint with the new
-        // UV rect. A move / resize re-samples the stored shot (see
-        // [`App::glass_uv`]); it never captures.
-        let outer = ctx.input(|i| i.viewport().outer_rect);
-        if outer != self.glass_geom {
-            self.glass_geom = outer;
-            ctx.request_repaint();
+        // UV rect. The rect comes straight from Win32 in physical pixels (the
+        // content area, where the texture is drawn): a move / resize re-samples
+        // the stored shot (see [`App::glass_uv`]); it never captures. A failed
+        // read keeps the last known rect, like a failed capture keeps the last
+        // shot.
+        if let Some(rect) = self.hwnd.and_then(win::content_rect) {
+            if Some(rect) != self.glass_content_px {
+                self.glass_content_px = Some(rect);
+                ctx.request_repaint();
+            }
         }
 
         let blur_changed = self.glass_blur_at_render != Some(self.user.glass_blur);
@@ -783,9 +794,13 @@ impl App {
                 diag::log(
                     &self.state_dir,
                     &format!(
-                        "glass: capture #{n} ok (hide={} affinity_ret={})",
+                        "glass: capture #{n} ok (hide={} affinity_ret={} origin={},{} size={}x{})",
                         hide.id(),
-                        hide.affinity_ret()
+                        hide.affinity_ret(),
+                        shot.origin.0,
+                        shot.origin.1,
+                        shot.width,
+                        shot.height
                     ),
                 );
                 self.glass_hide = Some(hide);
@@ -827,39 +842,34 @@ impl App {
 
     /// UV rect of the window's content area inside the captured texture.
     ///
-    /// The content rect (egui points, origin at the window's client area) is
-    /// converted to physical screen pixels and offset by the capture origin,
-    /// so the blurred desktop stays registered with the real desktop while the
-    /// window moves instead of sliding along with it. That is exactly why a
-    /// move / resize needs no new capture: it only changes this rect.
-    fn glass_uv(&self, ctx: &egui::Context) -> egui::Rect {
-        let inner = ctx
-            .input(|i| i.viewport().inner_rect)
-            .map_or(egui::Pos2::ZERO, |r| r.min);
+    /// The content rect is named in **physical screen pixels by Win32**
+    /// ([`win::content_rect`]), not by scaling egui points with
+    /// `pixels_per_point`: once the virtual screen spans monitors with
+    /// different DPI scales, one scale factor cannot name a position on all of
+    /// them. The capture is the whole virtual screen in the same physical
+    /// pixel space, so `(content_px - origin) / capture_size` places the crop
+    /// with no DPI conversion at all. That is exactly why a move / resize
+    /// needs no new capture: it only changes this rect.
+    fn glass_uv(&self) -> egui::Rect {
         uv_in_capture(
-            inner.to_vec2(),
-            ctx.pixels_per_point(),
-            ctx.content_rect().size(),
+            self.glass_content_px.unwrap_or(egui::Rect::ZERO),
             egui::vec2(self.glass_origin.0 as f32, self.glass_origin.1 as f32),
             egui::vec2(self.glass_size.0 as f32, self.glass_size.1 as f32),
         )
     }
 }
 
-/// See [`App::glass_uv`]. Pure: `inner_min` and `content_size` are in egui
-/// points (window-relative for the size, screen-relative for the position),
-/// `ppp` converts them to physical pixels, and `origin` / `size` describe the
-/// capture in physical pixels.
+/// See [`App::glass_uv`]. Pure: `content_px` is the window's content area in
+/// physical screen pixels (straight from Win32), and `origin` / `size`
+/// describe the capture in the same physical pixel space.
 fn uv_in_capture(
-    inner_min: egui::Vec2,
-    ppp: f32,
-    content_size: egui::Vec2,
+    content_px: egui::Rect,
     origin: egui::Vec2,
     size: egui::Vec2,
 ) -> egui::Rect {
     let size = egui::vec2(size.x.max(1.0), size.y.max(1.0));
-    let min = (inner_min * ppp - origin) / size;
-    let extent = content_size * ppp / size;
+    let min = (content_px.min.to_vec2() - origin) / size;
+    let extent = content_px.size() / size;
     egui::Rect::from_min_size(min.to_pos2(), extent)
 }
 
@@ -895,7 +905,7 @@ impl eframe::App for App {
         }
         let desktop = self.glass_texture.as_ref().map(|texture| glass::DesktopGlass {
             texture,
-            uv: self.glass_uv(&ctx),
+            uv: self.glass_uv(),
         });
         glass::backdrop(
             &ctx,
@@ -1176,13 +1186,18 @@ mod tests {
     /// Moving the window re-registers the stored capture instead of replacing
     /// it: the same texture is sampled from a different offset, so the blurred
     /// desktop stays glued to the desktop and the crop does not slide along
-    /// with the window.
+    /// with the window. The content rect is physical pixels from Win32, so no
+    /// scale factor takes part in the mapping.
     #[test]
     fn the_stored_capture_follows_the_window_without_a_new_capture() {
         let capture = egui::vec2(1920.0, 1080.0);
         let content = egui::vec2(1320.0, 880.0);
         let at = |x: f32| {
-            uv_in_capture(egui::vec2(x, 60.0), 1.0, content, egui::Vec2::ZERO, capture)
+            uv_in_capture(
+                egui::Rect::from_min_size(egui::pos2(x, 60.0), content),
+                egui::Vec2::ZERO,
+                capture,
+            )
         };
 
         let a = at(300.0);
@@ -1198,14 +1213,171 @@ mod tests {
             "the crop is the content area in capture UV"
         );
 
-        // High-DPI: the window rect is in points, the capture in physical px.
-        let hidpi =
-            uv_in_capture(egui::vec2(300.0, 60.0), 2.0, content, egui::Vec2::ZERO, capture);
-        assert!((hidpi.min.x - 600.0 / 1920.0).abs() < 1e-6);
+        // Registration round trip: the crop maps back to the window's own
+        // screen pixels — the invariant the runtime measurement checks.
+        assert!((a.min.x * capture.x - 300.0).abs() < 1e-3);
 
         // A degenerate capture size must not produce NaN.
-        let degenerate =
-            uv_in_capture(egui::Vec2::ZERO, 1.0, content, egui::Vec2::ZERO, egui::Vec2::ZERO);
+        let degenerate = uv_in_capture(
+            egui::Rect::from_min_size(egui::Pos2::ZERO, content),
+            egui::Vec2::ZERO,
+            egui::Vec2::ZERO,
+        );
         assert!(degenerate.min.x.is_finite() && degenerate.width().is_finite());
+    }
+
+    /// One synthetic monitor layout: the virtual screen (`origin` + `size`, in
+    /// physical pixels) and a window on one of its monitors.
+    struct Layout {
+        name: &'static str,
+        origin: egui::Vec2,
+        size: egui::Vec2,
+        window: egui::Rect,
+        /// Expected UV of the window's top-left corner in the capture.
+        want: egui::Vec2,
+    }
+
+    fn layout(
+        name: &'static str,
+        origin: (f32, f32),
+        size: (f32, f32),
+        window_min: (f32, f32),
+        window_size: (f32, f32),
+        want: (f32, f32),
+    ) -> Layout {
+        Layout {
+            name,
+            origin: egui::vec2(origin.0, origin.1),
+            size: egui::vec2(size.0, size.1),
+            window: egui::Rect::from_min_size(
+                egui::pos2(window_min.0, window_min.1),
+                egui::vec2(window_size.0, window_size.1),
+            ),
+            want: egui::vec2(want.0, want.1),
+        }
+    }
+
+    /// Synthetic multi-monitor layouts — the geometry a single-monitor machine
+    /// cannot exercise by hand. The capture covers the whole virtual screen,
+    /// so a window on the far side of it still has a place in the shot, and
+    /// the virtual origin is negative whenever a monitor sits left of / above
+    /// the primary.
+    #[test]
+    fn a_window_on_any_monitor_maps_into_the_virtual_screen_capture() {
+        let layouts = [
+            // Secondary monitor to the right: the virtual origin stays (0, 0)
+            // and the far monitor's top-left is the capture's centre.
+            layout(
+                "right",
+                (0.0, 0.0),
+                (3840.0, 1080.0),
+                (1920.0, 0.0),
+                (1320.0, 880.0),
+                (0.5, 0.0),
+            ),
+            // Secondary monitor to the left: the virtual origin is negative,
+            // so the left monitor starts at (0, 0) and the primary at half
+            // the capture's width.
+            layout(
+                "left-secondary",
+                (-1920.0, 0.0),
+                (3840.0, 1080.0),
+                (-1920.0, 0.0),
+                (1320.0, 880.0),
+                (0.0, 0.0),
+            ),
+            layout(
+                "left-primary",
+                (-1920.0, 0.0),
+                (3840.0, 1080.0),
+                (0.0, 0.0),
+                (1320.0, 880.0),
+                (0.5, 0.0),
+            ),
+            // Secondary monitor above: the vertical origin is negative and
+            // the primary monitor starts at half the capture's height.
+            layout(
+                "above-secondary",
+                (0.0, -1080.0),
+                (1920.0, 2160.0),
+                (0.0, -1080.0),
+                (1320.0, 880.0),
+                (0.0, 0.0),
+            ),
+            layout(
+                "above-primary",
+                (0.0, -1080.0),
+                (1920.0, 2160.0),
+                (0.0, 0.0),
+                (1320.0, 880.0),
+                (0.0, 0.5),
+            ),
+            // Mixed / stacked: one monitor above-left and a taller one to the
+            // right, offset downward, so the virtual screen is a bounding box
+            // none of the monitors matches.
+            layout(
+                "mixed-right",
+                (-1280.0, -1024.0),
+                (5760.0, 2664.0),
+                (1920.0, 200.0),
+                (2560.0, 1440.0),
+                (3200.0 / 5760.0, 1224.0 / 2664.0),
+            ),
+            layout(
+                "mixed-above-left",
+                (-1280.0, -1024.0),
+                (5760.0, 2664.0),
+                (-1280.0, -1024.0),
+                (1280.0, 1024.0),
+                (0.0, 0.0),
+            ),
+        ];
+
+        for l in &layouts {
+            let uv = uv_in_capture(l.window, l.origin, l.size);
+            assert!(
+                (uv.min.x - l.want.x).abs() < 1e-5 && (uv.min.y - l.want.y).abs() < 1e-5,
+                "{}: window at {:?} must sit at UV {:?} of the capture, got {:?}",
+                l.name,
+                l.window.min,
+                l.want,
+                uv.min,
+            );
+            // The crop is exactly the window's own size, in capture UV.
+            let want_extent = l.window.size() / l.size;
+            assert!(
+                (uv.size() - want_extent).length() < 1e-5,
+                "{}: the crop must be the window's size in capture UV",
+                l.name,
+            );
+            // Registration round trip: UV back to physical screen pixels is
+            // the content area's own top-left again, to the pixel (0 px error).
+            let back = uv.min.to_vec2() * l.size + l.origin;
+            assert!(
+                (back - l.window.min.to_vec2()).length() < 1e-3,
+                "{}: UV must map back to the content area's own screen position, got {back:?} vs {:?}",
+                l.name,
+                l.window.min,
+            );
+        }
+    }
+
+    /// A window that is not on the captured virtual screen (dragged away, or
+    /// a stale rect) still yields a finite crop — the GPU clamps sampling;
+    /// nothing may become NaN or panic.
+    #[test]
+    fn a_window_outside_the_capture_stays_finite() {
+        let uv = uv_in_capture(
+            egui::Rect::from_min_size(egui::pos2(-5000.0, 4000.0), egui::vec2(1320.0, 880.0)),
+            egui::Vec2::ZERO,
+            egui::vec2(1920.0, 1080.0),
+        );
+        assert!(uv.min.x.is_finite() && uv.min.y.is_finite());
+        assert!(uv.width().is_finite() && uv.height().is_finite());
+        assert!(
+            uv.min.x < 0.0 && uv.min.y > 1.0,
+            "outside the capture means outside the unit square, got {:?}",
+            uv.min,
+        );
     }
 }

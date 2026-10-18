@@ -2,12 +2,12 @@
 //!
 //! The OS blur the app used to rely on (`SetWindowCompositionAttribute`'s accent
 //! policy) has **no radius parameter**, so it can never be made user
-//! controllable. It was removed. Instead the app now screenshots the primary
-//! monitor itself, blurs the shot and draws it under the scrim:
+//! controllable. It was removed. Instead the app now screenshots the whole
+//! virtual screen itself, blurs the shot and draws it under the scrim:
 //!
-//! 1. [`capture`] — `BitBlt` the screen DC into a top-down 32-bit DIB. The
-//!    window is kept out of its own screenshot for the duration of the blit,
-//!    by one of two paths (see [`Hide`]):
+//! 1. [`capture`] — `BitBlt` the whole virtual screen out of the screen DC into
+//!    a top-down 32-bit DIB. The window is kept out of its own screenshot for
+//!    the duration of the blit, by one of two paths (see [`Hide`]):
 //!    * `SetWindowDisplayAffinity(hwnd, WDA_EXCLUDEFROMCAPTURE)` — Windows 10
 //!      2004+. The compositor leaves the window out of every capture while the
 //!      call is in effect, and the user still sees it normally, so **nothing
@@ -26,17 +26,19 @@
 //!    [`egui::TextureOptions::LINEAR`] so the small image is bilinearly
 //!    upscaled when it is drawn.
 //!
-//! The capture is the **primary monitor** only (`GetDC(NULL)`'s DC covers the
-//! virtual screen, but the shot is taken at its origin, which is the primary
-//! monitor's top-left). A window dragged to a secondary monitor therefore
-//! clamps to the edge of the captured image; the painted fallback is never
-//! used for that, and the next capture re-registers as soon as it comes back.
+//! The capture is the **whole virtual screen**, not the primary monitor: the
+//! bounds come from `SM_*VIRTUALSCREEN` and `BitBlt`'s source coordinates are
+//! the virtual origin (negative when a monitor sits left of / above the
+//! primary) — exactly the space `GetDC(NULL)`'s DC addresses. A window on any
+//! monitor therefore has a place in the shot, so dragging it to another
+//! monitor needs no new capture.
 
 use egui::{Color32, ColorImage};
 
-/// One screenshot of the primary monitor, top-down 32-bit BGRA.
+/// One screenshot of the whole virtual screen, top-down 32-bit BGRA.
 pub struct Shot {
-    /// Top-left of the capture in physical screen pixels.
+    /// Top-left of the capture in physical screen pixels: the virtual screen's
+    /// origin, negative when a monitor sits left of / above the primary.
     pub origin: (i32, i32),
     pub width: usize,
     pub height: usize,
@@ -126,8 +128,10 @@ extern "system" {
     fn SetWindowDisplayAffinity(hwnd: isize, affinity: u32) -> i32;
 }
 
-const SM_CXSCREEN: i32 = 0;
-const SM_CYSCREEN: i32 = 1;
+const SM_XVIRTUALSCREEN: i32 = 76;
+const SM_YVIRTUALSCREEN: i32 = 77;
+const SM_CXVIRTUALSCREEN: i32 = 78;
+const SM_CYVIRTUALSCREEN: i32 = 79;
 const SRCCOPY: u32 = 0x00CC_0020;
 const DIB_RGB_COLORS: u32 = 0;
 const BI_RGB: u32 = 0;
@@ -189,15 +193,29 @@ fn ensure_layered(hwnd: isize) {
     }
 }
 
-/// Screenshot the primary monitor into a top-down BGRA buffer.
+/// Screenshot the whole virtual screen into a top-down BGRA buffer.
 ///
 /// The window is kept out of its own screenshot (see [`Hide`]) for the blit
 /// only, so the shot shows the real desktop instead of our own UI. Returns
 /// `None` on any Win32 failure — the caller then keeps its previous capture,
 /// or falls back to the painted gradient.
+///
+/// `GetDC(NULL)`'s DC addresses the entire virtual desktop, and `BitBlt`'s
+/// source coordinates are virtual-screen coordinates, so the source rectangle
+/// is simply the virtual origin — negative when a monitor sits left of / above
+/// the primary. `CreateDCW("DISPLAY", ...)` would name the same surface, but
+/// this function already pairs `GetDC` / `ReleaseDC`, and MSDN's own
+/// multi-monitor capture sample blits from the display DC with exactly these
+/// source coordinates, so no second way to open the screen DC is added.
 pub fn capture(hwnd: isize) -> Option<(Shot, Hide)> {
-    let width = unsafe { GetSystemMetrics(SM_CXSCREEN) };
-    let height = unsafe { GetSystemMetrics(SM_CYSCREEN) };
+    let origin = unsafe {
+        (
+            GetSystemMetrics(SM_XVIRTUALSCREEN),
+            GetSystemMetrics(SM_YVIRTUALSCREEN),
+        )
+    };
+    let width = unsafe { GetSystemMetrics(SM_CXVIRTUALSCREEN) };
+    let height = unsafe { GetSystemMetrics(SM_CYVIRTUALSCREEN) };
     if width <= 0 || height <= 0 {
         return None;
     }
@@ -257,7 +275,17 @@ pub fn capture(hwnd: isize) -> Option<(Shot, Hide)> {
             ensure_layered(hwnd);
             SetLayeredWindowAttributes(hwnd, 0, 0, LWA_ALPHA) != 0
         };
-        let blt = BitBlt(mem, 0, 0, width, height, screen, 0, 0, SRCCOPY);
+        let blt = BitBlt(
+            mem,
+            0,
+            0,
+            width,
+            height,
+            screen,
+            origin.0,
+            origin.1,
+            SRCCOPY,
+        );
         if affinity_ret != 0 {
             SetWindowDisplayAffinity(hwnd, WDA_NONE);
         } else {
@@ -278,7 +306,7 @@ pub fn capture(hwnd: isize) -> Option<(Shot, Hide)> {
                 std::slice::from_raw_parts(bits as *const u8, w * h * 4).to_vec();
             Some((
                 Shot {
-                    origin: (0, 0),
+                    origin,
                     width: w,
                     height: h,
                     bgra: bytes,
