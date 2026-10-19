@@ -919,7 +919,19 @@ impl App {
         let (halvings, sigma) = glass::blur::params(self.user.glass_blur);
         let (w, h, rgb) = glass::blur::downscale(shot, halvings);
         let blurred = glass::blur::gaussian(&rgb, w, h, sigma);
-        let image = glass::blur::to_color_image(&blurred, w, h);
+        let scrim = self.tokens.palette.background.scrim;
+        let tint = [
+            scrim.r() as f32 / 255.0,
+            scrim.g() as f32 / 255.0,
+            scrim.b() as f32 / 255.0,
+        ];
+        let image = glass::blur::to_color_image(
+            &blurred,
+            w,
+            h,
+            tint,
+            self.tokens.palette.background.desktop_wash,
+        );
 
         self.glass_origin = shot.origin;
         self.glass_size = (shot.width, shot.height);

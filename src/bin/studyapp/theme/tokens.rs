@@ -58,6 +58,12 @@ pub struct Background {
     /// instead of the fallback gradient) — the desktop would otherwise be too
     /// loud for body text. Its alpha is the 透明度 setting at paint time.
     pub scrim: Color32,
+    /// How far to wash the captured desktop toward `scrim`'s colour before it
+    /// is drawn, `0..=1`. Zero for the dark theme, where a dark desktop under
+    /// a dark scrim already reads correctly; high for the light one, which
+    /// cannot stay light over an arbitrary desktop by translucency alone. See
+    /// `glass::blur::to_color_image`.
+    pub desktop_wash: f32,
 }
 
 /// Translucent surfaces. A surface is a flat wash of ink over the sheet: no
@@ -206,6 +212,8 @@ impl Palette {
                 // Guarded by
                 // `scrim_keeps_body_text_at_aa_over_the_worst_case_desktop`.
                 scrim: rgba(14, 14, 17, 228),
+                // A dark desktop under a dark scrim already reads right.
+                desktop_wash: 0.0,
             },
             glass: Glass {
                 fill: rgba(255, 255, 255, 18),
@@ -250,6 +258,11 @@ impl Palette {
                 // The light mirror of the dark scrim, held at the same alpha so
                 // both modes obey one rule.
                 scrim: rgba(248, 248, 250, 228),
+                // Without this a light theme over a dark desktop renders a mid
+                // grey body (~193 measured) instead of ~248: the scrim is only
+                // ~80 % opaque at 透明度 20. Washing the desktop toward the
+                // scrim colour is what the OS's light acrylic does.
+                desktop_wash: 0.90,
             },
             glass: Glass {
                 fill: rgba(0, 0, 0, 12),
