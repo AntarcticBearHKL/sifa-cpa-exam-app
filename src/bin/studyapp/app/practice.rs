@@ -651,6 +651,22 @@ impl App {
                     .strong()
                     .line_height(Some(34.0)),
             );
+            // 刷题信息：one muted line right after the title — 看过 / 作答 /
+            // 正确. Shown only once the question has actually been seen (a
+            // fresh question shows nothing, so it never prints 看过 0 次). It is
+            // a line of its own: the title's line height and the options'
+            // geometry below are untouched.
+            if let Some(stat) = self.user.stat(&qid).filter(|s| s.seen > 0) {
+                ui.add_space(tokens.space.xs);
+                ui.label(
+                    RichText::new(format!(
+                        "看过 {} 次 · 作答 {} 次 · 正确 {} 次",
+                        stat.seen, stat.attempts, stat.correct
+                    ))
+                    .size(12.5)
+                    .color(tokens.palette.ink.muted),
+                );
+            }
             ui.add_space(tokens.space.lg);
 
             // A revealed answer (submitted, or 显示答案) is no longer
@@ -698,11 +714,11 @@ impl App {
                 );
                 match &q.source {
                     Some(src) => {
-                        ui.label(
-                            RichText::new(src.provenance())
-                                .size(12.5)
-                                .color(tokens.palette.ink.muted),
-                        );
+                        // `provenance_job` — not a plain RichText: see its doc.
+                        ui.label(provenance_job(
+                            &src.provenance(),
+                            tokens.palette.ink.muted,
+                        ));
                         if let Some(u) = src.url.as_ref().filter(|s| !s.is_empty()) {
                             ui.hyperlink_to("原文", u);
                         }
@@ -1173,4 +1189,119 @@ fn small_button(
         RichText::new(label).size(11.5),
         egui::vec2(46.0, 22.0),
     )
+}
+
+/// The 来源/出处 provenance, laid out with `break_anywhere`.
+///
+/// A path or a URL is one long unbreakable token, and the default line
+/// breaking prefers the last *word boundary* (a space) over filling the row:
+/// the whole token then drops onto the next row and the current one ends half
+/// empty — visibly narrower than the block it sits in. With `break_anywhere`
+/// the row fills up to the column's right edge instead, the same width the
+/// hairline rule and the options get. `Label` keeps this flag and supplies the
+/// wrapping-row indentation (past 「来源/出处：」) and the wrap width itself, so
+/// this is the whole override.
+fn provenance_job(text: &str, color: egui::Color32) -> egui::text::LayoutJob {
+    let mut job = egui::text::LayoutJob::default();
+    job.append(
+        text,
+        0.0,
+        egui::TextFormat {
+            font_id: egui::FontId::proportional(12.5),
+            color,
+            ..Default::default()
+        },
+    );
+    job.wrap.break_anywhere = true;
+    job
+}
+
+#[cfg(test)]
+mod tests {
+    use super::provenance_job;
+
+    /// Lay the same text out twice inside one frame (fonts need a frame to
+    /// exist) and report the first row's width for both settings.
+    fn first_row_widths(text: &str, wrap_width: f32) -> (f32, f32) {
+        let ctx = egui::Context::default();
+        let mut default_breaking = provenance_job(text, egui::Color32::WHITE);
+        default_breaking.wrap.break_anywhere = false;
+        default_breaking.wrap.max_width = wrap_width;
+        let mut filling = provenance_job(text, egui::Color32::WHITE);
+        filling.wrap.max_width = wrap_width;
+
+        let mut widths = (0.0, 0.0);
+        let mut output = ctx.run_ui(egui::RawInput::default(), |ui| {
+            widths = ui.fonts_mut(|fonts| {
+                (
+                    fonts.layout_job(default_breaking.clone()).rows[0].rect().width(),
+                    fonts.layout_job(filling.clone()).rows[0].rect().width(),
+                )
+            });
+        });
+        // A headless frame produces font texture deltas; this test does not
+        // render, so they are cleared on purpose (the same reason the known
+        // headless-render tests panic if they don't).
+        output.textures_delta.clear();
+        widths
+    }
+
+    /// The real cause of the half-empty 来源/出处 row, pinned: with the default
+    /// line breaking the first row stops at the last word boundary before the
+    /// long path / URL (a big gap is left); with `break_anywhere` the same
+    /// text fills the row up to the wrap width.
+    #[test]
+    fn a_long_provenance_token_fills_the_row_instead_of_ending_it_early() {
+        let text = "Chinese-Bar-Exam-AI-Mindmap-Tool · user-data/exam/long-file-name.json · \
+                    https://github.com/civilwizard/Chinese-Bar-Exam-AI-Mindmap-Tool";
+        let wrap_width = 780.0;
+
+        let (early, filled) = first_row_widths(text, wrap_width);
+
+        assert!(
+            early < wrap_width - 100.0,
+            "without break_anywhere the first row ends early ({early} of {wrap_width})"
+        );
+        assert!(
+            filled > wrap_width - 20.0,
+            "with break_anywhere the first row fills the width ({filled} of {wrap_width})"
+        );
+    }
+
+    /// A short provenance must not change at all: `break_anywhere` only ever
+    /// matters when a token does not fit.
+    #[test]
+    fn a_short_provenance_is_laid_out_exactly_as_before() {
+        let text = "repo · file.md";
+        let wrap_width = 780.0;
+        let (early, filled) = first_row_widths(text, wrap_width);
+        assert_eq!(early, filled, "a fitting row is untouched");
+        assert!(early < wrap_width, "and it is its natural width");
+    }
+
+    /// The integration path, exactly as the session view uses it: inside the
+    /// wrapping row, after 「来源/出处：」, the provenance label must reach the
+    /// column's right edge — the same width the hairline rule and the options
+    /// get. This is the regression guard for the half-empty block the user saw.
+    #[test]
+    fn the_provenance_label_fills_its_row_in_the_session_layout() {
+        let ctx = egui::Context::default();
+        let text = "Chinese-Bar-Exam-AI-Mindmap-Tool · user-data/exam/long-file-name.json · \
+                    https://github.com/civilwizard/Chinese-Bar-Exam-AI-Mindmap-Tool";
+        let mut child_max = egui::Rect::NOTHING;
+        let mut label_rect = egui::Rect::NOTHING;
+        let mut output = ctx.run_ui(egui::RawInput::default(), |ui| {
+            ui.set_max_width(780.0);
+            ui.horizontal_wrapped(|ui| {
+                child_max = ui.max_rect();
+                ui.label(egui::RichText::new("来源/出处：").size(12.5));
+                label_rect = ui.label(provenance_job(text, egui::Color32::WHITE)).rect;
+            });
+        });
+        output.textures_delta.clear();
+        assert!(
+            label_rect.right() >= child_max.right() - 20.0,
+            "the provenance must fill the row: label {label_rect:?} in column {child_max:?}"
+        );
+    }
 }

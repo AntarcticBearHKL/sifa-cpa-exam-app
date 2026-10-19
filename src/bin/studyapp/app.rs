@@ -315,6 +315,20 @@ impl App {
             app.subject_id = first.id.clone();
         }
         app.reload_subject();
+
+        // Test hook: `CMF_START_SESSION=1` opens a practice session for the
+        // starting subject right away, so the session view can be reached
+        // (and screenshotted) without synthesised clicks. Any value but an
+        // empty one or `0` enables it.
+        let start_session = std::env::var("CMF_START_SESSION")
+            .map(|v| {
+                let v = v.trim();
+                !v.is_empty() && v != "0"
+            })
+            .unwrap_or(false);
+        if start_session {
+            app.start_session(false);
+        }
         app
     }
 
@@ -504,6 +518,9 @@ impl App {
             label,
         });
         self.dirty = true;
+        // The first question of the run is shown right away, so it counts as
+        // seen here — the same place every later move is counted.
+        self.record_current_seen();
     }
 
     fn session_question(&self) -> Option<Question> {
@@ -511,6 +528,19 @@ impl App {
         let sess = self.session.as_ref()?;
         let qi = *sess.order.get(sess.pos)?;
         s.questions.get(qi).cloned()
+    }
+
+    /// Counts the current question as **seen**. Called exactly where the
+    /// session moves to a question — entering a session, 下一题, 上一题 — never
+    /// per frame, so a re-render does not count and re-showing the same
+    /// question counts again. Writes `user.json` immediately, the same way
+    /// `record_answer` does; the answer path is never touched.
+    fn record_current_seen(&mut self) {
+        let Some(q) = self.session_question() else {
+            return;
+        };
+        self.user.record_seen(&q.id, &now_iso());
+        self.persist_user();
     }
 
     fn submit(&mut self, now: f64) {
@@ -600,6 +630,7 @@ impl App {
             sess.clear_answer();
         }
         self.dirty = true;
+        self.record_current_seen();
     }
 
     fn prev_question(&mut self) {
@@ -614,6 +645,7 @@ impl App {
             sess.clear_answer();
         }
         self.dirty = true;
+        self.record_current_seen();
     }
 
     // ------------------------------------------------------------------

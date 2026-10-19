@@ -26,7 +26,7 @@
 | `target\release\classify.exe` | 数据管线：把语料按官方考纲归类并重算 `summary.json`（见 §10） |
 | `state\current.json` | GUI 写、MCP 读的“当前上下文”契约文件（含用户备注 / 收藏标记） |
 | `state\wrong-<domain>-<subjectId>.json` | 错题 id 持久化 |
-| `state\user.json` | **本地用户缓存**：收藏题目 id + 每题备注（无需登录） |
+| `state\user.json` | **本地用户缓存**：收藏题目 id + 每题备注 + 每题统计（看过 / 作答 / 正确，无需登录） |
 | `src\lib.rs` | 数据类型 / 加载器 / current.json 契约 / `UserStore` |
 | `src\bin\studyapp\main.rs` | GUI 入口（约 18 行：`mod` 声明 + `fn main`） |
 | `src\bin\studyapp\app.rs` | `App` 状态 / 逻辑 / 持久化 / 快捷键 + `impl eframe::App` |
@@ -118,12 +118,16 @@ cmd /c '"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Auxiliary\Buil
 * `CMF_STATE_DIR` — 状态目录（`current.json`、`user.json`、错题文件）
 * `CMF_START_DOMAIN` — 启动时默认领域：`law`（默认，若有数据）或 `cpa`
 * `CMF_START_SUBJECT` — 启动时默认科目 id（如 `kuaiji`）；缺失或找不到时取该领域的第一个科目
+* `CMF_START_SESSION` — 非空且不是 `0` 时，启动就对起始科目**直接开一局练习**（进会话视图，
+  等同于点「开始练习」）；用于截图 / 自检时不必合成点击
 
 状态目录解析顺序：`--state-dir` > `CMF_STATE_DIR` > `<exe>/state`（便携布局）> `<exe>/../../state`（Cargo target 布局）。
 两个二进制使用同一套解析逻辑，因此 MCP 一定读得到 GUI 写的文件。
 
 截图（深/浅双模式）：`screenshots\dark-practice.png` 与 `screenshots\light-practice.png`
 （练习设置 —— 左栏「怎么练」+ 右栏章节多选）。`dark-launcher.png` 是**已删除的启动页**的旧截图，仅作历史记录。
+做题会话：`screenshots\dark-session-counts.png` 与 `light-session-counts.png`
+（题干下方的 `看过 N 次 · 作答 M 次 · 正确 K 次`，以及填满列宽的 来源/出处 行）。
 
 MCP 服务由 MCP 客户端（如 opencode / Claude Desktop）拉起，见 `mcp.json`：
 
@@ -153,7 +157,8 @@ MCP 服务由 MCP 客户端（如 opencode / Claude Desktop）拉起，见 `mcp.
 * 点 **开始练习** → **会话视图**（**整窗专注模式：隐藏左栏与标题行**）：会话标签、`第 i / N 题`、进度条；
   **题干以 18px 作为视觉焦点**；选项（单选 radio / 多选 checkbox）；**提交答案** → 判定 + 解析，
   或 **显示答案** → 看答案（不记录作答，题目仍是「未做过」）；判定 / 看答案后 `下一题 ▶` 才可用，
-  `←` 与 `Esc` 不受限（详见 §6.5）。
+  `←` 与 `Esc` 不受限（详见 §6.5）。题干正下方一行小字是**该题的刷题信息**
+  `看过 N 次 · 作答 M 次 · 正确 K 次`（muted，12.5px；**没看过就整行不显示**，不会打印 `看过 0 次`）。
 * **错题随机 10 题**：从错题里随机抽 10 道开一局（会话标签为「错题随机抽查」）。
 * `options:[]` 的条目走**记忆 / 自测**（显示答案 → 记住了 / 没记住 自评）。
 
@@ -167,6 +172,11 @@ MCP 服务由 MCP 客户端（如 opencode / Claude Desktop）拉起，见 `mcp.
 
 **每题统计**：每次作答都写进 `state\user.json` 的 `stats`（`attempts` / `correct` / `last`），
 所以「做过几次、正确率多少」是持久的、跨会话累积的。
+另有 `seen`（看过次数）：题目**成为当前题**时加一 —— 进入会话、`下一题`、`上一题` 各算一次，
+**同一题再看一次就再计一次**；只在切题的那一处写盘，**渲染一帧不会计数**，
+也**不碰 `attempts` / `correct`**。`last` 记的是最后一次交互（作答或查看）。
+会话视图题干下方那行小字就是这三个计数。
+`QStat.seen` 带 `#[serde(default)]`，所以旧 `user.json` 照常加载（读出来是 `seen == 0`）。
 
 **题目 → 知识点** 关联：仍用 `q.knowledgePoints`（标题）在本科目 KP 里做**标题精确匹配**（重复标题取首个），
 结果写进 `state\current.json` 供 MCP 讲解；会话视图**已不再展示**这些关联 chip。
@@ -242,8 +252,8 @@ GUI 拆成入口 + 六个模块：`main.rs`（入口，仅 `mod` 声明 + `fn ma
 `popup_shadow` 必须为 `NONE`、无顶边亮带、`menu_corner_radius` 与按钮一致）
 和 `pressed_widgets_get_a_tint_not_a_neon_outline`（按下态只有低透明染色，没有满强度强调色描边）。
 
-**测试（不开窗口、不点鼠标）**：`cargo test` 直接跑 —— 共 **83 passed**
-（12 lib + 16 classify + 55 sfzklearning），UI 只负责渲染结果。
+**测试（不开窗口、不点鼠标）**：`cargo test` 直接跑 —— 共 **88 passed**
+（14 lib + 16 classify + 58 sfzklearning），UI 只负责渲染结果。
 另有 8 个**既有的** `epaint::TexturesDelta` panic（headless egui 测试丢弃纹理增量所致，
 2 `anim::motion` + 1 `glass::widgets` + 5 `win`），与毛玻璃改动无关，按原样保留。
 
@@ -270,9 +280,14 @@ GUI 拆成入口 + 六个模块：`main.rs`（入口，仅 `mod` 声明 + `fn ma
   同尺寸、无 NaN）、**合成多显示器布局**（右侧 / 左侧 / 上方 / 混合堆叠各一套虚拟屏幕与窗口矩形，
   断言 UV 落点、裁剪尺寸，以及 UV 反算回物理像素的 0 px 误差；窗口不在截图内时仍然有限不 panic）、
   **显示答案**只置 `shown`（不动 `answered` / `correct`），并打开 `下一题` 闸门。
+* `practice.rs`（3 个）：**来源/出处那一行** —— 打开 `break_anywhere` 后首行填满整列
+  （默认断行会提前停在最后一个空格处、右侧空一大截），在**换行横向布局**里也确实填到列右缘，
+  短出处与原来逐点相同。
 * `anim/`（4 个）：`easing::clamp` 边界、`shake` 衰减端点与边界、抖动重启与结束、`is_live` / `prune`。
-* `lib.rs`（12 个）：数据加载 / 判定 / `UserStore`（收藏 · 备注 · 统计 · 主题）往返，
-  以及 **`user.json` 缺 `glass_*` 字段仍能反序列化**（旧文件兼容）。
+* `lib.rs`（14 个）：数据加载 / 判定 / `UserStore`（收藏 · 备注 · 统计 · 主题）往返、
+  **`user.json` 缺 `glass_*` 字段仍能反序列化**（旧文件兼容）、
+  **`stats` 条目缺 `seen` 字段仍能反序列化**（旧文件读作 `seen == 0`），
+  以及 **`seen` 只在「看」时加一、`attempts` / `correct` 不受影响**。
 
 **窗口：无边框 + 应用内毛玻璃（桌面截图 + 真高斯模糊）**
 
@@ -418,6 +433,12 @@ GUI 在任何“当前题目 / 领域 / 科目”变化时写入（临时文件 
 
 每个知识点与题目都携带 `source { repo, path, nativeId, url }`，GUI 在**做题会话**中展示
 `repo · path · url`，并给出可点击的原文链接（当 `url` 存在时）。
+
+**这一行和题干 / 选项同宽**（会话列宽 `col_w`，上方发丝线也正好是它）。
+出处字符串里常有一整条路径或 URL —— 一个**断不开的长词**：默认断行会优先在最后一个**空格**处断，
+于是整条路径 / URL 被丢到下一行、当前行右侧空出一大截（用户报的「没占满宽度」）。
+所以这一行的 `LayoutJob` 打开 `break_anywhere`（`practice.rs::provenance_job`）：
+行会一直填到列的右边缘再断；`Label` 负责首行缩进（让过「来源/出处：」）与换行宽度，短出处不受影响。
 
 ## 10. 数据管线：`classify`（语料 → 官方考纲）
 

@@ -943,14 +943,21 @@ impl Default for UserStore {
     }
 }
 
-/// How often a question has been answered, and how often correctly.
+/// How often a question has been seen, answered, and answered correctly.
 #[derive(Serialize, Deserialize, Clone, Debug, Default)]
 pub struct QStat {
     #[serde(default)]
     pub attempts: u32,
     #[serde(default)]
     pub correct: u32,
-    /// ISO-8601 UTC timestamp of the last attempt.
+    /// How often the question has become the current question of a practice
+    /// session (see [`UserStore::record_seen`]). `#[serde(default)]` so a
+    /// `user.json` written before this counter existed still loads — its
+    /// entries then read `seen == 0`.
+    #[serde(default)]
+    pub seen: u32,
+    /// ISO-8601 UTC timestamp of the last recorded interaction (an answer or a
+    /// view; see [`UserStore::record_answer`] / [`UserStore::record_seen`]).
     #[serde(default)]
     pub last: String,
 }
@@ -993,6 +1000,17 @@ impl UserStore {
         if correct {
             entry.correct = entry.correct.saturating_add(1);
         }
+        entry.last = timestamp.to_string();
+    }
+
+    /// Records one view of a question: it became the current question of a
+    /// practice session. Bumps `seen` and the interaction timestamp only —
+    /// `attempts` / `correct` are answer-only and are never touched here.
+    /// Called once per visit (entering a session, 下一题, 上一题), not per
+    /// frame, so re-showing the same question counts again.
+    pub fn record_seen(&mut self, question_id: &str, timestamp: &str) {
+        let entry = self.stats.entry(question_id.to_string()).or_default();
+        entry.seen = entry.seen.saturating_add(1);
         entry.last = timestamp.to_string();
     }
 
@@ -1404,5 +1422,59 @@ mod tests {
         assert!((loaded.accuracy("law:a").unwrap() - 1.0).abs() < 1e-5);
 
         let _ = fs::remove_dir_all(&dir);
+    }
+
+    /// The compatibility risk of the `seen` counter: a `stats` entry written
+    /// before it existed has `attempts` / `correct` / `last` only, and must
+    /// still load — with `seen == 0`.
+    #[test]
+    fn user_store_without_seen_field_deserializes() {
+        let dir = user_test_dir("legacy-seen");
+        let _ = fs::remove_dir_all(&dir);
+        fs::create_dir_all(&dir).unwrap();
+        fs::write(
+            user_store_path(&dir),
+            br#"{
+                "favorites": [],
+                "notes": {},
+                "stats": {
+                    "law:a": {"attempts": 4, "correct": 3, "last": "2026-01-01T00:00:00Z"}
+                }
+            }"#,
+        )
+        .unwrap();
+
+        let loaded = load_user_store(&dir);
+        let s = loaded.stat("law:a").expect("the legacy entry still loads");
+        assert_eq!(s.attempts, 4);
+        assert_eq!(s.correct, 3);
+        assert_eq!(s.last, "2026-01-01T00:00:00Z");
+        assert_eq!(s.seen, 0, "a file written before the counter has seen == 0");
+
+        let _ = fs::remove_dir_all(&dir);
+    }
+
+    /// Viewing counts, answering counts, and the two never mix: two visits
+    /// plus one answer leave `seen == 2` / `attempts == 1` / `correct == 1`.
+    #[test]
+    fn seen_increments_per_view_and_leaves_attempts_alone() {
+        let mut store = UserStore::default();
+        store.record_seen("q1", "t1");
+        assert_eq!(store.stat("q1").unwrap().seen, 1);
+        assert_eq!(store.stat("q1").unwrap().attempts, 0, "a view is not an answer");
+        assert_eq!(store.stat("q1").unwrap().correct, 0);
+
+        store.record_answer("q1", true, "t2");
+        store.record_seen("q1", "t3");
+        let s = store.stat("q1").unwrap();
+        assert_eq!(s.seen, 2, "re-showing the same question counts again");
+        assert_eq!(s.attempts, 1);
+        assert_eq!(s.correct, 1);
+        assert_eq!(s.last, "t3", "the timestamp follows both kinds of record");
+
+        // A view must not invent an attempt either.
+        store.record_seen("q2", "t4");
+        assert_eq!(store.attempted_count(), 1);
+        assert_eq!(store.total_attempts(), 1);
     }
 }
