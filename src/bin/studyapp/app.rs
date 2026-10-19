@@ -39,12 +39,8 @@ struct Session {
     /// choice question that means the correct options are highlighted and the
     /// explanation is open, exactly like a submitted one — but nothing was
     /// recorded, so the question still counts as 未做过 and comes back. For a
-    /// memory / self-test question it reveals the 参考答案 before the
-    /// self-assessment.
+    /// 主观题 it reveals the 参考答案 / 解析, and there is nothing else to do.
     shown: bool,
-    /// The current memory / self-test question has been rated 记住了 /
-    /// 没记住. Choice questions are judged by `submitted` / `shown` instead.
-    self_assessed: bool,
     answered: usize,
     correct: usize,
     label: String,
@@ -56,7 +52,6 @@ impl Session {
         self.multi.clear();
         self.submitted = false;
         self.shown = false;
-        self.self_assessed = false;
     }
     fn selection(&self, is_multi: bool) -> Vec<String> {
         if is_multi {
@@ -166,6 +161,10 @@ struct App {
     glass_capture_attempted: bool,
     /// A 重新采样背景 click asked for one more capture.
     glass_recapture: bool,
+    /// When the next timer capture is due (`InputState::time` seconds); the
+    /// desktop is re-photographed every [`GLASS_INTERVAL`] while idle. See
+    /// [`glass_work`].
+    glass_next_capture: f64,
     /// How many times `glass::blur::capture` has run this session. Every
     /// capture is logged, so a regression that starts re-capturing on move /
     /// resize shows up in `log.txt` instead of only as a flicker.
@@ -188,15 +187,29 @@ enum GlassWork {
     Reblur,
 }
 
+/// How often the frosted backdrop re-photographs the desktop while the app is
+/// running: **every 0.5 s**, so a change on the desktop (another window moved,
+/// a video, a slideshow) shows up without the user pressing 重新采样背景. The
+/// window no longer has to hide itself for the capture — see
+/// `glass::blur::Hide` — so re-capturing cannot flash, which is what made this
+/// timer impossible before.
+const GLASS_INTERVAL: f64 = 0.5;
+
 /// Capture rule for the frosted backdrop, in one pure place so the tests can
-/// pin it down: capture **once** (or when 重新采样背景 asks for it), then never
-/// again for a move / resize — the stored shot is a whole-monitor image whose
-/// UV rect follows the window, so it stays registered to the desktop while the
-/// window moves and only goes stale when *other windows* change. A 模糊度
-/// change re-blurs the stored pixels; 透明度 never comes near the capture.
+/// pin it down: capture **once at startup**, **on the 0.5 s timer**
+/// ([`GLASS_INTERVAL`]) and when **重新采样背景** asks for it — but **never**
+/// because the window moved or resized. The stored shot is a whole-monitor
+/// image whose UV rect follows the window, so it stays registered to the
+/// desktop while the window moves and only goes stale when *other windows*
+/// change. A timer tick that lands while a move / resize drag is in progress
+/// is skipped (`dragging`), so dragging stays cheap and the "a move / resize
+/// does not capture" rule is not fought. A 模糊度 change re-blurs the stored
+/// pixels (no screen access); 透明度 never comes near the capture.
 fn glass_work(
     capture_attempted: bool,
     recapture: bool,
+    timer_due: bool,
+    dragging: bool,
     has_shot: bool,
     blur_changed: bool,
 ) -> GlassWork {
@@ -204,9 +217,18 @@ fn glass_work(
         GlassWork::Capture
     } else if has_shot && blur_changed {
         GlassWork::Reblur
+    } else if timer_due && !dragging {
+        GlassWork::Capture
     } else {
         GlassWork::None
     }
+}
+
+/// True while a window move / resize drag is in progress: egui keeps the
+/// primary button down for the whole native drag (no release event arrives
+/// until it ends), so a timer capture that lands mid-drag can be skipped.
+fn dragging(ctx: &egui::Context) -> bool {
+    ctx.input(|i| i.pointer.primary_down())
 }
 
 impl App {
@@ -302,6 +324,7 @@ impl App {
             glass_content_px: None,
             glass_capture_attempted: false,
             glass_recapture: false,
+            glass_next_capture: 0.0,
             glass_captures: 0,
             probe_report,
             md_cache: CommonMarkCache::default(),
@@ -319,6 +342,19 @@ impl App {
             app.subject_id = first.id.clone();
         }
         app.reload_subject();
+
+        // Test hook: `CMF_START_KIND` preselects the 题型 (`choice` /
+        // `subjective`; anything else keeps 全部) before a session is started,
+        // so the display-only 主观题 view can be reached directly. Used
+        // together with `CMF_START_SESSION` because synthesised clicks are
+        // unreliable on this machine.
+        if let Ok(kind) = std::env::var("CMF_START_KIND") {
+            app.set_kind = match kind.trim().to_ascii_lowercase().as_str() {
+                "choice" => logic::Kind::Choice,
+                "subjective" => logic::Kind::Subjective,
+                _ => logic::Kind::All,
+            };
+        }
 
         // Test hook: `CMF_START_SESSION=1` opens a practice session for the
         // starting subject right away, so the session view can be reached
@@ -524,7 +560,6 @@ impl App {
             multi: Vec::new(),
             submitted: false,
             shown: false,
-            self_assessed: false,
             answered: 0,
             correct: 0,
             label,
@@ -599,33 +634,15 @@ impl App {
         self.dirty = true;
     }
 
-    fn self_assess(&mut self, remembered: bool, _now: f64) {
-        let Some(q) = self.session_question() else {
-            return;
-        };
-        let qid = q.id.clone();
-        if let Some(sess) = self.session.as_mut() {
-            sess.self_assessed = true;
-            sess.answered += 1;
-            if remembered {
-                sess.correct += 1;
-            }
-        }
-        self.user.record_answer(&qid, remembered, &now_iso());
-        self.persist_wrong();
-        self.persist_user();
-        self.next_question();
-    }
-
     /// Is the current question judged, so 下一题 / `→` may move on? See
-    /// [`logic::can_advance`]. `←` 上一题 and `Esc` stay available, so the
-    /// gate is never a trap. A memory question's self-assessment advances by
-    /// itself, so this gate mostly guards against skipping it.
+    /// [`logic::can_advance`]. A choice question needs 提交答案 or 显示答案; a
+    /// 主观题 has nothing to judge and is never gated. `←` 上一题 and `Esc`
+    /// stay available, so the gate is never a trap.
     fn can_advance_now(&self) -> bool {
         let (Some(q), Some(sess)) = (self.session_question(), self.session.as_ref()) else {
             return false;
         };
-        logic::can_advance(&q, sess.submitted, sess.shown, sess.self_assessed)
+        logic::can_advance(&q, sess.submitted, sess.shown)
     }
 
     fn next_question(&mut self) {
@@ -808,10 +825,11 @@ impl App {
     /// desktop because the window moved: the shot is a whole-virtual-screen
     /// image and its UV rect follows the window, so a move / resize only
     /// changes which part of it is drawn (see [`App::glass_uv`]). What is left
-    /// is the first capture, a 模糊度 change (re-blur the stored pixels) and a
-    /// deliberate 重新采样背景. A capture that fails keeps the previous
-    /// texture; with no texture at all, `glass::backdrop` paints the gradient
-    /// fallback, so the window is never unreadable.
+    /// is the first capture, the **0.5 s timer** ([`GLASS_INTERVAL`]), a 模糊度
+    /// change (re-blur the stored pixels) and a deliberate 重新采样背景. A
+    /// capture that fails keeps the previous texture; with no texture at all,
+    /// `glass::backdrop` paints the gradient fallback, so the window is never
+    /// unreadable.
     fn refresh_glass(&mut self, ctx: &egui::Context) {
         // Geometry bookkeeping, still needed — but only to repaint with the new
         // UV rect. The rect comes straight from Win32 in physical pixels (the
@@ -826,10 +844,14 @@ impl App {
             }
         }
 
+        let now = ctx.input(|i| i.time);
         let blur_changed = self.glass_blur_at_render != Some(self.user.glass_blur);
+        let timer_due = now >= self.glass_next_capture;
         let work = glass_work(
             self.glass_capture_attempted,
             self.glass_recapture,
+            timer_due,
+            dragging(ctx),
             self.glass_shot.is_some(),
             blur_changed,
         );
@@ -837,18 +859,25 @@ impl App {
             GlassWork::Capture => {
                 self.glass_recapture = false;
                 self.glass_capture_attempted = true;
+                self.glass_next_capture = now + GLASS_INTERVAL;
                 self.capture_glass(ctx);
             }
             GlassWork::Reblur => self.render_glass(ctx),
             GlassWork::None => {}
         }
+        // Wake again when the next timer capture is due, so the backdrop keeps
+        // re-sampling even while the app is otherwise idle. A drag defers the
+        // capture (see `glass_work`) but does not stop the clock.
+        if self.hwnd.is_some() {
+            ctx.request_repaint_after(std::time::Duration::from_secs_f64(GLASS_INTERVAL));
+        }
     }
 
     /// One capture → store the shot → downscale → Gaussian → texture. The shot
     /// stays in the state so later re-blurs never touch the screen again. The
-    /// attempt is recorded even on failure, so a failing capture is not
-    /// retried every frame (only the first frame, 重新采样背景 or a re-blur of
-    /// an existing shot come back here).
+    /// attempt is recorded even on failure, so a failing capture is not retried
+    /// every frame — the next attempt comes from the 0.5 s timer, 重新采样背景
+    /// or a re-blur of an existing shot.
     fn capture_glass(&mut self, ctx: &egui::Context) {
         self.glass_captures = self.glass_captures.saturating_add(1);
         let n = self.glass_captures;
@@ -1207,7 +1236,6 @@ mod tests {
             multi: Vec::new(),
             submitted: false,
             shown: false,
-            self_assessed: false,
             answered: 0,
             correct: 0,
             label: "测试".to_string(),
@@ -1235,7 +1263,7 @@ mod tests {
         let q = choice_question();
         let mut s = choice_session();
         assert!(
-            !logic::can_advance(&q, s.submitted, s.shown, s.self_assessed),
+            !logic::can_advance(&q, s.submitted, s.shown),
             "nothing is judged yet: 下一题 must refuse"
         );
 
@@ -1245,39 +1273,96 @@ mod tests {
         assert_eq!(s.answered, 0, "revealing must not count as an answer");
         assert_eq!(s.correct, 0);
         assert!(
-            logic::can_advance(&q, s.submitted, s.shown, s.self_assessed),
+            logic::can_advance(&q, s.submitted, s.shown),
             "a revealed question may move on"
         );
 
         s.clear_answer();
         assert!(!s.shown, "changing the question clears the reveal");
-        assert!(!s.self_assessed);
     }
 
-    /// The capture policy, which is where the flicker came from: a move /
-    /// resize must never capture again — the stored whole-monitor shot is
-    /// re-registered to the window's new position by its UV rect — and a 模糊度
-    /// change re-blurs the stored pixels instead of photographing the screen.
-    /// Only the first capture and a deliberate 重新采样背景 touch the screen.
+    /// The capture policy. A move / resize must never capture — the stored
+    /// whole-monitor shot is re-registered to the window's new position by its
+    /// UV rect — and a 模糊度 change re-blurs the stored pixels instead of
+    /// photographing the screen. Startup, a deliberate 重新采样背景 and the
+    /// 0.5 s timer are the only things that touch the screen.
     #[test]
     fn glass_captures_once_and_reblurs_instead_of_recapturing() {
         // Startup: nothing captured yet.
-        assert_eq!(glass_work(false, false, false, false), GlassWork::Capture);
+        assert_eq!(
+            glass_work(false, false, false, false, false, false),
+            GlassWork::Capture
+        );
 
-        // Settled and nothing changed.
-        assert_eq!(glass_work(true, false, true, false), GlassWork::None);
+        // Settled, timer not due, nothing changed.
+        assert_eq!(
+            glass_work(true, false, false, false, true, false),
+            GlassWork::None
+        );
         // The window moved or resized: the stored shot stays valid, so the
         // capture must NOT run again (this is the flash).
-        assert_eq!(glass_work(true, false, true, false), GlassWork::None);
+        assert_eq!(
+            glass_work(true, false, false, false, true, false),
+            GlassWork::None
+        );
         // 模糊度 moved: re-blur the stored pixels, never a new capture.
-        assert_eq!(glass_work(true, false, true, true), GlassWork::Reblur);
+        assert_eq!(
+            glass_work(true, false, false, false, true, true),
+            GlassWork::Reblur
+        );
         // 重新采样背景: the one deliberate capture.
-        assert_eq!(glass_work(true, true, true, false), GlassWork::Capture);
-        assert_eq!(glass_work(true, true, true, true), GlassWork::Capture);
+        assert_eq!(
+            glass_work(true, true, false, false, true, false),
+            GlassWork::Capture
+        );
+        assert_eq!(
+            glass_work(true, true, false, false, true, true),
+            GlassWork::Capture
+        );
         // A failed capture is not retried every frame...
-        assert_eq!(glass_work(true, false, false, true), GlassWork::None);
+        assert_eq!(
+            glass_work(true, false, false, false, false, true),
+            GlassWork::None
+        );
         // ...but a recapture without a stored shot captures again.
-        assert_eq!(glass_work(true, true, false, false), GlassWork::Capture);
+        assert_eq!(
+            glass_work(true, true, false, false, false, false),
+            GlassWork::Capture
+        );
+    }
+
+    /// The 0.5 s timer: a due tick captures so the backdrop follows other
+    /// windows without a manual action, but a tick that lands **mid-drag** is
+    /// skipped so a move / resize stays cheap and the "a move / resize does
+    /// not capture" rule is not fought. A 模糊度 change still wins — it is a
+    /// re-blur, not a screen access.
+    #[test]
+    fn the_timer_recaptures_but_not_mid_drag() {
+        // Timer due, idle: capture.
+        assert_eq!(
+            glass_work(true, false, true, false, true, false),
+            GlassWork::Capture
+        );
+        // Timer due, mid-drag: skip.
+        assert_eq!(
+            glass_work(true, false, true, true, true, false),
+            GlassWork::None
+        );
+        // Timer not due, mid-drag: nothing.
+        assert_eq!(
+            glass_work(true, false, false, true, true, false),
+            GlassWork::None
+        );
+        // 模糊度 change is a re-blur and may run even mid-drag.
+        assert_eq!(
+            glass_work(true, false, true, true, true, true),
+            GlassWork::Reblur
+        );
+        // 重新采样背景 is an explicit user action: it wins over a drag.
+        assert_eq!(
+            glass_work(true, true, true, true, true, false),
+            GlassWork::Capture
+        );
     }
 
     /// Moving the window re-registers the stored capture instead of replacing

@@ -1,0 +1,50 @@
+name: CI
+
+# Build and test on the platform the app actually targets. Windows is not
+# optional here: the whole window layer (win.rs), the backdrop capture
+# (glass/blur.rs) and the test suite are Windows-specific, so a Linux runner
+# would not exercise them.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build-and-test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # rustup is preinstalled on the runner; this pins the toolchain file if
+      # one is ever added, and keeps the cache key stable otherwise.
+      - name: Toolchain
+        run: rustup show
+
+      - name: Cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            target
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: ${{ runner.os }}-cargo-
+
+      - name: Build
+        run: cargo build --all-targets --locked
+
+      # `cargo test` must be green. It is expected to be: the eight long-red
+      # epaint TexturesDelta panics were fixed by consuming the textures delta
+      # the tests were dropping.
+      - name: Test
+        run: cargo test --locked
+
+      # Not `-D warnings`: clippy is currently clean, and keeping the step
+      # non-fatal means a new lint does not block a fix that is otherwise fine.
+      # Tighten to `-D warnings` once the habit is established.
+      - name: Clippy
+        run: cargo clippy --all-targets --locked

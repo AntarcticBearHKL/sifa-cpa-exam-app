@@ -177,13 +177,13 @@ where
                 Value::Object(map) => {
                     let label = map
                         .get("label")
-                        .map(|x| value_to_string(x))
+                        .map(value_to_string)
                         .filter(|s| !s.is_empty())
                         .unwrap_or_else(|| default_label(i));
                     let text = map
                         .get("text")
                         .or_else(|| map.get("content"))
-                        .map(|x| value_to_string(x))
+                        .map(value_to_string)
                         .unwrap_or_default();
                     out.push(OptionItem { label, text });
                 }
@@ -341,7 +341,8 @@ pub struct Question {
 }
 
 impl Question {
-    /// `true` when this item is a real 选择题 (has options), otherwise 记忆/自测.
+    /// `true` when this item is a real 选择题 (has options), otherwise 主观题
+    /// (no options — shown in the display-only 主观题 mode).
     pub fn is_choice(&self) -> bool {
         !self.options.is_empty()
     }
@@ -368,9 +369,9 @@ impl Question {
         if !self.is_choice() {
             let raw = self.type_raw.as_deref().unwrap_or("");
             if raw.is_empty() {
-                return "记忆/自测".to_string();
+                return "主观题".to_string();
             }
-            return format!("记忆/自测（{}）", raw);
+            return format!("主观题（{}）", raw);
         }
         match self.qtype.as_deref().unwrap_or("") {
             "single_choice" => "单选",

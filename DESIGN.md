@@ -7,13 +7,11 @@
 
 ---
 
-# sfzklearning — 法考 · 注会 学习助手（原生 Windows 桌面 + MCP）
+# sfzklearning — 法考 · 注会 学习助手（原生 Windows 桌面）
 
 一个**原生 Windows 桌面应用**（Rust + eframe/egui，**无 web view / 无 HTML / 无 Tauri / 无 Electron**），
 用来**练习** `D:\Dev\StudyApp\data\{law,cpa}`（整理后的法考 / 注会 **CMF** 数据，随二进制一起分发；
-原始语料在 `data\corpus\{law,cpa}`，不参与分发）；
-外加一个极小的 **stdio MCP 服务**（`sfzklearning-mcp`），只暴露一个工具
-`get_current_study_context`，把用户**当前正在做的题目及其关联知识点**交给 Agent 讲解。
+原始语料在 `data\corpus\{law,cpa}`，不参与分发）。
 
 ---
 
@@ -22,9 +20,8 @@
 | 文件 | 说明 |
 | --- | --- |
 | `target\release\sfzklearning.exe` | GUI（原生窗口，标题 `sfzklearning`） |
-| `target\release\sfzklearning-mcp.exe` | stdio MCP 服务（newline-delimited JSON-RPC 2.0） |
-| `target\release\classify.exe` | 数据管线：把语料按官方考纲归类并重算 `summary.json`（见 §10） |
-| `state\current.json` | GUI 写、MCP 读的“当前上下文”契约文件（含用户备注 / 收藏标记） |
+| `target\release\classify.exe` | 数据管线：把语料按官方考纲归类并重算 `summary.json`（见 §9） |
+| `state\current.json` | app 写出的“当前上下文”文件（含用户备注 / 收藏标记） |
 | `state\wrong-<domain>-<subjectId>.json` | 错题 id 的**派生投影**：由 `user.json` 每题统计（`attempts > 0 && correct < attempts`）推导，加载时按统计修剪并写回；app 不读它做筛选，仅供外部工具读取 |
 | `state\user.json` | **本地用户缓存**：收藏题目 id + 每题备注 + 每题统计（看过 / 作答 / 正确，无需登录） |
 | `src\lib.rs` | 数据类型 / 加载器 / current.json 契约 / `UserStore` |
@@ -37,8 +34,7 @@
 | `src\bin\studyapp\theme\` | 设计令牌（`tokens.rs`，深/浅双模式）+ `Style`/`Visuals` 覆写 |
 | `src\bin\studyapp\anim\` | 缓动曲线 + `Animator`（答错抖动 / 重绘调度） |
 | `src\bin\studyapp\glass\` | 磨砂玻璃：`blur.rs`（桌面截图 + 高斯模糊）+ `paint.rs`（绘制原语）+ `widgets.rs`（自定义控件） |
-| `src\bin\sfzklearning-mcp.rs` | MCP 服务 |
-| `src\bin\classify.rs` | 数据管线二进制（分层归类 + 单测，见 §10） |
+| `src\bin\classify.rs` | 数据管线二进制（分层归类 + 单测，见 §9） |
 | `data\` | 整理后的数据（**app 读这里，随二进制分发**）：`taxonomy.md/json` · `summary.json` · `subjects\` · `classification-report.md` |
 | `data\corpus\` | 分类器的输入语料（**只读**），`classify --data-root` 的输入，**不参与分发**（已 gitignore） |
 
@@ -120,23 +116,17 @@ cmd /c '"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Auxiliary\Buil
 * `CMF_START_SUBJECT` — 启动时默认科目 id（如 `kuaiji`）；缺失或找不到时取该领域的第一个科目
 * `CMF_START_SESSION` — 非空且不是 `0` 时，启动就对起始科目**直接开一局练习**（进会话视图，
   等同于点「开始练习」）；用于截图 / 自检时不必合成点击
+* `CMF_START_KIND` — 启动时预选题型：`choice`（选择题）或 `subjective`（主观题）；其他值保持「全部」。
+  与 `CMF_START_SESSION` 配合，用于截图 / 自检时直达某个题型视图
 
 状态目录解析顺序：`--state-dir` > `CMF_STATE_DIR` > `<exe>/state`（便携布局）> `<exe>/../../state`（Cargo target 布局）。
-两个二进制使用同一套解析逻辑，因此 MCP 一定读得到 GUI 写的文件。
 
 截图（深/浅双模式）：`screenshots\dark-practice.png` 与 `screenshots\light-practice.png`
-（练习设置 —— 左栏「怎么练」+ 右栏章节多选）。`dark-launcher.png` 是**已删除的启动页**的旧截图，仅作历史记录。
+（练习设置 —— 左栏「怎么练」含 题型 / 来源 / 收藏 / 正确率 / 题量 / 顺序 / 搜索，右栏章节多选）。
 做题会话：`screenshots\dark-session-counts.png` 与 `light-session-counts.png`
 （题干下方的 `看过 N 次 · 作答 M 次 · 正确 K 次`，以及填满列宽的 来源/出处 行）。
-筛选新增项：`screenshots\dark-setup-filters.png`（来源三个 chip + 收藏 / 正确率 两个分段控件）、
 `screenshots\dark-session-no-wrong-label.png`（会话头部只读 `单选 · 章节 · 年份`，没有 错题 标记 ——
 错题与否只由每题统计决定，不再在题头贴标签）。
-
-MCP 服务由 MCP 客户端（如 opencode / Claude Desktop）拉起，见 `mcp.json`：
-
-```json
-{ "mcpServers": { "cmf-study": { "command": "D:\\Dev\\StudyApp\\target\\release\\sfzklearning-mcp.exe", "args": [] } } }
-```
 
 ## 6. GUI 使用
 
@@ -151,7 +141,7 @@ MCP 服务由 MCP 客户端（如 opencode / Claude Desktop）拉起，见 `mcp.
   **法考** = **卷一 / 卷二**。每行显示科目名与该科目题量。
 * **主区标题行**：科目名 + **`{N} 章 · {M} 题`**（`N` = 该科目题目里出现过的不同章节数，`M` = 题量）。
 * **练习设置**（进入工作区的默认视图，左右两栏，**没有下拉框**）：
-  * 左栏「怎么练」：**题型**（全部 / 选择题 / 记忆自测）、**来源**（可多选：`仅错题` / `未做过` / `做错过`）、
+  * 左栏「怎么练」：**题型**（全部 / 选择题 / 主观题）、**来源**（可多选：`仅错题` / `未做过` / `做错过`）、
     **收藏**（不限 / 已收藏 / 未收藏）、**正确率**（不限 / 未作答 / 低于 60% / 低于 100% / 全对）、
     **题量**（全部 / 10 / 20 / 50 / **自定义** —— 选自定义时右边出现数字输入框，范围 1–500；
     预设项忽略自定义值，超出题库则取全部）、**顺序**（顺序 / 随机）、**关键词搜索**（题干 / 解析）。
@@ -165,7 +155,11 @@ MCP 服务由 MCP 客户端（如 opencode / Claude Desktop）拉起，见 `mcp.
   `看过 N 次 · 作答 M 次 · 正确 K 次`（muted，12.5px；**没看过就整行不显示**，不会打印 `看过 0 次`）。
 * **错题随机 10 题**：从错题（每题统计 `attempts > 0 && correct < attempts`，与「仅错题 / 做错过」同一判据）里
   随机抽 10 道开一局（会话标签为「错题随机抽查」）。
-* `options:[]` 的条目走**记忆 / 自测**（显示答案 → 记住了 / 没记住 自评）。
+* `options:[]` 的条目走**主观题**（`logic::Kind::Subjective`，`matches = q.options.is_empty()`）：
+  这是**只读展示**模式 —— 题干照常显示，正文只有一个 **显示答案** 动作，**从不判定**、
+  **不受 `下一题` 闸门限制**（看完答案直接翻页）；数据里既没有答案也没有解析时打印
+  「这道题在数据里没有答案」。**旧的「记忆自测」路径已整体移除**（`记得/不记得`、`Session::self_assessed`、
+  `App::self_assess`、`render_memory` 都不在了）。
 
 **快捷键**（无边框窗口没有系统快捷键，所以由应用提供；文本框获得焦点时自动让位）：
 
@@ -187,14 +181,14 @@ MCP 服务由 MCP 客户端（如 opencode / Claude Desktop）拉起，见 `mcp.
 `QStat.seen` 带 `#[serde(default)]`，所以旧 `user.json` 照常加载（读出来是 `seen == 0`）。
 
 **题目 → 知识点** 关联：仍用 `q.knowledgePoints`（标题）在本科目 KP 里做**标题精确匹配**（重复标题取首个），
-结果写进 `state\current.json` 供 MCP 讲解；会话视图**已不再展示**这些关联 chip。
+结果写进 `state\current.json`；会话视图**已不再展示**这些关联 chip。
 
 **中文字体**：启动时从 `C:\Windows\Fonts` 依次尝试 `msyh.ttc`、`msyhbd.ttc`、`simhei.ttf`、`Deng.ttf`、`simsun.ttc`
 （`.ttc` 使用 collection index），注册为默认 Proportional + Monospace。找不到时**写 stderr**（不再有底部状态栏）。
 
 **备注 / 收藏（本地用户缓存，无需登录）**：会话里每题都有 `☆ 收藏` 与 `备注`。备注多行输入，
 **失焦或切题时自动保存**（打字过程中不写盘）。数据落在 `state\user.json`（`UserStore`），
-`data\corpus\` 语料**依旧只读**。收藏、备注与每题统计都会写进 `current.json`，MCP 也能读到。
+`data\corpus\` 语料**依旧只读**。收藏、备注与每题统计都会写进 `current.json`。
 
 ## 6.5 UI 设计系统（毛玻璃 / 排版 / 动效）
 
@@ -240,7 +234,7 @@ GUI 拆成入口 + 六个模块：`main.rs`（入口，仅 `mod` 声明 + `fn ma
 > `scrim` 是两种模式的关键：它必须够不透明，否则窗口后面若是浅色桌面，深色 UI 会被冲成灰白；
 > 浅色模式的 scrim 则是**浅色且近乎实心**（`rgba(248,248,250,228)`）—— 理由完全相同，
 > 否则亮色桌面会把浅色 UI 洗淡（踩过这个坑）。现在它的 alpha 由**透明度**设置驱动
-> （默认 12 → 224，与旧的 228 基本一致）；颜色仍取自 `background.scrim`。
+> （默认 20 → 204）；颜色仍取自 `background.scrim`。
 
 > **选中 = 染色填充，不是描边。** 六个「选中 / 主要」状态（分段指示器、开关 chip、勾选框、主按钮、
 > chip、左栏选中行）一律用 `accent.soft` 系的**低透明染色填充**表达；描边保持中性（`glass.stroke`）
@@ -251,42 +245,43 @@ GUI 拆成入口 + 六个模块：`main.rs`（入口，仅 `mod` 声明 + `fn ma
 > （不透明）+ 发丝描边 + **无投影** —— 与「整块分隔式」一致，不浮起来。`Frame::popup` / `Frame::menu`
 > 读的正是 `window_fill` / `menu_corner_radius` / `popup_shadow`。
 
-`theme/` 里八个测试守住两种模式的调色与浮层规则：`palette_is_dark_and_readable` /
+`theme/` 里十个测试守住两种模式的调色与浮层规则：`palette_is_dark_and_readable` /
 `light_palette_is_light_and_readable`（各自的底色 / 文字对比，浅色 scrim 浅且近乎实心，深色 scrim 深且近乎实心）/
 `accent_is_muted_not_saturated`（**两种模式**共守） / `surfaces_are_translucent_but_visible`（**两种模式**：
 表面够透但可辨、浮层实心且留在本模式色系） / `edges_recede_and_selection_is_a_tint`（描边低于表面、
 染色填充是透明色不是实心块） / `mode_ids_round_trip`（`user.json` 的 `theme` 值解析），
 以及 `popups_are_flush_not_floating_glass`（**两种模式**：`Frame::popup` 读的 `window_fill` 必须不透明、
 `popup_shadow` 必须为 `NONE`、无顶边亮带、`menu_corner_radius` 与按钮一致）
-和 `pressed_widgets_get_a_tint_not_a_neon_outline`（按下态只有低透明染色，没有满强度强调色描边）。
+和 `pressed_widgets_get_a_tint_not_a_neon_outline`（按下态只有低透明染色，没有满强度强调色描边），
+还有 `scrollbars_are_hidden_everywhere`（**两种模式**：滚动条宽 0、各状态不透明度全为 0，任何状态都画不出滚动条）
+和 `scrim_keeps_body_text_at_aa_over_the_worst_case_desktop`（scrim 在最坏桌面底色上仍让正文达到 AA 对比）。
 
-**测试（不开窗口、不点鼠标）**：`cargo test` 直接跑 —— 共 **93 passed**
-（14 lib + 16 classify + 63 sfzklearning），UI 只负责渲染结果。
-另有 8 个**既有的** `epaint::TexturesDelta` panic（headless egui 测试丢弃纹理增量所致，
-2 `anim::motion` + 1 `glass::widgets` + 5 `win`），与毛玻璃改动无关，按原样保留。
+**测试（不开窗口、不点鼠标）**：`cargo test` 直接跑 —— 共 **104 passed, 0 failed**
+（14 lib + 18 classify + 72 sfzklearning），UI 只负责渲染结果。
 
 * `logic.rs`（16 个）：按题型 / 章节（可多选）/ 来源（错题 · 未做过 · 做错过）/ 收藏（不限 · 已收藏 · 未收藏）/
   正确率（不限 · 未作答 · 低于 60% / 低于 100% / 全对）/ 关键词筛选（新条件与旧条件 AND 组合、不限是真 no-op）、
   **错题判据 `is_wrong`**（没作答不算、全对不算、错过才算）、
   `chapter_counts` 章节计数、`draw_plan` 先排序再按题量截断、错题抽样只取统计判定的错题且按上限截断、
   `shuffled` 是排列且同种子确定、判定的边界（未选 / 无选项）、
-  **下一题的判定闸门**（提交 / 显示答案 / 自评）、**显示答案的可用性**（有答案或有解析）、
+  **下一题的判定闸门**（提交 / 显示答案；主观题从不被闸门拦住）、**显示答案的可用性**（有答案或有解析）、
   错答文案在无答案时的兜底。
 * `win.rs`（5 个）：headless 注入指针事件后断言窗口指令 —— 按**空白处**发 `StartDrag`、
   按**控件上**不发、**八个边/角**各发对应方向的 `BeginResize`、按边缘**不**发 `StartDrag`、
   悬停各边/角返回对应的缩放光标。
-* `theme/`（8 个）：深色调色板深且可读、浅色调色板浅且可读（逆不变量）、强调色不饱和（两种模式）、
+* `theme/`（10 个）：深色调色板深且可读、浅色调色板浅且可读（逆不变量）、强调色不饱和（两种模式）、
   表面够透但可辨（两种模式）、描边低于表面且选中是染色不是描边、`theme` 值解析往返、
-  **浮层实心且无投影**（两种模式，两个 style slot 都断言）、按下态无霓虹描边。
+  **浮层实心且无投影**（两种模式，两个 style slot 都断言）、按下态无霓虹描边、
+  **滚动条全局隐藏**（宽 0、各状态不透明度 0）、**scrim 最坏桌面下正文仍达 AA**。
 * `glass/`（19 个）：`paint.rs` 的径向网格几何 / 边缘渐隐 / 退化输入不 panic / 软斑不出界 / alpha 混合 /
   **透明度 → scrim alpha 映射**（0→255、100→0、单调、钳制、默认 ≈ 旧值）；
   `blur.rs` 的**高斯模糊**（平坦图均值不变 / 阶跃边单调且平滑 / σ=0 精确复制 / 1×1 与 0 尺寸不 panic）、
   `downscale`（ceil 半尺寸 / 平坦图保持平坦）、`params`（0 不模糊、越大越糊、halvings ≤ 3）；
   `widgets.rs` 的指示器滑动与钳制 / 通道插值 / 统计文本 / 抖动只动 x / 内容置于平移后的矩形 /
   **滑杆的几何 → 取值映射**。
-* `app.rs`（6 个）：毛玻璃**截图规则**（`glass_work`：第一帧截一次；**移动 / 缩放永不重截**；
-  模糊度改变走 `Reblur`，只重跑降采样 + 高斯 + 上传，不碰屏幕；`重新采样背景` 才截第二张；
-  失败的截图不每帧重试）、**取景几何**（`uv_in_capture`：窗口移动多少，取样就深入桌面多少 ——
+* `app.rs`（7 个）：毛玻璃**截图规则**（`glass_work`：第一帧截一次；**移动 / 缩放永不重截**；
+  模糊度改变走 `Reblur`，只重跑降采样 + 高斯 + 上传，不碰屏幕；`重新采样背景` 与 **0.5 s 定时器**
+  才截第二张，**拖动中落下的定时 tick 跳过**；失败的截图不每帧重试）、**取景几何**（`uv_in_capture`：窗口移动多少，取样就深入桌面多少 ——
   同尺寸、无 NaN）、**合成多显示器布局**（右侧 / 左侧 / 上方 / 混合堆叠各一套虚拟屏幕与窗口矩形，
   断言 UV 落点、裁剪尺寸，以及 UV 反算回物理像素的 0 px 误差；窗口不在截图内时仍然有限不 panic）、
   **显示答案**只置 `shown`（不动 `answered` / `correct`），并打开 `下一题` 闸门、
@@ -294,7 +289,10 @@ GUI 拆成入口 + 六个模块：`main.rs`（入口，仅 `mod` 声明 + `fn ma
 * `practice.rs`（3 个）：**来源/出处那一行** —— 打开 `break_anywhere` 后首行填满整列
   （默认断行会提前停在最后一个空格处、右侧空一大截），在**换行横向布局**里也确实填到列右缘，
   短出处与原来逐点相同。
-* `anim/`（4 个）：`easing::clamp` 边界、`shake` 衰减端点与边界、抖动重启与结束、`is_live` / `prune`。
+* `anim/`（12 个）：`easing::clamp` 边界、`shake` 衰减端点与边界、抖动重启与结束、`is_live` / `prune`；
+  `motion` 的**三段时长**（FAST / BASE / SLOW 有序且都短）、**两条曲线**（端点精确、单调不回退）、
+  `progress_since` 到 1 且不过冲、**中途重定向**从当前位置续走、重定向到同目标不重启时钟、
+  过渡到达目标即静止，以及**运行中的过渡才请求重绘**（跑完就停）。
 * `lib.rs`（14 个）：数据加载 / 判定 / `UserStore`（收藏 · 备注 · 统计 · 主题）往返、
   **`user.json` 缺 `glass_*` 字段仍能反序列化**（旧文件兼容）、
   **`stats` 条目缺 `seen` 字段仍能反序列化**（旧文件读作 `seen == 0`），
@@ -325,22 +323,24 @@ GUI 拆成入口 + 六个模块：`main.rs`（入口，仅 `mod` 声明 + `fn ma
   （16px 黑白网格：只调 blur-behind 与完全不调**逐字节相同**）。旧机制的历史实测数据保留：
   accent policy 能把窗口内网格对比度从 12.4 压到 0.52；「窗口平移 500×120px」时，锐利背景有
   39.9% 的像素跟着变，磨砂背景只剩 1.5%。现在 `win.rs` 不再向系统申请任何模糊。
-* **两个用户设置 + 一个动作**（设置 → 外观，写入 `state\user.json`）：
+* **两个用户设置 + 一个手动动作**（设置 → 外观，写入 `state\user.json`）：
   **透明度** `0..=100`（scrim alpha = `255 * (1 - t/100)`，默认 20 → 204）与
   **模糊度** `0..=100`（映射到降采样次数 + sigma，集中在 `glass::blur::params`；默认 100，即最大模糊；0 = 桌面保持清晰）。
-  旁边的 **`重新采样背景`**（次要按钮样式，带悬停说明）是**唯一会重新截图桌面的用户动作** ——
-  用于桌面内容变了之后手动刷新。
-* **只截一次**：截图是**整个虚拟屏幕**的一张图，纹理按窗口的**物理像素客户区**取 UV（`App::glass_uv`；
+  旁边的 **`重新采样背景`**（次要按钮样式，带悬停说明）用于桌面内容变了之后**手动**刷新；
+  后台还有一个 **0.5 s 定时器**（`GLASS_INTERVAL`）会自动重截，所以它不再是唯一的重截时机。
+* **截图节奏（启动 + 0.5 s 定时器 + 手动）**：截图是**整个虚拟屏幕**的一张图，纹理按窗口的**物理像素客户区**取 UV（`App::glass_uv`；
   矩形来自 Win32 `GetClientRect` + `ClientToScreen`，不再用 egui 点数 × `pixels_per_point` —— 多显示器
   DPI 不同时单一缩放系数根本没法命名所有屏幕上的位置。**必须是客户区而不是 `GetWindowRect`**：winit 的
   无边框窗口为投影阴影把客户区整体下移 1px，实测 `ClientToScreen(0,0)` = 窗口矩形 y + 1，直接用窗口矩形
   会让背景整整偏 1px；实测两台显示器上 UV 反算回物理像素的误差都是 **0 px**），
   所以移动窗口时模糊的桌面**不跟着窗口滑**，而是像真的贴在桌面上 —— 这也正是**移动 / 缩放窗口
-  不需要重截**的原因：它只改变取哪一块（`uv_in_capture`）。截图**只有两种情况**会发生：
-  **启动后的第一帧**，以及用户点击 **`重新采样背景`**。
+  不需要重截**的原因：它只改变取哪一块（`uv_in_capture`）。截图**会在这些时机发生**：
+  **启动后的第一帧**、**每 0.5 s 一次的定时器**（`GLASS_INTERVAL`，桌面内容变了自动跟上），
+  以及用户点击 **`重新采样背景`**；**落在按住主键拖动中的定时 tick 会被跳过**（`glass_work` 的 `dragging`），
+  拖动因此仍然廉价、也不与「移动 / 缩放不重截」的规则打架。
   **模糊度改变只重跑 `downscale` + `gaussian` + 纹理上传**（截图原图存在 `App::glass_shot`，
   不再碰屏幕）；**透明度完全不碰截图**（只改 scrim alpha）。
-  截图只在**其他窗口**变化时才过时 —— 那正是 `重新采样背景` 的用途。
+  截图只在**其他窗口**变化时才过时 —— 0.5 s 定时器正是为了自动跟上这种变化。
   截不到（远程桌面 / 老系统）时保留上一张，一张都没有则回退为应用内渐变背景（`paint::backdrop`），
   窗口永远可读。
 * **缩放窗口**：无边框窗口没有系统缩放边框，所以由 `win::chrome` 自己判定 ——
@@ -362,9 +362,9 @@ GUI 拆成入口 + 六个模块：`main.rs`（入口，仅 `mod` 声明 + `fn ma
 
 **做题会话：先判定，再下一题。** 每道题都必须先有结果才能翻页 —— 选择题走
 `选答案 → 提交答案 → 判定` 或 `显示答案 → 看答案`，两条路都会打开 `下一题 ▶`（以及 `→`）；
-记忆 / 自测题必须先「记住了 / 没记住」自评（自评后本就自动前进）。`←` 上一题与 `Esc` 退出不受影响，
-所以禁用态不会困住人。**显示答案刻意不记录任何作答**：它只把 `shown` 置真 —— 选择题按「提交后」的
-同一套渲染高亮正确项并展开解析 —— 不写 `answered` / `correct`、不写每题统计、不进错题集，
+**主观题**（无选项、只读展示）没有可判定的东西，**从不被闸门拦住**，看完答案直接翻页。
+`←` 上一题与 `Esc` 退出不受影响，所以禁用态不会困住人。**显示答案刻意不记录任何作答**：它只把 `shown` 置真 ——
+选择题按「提交后」的同一套渲染高亮正确项并展开解析 —— 不写 `answered` / `correct`、不写每题统计、不进错题集，
 题目仍是「未做过」，下次还会出现，这正是复习它的意义。数据里既没有答案也没有解析的题，
 按钮照常出现但**禁用**（悬停提示「这道题在数据里没有答案」），不会画出空解析框。
 
@@ -378,7 +378,7 @@ GUI 拆成入口 + 六个模块：`main.rs`（入口，仅 `mod` 声明 + `fn ma
 
 **改视觉时不可破坏的约束**：
 
-* 动画 / 悬停状态**绝不置 `dirty`**（否则每帧写 `current.json`，磁盘抖动 + 污染 MCP 契约）。
+* 动画 / 悬停状态**绝不置 `dirty`**（否则每帧写 `current.json`，磁盘抖动 + 污染当前上下文文件）。
 * **egui 面板自带的分隔线要关掉**（`.show_separator_line(false)`）：`Panel` 默认会在自己的边界再画一条线
   （用 `noninteractive.bg_stroke`），和 `glass::divider_top/bottom/right` 叠起来就会出现「多了一条分割线」。
   所有发丝线一律由 `glass::divider_*` 用 `glass.divider` 画。
@@ -417,30 +417,9 @@ GUI 在任何“当前题目 / 领域 / 科目”变化时写入（临时文件 
 
 * `question` 不在做题会话中（如停留在练习设置）时为 `null`，`knowledgePoints` 也为空。
 * `tab` 字段保留但**恒为 `"practice"`** —— 学习 tab 已移除，现在只有练习。
-* `knowledgePoints` = 当前题目的关联知识点；会话视图不再展示这些 chip，但数据仍写入供 MCP 讲解。
+* `knowledgePoints` = 当前题目的关联知识点；会话视图不再展示这些 chip，但数据仍写入 `current.json`。
 
-## 8. MCP 服务
-
-* 传输：**stdio**，**newline-delimited JSON-RPC 2.0**（一行一个 JSON 对象）。
-* 方法：`initialize`（`protocolVersion: "2024-11-05"`，`capabilities.tools: {}`，
-  `serverInfo: {name: "sfzklearning", version: "0.1.0"}`）、`notifications/initialized`（不回复）、`ping`、
-  `tools/list`、`tools/call`。
-* 未知方法 → 错误 `-32601`；解析失败 → `-32700`；**stdout 只输出协议**，日志走 **stderr**，任何坏输入都不会让进程崩溃。
-* 唯一工具：
-
-```json
-{
-  "name": "get_current_study_context",
-  "description": "返回用户当前正在做的题目及其关联知识点（含解析与出处），供 Agent 讲解",
-  "inputSchema": { "type": "object", "properties": {}, "additionalProperties": false }
-}
-```
-
-`tools/call` 读取 `state\current.json`，返回 `content:[{type:"text", text:"<markdown>"}]`
-（题目 + 选项 + 正确答案 + 解析 + 关联知识点（标题/章节/内容/出处））以及可选的 `structuredContent`。
-文件缺失时返回一条友好的中文提示，而不是报错。
-
-## 9. 出处
+## 8. 出处
 
 每个知识点与题目都携带 `source { repo, path, nativeId, url }`，GUI 在**做题会话**中展示
 `repo · path · url`，并给出可点击的原文链接（当 `url` 存在时）。
@@ -451,7 +430,7 @@ GUI 在任何“当前题目 / 领域 / 科目”变化时写入（临时文件 
 所以这一行的 `LayoutJob` 打开 `break_anywhere`（`practice.rs::provenance_job`）：
 行会一直填到列的右边缘再断；`Label` 负责首行缩进（让过「来源/出处：」）与换行宽度，短出处不受影响。
 
-## 10. 数据管线：`classify`（语料 → 官方考纲）
+## 9. 数据管线：`classify`（语料 → 官方考纲）
 
 `data\` 由 `classify.exe` 生成。它读一份科目语料 + 一棵官方考纲树，把每道题归到官方 **科目 → 章**，
 写出 `subjects\<id>.json` + 重算的 `summary.json` + `classification-report.md`。
@@ -481,13 +460,22 @@ GUI 在任何“当前题目 / 领域 / 科目”变化时写入（临时文件 
 每题写 `chapter`（官方章名或 `null`）、`chapterOfficial`、`chapterConfidence`（`high` / `low` / `none`）。
 注会另有 `excluded` 桶，收纳初级 / 中级会计的串考污染。
 
+**科目归属（试卷约束）**：重派某题的科目时，分类器会把它**限制在该题所属试卷允许的科目**里 ——
+法考（2018+）用考纲自带的 **卷一 / 卷二**，司考（≤2017）按该考试固定结构（卷一 综合、卷二 刑事与行政、
+卷三 民商事；卷四 主观题，不约束）。约束**只在题源自带的 `subjectId` 不是官方科目时**才生效。
+本轮有 **933 题**因此改了科目，而它们此前**全部落在自己试卷之外**，所以这次改动**按构造是非退化的**。
+**局限（如实说）**：它只保证「落在正确的**试卷**」，并不保证「落在试卷内的正确**科目**」。
+
 **当前实测（据实，不夸大）**：
 
-* 法考 52,775 题 / 注会 14,428 题，总量与语料**完全一致**。
-* 法考：high 31,698 · low 19,089 · none 1,988；注会：high 9,396 · low 3,561 · none 1,471。
+* 法考 52,710 题 / 注会 14,428 题，总量与语料**完全一致**。
+* 法考：high 32,060 · low 18,679 · none 1,971；注会：high 9,396 · low 3,561 · none 1,471。
+* 法考语料原有 **69 道题干乱码**：4 道从语料里的干净副本修复，其余 **65 道**因**上游原文同样损坏**
+  （乱码是上游仓库的字节丢失，不是可重新解码的编码混用）而删除 —— 这正是 52,775 → 52,710 的来源；
+  注会数据不变。
 
-**已知局限**：法考约 71% / 注会约 54% 的题仍落到 Tier 4 —— 语料自带的 `chapter` 是**节级**标签，
+**已知局限**：法考约 70% / 注会约 54% 的题仍落到 Tier 4 —— 语料自带的 `chapter` 是**节级**标签，
 与官方章名对不上，且考纲对民法 / 商法 / 经济法 / 环境资源法 / 劳动社保 / 宪法**没有分节**。部分章因此**过度承接**
-（如商法 / 公司法约 4,100 题）。`low` / `none` 的含义是「**不可信**」—— app 会把它们照实呈现，而不是悄悄判错。
+（如商法 / 公司法约 4,000 题）。`low` / `none` 的含义是「**不可信**」—— app 会把它们照实呈现，而不是悄悄判错。
 
-`classify.rs` 有 **16 个单测**守住分层与去重逻辑（Tier 1–4、章号解析、CPA 串考排除、输出字段兼容）。
+`classify.rs` 有 **18 个单测**守住分层与去重逻辑（Tier 1–4、章号解析、试卷约束（法考 / 司考各期）、CPA 串考排除、输出字段兼容）。

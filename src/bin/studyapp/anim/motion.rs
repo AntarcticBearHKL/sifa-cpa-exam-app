@@ -63,6 +63,16 @@ pub mod duration {
     pub const SLOW: f32 = 0.22;
 }
 
+// The duration vocabulary is a design invariant, not a runtime behaviour: the
+// tiers must stay ordered and stay short. Asserted here so a bad edit fails the
+// *build* rather than a test — and so the three constants cannot drift apart
+// unnoticed. (These used to be runtime `assert!`s in a test, which clippy
+// rightly flagged as constant.)
+const _: () = assert!(duration::FAST < duration::BASE, "fast tier must be shortest");
+const _: () = assert!(duration::BASE < duration::SLOW, "slow tier must be longest");
+const _: () = assert!(duration::FAST >= 0.09, "hover feedback must stay perceptible");
+const _: () = assert!(duration::SLOW <= 0.30, "nothing in this app may feel slow");
+
 /// A one-track eased transition between two float values, driven by a
 /// monotonic `now` in seconds. Pure math, unit-tested below; the egui-facing
 /// helpers wrap it in temp-data storage.
@@ -207,10 +217,10 @@ mod tests {
 
     #[test]
     fn durations_are_ordered_fast_base_slow_and_all_short() {
-        assert!(duration::FAST < duration::BASE, "fast tier must be shortest");
-        assert!(duration::BASE < duration::SLOW, "slow tier must be longest");
-        assert!(duration::FAST >= 0.09, "hover feedback must stay perceptible");
-        assert!(duration::SLOW <= 0.30, "nothing in this app may feel slow");
+        // The four assertions that used to live here are now `const _: () =`
+        // checks next to the `duration` module, so a bad edit fails the build
+        // instead of a test. Keep the name as the pointer to them.
+        let _ = (duration::FAST, duration::BASE, duration::SLOW);
     }
 
     #[test]
@@ -269,9 +279,11 @@ mod tests {
     fn a_finished_transition_stops_requesting_repaints() {
         let ctx = egui::Context::default();
         let run = |time: f64| {
-            let mut input = egui::RawInput::default();
-            input.time = Some(time);
-            let out = ctx.run_ui(input, |ui| {
+            let input = egui::RawInput {
+                time: Some(time),
+                ..Default::default()
+            };
+            let mut out = ctx.run_ui(input, |ui| {
                 change_progress(
                     ui.ctx(),
                     Id::new("done_clock"),
@@ -280,6 +292,10 @@ mod tests {
                     curve::ENTER,
                 );
             });
+            // A headless frame produces font texture deltas; this test does
+            // not render, so they are consumed on purpose — dropping them
+            // unconsumed panics inside epaint.
+            out.textures_delta.clear();
             out.viewport_output
                 .values()
                 .map(|v| v.repaint_delay)
@@ -301,9 +317,11 @@ mod tests {
     fn a_running_transition_requests_repaints() {
         let ctx = egui::Context::default();
         let run = |time: f64| {
-            let mut input = egui::RawInput::default();
-            input.time = Some(time);
-            let out = ctx.run_ui(input, |ui| {
+            let input = egui::RawInput {
+                time: Some(time),
+                ..Default::default()
+            };
+            let mut out = ctx.run_ui(input, |ui| {
                 change_progress(
                     ui.ctx(),
                     Id::new("live_clock"),
@@ -312,6 +330,10 @@ mod tests {
                     curve::ENTER,
                 );
             });
+            // See `a_finished_transition_stops_requesting_repaints`: the
+            // unconsumed font texture deltas are cleared before the output is
+            // dropped.
+            out.textures_delta.clear();
             out.viewport_output
                 .values()
                 .map(|v| v.repaint_delay)

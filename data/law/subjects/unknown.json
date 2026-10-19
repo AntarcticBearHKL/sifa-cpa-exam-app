@@ -611,14 +611,31 @@
       "explanation": "",
       "id": "law:fakao-app:2002年客观题卷一#一#7",
       "knowledgePoints": [],
-      "options": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "附则是宪法的一部分，因而其法律效力当然应与一般条款相同"
+        },
+        {
+          "label": "B",
+          "text": "附则是宪法的特定条款，因而仅对特定事项具有法律效力"
+        },
+        {
+          "label": "C",
+          "text": "附则是宪法的临时条款，因而仅在特定的时限内具有法律效力"
+        },
+        {
+          "label": "D",
+          "text": "附则是宪法的特别条款，根据特别法优于普通法的原则，因而其法律效力高于宪法一般条款"
+        }
+      ],
       "source": {
         "nativeId": "2002年客观题卷一#一#7",
         "path": "真题库/客观题/2002年客观题卷一.md",
         "repo": "fakao-app",
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
-      "stem": "宪法附则是指宪法对于特定事项需要特殊规定而作 出的附加条款。下列关于宪法附则的表述哪一项是错误 的? N,‚ag>køvT R/fª[Õl„vyrš[ag>kàV€ÅNù[yrš[‹Ny˜wQ gÕl‹_He›R R/fª[Õl„v4Nöeag>kàV€ÅN(Wyrš[„vöeP–…QwQ gÕl‹_He›R RàV€vQÕl‹_He›RØšŽN宪法一般条款",
+      "stem": "宪法附则是指宪法对于特定事项需要特殊规定而作出的附加条款。下列关于宪法附则的表述哪一项是错误的？",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -715,6 +732,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "某民警在一次执行公务中牺牲，被公安部授予“一 级英模”称号，并奖励奖金1万元，奖金由该民警家属 代领，同时其家属还收到全国各地捐款共达10万元。对 该民警家属的11万元所得应否纳税存在下列几种意见， 请问哪一种是正确的?",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2002"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2002
+    },
+    {
+      "answer": [
+        "A"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2002年客观题卷一#一#26",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "承运人应在整个航程中使船舶处于适航状态"
+        },
+        {
+          "label": "B",
+          "text": "承运人应在开航前与开航时谨慎处理使船舶处"
+        },
+        {
+          "label": "C",
+          "text": "承运人应适当地配备船员、设备和船舶供应品"
+        },
+        {
+          "label": "D",
+          "text": "承运人应使货舱、冷藏舱和该船其他运载货物"
+        }
+      ],
+      "source": {
+        "nativeId": "2002年客观题卷一#一#26",
+        "path": "真题库/客观题/2002年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "依据《海牙规则》的规定，下列有关承运人适航义 务的表述中哪个是错误的?",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -925,6 +990,306 @@
     },
     {
       "answer": [
+        "B",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2002年客观题卷一#一#49",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "中标项目禁止分包，甲企业作为中标人应承担"
+        },
+        {
+          "label": "B",
+          "text": "中标项目可以分包，若分包项目出现问题，可"
+        },
+        {
+          "label": "C",
+          "text": "分包人乙企业只与甲企业有合同关系，与招标"
+        },
+        {
+          "label": "D",
+          "text": "招标人既可以要求甲企业承担全部责任，也可"
+        }
+      ],
+      "source": {
+        "nativeId": "2002年客观题卷一#一#49",
+        "path": "真题库/客观题/2002年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲企业作为某工程项目的总承包中标人，将中标项 目的部分工作发包给乙企业完成，现乙企业分包项目出 现问题。下列说法哪些是正确的?",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2002"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2002
+    },
+    {
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2002年客观题卷一#一#51",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "税务机关有根据认为纳税人有逃避纳税义务行"
+        },
+        {
+          "label": "B",
+          "text": "纳税人不能提供纳税担保的"
+        },
+        {
+          "label": "C",
+          "text": "必须经县级以上税务局(分局)局长批准"
+        },
+        {
+          "label": "D",
+          "text": "扣押、查封物品的价值，须与纳税人应履行的"
+        }
+      ],
+      "source": {
+        "nativeId": "2002年客观题卷一#一#51",
+        "path": "真题库/客观题/2002年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "税务机关采取税收保全措施有着严格的适用条件。 下列几种情况哪些属于税务机关采取税收保全措施必须 满足的条件?",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2002"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2002
+    },
+    {
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2002年客观题卷一#一#79",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "周某本人没有提出委托律师为其辩护的请求"
+        },
+        {
+          "label": "B",
+          "text": "周某没有直接与律师事务所办理委托手续，也"
+        },
+        {
+          "label": "C",
+          "text": "根据刑法关于诈骗罪的规定，周某不会被判处"
+        },
+        {
+          "label": "D",
+          "text": "本人与本案合议庭组成人员陈法官是同学，可"
+        }
+      ],
+      "source": {
+        "nativeId": "2002年客观题卷一#一#79",
+        "path": "真题库/客观题/2002年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "被告人周某被公诉机关以犯诈骗罪为由提起公诉。 鉴于周某年龄尚不满18周岁，人民法院通过有关程序指 定某律师事务所指派律师为周某辩护。该律师事务所指 派路律师担任用某的辩护律师后，路律师不得以哪些理 由拒绝为周某辩护?",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2002"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2002
+    },
+    {
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2002年客观题卷一#一#84",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "自由权"
+        },
+        {
+          "label": "B",
+          "text": "生存权"
+        },
+        {
+          "label": "C",
+          "text": "请求权"
+        },
+        {
+          "label": "D",
+          "text": "胜诉权"
+        }
+      ],
+      "source": {
+        "nativeId": "2002年客观题卷一#一#84",
+        "path": "真题库/客观题/2002年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "法律权利的内容是下列哪些权利要素的统一?",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2002"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2002
+    },
+    {
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2002年客观题卷一#一#91",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "证券自营业务"
+        },
+        {
+          "label": "B",
+          "text": "证券经纪业务"
+        },
+        {
+          "label": "C",
+          "text": "证券承销业务"
+        },
+        {
+          "label": "D",
+          "text": "证券融资业务"
+        }
+      ],
+      "source": {
+        "nativeId": "2002年客观题卷一#一#91",
+        "path": "真题库/客观题/2002年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据我国证券法的规定，经纪类证券公司不得经营 下列哪些业务?",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2002"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2002
+    },
+    {
+      "answer": [
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2002年客观题卷一#一#96",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "美国仲裁协会"
+        },
+        {
+          "label": "B",
+          "text": "香港国际仲裁小心"
+        },
+        {
+          "label": "C",
+          "text": "国际商会仲裁院"
+        },
+        {
+          "label": "D",
+          "text": "解决投资争端国际中心"
+        }
+      ],
+      "source": {
+        "nativeId": "2002年客观题卷一#一#96",
+        "path": "真题库/客观题/2002年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "下列哪些机构是国际性的常设仲裁机构?",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2002"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2002
+    },
+    {
+      "answer": [
         "C"
       ],
       "answerText": null,
@@ -1069,6 +1434,54 @@
     },
     {
       "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2002年客观题卷二#二#7",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "王某的行为构成盗窃罪，盗窃数额为5000元"
+        },
+        {
+          "label": "B",
+          "text": "王某的行为构成诈骗罪，诈骗数额为5000元"
+        },
+        {
+          "label": "C",
+          "text": "王某的行为构成盗窃罪，盗窃数额为4万元"
+        },
+        {
+          "label": "D",
+          "text": "王某的行为构成诈骗罪，诈骗数额为4万元"
+        }
+      ],
+      "source": {
+        "nativeId": "2002年客观题卷二#二#7",
+        "path": "真题库/客观题/2002年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "王某利用计算机知识获取某公司上网账号和密 码后，以每3个月100元的价格出售上网账号和密码，从 中获利5000元，给该公司造成4万元的损失。对此，下列 哪个说法是正确的?",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2002"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2002
+    },
+    {
+      "answer": [
         "D"
       ],
       "answerText": null,
@@ -1104,6 +1517,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "甲于某日晨在路边捡回一名弃婴，抚养了3个月 后，声称是自己的亲生儿子，以3000元卖给乙。如何认 定甲的行为?",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2002"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2002
+    },
+    {
+      "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2002年客观题卷二#二#9",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "李某的行为属于贪污既遂"
+        },
+        {
+          "label": "B",
+          "text": "李某的行为属于贪污未遂"
+        },
+        {
+          "label": "C",
+          "text": "李某的行为属于盗窃既遂"
+        },
+        {
+          "label": "D",
+          "text": "李某的行为属于盗窃未遂"
+        }
+      ],
+      "source": {
+        "nativeId": "2002年客观题卷二#二#9",
+        "path": "真题库/客观题/2002年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "李某系A市建设银行某储蓄所记账员。2002年3月20 日下午下班时，李某发现本所出纳员陈某将2万元营业 款遗忘在办公桌抽屉内(末锁)。当日下班后，李某趁所 内无人之机，返回所内将该2万元取出，用报纸包好后 藏到自己办公桌下面的垃圾袋中，并用纸箱遮住垃圾袋 。次日上午案发，赃款被他人找出。对此，下列哪一说 法是正确的?",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -1314,6 +1775,56 @@
     {
       "answer": [
         "A",
+        "B",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2002年客观题卷二#二#33",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "对陈某的行为以抢夺罪从重处罚即可"
+        },
+        {
+          "label": "B",
+          "text": "对陈某的行为以盗窃罪从重处罚即可"
+        },
+        {
+          "label": "C",
+          "text": "对陈某的行为以抢夺罪与盗窃罪实行数罪并罚"
+        },
+        {
+          "label": "D",
+          "text": "对陈某的行为以抢夺罪与故意毁坏财物罪实行"
+        }
+      ],
+      "source": {
+        "nativeId": "2002年客观题卷二#二#33",
+        "path": "真题库/客观题/2002年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "陈某在街上趁刘莱不备，将其手机(价值2590元) 夺走。随后陈某反复使用该手机拔打国际长途电话，致 使刘莱损失话费5200元。一周后，陈某将该手机丢弃在 某邮局门口，引起保安人员的怀疑，经询问案发。下列 有关此案的说法中，哪些是不正确的?",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2002"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2002
+    },
+    {
+      "answer": [
+        "A",
         "C"
       ],
       "answerText": null,
@@ -1461,8 +1972,6 @@
     {
       "answer": [
         "A",
-        "B",
-        "C",
         "D"
       ],
       "answerText": null,
@@ -1471,16 +1980,33 @@
       "chapterOfficial": null,
       "difficulty": null,
       "explanation": "",
-      "id": "law:fakao-app:2002年客观题卷二#二#39",
+      "id": "law:fakao-app:2002年客观题卷二#二#40",
       "knowledgePoints": [],
-      "options": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "盗窃罪"
+        },
+        {
+          "label": "B",
+          "text": "投毒罪"
+        },
+        {
+          "label": "C",
+          "text": "故意毁坏财物罪"
+        },
+        {
+          "label": "D",
+          "text": "生产、销售有毒、有害食品罪"
+        }
+      ],
       "source": {
-        "nativeId": "2002年客观题卷二#二#39",
+        "nativeId": "2002年客观题卷二#二#40",
         "path": "真题库/客观题/2002年客观题卷二.md",
         "repo": "fakao-app",
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
-      "stem": "下列关于数罪并罚的做法与说法，哪些是错误 的； t^åN Rg 0 R N RZ Rg”应是18年，而不是12年",
+      "stem": "甲为获利于某日晚向乙家的羊圈内(共有29只羊) 投放毒药，待羊中毒后将羊运走，并将羊肉出售给他人 。甲的行为构成哪些犯罪?",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -1569,6 +2095,55 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "下列有关剥夺政治权利的说法，哪些是正确的?",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2002"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2002
+    },
+    {
+      "answer": [
+        "A",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2002年客观题卷二#二#46",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "对甲的行为以拐卖妇女罪论处"
+        },
+        {
+          "label": "B",
+          "text": "由于甲尚未出卖乞女，对拐卖妇女罪应认定为"
+        },
+        {
+          "label": "C",
+          "text": "对丙应以聚众阻碍解救被收买的妇女罪论处"
+        },
+        {
+          "label": "D",
+          "text": "对丙应以拐卖妇女罪的共犯论处"
+        }
+      ],
+      "source": {
+        "nativeId": "2002年客观题卷二#二#46",
+        "path": "真题库/客观题/2002年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲以出卖为目的，将乙女拐骗至外地后关押于 一地下室，并曾强奸乙女。甲在寻找买主的过程中因形 迹可疑被他人告发。国家机关工作人员前往解救时，甲 的朋友丙却聚众阻碍国家机关工作人员的解救行为。对 本案应如柯处理?",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -1718,6 +2293,56 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "王红亲眼目睹了三个盗窃犯实施盗窃及当场被 公安机关抓获的过程。事后，侦查人员找到王红取证。 对此，下列哪些说法是正确的?",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2002"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2002
+    },
+    {
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2002年客观题卷二#二#60",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "人民法院不受理此案"
+        },
+        {
+          "label": "B",
+          "text": "同意乙、丙、丁不参加诉讼"
+        },
+        {
+          "label": "C",
+          "text": "乙、丙、丁不参加诉讼，但允许他们在本案宣"
+        },
+        {
+          "label": "D",
+          "text": "乙、丙、丁不出庭，但允许其保留告诉权"
+        }
+      ],
+      "source": {
+        "nativeId": "2002年客观题卷二#二#60",
+        "path": "真题库/客观题/2002年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "胡女士喜欢编造并传播小道消息，她曾经捏造 事实，同时诽谤甲、乙、丙、丁四人。此后，甲独自向 人民法院起诉。关于本案，人民法院下列哪些处理方式 是错误的?",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -2171,6 +2796,55 @@
     {
       "answer": [
         "A",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2002年客观题卷二#二#95",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "C市基层人民法院"
+        },
+        {
+          "label": "B",
+          "text": "C市中级人民法院"
+        },
+        {
+          "label": "C",
+          "text": "A市基层人民法院"
+        },
+        {
+          "label": "D",
+          "text": "A市中级人民法院"
+        }
+      ],
+      "source": {
+        "nativeId": "2002年客观题卷二#二#95",
+        "path": "真题库/客观题/2002年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "哪些法院对此案有管辖权?",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2002"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2002
+    },
+    {
+      "answer": [
+        "A",
         "B",
         "D"
       ],
@@ -2461,6 +3135,54 @@
       "chapterOfficial": null,
       "difficulty": null,
       "explanation": "",
+      "id": "law:fakao-app:2003年客观题卷一#一#15",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "诋毁商誉的侵权纠纷"
+        },
+        {
+          "label": "B",
+          "text": "低价倾销的不正当竞争纠纷"
+        },
+        {
+          "label": "C",
+          "text": "欺骗性交易的不正当竞争纠纷"
+        },
+        {
+          "label": "D",
+          "text": "企业名称侵权纠纷"
+        }
+      ],
+      "source": {
+        "nativeId": "2003年客观题卷一#一#15",
+        "path": "真题库/客观题/2003年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲欲买“全聚德”牌的快餐包装烤鸭，临上火车前误 购了商标不同而外包装十分近似的显著标明名称为“仝 聚德”的烤鸭，遂向“全聚德”公司投诉。“全聚德” 公司发现，“仝聚德”烤鸭的价格仅为“全聚德”的１ ／３。如果“全聚德”起诉“仝聚德”，其纠纷的性质 应当是下列哪一种？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2003"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2003
+    },
+    {
+      "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
       "id": "law:fakao-app:2003年客观题卷一#一#24",
       "knowledgePoints": [],
       "options": [
@@ -2592,6 +3314,104 @@
     {
       "answer": [
         "A",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2003年客观题卷一#一#40",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "明确把“坚持改革开放”写进宪法"
+        },
+        {
+          "label": "B",
+          "text": "增加规定“土地的使用权可以依照法律的规定转让”"
+        },
+        {
+          "label": "C",
+          "text": "明确把“我国将长期处于社会主义初级阶段”写进宪"
+        },
+        {
+          "label": "D",
+          "text": "把县级人民代表大会的任期由３年改成５年"
+        }
+      ],
+      "source": {
+        "nativeId": "2003年客观题卷一#一#40",
+        "path": "真题库/客观题/2003年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "我国１９９３年的宪法修正案涉及下列哪些方面的内 容？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2003"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2003
+    },
+    {
+      "answer": [
+        "A",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2003年客观题卷一#一#41",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "特别行政区的立法不需要报全国人大常委会批准"
+        },
+        {
+          "label": "B",
+          "text": "不服特别行政区法院的判决，可以上诉至我国最高人"
+        },
+        {
+          "label": "C",
+          "text": "特别行政区可以自主决定外交、经济、财政等事项"
+        },
+        {
+          "label": "D",
+          "text": "中央人民政府可授权特别行政区依照基本法自行处理"
+        }
+      ],
+      "source": {
+        "nativeId": "2003年客观题卷一#一#41",
+        "path": "真题库/客观题/2003年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "依据我国特别行政区基本法，下列哪些选项的表述是 正确的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2003"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2003
+    },
+    {
+      "answer": [
+        "A",
         "B",
         "D"
       ],
@@ -2692,6 +3512,55 @@
     },
     {
       "answer": [
+        "A",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2003年客观题卷一#一#48",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "纳税人甲个人仅有的一套住房"
+        },
+        {
+          "label": "B",
+          "text": "纳税人乙个人所有的金银首饰"
+        },
+        {
+          "label": "C",
+          "text": "纳税人丙自用的私人汽车"
+        },
+        {
+          "label": "D",
+          "text": "纳税人丁所有的单价在5000以下的生活用品"
+        }
+      ],
+      "source": {
+        "nativeId": "2003年客观题卷一#一#48",
+        "path": "真题库/客观题/2003年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "税务机关在实行税收保全措施和强制执行措施时，下 列哪些财产或者物品不在此类措施范围之内？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2003"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2003
+    },
+    {
+      "answer": [
         "B",
         "C",
         "D"
@@ -2779,6 +3648,156 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "2003年8月，由于天气干旱，农民甲的农作物缺水，甲 便将某化肥厂排放的污水引入自己的农田灌溉，结果造 成农作物死亡，甲要求化肥厂承担赔偿责任。下列关于 此案的说法哪些是正确的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2003"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2003
+    },
+    {
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2003年客观题卷一#一#54",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "发行人的董事、监事、经理"
+        },
+        {
+          "label": "B",
+          "text": "承销商的董事、监事、经理"
+        },
+        {
+          "label": "C",
+          "text": "出具证券投资咨询意见的咨询机构"
+        },
+        {
+          "label": "D",
+          "text": "出具法律意见书的律师事务所"
+        }
+      ],
+      "source": {
+        "nativeId": "2003年客观题卷一#一#54",
+        "path": "真题库/客观题/2003年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "证券发行中因虚假陈述致使投资者在证券投资中遭受 损失的，发行人、承销商应承担赔偿责任，下列哪些人 应负连带赔偿责任？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2003"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2003
+    },
+    {
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2003年客观题卷一#一#55",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲公司最近2年连续亏损"
+        },
+        {
+          "label": "B",
+          "text": "甲公司的法定代表人发生变更"
+        },
+        {
+          "label": "C",
+          "text": "甲公司发生重大违法行为"
+        },
+        {
+          "label": "D",
+          "text": "甲公司未按照公司债券募集办法的规定履行义务"
+        }
+      ],
+      "source": {
+        "nativeId": "2003年客观题卷一#一#55",
+        "path": "真题库/客观题/2003年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲股份有限公司债券上市交易后因出现法定情形被暂 停上市。下列哪些表述符合暂停上市的规定？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2003"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2003
+    },
+    {
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2003年客观题卷一#一#63",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "荷兰人"
+        },
+        {
+          "label": "B",
+          "text": "以律师身份担任诉讼代理人的荷兰律师"
+        },
+        {
+          "label": "C",
+          "text": "以非律师身份担任诉讼代理人的荷兰律师"
+        },
+        {
+          "label": "D",
+          "text": "以个人名义出任诉讼代理人的荷兰驻华使领馆官员"
+        }
+      ],
+      "source": {
+        "nativeId": "2003年客观题卷一#一#63",
+        "path": "真题库/客观题/2003年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "荷兰人迈克在中国工作期间被一同事过失伤害。因双 方就损害赔偿标准达不成协议，迈克向工作所在地某人 民法院提起诉讼，他可以委托下列哪些人为其诉讼代理 人？",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -3296,6 +4315,54 @@
     },
     {
       "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2003年客观题卷二#二#7",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "钱某的行为不构成犯罪"
+        },
+        {
+          "label": "B",
+          "text": "钱某的行为构成票据诈骗罪的既遂，数额按票面金额"
+        },
+        {
+          "label": "C",
+          "text": "钱某的行为构成票据诈骗罪的未遂"
+        },
+        {
+          "label": "D",
+          "text": "钱某的行为构成诈骗罪的既遂，数额按票面金额计算"
+        }
+      ],
+      "source": {
+        "nativeId": "2003年客观题卷二#二#7",
+        "path": "真题库/客观题/2003年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "钱某持盗来的身份证及伪造的空头支票，骗取某音像 中心VCD光盘４０００张，票面金额３.５万元。物价部 门进行赃物估价鉴定的结论为：“盗版光盘无价值”。 对钱某骗取光盘的行为应如何定性？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2003"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2003
+    },
+    {
+      "answer": [
         "A"
       ],
       "answerText": null,
@@ -3331,6 +4398,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "张某的次子乙，平时经常因琐事滋事生非，无端打骂 张某。一日，乙与其妻发生争吵，张某过来劝说。乙转 而辱骂张某并将其踢倒在地，并掏出身上的水果刀欲剌 张某，张某起身逃跑，乙随后紧追。张某的长子甲见状 ，随手从门口拿起扁担朝乙的颈部打了一下，将乙打昏 在地上。张某顺手拿起地上的石头转身回来朝乙的头部 猛砸数下，致乙死亡。对本案中张某、甲的行为应当如 何定性？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2003"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2003
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2003年客观题卷二#二#26",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "对李某违法行为的追究时效应从１９９７年４月起算"
+        },
+        {
+          "label": "B",
+          "text": "公安机关不应对李某予以处罚"
+        },
+        {
+          "label": "C",
+          "text": "李某系主动停止违法行为，可以从轻处罚"
+        },
+        {
+          "label": "D",
+          "text": "若李某配合查处违法行为，应当减轻处罚"
+        }
+      ],
+      "source": {
+        "nativeId": "2003年客观题卷二#二#26",
+        "path": "真题库/客观题/2003年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "李某自１９９７年４月起开始非法制造、贩卖匕首， 至次年１月停止。１９９８年８月公安机关根据举报发 现了李某的违法行为。下列哪一种说法是正确的？",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -3380,6 +4495,55 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "下列哪些情形，属于挪用公款归个人使用，从而可能 构成挪用公款罪？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2003"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2003
+    },
+    {
+      "answer": [
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2003年客观题卷二#二#33",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "对不属于罪行极其严重的犯罪分子，既不能判处死刑"
+        },
+        {
+          "label": "B",
+          "text": "死刑缓期执行的判决，可以由高级人民法院核准"
+        },
+        {
+          "label": "C",
+          "text": "对犯罪时不满１８周岁的人，不能判处死刑立即执行"
+        },
+        {
+          "label": "D",
+          "text": "对审判时怀孕的妇女，可以判处死刑，但必须在其生"
+        }
+      ],
+      "source": {
+        "nativeId": "2003年客观题卷二#二#33",
+        "path": "真题库/客观题/2003年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "依据法律规定，下列关于死刑的说法哪些是不正确的 ？",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -3476,6 +4640,57 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "下列关于受贿罪的说法哪些是不正确的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2003"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2003
+    },
+    {
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2003年客观题卷二#二#41",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲欲杀害其女友，某日故意破坏其汽车的刹车装置。"
+        },
+        {
+          "label": "B",
+          "text": "乙欲杀其仇人苏某，在山崖边对其砍了７刀，被害人"
+        },
+        {
+          "label": "C",
+          "text": "丙追杀情敌赵某，赵狂奔逃命。赵的仇人赫某早就想"
+        },
+        {
+          "label": "D",
+          "text": "丁持上膛的手枪闯入其前妻钟某住所，意图杀死钟某"
+        }
+      ],
+      "source": {
+        "nativeId": "2003年客观题卷二#二#41",
+        "path": "真题库/客观题/2003年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "下列关于刑法上因果关系的说法哪些是正确的？",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -3617,7 +4832,7 @@
         "repo": "fakao-app",
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
-      "stem": "甲、乙合 \\ øvÆ‹0Ðgåe NCQ°sÑ‘0R¦~š[0W¹p NÅbÃ_?QP[„vu}T€¡l g¥bf‹ åw甲，甲随后与丁分手回家。下列罪名哪些不符合甲、 乙的行为性质？",
+      "stem": "甲、乙合谋勒索丙的钱财。甲与丙及丙的儿子丁（17岁）相识。某日下午，甲将丁邀到一家游乐场游玩，然后由乙向丙打电话。乙称丁被绑架，令丙赶快送3万元现金到约定地点，不许报警，否则杀害丁。丙担心儿子的生命而没有报警，下午7点左右准备了3万元后送往约定地点。乙取得钱后通知甲，甲随后与丁分手回家。下列罪名哪些不符合甲、乙的行为性质？",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -3729,6 +4944,55 @@
     },
     {
       "answer": [
+        "A",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2003年客观题卷二#二#65",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "王某承认盗窃事实的供述"
+        },
+        {
+          "label": "B",
+          "text": "王某有关公司拖欠他工资的辩解"
+        },
+        {
+          "label": "C",
+          "text": "秦某的证言"
+        },
+        {
+          "label": "D",
+          "text": "手提电脑"
+        }
+      ],
+      "source": {
+        "nativeId": "2003年客观题卷二#二#65",
+        "path": "真题库/客观题/2003年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某公司被盗手提电脑一台，侦查人员怀疑是王某所为 ，王某一开始不承认，但后来经过刑讯承认了盗窃事实 ，并供述已将电脑卖给刘某，同时还说他之所以拿公司 的电脑是因为公司拖欠了6个月的工资。侦查人员找到 刘某后，刘某说电脑又倒卖给了秦某。秦某起初不承认 ，侦查人员威胁他：“如果不承认就按共同盗窃论罪！ ”秦某害怕，承认了购买电脑一事，并交出了电脑。此 案中下列哪些证据不能作为定案的根据？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2003"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2003
+    },
+    {
+      "answer": [
         "C",
         "D"
       ],
@@ -3765,6 +5029,56 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "关于规章制定，下列说法哪些是正确的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2003"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2003
+    },
+    {
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2003年客观题卷二#二#80",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "公安人员盘问过程中殴打刘某"
+        },
+        {
+          "label": "B",
+          "text": "海关违法扣留张某5小时"
+        },
+        {
+          "label": "C",
+          "text": "法院以转移被查封财产为由错误拘留陈某15日"
+        },
+        {
+          "label": "D",
+          "text": "镇政府公布本镇有不良嗜好人员名单"
+        }
+      ],
+      "source": {
+        "nativeId": "2003年客观题卷二#二#80",
+        "path": "真题库/客观题/2003年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "下列哪些国家侵权行为不适用消除影响、恢复名誉、 赠礼道歉的责任方式？",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -4146,6 +5460,54 @@
     },
     {
       "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2004年客观题卷一#一#4",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "法律原则不仅着眼于行为及条件的共性，而且关注它"
+        },
+        {
+          "label": "B",
+          "text": "法律原则在适用上容许法官有较大的自由裁量余地"
+        },
+        {
+          "label": "C",
+          "text": "法律原则是以“全有或全无的方式”应用于个案当中"
+        },
+        {
+          "label": "D",
+          "text": "相互冲突的法律原则可以共存于一部法律之中"
+        }
+      ],
+      "source": {
+        "nativeId": "2004年客观题卷一#一#4",
+        "path": "真题库/客观题/2004年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "下列关于法律原则的表述哪一项是错误的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2004"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2004
+    },
+    {
+      "answer": [
         "D"
       ],
       "answerText": null,
@@ -4181,6 +5543,102 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "根据我国宪法规定，下列有关审计机关的表述哪一 项是错误的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2004"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2004
+    },
+    {
+      "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2004年客观题卷一#一#11",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "宣布甲、乙当选"
+        },
+        {
+          "label": "B",
+          "text": "宣布甲当选，同时以乙为候选人另行选举"
+        },
+        {
+          "label": "C",
+          "text": "宣布甲当选，同时以乙、丙为候选人另行选举"
+        },
+        {
+          "label": "D",
+          "text": "宣布无人当选，以甲、乙、丙为候选人另行选举"
+        }
+      ],
+      "source": {
+        "nativeId": "2004年客观题卷一#一#11",
+        "path": "真题库/客观题/2004年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某选区选举地方人民代表，代表名额2人，第一次投 票结果，候选人按得票多少排序为甲、乙、丙、丁，其 中仅甲获得过半数选票。对此情况的下列处理意见哪一 项符合法律的规定？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2004"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2004
+    },
+    {
+      "answer": [
+        "A"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2004年客观题卷一#一#12",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "自治区人大常委会"
+        },
+        {
+          "label": "B",
+          "text": "自治区人民代表大会"
+        },
+        {
+          "label": "C",
+          "text": "自治州人民代表大会"
+        },
+        {
+          "label": "D",
+          "text": "自治县人民代表大会"
+        }
+      ],
+      "source": {
+        "nativeId": "2004年客观题卷一#一#12",
+        "path": "真题库/客观题/2004年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "民族自治地方的自治机关依法行使自治权。根据我 国宪法规定，下列哪一机关不享有自治条例、单行条例 制定权？",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -4366,6 +5824,152 @@
       ],
       "type": "single_choice",
       "typeRaw": "单项选择题",
+      "year": 2004
+    },
+    {
+      "answer": [
+        "A"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2004年客观题卷一#一#25",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲应将发票连同乙的书面说明交单位负责人审查签字"
+        },
+        {
+          "label": "B",
+          "text": "甲有权拒绝接受这张发票，并向单位负责人报告"
+        },
+        {
+          "label": "C",
+          "text": "乙无权对原始凭证记载的内容加以更改"
+        },
+        {
+          "label": "D",
+          "text": "乙应将这张发票拿回出票单位要求重开或更正"
+        }
+      ],
+      "source": {
+        "nativeId": "2004年客观题卷一#一#25",
+        "path": "真题库/客观题/2004年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某单位会计甲在审查业务员乙交来的一张购买原材 料的发票时，发现该发票在产品及规格等栏目中所填内 容与实际采购情况有较大差异。甲乙二人到仓库进行核 对后，由乙在发票上进行更正并写了书面说明，甲将这 张发票和乙的书面说明一起作为原始凭证入账。下列关 于此事的说法哪一个是错误的。",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2004"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2004
+    },
+    {
+      "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2004年客观题卷一#一#26",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "审批后1年内不用的，应当按照省、自治区、直辖市的"
+        },
+        {
+          "label": "B",
+          "text": "审批后1年以上未动工建设的，应当由原耕种该幅耕地"
+        },
+        {
+          "label": "C",
+          "text": "审批后连续2年未使用的，或者间断使用，累计闲置达"
+        },
+        {
+          "label": "D",
+          "text": "依法由县级以上人民政府无偿收回土地使用权的土地"
+        }
+      ],
+      "source": {
+        "nativeId": "2004年客观题卷一#一#26",
+        "path": "真题库/客观题/2004年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "对于已经办理审批手续但未使用的非农业建设占用 耕地的处理，下列表述哪一项是正确的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2004"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2004
+    },
+    {
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2004年客观题卷一#一#52",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "执法的主体不仅包括国家机关，也包括所有的法人；"
+        },
+        {
+          "label": "B",
+          "text": "行政机关的执法具有主动性，公民的守法具有被动性"
+        },
+        {
+          "label": "C",
+          "text": "执法是执法主体将法律实施于其他机关、团体或个人"
+        },
+        {
+          "label": "D",
+          "text": "执法须遵循程序性要求，守法毋须遵循程序性要求"
+        }
+      ],
+      "source": {
+        "nativeId": "2004年客观题卷一#一#52",
+        "path": "真题库/客观题/2004年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "下列有关执法与守法区别的说法哪些是不正确的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2004"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
       "year": 2004
     },
     {
@@ -4985,6 +6589,54 @@
     },
     {
       "answer": [
+        "A"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2004年客观题卷二#二#5",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "以诈骗罪论处"
+        },
+        {
+          "label": "B",
+          "text": "以保险诈骗罪论处"
+        },
+        {
+          "label": "C",
+          "text": "以合同诈骗罪论处"
+        },
+        {
+          "label": "D",
+          "text": "属于民事欺诈，不以犯罪论处"
+        }
+      ],
+      "source": {
+        "nativeId": "2004年客观题卷二#二#5",
+        "path": "真题库/客观题/2004年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "个体户甲开办的汽车修理厂系某保险公司指定的汽 车修理厂家。甲在为他人修理汽车时，多次夸大汽车毁 损程度，向保险公司多报汽车修理费用，从保险公司骗 取12万余元。对甲的行为应如何论处？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2004"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2004
+    },
+    {
+      "answer": [
         "C"
       ],
       "answerText": null,
@@ -5273,6 +6925,102 @@
     },
     {
       "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2004年客观题卷二#二#17",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "以买卖、邮寄枪支、弹药罪与抢劫罪并罚"
+        },
+        {
+          "label": "B",
+          "text": "以买卖、邮寄枪支、弹药罪与非法出租枪支罪并罚"
+        },
+        {
+          "label": "C",
+          "text": "以走私武器、弹药罪与抢劫罪并罚"
+        },
+        {
+          "label": "D",
+          "text": "以走私武器、弹药罪、非法出租枪支罪、抢劫罪并罚"
+        }
+      ],
+      "source": {
+        "nativeId": "2004年客观题卷二#二#17",
+        "path": "真题库/客观题/2004年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲利用到外国旅游的机会，为了自用，从不法分子 手中购买了手枪1支、子弹60发，然后经过伪装将其邮寄 回国内。后来甲得知乙欲抢银行，想得到一支枪，就与 乙协商，以5000元将其手枪出租给乙使用。乙使用该手 枪抢劫某银行，随后被抓获。对甲的行为应如何处理？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2004"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2004
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2004年客观题卷二#二#18",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲成立故意毁损文物罪，因为毁损文物的结果是甲故"
+        },
+        {
+          "label": "B",
+          "text": "甲、乙成立故意杀人罪的共犯"
+        },
+        {
+          "label": "C",
+          "text": "对甲应以故意杀人罪和过失损毁文物罪实行数罪并罚"
+        },
+        {
+          "label": "D",
+          "text": "甲的行为属于一行为触犯数罪名，成立牵连犯"
+        }
+      ],
+      "source": {
+        "nativeId": "2004年客观题卷二#二#18",
+        "path": "真题库/客观题/2004年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲、乙共谋杀害在博物馆工作的丙，两人潜入博物 馆同时向丙各开一枪，甲击中丙身边的国家重点保护的 珍贵文物，造成文物毁损的严重后果；乙未击中任何对 象。关于甲、乙的行为，下列哪一选项是正确的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2004"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2004
+    },
+    {
+      "answer": [
         "A",
         "B",
         "C"
@@ -5423,6 +7171,72 @@
     },
     {
       "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2004年客观题卷二#二#58",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "被判处管制的犯罪分子"
+        },
+        {
+          "label": "B",
+          "text": "依法被关押的罪犯"
+        },
+        {
+          "label": "C",
+          "text": "依法被关押的被告人"
+        },
+        {
+          "label": "D",
+          "text": "依法被关押但尚无充分证据证明有罪的犯罪嫌疑人"
+        },
+        {
+          "label": "A",
+          "text": "乙的行为成立不当得利与介绍贿赂罪"
+        },
+        {
+          "label": "B",
+          "text": "丙没有利用职务上的便利为他人牟取人利益，所以不"
+        },
+        {
+          "label": "C",
+          "text": "丙在未能为他人牟取利益之后退还了财物，所以不成"
+        },
+        {
+          "label": "D",
+          "text": "丁将1万元贿赂退给甲而不移交司法机关，构成帮助毁"
+        }
+      ],
+      "source": {
+        "nativeId": "2004年客观题卷二#二#58",
+        "path": "真题库/客观题/2004年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "下列哪些人可以成为脱逃罪的主体？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2004"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2004
+    },
+    {
+      "answer": [
         "A",
         "B",
         "C",
@@ -5461,6 +7275,55 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "雷某为购买正式书号用于出版淫秽录像带，找某音 像出版社负责人任某帮忙。雷向任谎称自己想制作商业 宣传片，需要一个书号，并提出付给出版社1万元“书 号费”。任某同意，但要求雷给自己2万元好处费，雷 某声称盈利后会考虑。任某随后指示有关部门立即办理 。雷某拿到该书号出版了淫秽录像带，发行数量极大、 影响极坏。雷牟利后给任某2万元好处费，任某收下。 关于本案，下列哪些说法是错误的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2004"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2004
+    },
+    {
+      "answer": [
+        "A",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2004年客观题卷二#二#70",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "准许自诉人撤回自诉"
+        },
+        {
+          "label": "B",
+          "text": "驳回当事人对审判人员提出的回避申请"
+        },
+        {
+          "label": "C",
+          "text": "起诉书送达被告人后的第五天因被告人自杀而终止审"
+        },
+        {
+          "label": "D",
+          "text": "二审法院经审理认为对被告人量刑过重而改变刑罚"
+        }
+      ],
+      "source": {
+        "nativeId": "2004年客观题卷二#二#70",
+        "path": "真题库/客观题/2004年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "下列哪些情形下人民法院应当作出裁定？",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -5813,6 +7676,54 @@
     },
     {
       "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2005年客观题卷二#二#1",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "一个单行刑法和四个修正案"
+        },
+        {
+          "label": "B",
+          "text": "一个单行刑法和五个修正案"
+        },
+        {
+          "label": "C",
+          "text": "两个单行刑法和四个修正案"
+        },
+        {
+          "label": "D",
+          "text": "两个单行刑法和五个修正案"
+        }
+      ],
+      "source": {
+        "nativeId": "2005年客观题卷二#二#1",
+        "path": "真题库/客观题/2005年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "1997年3月刑法修订后，全国人民代表大会常务委员会 颁布了几个单行刑法和几个刑法修正案？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2005"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2005
+    },
+    {
+      "answer": [
         "A"
       ],
       "answerText": null,
@@ -5896,6 +7807,150 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "甲深夜潜入乙家行窃，发现留长发穿花布睡衣的乙 正在睡觉，意图奸淫，便扑在乙身上强脱其衣。乙惊醒 后大声喝问，甲发现乙是男人，慌忙逃跑被抓获。甲的 行为：",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2005"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2005
+    },
+    {
+      "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2005年客观题卷二#二#10",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "以合同诈骗罪处罚"
+        },
+        {
+          "label": "B",
+          "text": "以偷税罪处罚"
+        },
+        {
+          "label": "C",
+          "text": "以骗取出口退税罪处罚"
+        },
+        {
+          "label": "D",
+          "text": "以偷税罪和骗取出口退税罪并罚"
+        }
+      ],
+      "source": {
+        "nativeId": "2005年客观题卷二#二#10",
+        "path": "真题库/客观题/2005年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某企业生产的一批外贸供货产品因外商原因无法出 口，该企业采用伪造出口退税单证和签订虚假买卖合同 等方法，骗取出口退税50万元（其中包括该批产品已征 的产品税、增值税等税款19万元）。对该企业应当如何 处理？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2005"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2005
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2005年客观题卷二#二#11",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "侵占罪"
+        },
+        {
+          "label": "B",
+          "text": "盗窃罪"
+        },
+        {
+          "label": "C",
+          "text": "诈骗罪"
+        },
+        {
+          "label": "D",
+          "text": "金融凭证诈骗罪"
+        }
+      ],
+      "source": {
+        "nativeId": "2005年客观题卷二#二#11",
+        "path": "真题库/客观题/2005年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲到乙的办公室送文件，乙不在。甲看见乙办公桌 下的地上有一活期存折（该存折未设密码），便将存折 捡走。乙回办公室后找不着存折，但看见桌上的文件， 便找到甲问是否看见其存折，甲说没看到。甲下班后去 银行将该存折中的5000元取走。甲的行为构成：",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2005"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2005
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2005年客观题卷二#二#13",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "属于法无明文规定的情形，不以犯罪论处"
+        },
+        {
+          "label": "B",
+          "text": "以盗窃罪论处"
+        },
+        {
+          "label": "C",
+          "text": "以故意毁坏财物罪论处"
+        },
+        {
+          "label": "D",
+          "text": "以操纵证券价格罪论处"
+        }
+      ],
+      "source": {
+        "nativeId": "2005年客观题卷二#二#13",
+        "path": "真题库/客观题/2005年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲在某证券交易大厅偷窥获得在该营业部开户的乙 的资金账号及交易密码后，通过电话委托等方式在乙的 资金账号上高吃低抛某一支股票，同时通过自己在证券 交易部的资金账号低吃高抛同一支股票，造成乙损失30 万元，甲从中获利20万元。对甲应当如何处理？",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -6232,6 +8287,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "下列关于司法拘留、行政拘留与刑事拘留的表述， 哪一项是正确的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2005"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2005
+    },
+    {
+      "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2005年客观题卷二#二#40",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "某区人民政府必须在受理李某和张某的申请之日起20"
+        },
+        {
+          "label": "B",
+          "text": "某区人民政府按照张某和李某申请的先后顺序作出批"
+        },
+        {
+          "label": "C",
+          "text": "李某有权对某区人民政府批准张某申请的行为提起行"
+        },
+        {
+          "label": "D",
+          "text": "A幼儿园有权对某区人民政府批准再建幼儿园的决定提"
+        }
+      ],
+      "source": {
+        "nativeId": "2005年客观题卷二#二#40",
+        "path": "真题库/客观题/2005年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "一小区已建有A幼儿园，为满足需要，某区人民政府 拟在该小区内再建一所幼儿园。张某和李某先后向某区 人民政府提出申请，张某获批准。下列哪一种说法是正 确的？",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -6655,6 +8758,99 @@
     },
     {
       "answer": [
+        "B",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2005年客观题卷二#二#89",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "10岁孤儿王某起诉要求乡人民政府颁发孤儿生活供养"
+        },
+        {
+          "label": "B",
+          "text": "伤残军人罗某起诉要求县民政局发放抚恤金的"
+        },
+        {
+          "label": "C",
+          "text": "张某被工商执法人员殴打致残起诉要求赔偿的"
+        },
+        {
+          "label": "D",
+          "text": "王某因公致残起诉要求某市社会保险管理局支付保险"
+        }
+      ],
+      "source": {
+        "nativeId": "2005年客观题卷二#二#89",
+        "path": "真题库/客观题/2005年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "对下列哪些案件人民法院可以适用先予执行？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2005"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2005
+    },
+    {
+      "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2005年客观题卷二#二#94",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "强迫交易罪                              B.敲诈勒索罪"
+        },
+        {
+          "label": "C",
+          "text": "绑架罪"
+        },
+        {
+          "label": "D",
+          "text": "侵犯商业秘密罪"
+        }
+      ],
+      "source": {
+        "nativeId": "2005年客观题卷二#二#94",
+        "path": "真题库/客观题/2005年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲公司拥有某项独家技术每年为公司带来100万元利 润，故对该技术严加保密。乙公司经理丙为获得该技术 ，带人将甲公司技术员丁在其回家路上强行拦截并推入 丙的汽车，对丁说如果他提供该技术资料就给他2万元 ，如果不提供就将他嫖娼之事公之于众。丁同意配合。 次日丁向丙提供了该技术资料，并获得2万元报酬。丙 的行为构成：",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2005"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2005
+    },
+    {
+      "answer": [
         "A",
         "B"
       ],
@@ -6752,6 +8948,54 @@
     },
     {
       "answer": [
+        "A"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2006年客观题卷一#一#15",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "死刑"
+        },
+        {
+          "label": "B",
+          "text": "迁刑"
+        },
+        {
+          "label": "C",
+          "text": "城旦舂"
+        },
+        {
+          "label": "D",
+          "text": "笞一百"
+        }
+      ],
+      "source": {
+        "nativeId": "2006年客观题卷一#一#15",
+        "path": "真题库/客观题/2006年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "秦始皇时期，某地有甲乙两家相邻而居，但积 怨甚深。有一天，该地发生了一起抢劫杀人案件，乙遂 向官府告发系甲所为。甲遭逮捕并被定为死罪。不久案 犯被捕获，始知甲无辜系被乙诬告。依据秦律，诬告者 乙应获下列哪种刑罚？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2006"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2006
+    },
+    {
+      "answer": [
         "C"
       ],
       "answerText": null,
@@ -6808,6 +9052,54 @@
       "chapterOfficial": null,
       "difficulty": null,
       "explanation": "",
+      "id": "law:fakao-app:2006年客观题卷一#一#18",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "上报中央列入朝审复核定案"
+        },
+        {
+          "label": "B",
+          "text": "上报中央列入秋审复核定案"
+        },
+        {
+          "label": "C",
+          "text": "移送京师列入热审复核定案"
+        },
+        {
+          "label": "D",
+          "text": "上报中央列入三司会审复核定案"
+        }
+      ],
+      "source": {
+        "nativeId": "2006年客观题卷一#一#18",
+        "path": "真题库/客观题/2006年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "乾隆年间，四川重庆府某甲\"因戏而误杀旁人\" ，被判处绞监候。依据清代的会审制度，对某甲戏杀案 的处理，适用下列哪一项程序？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2006"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2006
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
       "id": "law:fakao-app:2006年客观题卷一#一#25",
       "knowledgePoints": [],
       "options": [
@@ -6835,6 +9127,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "关于税务登记的下列哪一表述是正确的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2006"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2006
+    },
+    {
+      "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2006年客观题卷一#一#28",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "未建立工会的企业，集体合同应由职工推举的"
+        },
+        {
+          "label": "B",
+          "text": "劳动合同中的劳动条件和劳动报酬标准可以高"
+        },
+        {
+          "label": "C",
+          "text": "并非所有的企业都必须签订集体合同"
+        },
+        {
+          "label": "D",
+          "text": "集体合同必须经劳动行政部门审查批准方能生"
+        }
+      ],
+      "source": {
+        "nativeId": "2006年客观题卷一#一#28",
+        "path": "真题库/客观题/2006年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "关于集体合同的下列哪一表述是错误的？",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -6914,6 +9254,55 @@
     },
     {
       "answer": [
+        "B",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2006年客观题卷一#一#58",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "中级人民法院院长由省高级人民法院任免"
+        },
+        {
+          "label": "B",
+          "text": "中级人民法院院长由省人民代表大会选举"
+        },
+        {
+          "label": "C",
+          "text": "中级人民法院副院长由省人民代表大会常务委"
+        },
+        {
+          "label": "D",
+          "text": "中级人民法院副院长由省高级人民法院任免"
+        }
+      ],
+      "source": {
+        "nativeId": "2006年客观题卷一#一#58",
+        "path": "真题库/客观题/2006年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "关于省内按地区设立的中级人民法院院长、副 院长的任免，下列哪些表述是正确的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2006"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2006
+    },
+    {
+      "answer": [
         "A",
         "B",
         "C"
@@ -6964,6 +9353,104 @@
     },
     {
       "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2006年客观题卷一#一#67",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "税收保全与税收强制措施适用于所有逃避纳税"
+        },
+        {
+          "label": "B",
+          "text": "税收强制措施不包括从纳税人的存款中扣缴税"
+        },
+        {
+          "label": "C",
+          "text": "个人生活必需的用品不适用税收保全与税收强"
+        },
+        {
+          "label": "D",
+          "text": "税务机关可不经税收保全措施而直接采取税收"
+        }
+      ],
+      "source": {
+        "nativeId": "2006年客观题卷一#一#67",
+        "path": "真题库/客观题/2006年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "下列关于税收保全与税收强制措施的哪些表述 是错误的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2006"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2006
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2006年客观题卷一#一#97",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "拍卖公司不得在拍卖活动中拍卖自己的物品，"
+        },
+        {
+          "label": "B",
+          "text": "拍卖公司不得在拍卖活动中拍卖自己的物品，"
+        },
+        {
+          "label": "C",
+          "text": "拍卖公司如果在拍卖活动中拍卖了本公司工作"
+        },
+        {
+          "label": "D",
+          "text": "拍卖公司如果在拍卖活动中拍卖了本公司工作"
+        }
+      ],
+      "source": {
+        "nativeId": "2006年客观题卷一#一#97",
+        "path": "真题库/客观题/2006年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "张某主张，拍卖公司本次拍卖的车辆中有本公 司职员的车辆，本次拍卖无效。下列关于这一问题的何 种判断是正确的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2006"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2006
+    },
+    {
+      "answer": [
         "B"
       ],
       "answerText": null,
@@ -7005,6 +9492,53 @@
         "md-真题",
         "section:不定项选择题",
         "year:2006"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2006
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2006年客观题卷一#一#100",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "征得委托人的同意后，将该轿车再行拍卖"
+        },
+        {
+          "label": "B",
+          "text": "要求张某支付在第一次拍卖中其本人和委托人"
+        },
+        {
+          "label": "C",
+          "text": "要求张某补足该轿车再行拍卖的价款低于原拍"
+        },
+        {
+          "label": "D",
+          "text": "要求张某支付该轿车在两次拍卖期间的保管费"
+        }
+      ],
+      "source": {
+        "nativeId": "2006年客观题卷一#一#100",
+        "path": "真题库/客观题/2006年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "如果张某拒绝签订成交确认书的理由不成立， 但坚持不履行合同，拍卖公司有权采取何种措施？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2006",
+        "answer-missing"
       ],
       "type": "indefinite_choice",
       "typeRaw": "不定项选择题",
@@ -7143,6 +9677,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "关于假释，下列哪一选项是正确的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2006"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2006
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2006年客观题卷二#二#11",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲不构成犯罪，乙构成交通肇事罪"
+        },
+        {
+          "label": "B",
+          "text": "甲、乙均构成交通肇事罪"
+        },
+        {
+          "label": "C",
+          "text": "乙构成交通肇事罪和不作为的故意杀人罪，甲"
+        },
+        {
+          "label": "D",
+          "text": "甲、乙均构成故意杀人罪"
+        }
+      ],
+      "source": {
+        "nativeId": "2006年客观题卷二#二#11",
+        "path": "真题库/客观题/2006年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲系某公司经理，乙是其司机。某日，乙开车 送甲去洽谈商务，途中因违章超速行驶当场将行人丙撞 死，并致行人丁重伤。乙欲送丁去医院救治，被甲阻止 。甲催乙送其前去洽谈商务，并称否则会造成重大经济 损失。于是，乙打电话给120急救站后离开肇事现场。但 因时间延误，丁不治身亡。关于本案，下列哪一选项是 正确的？",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -7335,6 +9917,102 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "下列哪种说法是正确的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2006"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2006
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2006年客观题卷二#二#19",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲的行为不构成受贿罪"
+        },
+        {
+          "label": "B",
+          "text": "甲的行为构成受贿（既遂）罪"
+        },
+        {
+          "label": "C",
+          "text": "甲的行为构成受贿（未遂）罪"
+        },
+        {
+          "label": "D",
+          "text": "甲的行为构成受贿（预备）罪"
+        }
+      ],
+      "source": {
+        "nativeId": "2006年客观题卷二#二#19",
+        "path": "真题库/客观题/2006年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "国家工作人员甲利用职务上的便利为某单位谋 取利益。随后，该单位的经理送给甲一张购物卡，并告 知其购物卡的价值为2万元、使用期限为1个月。甲收下 购物卡后忘记使用，导致购物卡过期作废，卡内的2万 元被退回到原单位。关于甲的行为，下列哪一选项是正 确的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2006"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2006
+    },
+    {
+      "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2006年客观题卷二#二#25",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲省高级人民法院"
+        },
+        {
+          "label": "B",
+          "text": "乙省高级人民法院"
+        },
+        {
+          "label": "C",
+          "text": "W市中级人民法院"
+        },
+        {
+          "label": "D",
+          "text": "最高人民法院"
+        }
+      ],
+      "source": {
+        "nativeId": "2006年客观题卷二#二#25",
+        "path": "真题库/客观题/2006年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "王某担任甲省副省长期间受贿50多万元，有关 法院指定乙省W市中级人民法院管辖。该项指定应当由 下列哪一法院作出？",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -7960,6 +10638,55 @@
     {
       "answer": [
         "A",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2006年客观题卷二#二#80",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "对缴纳税款和罚款决定，李某应当先申请复议"
+        },
+        {
+          "label": "B",
+          "text": "李某对上述三行为不服申请复议，应向某县国"
+        },
+        {
+          "label": "C",
+          "text": "对扣押行为不服，李某可以直接向法院提起诉"
+        },
+        {
+          "label": "D",
+          "text": "该国税局扣押李某中巴车的措施，可以交由县"
+        }
+      ],
+      "source": {
+        "nativeId": "2006年客观题卷二#二#80",
+        "path": "真题库/客观题/2006年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "李某购买中巴车从事个体客运，但未办理税务 登记，且一直未缴纳税款。某县国税局要求李某限期缴 纳税款1500元并决定罚款1000元。后因李某逾期未缴纳税 款和罚款，该国税局将李某的中巴车扣押，李某不服。 下列哪些说法是不正确的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2006"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2006
+    },
+    {
+      "answer": [
+        "A",
         "B",
         "D"
       ],
@@ -8159,6 +10886,55 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "下列有关信访的何种做法是正确的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2006"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2006
+    },
+    {
+      "answer": [
+        "B",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2006年客观题卷二#二#98",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "对甲应定抢劫罪、对丁应定盗窃罪"
+        },
+        {
+          "label": "B",
+          "text": "对甲、丁的行为应定盗窃罪"
+        },
+        {
+          "label": "C",
+          "text": "甲、丁都应对5万元承担刑事责任"
+        },
+        {
+          "label": "D",
+          "text": "甲对5万元承担刑事责任，丁只对3万元承担刑事"
+        }
+      ],
+      "source": {
+        "nativeId": "2006年客观题卷二#二#98",
+        "path": "真题库/客观题/2006年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "对于甲从丙家的箱子里拿走人民币5万元，丁望 风并分得赃物这一情节，下列何种判断是正确的？",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -8511,6 +11287,100 @@
       "chapterOfficial": null,
       "difficulty": null,
       "explanation": "",
+      "id": "law:fakao-app:2007年客观题卷一#一#16",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "解释宪法，监督宪法的实施"
+        },
+        {
+          "label": "B",
+          "text": "批准省、自治区、直辖市的建置"
+        },
+        {
+          "label": "C",
+          "text": "废除同外国缔结的条约和重要协定"
+        },
+        {
+          "label": "D",
+          "text": "审批国民经济和社会发展计划以及国家预算部"
+        }
+      ],
+      "source": {
+        "nativeId": "2007年客观题卷一#一#16",
+        "path": "真题库/客观题/2007年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "全国人大常委会是全国人大的常设机关，根据 宪法规定，全国人大常委会行使多项职权，但下列哪一 职权不由全国人大常委会行使？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2007",
+        "answer-missing"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2007
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2007年客观题卷一#一#25",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲发布招标公告的行为属于要约"
+        },
+        {
+          "label": "B",
+          "text": "乙寄出投标书的行为属于承诺"
+        },
+        {
+          "label": "C",
+          "text": "甲向乙发出中标通知书时合同即成立"
+        },
+        {
+          "label": "D",
+          "text": "甲向乙发出中标通知书的行为属于承诺"
+        }
+      ],
+      "source": {
+        "nativeId": "2007年客观题卷一#一#25",
+        "path": "真题库/客观题/2007年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲小区业主大会通过媒体发布招标公告选聘物 业服务公司，乙公司寄送了投标书。经评标，乙公司中 标，甲向其发出中标通知书。下列哪一选项是正确的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2007",
+        "answer-missing"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2007
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
       "id": "law:fakao-app:2007年客观题卷一#一#42",
       "knowledgePoints": [],
       "options": [
@@ -8585,6 +11455,53 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "王律师为扩大业务范围采用的下列哪一做法是 错误的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2007",
+        "answer-missing"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2007
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2007年客观题卷一#一#50",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "发现了不可克服的利益冲突"
+        },
+        {
+          "label": "B",
+          "text": "承办律师另有一重大案件需要办理"
+        },
+        {
+          "label": "C",
+          "text": "承办律师突发急病无法继续工作"
+        },
+        {
+          "label": "D",
+          "text": "承办律师被管理机关中止执业资格"
+        }
+      ],
+      "source": {
+        "nativeId": "2007年客观题卷一#一#50",
+        "path": "真题库/客观题/2007年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "律师接受律师事务所安排办理业务后，律师事 务所可以因某些情况的出现终止其代理工作。但发生下 列哪一种情况时，不得终止承办律师的代理工作？",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -8887,6 +11804,53 @@
       "chapterOfficial": null,
       "difficulty": null,
       "explanation": "",
+      "id": "law:fakao-app:2007年客观题卷一#一#75",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "证券法上的证券均具有流通性"
+        },
+        {
+          "label": "B",
+          "text": "证券代表的权利可以是债权"
+        },
+        {
+          "label": "C",
+          "text": "所有证券投资均具有风险性"
+        },
+        {
+          "label": "D",
+          "text": "所有证券发行均应公开进行"
+        }
+      ],
+      "source": {
+        "nativeId": "2007年客观题卷一#一#75",
+        "path": "真题库/客观题/2007年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据《证券法》规定和证券法原理，下列哪些 选项是正确的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2007",
+        "answer-missing"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2007
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
       "id": "law:fakao-app:2007年客观题卷一#一#76",
       "knowledgePoints": [],
       "options": [
@@ -9004,6 +11968,61 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "对于被裁减人员，应当给予的待遇是：",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2007",
+        "answer-missing"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2007
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2007年客观题卷一#一#100",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "工会认为该决定不适当的，有权提出意见"
+        },
+        {
+          "label": "B",
+          "text": "工会认为该决定违反法律、法规或者劳动合同"
+        },
+        {
+          "label": "C",
+          "text": "被裁减人员提起诉讼的，工会应当依法给予支"
+        },
+        {
+          "label": "D",
+          "text": "被裁减人员提起诉讼有困难的，工会可以代表"
+        },
+        {
+          "label": "C",
+          "text": "当事人、公证事项的利害关系人对公证书内容"
+        },
+        {
+          "label": "D",
+          "text": "自然人、法人或者其他组织办理公证，均可委"
+        }
+      ],
+      "source": {
+        "nativeId": "2007年客观题卷一#一#100",
+        "path": "真题库/客观题/2007年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "对于企业裁减人员的决定，工会依法可采取的 行动是：",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -9644,6 +12663,53 @@
       ],
       "type": "indefinite_choice",
       "typeRaw": "不定项选择题",
+      "year": 2007
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2007年客观题卷二#二#1",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲为抢劫而殴打章某，章某逃跑，甲随后追赶"
+        },
+        {
+          "label": "B",
+          "text": "乙基于杀害的意思用刀砍程某，见程某受伤后"
+        },
+        {
+          "label": "C",
+          "text": "丙经过铁路道口时，遇见正在值班的熟人项某"
+        },
+        {
+          "label": "D",
+          "text": "丁为杀害李某而打其头部，使其受致命伤，2小"
+        }
+      ],
+      "source": {
+        "nativeId": "2007年客观题卷二#二#1",
+        "path": "真题库/客观题/2007年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "关于刑法上因果关系的判断，下列哪一选项是 正确的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2007",
+        "answer-missing"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
       "year": 2007
     },
     {
@@ -10374,6 +13440,53 @@
       "chapterOfficial": null,
       "difficulty": null,
       "explanation": "",
+      "id": "law:fakao-app:2007年客观题卷二#二#91",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "安某与朱某达成协议后，仍可以对安某进行治"
+        },
+        {
+          "label": "B",
+          "text": "如果安某拒不履行协议，朱某可以直接向法院"
+        },
+        {
+          "label": "C",
+          "text": "如果安某拒不履行协议，朱某应当先向区公安"
+        },
+        {
+          "label": "D",
+          "text": "如果安某拒不履行协议，朱某可以向法院提起"
+        }
+      ],
+      "source": {
+        "nativeId": "2007年客观题卷二#二#91",
+        "path": "真题库/客观题/2007年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "安某放的羊吃了朱某家的玉米秸，二人争执。 安某殴打朱某，致其左眼部青紫、鼻骨骨折，朱某被鉴 定为轻微伤。在公安分局的主持下，安某与朱某达成协 议，由安某向朱某赔偿500元。下列说法正确的是：",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2007",
+        "answer-missing"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2007
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
       "id": "law:fakao-app:2007年客观题卷二#二#94",
       "knowledgePoints": [],
       "options": [
@@ -10448,6 +13561,53 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "关于乙的犯罪行为，下列说法正确的是：",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2007",
+        "answer-missing"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2007
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2007年客观题卷二#二#97",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "挪用公款罪的共犯"
+        },
+        {
+          "label": "B",
+          "text": "贩卖毒品罪的共犯"
+        },
+        {
+          "label": "C",
+          "text": "洗钱罪"
+        },
+        {
+          "label": "D",
+          "text": "赃物犯罪"
+        }
+      ],
+      "source": {
+        "nativeId": "2007年客观题卷二#二#97",
+        "path": "真题库/客观题/2007年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "银行职员丙的行为构成：",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -11132,6 +14292,100 @@
       "chapterOfficial": null,
       "difficulty": null,
       "explanation": "",
+      "id": "law:fakao-app:2008年客观题卷一#一#7",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "孙某因对其狗享有所有权而形成的法律关系属"
+        },
+        {
+          "label": "B",
+          "text": "由于孙某起诉而形成的诉讼法律关系属于第二"
+        },
+        {
+          "label": "C",
+          "text": "因钱某毒死孙某的狗而形成的损害赔偿关系属"
+        },
+        {
+          "label": "D",
+          "text": "因钱某毒死孙某的狗而形成的损害赔偿关系中"
+        }
+      ],
+      "source": {
+        "nativeId": "2008年客观题卷一#一#7",
+        "path": "真题库/客观题/2008年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "孙某的狗曾咬伤过邻居钱某的小孙子，钱某为 此一直耿耿于怀。一天，钱某趁孙某不备，将孙某的狗 毒死。孙某掌握了钱某投毒的证据之后，起诉到法院， 法院判决钱某赔偿孙某600元钱。对此，下列哪一选项是 正确的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2008",
+        "answer-missing"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2008
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2008年客观题卷一#一#10",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "不制定法律"
+        },
+        {
+          "label": "B",
+          "text": "不规定刑罚种类"
+        },
+        {
+          "label": "C",
+          "text": "不需要判例法"
+        },
+        {
+          "label": "D",
+          "text": "不公布成文法"
+        }
+      ],
+      "source": {
+        "nativeId": "2008年客观题卷一#一#10",
+        "path": "真题库/客观题/2008年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "郑国执政子产于公元前536年\"铸刑书\"，这是中 国历史上第一次公布成文法的活动。对此，晋国大夫叔 向曾写信痛斥子产：\"昔先王议事以制，不为刑辟，惧 民之有争心也……民知有辟，则不忌于上，并有争心， 以征于书，而徼幸以成之，弗可为矣。\"关于\"不为刑辟\" 的含意，下列哪一选项是正确的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2008",
+        "answer-missing"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2008
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
       "id": "law:fakao-app:2008年客观题卷一#一#16",
       "knowledgePoints": [],
       "options": [
@@ -11206,6 +14460,53 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "在计算企业应纳税所得额时，下列哪一项支出 可以加计扣除？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2008",
+        "answer-missing"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2008
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2008年客观题卷一#一#21",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "责令李某在出境前提供担保"
+        },
+        {
+          "label": "B",
+          "text": "李某是在延期期间出境，无须采取任何措施"
+        },
+        {
+          "label": "C",
+          "text": "告知李某：欠税人在延期期间一律不得出境"
+        },
+        {
+          "label": "D",
+          "text": "直接通知出境管理机关阻止其出境"
+        }
+      ],
+      "source": {
+        "nativeId": "2008年客观题卷一#一#21",
+        "path": "真题库/客观题/2008年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "李某是个人独资企业的业主。该企业因资金周 转困难，到期不能缴纳税款。经申请，税务局批准其延 期三个月缴纳。在此期间，税务局得知李某申请出国探 亲，办理了签证并预定了机票。对此，税务局应采取下 列哪一种处理方式？",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -11313,6 +14614,103 @@
       "year": 2008
     },
     {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2008年客观题卷一#一#49",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "马某拿着一份合同复印件到公证机关要求公证"
+        },
+        {
+          "label": "B",
+          "text": "女青年李某29岁，至今未婚，到公证机关办理处"
+        },
+        {
+          "label": "C",
+          "text": "张某与王某大学毕业工作多年，各自都有些积"
+        },
+        {
+          "label": "D",
+          "text": "杨父因正在读初中的儿子整天沉迷于网络游戏"
+        }
+      ],
+      "source": {
+        "nativeId": "2008年客观题卷一#一#49",
+        "path": "真题库/客观题/2008年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据我国《公证法》规定，对下列哪一事项公 证机关可予办理公证？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2008",
+        "answer-missing"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2008
+    },
+    {
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2008年客观题卷一#一#51",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "案件审判中，先适用法律原则，后适用法律规"
+        },
+        {
+          "label": "B",
+          "text": "案件审判中，法律原则都必须无条件地适用"
+        },
+        {
+          "label": "C",
+          "text": "法律原则的适用可以弥补法律规则的漏洞"
+        },
+        {
+          "label": "D",
+          "text": "法律原则的适用采取\"全有或全无\"的方式"
+        }
+      ],
+      "source": {
+        "nativeId": "2008年客观题卷一#一#51",
+        "path": "真题库/客观题/2008年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "关于法律原则的适用，下列哪些选项是错误的 ？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2008"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2008
+    },
+    {
       "answer": [
         "A",
         "B",
@@ -11415,6 +14813,156 @@
     {
       "answer": [
         "A",
+        "B",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2008年客观题卷一#一#67",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "未经股东大会决议批准，公司董事会不得实施"
+        },
+        {
+          "label": "B",
+          "text": "如果股东大会决议不批准，公司董事会坚持此"
+        },
+        {
+          "label": "C",
+          "text": "证券监督管理机构有权对擅自改变募集资金用"
+        },
+        {
+          "label": "D",
+          "text": "在未经股东大会批准而实施了此项购置计划的"
+        }
+      ],
+      "source": {
+        "nativeId": "2008年客观题卷一#一#67",
+        "path": "真题库/客观题/2008年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某上市公司招股说明书中列明的募集资金用途 是环保新技术研发。现公司董事会决议将募集资金用于 购置办公大楼。对此，下列哪些选项是正确的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2008"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2008
+    },
+    {
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2008年客观题卷一#一#68",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "该收益应当全部归公司所有"
+        },
+        {
+          "label": "B",
+          "text": "该收益应由公司董事会负责收回"
+        },
+        {
+          "label": "C",
+          "text": "董事会不收回该收益的，股东有权要求董事会"
+        },
+        {
+          "label": "D",
+          "text": "董事会未在规定期限内执行股东关于收回吴某"
+        }
+      ],
+      "source": {
+        "nativeId": "2008年客观题卷一#一#68",
+        "path": "真题库/客观题/2008年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某上市公司董事吴某，持有该公司6%的股份。 吴某将其持有的该公司股票在买入后的第5个月卖出， 获利600万元。关于此收益，下列哪些选项是正确的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2008"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2008
+    },
+    {
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2008年客观题卷一#一#69",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "为客户买卖证券提供融资融券服务"
+        },
+        {
+          "label": "B",
+          "text": "有偿使用客户的交易结算资金"
+        },
+        {
+          "label": "C",
+          "text": "将自营账户借给他人使用"
+        },
+        {
+          "label": "D",
+          "text": "接受客户的全权委托"
+        }
+      ],
+      "source": {
+        "nativeId": "2008年客观题卷一#一#69",
+        "path": "真题库/客观题/2008年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "证券公司的下列行为，哪些是《证券法》所禁 止的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2008"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2008
+    },
+    {
+      "answer": [
+        "A",
         "D"
       ],
       "answerText": null,
@@ -11450,6 +14998,56 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "在进口倾销对国内产业造成实质损害的情况下 ，反倾销税可以追溯征收。该反倾销税可适用于下列哪 些产品？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2008"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2008
+    },
+    {
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2008年客观题卷一#一#88",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "受委托的律师自案件审查起诉之日起，有权查"
+        },
+        {
+          "label": "B",
+          "text": "犯罪嫌疑人被侦查机关第一次讯问或者采取强"
+        },
+        {
+          "label": "C",
+          "text": "律师在法庭上发表的代理、辩护意见不受法律"
+        },
+        {
+          "label": "D",
+          "text": "律师是维护当事人合法权益、维护法律正确实"
+        }
+      ],
+      "source": {
+        "nativeId": "2008年客观题卷一#一#88",
+        "path": "真题库/客观题/2008年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "2007年10月28日第十届全国人民代表大会常务委 员会第三十次会议对《律师法》进行了修订。根据修订 后的《律师法》，下列哪些选项是错误的？",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -11579,6 +15177,53 @@
       "chapterOfficial": null,
       "difficulty": null,
       "explanation": "",
+      "id": "law:fakao-app:2008年客观题卷二#二#12",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "抢劫罪（未遂）"
+        },
+        {
+          "label": "B",
+          "text": "抢劫罪（既遂）"
+        },
+        {
+          "label": "C",
+          "text": "绑架罪"
+        },
+        {
+          "label": "D",
+          "text": "敲诈勒索罪"
+        }
+      ],
+      "source": {
+        "nativeId": "2008年客观题卷二#二#12",
+        "path": "真题库/客观题/2008年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲持西瓜刀冲入某银行储蓄所，将刀架在储蓄 所保安乙的脖子上，喝令储蓄所职员丙交出现金1万元 。见丙故意拖延时间，甲便在乙的脖子上划了一刀。刚 取出5万元现金的储户丁看见乙血流不止，于心不忍， 就拿出1万元扔给甲，甲得款后迅速逃离。对甲的犯罪 行为，下列哪一选项是正确的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2008",
+        "answer-missing"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2008
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
       "id": "law:fakao-app:2008年客观题卷二#二#13",
       "knowledgePoints": [],
       "options": [
@@ -11606,6 +15251,53 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "甲得知乙一直在拐卖妇女，便对乙说：\"我的表 弟丙没有老婆，你有合适的就告诉我一下\"。不久，乙 将拐骗的两名妇女带到甲家，甲与丙将其中一名妇女买 下给丙做妻。关于本案，下列哪一选项是错误的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2008",
+        "answer-missing"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2008
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2008年客观题卷二#二#14",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "侵占罪"
+        },
+        {
+          "label": "B",
+          "text": "盗窃罪（间接正犯）"
+        },
+        {
+          "label": "C",
+          "text": "诈骗罪"
+        },
+        {
+          "label": "D",
+          "text": "金融凭证诈骗罪"
+        }
+      ],
+      "source": {
+        "nativeId": "2008年客观题卷二#二#14",
+        "path": "真题库/客观题/2008年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲在某银行的存折上有4万元存款。某日，甲将 存款全部取出，但由于银行职员乙工作失误，未将存折 底卡销毁。半年后，甲又去该银行办理存储业务，乙对 甲说：\"你的4万元存款已到期。\"甲听后，灵机一动，对 乙谎称存折丢失。乙为甲办理了挂失手续，甲取走4万 元。甲的行为构成何罪？",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -11673,6 +15365,53 @@
       "chapterOfficial": null,
       "difficulty": null,
       "explanation": "",
+      "id": "law:fakao-app:2008年客观题卷二#二#18",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲虽然是国家工作人员，但没有利用职务上的"
+        },
+        {
+          "label": "B",
+          "text": "甲虽然没有利用职务上的便利，但也不属于将"
+        },
+        {
+          "label": "C",
+          "text": "甲将自己基于职务保管的财物据为己有，应成"
+        },
+        {
+          "label": "D",
+          "text": "甲实际上是通过欺骗手段获得财物的，应认定"
+        }
+      ],
+      "source": {
+        "nativeId": "2008年客观题卷二#二#18",
+        "path": "真题库/客观题/2008年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某国有公司出纳甲意图非法占有本人保管的公 共财物，但不使用自己手中的钥匙和所知道的密码，而 是使用铁棍将自己保管的保险柜打开并取走现金3万元 。之后，甲伪造作案现场，声称失窃。关于本案，下列 哪一选项是正确的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2008",
+        "answer-missing"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2008
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
       "id": "law:fakao-app:2008年客观题卷二#二#19",
       "knowledgePoints": [],
       "options": [
@@ -11700,6 +15439,53 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "甲与乙共谋盗窃汽车，甲将盗车所需的钥匙交 给乙。但甲后来向乙表明放弃犯罪之意，让乙还回钥匙 。乙对甲说：\"你等几分钟，我用你的钥匙配制一把钥 匙后再还给你\"，甲要回了自己原来提供的钥匙。后乙 利用自己配制的钥匙盗窃了汽车（价值5万元）。关于 本案，下列哪一选项是正确的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2008",
+        "answer-missing"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2008
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2008年客观题卷二#二#21",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲市法院"
+        },
+        {
+          "label": "B",
+          "text": "乙市法院"
+        },
+        {
+          "label": "C",
+          "text": "丙市法院"
+        },
+        {
+          "label": "D",
+          "text": "丁市法院"
+        }
+      ],
+      "source": {
+        "nativeId": "2008年客观题卷二#二#21",
+        "path": "真题库/客观题/2008年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "张某，甲市人，中国乙市远洋运输公司\"黎明号 \"货轮船员。\"黎明号\"航行在公海时，张某因与另一船员 李某发生口角将其打成重伤。货轮返回中国首泊丙市港 口时，张某趁机潜逃，后在丁市被抓获。该案应当由下 列哪一法院行使管辖权？",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -11935,6 +15721,53 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "甲雇凶手乙杀丙，言明不要造成其他后果。乙 几次杀丙均未成功，后来采取爆炸方法，对丙的住宅（ 周边没有其他人与物）进行爆炸，结果将丙的妻子丁炸 死，但丙安然无恙。关于本案，下列哪些说法是错误的 ？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2008",
+        "answer-missing"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2008
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2008年客观题卷二#二#56",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲的受贿数额是9万元"
+        },
+        {
+          "label": "B",
+          "text": "乙的受贿数额是15万元"
+        },
+        {
+          "label": "C",
+          "text": "甲、乙均构成违法发放贷款罪"
+        },
+        {
+          "label": "D",
+          "text": "对于甲、乙的违法发放贷款罪和受贿罪，应当"
+        }
+      ],
+      "source": {
+        "nativeId": "2008年客观题卷二#二#56",
+        "path": "真题库/客观题/2008年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某国有银行行长甲指使负责贷款业务的科长乙 向申请贷款的丙单位索要财物。乙将索要所获15万元中 的9万元交给甲，其余6万元自己留下。后来，甲、乙均 明知丙单位不具备贷款条件，仍然向丙单位贷款1000万 元，使银行遭受800万元损失。对于本案，下列哪些选项 是正确的？",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -12237,6 +16070,100 @@
       "chapterOfficial": null,
       "difficulty": null,
       "explanation": "",
+      "id": "law:fakao-app:2008年客观题卷二#二#75",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "李某抢劫案，原判事实清楚、证据确实充分，"
+        },
+        {
+          "label": "B",
+          "text": "葛某受贿案，葛某已死亡"
+        },
+        {
+          "label": "C",
+          "text": "张某、卞某为同案原审被告人，张某在交通十"
+        },
+        {
+          "label": "D",
+          "text": "陈某强奸案，原生效裁判于1979年之前作出"
+        }
+      ],
+      "source": {
+        "nativeId": "2008年客观题卷二#二#75",
+        "path": "真题库/客观题/2008年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "下列再审案件，哪些可以不开庭审理？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2008",
+        "answer-missing"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2008
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2008年客观题卷二#二#77",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "发现事实不清、证据不足的"
+        },
+        {
+          "label": "B",
+          "text": "发现遗漏罪行、遗漏同案犯罪嫌疑人，需要补"
+        },
+        {
+          "label": "C",
+          "text": "发现遗漏罪行或者遗漏同案犯罪嫌疑人，虽不"
+        },
+        {
+          "label": "D",
+          "text": "需要通知开庭前未向人民法院提供名单的证人"
+        }
+      ],
+      "source": {
+        "nativeId": "2008年客观题卷二#二#77",
+        "path": "真题库/客观题/2008年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "在下列何种情形下，经公诉人建议法庭延期审 理的时间一次不得超过一个月？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2008",
+        "answer-missing"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2008
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
       "id": "law:fakao-app:2008年客观题卷二#二#82",
       "knowledgePoints": [],
       "options": [
@@ -12419,6 +16346,202 @@
     },
     {
       "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "本题考查代表名额的分配。\n我国只在第三次修改时对城乡代表名额的分配比例进行了调整，B 项错误。",
+      "id": "law:fakao-app:2009年客观题-卷一#一#19",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "我国选举权的平等原则既着重于机会平等，也重视实质平等"
+        },
+        {
+          "label": "B",
+          "text": "我国选举法自颁布以来进行了四次修改，每一次都依据当时城乡人口变化情况对城乡"
+        },
+        {
+          "label": "C",
+          "text": "“实行城乡按相同人口比例选举人大代表”是我国选举制度发展的方向"
+        },
+        {
+          "label": "D",
+          "text": "我国选举法的修改反映了城镇化发展的客观趋势"
+        }
+      ],
+      "source": {
+        "nativeId": "2009年客观题-卷一#一#19",
+        "path": "真题库/客观题/2009年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "关于全国人大代表和省、自治区人大代表的名额，按照农村每一代表所代表的人口 数四倍于城市每一代表所代表的人口数的原则分配的规定，下列哪一说法是错误的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2009"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2009
+    },
+    {
+      "answer": [
+        "A",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "本题考查故杀与谋杀制度。\n《唐律》贼盗、斗讼篇中依犯罪人主观意图区分了“六杀”，即“谋杀”、“故杀”、\n“斗杀”、“误杀”、“过失杀”、“戏杀”。“谋杀”是指有预谋杀人；“故杀”是指事\n先虽无预谋，但情急杀人时已有杀人的意念；“斗杀”指在斗殴中出于激愤失手将人杀死；\n“误杀”指由于种种原因错置来了杀人对象，“过失杀”指“耳目所不及，思虑所不到”，\n即出于过失杀人，“戏杀”指“以力共戏”而导致杀人，由此可推知 AC 符合题意。",
+      "id": "law:fakao-app:2010年客观题-卷一#一#58",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "唐达根系没有预谋、临时起意将宋万田打死，应定“故杀”"
+        },
+        {
+          "label": "B",
+          "text": "唐达根系恼羞成怒，欲夺赌钱故意将宋万田打死，应定“谋杀”"
+        },
+        {
+          "label": "C",
+          "text": "唐达根系无心之下，斗殴中不期将宋万田打死，应定“斗殴杀”"
+        },
+        {
+          "label": "D",
+          "text": "唐达根系无怨恨杀人动机，“以力共戏”将宋万田打死，应定“戏杀”"
+        }
+      ],
+      "source": {
+        "nativeId": "2010年客观题-卷一#一#58",
+        "path": "真题库/客观题/2010年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "乾隆五十一年，四川发生一起杀人案：唐达根与宋万田本不相识，因赴集市买苞谷 遂结伴同行。途中山洞避雨，宋万田提议二人赌钱。后宋万田得赢，唐达根将钱如数送上。 归途，宋万田再次提议赌钱，唐达根得赢。宋万田声称唐达根耍骗不肯给钱，唐达根与之争 吵进而双方互殴，争斗中唐达根将宋万田打死。依据《大清律例》及《大清律辑注》，你认 为唐达根有可能被官府认定犯下列哪些罪行？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2010"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2010
+    },
+    {
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "本题考查各级人大代表的选举。\n《选举法》第 11 条规定：“地方各级人民代表大会的代表名额，按照下列规定确定：\n（一）省、自治区、直辖市的代表名额基数为三百五十名，省、自治区每十五万人可以增加\n一名代表，直辖市每二万五千人可以增加一名代表；但是，代表总名额不得超过一千名；\n（二）设区的市、自治州的代表名额基数为二百四十名，每二万五千人可以增加一名代表；\n人口超过一千万的，代表总名额不得超过六百五十名；（三）不设区的市、市辖区、县、自\n治县的代表名额基数为一百二十名，每五千人可以增加一名代表；人口超过一百六十五万\n的，代表总名额不得超过四百五十名；人口不足五万的，代表总名额可以少于一百二十名；\n（四）乡、民族乡、镇的代表名额基数为四十名，每一千五百人可以增加一名代表；但是，\n代表总名额不得超过一百六十名；人口不足二千的，代表总名额可以少于四十名。”由此可\n知 ABCD 四项表诉正确。",
+      "id": "law:fakao-app:2010年客观题-卷一#一#94",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "省、自治区、直辖市的代表总名额不超过一千名"
+        },
+        {
+          "label": "B",
+          "text": "设区的市、自治州的代表总名额不得超过六百五十名"
+        },
+        {
+          "label": "C",
+          "text": "不设区的市、县、自治县人口不足五万的，代表总名额可以少于一百二十名"
+        },
+        {
+          "label": "D",
+          "text": "乡、镇、民族乡人口不足二千的，代表总名额可以少于四十名"
+        }
+      ],
+      "source": {
+        "nativeId": "2010年客观题-卷一#一#94",
+        "path": "真题库/客观题/2010年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "关于地方人大代表名额，下列说法正确的是：",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2010"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2010
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "A 项错误\"\"德主刑辅\"\"的政治法律主张是汉代提出。\nB 项正确。\nC 项错误，西周的借贷契约称为“傅别”，非 C 项中的“书约”。\nD 项错误，西周的继承制度是嫡长子继承制，即《春秋公羊传?隐公元年》所谓“立嫡以\n长不以贤，立子以贵不以长”。非 D 项所说的子女平均继承制。",
+      "id": "law:fakao-app:2011年客观题-卷二#二#16",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "周初统治者为修补以往神权政治学说的缺陷，提出了“德主刑辅，明德慎罚”的政治"
+        },
+        {
+          "label": "B",
+          "text": "《汉书•陈宠传》称西周时期的礼刑关系为“礼之所去，刑之所取，失礼则入刑，相为"
+        },
+        {
+          "label": "C",
+          "text": "西周的借贷契约称为“书约”，法律规定重要的借贷行为都须订立书面契约"
+        },
+        {
+          "label": "D",
+          "text": "西周时期在宗法制度下已形成子女平均继承制"
+        }
+      ],
+      "source": {
+        "nativeId": "2011年客观题-卷二#二#16",
+        "path": "真题库/客观题/2011年客观题-卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "关于西周法制的表述，下列哪一选项是正确的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2011"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2011
+    },
+    {
+      "answer": [
         "C"
       ],
       "answerText": null,
@@ -12464,6 +16587,166 @@
       "type": "single_choice",
       "typeRaw": "单项选择题",
       "year": 2012
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "秦代规定了官员的渎职罪：(1)“见知不举”罪：“有敢偶语《诗》《书》者，弃市。以古非今者，族。吏见知不举者，与同罪。”这个属于故意犯罪而不是过失犯罪，故B 项说法错误。(2)“不直”罪和“纵囚”罪：前者指罪应重而故意轻判，应轻而故意重判，故 D项说法正确。后者指应当论罪而故意不论罪，以及设法减轻案情，故意使案犯达不到定罪标准，从而判其无罪，故A 项说法正确。(3)“失刑”罪，指因过失而量刑不当(若系故意，则构成“不直”罪),故C 项说法正确。本题选非，故答案为 B。",
+      "id": "law:fakao-app:2014年客观题#一#16",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "故意使罪犯未受到惩罚，属于“纵囚”"
+        },
+        {
+          "label": "B",
+          "text": "对已经发生的犯罪，由于过失未能揭发、检举，属于“见知不举”"
+        },
+        {
+          "label": "C",
+          "text": "对犯罪行为由于过失而轻判者，属于“失刑”"
+        },
+        {
+          "label": "D",
+          "text": "对犯罪行为故意重判者，属于“不直”"
+        }
+      ],
+      "source": {
+        "nativeId": "2014年客观题#一#16",
+        "path": "真题库/客观题/2014年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "秦律明确规定了司法官渎职犯罪的内容。关于秦朝司法官渎职的说法，下列哪一选项是不正确的?",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2014"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2014
+    },
+    {
+      "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "清代的死刑案件经过秋审或朝审的复审程序后，分以下四种情况处理：\n(1)情实：指案情属实，定罪量刑恰当，奏请执行死刑(非斩监候和绞监候);\n(2)缓决：指案情虽属实，定罪量刑也无瑕疵，但危害性不大，没有必要立即执行死刑，可减为流刑，或充军，或再押监候办(非危害性不能确定，需继续调查，待危害性确定后进行判决);\n(3)可矜：指案情属实，但有可矜或可疑之处，免于死刑，一般减为徒、流刑罚；\n(4)留养承嗣：案情属实、罪名恰当，但罪犯(非被害人)有亲老丁单情形，合乎申请留养条件者，奏请皇帝裁决。\n据此，A、B、D选项错误，C 选项正确。",
+      "id": "law:fakao-app:2014年客观题#一#18",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "情实指案情属实、罪名恰当者，奏请执行绞监候或斩监候"
+        },
+        {
+          "label": "B",
+          "text": "缓决指案情虽属实，但危害性不能确定者，可继续调查，待危害性确定后进行判决"
+        },
+        {
+          "label": "C",
+          "text": "可矜指案情属实，但有可矜或可疑之处，"
+        },
+        {
+          "label": "D",
+          "text": "留养承嗣指案情属实、罪名恰当，但被害人有亲老丁单情形，奏请皇帝裁决"
+        }
+      ],
+      "source": {
+        "nativeId": "2014年客观题#一#18",
+        "path": "真题库/客观题/2014年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据清朝的会审制度，案件经过秋审或朝审程序之后，分四种情况予以处理：情实、缓决、可矜、留养承嗣。对此，下列哪一说法是正确的?",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2014"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2014
+    },
+    {
+      "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "本题考查南宋关于户绝财产继承的规定。户绝指家无男子承继。户绝立继承人有两种方式：凡“夫亡而妻在”,立继从妻，称“立继”;凡“夫妻俱亡”,立继从其尊长亲属，称为“命继”。继子与户绝之女均享有继承权，但只有在室女(未嫁女)的，在室女享有3/4的财产继承权，继子享有1/4的财产继承权；只有出嫁女(已婚女)的，出嫁女享有1/3的财产继承权，继子享有1/3,另外的1/3收为官府所有。本题属于只有出嫁女(已婚女)的情况。因此霍甲、霍丙、官府各享有1/3,D 项正确。",
+      "id": "law:fakao-app:2016年客观题#一#18",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "霍甲9000两"
+        },
+        {
+          "label": "B",
+          "text": "霍甲6000两，霍丙3000两"
+        },
+        {
+          "label": "C",
+          "text": "霍甲、霍乙、霍丙各3000两"
+        },
+        {
+          "label": "D",
+          "text": "霍甲、霍丙各3000两，余3000两收归官府19.1903年，清廷发布上谕：“通商惠工，为古"
+        },
+        {
+          "label": "A",
+          "text": "《钦定大清商律》为清朝第一部商律，由《商人通例》《公司律》和《破产律》构成"
+        },
+        {
+          "label": "B",
+          "text": "清廷制定商律，表明随着中国近代工商业发展，其传统工商政策从“重农抑商”转为“重商抑农”"
+        },
+        {
+          "label": "C",
+          "text": "商事立法分为两阶段，先由新设立商部负责，后主要商事法典改由修订法律馆主持起草"
+        },
+        {
+          "label": "D",
+          "text": "《大清律例》《大清新刑律》《大清民律草案》与《大清商律草案》同属清末修律成果"
+        }
+      ],
+      "source": {
+        "nativeId": "2016年客观题#一#18",
+        "path": "真题库/客观题/2016年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "南宋时，霍某病故，留下遗产值银9000两。霍某妻子早亡，夫妻二人无子，只有一女霍甲，已嫁他乡。为了延续霍某姓氏，霍某之叔霍乙立本族霍丙为霍某继子。下列关于霍某遗产分配的哪一说法是正确的?",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2016"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2016
     },
     {
       "answer": [],
@@ -12560,6 +16843,54 @@
       "year": 2016
     },
     {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "《地方各级人民政府机构设置和编制管理条例》第29条规定，地方的事业单位机构和编\n制管理办法，由省、自治区、直辖市人民政府机构编制管理机关拟定，报国务院机构编制管理机关审核后，由省、自治区、直辖市人民政府发布，故 B 项正确。选项\nA、C、D 均为干扰项。",
+      "id": "law:fakao-app:2016年客观题#二#43",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "国务院"
+        },
+        {
+          "label": "B",
+          "text": "省、自治区、直辖市人民政府"
+        },
+        {
+          "label": "C",
+          "text": "国务院机构编制管理机关"
+        },
+        {
+          "label": "D",
+          "text": "省、自治区、直辖市人民政府机构编制管理机关"
+        }
+      ],
+      "source": {
+        "nativeId": "2016年客观题#二#43",
+        "path": "真题库/客观题/2016年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据规定，地方的事业单位机构和编制管理办法由省、自治区、直辖市人民政府机构编制管理机关拟定，报国务院机构编制管理机关审核后，由下列哪一机关发布?",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2016"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2016
+    },
+    {
       "answer": [],
       "answerText": null,
       "chapter": null,
@@ -12577,6 +16908,69 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "《刑法》第24条第2款的规定: \"对中止犯,没有造成损害的 ,应当免除处罚; 造成损害的_ 应当减轻处罚 = 下列选项属于 \"中止犯。造成损害\" 的是? A。赵某闯入房间想要伤害吴某,吴某苦苦哀求,于是赵某放弃伤害的 B。钱某意图拐卖妇女,取得妇女周某的信任后 ,以旅游的名义寻找买家,后钱某觉得周某不错 , 遂放弃出卖的 C。 孙某给机场打电话,告诉机场有炸弹。于是机场立刻疏散人群。后孙某悔悟 ,打电话告诉机 场没有炸弹,于是机场停止疏散人群 '4 --- 第5页 --- D。李某威胁王女士拿钱 , 不然伤害他家人,给王女士造成了巨大的心理恐慌,后李某放弃,并 向王女士赔礼道歉",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "year:2023",
+        "answer-missing"
+      ],
+      "type": "unknown",
+      "typeRaw": null,
+      "year": 2023
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2023年客观题-卷一-卷二#二#24",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲没加入该网店会员,商家可以拒绝退款 B。甲收到报告后已超出退货时间,商家可以拒绝退款 C。 商家应该退款,乙购物平合无须承担责任 D. 如果证明该商品的质量问题是买家操作不当导致的 ,商家可以拒绝退款 25。华东市市场监督管理局在对华军超市进行检查时发现,华军超市不能提供三种蔬莱的进货清 单和供货方的许可证 (不在华军超市的查验清单上)。经检验这三种蔬莱均不会危害人体健康,以下 说法正确的是? A。市场监督管理局应对该超市进行处罚 ,但不应适用《食品安全法》 B。华军超市销售的商品包括蔬莱和预包装食品 ,未办理食品经营许可证,市场监督管理局可以 对其进行处罚 C. 超市应先召回卖出的三种蔬莱 D。市场监督管理局可以对超市进行警告"
+        }
+      ],
+      "source": {
+        "nativeId": "2023年客观题-卷一-卷二#二#24",
+        "path": "真题库/客观题/2023年客观题-卷一-卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲在乙购物平台的新星空调网店购买空调一台,新星空调网店承诺: 只要成为其会员,购买 的商品可以7 天无理由退换货 甲收到空调后第二天发现空调不能制冷 于是向乙购物平台和新星空 调网店进行申诉。乙购物平台随即向甲提供了新星空调网店的真实信息。新星空调网店要求甲做质 量检验以证明空调确实存在质量问题。 甲于9天后才收到质检报告 乙购物平合以甲未加入本店会员 为由拒绝退货 甲将新星空调网店诉至法院。下列说法正确的是? 24 --- 第25页 ---",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "year:2023",
+        "answer-missing"
+      ],
+      "type": "unknown",
+      "typeRaw": null,
+      "year": 2023
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2023年客观题-卷一-卷二#二#90",
+      "knowledgePoints": [],
+      "options": [],
+      "source": {
+        "nativeId": "2023年客观题-卷一-卷二#二#90",
+        "path": "真题库/客观题/2023年客观题-卷一-卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲 乙均为在学校寄宿的未成年高中生。一日下晚自习后, 甲约患重感冒未愈的同学乙去网 吧打游戏,甲。乙翻越学校大门旁边的院墙出校园时_ 值班的保安正在打瞌睡没有发现并制止。甲 乙遂到一网吧打游戏,打到凌晨时 , 网吧里只有甲 乙两人,乙突然呼吸困难并晕厥 甲见状便一人 跑回学校 ,没有报警也没有拨打120,乙因未获有效救治而死亡。关于应如何对乙死亡的后果承担责 任 下列表述正确的是? A. 乙属于自甘风险 B。甲应承担责任 C。 学校应承担责任 D. 乙应承担部分责任",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -12868,6 +17262,52 @@
       "chapterOfficial": null,
       "difficulty": null,
       "explanation": "",
+      "id": "law:fakao-app:2024年客观题-卷一-卷二-回忆版#一#21",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲公司违法。构成虚开增值税专用发票罪"
+        },
+        {
+          "label": "B",
+          "text": "乙公司违法,是虚开增值税专用发票罪的帮助犯"
+        },
+        {
+          "label": "C",
+          "text": "甲公司和乙公司是共犯,构成逃税罪"
+        },
+        {
+          "label": "D",
+          "text": "甲公司的做法没有谋取不当利益"
+        }
+      ],
+      "source": {
+        "nativeId": "2024年客观题-卷一-卷二-回忆版#一#21",
+        "path": "真题库/客观题/2024年客观题-卷一-卷二-回忆版.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "农民卖给甲公司价值300 万元的蘑菇。但是农民没有办法给甲公司开增值税专用发票。于是甲公 司找到乙公司请求帮开300万元的增值税专用发票,乙公司同意。关于甲公司的做法,下列说法正确的是?",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "year:2024",
+        "answer-missing"
+      ],
+      "type": "unknown",
+      "typeRaw": null,
+      "year": 2024
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
       "id": "law:fakao-app:2024年客观题-卷一-卷二-回忆版#一#22",
       "knowledgePoints": [],
       "options": [
@@ -13052,6 +17492,52 @@
       "chapterOfficial": null,
       "difficulty": null,
       "explanation": "",
+      "id": "law:fakao-app:2024年客观题-卷一-卷二-回忆版#一#58",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "都是事先和事后审杳相结合"
+        },
+        {
+          "label": "B",
+          "text": "都是依职权。依申请审查"
+        },
+        {
+          "label": "C",
+          "text": "都由全国人大常委会行使"
+        },
+        {
+          "label": "D",
+          "text": "都是推进宪法实施的重要途径"
+        }
+      ],
+      "source": {
+        "nativeId": "2024年客观题-卷一-卷二-回忆版#一#58",
+        "path": "真题库/客观题/2024年客观题-卷一-卷二-回忆版.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "关于备案审查和合宪性审查。下列哪些说法是正确的?",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "year:2024",
+        "answer-missing"
+      ],
+      "type": "unknown",
+      "typeRaw": null,
+      "year": 2024
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
       "id": "law:fakao-app:2024年客观题-卷一-卷二-回忆版#一#59",
       "knowledgePoints": [],
       "options": [
@@ -13095,6 +17581,52 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "2023年,",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "year:2024",
+        "answer-missing"
+      ],
+      "type": "unknown",
+      "typeRaw": null,
+      "year": 2024
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2024年客观题-卷一-卷二-回忆版#一#61",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲出于故意伤害重伤乙,乙被他人救助。医生叮嘱乙住院观察,"
+        },
+        {
+          "label": "B",
+          "text": "甲无证驾驶。正常驶过十字路口时,乙驾驶电动车闯红灯,甲来不及刹车撞死乙,甲与乙的死亡有"
+        },
+        {
+          "label": "C",
+          "text": "甲吸毒,甲妻子因此多次与甲激烈争吵。一天。甲妻发现甲在家中私藏大量毒品,于是全部服下自"
+        },
+        {
+          "label": "D",
+          "text": "甲故意开枪杀害站在悬崖边的乙,未打中。枪声惊吓到在悬崖附近的丙,"
+        }
+      ],
+      "source": {
+        "nativeId": "2024年客观题-卷一-卷二-回忆版#一#61",
+        "path": "真题库/客观题/2024年客观题-卷一-卷二-回忆版.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "下列关于因果关系的说法, 哪些选项是正确的?",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -13225,6 +17757,52 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "甲在乘车时,持有的茶叶盒里装的3008冰毒被当地侦耷机关抓获, 经查。盒子上有甲的指纹。还 查到甲与杨某的29次通话记录。 甲辩解称自己不知道。下列哪些属于间接证据?",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "year:2024",
+        "answer-missing"
+      ],
+      "type": "unknown",
+      "typeRaw": null,
+      "year": 2024
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2024年客观题-卷一-卷二-回忆版#一#80",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "李某系过失犯罪,不能对其作出开除处分"
+        },
+        {
+          "label": "B",
+          "text": "李某不得再录用为公务员"
+        },
+        {
+          "label": "C",
+          "text": "开除处分自作出之日生效,"
+        },
+        {
+          "label": "D",
+          "text": "李某不服开除处分的,"
+        }
+      ],
+      "source": {
+        "nativeId": "2024年客观题-卷一-卷二-回忆版#一#80",
+        "path": "真题库/客观题/2024年客观题-卷一-卷二-回忆版.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "A市生态环境局甲区分局一级科员李某因过失犯罪被法院判处有期徒刑5年。甲区监察委给予李某 开除的政务处分。下列选项哪些是正确的?",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -13451,6 +18029,52 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "甲因长相酷似明星乙,在网络上热度很高。此后。甲去整容。把脸整得更像明星乙。因此受邀获得 了许多商演机会;并且在直播平台上直播卖货, 获利颇多。对此;下列说法正确的是?",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "year:2024",
+        "answer-missing"
+      ],
+      "type": "unknown",
+      "typeRaw": null,
+      "year": 2024
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2024年客观题-卷一-卷二-回忆版#二#8",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "仅起诉丁某"
+        },
+        {
+          "label": "B",
+          "text": "仅起诉医院"
+        },
+        {
+          "label": "C",
+          "text": "起诉丁某和丁某父母。医院"
+        },
+        {
+          "label": "D",
+          "text": "仅起诉丁某父母"
+        }
+      ],
+      "source": {
+        "nativeId": "2024年客观题-卷一-卷二-回忆版#二#8",
+        "path": "真题库/客观题/2024年客观题-卷一-卷二-回忆版.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "幼儿丁某在医院看病期间。不慎将水洒在地板上,李某踩中滑倒,后李某与医院。丁某父母就赔偿 事宜不能协商一致。李某准备向法院起诉要求赔偿。李某可以如何起诉?",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -13700,6 +18324,48 @@
       "chapterOfficial": null,
       "difficulty": null,
       "explanation": "",
+      "id": "law:fakao-app:2024年客观题-卷一-卷二-回忆版#二#43",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "对甲进行拘传"
+        },
+        {
+          "label": "C",
+          "text": "法院依职权查明断电原因"
+        },
+        {
+          "label": "D",
+          "text": "决定重新审理"
+        }
+      ],
+      "source": {
+        "nativeId": "2024年客观题-卷一-卷二-回忆版#二#43",
+        "path": "真题库/客观题/2024年客观题-卷一-卷二-回忆版.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲乙纠纷诉至法院。法院决定采用在线诉讼方式审理案件。法院审理中。甲因网络原因离线。供 电公司明确说当天无法供电。法院下列做法正确的是?",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "year:2024",
+        "answer-missing"
+      ],
+      "type": "unknown",
+      "typeRaw": null,
+      "year": 2024
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
       "id": "law:fakao-app:2024年客观题-卷一-卷二-回忆版#二#49",
       "knowledgePoints": [],
       "options": [
@@ -13838,6 +18504,52 @@
       "chapterOfficial": null,
       "difficulty": null,
       "explanation": "",
+      "id": "law:fakao-app:2024年客观题-卷一-卷二-回忆版#二#60",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "乙有权要求甲排除妨碍"
+        },
+        {
+          "label": "B",
+          "text": "乙有权要求甲消除危险"
+        },
+        {
+          "label": "C",
+          "text": "乙有权要求甲赔礼道歉"
+        },
+        {
+          "label": "D",
+          "text": "乙有权请求甲支付 IO00 元的费用"
+        }
+      ],
+      "source": {
+        "nativeId": "2024年客观题-卷一-卷二-回忆版#二#60",
+        "path": "真题库/客观题/2024年客观题-卷一-卷二-回忆版.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲。乙二人是邻居, 甲的房子年久失修漏雨导致过道范围积水严重, 乙每次路过都心惊胆战。乙 乙向村委会投诉。村委会决定先由乙花费 1000 元处理好。下列说法正确 多次要求甲处理。甲不予理会。 的是?",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "year:2024",
+        "answer-missing"
+      ],
+      "type": "unknown",
+      "typeRaw": null,
+      "year": 2024
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
       "id": "law:fakao-app:2024年客观题-卷一-卷二-回忆版#二#67",
       "knowledgePoints": [],
       "options": [
@@ -13865,6 +18577,52 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "某基金管理公司预申请公开发售一支名为 \"基金利达\" 的封闭式基金。关于该基金的发售。下列 哪些选项是正确的?",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "year:2024",
+        "answer-missing"
+      ],
+      "type": "unknown",
+      "typeRaw": null,
+      "year": 2024
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2024年客观题-卷一-卷二-回忆版#二#76",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "仅起诉医院"
+        },
+        {
+          "label": "B",
+          "text": "起诉丁某。丁某家长和医院"
+        },
+        {
+          "label": "C",
+          "text": "起诉丁某和丁某家长"
+        },
+        {
+          "label": "D",
+          "text": "仅起诉丁某"
+        }
+      ],
+      "source": {
+        "nativeId": "2024年客观题-卷一-卷二-回忆版#二#76",
+        "path": "真题库/客观题/2024年客观题-卷一-卷二-回忆版.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "5岁幼儿丁某在医院看病期间,不慎将水洒在地板上。病人李某踩中水迹滑倒。后李某和医院, 丁某父母就赔偿事宜不能协商一致。李某准备向法院起诉要求赔偿。李某可以如何起诉?",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -14065,6 +18823,52 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "周某向某网络平合电商订购生日蛋糕, 送给即将过生日的好友江某。网络平合电商承诺送货。周 某将收货入地址笃为江某。在送货途中蛋糕严重损毁。下列选项中正确的是?",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "year:2024",
+        "answer-missing"
+      ],
+      "type": "unknown",
+      "typeRaw": null,
+      "year": 2024
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2024年客观题-卷一-卷二-回忆版#二#91",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "董事长甲欲将其二手宝马车租给公司使用,按照公司章程的规定已就车辆信息。租金等情况向董"
+        },
+        {
+          "label": "B",
+          "text": "因公司不具备相关资质,总经理乙未经股东会同意,"
+        },
+        {
+          "label": "C",
+          "text": "控股股东丙未向公司报告,"
+        },
+        {
+          "label": "D",
+          "text": "实际控制人戊指示普通员工戌挪用公司资金, 给公司造成严重损失,则戊戌需对公司承担连带责"
+        }
+      ],
+      "source": {
+        "nativeId": "2024年客观题-卷一-卷二-回忆版#二#91",
+        "path": "真题库/客观题/2024年客观题-卷一-卷二-回忆版.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "以下情形, 不存在问题的是?",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -14647,6 +19451,100 @@
       "chapterOfficial": null,
       "difficulty": null,
       "explanation": "",
+      "id": "law:fakao-app:2025年客观题-卷一-回忆版#一#21",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "张某等人的行为构成故意伤害罪"
+        },
+        {
+          "label": "B",
+          "text": "张某等人的行为构成寻衅滋事罪"
+        },
+        {
+          "label": "C",
+          "text": "张某等人的行为属于正常的要债行为，不构成犯罪"
+        },
+        {
+          "label": "D",
+          "text": "张某等人的行为构成聚众斗殴罪"
+        }
+      ],
+      "source": {
+        "nativeId": "2025年客观题-卷一-回忆版#一#21",
+        "path": "真题库/客观题/2025年客观题-卷一-回忆版.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "李某因多次向张某催讨欠款，被张某纠集多人打伤，全身多处骨折，经鉴定构成轻伤。对于张某等人的行为定性，下列哪一选项是正确的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2025",
+        "answer-missing"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2025
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2025年客观题-卷一-回忆版#一#22",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "贪污罪"
+        },
+        {
+          "label": "B",
+          "text": "唐某不具备国家工作人员身份，不构成犯罪"
+        },
+        {
+          "label": "C",
+          "text": "受贿罪"
+        },
+        {
+          "label": "D",
+          "text": "侵占罪"
+        }
+      ],
+      "source": {
+        "nativeId": "2025年客观题-卷一-回忆版#一#22",
+        "path": "真题库/客观题/2025年客观题-卷一-回忆版.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某报社为国有事业单位，该报社广西记者站是该报社的派出机构，唐某即该记者站的工作人员。唐某利用职务之便，在采访过程中利用某市粮食系统害怕一些问题被上报、曝光的心理，索取区县粮食局共计10余万元现金。关于唐某的行为定性，下列哪一选项是正确的？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2025",
+        "answer-missing"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2025
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
       "id": "law:fakao-app:2025年客观题-卷一-回忆版#一#26",
       "knowledgePoints": [],
       "options": [
@@ -14976,6 +19874,53 @@
       "chapterOfficial": null,
       "difficulty": null,
       "explanation": "",
+      "id": "law:fakao-app:2025年客观题-卷一-回忆版#一#61",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲为报复乙，带众人到乙所在酒店门口围堵，在乙出门后对乙车辆以及车窗打砸，乙恐慌欲踩油门冲出围堵，撞向刚出门的丙，致丙当场死亡，甲的行为与"
+        },
+        {
+          "label": "B",
+          "text": "甲欲报复乙，但不想致其死亡，故挑选乙不在家这天去乙家泼洒汽油，又担心线路着火伤及自己，切断了家里电源。但这天正好乙在家，听到动静出门查看情况，因切断电源无法打开灯，打开打火机查看情况，引发火灾，乙死亡。甲的行为和乙的死亡有因果关系"
+        },
+        {
+          "label": "C",
+          "text": "乙驾驶网约车走高速送甲到目的地，半路甲掏出携带的水果刀逼迫乙交出财物，乙因害怕交出财物。乙趁甲翻看钱包的过程下车逃跑，刚下车被后方来车撞死。甲的行为和乙的死亡有因果关系"
+        },
+        {
+          "label": "D",
+          "text": "甲是车管所工作人员，知道乙因身体原因不符合取得大巴车驾驶证的资格，仍给其发放。两年后，乙驾驶车辆因天气恶劣发生交通事故，多人遇难。甲的行为与交通事故的发生有因果关系"
+        }
+      ],
+      "source": {
+        "nativeId": "2025年客观题-卷一-回忆版#一#61",
+        "path": "真题库/客观题/2025年客观题-卷一-回忆版.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "关于因果关系的判定正确的是？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2025",
+        "answer-missing"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2025
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
       "id": "law:fakao-app:2025年客观题-卷一-回忆版#一#63",
       "knowledgePoints": [],
       "options": [
@@ -15050,6 +19995,53 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "甲20万元的存款，借乙的储蓄卡存放，乙随后挂失补办，提取占用10万元。下列说法错误的是？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2025",
+        "answer-missing"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2025
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2025年客观题-卷一-回忆版#一#68",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "宪法解释针对具体事例"
+        },
+        {
+          "label": "B",
+          "text": "最高人民法院对行政法规合宪性有建议的，可书面向人民代表大会常务委员会申请"
+        },
+        {
+          "label": "C",
+          "text": "宪法解释是宪法监督外的"
+        },
+        {
+          "label": "D",
+          "text": "全国人民代表大会法律和监督委员会对案例合宪性解释是正式宪法解释"
+        }
+      ],
+      "source": {
+        "nativeId": "2025年客观题-卷一-回忆版#一#68",
+        "path": "真题库/客观题/2025年客观题-卷一-回忆版.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据《宪法》第六十七条的规定，关于人民代表大会常务委员会的职权，下列说法正确的是？",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -15446,6 +20438,53 @@
       "chapterOfficial": null,
       "difficulty": null,
       "explanation": "",
+      "id": "law:fakao-app:2025年客观题-卷二-回忆版#二#41",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "出版社将该音乐文件刻录为 CD 放在图书后面赠送"
+        },
+        {
+          "label": "B",
+          "text": "某电视台在电视节目中播放该歌曲"
+        },
+        {
+          "label": "C",
+          "text": "咖啡店里播放该歌曲"
+        },
+        {
+          "label": "D",
+          "text": "某网红主播在直播间模仿吴某的形象和动作演唱该歌曲"
+        }
+      ],
+      "source": {
+        "nativeId": "2025年客观题-卷二-回忆版#二#41",
+        "path": "真题库/客观题/2025年客观题-卷二-回忆版.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "潘某创作了某歌曲，某传媒公司经潘某同意，让吴某演唱并录制为音乐文件，上传到自己的网站。下列未经许可的行为中，同时侵犯潘某、某传媒公司、吴某的权利的是？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2025",
+        "answer-missing"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2025
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
       "id": "law:fakao-app:2025年客观题-卷二-回忆版#二#49",
       "knowledgePoints": [],
       "options": [
@@ -15681,6 +20720,53 @@
       "chapterOfficial": null,
       "difficulty": null,
       "explanation": "",
+      "id": "law:fakao-app:2025年客观题-卷二-回忆版#二#60",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "审计机关对市场监督管理局进行行政处罚"
+        },
+        {
+          "label": "B",
+          "text": "审计机关冻结市场监督管理局政务中心的账户"
+        },
+        {
+          "label": "C",
+          "text": "审计机关经负责人批准查询市场监督管理局政务中心的账户"
+        },
+        {
+          "label": "D",
+          "text": "审计机关制止市场监督管理局政务中心的行为"
+        }
+      ],
+      "source": {
+        "nativeId": "2025年客观题-卷二-回忆版#二#60",
+        "path": "真题库/客观题/2025年客观题-卷二-回忆版.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某省市场监督管理局政务中心的下属企业违规利用一个信息系统的政务数据收费2024 万元。审计机关发现上述情形后采取的如下措施中，合法的是？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2025",
+        "answer-missing"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2025
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
       "id": "law:fakao-app:2025年客观题-卷二-回忆版#二#62",
       "knowledgePoints": [],
       "options": [
@@ -15708,6 +20794,100 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "甲国人玛丽苏偷渡来我国，由中国人李某介绍给主营业务地在深圳的 A 公司签约做平面模特。后 A 公司与玛丽苏产生合同纠纷诉至法院。下列说法正确的是？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2025",
+        "answer-missing"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2025
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2025年客观题-卷二-回忆版#二#74",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "对于初步裁定确定倾销成立并由此对国内产业造成损害的，可以采取临时反倾销措施"
+        },
+        {
+          "label": "B",
+          "text": "情况紧急的，商务部自立案之日起可以先行采取临时反倾销措施"
+        },
+        {
+          "label": "C",
+          "text": "临时反倾销税的数额不得超过初步裁定确定的倾销幅度"
+        },
+        {
+          "label": "D",
+          "text": "终裁确定的反倾销税税额高于临时反倾销税的数额的，差额部分应当由纳税义务人补足"
+        }
+      ],
+      "source": {
+        "nativeId": "2025年客观题-卷二-回忆版#二#74",
+        "path": "真题库/客观题/2025年客观题-卷二-回忆版.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据《中华人民共和国反倾销条例》（以下简称《反倾销条例》），下列有关临时反倾销措施的陈述正确的有哪些？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2025",
+        "answer-missing"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2025
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2025年客观题-卷二-回忆版#二#79",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "乙的父亲可以直接提起异议诉讼"
+        },
+        {
+          "label": "B",
+          "text": "乙的父亲可以对执行标的提出异议"
+        },
+        {
+          "label": "C",
+          "text": "法院作出判决支持乙的父亲的请求后，执行法院应解除对该房屋的查封"
+        },
+        {
+          "label": "D",
+          "text": "乙的父亲可以对执行行为提出异议"
+        }
+      ],
+      "source": {
+        "nativeId": "2025年客观题-卷二-回忆版#二#79",
+        "path": "真题库/客观题/2025年客观题-卷二-回忆版.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "法院判决乙向甲还债（金钱），执行了乙的房屋，乙的父亲站出来说这房是他的。 乙父的救济途径有哪些？",
       "subjectId": "unknown",
       "tags": [
         "fakao-app",
@@ -15822,6 +21002,100 @@
       "chapterOfficial": null,
       "difficulty": null,
       "explanation": "",
+      "id": "law:fakao-app:2025年客观题-卷二-回忆版#二#90",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "若甲诉请乙商场承担违约损害赔偿责任，法院应予支持"
+        },
+        {
+          "label": "B",
+          "text": "若甲诉请乙商场承担产品侵权赔偿责任，法院应予驳回"
+        },
+        {
+          "label": "C",
+          "text": "若甲诉请丙公司承担违约损害赔偿责任，法院应予驳回"
+        },
+        {
+          "label": "D",
+          "text": "若甲诉请丙公司承担产品侵权赔偿责任，法院应予支持"
+        }
+      ],
+      "source": {
+        "nativeId": "2025年客观题-卷二-回忆版#二#90",
+        "path": "真题库/客观题/2025年客观题-卷二-回忆版.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲在乙商场购买了一个丙公司生产的高压锅。一日，甲正常使用该高压锅时，因缺陷导致该高压锅爆炸，所幸除了高压锅全毁外，没有造成其他财产损害，亦未造成人身损害。对此，下列表述正确的是？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2025",
+        "answer-missing"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2025
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2025年客观题-卷二-回忆版#二#97",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "属于正当竞争行为"
+        },
+        {
+          "label": "B",
+          "text": "仅属于诋毁商誉行为"
+        },
+        {
+          "label": "C",
+          "text": "仅属于虚假宣传行为"
+        },
+        {
+          "label": "D",
+          "text": "既属于诋毁商誉行为，又属于虚假宣传行为"
+        }
+      ],
+      "source": {
+        "nativeId": "2025年客观题-卷二-回忆版#二#97",
+        "path": "真题库/客观题/2025年客观题-卷二-回忆版.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "红心地板公司在某市电视台投放广告，称\"红心牌原装进口实木地板为你分忧\" ，并称强化木地板\" 甲醛高、不耐用\" 。此后，本地市场上的强化木地板销量锐减。经查明，该公司生产的实木地板是用进口木材在国内加工而成。关于该广告行为，下列说法正确的是？",
+      "subjectId": "unknown",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2025",
+        "answer-missing"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2025
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
       "id": "law:fakao-app:2002年主观题卷三#subj#4",
       "knowledgePoints": [],
       "options": [],
@@ -15902,36 +21176,6 @@
       ],
       "type": "comprehensive",
       "typeRaw": "任意选择题",
-      "year": 2002
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": null,
-      "chapterConfidence": "none",
-      "chapterOfficial": null,
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2002年主观题卷四#subj#10",
-      "knowledgePoints": [],
-      "options": [],
-      "source": {
-        "nativeId": "2002年主观题卷四#subj#10",
-        "path": "真题库/主观题/2002年主观题卷四.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "_S_:W{k¡N0NgÖS T«ˆ“b·ƒR_Hh0 É‹fN0 6qÅ`µQÊSøSÕl:gsQ„v °dFO N—_r应考人员姓名，否则本试卷不得分。 参 考 答 案",
-      "subjectId": "unknown",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "subjective",
-        "year:2002",
-        "answer-unmatched"
-      ],
-      "type": "comprehensive",
-      "typeRaw": "（本题11分）",
       "year": 2002
     },
     {
@@ -16112,36 +21356,6 @@
       ],
       "type": "comprehensive",
       "typeRaw": "不定项选择题",
-      "year": 2004
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": null,
-      "chapterConfidence": "none",
-      "chapterOfficial": null,
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2004年主观题卷四#subj#6",
-      "knowledgePoints": [],
-      "options": [],
-      "source": {
-        "nativeId": "2004年主观题卷四#subj#6",
-        "path": "真题库/主观题/2004年主观题卷四.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "NXd ^ b N¢b`O„vKbhˆ_N b w IQcˆ N IQcˆ \\ò]Xd Œ[cˆ g02u Ncˆ NÌ€ù[@w2uzcˆ N„vKbhˆb走。甲逃出校园后与乙碰头，乙问抢了什么 东西，甲说就抢了一只手表。甲将手表交给乙出卖，乙 以1000元价格卖给他人后，甲与乙各分得500元。 问题：请根据刑法规定与刑法原理，对本案进行全面分 析。 第三部分：论述题。本部分共2题，50分。",
-      "subjectId": "unknown",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "subjective",
-        "year:2004",
-        "answer-unmatched"
-      ],
-      "type": "comprehensive",
-      "typeRaw": "（本题25分）",
       "year": 2004
     },
     {

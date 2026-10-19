@@ -36563,54 +36563,6 @@
         "C"
       ],
       "answerText": null,
-      "chapter": "银行业法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "银行业法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2002年客观题卷二#二#9",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "李某的行为属于贪污既遂"
-        },
-        {
-          "label": "B",
-          "text": "李某的行为属于贪污未遂"
-        },
-        {
-          "label": "C",
-          "text": "李某的行为属于盗窃既遂"
-        },
-        {
-          "label": "D",
-          "text": "李某的行为属于盗窃未遂"
-        }
-      ],
-      "source": {
-        "nativeId": "2002年客观题卷二#二#9",
-        "path": "真题库/客观题/2002年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "李某系A市建设银行某储蓄所记账员。2002年3月20 日下午下班时，李某发现本所出纳员陈某将2万元营业 款遗忘在办公桌抽屉内(末锁)。当日下班后，李某趁所 内无人之机，返回所内将该2万元取出，用报纸包好后 藏到自己办公桌下面的垃圾袋中，并用纸箱遮住垃圾袋 。次日上午案发，赃款被他人找出。对此，下列哪一说 法是正确的?",
-      "subjectId": "jingjifa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2002"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2002
-    },
-    {
-      "answer": [
-        "C"
-      ],
-      "answerText": null,
       "chapter": "土地法和房地产法",
       "chapterConfidence": "low",
       "chapterOfficial": "土地法和房地产法",
@@ -36700,6 +36652,152 @@
       ],
       "type": "single_choice",
       "typeRaw": "单项选择题",
+      "year": 2003
+    },
+    {
+      "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "土地法和房地产法",
+      "chapterConfidence": "low",
+      "chapterOfficial": "土地法和房地产法",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2003年客观题卷一#一#16",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "房屋租赁合同无效，甲公司应先补交土地使用权出让"
+        },
+        {
+          "label": "B",
+          "text": "房屋租赁合同有效，已取得的租金归甲公司，但甲公"
+        },
+        {
+          "label": "C",
+          "text": "房屋租赁合同有效，已取得的租金归甲公司，但甲公"
+        },
+        {
+          "label": "D",
+          "text": "房屋租赁合同无效，甲公司应补交土地使用权出让金"
+        }
+      ],
+      "source": {
+        "nativeId": "2003年客观题卷一#一#16",
+        "path": "真题库/客观题/2003年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲公司通过划拨方式取得了国有土地使用权，在该土 地上建成了一栋房屋，并将该房屋出租给乙公司，每月 得租金１万元。后被土地管理部门发现。下列哪一选项 是对甲公司的行为和取得的租金收入进行恰当处置的方 式？",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2003"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2003
+    },
+    {
+      "answer": [
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "银行业法",
+      "chapterConfidence": "low",
+      "chapterOfficial": "银行业法",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2003年客观题卷一#一#52",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "非经接管程序，商业银行不得解散或破产"
+        },
+        {
+          "label": "B",
+          "text": "实行接管后，商业银行的债权债务由接管组织概括承"
+        },
+        {
+          "label": "C",
+          "text": "接管的期限最长不超过2年"
+        },
+        {
+          "label": "D",
+          "text": "自接管之日起，由接管组织行使商业银行的经营管理"
+        }
+      ],
+      "source": {
+        "nativeId": "2003年客观题卷一#一#52",
+        "path": "真题库/客观题/2003年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "商业银行出现信用危机严重影响存款人利益时，可由 中央银行对其实行接管。下列有关商业银行接管的表述 ，哪些符合我国现行法律的规定？",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2003"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2003
+    },
+    {
+      "answer": [
+        "A",
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "土地法和房地产法",
+      "chapterConfidence": "low",
+      "chapterOfficial": "土地法和房地产法",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2003年客观题卷一#一#56",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "发行人所持股票，在公司成立之日起3年内不得转让"
+        },
+        {
+          "label": "B",
+          "text": "公司董事、经理、监事在任职期间不得转让本公司股"
+        },
+        {
+          "label": "C",
+          "text": "持有一个公司已发行股份5％的股东，其股票在买入后"
+        },
+        {
+          "label": "D",
+          "text": "公司绝对控股的股东，其股票于购入之日起1年内不得"
+        }
+      ],
+      "source": {
+        "nativeId": "2003年客观题卷一#一#56",
+        "path": "真题库/客观题/2003年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据《证券法》和《公司法》的规定，下列关于证券 交易限制情形的表述哪些是正确的？",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2003"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
       "year": 2003
     },
     {
@@ -36888,6 +36986,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "根据香港特别行政区基本法和澳门特别行政区基本 法，下列有关特别行政区立法权的表述哪一项是不正确 的？",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2004"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2004
+    },
+    {
+      "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "消费者法",
+      "chapterConfidence": "low",
+      "chapterOfficial": "消费者法",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2004年客观题卷一#一#19",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲市政府办公室的行为属于限制竞争行为"
+        },
+        {
+          "label": "B",
+          "text": "酒厂的做法尚未构成商业贿赂行为"
+        },
+        {
+          "label": "C",
+          "text": "上级机关可以责令甲市政府改正错误"
+        },
+        {
+          "label": "D",
+          "text": "监督检查部门可以没收酒厂的违法所得，并处以罚款"
+        }
+      ],
+      "source": {
+        "nativeId": "2004年客观题卷一#一#19",
+        "path": "真题库/客观题/2004年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲市某酒厂酿造的“蓝星”系列白酒深为当地人喜 爱。甲市政府办公室发文指定该酒为“接待用酒”，要 求各机关、企事业单位、社会团体在业务用餐时，饮酒 应以“蓝星”系列为主。同时，酒厂公开承诺：用餐者 凭市内各酒楼出具的证明，可以取得消费100元返还10元 的奖励。下列关于此事的说法哪一项是不正确的？",
       "subjectId": "jingjifa",
       "tags": [
         "fakao-app",
@@ -37232,183 +37378,46 @@
         "C"
       ],
       "answerText": null,
-      "chapter": "银行业法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "银行业法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2004年客观题卷二#二#17",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "以买卖、邮寄枪支、弹药罪与抢劫罪并罚"
-        },
-        {
-          "label": "B",
-          "text": "以买卖、邮寄枪支、弹药罪与非法出租枪支罪并罚"
-        },
-        {
-          "label": "C",
-          "text": "以走私武器、弹药罪与抢劫罪并罚"
-        },
-        {
-          "label": "D",
-          "text": "以走私武器、弹药罪、非法出租枪支罪、抢劫罪并罚"
-        }
-      ],
-      "source": {
-        "nativeId": "2004年客观题卷二#二#17",
-        "path": "真题库/客观题/2004年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲利用到外国旅游的机会，为了自用，从不法分子 手中购买了手枪1支、子弹60发，然后经过伪装将其邮寄 回国内。后来甲得知乙欲抢银行，想得到一支枪，就与 乙协商，以5000元将其手枪出租给乙使用。乙使用该手 枪抢劫某银行，随后被抓获。对甲的行为应如何处理？",
-      "subjectId": "jingjifa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2004"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2004
-    },
-    {
-      "answer": [
-        "D"
-      ],
-      "answerText": null,
       "chapter": "土地法和房地产法",
       "chapterConfidence": "low",
       "chapterOfficial": "土地法和房地产法",
       "difficulty": null,
       "explanation": "",
-      "id": "law:fakao-app:2004年客观题卷二#二#49",
+      "id": "law:fakao-app:2005年客观题卷一#一#8",
       "knowledgePoints": [],
       "options": [
         {
           "label": "A",
-          "text": "区房地产管理局的备案登记行为不是对预售合同效力"
+          "text": "全国人民代表大会专门委员会是最高国家权力机关"
         },
         {
           "label": "B",
-          "text": "备案登记行为没有对刘某的权利义务产生实际影响，"
+          "text": "全国人民代表大会专门委员会负责审议与其职权有"
         },
-        {
-          "label": "C",
-          "text": "高达公司与本案的审理结果有利害关系，可以作为第"
-        },
-        {
-          "label": "D",
-          "text": "区房地产管理局在备案登记时没有尽到审查职责，应"
-        }
-      ],
-      "source": {
-        "nativeId": "2004年客观题卷二#二#49",
-        "path": "真题库/客观题/2004年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "刘某与高达公司签订内销商品房预售契约，后某区 房地产管理局对该预售契约作出预售预购备案登记。后 刘某了解到高达公司向其销售的房屋系超出规划面积和 预售面积的超层部分，刘某遂以区房地产管理局违法办 理备案登记，造成自己购买的房屋为违法建筑为由提起 行政诉讼。下列哪一说法不正确？",
-      "subjectId": "jingjifa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2004"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2004
-    },
-    {
-      "answer": [
-        "A",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "银行业法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "银行业法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2004年客观题卷二#二#73",
-      "knowledgePoints": [],
-      "options": [
         {
           "label": "A",
-          "text": "办理抵押登记的土地管理局应对银行损失承担赔偿责"
+          "text": "国家副主席"
         },
         {
           "label": "B",
-          "text": "法院的民事判决可以作为确认抵押登记行为无效的依"
+          "text": "国家军事委员会副主席"
         },
         {
           "label": "C",
-          "text": "银行须在2005年2月4日之前行使赔偿请求权"
+          "text": "最高人民法院副院长"
         },
         {
           "label": "D",
-          "text": "银行在向土地管理局请求赔偿之前，应当先确认抵押"
+          "text": "国务院副总理"
         }
       ],
       "source": {
-        "nativeId": "2004年客观题卷二#二#73",
-        "path": "真题库/客观题/2004年客观题卷二.md",
+        "nativeId": "2005年客观题卷一#一#8",
+        "path": "真题库/客观题/2005年客观题卷一.md",
         "repo": "fakao-app",
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
-      "stem": "2002年4月2日，某银行与某公司签订贷款合同，约定 银行贷款给公司，公司以土地使用权为抵押。2002年6月1 日，公司办理土地使用权抵押登记手续，并取得土地管 理局签发的抵押证书。后因公司未依约还款，某银行提 起诉讼。2003年2月4日，法院作出民事判决，认定土地管 理局在办理抵押证书时某公司并未取得土地使用权，该 项抵押无效，判定银行无权主张土地使用权。关于本案 ，下列哪些说法是正确的？",
-      "subjectId": "jingjifa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2004"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2004
-    },
-    {
-      "answer": [
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "银行业法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "银行业法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2005年客观题卷二#二#11",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "侵占罪"
-        },
-        {
-          "label": "B",
-          "text": "盗窃罪"
-        },
-        {
-          "label": "C",
-          "text": "诈骗罪"
-        },
-        {
-          "label": "D",
-          "text": "金融凭证诈骗罪"
-        }
-      ],
-      "source": {
-        "nativeId": "2005年客观题卷二#二#11",
-        "path": "真题库/客观题/2005年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲到乙的办公室送文件，乙不在。甲看见乙办公桌 下的地上有一活期存折（该存折未设密码），便将存折 捡走。乙回办公室后找不着存折，但看见桌上的文件， 便找到甲问是否看见其存折，甲说没看到。甲下班后去 银行将该存折中的5000元取走。甲的行为构成：",
+      "stem": "根据我国宪法和有关法律的规定，下列有关全国人 民代表大会专门委员会的表述哪一项是正确的？",
       "subjectId": "jingjifa",
       "tags": [
         "fakao-app",
@@ -37566,6 +37575,71 @@
     },
     {
       "answer": [
+        "B",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "土地法和房地产法",
+      "chapterConfidence": "low",
+      "chapterOfficial": "土地法和房地产法",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2006年客观题卷一#一#55",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "法院所引用的刑法条款所规定的内容属于任意"
+        },
+        {
+          "label": "B",
+          "text": "该刑法条款对小丽的起诉行为起到了一种确定"
+        },
+        {
+          "label": "C",
+          "text": "法院在该案件中适用的法律推理属于演绎推理"
+        },
+        {
+          "label": "D",
+          "text": "法院在认定案件事实的过程中不需要运用价值"
+        },
+        {
+          "label": "A",
+          "text": "法官甲对《刑法》第263条规定的解释是一种体"
+        },
+        {
+          "label": "B",
+          "text": "法官乙对《刑法》第263条规定的解释是一种目"
+        },
+        {
+          "label": "C",
+          "text": "法官对仿真手枪是不是枪的判断是一种纯粹的"
+        },
+        {
+          "label": "D",
+          "text": "法官的争议说明：法律条文中所规定的\"词\"的意"
+        }
+      ],
+      "source": {
+        "nativeId": "2006年客观题卷一#一#55",
+        "path": "真题库/客观题/2006年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "小丽是陈某的养女，在22岁时准备与其结识半 年的男朋友结婚。陈某以小丽岁数小、与男朋友认识时 间太短等为由，不同意两人结婚，并禁止他们来往。从 此，陈某只要发现小丽与男朋友来往，就对她拳脚相加 ，而且不允许她周末外出。小丽忍无可忍，向当地法院 提起诉讼。该法院根据我国《刑法》第257条第1款的规 定（即\"以暴力干涉他人婚姻自由的，处二年以下有期 徒刑或者拘役\"），判处陈某拘役2个月。根据该案，下 列哪些说法是正确的？",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2006"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2006
+    },
+    {
+      "answer": [
         "A",
         "B",
         "C",
@@ -37715,6 +37789,57 @@
       "year": 2006
     },
     {
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "银行业法",
+      "chapterConfidence": "low",
+      "chapterOfficial": "银行业法",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2006年客观题卷一#一#73",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "仅以不能清偿到期债务为破产原因"
+        },
+        {
+          "label": "B",
+          "text": "破产宣告前须经国务院银行业监督管理机构同"
+        },
+        {
+          "label": "C",
+          "text": "清算组成员须包括国务院银行业监督管理机构"
+        },
+        {
+          "label": "D",
+          "text": "破产清算时应优先支付个人储蓄存款的本息"
+        }
+      ],
+      "source": {
+        "nativeId": "2006年客观题卷一#一#73",
+        "path": "真题库/客观题/2006年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "与《企业破产法》的规定相比较，《商业银行 法》对商业银行破产的规定有哪些特殊之处？",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2006"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2006
+    },
+    {
       "answer": [],
       "answerText": null,
       "chapter": "竞争法",
@@ -37796,6 +37921,53 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "根据《反不正当竞争法》的规定，下列哪一行 为属于不正当竞争行为中的混淆行为？",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2007",
+        "answer-missing"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2007
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": "土地法和房地产法",
+      "chapterConfidence": "low",
+      "chapterOfficial": "土地法和房地产法",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2007年客观题卷一#一#24",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "\"这件事，乡政府可以出面召集你们双方协商解"
+        },
+        {
+          "label": "B",
+          "text": "\"如果你们双方达不成协议，我们乡政府是无权"
+        },
+        {
+          "label": "C",
+          "text": "\"你们可以去县政府申请处理，也可以直接去县"
+        },
+        {
+          "label": "D",
+          "text": "\"在纠纷解决之前，你们双方必须维持土地利用"
+        }
+      ],
+      "source": {
+        "nativeId": "2007年客观题卷一#一#24",
+        "path": "真题库/客观题/2007年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "李庄和赵庄为相邻一块土地的所有权归属发生 争议，李庄的村干部就此事请示乡长。乡长的下列哪一 答复意见是错误的？",
       "subjectId": "jingjifa",
       "tags": [
         "fakao-app",
@@ -38140,53 +38312,6 @@
     {
       "answer": [],
       "answerText": null,
-      "chapter": "银行业法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "银行业法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2007年客观题卷二#二#97",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "挪用公款罪的共犯"
-        },
-        {
-          "label": "B",
-          "text": "贩卖毒品罪的共犯"
-        },
-        {
-          "label": "C",
-          "text": "洗钱罪"
-        },
-        {
-          "label": "D",
-          "text": "赃物犯罪"
-        }
-      ],
-      "source": {
-        "nativeId": "2007年客观题卷二#二#97",
-        "path": "真题库/客观题/2007年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "银行职员丙的行为构成：",
-      "subjectId": "jingjifa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2007",
-        "answer-missing"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2007
-    },
-    {
-      "answer": [],
-      "answerText": null,
       "chapter": "财税法",
       "chapterConfidence": "low",
       "chapterOfficial": "财税法",
@@ -38379,6 +38504,55 @@
       ],
       "answerText": null,
       "chapter": "竞争法",
+      "chapterConfidence": "low",
+      "chapterOfficial": "竞争法",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2008年客观题卷一#一#72",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "实施这种行为的主体，不限于行政机关"
+        },
+        {
+          "label": "B",
+          "text": "实施这种行为的主体，不包括中央政府部门"
+        },
+        {
+          "label": "C",
+          "text": "《反垄断法》对这种行为的规制，限定在商品"
+        },
+        {
+          "label": "D",
+          "text": "《反垄断法》对这种行为的规制，主要采用行"
+        }
+      ],
+      "source": {
+        "nativeId": "2008年客观题卷一#一#72",
+        "path": "真题库/客观题/2008年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "滥用行政权力排除、限制竞争的行为，是我国 《反垄断法》规制的垄断行为之一。关于这种行为，下 列哪些选项是正确的？",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2008"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2008
+    },
+    {
+      "answer": [
+        "A",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "竞争法",
       "chapterConfidence": "high",
       "chapterOfficial": "竞争法",
       "difficulty": null,
@@ -38471,145 +38645,52 @@
       "year": 2008
     },
     {
-      "answer": [],
+      "answer": [
+        "D"
+      ],
       "answerText": null,
-      "chapter": "银行业法",
+      "chapter": "土地法和房地产法",
       "chapterConfidence": "low",
-      "chapterOfficial": "银行业法",
+      "chapterOfficial": "土地法和房地产法",
       "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2008年客观题卷二#二#12",
+      "explanation": "本题考查选举程序。\nA 项：根据《选举法》第 26 条规定：“选民登记按选区进行，经登记确认的选民资格长\n期有效。”此项错误。\nB 项：第 27 条规定：“选民名单应在选举日的二十日以前公布，实行凭选民证参加投票\n选举的，并应当发给选民证。”此项错误。\nCD 项：第 28 条规定：“对于公布的选民名单有不同意见的，可以在选民名单公布之日\n起五日内向选举委员会提出申诉。选举委员会对申诉意见，应在三日内作出处理决定。申诉\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n人如果对处理决定不服，可以在选举日的五日以前向人民法院起诉，人民法院应在选举日以\n前作出判决。人民法院的判决为最后决定。”据上述规定可知，C 项错误，D 项正确。",
+      "id": "law:fakao-app:2009年客观题-卷一#一#21",
       "knowledgePoints": [],
       "options": [
         {
           "label": "A",
-          "text": "抢劫罪（未遂）"
+          "text": "选民登记按选区进行，每次选举前选民资格都要进行重新登记"
         },
         {
           "label": "B",
-          "text": "抢劫罪（既遂）"
+          "text": "选民名单应在选举日的十五日以前公布"
         },
         {
           "label": "C",
-          "text": "绑架罪"
+          "text": "对于公布的选民名单有不同意见的，可以向选举委员会申诉或者直接向法院起诉"
         },
         {
           "label": "D",
-          "text": "敲诈勒索罪"
+          "text": "法院对于选民名单意见的起诉应在选举日以前作出判决"
         }
       ],
       "source": {
-        "nativeId": "2008年客观题卷二#二#12",
-        "path": "真题库/客观题/2008年客观题卷二.md",
+        "nativeId": "2009年客观题-卷一#一#21",
+        "path": "真题库/客观题/2009年客观题-卷一.md",
         "repo": "fakao-app",
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
-      "stem": "甲持西瓜刀冲入某银行储蓄所，将刀架在储蓄 所保安乙的脖子上，喝令储蓄所职员丙交出现金1万元 。见丙故意拖延时间，甲便在乙的脖子上划了一刀。刚 取出5万元现金的储户丁看见乙血流不止，于心不忍， 就拿出1万元扔给甲，甲得款后迅速逃离。对甲的犯罪 行为，下列哪一选项是正确的？",
+      "stem": "根据《宪法》和《选举法》规定，下列哪一选项是正确的？",
       "subjectId": "jingjifa",
       "tags": [
         "fakao-app",
         "md-真题",
         "section:单项选择题",
-        "year:2008",
-        "answer-missing"
+        "year:2009"
       ],
       "type": "single_choice",
       "typeRaw": "单项选择题",
-      "year": 2008
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "银行业法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "银行业法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2008年客观题卷二#二#14",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "侵占罪"
-        },
-        {
-          "label": "B",
-          "text": "盗窃罪（间接正犯）"
-        },
-        {
-          "label": "C",
-          "text": "诈骗罪"
-        },
-        {
-          "label": "D",
-          "text": "金融凭证诈骗罪"
-        }
-      ],
-      "source": {
-        "nativeId": "2008年客观题卷二#二#14",
-        "path": "真题库/客观题/2008年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲在某银行的存折上有4万元存款。某日，甲将 存款全部取出，但由于银行职员乙工作失误，未将存折 底卡销毁。半年后，甲又去该银行办理存储业务，乙对 甲说：\"你的4万元存款已到期。\"甲听后，灵机一动，对 乙谎称存折丢失。乙为甲办理了挂失手续，甲取走4万 元。甲的行为构成何罪？",
-      "subjectId": "jingjifa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2008",
-        "answer-missing"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2008
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "银行业法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "银行业法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2008年客观题卷二#二#56",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "甲的受贿数额是9万元"
-        },
-        {
-          "label": "B",
-          "text": "乙的受贿数额是15万元"
-        },
-        {
-          "label": "C",
-          "text": "甲、乙均构成违法发放贷款罪"
-        },
-        {
-          "label": "D",
-          "text": "对于甲、乙的违法发放贷款罪和受贿罪，应当"
-        }
-      ],
-      "source": {
-        "nativeId": "2008年客观题卷二#二#56",
-        "path": "真题库/客观题/2008年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "某国有银行行长甲指使负责贷款业务的科长乙 向申请贷款的丙单位索要财物。乙将索要所获15万元中 的9万元交给甲，其余6万元自己留下。后来，甲、乙均 明知丙单位不具备贷款条件，仍然向丙单位贷款1000万 元，使银行遭受800万元损失。对于本案，下列哪些选项 是正确的？",
-      "subjectId": "jingjifa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2008",
-        "answer-missing"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2008
+      "year": 2009
     },
     {
       "answer": [
@@ -38657,6 +38738,57 @@
       ],
       "type": "single_choice",
       "typeRaw": "单项选择题",
+      "year": 2009
+    },
+    {
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "土地法和房地产法",
+      "chapterConfidence": "low",
+      "chapterOfficial": "土地法和房地产法",
+      "difficulty": null,
+      "explanation": "本题考查集体土地使用权。\n《土地管理法》第 43 条第 1 款规定：“任何单位和个人进行建设，需要使用土地的，\n必须依法申请使用国有土地；但是，兴办乡镇企业和村民建设住宅经依法批准使用本集体经\n济组织农民集体所有的土地的，或者乡（镇）村公共设施和公益事业建设经依法批准使用农\n民集体所有的土地的除外。”据上述规定，ABCD 均正确。",
+      "id": "law:fakao-app:2009年客观题-卷一#一#74",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "兴办乡镇企业"
+        },
+        {
+          "label": "B",
+          "text": "村民建设住宅"
+        },
+        {
+          "label": "C",
+          "text": "乡村公共设施建设"
+        },
+        {
+          "label": "D",
+          "text": "乡村公益事业建设"
+        }
+      ],
+      "source": {
+        "nativeId": "2009年客观题-卷一#一#74",
+        "path": "真题库/客观题/2009年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据《土地管理法》规定，在下列哪些情况下使用集体土地从事建设不需要经过国 家征收？",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2009"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
       "year": 2009
     },
     {
@@ -38759,11 +38891,61 @@
     },
     {
       "answer": [
+        "A",
+        "B",
         "C"
       ],
       "answerText": null,
       "chapter": "银行业法",
       "chapterConfidence": "low",
+      "chapterOfficial": "银行业法",
+      "difficulty": null,
+      "explanation": "本题考查监督管理措施。\nA 项：《银行业监督管理法》第 40 条第 1 款：“银行业金融机构被接管、重组或者被\n撤销的，国务院银行业监督管理机构有权要求该银行业金融机构的董事、高级管理人员和其\n他工作人员，按照国务院银行业监督管理机构的要求履行职责。”此项正确。\nBCD 项：第 40 条第 2 款：“在接管、机构重组或者撤销清算期间，经国务院银行业监\n督管理机构负责人批准，对直接负责的董事、高级管理人员和其他直接责任人员，可以采取\n下列措施：（一）直接负责的董事、高级管理人员和其他直接责任人员出境将对国家利益造\n成重大损失的，通知出境管理机关依法阻止其出境；（二）申请司法机关禁止其转移、转让\n财产或者对其财产设定其他权利。”D 项错误，BC 项正确。",
+      "id": "law:fakao-app:2009年客观题-卷一#一#96",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "对该行全体人员发出通知，要求各自坚守岗位，认真履行职责"
+        },
+        {
+          "label": "B",
+          "text": "该行副行长邱某、薛某持有出境旅行证件却拒不交出。对此，通知出境管理机关阻止"
+        },
+        {
+          "label": "C",
+          "text": "该行董事范某欲抛售其持有的一批股票。对此，申请司法机关禁止其转让股票"
+        },
+        {
+          "label": "D",
+          "text": "该行会计师佘某欲将自己的一处房屋转让给他人。对此，通知房产管理部门停止办理"
+        }
+      ],
+      "source": {
+        "nativeId": "2009年客观题-卷一#一#96",
+        "path": "真题库/客观题/2009年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某城市商业银行在合并多家城市信用社的基础上设立，其资产质量差，经营队伍 弱，长期以来资本充足率、资产流动性、存贷款比例等指标均不能达到监管标准。在作出对 该银行的行政处置决定后，负责处置的机构对该银行的人员采取了以下措施，其中符合法律 规定的是？",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2009"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2009
+    },
+    {
+      "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "银行业法",
+      "chapterConfidence": "high",
       "chapterOfficial": "银行业法",
       "difficulty": null,
       "explanation": "本题考查商业银行的清算。\n《商业银行法》第 71 条第 1 款规定：“商业银行不能支付到期债务，经国务院银行业\n监督管理机构同意，由人民法院依法宣告其破产。商业银行被宣告破产的，由人民法院组织\n国务院银行业监督管理机构等有关部门和有关人员成立清算组，进行清算。”因此 C 项正\n确。",
@@ -38804,6 +38986,150 @@
       "type": "indefinite_choice",
       "typeRaw": "不定项选择题",
       "year": 2009
+    },
+    {
+      "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "土地法和房地产法",
+      "chapterConfidence": "low",
+      "chapterOfficial": "土地法和房地产法",
+      "difficulty": null,
+      "explanation": "A 项：该项考查地方各级人民代表大会常务委员会的组成。根据《宪法》第 103 条第 1\n款规定：“县级以上的地方各级人民代表大会常务委员会由主任、副主任若干人和委员若干\n人组成，对本级人民代表大会负责并报告工作。”可知，县级人大常委会的组成人员中不包\n括秘书长。因此 A 选项错误。\nB 项：该项考查地方各级人民代表大会常务委员会的职权。《地方组织法》第 30 条规\n定：“省、自治区、直辖市、自治州、设区的市的人民代表大会根据需要，可以设法制委员\n会、财政经济委员会、教育科学文化卫生委员会等专门委员会；县、自治县、不设区的市、\n市辖区的人民代表大会根据需要，可以设法制委员会、财政经济委员会等专门委员会。各专\n门委员会受本级人民代表大会领导；在大会闭会期间，受本级人民代表大会常务委员会领\n导。”由条文可知县级人大常委会无权设立专门委员会，B 项表述错误。\nC 项：该项考点同 B 项。《地方组织法》第 31 条的规定：“县级以上的地方各级人民\n代表大会可以组织关于特定问题的调查委员会。”由此可知 C 项表述符合法律的规定，正\n确。\nD 项：该项考查地方各级人民代表大会的会议制度。第 12 条的规定：“县级以上的地\n方各级人民代表大会会议由本级人民代表大会常务委员会召集。”《地方组织法》第 13 条\n第 3 款的规定：“县级以上的地方各级人民代表大会举行会议的时候，由主席团主持会\n议。”由上述条文规定可推知，县级以上的地方各级人民代表大会会议由本级人民代表大会\n常务委员会召集，由主席团主持会议，D 项说法错误。",
+      "id": "law:fakao-app:2010年客观题-卷一#一#22",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "县级以上的地方各级人民代表大会常务委员会由主任、副主任若干人，秘书长、委员"
+        },
+        {
+          "label": "B",
+          "text": "县级以上的地方各级人民代表大会常务委员会根据需要，可以设法制(政法)委员会等"
+        },
+        {
+          "label": "C",
+          "text": "县级以上的地方各级人民代表大会可以组织关于特定问题的调查委员会"
+        },
+        {
+          "label": "D",
+          "text": "县级以上的地方各级人民代表大会会议由本级人民代表大会常务委员会召集并主持"
+        }
+      ],
+      "source": {
+        "nativeId": "2010年客观题-卷一#一#22",
+        "path": "真题库/客观题/2010年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据《宪法》和《地方组织法》规定，下列哪一选项是正确的？",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2010"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2010
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "消费者法",
+      "chapterConfidence": "high",
+      "chapterOfficial": "消费者法",
+      "difficulty": null,
+      "explanation": "本题考查产品责任的归责原则及产品缺陷致人损害的赔偿请求权。\nAB 项：《产品质量法》第 41 条规定：“因产品存在缺陷造成人身、缺陷产品以外的其\n他财产(以下简称他人财产)损害的，生产者应当承担赔偿责任。生产者能够证明有下列情形\n之一的，不承担赔偿责任：(一)未将产品投入流通的；(二)产品投入流通时，引起损害的缺陷\n尚不存在的；(三)将产品投入流通时的科学技术水平尚不能发现缺陷的存在的。”第 42 条规\n定：“由于销售者的过错使产品存在缺陷，造成人身、他人财产损害的，销售者应当承担赔\n偿责任。销售者不能指明缺陷产品的生产者也不能指明缺陷产品的供货者的，销售者应当承\n担赔偿责任。”由条文可知，《产品质量法》对生产者产品缺陷实行严格责任。A 项错误，\nB 项正确。\nCD 项：第 45 条规定：“因产品存在缺陷造成损害要求赔偿的诉讼时效期间为二年，自\n当事人知道或者应当知道其权益受到损害时起计算。因产品存在缺陷造成损害要求赔偿的请\n求权，在造成损害的缺陷产品交付最初消费者满十年丧失；但是，尚未超过明示的安全使用\n期的除外。”由此可知，CD 项说法错误。",
+      "id": "law:fakao-app:2010年客观题-卷一#一#24",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "《产品质量法》对生产者、销售者的产品缺陷责任均实行严格责任"
+        },
+        {
+          "label": "B",
+          "text": "《产品质量法》对生产者产品缺陷实行严格责任，对销售者实行过错责任"
+        },
+        {
+          "label": "C",
+          "text": "产品缺陷造成损害要求赔偿的诉讼时效期间为二年，从产品售出之日起计算"
+        },
+        {
+          "label": "D",
+          "text": "产品缺陷造成损害要求赔偿的请求权在缺陷产品生产日期满十年后丧失"
+        }
+      ],
+      "source": {
+        "nativeId": "2010年客观题-卷一#一#24",
+        "path": "真题库/客观题/2010年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据《产品质量法》规定，下列哪一说法是正确的？",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2010"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2010
+    },
+    {
+      "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "银行业法",
+      "chapterConfidence": "low",
+      "chapterOfficial": "银行业法",
+      "difficulty": null,
+      "explanation": "本题考查国务院银行业监督管理机构职责范围。\nA 项：《银行业监督管理法》第 16 条规定：“国务院银行业监督管理机构依照法律、行\n政法规规定的条件和程序，审查批准银行业金融机构的设立、变更、终止以及业务范围。”\n由此可知 A 项属于银监会的职责范围。\nB 项：《银行业监督管理法》第 17 条规定：“申请设立银行业金融机构，或者银行业金\n融机构变更持有资本总额或者股份总额达到规定比例以上的股东的，国务院银行业监督管理\n机构应当对股东的资金来源、财务状况、资本补充能力和诚信状况进行审查。”由此可知 B\n项属于银监会的职责范围。\nC 项：《银行业监督管理法》第 18 条规定：“银行业金融机构业务范围内的业务品种，\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n应当按照规定经国务院银行业监督管理机构审查批准或者备案。需要审查批准或者备案的业\n务品种，由国务院银行业监督管理机构依照法律、行政法规作出规定并公布。”由此可知 C\n选项属于属于银监会的职责范围。\nD 项：《中国人民银行法》第 22 条规定：“中国人民银行为执行货币政策，可以运用\n下列货币政策工具：(一)要求银行业金融机构按照规定的比例交存存款准备金；……”由此\n可知 D 项是人民银行的职责范围。",
+      "id": "law:fakao-app:2010年客观题-卷一#一#26",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "审查批准银行业金融机构的设立、变更、终止以及业务范围"
+        },
+        {
+          "label": "B",
+          "text": "受理银行业金融机构设立申请或者资本变更申请时，审查其股东的资金来源、财务状"
+        },
+        {
+          "label": "C",
+          "text": "审查批准或者备案银行业金融机构业务范围内的业务品种"
+        },
+        {
+          "label": "D",
+          "text": "接收商业银行交存的存款准备金和存款保险金"
+        }
+      ],
+      "source": {
+        "nativeId": "2010年客观题-卷一#一#26",
+        "path": "真题库/客观题/2010年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "下列哪一选项不属于国务院银行业监督管理机构职责范围？",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2010"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2010
     },
     {
       "answer": [
@@ -38910,13 +39236,63 @@
     },
     {
       "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "银行业法",
+      "chapterConfidence": "high",
+      "chapterOfficial": "银行业法",
+      "difficulty": null,
+      "explanation": "本题考查监督管理措施。\n《商业银行法》第 77 条规定：“商业银行有下列情形之一，由中国人民银行责令改\n正，并处二十万元以上五十万元以下罚款；情节特别严重或者逾期不改正的，中国人民银行\n可以建议国务院银行业监督管理机构责令停业整顿或者吊销其经营许可证；构成犯罪的，依\n法追究刑事责任：(一)拒绝或者阻碍中国人民银行检查监督的；(二)提供虚假的或者隐瞒重要\n事实的财务会计报告、报表和统计报表的；(三)未按照中国人民银行规定的比例交存存款准\n备金的。”第 76 条规定：“商业银行有下列情形之一，由中国人民银行责令改正，有违法\n所得的，没收违法所得，违法所得五十万元以上的，并处违法所得一倍以上五倍以下罚款；\n没有违法所得或者违法所得不足五十万元的，处五十万元以上二百万元以下罚款；情节特别\n严重或者逾期不改正的，中国人民银行可以建议国务院银行业监督管理机构责令停业整顿或\n者吊销其经营许可证；构成犯罪的，依法追究刑事责任：(一)未经批准办理结汇、售汇的；\n(二)未经批准在银行间债券市场发行、买卖金融债券或者到境外借款的；(三)违反规定同业拆\n借的。”由条文可知 BCD 三项符合题意。",
+      "id": "law:fakao-app:2010年客观题-卷一#一#69",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "未经批准分立、合并的"
+        },
+        {
+          "label": "B",
+          "text": "未经批准发行、买卖金融债券的"
+        },
+        {
+          "label": "C",
+          "text": "提供虚假财务报告、报表和统计报表的"
+        },
+        {
+          "label": "D",
+          "text": "违反规定同业拆借的"
+        }
+      ],
+      "source": {
+        "nativeId": "2010年客观题-卷一#一#69",
+        "path": "真题库/客观题/2010年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "商业银行出现下列哪些行为时，中国人民银行有权建议银行业监督管理机构责令停 业整顿或吊销经营许可证？",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2010"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2010
+    },
+    {
+      "answer": [
         "A",
         "B",
         "D"
       ],
       "answerText": null,
       "chapter": "银行业法",
-      "chapterConfidence": "low",
+      "chapterConfidence": "high",
       "chapterOfficial": "银行业法",
       "difficulty": null,
       "explanation": "本题考查监督管理措施。\n《银行业监督管理法》第 41 条规定：“……对涉嫌转移或者隐匿违法资金的，经银行\n业监督管理机构负责人批准，可以申请司法机关予以冻结。”第 42 条规定：“银行业监督\n管理机构依法对银行业金融机构进行检查时，经设区的市一级以上银行业监督管理机构负责\n人批准，可以对与涉嫌违法事项有关的单位和个人采取下列措施:(一)询问有关单位或者个\n人，要求其对有关情况作出说明；(二)查阅、复制有关财务会计、财产权登记等文件、资\n料；(三)对可能被转移、隐匿、毁损或者伪造的文件、资料，予以先行登记保存。银行业监\n督管理机构采取前款规定措施，调查人员不得少于二人，并应当出示合法证件和调查通知\n书；调查人员少于二人或者未出示合法证件和调查通知书的，有关单位或者个人有权拒绝。\n对依法采取的措施，有关单位和个人应当配合，如实说明有关情况并提供有关文件、资料，\n不得拒绝、阻碍和隐瞒。”由法条可知 ABD 三项符合法律规定。",
@@ -38957,6 +39333,208 @@
       "type": "multiple_choice",
       "typeRaw": "多项选择题",
       "year": 2010
+    },
+    {
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "土地法和房地产法",
+      "chapterConfidence": "low",
+      "chapterOfficial": "土地法和房地产法",
+      "difficulty": null,
+      "explanation": "本题考察商品房预售条件。\nA 项：《城市房地产管理法》第 45 条第 1 款第(四)项规定：“商品房预售，应当符合下\n列条件：(四)向县级以上人民政府房产管理部门办理预售登记，取得商品房预售许可证\n明。”由此可知 A 项表述符合法律规定。\nB 项：《预售商品房认购书》独立于商品房预售合同，《预售商品房认购书》规定的权\n利义务只是条件具备时，当事人应当签订商品房预售合同，不以取得商品房销售许可证为条\n件，B 项正确。\nC 项：本案中，双方签订商品房预售合同时，公司已经取得商品房预售许可证，具备了\n商品房预售的法定条件，C 项正确。\nD 项：《合同法》第 60 条第 1 款规定：“当事人应当按照约定全面履行自己的义\n务。”由此可知，即使因施工进度及竣工交付日期变化的，房地产开发公司也应当按照合同\n约定全面履行义务，不得将房屋另售他人，D 项错误。",
+      "id": "law:fakao-app:2010年客观题-卷一#一#95",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "法律规定，取得商品房预售许可证是商品房预售的必备条件之一"
+        },
+        {
+          "label": "B",
+          "text": "《预售商品房认购书》不是商品房预售合同，不以取得商品房销售许可证为条件"
+        },
+        {
+          "label": "C",
+          "text": "双方签订商品房预售合同时，公司已具备商品房预售的法定条件，该合同有效"
+        },
+        {
+          "label": "D",
+          "text": "因施工进度及竣工交付日期变化的，房屋可另售他人"
+        }
+      ],
+      "source": {
+        "nativeId": "2010年客观题-卷一#一#95",
+        "path": "真题库/客观题/2010年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "2010 年 1 月，高某与某房地产开发公司签订了一份《预售商品房认购书》。《认购 书》约定，公司为高某预留所选房号，双方于公司取得商品房预售许可证时正式签订商品房 预售合同。《认购书》还约定，认购人于签订认购书时缴纳“保证金”一万元，该款于双方 签订商品房预售合同时自动转为合同定金，如认购人接到公司通知后七日内不签订商品房预 售合同，则该款不予退还。同年 2 月，高某接到公司已经取得商品房预售许可证的通知，立 即前往公司签订了商品房预售合同，并当场缴纳了首期购房款 80 万元。同年 5 月，高某接 到公司通知：房屋预售合同解除。经了解，该套房屋已经被公司以更高价格出售给第三人。 双方发生争议。公司主张，双方在签订《预售商品房认购书》时，公司尚未取得商品房预售 许可证，故该《认购书》无效，以此为基础订立的商品房预售合同也应无效。对此，下列判 断正确的是：",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2010"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2010
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "土地法和房地产法",
+      "chapterConfidence": "high",
+      "chapterOfficial": "土地法和房地产法",
+      "difficulty": null,
+      "explanation": "本题考查商品房预售合同。\n合同，自成立时生效。法律、行政法规规定应当办理批准、登记等手续生效的，依照其规\n定。”《城市房地产管理法》第 45 条第 2 款规定：“商品房预售人应当按照国家有关规定\n将预售合同报县级以上人民政府房产管理部门和土地管理部门登记备案。”由此可知登记备\n案是商品房预售人的义务，且登记备案不是该合同的生效要件，该合同已生效应受法律保\n护。ACD 项说法错误，B 项说法正确。",
+      "id": "law:fakao-app:2010年客观题-卷一#一#96",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "登记备案是商品房预售合同的法定生效要件，该合同未经登记备案不受法律保护"
+        },
+        {
+          "label": "B",
+          "text": "登记备案是商品房预售人的法定义务，但不是合同的生效条件，该合同应受法律保护"
+        },
+        {
+          "label": "C",
+          "text": "登记备案是商品房预售合同当事人的权利，未登记备案不影响该合同的效力"
+        },
+        {
+          "label": "D",
+          "text": "商品房预售合同无需登记备案，当事人在房屋交付时办理产权登记即可"
+        },
+        {
+          "label": "A",
+          "text": "B、D 项考查商品房预售合同的生效条件。《合同法》第 44 条规定：“依法成立的"
+        }
+      ],
+      "source": {
+        "nativeId": "2010年客观题-卷一#一#96",
+        "path": "真题库/客观题/2010年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "2010 年 1 月，高某与某房地产开发公司签订了一份《预售商品房认购书》。《认购 书》约定，公司为高某预留所选房号，双方于公司取得商品房预售许可证时正式签订商品房 预售合同。《认购书》还约定，认购人于签订认购书时缴纳“保证金”一万元，该款于双方 签订商品房预售合同时自动转为合同定金，如认购人接到公司通知后七日内不签订商品房预 售合同，则该款不予退还。同年 2 月，高某接到公司已经取得商品房预售许可证的通知，立 即前往公司签订了商品房预售合同，并当场缴纳了首期购房款 80 万元。同年 5 月，高某接 到公司通知：房屋预售合同解除。经了解，该套房屋已经被公司以更高价格出售给第三人。 双方发生争议。公司还主张，公司在解除商品房预售合同时，该合同尚未报区政府房地产管 理局备案，故不受法律保护。对此，下列判断正确的是：",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2010"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2010
+    },
+    {
+      "answer": [
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "土地法和房地产法",
+      "chapterConfidence": "low",
+      "chapterOfficial": "土地法和房地产法",
+      "difficulty": null,
+      "explanation": "本题考查违约责任。\n本题中，《预售商品房认购书》与商品房预售合同是独立的有效合同，均具有约束力，\n因此 AB 项说法错误。\n《合同法》第 107 条规定：“当事人一方不履行合同义务或者履行合同义务不符合约定\n的，应当承担继续履行、采取补救措施或者赔偿损失等违约责任。”第 115 条规定：“当事\n人可以依照《中华人民共和国担保法》约定一方向对方给付定金作为债权的担保。债务人履\n行债务后，定金应当抵作价款或者收回。给付定金的一方不履行约定的债务的，无权要求返\n还定金；收受定金的一方不履行约定的债务的，应当双倍返还定金。”本案中，开发商违约\n应当双倍返还定金，对于给高某造成的损失，高某有权请求开发商进行赔偿，CD 项正确。",
+      "id": "law:fakao-app:2010年客观题-卷一#一#97",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "商品房预售合同无约束力，只能按公司的意见办理退款"
+        },
+        {
+          "label": "B",
+          "text": "商品房预售合同有效，但《预售商品房认购书》无效，故应按公司的意见办理退款"
+        },
+        {
+          "label": "C",
+          "text": "《预售商品房认购书》和商品房预售合同均有效，应该支持高某的主张"
+        },
+        {
+          "label": "D",
+          "text": "开发商违约，高某有权请求赔偿损失"
+        }
+      ],
+      "source": {
+        "nativeId": "2010年客观题-卷一#一#97",
+        "path": "真题库/客观题/2010年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "2010 年 1 月，高某与某房地产开发公司签订了一份《预售商品房认购书》。《认购 书》约定，公司为高某预留所选房号，双方于公司取得商品房预售许可证时正式签订商品房 预售合同。《认购书》还约定，认购人于签订认购书时缴纳“保证金”一万元，该款于双方 签订商品房预售合同时自动转为合同定金，如认购人接到公司通知后七日内不签订商品房预 售合同，则该款不予退还。同年 2 月，高某接到公司已经取得商品房预售许可证的通知，立 即前往公司签订了商品房预售合同，并当场缴纳了首期购房款 80 万元。同年 5 月，高某接 到公司通知：房屋预售合同解除。经了解，该套房屋已经被公司以更高价格出售给第三人。 双方发生争议。经双方协商，高某同意解除商品房预售合同。但在款项支付问题上，双方发 生分歧。高某要求返还 80 万元首期房款本息并双倍返还定金。公司主张只退还 80 万元首期 房款和一万元“保证金”。对此，下列判断正确的是：",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2010"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2010
+    },
+    {
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "土地法和房地产法",
+      "chapterConfidence": "high",
+      "chapterOfficial": "土地法和房地产法",
+      "difficulty": null,
+      "explanation": "A 选项，《土地管理法》第五十四条规定，下列建设用地，经县级以上人民政府依法批\n准，可以以划拨方式取得：（一）国家机关用地和军事用地；（二）城市基础设施用地和公\n益事业用地；（三）国家重点扶持的能源、交通、水利等基础设施用地；（四）法律、行政\n法规规定的其他用地。《城市房地产管理法》第二十三条第二款规定，商业、旅游、娱乐和\n豪华住宅用地，有条件的，必须采取拍卖、招标方式；没有条件，不能采取拍卖、招标方式\n的，可以采取双方协议的方式。“经营性墓地”是商业用地，不能通过划拨方式取得土地使\n用权。A 项正确。\nB 选项，《土地管理法》第五十五条第一款规定，以出让等有偿使用方式取得国有土地\n使用权的建设单位，按照国务院规定的标准和办法，缴纳土地使用权出让金等土地有偿使用\n费和其他费用后，方可使用土地。因此，应当先缴费后用地。B 项正确。\nC 选项，《土地管理法》第五十六条规定，建设单位使用国有土地的，应当按照土地使\n用权出让等有偿使用合同的约定或者土地使用权划拨批准文件的规定使用土地；确需改变该\n幅土地建设用途的，应当经有关人民政府土地行政主管部门同意，报原批准用地的人民政府\n批准。其中，在城市规划区内改变土地用途的，在报批前，应当先经有关城市规划行政主管\n部门同意。C 项正确。\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\nD 选项，《土地管理法》第五十七条第二、三款规定，临时使用土地的使用者应当按照\n临时使用土地合同约定的用途使用土地，并不得修建永久性建筑物。临时使用土地期限一般\n不超过二年。D 项正确。",
+      "id": "law:fakao-app:2011年客观题-卷一#一#55",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲公司在市郊申请使用一片国有土地修建经营性墓地，市政府批准其以划拨方式取得"
+        },
+        {
+          "label": "B",
+          "text": "乙公司投标取得一块商品房开发用地的出让土地使用权，市政府同意其在房屋建成销"
+        },
+        {
+          "label": "C",
+          "text": "丙公司以出让方式在本市规划区取得一块工业用地，市国土局在未征得市规划局同意"
+        },
+        {
+          "label": "D",
+          "text": "丁公司在城市规划区取得一块临时用地，使用已达 6 年，并在该处修建了永久性建"
+        }
+      ],
+      "source": {
+        "nativeId": "2011年客观题-卷一#一#55",
+        "path": "真题库/客观题/2011年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某市政府在土地管理中的下列哪些行为违反了《土地管理法》的规定？",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2011"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2011
     },
     {
       "answer": [
@@ -39010,51 +39588,99 @@
     },
     {
       "answer": [
-        "C"
+        "A"
       ],
       "answerText": null,
-      "chapter": "消费者法",
+      "chapter": "银行业法",
       "chapterConfidence": "high",
-      "chapterOfficial": "消费者法",
+      "chapterOfficial": "银行业法",
       "difficulty": null,
-      "explanation": "本题考查发现安全问题食品的处理办法。依据《食品安全法》第 53 条第 2 款规定：\n“食品经营者发现其经营的食品不符合食品安全标准，应当立即停止经营，通知相关生产经\n营者和消费者，并记录停止经营和通知情况。食品生产者认为应当召回的，应当立即召\n回。”ABD 项正确，不选。C 项考查召回，食品召回的主体是食品生产者，不是食品经营\n者，C 项说法错误，应选。",
-      "id": "law:fakao-app:2011年客观题-卷二#二#28",
+      "explanation": "本题考查《银行业监督管理法》的适用范围。\n《银行业监督管理法》第二条第三款规定，对在中华人民共和国境内设立的金融资产管\n理公司、信托投资公司、财务公司、金融租赁公司以及经国务院银行业监督管理机构批准设\n立的其他金融机构的监督管理，适用本法对银行业金融机构监督管理的规定。因此，信托投\n资公司、金融资产管理公司、财务公司和金融租赁公司均适用《银行业监督管理法》的规\n定。A 项正确，B、C、D 项错误。",
+      "id": "law:fakao-app:2011年客观题-卷一#一#72",
       "knowledgePoints": [],
       "options": [
         {
           "label": "A",
-          "text": "立即停止经营该品牌水饺"
+          "text": "信托投资公司适用本法"
         },
         {
           "label": "B",
-          "text": "通知该品牌水饺生产商和消费者"
+          "text": "金融租赁公司不适用本法"
         },
         {
           "label": "C",
-          "text": "召回已销售的该品牌水饺"
+          "text": "金融资产管理公司不适用本法"
         },
         {
           "label": "D",
-          "text": "记录停止经营和通知情况"
+          "text": "财务公司不适用本法"
         }
       ],
       "source": {
-        "nativeId": "2011年客观题-卷二#二#28",
-        "path": "真题库/客观题/2011年客观题-卷二.md",
+        "nativeId": "2011年客观题-卷一#一#72",
+        "path": "真题库/客观题/2011年客观题-卷一.md",
         "repo": "fakao-app",
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
-      "stem": "红星超市发现其经营的“荷叶牌”速冻水饺不符合食品安全标准，拟采取的下列哪 一措施是错误的？",
+      "stem": "关于《银行业监督管理法》的适用范围，下列哪一说法是正确的？",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2011"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2011
+    },
+    {
+      "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "竞争法",
+      "chapterConfidence": "high",
+      "chapterOfficial": "竞争法",
+      "difficulty": null,
+      "explanation": "A 项考查模仿、混淆行为是否属于正当竞争行为。不正当竞争经营者有悖于商业道德且\n违反法律规定的市场竞争行为。正当竞争符合商业道德，不具有违法性。该行为是不正当竞\n争行为，不选 A。\nB 项考查商业秘密。依据《反不正当竞争法》第 10 条规定：“经营者不得采用下列手段\n侵犯商业秘密：（1）以盗窃、利诱、胁迫或者其他不正当手段获取权利人的商业秘密；\n（2）披露、使用或者允许他人使用以前项手段获取的权利人的商业秘密；（3）违反约定或\n者违反权利人有关保守商业秘密的要求，披露、使用或者允许他人使用其所掌握的商业秘\n密。\n商业秘密，“秘密”者，不为人所知也。“大队长酒楼”经营特色不属商业秘密，“牛\n记酒楼”不构成侵犯商业秘密。B 项错误。\nC 项考查混淆行为。所谓混淆行为，是指经营者在经营活动中，以种种伪造或不实手段\n对自己的商品或服务作虚假表示、承诺或说明，或利用他人的设计包装、商业模式等推销自\n己的商品或服务，使用户或消费者产生误解，进而扰乱市场秩序、损害消费者利益的行为。\n根据《反不正当竞争法》第 5 条的规定，混淆行为包括以下 4 种：（1）假冒他人的注册商\n标；（2）擅自使用知名商品特有的名称、包装、装潢，或者使用与知名商品近似的名称、\n包装、装潢，造成和他人的知名商品相混淆，使购买者误认为是该知名商品；（3）擅自使\n用他人的企业名称或者姓名，引人误认为是他人的商品；（4）在商品上伪造或者冒用认证\n标志、名优标志等质量标志，伪造产地，对商品质量作引人误解的虚假表示。“牛记酒楼”\n全盘照搬照抄的行为是典型的混淆行为。C 项正确。\nD 项考查虚假宣传行为。依据《反不正当竞争法》第 9 条规定，“经营者不得利用广告\n或者其他方法，对商品的质量、制作成分、性能、用途、生产者、有效期限、产地等作引人\n误解的虚假宣传”。“牛记酒楼”不构成虚假宣传。D 项错误。（本题答案：C）",
+      "id": "law:fakao-app:2012年客观题-卷一#一#27",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "正当的竞争行为"
+        },
+        {
+          "label": "B",
+          "text": "侵犯商业秘密行为"
+        },
+        {
+          "label": "C",
+          "text": "混淆行为"
+        },
+        {
+          "label": "D",
+          "text": "虚假宣传行为"
+        }
+      ],
+      "source": {
+        "nativeId": "2012年客观题-卷一#一#27",
+        "path": "真题库/客观题/2012年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某县“大队长酒楼”自创品牌后声名渐隆，妇孺皆知。同县的“牛记酒楼”经暗访 发现，“大队长酒楼”经营特色是，服务员统一着上世纪 60 年代服装，播放该年代歌曲， 店堂装修、菜名等也具有时代印记。“牛记酒楼”遂改名为“老社长酒楼”，服装、歌曲、 装修、菜名等一应照搬。根据《反不正当竞争法》的规定，“牛记酒楼”的行为属于下列哪 一种行为？",
       "subjectId": "jingjifa",
       "tags": [
         "fakao-app",
         "md-真题",
         "section:单项选择题",
-        "year:2011"
+        "year:2012"
       ],
       "type": "single_choice",
       "typeRaw": "单项选择题",
-      "year": 2011
+      "year": 2012
     },
     {
       "answer": [
@@ -39062,7 +39688,7 @@
       ],
       "answerText": null,
       "chapter": "银行业法",
-      "chapterConfidence": "low",
+      "chapterConfidence": "high",
       "chapterOfficial": "银行业法",
       "difficulty": null,
       "explanation": "本题考查商业银行信用危机的处置规则。依据《银行业监督管理法》第 38 条规定，银\n行业金融机构已经或者可能发生信用危机，严重影响存款人和其他客户合法权益的，国务院\n银行业监督管理机构可以依法对该银行业金融机构实行接管或者促成机构重组，接管和机构\n重组依照有关法律和国务院的规定执行。据此，B、C、D 正确，A 项可能发生也属于处置范\n围，故错误。（本题答案：A）",
@@ -39093,6 +39719,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "根据《银行业监督管理法》，国务院银行业监督管理机构有权对银行业金融机构的 信用危机依法进行处置。关于处置规则，下列哪一说法是错误的？",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2012"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2012
+    },
+    {
+      "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "消费者法",
+      "chapterConfidence": "high",
+      "chapterOfficial": "消费者法",
+      "difficulty": null,
+      "explanation": "本题考查《服务贸易总协定》规定的服务贸易方式。《服务贸易总协定》规定了跨境供\n应、境外消费、商业存在、自然人存在四种服务贸易方式。跨境供应是指从一国境内直接向\n其他国境内提供服务——服务产品的流动(不需要提供者和消费者的实际流动)。境外消费是\n指在一国境内向其他国的服务消费者提供服务——消费者的流动。商业存在是指外国实体在\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n另一国境内设立附属公司或分支机构，提供服务。自然人存在即一国的服务提供商通过自然\n人到其他国境内提供服务——自然人流动。A 项中国某运动员应聘到美国担任体育教练属于\n自然人的存在；B 项中国某旅行公司组团到泰国旅游属于境外消费；C 项加拿大某银行在中\n国设立分支机构属于商业存在；D 项中国政府援助非洲某国一笔资金不属于四种服务贸易方\n式之一。",
+      "id": "law:fakao-app:2012年客观题-卷一#一#40",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "中国某运动员应聘到美国担任体育教练"
+        },
+        {
+          "label": "B",
+          "text": "中国某旅行公司组团到泰国旅游"
+        },
+        {
+          "label": "C",
+          "text": "加拿大某银行在中国设立分支机构"
+        },
+        {
+          "label": "D",
+          "text": "中国政府援助非洲某国一笔资金"
+        }
+      ],
+      "source": {
+        "nativeId": "2012年客观题-卷一#一#40",
+        "path": "真题库/客观题/2012年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "《服务贸易总协定》规定了服务贸易的方式，下列哪一选项不属于协定规定的服务 贸易？",
       "subjectId": "jingjifa",
       "tags": [
         "fakao-app",
@@ -39153,6 +39827,406 @@
     },
     {
       "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "银行业法",
+      "chapterConfidence": "high",
+      "chapterOfficial": "银行业法",
+      "difficulty": null,
+      "explanation": "本题考查商业银行的分支机构。依据《商业银行法》第 19 条规定，商业银行根据业务\n需要可以在中华人民共和国境内外设立分支机构。设立分支机构必须经国务院银行业监督管\n理机构审查批准。在中华人民共和国境内的分支机构，不按行政区划设立。商业银行在中华\n人民共和国境内设立分支机构，应当按照规定拨付与其经营规模相适应的营运资金额。拨付\n各分支机构营运资金额的总和，不得超过总行资本金总额的百分之六十。据此，A、B、D 项\n错误，应选。第 22 条规定，商业银行对其分支机构实行全行统一核算，统一调度资金，分\n级管理的财务制度。商业银行分支机构不具有法人资格，在总行授权范围内依法开展业务，\n其民事责任由总行承担。C 项说法正确，不选。（本题答案：ABD）",
+      "id": "law:fakao-app:2012年客观题-卷一#一#66",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "在中国境内应当按行政区划设立"
+        },
+        {
+          "label": "B",
+          "text": "经地方政府批准即可设立"
+        },
+        {
+          "label": "C",
+          "text": "分支机构不具有法人资格"
+        },
+        {
+          "label": "D",
+          "text": "拨付各分支机构营运资金额的总和，不得超过总行资本金总额的 70%"
+        }
+      ],
+      "source": {
+        "nativeId": "2012年客观题-卷一#一#66",
+        "path": "真题库/客观题/2012年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据《商业银行法》，关于商业银行分支机构，下列哪些说法是错误的？",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2012"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2012
+    },
+    {
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "银行业法",
+      "chapterConfidence": "high",
+      "chapterOfficial": "银行业法",
+      "difficulty": null,
+      "explanation": "本题考查商业银行的设立和变更。依据《商业银行法》第 13 条第 2 款规定，国务院银\n行业监督管理机构根据审慎监管的要求可以调整注册资本最低限额，但不得少于前款规定的\n限额。也就是说，银监会可以提出更高的限额。A 项说法正确。\nB 项考查商业银行的组织形式。依据《商业银行法》第 17 条第 1 款规定，商业银行的组\n织形式、组织机构适用《中华人民共和国公司法》的规定。B 项正确。\nC 项考查商业银行的分立、合并。依据《商业银行法》第 25 条规定，商业银行的分立、\n合并，适用《公司法》的规定。C 项错误。\nD 项考查商业银行的投资人的审批制度。依据《商业银行法》第 28 条规定，任何单位\n和个人购买商业银行股份总额百分之五以上的，应当事先经国务院银行业监督管理机构批\n准。D 项正确。（本题答案：ABD）",
+      "id": "law:fakao-app:2012年客观题-卷一#一#67",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "国务院银行业监督管理机构可以根据审慎监管的要求，在法定标准的基础上提高商业"
+        },
+        {
+          "label": "B",
+          "text": "商业银行的组织形式、组织机构适用《公司法》"
+        },
+        {
+          "label": "C",
+          "text": "商业银行的分立、合并不适用《公司法》"
+        },
+        {
+          "label": "D",
+          "text": "任何单位和个人购买商业银行股份总额 5%以上的，应事先经国务院银行业监督管理机"
+        }
+      ],
+      "source": {
+        "nativeId": "2012年客观题-卷一#一#67",
+        "path": "真题库/客观题/2012年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据《商业银行法》，关于商业银行的设立和变更，下列哪些说法是正确的？",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2012"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2012
+    },
+    {
+      "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "土地法和房地产法",
+      "chapterConfidence": "high",
+      "chapterOfficial": "土地法和房地产法",
+      "difficulty": null,
+      "explanation": "关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n本题考查划拨土地转让问题。依据《城市房地产管理法》第 40 条规定，以划拨方式取\n得土地使用权的，转让房地产时，应当按照国务院规定，报有批准权的人民政府审批。有批\n准权的人民政府准予转让的，应当由受让方办理土地使用权出让手续，并依照国家有关规定\n缴纳土地使用权出让金。A、B 项错误，C 项正确。\nD 项考查取得出让土地后的开发问题。依据《城市房地产管理法》第 28 条规定，依法\n取得的土地使用权，可以依照本法和有关法律、行政法规的规定，作价入股，合资、合作开\n发经营房地产。D 项错误。",
+      "id": "law:fakao-app:2012年客观题-卷一#一#92",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "将划拨土地使用权转为出让土地使用权后再行转让属于土地投机，为法律所禁止"
+        },
+        {
+          "label": "B",
+          "text": "乙公司应当先将划拨土地使用权转让给玫园公司，然后由后者向政府申请办理土地使"
+        },
+        {
+          "label": "C",
+          "text": "该土地使用权由划拨转为出让，应当报有批准权的政府审批，经批准后方可办理土地"
+        },
+        {
+          "label": "D",
+          "text": "如乙公司取得该地块的出让土地使用权，则只能自己进行开发，不能与他人合作开发"
+        }
+      ],
+      "source": {
+        "nativeId": "2012年客观题-卷一#一#92",
+        "path": "真题库/客观题/2012年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲房地产公司与乙国有工业公司签订《合作协议》，在乙公司原有的仓库用地上开 发商品房。双方约定，共同成立“玫园置业有限公司”（以下简称“玫园公司”）。甲公司 投入开发资金，乙公司负责将该土地上原有的划拨土地使用权转变为出让土地使用权，然后 将出让土地使用权作为出资投入玫园公司。 玫园公司与丙劳务派遣公司签订协议，由其派遣王某到玫园公司担任保洁员。不久， 甲、乙产生纠纷，经营停顿。玫园公司以签订派遣协议时所依据的客观情况发生重大变化为 由，将王某退回丙公司，丙公司遂以此为由解除王某的劳动合同。关于该土地使用权由划拨 转为出让，下列说法正确的是：",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2012"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2012
+    },
+    {
+      "answer": [
+        "A"
+      ],
+      "answerText": null,
+      "chapter": "土地法和房地产法",
+      "chapterConfidence": "high",
+      "chapterOfficial": "土地法和房地产法",
+      "difficulty": null,
+      "explanation": "A 项考查房地产开发合同。依据《城市房地产管理法》第 2 条规定，房地产开发，是指\n在依据本法取得国有土地使用权的土地上进行基础设施、房屋建设的行为。本题甲房地产公\n司与乙国有工业公司签订《合作协议》，开发商品房。A 项正确。\nBCD 项从不同角度考查合作协议的性质据此，此协议是房地产开发合同。其中，房地产\n转让显然不符，C 项土地转让也不符，D 项国有资产合作经营也不符，法律上没有这一说\n法，D 项错误。",
+      "id": "law:fakao-app:2012年客观题-卷一#一#93",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "房地产开发合同"
+        },
+        {
+          "label": "B",
+          "text": "房地产转让合同"
+        },
+        {
+          "label": "C",
+          "text": "土地使用权转让合同"
+        },
+        {
+          "label": "D",
+          "text": "国有资产合作经营合同"
+        }
+      ],
+      "source": {
+        "nativeId": "2012年客观题-卷一#一#93",
+        "path": "真题库/客观题/2012年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲房地产公司与乙国有工业公司签订《合作协议》，在乙公司原有的仓库用地上开 发商品房。双方约定，共同成立“玫园置业有限公司”（以下简称“玫园公司”）。甲公司 投入开发资金，乙公司负责将该土地上原有的划拨土地使用权转变为出让土地使用权，然后 将出让土地使用权作为出资投入玫园公司。 玫园公司与丙劳务派遣公司签订协议，由其派遣王某到玫园公司担任保洁员。不久， 甲、乙产生纠纷，经营停顿。玫园公司以签订派遣协议时所依据的客观情况发生重大变化为 由，将王某退回丙公司，丙公司遂以此为由解除王某的劳动合同。关于甲、乙双方签订的 《合作协议》的性质，下列选项正确的是：",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2012"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2012
+    },
+    {
+      "answer": [
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "土地法和房地产法",
+      "chapterConfidence": "high",
+      "chapterOfficial": "土地法和房地产法",
+      "difficulty": null,
+      "explanation": "A 项考查用工单位能否将劳动者退回劳务派遣公司。依据《劳动合同法》第 65 条第 2\n款过多，被派遣劳动者有本法第 39 条和第 40 条第 1 项、第 2 项规定情形的，用工单位可以\n将劳动者退回劳务派遣单位，劳务派遣单位依照本法有关规定，可以与劳动者解除劳动合\n同。题中王某没有类似法律规定的情形，用工单位无权退回。A 项错误。\nB 项扣除劳动合同解除。依据《劳动合同法》第 40 条规定，有下列情形之一的，用人单\n位提前 30 日以书面形式通知劳动者本人或者额外支付劳动者一个月工资后，可以解除劳动\n合同：（1）劳动者患病或者非因工负伤，在规定的医疗期满后不能从事原工作，也不能从\n事由用人单位另行安排的工作的；（2）劳动者不能胜任工作，经过培训或者调整工作岗\n位，仍不能胜任工作的；（3）劳动合同订立时所依据的客观情况发生重大变化，致使劳动\n合同无法履行，经用人单位与劳动者协商，未能就变更劳动合同内容达成协议的。题中王某\n没有类似法律规定的情形，用人单位无权解除劳动合同。B 项错误。\n定，用人单位违反本法规定解除或者终止劳动合同，劳动者要求继续履行劳动合同的，用人\n单位应当继续履行；劳动者不要求继续履行劳动合同或者劳动合同已经不能继续履行的，用\n人单位应当依照本法第 87 条规定支付赔偿金。C、D 正确。",
+      "id": "law:fakao-app:2012年客观题-卷一#一#96",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "玫园公司有权将王某退回丙公司"
+        },
+        {
+          "label": "B",
+          "text": "丙公司有权解除与王某的劳动合同"
+        },
+        {
+          "label": "C",
+          "text": "王某有权要求丙公司继续履行劳动合同"
+        },
+        {
+          "label": "D",
+          "text": "王某如不愿回到丙公司，有权要求其支付赔偿金"
+        },
+        {
+          "label": "C",
+          "text": "D 项考查用人单位违法解除劳动合同的法律责任。依据《劳动合同法》第 48 条规"
+        }
+      ],
+      "source": {
+        "nativeId": "2012年客观题-卷一#一#96",
+        "path": "真题库/客观题/2012年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲房地产公司与乙国有工业公司签订《合作协议》，在乙公司原有的仓库用地上开 发商品房。双方约定，共同成立“玫园置业有限公司”（以下简称“玫园公司”）。甲公司 投入开发资金，乙公司负责将该土地上原有的划拨土地使用权转变为出让土地使用权，然后 将出让土地使用权作为出资投入玫园公司。 玫园公司与丙劳务派遣公司签订协议，由其派遣王某到玫园公司担任保洁员。不久， 甲、乙产生纠纷，经营停顿。玫园公司以签订派遣协议时所依据的客观情况发生重大变化为 由，将王某退回丙公司，丙公司遂以此为由解除王某的劳动合同。关于王某劳动关系解除问 题，下列选项正确的是：",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2012"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2012
+    },
+    {
+      "answer": [
+        "B",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "竞争法",
+      "chapterConfidence": "low",
+      "chapterOfficial": "竞争法",
+      "difficulty": null,
+      "explanation": "关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\nA 项考查保密协议企业是否需要支付保密费的问题。依据《劳动合同法》第 23 条第 1\n款规定：“用人单位与劳动者可以在劳动合同中约定保守用人单位的商业秘密和与知识产权\n相关的保密事项。”法律并未强制用人单位向劳动者支付保密费用，A 项错误。\nB 项考查竞业禁止。依据《劳动合同法》第 23 条第 2 款规定：“对负有保密义务的劳动\n者，用人单位可以在劳动合同或者保密协议中与劳动者约定竞业限制条款，并约定在解除或\n者终止劳动合同后，在竞业限制期限内按月给予劳动者经济补偿。劳动者违反竞业限制约定\n的，应当按照约定向用人单位支付违约金。”B 项正确。\nC 项考查侵犯商业秘密。依据《反不正当竞争法》第 10 条第 1 款规定：“经营者不得采\n用下列手段侵犯商业秘密：（一）以盗窃、利诱、胁迫或者其他不正当手段获取权利人的商\n业秘密;（二）披露、使用或者允许他人使用以前项手段获取的权利人的商业秘密;（三）违\n反约定或者违反权利人有关保守商业秘密的要求，披露、使用或者允许他人使用其所掌握的\n商业秘密。C 项正确。\nD 项考查第三人侵犯商业秘密的行为。依据《反不正当竞争法》第 10 条第 2 款规定，\n“第三人明知或者应知前款所列违法行为，获取、使用或者披露他人的商业秘密，视为侵犯\n商业秘密。”怎么理解这一条款？只有员工订立有商业秘密保护协议，而又泄漏，用工单位\n一旦使用该技术，即构成侵犯商业秘密，D 项错误。",
+      "id": "law:fakao-app:2013年客观题-卷一#一#65",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "如保密协议只约定保密义务，未约定支付保密费，则保密义务无约束力"
+        },
+        {
+          "label": "B",
+          "text": "如双方未明确约定江某负有竞业限制义务，则江某有权到乙厂工作"
+        },
+        {
+          "label": "C",
+          "text": "如江某违反保密协议的要求，向乙厂披露甲厂的保密技术，则构成侵犯商业秘密"
+        },
+        {
+          "label": "D",
+          "text": "如乙厂能证明其未利诱江某披露甲厂的保密技术，则不构成侵犯商业秘密"
+        }
+      ],
+      "source": {
+        "nativeId": "2013年客观题-卷一#一#65",
+        "path": "真题库/客观题/2013年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲厂与工程师江某签订了保密协议。江某在劳动合同终止后应聘至同行业的乙厂， 并帮助乙厂生产出与甲厂相同技术的发动机。甲厂认为保密义务理应包括竞业限制义务，江 某不得到乙厂工作，乙厂和江某共同侵犯其商业秘密。关于此案，下列哪些选项是正确的？",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2013"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2013
+    },
+    {
+      "answer": [
+        "A",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "银行业法",
+      "chapterConfidence": "high",
+      "chapterOfficial": "银行业法",
+      "difficulty": null,
+      "explanation": "本题考查商业银行的监管措施。依据《银行业监督管理法》第 37 条第 1 款规定，“银\n行业金融机构违反审慎经营规则的，国务院银行业监督管理机构或者其省一级派出机构应当\n责令限期改正；逾期未改正的，或者其行为严重危及该银行业金融机构的稳健运行、损害存\n款人和其他客户合法权益的，经国务院银行业监督管理机构或者其省一级派出机构负责人批\n准，可以区别情形，采取下列措施：（一）责令暂停部分业务、停止批准开办新业务;（二）\n限制分配红利和其他收入;（三）限制资产转让;（四）责令控股股东转让股权或者限制有关\n股东的权利;（五）责令调整董事、高级管理人员或者限制其权利;（六）停止批准增设分支\n机构。”A、C 项正确，B、D 错误。",
+      "id": "law:fakao-app:2013年客观题-卷一#一#69",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "限制分配红利和其他收入"
+        },
+        {
+          "label": "B",
+          "text": "限制工资总额"
+        },
+        {
+          "label": "C",
+          "text": "责令调整高级管理人员"
+        },
+        {
+          "label": "D",
+          "text": "责令减员增效"
+        }
+      ],
+      "source": {
+        "nativeId": "2013年客观题-卷一#一#69",
+        "path": "真题库/客观题/2013年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某商业银行违反审慎经营规则，造成资本和资产状况恶化，严重危及稳健运行，损 害存款人和其他客户合法权益。对此，银行业监督管理机构对该银行依法可采取下列哪些措 施？",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2013"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2013
+    },
+    {
+      "answer": [
+        "B",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "土地法和房地产法",
+      "chapterConfidence": "high",
+      "chapterOfficial": "土地法和房地产法",
+      "difficulty": null,
+      "explanation": "产转让时，土地使用权出让合同载明的权利、义务随之转移。”我国实行房地一体，地上建\n筑物不能脱离土地使用权而单独存在，A 项错误，B 项正确。\nC 项考查受让方改变土地用途是否只需转让方同意。依据《城市房地产管理法》第 44 条\n规定：“以出让方式取得土地使用权的，转让房地产后，受让人改变原土地使用权出让合同\n约定的土地用途的，必须取得原出让方和市、县人民政府城市规划行政主管部门的同意，签\n订土地使用权出让合同变更协议或者重新签订土地使用权出让合同，相应调整土地使用权出\n让金。”C 项错误。\nD 项考查转让土地使用权的使用年限。依据《城市房地产管理法》第 43 条规定，“以\n出让方式取得土地使用权的，转让房地产后，其土地使用权的使用年限为原土地使用权出让\n合同约定的使用年限减去原土地使用者已经使用年限后的剩余年限。”据此，乙公司的土地\n使用权年限为 47 年。又依据《城市房地产管理法》第 22 条第 1 款规定，“土地使用权出让\n合同约定的使用年限届满，土地使用者需要继续使用土地的，应当至迟于届满前一年申请续\n期，除根据社会公共利益需要收回该幅土地的，应当予以批准。经批准准予续期的，应当重\n新签订土地使用权出让合同，依照规定支付土地使用权出让金。”据此，D 项正确。",
+      "id": "law:fakao-app:2013年客观题-卷一#一#72",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "如该楼房已取得房屋所有权证，则甲公司可只转让整幅地块的使用权而不转让该楼房"
+        },
+        {
+          "label": "B",
+          "text": "甲公司在土地使用权出让合同中载明的权利、义务应由乙公司整体承受"
+        },
+        {
+          "label": "C",
+          "text": "乙公司若要改变原土地使用权出让合同约定的土地用途，取得原出让方的同意即可"
+        },
+        {
+          "label": "D",
+          "text": "乙公司受让后，可以在其土地使用权的使用年限满 46 年之前申请续期"
+        },
+        {
+          "label": "A",
+          "text": "B 项考查土地及房屋的转让问题。依据《城市房地产管理法》第 42 条规定：“房地"
+        }
+      ],
+      "source": {
+        "nativeId": "2013年客观题-卷一#一#72",
+        "path": "真题库/客观题/2013年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲公司以出让方式取得某地块 50 年土地使用权，用于建造写字楼。土地使用权满 3 年时，甲公司将该地块的使用权转让给乙公司，但将该地块上已建成的一幢楼房留作自用。 对此，下列哪些选项是正确的？",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2013"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2013
+    },
+    {
+      "answer": [
         "D"
       ],
       "answerText": null,
@@ -39203,12 +40277,62 @@
       "answer": [
         "A",
         "B",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "竞争法",
+      "chapterConfidence": "high",
+      "chapterOfficial": "竞争法",
+      "difficulty": null,
+      "explanation": "本题考查混淆行为。\n混淆行为是指经营者在市场经营活动中，以种种不实手法对自己的商品或服务做虚假表示、说明或承诺，或不当利用他人的智力劳动成果推销自己的商品或服务，使用户或者消费者产生误解，扰乱市场秩序、损害同业竞争者的利益或消费者利益的行为。\n根据《反不正当竞争法》第6条规定：经营者不得实施下列混淆行为，引人误认为是他人商品或者与他人存在特定联系：(一)擅自使用与他人有一定影响的\n商品名称、包装、装潢等相同或者近似的标识；(二)擅自使用他人有一定影响的企业名称(包括简称、字号等)、社会组织名称(包括简称等)、姓名(包括笔名、艺名、译名等);(三)擅自使用他人有一定影响的域名主体部分、网站名称、网页等；(四)其他足以引人误认为是他人商品或者与他人存在特定联系的混淆行为。\n法律、行政规章之所以对知名商品特有的名称、包装、装潢进行保护，是因为商品特有的名称、包装、装潢是权利人创造性劳动的成果，在使用过程中，权利人投入一定的人力财力进行宣传，才使其由普通商品成为知名商品。他人擅自制造、使用销售知名商品特有的名称、包装、装潢，目的在于利用其良好的商品信誉和一定的知名度推销自己的商品或牟取其他非法利益，其不正当性是显而易见的。\n由此可以看出，构成混淆行为的前提必须是“使购买者误认为是该知名商品的”,在 C 选项中，虽然甲模仿了乙厂白酒的包装、装潢等，但是不足以使得消费者误认，所以不构成混淆行为。 C 选项正确。\nA 选项，即使乙厂的包装、装潢未获得外观设计专利，但是商品特有的名称、包装、装潢是权利人创造性劳动的成果，在使用过程中，权利人投入一定的人力财力进行宣传，所以，如果对这种包装、装潢的模仿使购买者误认为是该知名商品，则同样构成混淆行为。因此，A 选项错误。\nB 选项，即使甲厂标明了自己的厂名、厂址、商标，但是依然造成购买者误认的，同样也是混淆行为。因此，B 选项错误。\nD 选项，混淆行为中的“购买者误认”其主体是“一般的购买者”,而不是“长期消费者”。因此 D 选项错误。本题答案为 A、B、D。",
+      "id": "law:fakao-app:2014年客观题#一#65",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "如果乙厂的包装、装潢未获得外观设计专利，则甲厂摹仿行为合法"
+        },
+        {
+          "label": "B",
+          "text": "如果甲厂在包装、装潢上标明了自己的厂名、厂址、商标，则不构成混淆行为"
+        },
+        {
+          "label": "C",
+          "text": "如果甲厂白酒的包装、装潢不足以使消费者误认为是乙厂白酒，则不构成混淆行为"
+        },
+        {
+          "label": "D",
+          "text": "如果乙厂白酒的长期消费者留意之下能够辨别出二者差异，则不构成混淆行为"
+        }
+      ],
+      "source": {
+        "nativeId": "2014年客观题#一#65",
+        "path": "真题库/客观题/2014年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲酒厂为扩大销量，精心摹仿乙酒厂知名白酒的包装、装潢。关于甲厂摹仿行为，下列哪些判断是错误的?",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2014"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2014
+    },
+    {
+      "answer": [
+        "A",
+        "B",
         "C",
         "D"
       ],
       "answerText": null,
       "chapter": "消费者法",
-      "chapterConfidence": "low",
+      "chapterConfidence": "high",
       "chapterOfficial": "消费者法",
       "difficulty": null,
       "explanation": "消费者有权自主选择提供商品或者服务的经营者，自主选择商品品种或者服务方式，自主决定购买或者不购买任何一种商品、接受或者不接受任何一项服务。消费者在自主选择商品或者服务时，有权进行比较、鉴别和挑选。题中甲公司的防“跳单”条款本身并没有剥夺消费者的自主选择权。因此  A 选项错误，当选。\n侵犯公平交易权的构成要件有两个，主观上：经营者强迫消费者进行交易；客观上：侵犯了质量、价格、计量等内容，题中甲公司抬高房价的行为并没有强迫消费者进行交易。因此没有侵害消费者的公平交易权，故 B 选项错误，当选。\n不正当竞争行为共有七种，行为主体构成不正当竞争其主观上有不正当竞争的恶意，而题中的乙公司并没有恶意只是正常的商业行为。因此C 选项错误，当选。\n如前所述，侵犯商业秘密作为不正当竞争的一种行为，其主观上必须有恶意，但是题中钱某并没有侵犯商业秘密的恶意；同时，商业秘密具有四性即秘密性、价值性、实用性、保密性，很显然，对于房源信息甲公司并没有采取积极的保密措施。因此房源信息根本不构成商业秘密，连商业秘密都构不上更不用说侵犯商业秘密了。因此D 选项错误，当选。",
@@ -39301,54 +40425,6 @@
     },
     {
       "answer": [
-        "A"
-      ],
-      "answerText": null,
-      "chapter": "土地法和房地产法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "土地法和房地产法",
-      "difficulty": null,
-      "explanation": "2013年6月8日，张某、方某与乙公司签订了《合作协议二》,对继续合作开发房地产项目做了新的安排。这份协议对于签约方来讲，属于真实的意思表示，内容合法，当然是有效的，故 A 项正确，当选；B、C项错误。但是，根据合同相对性原理，《合作协议二》虽然在签约方之间系有效的，但关于“本协议签订之日，《合作协议一》自动作废。”的约定不产生效力，因为《合作协议一》还涉及其他方。据此可知 D 项错误，不当选。综上，本题答案为A 项。",
-      "id": "law:fakao-app:2014年客观题#三#90",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "有效"
-        },
-        {
-          "label": "B",
-          "text": "无效"
-        },
-        {
-          "label": "C",
-          "text": "可变更"
-        },
-        {
-          "label": "D",
-          "text": "《合作协议一》被《合作协议二》取代"
-        }
-      ],
-      "source": {
-        "nativeId": "2014年客观题#三#90",
-        "path": "真题库/客观题/2014年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "关于张某、方某与乙公司签订的《合作协议二》,下列表述正确的是：",
-      "subjectId": "jingjifa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2014"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2014
-    },
-    {
-      "answer": [
         "A",
         "B",
         "C"
@@ -39435,6 +40511,105 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "甲县善福公司(简称甲公司)的前身为创始于清末的陈氏善福铺，享誉百年，陈某继承祖业后注册了该公司，并规范使用其商业标识。乙县善福公司(简称乙公司)系张某先于甲公司注册，且持有“善福100”商标权。乙公司在其网站登载善福铺的历史及荣誉，还在其产品包装标注 “百年老牌”“创始于清末”等字样，但均未证明其与善福铺存在历史联系。甲、乙公司存在竞争关系。关于此事，下列哪些说法是正确的?",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2016"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2016
+    },
+    {
+      "answer": [
+        "A",
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "银行业法",
+      "chapterConfidence": "low",
+      "chapterOfficial": "银行业法",
+      "difficulty": null,
+      "explanation": "根据《产品质量法》第13条的规定，可能危及人体健康和人身、财产安全的工业产品，必须符合保障人体健康和人身、财产安全的国家标准、行业标准；未制定国家标准、行业标准的，必须符合保障人体健康和人身、财产安全的要求，故 A 项说法正确。根据《产品质量法》第27条的规定，使用不当，容易造成产品本身损坏或者可能危及人身、财产安全的产品，应当有警示标志或者中文警示说明，故B 项说法正确。根据《产品质量法》第15条第3款的规定，根据监督抽查的需要，可以对产品进行检验。检验抽取样品的数量不得超过检验的合理需要，并不得向被检查人收取检验费用。监督抽查所需检验费用按照国务院规定列支，故C 项说法错误。由于并不是产品本身存\n在缺陷 · 而是安装方法有特定的要求，所以不应该召回，也不应当由经营者承担相关费用，故 D 项说法错误。",
+      "id": "law:fakao-app:2016年客观题#一#70",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "该柜质量应符合产品安全性的要求"
+        },
+        {
+          "label": "B",
+          "text": "该柜本身或其包装上应有警示标志或者中文警示说明"
+        },
+        {
+          "label": "C",
+          "text": "质检部门对这种柜子进行抽查，可向该店收取检验费"
+        },
+        {
+          "label": "D",
+          "text": "如该柜被召回，该店应承担购买者因召回支出的全部费用"
+        }
+      ],
+      "source": {
+        "nativeId": "2016年客观题#一#70",
+        "path": "真题库/客观题/2016年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某家具店出售的衣柜，如未被恰当地固定到墙上，可能发生因柜子倾倒致人伤亡的危险。关于此事，下列哪些说法是正确的?",
+      "subjectId": "jingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2016"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2016
+    },
+    {
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "银行业法",
+      "chapterConfidence": "high",
+      "chapterOfficial": "银行业法",
+      "difficulty": null,
+      "explanation": "根据《银行业监督管理法》第2条第3款的规定，对在中华人民共和国境内设立的金融资产管理公司、信托投资公司、财务公司、金融租赁公司以及经国务院银行业监督管理机构批准设立的其他金融机构的监督管理，适用本法对银行业金融机构监督管理的规定，故信托公司应当适用《银行业监督管理法》的有关金融机构监督管理的规定。根据《银行业监督管理法》第21条的规定，银行业金融机构的审慎经营规则，由法律、行政法规规定，也可以由国务院银行业监督管理机构依照法律、行政法规制定。前款规定的审慎经营规则，包括风险管理、内部控制、资本充足率、资产质量、损失准备金、风险集中、关联交易、资产流动性等内容。银行业金融机构应当严格遵守审慎经营规则。因而该公司未按照金融企业会计制度和公司财务规则严格管理和审核资金使用属于违反审慎经营规则的表现，故A 项说法正确。根据《银行业监督管理法》第46条的规定，银行业金融机构有下列情形之\n一 .由国务院银行业监督管理机构责令改正，并处二十万元以上五十万元以下罚款：情节特别严重或者逾期未改正的，可以责令停业整顿或者吊销其经营许可证；构成犯罪的，依法追究刑事责任： ……(五)严重违反审慎经营规则的；故 B 项说法正确，C 项说法错误(金融许可证由银监会吊销)。根据《银行业金融机构董事  (理事)和高级管理人员任职资格管理办法》第29条的\n规定，金融机构有下列情形之一，监管机构可视情节轻重及其后果，取消直接负责的董事(理事)和高级管理人员十年以上直至终身的任职资格：(一)违法违规经\n营，情节特别严重或造成损失数额特别巨大的；(二)内部管理与控制制度不健全或执行监督不力，造成损失数额特别巨大或引发特别重大金融犯罪案件的；(三)严重违反审慎经营规则，造成损失数额特别巨大或引发特别重大金融犯罪案件的； ……,故D 项说法正确。",
+      "id": "law:fakao-app:2016年客观题#一#72",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "该公司严重违反审慎经营规则"
+        },
+        {
+          "label": "B",
+          "text": "银监会可责令该公司停业整顿"
+        },
+        {
+          "label": "C",
+          "text": "国家工商总局可吊销该公司的金融许可证"
+        },
+        {
+          "label": "D",
+          "text": "银监会可取消陈某一定期限直至终身的任职资格"
+        }
+      ],
+      "source": {
+        "nativeId": "2016年客观题#一#72",
+        "path": "真题库/客观题/2016年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "陈某在担任某信托公司总经理期间，该公司未按照金融企业会计制度和公司财务规则严格管理和审核资金使用，违法开展信托业务，造成公司重大损失。对此，陈某负有直接管理责任。关于此事，下列哪些说法是正确的?",
       "subjectId": "jingjifa",
       "tags": [
         "fakao-app",
@@ -39694,61 +40869,11 @@
     },
     {
       "answer": [
-        "A",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "消费者法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "消费者法",
-      "difficulty": null,
-      "explanation": "(1)依《民法典》第397条的规定，以建筑物抵押的，该建筑物占用范围内的建设用地使用权一并抵押。以建设用地使用权抵押的，该土地上的建筑物一并抵押。抵押人未依照前款规定一并抵押的，未抵押的财产视为一并抵押。再依《民法典》第417条的规定，建设用地使用权抵押后，该土地上新增的建筑物不属于抵押财产。该建设用地使用权实现抵押权时，应当将该土地上新增的建筑物与建设用地使用权一并处分，但新增建筑物所得的价款，抵押权人无权优先受偿。本题中，甲公司以一地块的建设用地使\n用权作抵押向乙银行借款3000万元，办理了抵押登记，因为当时地上没有建筑物，所以，乙银行对建设用地使用权拍卖所得价款享有优先受偿权，但乙银行对该住宅楼拍卖所得价款不享有优先受偿权。由此可知本题 A 选项说法正确，B 选项说法错误。\n(2)依《民法典》第807条的规定，发包人未按照约定支付价款的，承包人可以催告发包人在合理期限内支付价款。发包人逾期不支付的.除按照建设工程的性质不宜折价、拍卖的以外，承包人可以与发包人协议将该工程折价，也可以请求人民法院将该工程依法拍卖。建设工程的价款就该工程折价或者拍卖的价款优先受偿。本题中，住宅楼已竣工验收，但甲公司欠付丙公司工程款1500万元，故而丙公司可以与发包人协议将该工程折价，也可以申请法院将该工程依法拍卖；建设工程的价款就该工程折价或者拍卖的价款优先受偿。再依《最高人民法院关于建设工程价款优先受偿权问题的批复》第1条和第2条的规定，人民法院在审理房地产纠纷案件和办理执行案件中，应当依照《合同法》第286条的规定，认定建筑工程的承包人的优先受偿权优于抵押权和其他债权；但是，消费者交付购买商品房的全部或者大部分款项后，承包人就该商品房享有的工程价款优先受偿权不得对抗买受人。由此可知本题 C、D选项说法均正确。",
-      "id": "law:fakao-app:2017年客观题#三#55",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "乙银行对建设用地使用权拍卖所得价款享有优先受偿权"
-        },
-        {
-          "label": "B",
-          "text": "乙银行对该住宅楼拍卖所得价款享有优先受偿权"
-        },
-        {
-          "label": "C",
-          "text": "丙公司对该住宅楼及其建设用地使用权的优先受偿权优先于乙银行的抵押权"
-        },
-        {
-          "label": "D",
-          "text": "丙公司对该住宅楼及其建设用地使用权的优先受偿权不得对抗丁对其所购商品房的权利"
-        }
-      ],
-      "source": {
-        "nativeId": "2017年客观题#三#55",
-        "path": "真题库/客观题/2017年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲公司以一地块的建设用地使用权作抵押向乙银行借款3000万元，办理了抵押登记。其后，甲公司在该地块上开发建设住宅楼，由丙公司承建。甲公司在取得预售许可后与丁订立了 商品房买卖合同，丁交付了80%的购房款。现住宅楼已竣工验收，但甲公司未能按期偿还乙银行借款，并欠付丙公司工程款1500万元，乙银行和丙公司同时主张权利，法院拍卖了该住宅楼。下列哪些选项是正确的?",
-      "subjectId": "jingjifa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2017"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2017
-    },
-    {
-      "answer": [
         "B"
       ],
       "answerText": null,
       "chapter": "竞争法",
-      "chapterConfidence": "low",
+      "chapterConfidence": "high",
       "chapterOfficial": "竞争法",
       "difficulty": null,
       "explanation": "《反垄断法》第十八条规定：“禁止经营者与交易相对人达成下列垄断协议：(一)固定向第三人转售商品的价格；(二)限定向第三人转售商品的最低价格；(三)国务院反垄断执法机构认定的其他垄断协议。”本题中甲公司与乙医院之间既不是经营者与交易相对人之间的关系，又不具有《反垄断法》第十八条所列行为，明显不属于纵向垄断协议行为。 A 项说法错误，不当选。《反不正当竞争法》第七条第一款规定：“经营者不得采用财物或者其他手段贿赂下列单位或者个人，以谋取交易机会或者竞争优势：(一)交易相对方的工作人员；(二)受交易相对方委托办理相关事务的单位或者个人；(三)利用职权或者影响力影响交易的单位或者个人。”就甲公司与病人之间的收费服务，乙医院是对交易有影响力的单位。甲公司通过向乙医院给付项目管理费的方式取得交易机会，且甲未将该笔管理费入账，而乙未如实入账。此行为构成商业贿赂行为。 B  项说法正确，当选。《反不正当竞争法》第七条第二款规定：经营者在交易活动中，可以以明示方式向交易相对方支付折扣，或者向中间人支付佣金。经营者向交易相对方支付折扣、向中间人支付佣金的，应当如实入账。接受折扣、佣金的经营者也应当如实人账。乙医院将1.5万元计入账册“其他业务收入”科目，未给甲公司开具收取项目管理费的票据，不满足如实人账的要求，不构成正当佣金。 C 项说法错误，不当选。甲公司没有将给乙医院的1.5万元项目管理费计人账目，也不满足如实入账的要求，不构成正当的折扣。D 项说法错误，不当选。",
@@ -39868,94 +40993,6 @@
       "type": "unknown",
       "typeRaw": null,
       "year": 2023
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "银行业法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "银行业法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2024年客观题-卷一-卷二-回忆版#一#24",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "甲。乙构成非法提供信用卡信息罪"
-        },
-        {
-          "label": "B",
-          "text": "乙黑吃黑构成盗窃罪"
-        },
-        {
-          "label": "C",
-          "text": "三个人构成妨害信用卡管理罪共犯"
-        },
-        {
-          "label": "D",
-          "text": "乙只需要知道丙在利用信用卡从事信息网络犯罪活动,就可能构成帮助信息网络犯罪活动罪"
-        }
-      ],
-      "source": {
-        "nativeId": "2024年客观题-卷一-卷二-回忆版#一#24",
-        "path": "真题库/客观题/2024年客观题-卷一-卷二-回忆版.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲让乙办4张信用卡给丙从事犯罪活动。丙在使用中。银行的风险系统经过识别。认定丙使用的 银行卡有风险。将其中一张卡冻结。甲。丙让乙将该卡去银行柜合挂失并取出现金。将其中10万元给丙, 剩下的1万元是乙的好处费。乙挂失后。起了贪念。把11万元全部据为已有。甲。丙多次索要乙均不予 返还。下列哪一项是正确的?",
-      "subjectId": "jingjifa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "year:2024",
-        "answer-missing"
-      ],
-      "type": "unknown",
-      "typeRaw": null,
-      "year": 2024
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "消费者法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "消费者法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2024年客观题-卷一-卷二-回忆版#一#87",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "行政处罚法和反不正当竞争法属于同一个法律部门"
-        },
-        {
-          "label": "C",
-          "text": "小过重罚不利于营商环境建设中的可预期性"
-        },
-        {
-          "label": "D",
-          "text": "行政复议不属于法律监督"
-        }
-      ],
-      "source": {
-        "nativeId": "2024年客观题-卷一-卷二-回忆版#一#87",
-        "path": "真题库/客观题/2024年客观题-卷一-卷二-回忆版.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "某商家以购物券诱导消费者消费,被市场监管部门以构成反不正当竞争为由罚款30 万元。商家提 出行政复议。市场监管部门将罚款改为6万元。对此, 下列说法正确的是?",
-      "subjectId": "jingjifa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "year:2024",
-        "answer-missing"
-      ],
-      "type": "unknown",
-      "typeRaw": null,
-      "year": 2024
     },
     {
       "answer": [],

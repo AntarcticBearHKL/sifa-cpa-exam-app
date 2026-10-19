@@ -1879,148 +1879,51 @@
     },
     {
       "answer": [
+        "B",
         "C"
       ],
       "answerText": null,
       "chapter": "国家机构",
-      "chapterConfidence": "high",
-      "chapterOfficial": "国家机构",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2002年客观题卷二#二#11",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "以叛逃罪论处"
-        },
-        {
-          "label": "B",
-          "text": "以叛逃罪和间谍罪论处"
-        },
-        {
-          "label": "C",
-          "text": "以间谍罪论处"
-        },
-        {
-          "label": "D",
-          "text": "以非法获取军事秘密罪论处"
-        }
-      ],
-      "source": {
-        "nativeId": "2002年客观题卷二#二#11",
-        "path": "真题库/客观题/2002年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "某国家机关工作人员甲借到M国探亲的机会滞留 不归。一年后甲受雇于N国的一个专门收集有关中国军 事情报的间谍组织，随后受该组织的指派潜回中国，找 到其在某军区参谋部工作的战友乙，以1万美元的价格 从乙手中购买了3份军事机密材料。对甲的行为应如何 处理?",
-      "subjectId": "xianfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2002"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2002
-    },
-    {
-      "answer": [
-        "A",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "国家的基本制度（上）",
       "chapterConfidence": "low",
-      "chapterOfficial": "国家的基本制度（上）",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2002年客观题卷二#二#40",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "盗窃罪"
-        },
-        {
-          "label": "B",
-          "text": "投毒罪"
-        },
-        {
-          "label": "C",
-          "text": "故意毁坏财物罪"
-        },
-        {
-          "label": "D",
-          "text": "生产、销售有毒、有害食品罪"
-        }
-      ],
-      "source": {
-        "nativeId": "2002年客观题卷二#二#40",
-        "path": "真题库/客观题/2002年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲为获利于某日晚向乙家的羊圈内(共有29只羊) 投放毒药，待羊中毒后将羊运走，并将羊肉出售给他人 。甲的行为构成哪些犯罪?",
-      "subjectId": "xianfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2002"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2002
-    },
-    {
-      "answer": [
-        "A",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "国家机构",
-      "chapterConfidence": "high",
       "chapterOfficial": "国家机构",
       "difficulty": null,
       "explanation": "",
-      "id": "law:fakao-app:2002年客观题卷二#二#46",
+      "id": "law:fakao-app:2002年客观题卷一#一#92",
       "knowledgePoints": [],
       "options": [
         {
           "label": "A",
-          "text": "对甲的行为以拐卖妇女罪论处"
+          "text": "资产评估机构"
         },
         {
           "label": "B",
-          "text": "由于甲尚未出卖乞女，对拐卖妇女罪应认定为"
+          "text": "证券公司"
         },
         {
           "label": "C",
-          "text": "对丙应以聚众阻碍解救被收买的妇女罪论处"
+          "text": "证券交易所"
         },
         {
           "label": "D",
-          "text": "对丙应以拐卖妇女罪的共犯论处"
+          "text": "律师事务所"
         }
       ],
       "source": {
-        "nativeId": "2002年客观题卷二#二#46",
-        "path": "真题库/客观题/2002年客观题卷二.md",
+        "nativeId": "2002年客观题卷一#一#92",
+        "path": "真题库/客观题/2002年客观题卷一.md",
         "repo": "fakao-app",
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
-      "stem": "甲以出卖为目的，将乙女拐骗至外地后关押于 一地下室，并曾强奸乙女。甲在寻找买主的过程中因形 迹可疑被他人告发。国家机关工作人员前往解救时，甲 的朋友丙却聚众阻碍国家机关工作人员的解救行为。对 本案应如柯处理?",
+      "stem": "根据《证券法》的规定，下列哪些机构对客户开立 的账户负有保密的义务?",
       "subjectId": "xianfa",
       "tags": [
         "fakao-app",
         "md-真题",
-        "section:多项选择题",
+        "section:不定项选择题",
         "year:2002"
       ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
       "year": 2002
     },
     {
@@ -2310,104 +2213,6 @@
       ],
       "type": "indefinite_choice",
       "typeRaw": "不定项选择题",
-      "year": 2003
-    },
-    {
-      "answer": [
-        "A",
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "国家机构",
-      "chapterConfidence": "low",
-      "chapterOfficial": "国家机构",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2003年客观题卷二#二#55",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "有权独立进行辩护"
-        },
-        {
-          "label": "B",
-          "text": "有权依法定程序向证人或者其他单位和个人调查取证"
-        },
-        {
-          "label": "C",
-          "text": "有权在第一审判决宣告后，不经乙同意，提出上诉"
-        },
-        {
-          "label": "D",
-          "text": "同甲的辩护人一样，享有独立的同被告人会见和通信"
-        }
-      ],
-      "source": {
-        "nativeId": "2003年客观题卷二#二#55",
-        "path": "真题库/客观题/2003年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲（20岁）和乙（17岁）是盗窃案的同案被告人，现 在押。甲聘请某律师为辩护人，乙的父亲（在国家机关 任现职）担任乙的辩护人。乙的父亲有权行使下列哪些 诉讼权利？",
-      "subjectId": "xianfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2003"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2003
-    },
-    {
-      "answer": [
-        "B",
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "国家机构",
-      "chapterConfidence": "high",
-      "chapterOfficial": "国家机构",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2003年客观题卷二#二#64",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "应当在开庭审判3日以前公告不公开审理的理由"
-        },
-        {
-          "label": "B",
-          "text": "应当在开庭审理时宣布不公开审理的理由"
-        },
-        {
-          "label": "C",
-          "text": "应当公开宣告判决"
-        },
-        {
-          "label": "D",
-          "text": "不应当公开宣告判决"
-        }
-      ],
-      "source": {
-        "nativeId": "2003年客观题卷二#二#64",
-        "path": "真题库/客观题/2003年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "人民法院在受理某泄露国家机密案后，决定不公开审 理。下列说法中正确的有哪些？",
-      "subjectId": "xianfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2003"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
       "year": 2003
     },
     {
@@ -2841,63 +2646,6 @@
     },
     {
       "answer": [
-        "B",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "国家的基本制度（上）",
-      "chapterConfidence": "low",
-      "chapterOfficial": "国家的基本制度（上）",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2005年客观题卷一#一#73",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "甲国 B．乙国"
-        },
-        {
-          "label": "C",
-          "text": "丙国 D．丁国"
-        },
-        {
-          "label": "A",
-          "text": "当事人可在该判决生效后两年内向人民法院提出对"
-        },
-        {
-          "label": "B",
-          "text": "当事人对台湾地区有关法院的判决未申请认可，而"
-        },
-        {
-          "label": "C",
-          "text": "乙公司向人民法院提出认可申请后，甲公司向人民"
-        },
-        {
-          "label": "D",
-          "text": "当事人提出的认可申请被驳回后，再就同一案件事"
-        }
-      ],
-      "source": {
-        "nativeId": "2005年客观题卷一#一#73",
-        "path": "真题库/客观题/2005年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "某村召开村民会议，讨论村民承包地在承包期内收 回问题。根据土地承包法的Äš[ S0W„vÅ`b_ \\ÎWG•=„7b :NÎW^7bãS ºN S0W¤NÞV t„vô‹ÕlêT›N/fcknx„v É‹KNMR„vÅ_Ï~ ^ t³Qš[ N l‹NÉ‹¼‹ É‹¼‹„vöeHegô•:N Nt^ ûN t:g„gybÆQ Nö”Lˆ„v¾‹Ëz R/e:g„g Tv^ Nö”Lˆ„vãce N¾‹Ëz„vô‹ÕlêT›N/fcknx„v 0¡€ýN gP–lQøS è•3u÷‹¾‹Ëz{v°‹ (uýV¡Rb–„vÄš[ N€b/gºNXT N ‘u0 ‘u gÕl‹_9hnc N„v ˜ fÖNìNc g,glQøS¡€hy0:P8R„vÅ`µQ Nt^„vÈv)RÅ`µQFO¡l g¥bJTlQøS*geg Nt^„vÈv)R„˜Km afN ýV~{r†N$NýV’N©RTßvËS}Yag约；丙国允许S国在其首都设 立商业旅游服务机构；丁国与S国共同参加了某项贸易 规则的多边谈判会议。根据国际法的有关规则，上述哪 些国家的行为构成对S国的正式承认？",
-      "subjectId": "xianfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2005"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2005
-    },
-    {
-      "answer": [
         "B"
       ],
       "answerText": null,
@@ -3042,6 +2790,54 @@
     },
     {
       "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "宪法基本理论",
+      "chapterConfidence": "low",
+      "chapterOfficial": "宪法基本理论",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2006年客观题卷一#一#14",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "出生地主义原则"
+        },
+        {
+          "label": "B",
+          "text": "血统主义原则"
+        },
+        {
+          "label": "C",
+          "text": "国籍"
+        },
+        {
+          "label": "D",
+          "text": "以血统主义为主、以出生地主义为辅的原则"
+        }
+      ],
+      "source": {
+        "nativeId": "2006年客观题卷一#一#14",
+        "path": "真题库/客观题/2006年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "下列哪一项是我国宪法界定公民资格的依据？",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2006"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2006
+    },
+    {
+      "answer": [
         "B"
       ],
       "answerText": null,
@@ -3139,51 +2935,52 @@
     },
     {
       "answer": [
+        "A",
         "B",
-        "C"
+        "D"
       ],
       "answerText": null,
-      "chapter": "国家的基本制度（上）",
+      "chapter": "宪法的实施与监督",
       "chapterConfidence": "low",
-      "chapterOfficial": "国家的基本制度（上）",
+      "chapterOfficial": "宪法的实施与监督",
       "difficulty": null,
       "explanation": "",
-      "id": "law:fakao-app:2006年客观题卷二#二#98",
+      "id": "law:fakao-app:2006年客观题卷一#一#62",
       "knowledgePoints": [],
       "options": [
         {
           "label": "A",
-          "text": "对甲应定抢劫罪、对丁应定盗窃罪"
+          "text": "专门机关负责宪法实施的体制起源于1799年法国"
         },
         {
           "label": "B",
-          "text": "对甲、丁的行为应定盗窃罪"
+          "text": "宪法法院和宪法委员会是专门机关负责保障宪"
         },
         {
           "label": "C",
-          "text": "甲、丁都应对5万元承担刑事责任"
+          "text": "我国负责保障宪法实施的专门机关是全国人民"
         },
         {
           "label": "D",
-          "text": "甲对5万元承担刑事责任，丁只对3万元承担刑事"
+          "text": "最早提出设立宪法法院的是奥地利规范法学派"
         }
       ],
       "source": {
-        "nativeId": "2006年客观题卷二#二#98",
-        "path": "真题库/客观题/2006年客观题卷二.md",
+        "nativeId": "2006年客观题卷一#一#62",
+        "path": "真题库/客观题/2006年客观题卷一.md",
         "repo": "fakao-app",
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
-      "stem": "对于甲从丙家的箱子里拿走人民币5万元，丁望 风并分得赃物这一情节，下列何种判断是正确的？",
+      "stem": "专门机关负责保障宪法实施是宪法实施保障体 制的重要形式。有关专门机关负责保障宪法实施的体制 ，下列哪些表述是正确的？",
       "subjectId": "xianfa",
       "tags": [
         "fakao-app",
         "md-真题",
-        "section:不定项选择题",
+        "section:多项选择题",
         "year:2006"
       ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
       "year": 2006
     },
     {
@@ -3221,6 +3018,53 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "关于英国陪审制度，下列哪一选项是错误的？",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2007",
+        "answer-missing"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2007
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": "宪法的实施与监督",
+      "chapterConfidence": "low",
+      "chapterOfficial": "宪法的实施与监督",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2007年客观题卷一#一#14",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "过错原则"
+        },
+        {
+          "label": "B",
+          "text": "无过错原则"
+        },
+        {
+          "label": "C",
+          "text": "违法原则"
+        },
+        {
+          "label": "D",
+          "text": "违法原则为主，过错原则为辅"
+        }
+      ],
+      "source": {
+        "nativeId": "2007年客观题卷一#一#14",
+        "path": "真题库/客观题/2007年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据宪法和国家赔偿法的规定，我国国家赔偿 实行的是哪种归责原则？",
       "subjectId": "xianfa",
       "tags": [
         "fakao-app",
@@ -3458,100 +3302,6 @@
       ],
       "type": "multiple_choice",
       "typeRaw": "多项选择题",
-      "year": 2007
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "国家机构",
-      "chapterConfidence": "high",
-      "chapterOfficial": "国家机构",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2007年客观题卷二#二#19",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "甲触犯的伪造国家机关公文罪与招摇撞骗罪之"
-        },
-        {
-          "label": "B",
-          "text": "对甲的行为以伪造国家机关公文罪与敲诈勒索"
-        },
-        {
-          "label": "C",
-          "text": "对甲的行为以伪造国家机关公文罪与受贿罪实"
-        },
-        {
-          "label": "D",
-          "text": "甲触犯的伪造国家机关公文罪与受贿罪之间具"
-        }
-      ],
-      "source": {
-        "nativeId": "2007年客观题卷二#二#19",
-        "path": "真题库/客观题/2007年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "无业人员甲通过伪造国家机关公文，骗取某县 工商局副局长的职位。在该局股级干部竞争上岗时，甲 向干部乙声称：\"如果不给我2万元，你这次绝对没有机 会。\"乙为获得岗位，只好送甲2万元。关于对甲的行为 的处理意见，下列哪一选项是正确的？",
-      "subjectId": "xianfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2007",
-        "answer-missing"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2007
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "国家的基本制度（上）",
-      "chapterConfidence": "low",
-      "chapterOfficial": "国家的基本制度（上）",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2007年客观题卷二#二#91",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "安某与朱某达成协议后，仍可以对安某进行治"
-        },
-        {
-          "label": "B",
-          "text": "如果安某拒不履行协议，朱某可以直接向法院"
-        },
-        {
-          "label": "C",
-          "text": "如果安某拒不履行协议，朱某应当先向区公安"
-        },
-        {
-          "label": "D",
-          "text": "如果安某拒不履行协议，朱某可以向法院提起"
-        }
-      ],
-      "source": {
-        "nativeId": "2007年客观题卷二#二#91",
-        "path": "真题库/客观题/2007年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "安某放的羊吃了朱某家的玉米秸，二人争执。 安某殴打朱某，致其左眼部青紫、鼻骨骨折，朱某被鉴 定为轻微伤。在公安分局的主持下，安某与朱某达成协 议，由安某向朱某赔偿500元。下列说法正确的是：",
-      "subjectId": "xianfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2007",
-        "answer-missing"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
       "year": 2007
     },
     {
@@ -3898,6 +3648,57 @@
     },
     {
       "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "宪法的实施与监督",
+      "chapterConfidence": "low",
+      "chapterOfficial": "宪法的实施与监督",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2008年客观题卷一#一#93",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "县级以上地方各级人民政府应当在每年六月至"
+        },
+        {
+          "label": "B",
+          "text": "国务院应当在每年六月至九月期间向全国人大常委"
+        },
+        {
+          "label": "C",
+          "text": "预算安排的农业、教育、科技、文化、卫生、"
+        },
+        {
+          "label": "D",
+          "text": "上级财政补助资金的安排和使用情况，是地方"
+        }
+      ],
+      "source": {
+        "nativeId": "2008年客观题卷一#一#93",
+        "path": "真题库/客观题/2008年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "各级人民代表大会常务委员会有权审查和批准 决算、听取预算的执行情况报告。根据《宪法》和《监 督法》的规定，下列表述正确的是：",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2008"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2008
+    },
+    {
+      "answer": [
         "B"
       ],
       "answerText": null,
@@ -3933,6 +3734,102 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "《集会游行示威法》第四条规定：“公民在行使集会、游行、示威的权利的时候， 必须遵守宪法和法律，不得反对宪法所确定的基本原则，不得损害国家的、社会的、集体的 利益和其他公民的合法的自由和权利。”关于这一规定，下列哪一说法是正确的？",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2009"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2009
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "国家的基本制度（上）",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国家的基本制度（上）",
+      "difficulty": null,
+      "explanation": "本题考查清末司法体制的变化。\nAD 项为是干扰项，与题干无关，均不选。\nBC 项：领事裁判权是指中国人与享有领事裁判权国家的侨民之间的诉讼一律依照被告主\n义原则进行审理。本题中并未体现领事裁判权，而是在限制我国的司法审判权，故 B 正确，\nC 错误。",
+      "id": "law:fakao-app:2009年客观题-卷一#一#15",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "这表明清廷实行公开审判原则"
+        },
+        {
+          "label": "B",
+          "text": "这表明外国人在租界内对中国司法裁判权的直接干涉"
+        },
+        {
+          "label": "C",
+          "text": "这表明外国人在租界内的领事裁判权受到了限制"
+        },
+        {
+          "label": "D",
+          "text": "这表明清廷变法修律得到了国际社会的承认"
+        }
+      ],
+      "source": {
+        "nativeId": "2009年客观题-卷一#一#15",
+        "path": "真题库/客观题/2009年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "1903 年 5 月 1 日，在上海英租界发行的《苏报》刊载邹容的《革命军》自序和章炳 麟的《客帝篇》，公开倡导革命，排斥满人。5 月 14 日，《苏报》又指出：《革命军》宗旨 专在驱除满族，光复中国。清廷谕令两江总督照会租界当局严加查办，于 6 月底逮捕章炳 麟，不久，邹容自动投案。由谳员孙建臣、上海知县汪瑶庭、英国副领事三人组成的审判庭 对邹容等人进行审理，最后判处章炳麟徒刑三年，邹容徒刑两年。对这一案件的说法，下列 哪一选项是正确的？",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2009"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2009
+    },
+    {
+      "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "宪法的实施与监督",
+      "chapterConfidence": "low",
+      "chapterOfficial": "宪法的实施与监督",
+      "difficulty": null,
+      "explanation": "本题考查《法国宪法》。\n1799 年法国宪法设立的护法元老院使得由专门机关负责保障宪法实施的规定开始。",
+      "id": "law:fakao-app:2009年客观题-卷一#一#17",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "1958 年法国宪法"
+        },
+        {
+          "label": "B",
+          "text": "1787 年美国宪法"
+        },
+        {
+          "label": "C",
+          "text": "1799 年法国宪法"
+        },
+        {
+          "label": "D",
+          "text": "1908 年苏俄宪法"
+        }
+      ],
+      "source": {
+        "nativeId": "2009年客观题-卷一#一#17",
+        "path": "真题库/客观题/2009年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "由专门机关负责保障宪法实施的规定始于下列哪一部宪法？",
       "subjectId": "xianfa",
       "tags": [
         "fakao-app",
@@ -4237,6 +4134,55 @@
     },
     {
       "answer": [
+        "B",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "国家机构",
+      "chapterConfidence": "high",
+      "chapterOfficial": "国家机构",
+      "difficulty": null,
+      "explanation": "本题考查县级以上地方各级人大常委会。\nA 项：根据《各级人民代表大会常务委员会监督法》第 44 条规定：“县级以上地方各级\n人民代表大会常务委员会在本级人民代表大会闭会期间，可以决定撤销本级人民政府个别副\n省长、自治区副主席、副市长、副州长、副县长、副区长的职务；可以撤销由它任命的本级\n人民政府其他组成人员和人民法院副院长、庭长、副庭长、审判委员会委员、审判员，人民\n检察院副检察长、检察委员会委员、检察员，中级人民法院院长，人民检察院分院检察长的\n职务。”第 45 条第 1 款规定：“县级以上地方各级人民政府、人民法院和人民检察院，可\n以向本级人民代表大会常务委员会提出对本法第四十四条所列国家机关工作人员的撤职\n案。”此项错误。\nB 项：第 45 条第 2 款规定：“县级以上地方各级人民代表大会常务委员会主任会议，可\n以向常务委员会提出对本法第四十四条所列国家机关工作人员的撤职案。”此项正确。\nC 项：第 46 条第 1 款：“撤职案应当写明撤职的对象和理由，并提供有关的材料。”此\n项正确。\nD 项：第 46 条第 3 款：“撤职案的表决采用无记名投票的方式，由常务委员会全体组\n成人员的过半数通过。”此项错误。",
+      "id": "law:fakao-app:2009年客观题-卷一#一#61",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "县长可以向县人大常委会提出撤销个别副县长职务的撤职案"
+        },
+        {
+          "label": "B",
+          "text": "县级以上地方各级人大常委会主任会议可以依法向本级人大常委会提出撤职案"
+        },
+        {
+          "label": "C",
+          "text": "撤职案应当写明撤职的对象和理由并提供有关材料"
+        },
+        {
+          "label": "D",
+          "text": "撤职案由人大常委会全体组成人员的三分之二以上的多数通过"
+        }
+      ],
+      "source": {
+        "nativeId": "2009年客观题-卷一#一#61",
+        "path": "真题库/客观题/2009年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "关于撤职案的审议和决定，下列哪些选项符合《监督法》规定？",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2009"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2009
+    },
+    {
+      "answer": [
         "C",
         "D"
       ],
@@ -4323,104 +4269,6 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "关于国家食品安全风险监测制度，下列哪些表述是正确的？",
-      "subjectId": "xianfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2009"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2009
-    },
-    {
-      "answer": [
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "国家机构",
-      "chapterConfidence": "low",
-      "chapterOfficial": "国家机构",
-      "difficulty": null,
-      "explanation": "本题考查为境外窃取、刺探、收买、非法提供国家秘密、情报罪和受贿罪。\n国家机关机要员黄某借工作之便为某国间谍戴某搞到密级为“机密”的报告，该行为触\n犯为境外窃取、刺探、收买、非法提供国家秘密、情报罪、故意泄露国家秘密罪和非法获取\n国家秘密罪，但是故意泄露国家秘密罪、非法获取国家秘密罪与为境外窃取、刺探、收买、\n非法提供国家秘密、情报罪是法条竞合关系，应当适用特殊法条，以为境外窃取、刺探、收\n买、非法提供国家秘密、情报罪来定罪处罚。事后戴某送给黄某一部手机，并提供了六万元\n资金，该行为黄某构成受贿罪，与为境外窃取、刺探、收买、非法提供国家秘密、情报罪数\n罪并罚，因此 B 项正确。",
-      "id": "law:fakao-app:2009年客观题-卷二#二#13",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "资助危害国家安全犯罪活动罪、非法获取国家秘密罪，数罪并罚"
-        },
-        {
-          "label": "B",
-          "text": "为境外窃取、刺探、收买、非法提供国家秘密、情报罪与受贿罪，数罪并罚"
-        },
-        {
-          "label": "C",
-          "text": "非法获取国家秘密罪、受贿罪，数罪并罚"
-        },
-        {
-          "label": "D",
-          "text": "故意泄露国家秘密罪、受贿罪，从一重罪处断"
-        }
-      ],
-      "source": {
-        "nativeId": "2009年客观题-卷二#二#13",
-        "path": "真题库/客观题/2009年客观题-卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "某国间谍戴某，结识了我某国家机关机要员黄某。戴某谎称来华投资建厂需了解政 策动向，让黄某借工作之便为其搞到密级为“机密”的《内参报告》四份。戴某拿到文件后 送给黄某一部手机，并为其子前往某国留学提供了六万元资金。对黄某的行为如何定罪处 罚？",
-      "subjectId": "xianfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2009"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2009
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "国家机构",
-      "chapterConfidence": "high",
-      "chapterOfficial": "国家机构",
-      "difficulty": null,
-      "explanation": "ABC 项考查利用影响力受贿罪。A 项：甲作为某国企总经理的妻子，利用自身作为国家\n工作人员近亲属的身份以及丈夫的影响力，为谋取不正当利益而收受他人赠送的轿车一辆，\n此行为成立利用影响力受贿罪，此项正确。\nB 项：已离职的国家工作人员乙已经不能构成受贿罪，但其利用先前职务上的影响而为\n他人谋取不正当利益，之后收受贿款的情形，成立利用影响力受贿罪，此项正确。\nC 项：丙利用自身作为某国家机关官员之子的影响力，利用其父管理之便，为他人谋取\n不正当利益并收受财物的行为，成立利用影响力受贿罪，此项正确。\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\nD 项：丁在在职时为他人谋取了利益，在离职后该公司在并未与丁约定一致的情形下自\n作主张赠与财物表达感谢的，由于不存在不正当的权钱输送，不成立犯罪，此项错误。",
-      "id": "law:fakao-app:2009年客观题-卷二#二#64",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "甲系某国企总经理之妻，甲让其夫借故辞退企业财务主管，而以好友陈某取而代之，"
-        },
-        {
-          "label": "B",
-          "text": "乙系已离职的国家工作人员，请接任处长为缺少资质条件的李某办理了公司登记，收"
-        },
-        {
-          "label": "C",
-          "text": "丙系某国家机关官员之子，利用其父管理之便，请其父下属将不合条件的某企业列入"
-        },
-        {
-          "label": "D",
-          "text": "丁系国家工作人员，在主管土地拍卖工作时向一家房地产公司通报了重要情况，使其"
-        }
-      ],
-      "source": {
-        "nativeId": "2009年客观题-卷二#二#64",
-        "path": "真题库/客观题/2009年客观题-卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "根据《刑法》有关规定，下列哪些说法是正确的？",
       "subjectId": "xianfa",
       "tags": [
         "fakao-app",
@@ -4561,6 +4409,56 @@
     {
       "answer": [
         "A",
+        "B",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "宪法的实施与监督",
+      "chapterConfidence": "high",
+      "chapterOfficial": "宪法的实施与监督",
+      "difficulty": null,
+      "explanation": "本题考查现代宪法的发展趋势。\nA 项：从世界各国宪法理论与实践的发展来看，宪法的基本原则主要有人民主权原则、\n基本人权原则、权力制约原则和法治原则。故重视保障人权是宪法发展的共识是正确的，A\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n项正确。\nB 项：从世界各国的宪法规定和宪政实践来看，宪法实施保障体制主要有三种，一是由\n司法机关负责保障宪法实施体制；二是由立法机关负责保障宪法实施体制；三是由专门机关\n负责保障宪法实施体制，由此可知重视宪法实施保障，专门宪法监督成为宪法发展的潮流，\nB 项正确。\nC 项：权力制约原则是指通过宪法的规定平衡各种机关的权力而不是加强司法审查弱化\n行政权力，C 项错误。\nD 项：宪法的国际化趋势日益明显，它要求将生存权、发展权、环境权等体现终极人性\n关怀的人权纳入各国宪法对国民权利的保护范围。联合国、欧盟等国际组织发挥了单个国家\n所不能完成的推动和组织作用。由此可知 D 项正确。",
+      "id": "law:fakao-app:2010年客观题-卷一#一#60",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "重视保障人权是宪法发展的共识"
+        },
+        {
+          "label": "B",
+          "text": "重视宪法实施保障，专门宪法监督成为宪法发展的潮流"
+        },
+        {
+          "label": "C",
+          "text": "通过加强司法审查弱化行政权力逐步成为宪法发展的方向"
+        },
+        {
+          "label": "D",
+          "text": "寻求与国际法相结合成为宪法发展的趋势"
+        }
+      ],
+      "source": {
+        "nativeId": "2010年客观题-卷一#一#60",
+        "path": "真题库/客观题/2010年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "关于现代宪法的发展趋势，下列哪些说法是正确的？",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2010"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2010
+    },
+    {
+      "answer": [
+        "A",
         "C"
       ],
       "answerText": null,
@@ -4606,6 +4504,55 @@
       "type": "multiple_choice",
       "typeRaw": "多项选择题",
       "year": 2010
+    },
+    {
+      "answer": [
+        "B",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "国家机构",
+      "chapterConfidence": "high",
+      "chapterOfficial": "国家机构",
+      "difficulty": null,
+      "explanation": "A 选项，民族区域自治制度是指在国家的统一领导下，以少数民族聚居区为基础，建立\n相应的自治地方，设立自治机关，行使自治权，使实行区域自治的民族的人民自主管理本民\n族地方性事务的制度。民族区域自治制度是民族自治与区域自治的结合，民族自治地方的人\n大与政府，既是地方国家机关，也是民族自治机关。A 项正确不应选。\nB 选项，《民族区域自治法》第十五条第一款规定，民族自治地方的自治机关是自治\n区、自治州、自治县的人民代表大会和人民政府。比如民族自治地方的司法机关是地方国家\n机关，但不是自治机关。B 项错误应选。\nC 选项，《民族区域自治法》第二十条规定，上级国家机关的决议、决定、命令和指\n示，如有不适合民族自治地方实际情况的，自治机关可以报经该上级国家机关批准，变通执\n行或者停止执行；该上级国家机关应当在收到报告之日起六十日内给予答复。C 项正确不应\n选。\nD 选项，《民族区域自治法》第四十二条第二款规定，自治区、自治州的自治机关依照\n国家规定，可以和国外进行教育、科学技术、文化艺术、卫生、体育等方面的交流。这里应\n当是自治区与自治州，不包括自治县。D 项错误应选。",
+      "id": "law:fakao-app:2011年客观题-卷一#一#6",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "民族区域自治以少数民族聚居区为基础，是民族自治与区域自治的结合"
+        },
+        {
+          "label": "B",
+          "text": "民族自治地方的国家机关既是地方国家机关，又是自治机关"
+        },
+        {
+          "label": "C",
+          "text": "上级国家机关应该在收到自治机关变通执行或者停止有关决议、决定执行的报告之日"
+        },
+        {
+          "label": "D",
+          "text": "自治地方的自治机关依照国家规定，可以和外国进行教育、科技、文化等方面的交流"
+        }
+      ],
+      "source": {
+        "nativeId": "2011年客观题-卷一#一#6",
+        "path": "真题库/客观题/2011年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据《宪法》和《民族区域自治法》的规定，下列选项不正确的是",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2011"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2011
     },
     {
       "answer": [
@@ -4744,6 +4691,153 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "某高校司法研究中心的一项研究成果表明：处于大城市“陌生人社会”的人群会更 多地强调程序公正，选择诉诸法律解决纠纷；处于乡村“熟人社会”的人群则会更看重实体 公正，倾向以调解、和解等中国传统方式解决纠纷。据此，关于人们对“公平正义”的理解 与接受方式，下列哪一说法是不准确的？",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2011"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2011
+    },
+    {
+      "answer": [
+        "A",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "公民的基本权利和义务",
+      "chapterConfidence": "low",
+      "chapterOfficial": "公民的基本权利和义务",
+      "difficulty": null,
+      "explanation": "本题考查义务的分类。义务具有强制履行的性质，义务人对于义务的内容不可随意转让\n或违反。义务在结构上包括两个部分：第一，义务人必须根据权利的内容作出一定的行为。\n在法学上被称为“作为义务”或“积极义务”，如赡养父母、抚养子女、纳税、服兵役等。\n第二，义务人不得作出一定行为内容的义务，称为“不作为义务”或“消极义务”，例如，\n不得破坏财产，禁止非法拘禁，严禁刑讯逼供等。\nA 选项，赡养父母是子女须为一定作为的义务，属于积极义务。A 项正确。\nB 选项，严禁刑讯逼供，是禁止人们作出一定的行为，属于消极义务。B 项错误。\nC 选项，依法纳税，需要公民积极缴纳一定税款，属于积极义务。C 项正确。\nD 选项，紧急避险属于一项权利，而非义务。D 项错误。",
+      "id": "law:fakao-app:2011年客观题-卷一#一#14",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "子女赡养父母"
+        },
+        {
+          "label": "B",
+          "text": "严禁刑讯逼供"
+        },
+        {
+          "label": "C",
+          "text": "公民依法纳税"
+        },
+        {
+          "label": "D",
+          "text": "紧急避险"
+        }
+      ],
+      "source": {
+        "nativeId": "2011年客观题-卷一#一#14",
+        "path": "真题库/客观题/2011年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "下列哪些选项属于积极义务的范畴？",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2011"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2011
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "国家的基本制度（上）",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国家的基本制度（上）",
+      "difficulty": null,
+      "explanation": "本题主要考查人民主权原则。\nA 选项，该项体现的是基本人权原则。A 项错误。\nB 选项，人民主权是指主权归属的主体只能是人民。人民主权意味着国家的一切权力来\n源于人民的授予，国家权力尊重和保障公民的权利与自由，人民能自主、平等地参与国家权\n力的运转和公共政策的形成，人民能够共享经济改革和社会发展的文明成果，人民能对国家\n权力进行有效地监督和控制，人民是一切国家权力的最终拥有者，国家权力为人民服务，依\n照人民意思行使，接受人民的监督。B 项正确。\nC 选项，该项体现的是法治原则。C 项错误。\nD 选项，该项体现的是依法治国原则。D 项错误。",
+      "id": "law:fakao-app:2011年客观题-卷一#一#16",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "国家尊重和保障人权"
+        },
+        {
+          "label": "B",
+          "text": "中华人民共和国的一切权力属于人民"
+        },
+        {
+          "label": "C",
+          "text": "中华人民共和国公民在法律面前一律平等"
+        },
+        {
+          "label": "D",
+          "text": "中华人民共和国实行依法治国，建设社会主义法治国家"
+        }
+      ],
+      "source": {
+        "nativeId": "2011年客观题-卷一#一#16",
+        "path": "真题库/客观题/2011年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "马克思主义关于“人民主权”的论述是社会主义法治理念的理论渊源之一。下列哪 一宪法原则准确体现了人民主权思想？",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2011"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2011
+    },
+    {
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "国家机构",
+      "chapterConfidence": "high",
+      "chapterOfficial": "国家机构",
+      "difficulty": null,
+      "explanation": "本题考查权力制约原则。权力制约原则是指国家权力的各部分之间相互监督、彼此牵\n制，以保障公民权利的原则。它既包括公民权利对国家权力的制约，也包括国家权力相互之\n间的制约。\n权力制约原则在我国宪法中体现为：（1）宪法规定了人民对国家权力活动进行监督的\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n制度，如规定，“全国人民代表大会和地方各级人民代表大会都由民主选举产生，对人民负\n责，受人民监督”。（2）宪法规定了公民对国家机关及其公务员的监督权，规定“中华人\n民共和国公民对于任何国家机关和国家工作人员，有提出批评和建议的权利”。（3）规定\n了国家机关之间、国家机关内部不同的监督形式。如《宪法》第一百三十五条规定“人民法\n院、人民检察院和公安机关办理刑事案件，应当分工负责，互相配合，互相制约，以保证准\n确有效地执行法律”，等等。A、B、C 项正确。\nD 选项，我国法律没有规定法院对法律合宪性的审查。D 项错误。",
+      "id": "law:fakao-app:2011年客观题-卷一#一#26",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "全国人大和地方各级人大由民主选举产生，对人民负责，受人民监督"
+        },
+        {
+          "label": "B",
+          "text": "法院、检察院和公安机关办理刑事案件，应当分工负责，互相配合，互相制约"
+        },
+        {
+          "label": "C",
+          "text": "地方各级人大及其常委会依法对“一府两院”监督"
+        },
+        {
+          "label": "D",
+          "text": "法院对法律合宪性审查"
+        }
+      ],
+      "source": {
+        "nativeId": "2011年客观题-卷一#一#26",
+        "path": "真题库/客观题/2011年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "权力制约是依法治国的关键环节。下列哪些选项体现了我国宪法规定的权力制约原 则？",
       "subjectId": "xianfa",
       "tags": [
         "fakao-app",
@@ -5055,384 +5149,48 @@
         "C"
       ],
       "answerText": null,
-      "chapter": "公民的基本权利和义务",
-      "chapterConfidence": "high",
-      "chapterOfficial": "公民的基本权利和义务",
-      "difficulty": null,
-      "explanation": "“平等者之间不存在支配权”，意指法律关系平等的主体之间，一方对另一方\n并不拥有支配权，即不存在一方支配另一方的情况，双方平等地享有权利履行义务。由此：\nA 选项错误。权利和义务是紧密相联、相辅相成的，一方享有的权利以另一方履行义务\n为基础，反之亦然。\nB 选项错误。在古代社会，如奴隶社会，奴隶不具有法律上的人格，被视为物，奴隶主\n拥有对奴隶人身的支配权；封建社会中，佃农也对地主存在一定的人身依附关系，地主对佃\n农有一定的人身处置权。\nC 选项正确。现代社会，公民之间存在着平等的法律地位，拥有平等的人格权，不承认\n一个人对另一个人的绝对人身依附关系，同样禁止一个人奴役另一个人。\nD 选项错误。平等主体的自由既受法律的保护，又受到法律的限制，且仅受法律的限\n制。",
-      "id": "law:fakao-app:2011年客观题-卷二#二#9",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "平等的社会只存在平等主体的权利，不存在义务；不平等的社会只存在不平等的义"
-        },
-        {
-          "label": "B",
-          "text": "在古代法律中，支配权仅指财产上的权利"
-        },
-        {
-          "label": "C",
-          "text": "平等的社会不承认绝对的人身依附关系，法律禁止一个人对另一个人的奴役"
-        },
-        {
-          "label": "D",
-          "text": "从法理上讲，平等的主体之间不存在相互的支配，他们的自由也不受法律限制"
-        }
-      ],
-      "source": {
-        "nativeId": "2011年客观题-卷二#二#9",
-        "path": "真题库/客观题/2011年客观题-卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "法律谚语：“平等者之间不存在支配权。”关于这句话，下列哪一选项是正确的？",
-      "subjectId": "xianfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2011"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2011
-    },
-    {
-      "answer": [
-        "B"
-      ],
-      "answerText": null,
       "chapter": "国家的基本制度（上）",
       "chapterConfidence": "low",
       "chapterOfficial": "国家的基本制度（上）",
       "difficulty": null,
-      "explanation": "本题考大清民律草案的基本思路，题干中“（三）求最适于中国民情之法则”\n体现了“中学为体”，“（二）注重世界最普通之法则”体现了“西学为用”，可知，清末\n修订民律的基本思路为“中学为体、西学为用”，故选 B。",
-      "id": "law:fakao-app:2011年客观题-卷二#二#17",
+      "explanation": "本题的题干部分已经给出了答题的基本提示，抓住三个解题的关键点：系统工程，全面\n发挥多种社会规范的调整作用，以及国家治理的多元化手段。由此出发：\nA 选项正确。实际上这就是依法治国的两个基本原则：坚持党的领导和坚持人民主体地\n位。\nB 选项正确。本选项是题干部分“系统工程”在评价尺度上的体现，依法治国是法治国\n家、法治政府和法治社会的共同推进，因而本选项的提法也是正确的。\nC 选项不正确。本选项是题干部分运用多元化手段治理国家和社会的具体化，属于社会\n矛盾预防化解机制，应该是人民调解、行政调解和司法调解的三位一体。同时，本题还可以\n从党的领导这一原理出发判断。依法治国坚持党的领导，党的领导是一种政治领导和指导思\n想领导，不是具体法律事务的领导，故党委不宜直接介入纠纷调解。\nD 选项正确。这是题干部分“全面发挥多种社会规范的调整作用”的具体化，同时也是\n依法治国坚持依法治国和以德治国相结合的基本原则的体现。",
+      "id": "law:fakao-app:2012年客观题-卷一#一#2",
       "knowledgePoints": [],
       "options": [
         {
           "label": "A",
-          "text": "西学为体、中学为用"
+          "text": "在指导思想上，要坚持党的领导、人民当家作主和依法治国三者有机统一"
         },
         {
           "label": "B",
-          "text": "中学为体、西学为用"
+          "text": "在评价尺度上，要坚持法律效果与政治效果、社会效果有机统一"
         },
         {
           "label": "C",
-          "text": "坚持德治、排斥法治"
+          "text": "在法的作用上，要构建党委调解、行政调解、司法调解三位一体纠纷解决机制"
         },
         {
           "label": "D",
-          "text": "抛弃传统、尽采西说"
+          "text": "在法的成效上，要实现依法治国与以德治国的结合与统一"
         }
       ],
       "source": {
-        "nativeId": "2011年客观题-卷二#二#17",
-        "path": "真题库/客观题/2011年客观题-卷二.md",
+        "nativeId": "2012年客观题-卷一#一#2",
+        "path": "真题库/客观题/2012年客观题-卷一.md",
         "repo": "fakao-app",
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
-      "stem": "清末修律时，修订法律大臣俞廉三在“奏进民律前三编草案折”中表示：“此次编 辑之旨，约分四端：（一）注重世界最普通之法则。（二）原本后出最精确之法理。（三） 求最适于中国民情之法则。（四）期于改进上最有利益之法则。”关于清末修订民律的基本 思路，下列哪一表述是最合适的？",
+      "stem": "依法治国方略的实施是一项浩瀚庞大、复杂而艰巨的系统工程，要全面发挥各种社 会规范的调整作用，综合协调地运用多元化的手段和方法实现对国家的治理和管理。关于依 法治国理念的基本要求，下列哪一说法是不准确的？",
       "subjectId": "xianfa",
       "tags": [
         "fakao-app",
         "md-真题",
         "section:单项选择题",
-        "year:2011"
+        "year:2012"
       ],
       "type": "single_choice",
       "typeRaw": "单项选择题",
-      "year": 2011
-    },
-    {
-      "answer": [
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "公民的基本权利和义务",
-      "chapterConfidence": "high",
-      "chapterOfficial": "公民的基本权利和义务",
-      "difficulty": null,
-      "explanation": "A 项正确。公平正义的核心是制度的公平正义。因此，树立与强化宪法权威，必然要求\n坚定地守持和维护公平正义。\nB 项正确。社会主义法治理念中的公平正义，是指社会全体成员能够按照宪法和法律规\n定的方式公平地实现权利和义务，并受到法律的保护。我国宪法第 33 条第 2 款规定：“中\n华人民共和国公民在法律面前一律平等。”是公平正义在宪法中的体现。故 B 项正确。\nC 项正确。公平正义的社会是“以人为本”的社会。坚持以人为本，首先要弄清楚“以\n什么人”为本的问题。人的利益关系主体有三个层次：一是“人人”的层次，二是“公民”\n的层次，三是“弱者”的层次。从我国宪法的具体规定来看，我国宪法第 4 条第 2 款规定：\n“国家根据各少数民族的特点和需要，帮助各少数民族地区加速经济和文化的发展。”第 45\n条第 3 款规定：“国家和社会帮助安排盲、聋、哑和其他有残疾的公民的劳动、生活和教\n育。”第 48 条规定：“中华人民共和国妇女在政治的、经济的、文化的、社会的和家庭的\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n生活等各方面享有同男子平等的权利。”“国家保护妇女的权利和利益，实行男女同工同\n酬，培养和选拔妇女干部。”第 49 条第 1 款规定：“婚姻、家庭、母亲和儿童受国家的保\n护。”第 4 款规定：“禁止破坏婚姻自由，禁止虐待老人、妇女和儿童。”这些对妇女、老\n人、儿童等特殊主体权利的特别保护的条款都是实现公平正义的需要。\nD 项错误。宪法禁止的是不合理的差别对待，而非一切差别，合理的差别对待不违背宪\n法关于公平正义的要求。从我国宪法的具体规定来看，我国宪法并不禁止一切差别。",
-      "id": "law:fakao-app:2011年客观题-卷二#二#20",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "树立与强化宪法权威，必然要求坚定地守持和维护公平正义"
-        },
-        {
-          "label": "B",
-          "text": "法律面前人人平等原则是公平正义在宪法中的重要体现"
-        },
-        {
-          "label": "C",
-          "text": "宪法对妇女、老人、儿童等特殊主体权利的特别保护是实现公平正义的需要"
-        },
-        {
-          "label": "D",
-          "text": "禁止一切差别是宪法和公平正义的要求"
-        }
-      ],
-      "source": {
-        "nativeId": "2011年客观题-卷二#二#20",
-        "path": "真题库/客观题/2011年客观题-卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "公平正义是社会主义法治的价值追求。关于我国宪法与公平正义的关系，下列哪一 选项是不正确的？",
-      "subjectId": "xianfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2011"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2011
-    },
-    {
-      "answer": [
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "公民的基本权利和义务",
-      "chapterConfidence": "high",
-      "chapterOfficial": "公民的基本权利和义务",
-      "difficulty": null,
-      "explanation": "A 项正确。宪法是制定普通法律的依据，普通法律是宪法的具体化；任何普通法律、法\n规都不得与宪法的原则和精神相违背；宪法是一切国家机关、社会团体和公民的最高行为准\n则。因此，宪法具有最高法律效力。\nB 项错误。宪法规范表现形式即宪法的渊源。我国宪法规范的表现形式包括成文宪法\n典、宪法性法律、宪法惯例、宪法解释、国际条约等，我国不是判例法国家，且法院不能直\n接适用宪法审理案件，故宪法判例不是我国宪法规范的表现形式。\nC 项正确。法律规范是指由国家制定或认可、表现统治阶级意志并由国家强制力保障实\n施的行为规则。宪法规范是法律规范的一种，而其所调整的社会关系涉及国家和社会生活各\n方面最基本的社会关系，且其中一方通常总是国家或国家机关。因此，将宪法规范定义为：\n“宪法规范是国家制定或认可的、宪法主体参与国家和社会生活最基本社会关系的行为规\n范。”并无不妥。故 C 项正确。\nD 项正确。根据行为模式的不同，可以将宪法规范分为权利性规范和义务性规范。权利\n性规范规定人们有权做一定行为或不做一定行为，义务性规范规定人们必须或禁止做一定行\n为。如我国宪法第 42 条第 1 款规定：“中华人民共和国公民有劳动的权利和义务。”第 46\n条第 1 款规定：“中华人民共和国公民有受教育的权利和义务。”，即体现我国宪法规范将\n权利性规范和义务性规范相互结合为一体的鲜明特色。",
-      "id": "law:fakao-app:2011年客观题-卷二#二#22",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "具有最高法律效力"
-        },
-        {
-          "label": "B",
-          "text": "在我国的表现形式主要有宪法典、宪法性法律、宪法惯例和宪法判例"
-        },
-        {
-          "label": "C",
-          "text": "是国家制定或认可的、宪法主体参与国家和社会生活最基本社会关系的行为规范"
-        },
-        {
-          "label": "D",
-          "text": "权利性规范与义务性规范相互结合为一体，是我国宪法规范的鲜明特色"
-        }
-      ],
-      "source": {
-        "nativeId": "2011年客观题-卷二#二#22",
-        "path": "真题库/客观题/2011年客观题-卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "关于宪法规范，下列哪一说法是不正确的？",
-      "subjectId": "xianfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2011"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2011
-    },
-    {
-      "answer": [
-        "A"
-      ],
-      "answerText": null,
-      "chapter": "公民的基本权利和义务",
-      "chapterConfidence": "high",
-      "chapterOfficial": "公民的基本权利和义务",
-      "difficulty": null,
-      "explanation": "A 项错误。美国 1787 年宪法是世界上第一部资产阶级成文宪法，但其未对公民文化权\n利和国家的文化政策作广泛规定。\nB 项正确。1919 年德国魏玛宪法是最早使社会权作为基本权利进入宪法且加以详细规定\n的宪法，其不仅详尽地规定了公民的文化权利，而且明确规定了国家的基本文化政策。\nC 项正确。我国现行宪法第 19 条至第 24 条分别对发展教育事业、科技事业、医疗卫生\n体育事业、文化事业、培养专门人才、精神文明建设等方面进行了规定，即是我国现行宪法\n对文化制度的原则、内容等所做出的比较全面的规定。\nD 项正确。我国现行宪法第 46 条至第 47 条对受教育的权利和义务、进行文化活动的自\n由进行了规定，第 89 条第 7 项、第 107 条、第 119 条对文化教育管理职权进行了规定，是\n我国宪法文化制度的主要内容。\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考",
-      "id": "law:fakao-app:2011年客观题-卷二#二#23",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "1787 年美国宪法规定了公民广泛的文化权利和国家的文化政策"
-        },
-        {
-          "label": "B",
-          "text": "1919 年德国魏玛宪法规定了公民的文化权利"
-        },
-        {
-          "label": "C",
-          "text": "我国现行宪法对文化制度的原则、内容等做了比较全面的规定"
-        },
-        {
-          "label": "D",
-          "text": "公民的文化教育权、国家机关的文化教育管理职权和文化政策，是宪法文化制度的主"
-        }
-      ],
-      "source": {
-        "nativeId": "2011年客观题-卷二#二#23",
-        "path": "真题库/客观题/2011年客观题-卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "近代意义宪法产生以来，文化制度便是宪法的内容。关于两者的关系，下列哪一选 项是不正确的？",
-      "subjectId": "xianfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2011"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2011
-    },
-    {
-      "answer": [
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "宪法的实施与监督",
-      "chapterConfidence": "low",
-      "chapterOfficial": "宪法的实施与监督",
-      "difficulty": null,
-      "explanation": "A 项错误。从中央与地方的关系上看，我国有普通行政区划、民族自治地方区划、特别\n行政区划三种地方制度，而选项中只提到两种，故错误。\nB 项错误。《国务院关于行政区划管理的规定》第 5 条第 2 款规定：“县、市、市辖区\n的部分行政区域界线的变更，国务院授权省，自治区、直辖市人民政府审批，批准变更时，\n同时报送民政部备案。”据此，县、市的行政区域界限的重大变更通常由国务院审批，县、\n市、市辖区的部分行政区域界线的变更经国务院授权的省级政府审批，B 项表述仅提到由省\n级政府审批，故错误。\nC 项错误。我国目前所实施的地方制度只有普通行政区划、民族自治地方区划、特别行\n政区划三种地方制度。经济特区属于普通行政区划，是我国在改革开放中为发展对外经济贸\n易而实行某些特殊政策的地区，并非一种独立的地方制度。\nD 项正确。行政区域划分制度的内容包括行政区域划分的机关、原则、程序及行政区域\n边界争议的处理等。故 D 项表述正确。",
-      "id": "law:fakao-app:2011年客观题-卷二#二#25",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "从中央与地方的关系上看，我国有民族区域自治和特别行政区两种地方制度"
-        },
-        {
-          "label": "B",
-          "text": "县、市、市辖区部分行政区域界线的变更由省、自治区、直辖市政府审批"
-        },
-        {
-          "label": "C",
-          "text": "经济特区是我国一种新的地方制度"
-        },
-        {
-          "label": "D",
-          "text": "行政区划纠纷或争议的解决是行政区划制度内容的组成部分"
-        }
-      ],
-      "source": {
-        "nativeId": "2011年客观题-卷二#二#25",
-        "path": "真题库/客观题/2011年客观题-卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "根据《宪法》的规定，关于国家结构形式，下列哪一选项是正确的？",
-      "subjectId": "xianfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2011"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2011
-    },
-    {
-      "answer": [
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "公民的基本权利和义务",
-      "chapterConfidence": "high",
-      "chapterOfficial": "公民的基本权利和义务",
-      "difficulty": null,
-      "explanation": "A 项正确。《宪法》第 38 条规定：“中华人民共和国公民的人格尊严不受侵犯。禁止用\n任何方法对公民进行侮辱、诽谤和诬告陷害。”\nB 项错误。人身自由包括狭义和广义两方面。狭义的人身自由主要指公民的身体不受非\n法侵犯，广义的人身自由则还包括与狭义人身自由相关联的生命权、人格尊严、住宅不受侵\n犯、通信自由和通信秘密等与公民个人生活有关的权利和自由。人身自由是公民参加各种社\n会活动和实际享受其他权利的前提。但我国《宪法》未明确规定生命权是公民基本权利，故\nB 项错误。\nC 项正确。《宪法》第 37 条第 3 款规定：“禁止非法拘禁和以其他方法非法剥夺或者限\n制公民的人身自由，禁止非法搜查公民的身体。”\nD 项正确。《宪法》第 39 条规定：“中华人民共和国公民的住宅不受侵犯。禁止非法\n搜查或者非法侵入公民的住宅。”\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考",
-      "id": "law:fakao-app:2011年客观题-卷二#二#25_1",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "禁止用任何方法对公民进行侮辱、诽谤和诬告陷害"
-        },
-        {
-          "label": "B",
-          "text": "生命权是《宪法》明确规定的公民基本权利，属于广义的人身自由权"
-        },
-        {
-          "label": "C",
-          "text": "禁止非法搜查公民身体"
-        },
-        {
-          "label": "D",
-          "text": "禁止非法搜查或非法侵入公民住宅"
-        }
-      ],
-      "source": {
-        "nativeId": "2011年客观题-卷二#二#25",
-        "path": "真题库/客观题/2011年客观题-卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "关于《宪法》对人身自由的规定，下列哪一选项是不正确的？",
-      "subjectId": "xianfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2011"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2011
-    },
-    {
-      "answer": [
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "公民的基本权利和义务",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公民的基本权利和义务",
-      "difficulty": null,
-      "explanation": "A 项考查危害民航安全罪行的管辖权。根据 1963 年《东京公约》、1970 年《海牙公\n约》及 1971 年《蒙特利尔公约》等三个国际民航安全公约的规定，下列国家均拥有对于危\n害民航安全罪行的管辖权：航空器登记国；航空器降落地国，当犯罪嫌疑人仍在航空器内；\n承租人的营业地国或常住地国，当航空器是不带机组的出租；嫌疑人所在国；嫌疑人国籍国\n或永久居所国；犯罪行为发生地国；罪行后果涉及国，包括受害人国籍国或永久居所国、后\n果涉及领土国、罪行危及其安全的国家；根据本国法行使管辖权的其他国家。本题中，甲国\n为航空器登记国，有管辖权；乙国为航空器登记国，有管辖权；丙国为犯罪行为发生地国，\n有管辖权。\nB 项考查各国对危害民航安全罪行是否有强制引渡的义务。三个国际民航安全公约规\n定，危害民航安全罪行是一种可引渡的罪行，但各国没有强制引渡的义务。国家可以依据引\n渡协议或国内法决定是否予以引渡。因此，B 项错误。\nC 项考查或引渡或审判原则。三个国际民航安全公约规定，对危害民航安全罪行，如果\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n嫌疑人所在国没有相关协议引渡义务，并决定不予引渡，则应在本国作为严重的普通刑事案\n件进行起诉，使此种行为受到惩处。因此，C 项正确。\nD 项考查国际刑事法院的管辖权。国际刑事法院的管辖权限于整个国际社会关注的最严\n重犯罪，具体包括灭绝种族罪、危害人类罪、战争罪、侵略罪等几大类。危害民航安全罪行\n不属于国际刑事法院的管辖范围。因此，D 项错误。",
-      "id": "law:fakao-app:2011年客观题-卷二#二#33",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "劫持未发生在甲国领空，甲国对此没有管辖权"
-        },
-        {
-          "label": "B",
-          "text": "乙国有义务将其引渡到甲国"
-        },
-        {
-          "label": "C",
-          "text": "乙国可不引渡，但应由本国进行刑事审判"
-        },
-        {
-          "label": "D",
-          "text": "本案属国际犯罪，国际刑事法院可对其行使管辖权"
-        }
-      ],
-      "source": {
-        "nativeId": "2011年客观题-卷二#二#33",
-        "path": "真题库/客观题/2011年客观题-卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲国某航空公司国际航班在乙国领空被乙国某公民劫持，后乙国将该公民控制，并 拒绝了甲国的引渡请求。两国均为 1971 年《关于制止危害民用航空安全的非法行为的公 约》等三个国际民航安全公约缔约国。对此，下列哪一说法是正确的？",
-      "subjectId": "xianfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2011"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2011
+      "year": 2012
     },
     {
       "answer": [
@@ -5676,6 +5434,154 @@
     },
     {
       "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "公民的基本权利和义务",
+      "chapterConfidence": "low",
+      "chapterOfficial": "公民的基本权利和义务",
+      "difficulty": null,
+      "explanation": "本题考查税务登记问题。依据《税收征收管理法实施细则》第 12 条规定，从事生产、\n经营的纳税人应当自领取营业执照之日起 30 日内，向生产、经营地或者纳税义务发生地的\n主管税务机关申报办理税务登记，如实填写税务登记表，并按照税务机关的要求提供有关证\n件、资料。第 17 条规定，从事生产、经营的纳税人应当自开立基本存款账户或者其他存款\n账户之日起 15 日内，向主管税务机关书面报告其全部账号；发生变化的，应当自变化之日\n起 15 日内，向主管税务机关书面报告。AB 项说法正确，不选。第 14 条第 2 款规定，纳税\n人税务登记内容发生变化，不需要到工商行政管理机关或者其他机关办理变更登记的，应当\n自发生变化之日起 30 日内，持有关证件向原税务登记机关申报办理变更税务登记。C 项说法\n错误，应选。根据第 21 条第 2 款：从事生产、经营的纳税人外出经营，在同一地累计超过\n180 天的，应当在营业地办理税务登记手续。D 项说法正确，不选。",
+      "id": "law:fakao-app:2012年客观题-卷一#一#30",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "从事生产、经营的纳税人，应在领取营业执照后，在规定时间内办理税务登记，领取"
+        },
+        {
+          "label": "B",
+          "text": "从事生产、经营的纳税人在银行开立账户，应出具税务登记证件，其账号应当向税务"
+        },
+        {
+          "label": "C",
+          "text": "纳税人税务登记内容发生变化，不需到工商行政管理机关或其他机关办理变更登记"
+        },
+        {
+          "label": "D",
+          "text": "从事生产、经营的纳税人外出经营，在同一地累计超过 180 天的，应在营业地办理税"
+        }
+      ],
+      "source": {
+        "nativeId": "2012年客观题-卷一#一#30",
+        "path": "真题库/客观题/2012年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据税收征收管理法规，关于税务登记，下列哪一说法是错误的？",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2012"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2012
+    },
+    {
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "宪法的实施与监督",
+      "chapterConfidence": "low",
+      "chapterOfficial": "宪法的实施与监督",
+      "difficulty": null,
+      "explanation": "联邦宪法保护人权是通过其后的 10 条宪法修正案进行的，①的说法错误。\n法国通过了著名的《人权与公民权利宣言》（简称《人权宣言》）。第一次明确而系统\n地提出了资产阶级民主和法制的基本原则，是建立资产阶级统治的纲领性文件，《人权宣\n言》不仅奠定了法国宪政制度的基础，而且是多部法国宪法的序言。②的说法正确。\n“明治宪法”深受德国宪法的影响，对一些问题没有作出明确规定；对公民自由权利的\n规定范围狭窄，随时可加以限制；君主立宪政体，却赋予天皇至高无上的权威--用议会民主\n外衣，掩盖天皇专制。“对公民自由权作出充分规定，促进了日本现代民主政体的建立”的\n说法错误，③的说法错误。\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n1919 年，战败的德国进入魏玛共和国时期。在沿用原有法律的同时，颁布了大量的“社\n会化”法律，并规定了社会权，具体体现在第二编第二章“共同生活”与第五章“经济生\n活”中，④说法正确。\n综合可知，ABC 项说法错误，符合题意，应选。",
+      "id": "law:fakao-app:2012年客观题-卷一#一#58",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "①②"
+        },
+        {
+          "label": "B",
+          "text": "③④"
+        },
+        {
+          "label": "C",
+          "text": "①③"
+        },
+        {
+          "label": "D",
+          "text": "②④"
+        }
+      ],
+      "source": {
+        "nativeId": "2012年客观题-卷一#一#58",
+        "path": "真题库/客观题/2012年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "①美国《独立宣言》与《美国联邦宪法》给予了人权充分保障 ②法国《人权宣言》明确宣布“人们生来并且始终是自由的，并在权利上是平等的”， 该宣言成为此后多部法国宪法的序言 ③日本《明治宪法》对公民自由权作出充分规定，促进了日本现代民主政体的建立 ④德国《魏玛宪法》扩大了人权范围，将“社会权”纳入到宪法保护范围 关于各国“人权与宪法”问题的说法，下列哪些选项不成立？",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2012"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2012
+    },
+    {
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "宪法的实施与监督",
+      "chapterConfidence": "high",
+      "chapterOfficial": "宪法的实施与监督",
+      "difficulty": null,
+      "explanation": "ABC 选项，权力制约原则是指国家权力的各部分之间相互监督、彼此牵制，以保障公民\n权利的原则，包括公民权利对国家权力的制约，也包括国家权力相互之间的制约，这就要求\n从法律上建构起权力制约监督体系和机制，从制度上为各种监督的实施提供条件和保障，完\n善权力配置，恰当地建构各种权利关系。可知 ABC 项说法正确。\nD 选项，我国的权力制约原则主要体现为监督原则，即以国家权力制约国家权力，以公\n民权利制约国家权力。而非缩小国家权力，D 项错误。",
+      "id": "law:fakao-app:2012年客观题-卷一#一#59",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "从法律上构建起权力制约监督体系与机制"
+        },
+        {
+          "label": "B",
+          "text": "从制度上为各种监督的实施提供条件和保障"
+        },
+        {
+          "label": "C",
+          "text": "完善权力配置，恰当地建构各种权力关系"
+        },
+        {
+          "label": "D",
+          "text": "限制和缩小国家权力范围，扩大公民权利"
+        }
+      ],
+      "source": {
+        "nativeId": "2012年客观题-卷一#一#59",
+        "path": "真题库/客观题/2012年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "关于如何根据社会主义法治理念完善我国宪法的权力制约原则，下列哪些选项是正 确的？",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2012"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2012
+    },
+    {
+      "answer": [
         "A",
         "B",
         "D"
@@ -5874,103 +5780,206 @@
     },
     {
       "answer": [
-        "A"
+        "A",
+        "B",
+        "D"
       ],
       "answerText": null,
-      "chapter": "公民的基本权利和义务",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公民的基本权利和义务",
+      "chapter": "国家的基本制度（下）",
+      "chapterConfidence": "high",
+      "chapterOfficial": "国家的基本制度（下）",
       "difficulty": null,
-      "explanation": "2012 年修订刑事诉讼法，明确将“尊重和保障人权”写入总则部分，将尊重和保障人\n权，保护公民人身权利、财产权利、民主权利和其他权利，保障社会主义建设事业的顺利进\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n行，作为刑事诉讼法的根本任务。进一步强调刑事诉讼尊重和人权保障的理念。尊重和保障\n人权，要着重关注犯罪嫌疑人、被告人的权利，也要依法维护被害人及所有诉讼参与人的权\n利。而且，惩罚犯罪与保障人权两者统一，不分孰轻孰重。\n选项 A 正确。“以人为本、保障和维护公民基本权利和自由”的说法是对“保障人权”\n理念的正确阐释。\n选项 B 错误。刑事诉讼中着重关注犯罪嫌疑人、被告人的权利，但并非“犯罪嫌疑人、\n被告人的权利至上”\n选项 C 和选项 D 不可选，尊重与保障人权的理念与程序公正、实体公正以及效率的价值\n理念不是同一个概念。不可选",
-      "id": "law:fakao-app:2012年客观题-卷二#二#22_1",
+      "explanation": "本题考查食品安全事故的处置和监管。依据《食品安全法》第 71 条 1 款第规定，发生\n食品安全事故的单位应当立即予以处置，防止事故扩大。事故发生单位和接收病人进行治疗\n的单位应当及时向事故发生地县级卫生行政部门报告。第 3 款规定，发生重大食品安全事故\n的，接到报告的县级卫生行政部门应当按照规定向本级人民政府和上级人民政府卫生行政部\n门报告。县级人民政府和上级人民政府卫生行政部门应当按照规定上报。本题中，D 市 S 县\n发生重大食品安全事故，接收病人的 S 县医院应立即向 S 县卫生局报告；接到报告的 S 县卫\n生局应及时向 S 县政府和 D 市卫生局报告。所以 A、B 选项正确。C 项无此规定，指挥部一\n般由一级人民政府负责组织。\nD 项考查县级医卫组织可直接将事故及处理结果上报给卫生部。依据《食品安全法》第\n82 条规定，国家建立食品安全信息统一公布制度。下列信息由国务院卫生行政部门统一公\n布：（1）国家食品安全总体情况；（2）食品安全风险评估信息和食品安全风险警示信息\n（3）重大食品安全事故及其处理信息；（4）其他重要的食品安全信息和国务院确定的需要\n统一公布的信息。第 83 条规定，县级以上地方卫生行政、农业行政、质量监督、工商行政\n管理、食品药品监督管理部门获知本法第八十二条第一款规定的需要统一公布的信息，应当\n向上级主管部门报告，由上级主管部门立即报告国务院卫生行政部门；必要时，可以直接向\n国务院卫生行政部门报告。可见 D 正确。因此本题答案 ABD。（本题答案：ABD）",
+      "id": "law:fakao-app:2012年客观题-卷一#一#65",
       "knowledgePoints": [],
       "options": [
         {
           "label": "A",
-          "text": "体现了以人为本、保障和维护公民基本权利和自由的理念"
+          "text": "接收病人的 S 县医院立即向 S 县卫生局报告"
         },
         {
           "label": "B",
-          "text": "体现了犯罪嫌疑人、被告人权利至上的理念"
+          "text": "接到报告的 S 县卫生局及时向 S 县政府和 D 市卫生局报告"
         },
         {
           "label": "C",
-          "text": "体现了实体公正与程序公正并重的理念"
+          "text": "S 县卫生局立即成立食品安全事故处置指挥部"
         },
         {
           "label": "D",
-          "text": "体现了公正优先、兼顾效率的理念"
+          "text": "S 县卫生局在必要时可直接向卫生部报告事故及其处理信息"
         }
       ],
       "source": {
-        "nativeId": "2012年客观题-卷二#二#22",
-        "path": "真题库/客观题/2012年客观题-卷二.md",
+        "nativeId": "2012年客观题-卷一#一#65",
+        "path": "真题库/客观题/2012年客观题-卷一.md",
         "repo": "fakao-app",
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
-      "stem": "关于《刑事诉讼法》“尊重和保障人权，保护公民的人身权利、财产权利、民主权 利和其他权利”的规定，下列哪一选项是正确的？",
+      "stem": "D 市 S 县发生重大食品安全事故。根据《食品安全法》的规定，关于有关部门采取 的措施，下列哪些选项是正确的？",
       "subjectId": "xianfa",
       "tags": [
         "fakao-app",
         "md-真题",
-        "section:单项选择题",
+        "section:多项选择题",
         "year:2012"
       ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
       "year": 2012
     },
     {
       "answer": [
-        "B"
+        "A",
+        "B",
+        "D"
       ],
       "answerText": null,
-      "chapter": "公民的基本权利和义务",
+      "chapter": "国家的基本制度（上）",
       "chapterConfidence": "low",
-      "chapterOfficial": "公民的基本权利和义务",
+      "chapterOfficial": "国家的基本制度（上）",
       "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2012年客观题-卷二#二#25_2",
+      "explanation": "AD 选项，国家结构形式，指一个国家的整体与其组成部分之间，中央和地方之间的相\n互关系。单一制国家是由若干普通行政单位或自治单位组成的单一主权的国家，各组成单位\n都是国家不可分割的组成部分的一种国家结构形式。单一制的特征有:全国只有一部宪法和一\n个统一的法律体系；只有一个中央政权机关，各地方的自治单位或行政单位受中央统一领导;\n每个公民只有一个国籍；国家整体在国际关系中是唯一的主体。由此可知，AD 项正确。\nB 项，维护宪法权威和法制统一是我国建设社会主义的必然要求，是我国的基本国策，B\n项正确。\nC 选项，我国实行的是“一国两制”，在我国的香港、澳门特别行政区、台湾地区，政\n治、经济、社会制度和大陆是有区别，C 项错误。",
+      "id": "law:fakao-app:2012年客观题-卷一#一#90",
       "knowledgePoints": [],
       "options": [
         {
           "label": "A",
-          "text": "在侦查期间可以向犯罪嫌疑人核实证据"
+          "text": "我国实行单一制国家结构形式"
         },
         {
           "label": "B",
-          "text": "会见在押的犯罪嫌疑人、被告人，可以了解案件有关情况"
+          "text": "维护宪法权威和法制统一是国家的基本国策"
         },
         {
           "label": "C",
-          "text": "收集到的有利于犯罪嫌疑人的证据，均应及时告知公安机关、检察院"
+          "text": "在全国范围内实行统一的政治、经济、社会制度"
         },
         {
           "label": "D",
-          "text": "在执业活动中知悉犯罪嫌疑人、被告人曾经实施犯罪的，应及时告知司法机关"
-        },
-        {
-          "label": "C",
-          "text": "D 选项错误，不当选。《刑事诉讼法》第 46 条规定“辩护律师对在执业活动中知悉"
+          "text": "中华人民共和国是一个统一的国际法主体"
         }
       ],
       "source": {
-        "nativeId": "2012年客观题-卷二#二#25",
-        "path": "真题库/客观题/2012年客观题-卷二.md",
+        "nativeId": "2012年客观题-卷一#一#90",
+        "path": "真题库/客观题/2012年客观题-卷一.md",
         "repo": "fakao-app",
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
-      "stem": "关于辩护律师在刑事诉讼中享有的权利和承担的义务，下列哪一说法是正确的？",
+      "stem": "维护国家主权和领土完整，维护国家统一是我国宪法的重要内容，体现在《宪法》 和法律一系列规定中。关于我国的国家结构形式，下列选项正确的是：",
       "subjectId": "xianfa",
       "tags": [
         "fakao-app",
         "md-真题",
-        "section:单项选择题",
+        "section:不定项选择题",
         "year:2012"
       ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
       "year": 2012
+    },
+    {
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "国家机构",
+      "chapterConfidence": "high",
+      "chapterOfficial": "国家机构",
+      "difficulty": null,
+      "explanation": "农民和知识分子，团结一切可以团结的力量。在长期的革命和建设过程中，已经结成由中国\n共产党领导的，有各民主党派和各人民团体参加的，包括全体社会主义劳动者、社会主义事\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n业的建设者、拥护社会主义的爱国者和拥护祖国统一的爱国者的广泛的爱国统一战线，这个\n统一战线将继续巩固和发展。中国人民政治协商会议是有广泛代表性的统一战线组织，过去\n发挥了重要的历史作用，今后在国家政治生活、社会生活和对外友好活动中，在进行社会主\n义现代化建设、维护国家的统一和团结的斗争中，将进一步发挥它的重要作用。中国共产党\n领导的多党合作和政治协商制度将长期存在和发展。”可知，A、C、D 项正确，应选。\nB 项错误。中国人民政治协商会议属于人民团体，不是国家机关，故 B 项错误，不应\n选。",
+      "id": "law:fakao-app:2013年客观题-卷一#一#62",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "中国人民政治协商会议是具有广泛代表性的统一战线组织"
+        },
+        {
+          "label": "B",
+          "text": "中国人民政治协商会议是重要的国家机关"
+        },
+        {
+          "label": "C",
+          "text": "中国共产党领导的多党合作和政治协商制度将长期存在和发展"
+        },
+        {
+          "label": "D",
+          "text": "中国共产党领导的爱国统一战线将继续巩固和发展"
+        },
+        {
+          "label": "A",
+          "text": "C、D 正确。《宪法》序言第十自然段规定：“社会主义的建设事业必须依靠工人、"
+        }
+      ],
+      "source": {
+        "nativeId": "2013年客观题-卷一#一#62",
+        "path": "真题库/客观题/2013年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据《宪法》，关于中国人民政治协商会议，下列哪些选项是正确的？",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2013"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2013
+    },
+    {
+      "answer": [
+        "A",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "国家机构",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国家机构",
+      "difficulty": null,
+      "explanation": "A 项正确。《香港特别行政区基本法》第 2 条规定：“全国人民代表大会授权香港特别\n行政区依照本法的规定实行高度自治，享有行政管理权、立法权、独立的司法权和终审\n权。”《澳门特别行政区基本法》第 2 条规定：“中华人民共和国全国人民代表大会授权澳\n门特别行政区依照本法的规定实行高度自治，享有行政管理权、立法权、独立的司法权和终\n审权。”可知 A 项正确，应选。\nB 项错误。《宪法》第 112 条规定：“民族自治地方的自治机关是自治区、自治州、自\n治县的人民代表大会和人民政府。”第 115 条规定：“自治区、自治州、自治县的自治机关\n行使宪法第三章第五节规定的地方国家机关的职权，同时依照宪法、民族区域自治法和其他\n法律规定的权限行使自治权，根据本地方实际情况贯彻执行国家的法律、政策。”可知，我\n国宪法并未规定民族自治地方的法院依法行使自治权，故 B 项错误，不选。\nC 项错误。《宪法》第 30 条第 3 款规定：“自治区、自治州、自治县都是民族自治地\n方。”《地方各级人民代表大会和地方各级人民政府组织法》第 9 条第 2 款规定：“少数民\n族聚居的乡、民族乡、镇的人民代表大会在行使职权的时候，应当采取适合民族特点的具体\n措施。”可知，民族乡不属于民族自治地方，不享有自治权，故 C 项错误，不选。\nD 项正确。《宪法》第 111 条第 1 款规定：“城市和农村按居民居住地区设立的居民委\n员会或者村民委员会是基层群众性自治组织。居民委员会、村民委员会的主任、副主任和委\n员由居民选举。居民委员会、村民委员会同基层政权的相互关系由法律规定。”故 D 项正\n确，应选。",
+      "id": "law:fakao-app:2013年客观题-卷一#一#63",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "特别行政区依照法律规定实行高度自治，享有行政管理权、立法权、独立的司法权和"
+        },
+        {
+          "label": "B",
+          "text": "民族区域自治地方的法院依法行使自治权"
+        },
+        {
+          "label": "C",
+          "text": "民族乡依法享有一定的自治权"
+        },
+        {
+          "label": "D",
+          "text": "村民委员会是基层群众性自治组织"
+        }
+      ],
+      "source": {
+        "nativeId": "2013年客观题-卷一#一#63",
+        "path": "真题库/客观题/2013年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据《宪法》和法律的规定，关于自治和自治权，下列哪些选项是正确的？",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2013"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2013
     },
     {
       "answer": [
@@ -6078,7 +6087,7 @@
       ],
       "answerText": null,
       "chapter": "宪法的实施与监督",
-      "chapterConfidence": "low",
+      "chapterConfidence": "high",
       "chapterOfficial": "宪法的实施与监督",
       "difficulty": null,
       "explanation": "A 项正确。《各级人民代表大会常务委员会监督法》第 6 条规定：“各级人民代表大会\n常务委员会行使监督职权的情况，应当向本级人民代表大会报告，接受监督。”可知，A 项\n正确，应选。\nB 项错误。《各级人民代表大会常务委员会监督法》第 25 条规定：“全国人民代表大会\n常务委员会和省、自治区、直辖市的人民代表大会常务委员会根据需要，可以委托下一级人\n民代表大会常务委员会对有关法律、法规在本行政区域内的实施情况进行检查。受委托的人\n民代表大会常务委员会应当将检查情况书面报送上一级人民代表大会常务委员会。”可知，\n全国人大常委会只能委托“下一级”(非“下级”)人大常委会(即省级人大常委会)进行执法检\n查。并不能委托其所有下级。故 B 项错误，不应选。\nC 项正确。《各级人民代表大会常务委员会监督法》第 38 条规定：“质询案以口头答复\n的，由受质询机关的负责人到会答复。质询案以书面答复的，由受质询机关的负责人签\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n署。”可知，C 项正确，应选。\nD 项正确。《各级人民代表大会常务委员会监督法》第 42 条第 3 款规定：“调查委员\n会在调查过程中，可以不公布调查的情况和材料。”可知，D 项正确，应选。",
@@ -6167,6 +6176,54 @@
       "type": "indefinite_choice",
       "typeRaw": "不定项选择题",
       "year": 2013
+    },
+    {
+      "answer": [
+        "A"
+      ],
+      "answerText": null,
+      "chapter": "公民的基本权利和义务",
+      "chapterConfidence": "low",
+      "chapterOfficial": "公民的基本权利和义务",
+      "difficulty": null,
+      "explanation": "执法为民的基本含义是，立法机关的立法活动、行政机关的执法活动、司法机关的司法活动等社会主义法治实践活动，都必须以广大人民的根本利益为出发点，反映广大人民的意志与愿望，体现广大人民的情感与要求，切实维护人民群众的正当利益，为人民群众有效地行使民主权利，参与国家和社会管理，自主从事各种正当的经济、社会、文化活动，合理地追求生存和生活状态的改善，提供法律上的支持与保护。其基本要求包括自觉践行执法为民理念，但是A 项中将调查满意度作为唯一标准，说法过于绝对，故 A 项说法错误。执法为民要做到切实做到便民利民，故 B 项正确。执法为民要做到倡导和注重理性文明执法.故  C 项正确。执法为民要构建以社会成员为主体、以人民利益为核心的权利保护体系，故 D 项做法正确。",
+      "id": "law:fakao-app:2014年客观题#一#5",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "某市公安局借助网络开展执法满意度调查并将调查结果作为评判执法公正的唯一标准"
+        },
+        {
+          "label": "B",
+          "text": "某市人民法院通过优化人民法庭区域布置、开展巡回审判等方式，减少当事人讼累"
+        },
+        {
+          "label": "C",
+          "text": "某市政府出台《市政管理检查行为规范》, 规范城管队员执法行为"
+        },
+        {
+          "label": "D",
+          "text": "某县检察院设立未成年人案件办公室，探"
+        }
+      ],
+      "source": {
+        "nativeId": "2014年客观题#一#5",
+        "path": "真题库/客观题/2014年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "执法为民要求立法、行政、司法等机关的工作要反映群众的愿望和根本利益。下列哪一做法没有准确体现执法为民的基本要求?",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2014"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2014
     },
     {
       "answer": [
@@ -6362,6 +6419,104 @@
     },
     {
       "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "公民的基本权利和义务",
+      "chapterConfidence": "low",
+      "chapterOfficial": "公民的基本权利和义务",
+      "difficulty": null,
+      "explanation": "A 选项错误，依法纳税是我国宪法规定的公民基本义务，故王某作为中国公民，有依法纳税的义务。\nB 选项错误。凡年满18周岁的公民，均有依法服兵役的义务，王某今年23岁，显然满足条件，只是由于其之前在高校就读，可以缓征，在毕业后只要满足服现役条件，仍然可以被征集服现役。\nC 选项正确，根据选举权普遍原则，公民只要年满18周岁，未被剥夺政治权利，均依法享有选举权和被选举权。\nD 选项错误，宪法当中的休息权是一项非常特殊的身份性权利，仅针对劳动者，王某未就业，显然不属于劳动者，自然不享有休息权(但不能理解为不能休息)。",
+      "id": "law:fakao-app:2014年客观题#一#24",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "无须承担纳税义务"
+        },
+        {
+          "label": "B",
+          "text": "不得被征集服现役"
+        },
+        {
+          "label": "C",
+          "text": "有选举权和被选举权"
+        },
+        {
+          "label": "D",
+          "text": "有休息的权利"
+        }
+      ],
+      "source": {
+        "nativeId": "2014年客观题#一#24",
+        "path": "真题库/客观题/2014年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "王某为某普通高校应届毕业生，23岁，尚未就业。根据《宪法》和法律的规定，关于王某的权利义务，下列哪一选项是正确的?",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2014"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2014
+    },
+    {
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "国家的基本制度（上）",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国家的基本制度（上）",
+      "difficulty": null,
+      "explanation": "西周采用的是“以德配天，明德慎罚”思想，“明德慎罚”的具体要求可以归纳为“实施德教，用刑宽缓”。其中“实施德教”是前提，是第一位的。汉代中期以后，“以德配天，明德慎罚”的主张被儒家发挥成“德主刑辅，礼刑并用”的基本策略，从而为以  “礼律结合”为特征的中国传统法制奠定了理论基础，故 A 项说法正确。\n秦朝采用“一断于法”的“以法治国”的理念，并没有提“德主刑辅，礼刑并用”,汉代才有，故 B 项说法错误。\n唐朝承袭和发展了以往礼法并用的统治方法，使得法律统治“一准乎礼”,真正实现了礼与律的统一，故 C 项说法正确。蜜蜂考资微信： f89082933\n宋以前论及“明刑弼教”,多将其附于“德主刑辅” 之后，其着眼点仍是“大德小刑”和“先教后刑”。著名理学家朱熹(理学代表人物)首先对“明刑弼教”作出新的阐释。他有意提高了礼、刑关系中刑的地位，认为礼律二者对治国同等重要，“不可偏废”, 故 D 项说法\n正确。",
+      "id": "law:fakao-app:2014年客观题#一#56",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "西周时期确立了“以德配天，明德慎罚”的思想，以此为指导，道德教化与刑罚处罚结合，形成了当时“礼”“刑”结合的宏观法制特色"
+        },
+        {
+          "label": "B",
+          "text": "秦朝推行法家主张，但并不排斥礼，也强调“德主刑辅，礼刑并用”"
+        },
+        {
+          "label": "C",
+          "text": "唐律“ 一准乎礼，而得古今之平”,实现了礼与律的有机统一，成为了中华法系的代表"
+        },
+        {
+          "label": "D",
+          "text": "宋朝以后，理学强调礼和律对治理国家具有同等重要的地位，二者“不可偏废”"
+        }
+      ],
+      "source": {
+        "nativeId": "2014年客观题#一#56",
+        "path": "真题库/客观题/2014年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "中国古代关于德与刑的关系理论，经历了一个长期的演变和发展过程。下列哪些说法是正确的?",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2014"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2014
+    },
+    {
+      "answer": [
         "A",
         "B"
       ],
@@ -6447,6 +6602,55 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "根据《选举法》的规定，关于选举制度，下列哪些选项是正确的?",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2014"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2014
+    },
+    {
+      "answer": [
+        "A",
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "国家的基本制度（下）",
+      "chapterConfidence": "high",
+      "chapterOfficial": "国家的基本制度（下）",
+      "difficulty": null,
+      "explanation": "《民族区域自治法》第46条规定：民族自治地方人民法院的审判工作，受最高人民法院和上级人民法院监督。民族自治地方的人民检察院的工作，受最高人民检察院和上级人民检察院领导。民族自治地方的人民法院和人民检察院的领导成员和工作人员中，应当有实行区域自治的民族的人员，故A 项说法正确。\n《民族区域自治法》第17条规定：自治区主席、自治州州长、自治县县长由实行区域自治的民族的公民担任。民族自治地方的人民政府实行自治区主席、自治州州长、自治县县长负责制。自治区主席、自治州州长、自治县县长分别主持本级人民政府工作，故 B 项说法正确。\n《民族区域自治法》第19条规定：自治区的自治条例和单行条例，报全国人民代表大会常务委员会批准后生效。自治州、自治县的自治条例和单行条例报省、自治区、直辖市的人民代表大会常务委员会批准后生效，并报全国人民代表大会常务委员会和国务院备案。 C 项中应报全国人大常委会批准。\n《民族区域自治法》第44条规定：民族自治地方实行计划生育和优生优育，提高各民族人口素质。 D 项\n中少数民族地区也实行计划生育基本国策。本题答案为 A、B。",
+      "id": "law:fakao-app:2014年客观题#一#63",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "民族自治地方法院的审判工作，受最高人民法院和上级人民法院监督"
+        },
+        {
+          "label": "B",
+          "text": "民族自治地方的政府首长由实行区域自治的民族的公民担任，实行首长负责制"
+        },
+        {
+          "label": "C",
+          "text": "民族自治区的自治条例和单行条例报全国人大批准后生效"
+        },
+        {
+          "label": "D",
+          "text": "民族自治地方自主决定本地区人口政策，不实行计划生育"
+        }
+      ],
+      "source": {
+        "nativeId": "2014年客观题#一#63",
+        "path": "真题库/客观题/2014年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据《宪法》和法律的规定，关于民族区域自治制度，下列哪些选项是正确的?",
       "subjectId": "xianfa",
       "tags": [
         "fakao-app",
@@ -6561,100 +6765,51 @@
     },
     {
       "answer": [
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "宪法的实施与监督",
-      "chapterConfidence": "low",
-      "chapterOfficial": "宪法的实施与监督",
-      "difficulty": null,
-      "explanation": "诈骗罪(既遂)的基本构造为：行为人以非法占有为目的实施欺骗行为一对方(受骗者)产生(或继续维持、强化)错误认识—对方基于错误认识处分财产一行为人或第三者取得财产一被害人受到财产损害。其中，对方基于错误认识处分财产是诈骗罪的关键环节之一。在这个环节中，又要求财产处分人是具有处分财产权限或地位、具有处分能力的人。如果行为人不具有处分财产的权限或地位，或者不具有\n处分财产的能力，则行为人不能构成诈骗罪，故在本案中，如果认为交警丙没有处分财产的权限，则行为人甲的行为不成立诈骗罪。 A 项正确。\n盗窃罪是指以非法占有为目的，窃取公私财物数额较大，或者多次盗窃、人户盗窃、携带凶器盗窃、扒窃的行为。关于盗窃罪是否必须表现为秘密窃取，理论上存在不同观点，当然，如果认为成立盗窃罪必须表现为秘密窃取，那么,在本案中，甲不是秘密窃取财物，则甲的行为不成立盗窃罪。 B 项正确。\n抢夺罪是指以非法占有为目的，直接夺取他人紧密占有的数额较大的公私财物的行为。关于抢夺罪是否必须表现为趁人不备公然夺取，在理论上也存在不同观点。如果认为抢夺必须表现为乘人不备公然夺取，则甲的行为在本案中显然不符合此条件，故不成立抢夺罪。C 项正确。\n敲诈勒索罪是指以非法占有为目的，对他人实行威胁，索取公私财物数额较大或者多次索取公私财物的行为。敲诈勒索罪的基本结构是：行为人以非法占有为目的对他人实行威胁—对方产生恐惧心理一对方基于恐惧心理处分财产一行为人或第三者取得财产一被害人遭受财产损失。从敲诈勒索罪的基本结构可以看出，本罪在客观上必须具有对他人实施威胁的行为。威胁，是指以恶害相通告迫使被害人处分财产，即如果不按照行为人的要求处分财产，就会当场或在将来的某个时间遭受恶害(如果当场遭受的恶害是足以压制他人反抗的暴力，则成立抢劫罪)。威胁内容的种类没有限制，包括对被害人及其亲属等人的生命、身体、自由、名誉等进行威胁。如果没有威胁、恐吓行为，则不能认定行为人具有敲诈勒索行为，即使被害人心生恐惧而交出商品，也不能认定行为人构成敲诈勒索罪。所以，D 项错误。本题答案为 D 项。",
-      "id": "law:fakao-app:2014年客观题#二#19",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "如认为交警丙没有处分权限，则甲的行为不成立诈骗罪"
-        },
-        {
-          "label": "B",
-          "text": "如认为盗窃必须表现为秘密窃取，则甲的行为不成立盗窃罪"
-        },
-        {
-          "label": "C",
-          "text": "如认为抢夺必须表现为乘人不备公然夺取，则甲的行为不成立抢夺罪"
-        },
-        {
-          "label": "D",
-          "text": "甲虽未实施恐吓行为，但如乙心生恐惧而交出商品的，甲的行为构成敲诈勒索罪"
-        }
-      ],
-      "source": {
-        "nativeId": "2014年客观题#二#19",
-        "path": "真题库/客观题/2014年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "乙购物后，将购物小票随手扔在超市门口。甲捡到小票，立即拦住乙说：“你怎么把我购买的东西拿走?”乙莫名其妙，甲便向乙出示小票，两人发生争执。适逢交警丙路过，乙请丙判断是非，丙让乙将商品还给甲，有口难辩的乙只好照办。关于本案的分析(不考虑数额),下列哪一选项是错误的?",
-      "subjectId": "xianfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2014"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2014
-    },
-    {
-      "answer": [
-        "A",
-        "D"
+        "B"
       ],
       "answerText": null,
       "chapter": "国家机构",
       "chapterConfidence": "low",
       "chapterOfficial": "国家机构",
       "difficulty": null,
-      "explanation": "A 项，滥用职权罪是指国家机关工作人员滥用职权，致使公共财产、国家和人民利益遭受重大损失的行为。甲作为国家机关工作人员，滥用职权，指使下级对明知是有罪的人，故意包庇不使他受追诉，属于滥用职权罪的实行犯。 A 项正确。\nB 项，徇私枉法罪的主体是司法工作人员，所以，要构成徇私枉法罪的正犯，包括间接正犯，行为人必须具有司法工作人员的身份。甲虽然是分管公安工作的副县长，属于国家机关工作人员，但其不是司法工作人员，故不能构成徇私枉法罪的间接正犯，在本案中，其属于徇私枉法罪的教唆犯。 B 项错误。\nC 项，本案中，甲只有一个行为，而不是两个行为，不能数罪并罚。 C 项错误。\nD 项，本案中，乙作为警察，属于司法工作人员，乙\n明知丙有罪，但为徇私情，采取毁灭证据的手段使丙未受追诉。其行为既构成徇私枉法罪，又构成滥用职权罪，还构成帮助毁灭证据罪。其中徇私枉法罪和滥用职权罪属于法条竞合关系，特殊和一般的关系，二者竞合时，应按特别罪名徇私枉法罪论处。徇私枉法罪和帮助毁灭证据罪属于想象竞合关系，应从一重罪论处，二者相比，徇私枉法罪比较重，故最终对乙应以徇私枉法罪论处。D 项正确。",
-      "id": "law:fakao-app:2014年客观题#二#63",
+      "explanation": "增强全民法治观念，要推动全社会树立法治意识。应当：\n(1)坚持把全民普法和守法作为依法治国的长期基础性工作，深入开展法治宣传教育。\n(2)把领导干部带头学法守法作为树立法治意识的关键，完善国家工作人员学法用法制度。\n(3)法治教育纳入国民教育体系，从青少年抓起，在中小学设立法治知识课程。\n(4)健全普法宣传教育机制，实行国家机关“谁执法谁普法”的普法责任制。\n(5)加强社会诚信建设，健全公民和组织守法信用记录。\n(6)加强公民道德建设，弘扬中华优秀传统文化。故 A、C、D选项均正确。\nB 选项错误。注意，健全普法宣传教育机制，要求国家机关实行“谁执法谁普法”的普法责任制，不能把普法工作全部委托给人民团体。",
+      "id": "law:fakao-app:2015年客观题#一#7",
       "knowledgePoints": [],
       "options": [
         {
           "label": "A",
-          "text": "因甲是国家机关工作人员，故甲是滥用职权罪的实行犯"
+          "text": "通过《法在身边》电视节目、微信公众号等平台开展以案释法，进行普法教育"
         },
         {
           "label": "B",
-          "text": "因甲居于领导地位，故甲是徇私枉法罪的间接正犯"
+          "text": "印发法治宣传教育工作责任表，把普法工作全部委托给人民团体"
         },
         {
           "label": "C",
-          "text": "因甲实施了两个实行行为，故应实行数罪并罚"
+          "text": "通过举办法治讲座、警示教育报告会等方式促进领导干部带头学法、模范守法"
         },
         {
           "label": "D",
-          "text": "乙的行为同时触犯徇私枉法罪与帮助毁灭证据罪、滥用职权罪，但因只有一个行为，应以徇私枉法罪论处"
+          "text": "在暑期组织“预防未成年人违法犯罪模拟法庭巡演”,向青少年宣传《未成年人保护法》"
         }
       ],
       "source": {
-        "nativeId": "2014年客观题#二#63",
-        "path": "真题库/客观题/2014年客观题.md",
+        "nativeId": "2015年客观题#一#7",
+        "path": "真题库/客观题/2015年客观题.md",
         "repo": "fakao-app",
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
-      "stem": "丙实施抢劫犯罪后，分管公安工作的副县长甲滥用职权，让侦办此案的警察乙想办法使丙无罪。乙明知丙有罪，但为徇私情，采取毁灭证据的手段使丙未受追诉。关于本案的分析，下列哪些选项是正确的?",
+      "stem": "增强全民法治观念，推进法治社会建设，使人民群众内心拥护法律，需要健全普法宣传教育机制。某市的下列哪一做法没有体现这一要求 ?",
       "subjectId": "xianfa",
       "tags": [
         "fakao-app",
         "md-真题",
-        "section:多项选择题",
-        "year:2014"
+        "section:单项选择题",
+        "year:2015"
       ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2014
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2015
     },
     {
       "answer": [
@@ -6662,7 +6817,7 @@
       ],
       "answerText": null,
       "chapter": "国家机构",
-      "chapterConfidence": "low",
+      "chapterConfidence": "high",
       "chapterOfficial": "国家机构",
       "difficulty": null,
       "explanation": "A 选项正确，因为《母婴保健法》属于法律(狭义),《婚姻登记条例》属于行政法规，前者在效力上高于后者。 B 选项错误，因为全国人大常委会和国务院之间属于监督关系，监督关系只能审查合法性，不能审查合理性，只能撤销，不能改变。C 选项正确，根据《立法法》第101条的规定：“全国人民代表大会有关的专门委员会和常务委员会工作机构应当按照规定要求，将审查、研究情况向提出审查建议的国家机关、社会团体、企业事业组织以及公民反馈，并可以向社会公开。”对于提出审查建议的潘某是应当告知审查情况。D 选项正确，只要不是国家机关为主体的监督，都属于非正式的社会监督。",
@@ -6693,6 +6848,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "律师潘某认为《母婴保健法》与《婚姻登记条例》关于婚前检查的规定存在冲突，遂向全国人大常委会书面提出了进行审查的建议。对此，下列哪一说法是错误的?",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2015"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2015
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "宪法的实施与监督",
+      "chapterConfidence": "low",
+      "chapterOfficial": "宪法的实施与监督",
+      "difficulty": null,
+      "explanation": "A 选项错误，制宪权即制定宪法的权力，是一种创设国家权力的根源性权力，修宪权是由业已制定完成的宪法所赋予的权力，二者显然不可相提并论。B 选项正确，在现代民主法治社会，一般法律的制定都是由民意代表机关完成的，宪法的地位(成文宪法)要高于普通法律，所以更要广泛地倾听民意，人民参与宪法制定主要通过两种方式实现，其一为对宪法草案的全民公决，其二为对宪法草案充分发表意见，典型如我国1954年《宪法》制定过程中的全民讨论。 C    选项错误，是宪法修正案而并非宪法草案由全国人民代表大会以全体代表的三分之二以上的多数通过。 D   选项错误，1954年《宪法》是第一届全国人大一次会议，全国人大以公告形式公布。",
+      "id": "law:fakao-app:2015年客观题#一#20",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "制宪权和修宪权是具有相同性质的根源性的国家权力"
+        },
+        {
+          "label": "B",
+          "text": "人民可以通过对宪法草案发表意见来参与制宪的过程"
+        },
+        {
+          "label": "C",
+          "text": "宪法的制定由全国人民代表大会以全体"
+        },
+        {
+          "label": "D",
+          "text": "1954年《宪法》通过后，由中华人民共和国主席根据全国人民代表大会的决定公布"
+        }
+      ],
+      "source": {
+        "nativeId": "2015年客观题#一#20",
+        "path": "真题库/客观题/2015年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "宪法的制定是指制宪主体按照一定程序创制宪法的活动。关于宪法的制定，下列哪一选项是正确的?",
       "subjectId": "xianfa",
       "tags": [
         "fakao-app",
@@ -6789,6 +6992,102 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "中华人民共和国公民在法律面前一律平等。关于平等权，下列哪一表述是错误的?",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2015"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2015
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "宪法的实施与监督",
+      "chapterConfidence": "low",
+      "chapterOfficial": "宪法的实施与监督",
+      "difficulty": null,
+      "explanation": "A 选项考查审计对象。本题中某高速公路投资公司属于国有企业，根据《审计法》第2条，审计局有权进行审计。因此，A 选项错误。\nC 选项考查审计局的审查权限。根据《审计法》第33条，审计机关经批准可以自行查询被审计单位的账户。因此 .C 选项错误。\nD 选项考查审计程序。根据《审计法》第32条，审计机关有权查询被审计单位的与财政收支有关的资产和资料。因此，D 选项错误。",
+      "id": "law:fakao-app:2015年客观题#一#28",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "该公司既非政府机关，也非事业单位，审计局无权审计"
+        },
+        {
+          "label": "B",
+          "text": "审计局应在实施审计3日前，向该公司送达审计通知书"
+        },
+        {
+          "label": "C",
+          "text": "审计局欲查询该公司在金融机构的账户，应经局长批准并委托该市人民法院查询"
+        },
+        {
+          "label": "D",
+          "text": "审计局欲检查该公司与财政收支有关的资料和资产，应委托该市税务局检查"
+        }
+      ],
+      "source": {
+        "nativeId": "2015年客观题#一#28",
+        "path": "真题库/客观题/2015年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "为大力发展交通，某市出资设立了某高速公路投资公司。该市审计局欲对其实施年度审计监督。关于审计事宜，下列哪一说法是正确的?",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2015"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2015
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "宪法的实施与监督",
+      "chapterConfidence": "low",
+      "chapterOfficial": "宪法的实施与监督",
+      "difficulty": null,
+      "explanation": "保障措施的实施条件：(1)进口产品数量增加；①绝对增加(去年进入中国市场的某外国化工产品1万吨，今年2万吨);②相对增加(去年进入中国的外国化工产品1万吨，国内自给生产0.5万吨，今年进入中国市场的还是1万吨，但国内自己生产的只有0. 1万吨)。(2)进口产品给国内企业造成严重损害或严重损害威胁；(3)进口产品数量增加和损害之间有因果关系；题目中说进口中国的某类化工产品数量增加，虽总量持平，但是给生产同类产品的企业造成严重损害，这是产品的相对增加，属于保障措施的采取条件，不属于低价倾销的行为，所以A 说向商务部申请反倾销错误，B 正确。产品数量的相对增加也是可以采取保障措施的，C 项提到没有绝对增加，就不能采取保障措施，说法错误。\n保障措施有：(1)临时保障措施：提高关税(天数不能超过200天)。(2)最终保障措施：①提高关税；②数量限制。保障措施不包含价格承诺，所以 D 项错误。",
+      "id": "law:fakao-app:2015年客观题#一#43",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "受损害的中国国内产业可向商务部申请反倾销调查"
+        },
+        {
+          "label": "B",
+          "text": "受损害的中国国内产业可向商务部提出采取保障措施的书面申请"
+        },
+        {
+          "label": "C",
+          "text": "因为该类化工产品的进口数量并没有绝对增加，故不能采取保障措施"
+        },
+        {
+          "label": "D",
+          "text": "该类化工产品的出口商可通过价格承诺避免保障措施的实施"
+        }
+      ],
+      "source": {
+        "nativeId": "2015年客观题#一#43",
+        "path": "真题库/客观题/2015年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "进口中国的某类化工产品2015年占中国的市场份额比2014年有较大增加，经查，两年进 口总量虽持平，但仍给生产同类产品的中国产业造成了严重损害。依我国相关法律，下列哪一选项是正确的?",
       "subjectId": "xianfa",
       "tags": [
         "fakao-app",
@@ -6998,6 +7297,106 @@
     },
     {
       "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "国家的基本制度（上）",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国家的基本制度（上）",
+      "difficulty": null,
+      "explanation": "根据《宪法》第89、62、67条规定，国务院编制和执行国民经济和社会发展计划和国家预算；全国人大审查和批准国民经济和社会发展计划和计划执行情况的报告，审查和批准国家的预算和预算执行情况的报告；全国人大常委会在全国人民代表大会闭会期间，审查和批准国民经济和社会发展计划、国家预算在执行过程中所必须作的部分调整方案，故 C 项正确，D 项错误。我国《预算法》第4条第2款明确规定政府的全部收入和支出都应当纳入预算。”第13条规定：“经人民代表大会批准的预算，非法定程序，不得调整。各级政府、各部门、各单位的支出必须以经批准的预算为依据，未列入预算的不得支出。”故 A、B  项正确。",
+      "id": "law:fakao-app:2015年客观题#一#93",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "政府的全部收入和支出都应当纳入预算"
+        },
+        {
+          "label": "B",
+          "text": "经批准的预算，未经法定程序，不得调整"
+        },
+        {
+          "label": "C",
+          "text": "国务院有权编制和执行国民经济和社会发展计划、国家预算"
+        },
+        {
+          "label": "D",
+          "text": "全国人大常委会有权审查和批准国家的预算和预算执行情况的报告"
+        }
+      ],
+      "source": {
+        "nativeId": "2015年客观题#一#93",
+        "path": "真题库/客观题/2015年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "预算制度的目的是规范政府收支行为，强化预算监督。根据《宪法》和法律的规定，关于预算，下列表述正确的是：",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2015"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2015
+    },
+    {
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "宪法的实施与监督",
+      "chapterConfidence": "low",
+      "chapterOfficial": "宪法的实施与监督",
+      "difficulty": null,
+      "explanation": "A 选项正确，关于宪法的解释体制有三种：立法机关解释(源于英国，我国也是);司法机关解释(美国模式，1803年马伯里诉麦迪逊案确立); 专门机关解释模式(以德国的宪法法院和法国的宪法委员会为代表)。 B 选项错误，必须结合具体案件解释宪法的做法属于附带性的解释(所谓附带，即附带于具体案件的审判)。因此此种解释模式属于司法机关的解释体制，是美国模式，而不是德国的专门机关解释模式。换句话说，德国的宪法法院可以直接就宪法的规定(像我国的最高法和最高检一样)发布规范性的宪法解释。C 项正确，我国宪法解释机关是人大常委会，从它的性质和地位看，它对宪法的解释具有最高的、普遍的约束力。D 选项正确，宪法解释权只能够由全国人大常委会行使，国务院制定行政法规虽然要满足合宪性要求，但无权解释宪法。",
+      "id": "law:fakao-app:2015年客观题#一#94",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "由司法机关解释宪法的做法源于美国，也以美国为典型代表"
+        },
+        {
+          "label": "B",
+          "text": "德国的宪法解释机关必须结合具体案件对宪法含义进行说明"
+        },
+        {
+          "label": "C",
+          "text": "我国的宪法解释机关对宪法的解释具有最高的、普遍的约束力"
+        },
+        {
+          "label": "D",
+          "text": "我国国务院在制定行政法规时，必然涉及"
+        }
+      ],
+      "source": {
+        "nativeId": "2015年客观题#一#94",
+        "path": "真题库/客观题/2015年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "宪法解释是保障宪法实施的一种手段和措施。关于宪法解释，下列选项正确的是：",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2015"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2015
+    },
+    {
+      "answer": [
         "C"
       ],
       "answerText": null,
@@ -7033,6 +7432,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "某法院完善人民陪审员选任方式，在增加陪审员数量的基础上建立“陪审员库”,随机抽选陪审员参与案件审理。关于人民陪审员制度，下列哪一说法是错误的?",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2016"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2016
+    },
+    {
+      "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "国家的基本制度（上）",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国家的基本制度（上）",
+      "difficulty": null,
+      "explanation": "古代社会采用的是“德主刑辅”,道德起主要的作用。而现代法治国家的基本特征，就在于依法办事，即法律相对于其他社会规范而言，在纠纷解决中扮演着更加突出的角色。因此法律在现代社会中对保障人们的权利具有更重要的作用，故A 项正确。\n诉讼是一种利益的衡量，当诉讼成本大于收益时， “厌讼”就会产生，故B 项正确。\n司法体制在不断完善，全社会法治观念已有明显增强，而坚持把全民普法和守法作为依法治国的长期\n工作导致案件激增，正从一个侧面说明人民群众树立起遇事找法、解决问题靠法的观念，故C 项正确。\n全面推进依法治国，并不意味着“司法中心主义”, 而是要开展“系统治理、依法治理、综合治理、源头治理”。因此，即使在法治社会，诉讼也不是解决纠纷的唯一合法途径，故 D 项错误。",
+      "id": "law:fakao-app:2016年客观题#一#6",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "相比古代而言，法律在现代社会中对保障人们的权利具有更重要的作用"
+        },
+        {
+          "label": "B",
+          "text": "从理论上讲，当诉讼成本高于诉讼可能带来的收益时，更易形成“厌讼”的传统"
+        },
+        {
+          "label": "C",
+          "text": "案件激增从一个侧面说明人民群众已逐"
+        },
+        {
+          "label": "D",
+          "text": "在法治社会，诉讼是解决纠纷的唯一合法途径"
+        }
+      ],
+      "source": {
+        "nativeId": "2016年客观题#一#6",
+        "path": "真题库/客观题/2016年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "中国古代有“厌讼”传统，老百姓万不得已才打官司。但随着经济社会发展，我国司法领域却出现了诉讼案件激增的现象。对此，下列哪一说法是错误的?",
       "subjectId": "xianfa",
       "tags": [
         "fakao-app",
@@ -7090,6 +7537,104 @@
       ],
       "type": "single_choice",
       "typeRaw": "单项选择题",
+      "year": 2016
+    },
+    {
+      "answer": [
+        "A"
+      ],
+      "answerText": null,
+      "chapter": "国家机构",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国家机构",
+      "difficulty": null,
+      "explanation": "认定经营者具有市场支配地位要考\n虑该经营者在相关市场的市场份额，以及相关市场的竞争状况。因此反垄断机构执法时应界定该公司所涉相关市场，故A 项正确。\n根据《反垄断法》第18条规定，认定经营者需具有市场支配地位需要考虑多种因素，故B 项错误。根据《反垄断法》第17条第1款第5项规定，禁止具有市场支配地位的经营者没有正当理由搭售商品，或者在交易时附加其他不合理的交易条件。可见，“正当理由” 是阻却行为违法性的事由，而上游企业收取预付款，不能成为该公司转嫁经营成本的正当事由。该公司行为违法，故C、D项错误。",
+      "id": "law:fakao-app:2016年客观题#一#28",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "反垄断机构执法时应界定该公司所涉相关市场"
+        },
+        {
+          "label": "B",
+          "text": "只要该公司在当地独家经营，就能认定其具有市场支配地位"
+        },
+        {
+          "label": "C",
+          "text": "如该公司的上游气源企业向其收取预付款，该公司就可向客户收取“预付气费款”"
+        },
+        {
+          "label": "D",
+          "text": "县政府规定了“ 一个地域只能有一家燃气"
+        }
+      ],
+      "source": {
+        "nativeId": "2016年客观题#一#28",
+        "path": "真题库/客观题/2016年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某燃气公司在办理燃气入户前，要求用户缴纳一笔“预付气费款”,否则不予供气。待不再用气时，用户可申请返还该款项。经查，该款项在用户日常购气中不能冲抵燃气费。根据《反垄断法》的规定，下列哪一说法是正确的?",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2016"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2016
+    },
+    {
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "国家机构",
+      "chapterConfidence": "high",
+      "chapterOfficial": "国家机构",
+      "difficulty": null,
+      "explanation": "守法即依照法律行使权利、履行义务的活动，不仅包括消极、被动的守法，也包括积极主动行使自己的权利，实施法律，王某申请信息公开的行为属于后者，故 A 项正确。判决环保局败诉体现了法的评价作用和强制作用，评价作用是指法院判决对环保局行为合法与否的评判作用，强制作用是指判决环保局败诉是对环保局违法行为的制裁，通过制裁强制其遵守法律，故 B 项正确。法律监督包括国家监督和社会监督，国家监督包括国家权力机关、行政机关和司法机关的监督，社会监督非国家机关的监督，指各政党、各社会组织和公民的监督，故C 项正确。王某的诉权是相对权利，因为义务主体是特定的，故 D 项错误。",
+      "id": "law:fakao-app:2016年客观题#一#60",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "王某申请信息公开属于守法行为"
+        },
+        {
+          "label": "B",
+          "text": "判决环保局败诉体现了法的强制作用"
+        },
+        {
+          "label": "C",
+          "text": "王某起诉环保局的行为属于社会监督"
+        },
+        {
+          "label": "D",
+          "text": "王某的诉权属于绝对权利"
+        }
+      ],
+      "source": {
+        "nativeId": "2016年客观题#一#60",
+        "path": "真题库/客观题/2016年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "王某向市环保局提出信息公开申请，但未在法定期限内获得答复，遂诉至法院，法院判决环保局败诉。关于该案，下列哪些说法是正确的?",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2016"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
       "year": 2016
     },
     {
@@ -7198,7 +7743,7 @@
       ],
       "answerText": null,
       "chapter": "国家的基本制度（下）",
-      "chapterConfidence": "low",
+      "chapterConfidence": "high",
       "chapterOfficial": "国家的基本制度（下）",
       "difficulty": null,
       "explanation": "《宪法》第91条规定：“国务院设立审计机关，对国务院各部门和地方各级政府的财政收支，对国家的财政金融机构和企业事业组织的财务收支，进行审计监督。审计机关在国务院总理领导下，依照法律规定独立行使审计监督权，不受其他行政机关、社会团体和个人的干涉。”第109条规定：“县级以上的地方各级人民政府设立审计机关。地方各级审计机关依照法律规定独立行使审计监督权，对本级人民政府和上一级审计机关负责。”《审计法》亦有相关规定。可知，A 项正确。 B 项错误，地方各级审计机关对本级政府和上一级审计机关负责。 C 、D正确，国务院\n各部门和地方各级政府的财政收支，国家的财政金融\n机构和企业事业组织的财务收支，都应当依法接受审计监督。",
@@ -7229,6 +7774,55 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "国家实行审计监督制度。为加强国家的审计监督，全国人大常委会于1994年通过了《审计法》,并于2006年进行了修正。关于审计监督制度，下列哪些理解是正确的?",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2016"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2016
+    },
+    {
+      "answer": [
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "公民的基本权利和义务",
+      "chapterConfidence": "low",
+      "chapterOfficial": "公民的基本权利和义务",
+      "difficulty": null,
+      "explanation": "备用信用证，简称SBLC(stand    by  letters   of   credit)。又称担保信用证，是指不以清偿商品交易的价款为目的，而以贷款融资，或担保债务偿还为目的所开立的信用证。开证行保证在开证申请人未能履行其应履行的义务时，受益人只要凭备用信用证的规定向开证行开具汇票，并随附开证申请人未履行义务的声明或证明文件，即可得到开证行的偿付。备用信用证目前只适用《ICC  跟单信用证统一惯例》 (UCP600)  的部分条款，故B 错误。\n备用信用证具有：(1)不可撤销性。除非在备用证中另有规定，或经对方当事人同意，开证人不得修改或撤销其在该备用证下之义务，故A 错误。(2)独立性。备用证下开证人义务的履行并不取决于：①开证人从申请人那里获得偿付的权利和能力。②受益人从申请人那里获得付款的权利。③备用证中对任何偿付协议或基础交易的援引。④开证人对任何偿付协议或基础交易的履约或违约的了解与否，故C 项正确。(3)跟单性。开证人的义务要取决于单据的提示，以及对所要求单据的表面审查。(4)强制性。备用证在开立后即具有约束力，无论申请人是否授权开立，开证人是否收取了费用，或受益人是否收到或因信赖备用证或修改而采取了行动，它对开证行都是有强制性的，故 D 项正确。",
+      "id": "law:fakao-app:2016年客观题#一#81",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲银行必须对违约的事实进行审查后才能向乙银行付款"
+        },
+        {
+          "label": "B",
+          "text": "备用信用证与商业跟单信用证适用相同的国际惯例"
+        },
+        {
+          "label": "C",
+          "text": "备用信用证独立于乙银行与丙公司的国际贷款协议"
+        },
+        {
+          "label": "D",
+          "text": "即使该国际贷款协议无效，甲银行仍须承担保证责任"
+        }
+      ],
+      "source": {
+        "nativeId": "2016年客观题#一#81",
+        "path": "真题库/客观题/2016年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "在一国际贷款中，甲银行向贷款银行乙出具了备用信用证，后借款人丙公司称贷款协议无效，拒绝履约。乙银行向甲银行出示了丙公司的违约证明，要求甲银行付款。依相关规则，下列哪 些选项是正确的?",
       "subjectId": "xianfa",
       "tags": [
         "fakao-app",
@@ -7292,117 +7886,99 @@
     },
     {
       "answer": [
-        "B",
-        "C",
-        "D"
+        "B"
       ],
       "answerText": null,
       "chapter": "公民的基本权利和义务",
       "chapterConfidence": "low",
       "chapterOfficial": "公民的基本权利和义务",
       "difficulty": null,
-      "explanation": "根据《规章制定程序条例》第13条第2款，年度规章制定工作计划在执行中，可以根据实际情况予以调整，对拟增加的规章项目应当进行补充论证，故 A 项错误。根据《规章制定程序条例》第15\n条，起草规章，应当深入调查研究，总结实践经验，广泛听取有关机关、组织和公民的意见。听取意见可以采取书面征求意见、座谈会、论证会、听证会等多种形式，故 B 项正确。根据《规章制定程序条例》第18条第3款，规章送审稿的说明应当对制定规章的必要性、规定的主要措施、有关方面的意见等情况作出说明，故C 项正确。根据《规章制定程序条例》20条规定：“规章送审稿有下列情形之一的，法制机构可以缓办或者退回起早单位：(一)制定规章的基本条件尚不成熟或者发生重大变化的；(二)有关机构或者部门对规章送审稿规定的主要制度存在较大争议，起草单位未与有关机构或者部门协商的；(三)未按照本条例有关规定公开征求意见的；(四)上报送审稿不符合本条例第18条规定的。”故D 项正确。",
-      "id": "law:fakao-app:2016年客观题#二#77",
+      "explanation": "公安机关不再出具无违法犯罪记录证明，是落实简政放权、放管结合、优化服务要求的措施，不但不会减损公民合法权益，还有利于规范执法、便民利民，故A 错误。派出所的质疑跟文明执法无关，相反，证明附言对学校起到了普法作用，故 B 正确，C   错误。D显然错误。",
+      "id": "law:fakao-app:2017年客观题#一#4",
       "knowledgePoints": [],
       "options": [
         {
           "label": "A",
-          "text": "应先列入市政府年度规章制定工作计划中，未列入不得制定"
+          "text": "公安机关不再出具无违法犯罪记录证明，将减损公民合法权益"
         },
         {
           "label": "B",
-          "text": "起草该规章应广泛听取有关机关、组织和公民的意见"
+          "text": "民警的附言客观上起到了普法作用，符合 “谁执法谁普法”的要求"
         },
         {
           "label": "C",
-          "text": "此规章送审稿的说明应对制定规章的必要性、规定的主要措施和有关方面的意见等情况作出说明"
+          "text": "派出所对学校的要求提出质疑，不符合文明执法的要求"
         },
         {
           "label": "D",
-          "text": "市政府法制机构认为制定此规章基本条件尚不成熟，可将规章送审稿退回起草单位"
-        },
-        {
-          "label": "A",
-          "text": "涉及行政处罚的，由国务院或者经国务院授权的省、自治区、直辖市政府决定"
-        },
-        {
-          "label": "B",
-          "text": "涉及行政许可的，由经国务院批准的省、自治区、直辖市政府决定"
-        },
-        {
-          "label": "C",
-          "text": "限制人身自由的行政处罚只能由公安机关行使，不得交由其他行政机关行使"
-        },
-        {
-          "label": "D",
-          "text": "由公安机关行使的行政许可，不得交由其他行政机关行使"
+          "text": "梁某要求派出所出具已明令不再出具的证明，其法治意识不强"
         }
       ],
       "source": {
-        "nativeId": "2016年客观题#二#77",
-        "path": "真题库/客观题/2016年客观题.md",
+        "nativeId": "2017年客观题#一#4",
+        "path": "真题库/客观题/2017年客观题.md",
         "repo": "fakao-app",
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
-      "stem": "某省会城市的市政府拟制定限制电动自行车通行的规章。关于此规章的制定，下列哪些说法是正确的?",
-      "subjectId": "xianfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2016"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2016
-    },
-    {
-      "answer": [
-        "A"
-      ],
-      "answerText": null,
-      "chapter": "公民的基本权利和义务",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公民的基本权利和义务",
-      "difficulty": null,
-      "explanation": "《民法典》第510条规定：“合同生效后，当事人就质量、价款或者报酬、履行地点等内容没有约定或者约定不明确的，可以协议补充；不能达成补充协议的，按照合同相关条款或者交易习惯确定。”《合同法若干问题的解释(二)》第七条规定：“下列情形，不违反法律、行政法规强制性规定的，人民法院可以认定为合同法所称‘交易习惯’:(一)在交易行为当地或者某一领域、某一行业通常采用并为交易对方订立合同时所知道或者应当知道的做法；(二)当事人双方经常使用的习惯做法。”因此，商家无权要求潘某退货，故 A     项正确。《民法典》第6条规定：“民事主体从事民事活动，应当遵循公平原则，合理确定各方的权利和义务。” 公平原则是民法的一项基本原则，它要求当事人在民事活动中应以社会正义、公平的观念指导自己的行为、平衡各方的利益，要求以社会正义、公平的观念来处理当事人之间的纠纷。潘某的做法符合相关要求，所以商家不能基于公平原则要求潘某适当补偿，故 B 项错误。《民法典》第147条规定：“基于重大误解实施的民事法律行为，行为人有权请求人民法院或者仲裁机构予以撤销。”商家和潘某在交易时对交易的性质、标的物的品种并无错误的认识。“赌石”活动的规则即是买者购买原石后自行剖切，损益自负，商家在明知规则的情况下，仍与潘某交易，所以该交易过程不存在重大误解，商家不可主张撤销，故C 项错误。《民法典》第151条规定：“一方利用对方处于危困状态、缺乏判断能力\n等情形，致使民事法律行为成立时显失公平的，受损害方有权请求人民法院或者仲裁机构予以撤销。”案例中的商家不处于危困状态、缺乏判断能力的情形，不符合 “显失公平”的情形，故D 项错误。",
-      "id": "law:fakao-app:2016年客观题#三#3",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "商家无权要求潘某退货"
-        },
-        {
-          "label": "B",
-          "text": "商家可基于公平原则要求潘某适当补偿"
-        },
-        {
-          "label": "C",
-          "text": "商家可基于重大误解而主张撤销交易"
-        },
-        {
-          "label": "D",
-          "text": "商家可基于显失公平而主张撤销交易"
-        }
-      ],
-      "source": {
-        "nativeId": "2016年客观题#三#3",
-        "path": "真题库/客观题/2016年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "潘某去某地旅游，当地玉石资源丰富，且盛行“赌石”活动，买者购买原石后自行剖切，损益自负。潘某花5000元向某商家买了两块原石，切开后发现其中一块为极品玉石，市场估价上百万元。商家深觉不公，要求潘某退还该玉石或补交价款。对此，下列哪一选项是正确的?",
+      "stem": "梁某欲将儿子转到离家较近的学校上小学，学校要求其提供无违法犯罪记录证明。梁某 找到户籍地派出所，民警告之，公安机关已不再出具无违法犯罪记录证明等18类证明。考虑到梁某的难处，民警仍出具了证明，并附言一句：“请问学校，难道父母有犯罪记录，就可以剥夺小孩读书的权利吗?”对此，下列哪一说法是正确的?",
       "subjectId": "xianfa",
       "tags": [
         "fakao-app",
         "md-真题",
         "section:单项选择题",
-        "year:2016"
+        "year:2017"
       ],
       "type": "single_choice",
       "typeRaw": "单项选择题",
-      "year": 2016
+      "year": 2017
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "公民的基本权利和义务",
+      "chapterConfidence": "low",
+      "chapterOfficial": "公民的基本权利和义务",
+      "difficulty": null,
+      "explanation": "姓名权属于法定权利，《民法典》《著作权法》等均有相关规定，故 A 错误。姓名权是绝对权，对应不特定的义务人，故 C 错误。冒犯原则也就是公序良俗原则，该原则认为法律禁止那些虽不伤害别人但却冒犯别人的行为是合理的。而王甲的行为已经误导了读者，侵害了原告的合法权益，故 D 错误。法律原则可以弥补规则漏洞，纠正规则不正义，故 B 正确。",
+      "id": "law:fakao-app:2017年客观题#一#10",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "姓名权属于应然权利，而非法定权利"
+        },
+        {
+          "label": "B",
+          "text": "诚实信用原则可以填补规则漏洞"
+        },
+        {
+          "label": "C",
+          "text": "姓名权是相对权"
+        },
+        {
+          "label": "D",
+          "text": "若法院判决王甲承担赔偿责任，则体现了确定法与道德界限的“冒犯原则”"
+        }
+      ],
+      "source": {
+        "nativeId": "2017年客观题#一#10",
+        "path": "真题库/客观题/2017年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "王甲经法定程序将名字改为与知名作家相同的“王乙”,并在其创作的小说上署名“王乙” 以增加销量。作家王乙将王甲诉至法院。法院 认为，公民虽享有姓名权，但被告署名的方式误导了读者，侵害了原告的合法权益，违背诚实信用原则。关于该案，下列哪一选项是正确的?",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2017"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2017
     },
     {
       "answer": [
@@ -7553,6 +8129,205 @@
     },
     {
       "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "宪法基本理论",
+      "chapterConfidence": "low",
+      "chapterOfficial": "宪法基本理论",
+      "difficulty": null,
+      "explanation": "互相配合，是指三机关在分工负责的基础上，通力合作，密切配合，依法办理刑事案件。互相配合是基于三机关在工作目的和任务的一致性。从目的上看，包括惩罚犯罪和保护人民两个方面，故 B   表述不够完全。 A、C、D表述正确。",
+      "id": "law:fakao-app:2017年客观题#一#65",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "分工负责是指三机关各司其职、各尽其责"
+        },
+        {
+          "label": "B",
+          "text": "互相配合是指三机关以惩罚犯罪分子为目标，通力合作，互相支持"
+        },
+        {
+          "label": "C",
+          "text": "互相制约是指三机关按法定职权和程序互相监督"
+        },
+        {
+          "label": "D",
+          "text": "公、检、法三机关之间的这种关系，是权力制约原则在我国宪法上的具体体现"
+        }
+      ],
+      "source": {
+        "nativeId": "2017年客观题#一#65",
+        "path": "真题库/客观题/2017年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "我国宪法规定，法院、检察院和公安机关办理刑事案件，应当分工负责，互相配合，互相制约。对此，下列哪些选项是正确的?",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2017"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2017
+    },
+    {
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "国家的基本制度（下）",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国家的基本制度（下）",
+      "difficulty": null,
+      "explanation": "《立法法》第99条第3款规定： “有关的专门委员会和常务委员会工作机构可以对报送备案的规范性文件进行主动审查。”故 A 正确。第98条第3项规定：“自治州、自治县的人民代表大会制定的自治条例和单行条例，由省、自治区、直辖市的人民代表大会常务委员会报全国人民代表大会常务委员会和国务院备案；自治条例、单行条例报送备案时，应当说明对法律、行政法规、地方性法规作出变通的情况。”故 B 正确。第98条第4项规定：“部门规章和地方政府规章报国务院备案；地方政府规章应当同时报本级人民代表大会常务委员会备案；设区的市、自治州的人民政府制定的规章应当同时报省、自治区的人民代表大会常务委员会和人民政府备案。”故C 正确。第100条第3款规定：“全国人民代表大会法律委员会、有关的专门委员会、常务委员会工作机构经审查、研究认为行政法规、地方性法规、自治条例和单行条例同宪法或者法律相抵触而制定机关不予修改的，应当向委员长会议提出予以撤销的议案、建议，由委员长会议决定提请常务委员会会议审议决定。”故D正确。",
+      "id": "law:fakao-app:2017年客观题#一#66",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "全国人大有关的专门委员会可对报送备案的规范性文件进行主动审查"
+        },
+        {
+          "label": "B",
+          "text": "自治县人大制定的自治条例与单行条例应按程序报全国人大常委会和国务院备案"
+        },
+        {
+          "label": "C",
+          "text": "设区的市市政府制定的规章应报本级人大常委会、市所在的省级人大常委会和政府、国务院备案"
+        },
+        {
+          "label": "D",
+          "text": "全国人大法律委员会经审查认为地方性法规同宪法相抵触而制定机关不予修改的，应向"
+        }
+      ],
+      "source": {
+        "nativeId": "2017年客观题#一#66",
+        "path": "真题库/客观题/2017年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据《立法法》,关于规范性文件的备案审查制度，下列哪些选项是正确的?",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2017"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2017
+    },
+    {
+      "answer": [
+        "A",
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "国家机构",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国家机构",
+      "difficulty": null,
+      "explanation": "I)【解析】《国籍法》第12条：“国家工作人员和现役军人，不得退出中国国籍。”故A 正确。\n《国籍法》第8条：“申请加入中国国籍获得批准的.即取得中国国籍；被批准加入中国国籍的，不得再保留外国国籍。”故B 正确。\n《国籍法》第5条：“父母双方或一方为中国公民，本人出生在外国，具有中国国籍。”故选项C 错误。\n《国籍法》第4条：“父母双方或一方为中国公民，本人出生在中国，具有中国国籍。”故选项 D 正确。",
+      "id": "law:fakao-app:2017年客观题#一#75",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "如李某为中国国家机关公务员，其不得申请退出中国国籍"
+        },
+        {
+          "label": "B",
+          "text": "如莎娃申请中国国籍并获批准，不得再保留俄罗斯国籍"
+        },
+        {
+          "label": "C",
+          "text": "如李莎出生于俄罗斯，不具有中国国籍"
+        },
+        {
+          "label": "D",
+          "text": "如李莎出生于中国，具有中国国籍"
+        }
+      ],
+      "source": {
+        "nativeId": "2017年客观题#一#75",
+        "path": "真题库/客观题/2017年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "中国公民李某与俄罗斯公民莎娃结婚，婚后定居北京，并育有一女李莎。依我国《国籍法》, 下列哪些选项是正确的?",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2017"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2017
+    },
+    {
+      "answer": [
+        "B",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "宪法的实施与监督",
+      "chapterConfidence": "low",
+      "chapterOfficial": "宪法的实施与监督",
+      "difficulty": null,
+      "explanation": "根据最高人民法院《关于完善法院司法责任制的若干意见》(法发〔2015〕13号)第26条第5项规定，制作诉讼文书时，故意违背合议庭评议结果、审判委员会决定的，或者因重大过失导致裁判文书主文错误并造成严重后果的，应当依纪依法追究相关人员的违法审判责任。可知，对提交审委会讨论的案件，法官、合议庭不得违背审委会的决定，故 A 错误。最高人民法院《关于改革和完善法院审判委员会制度的实施意见》(法发〔2010〕3号)第17条规定：“审判委员会以会议决议的方式履行对审判工作的监督、管理、指导职责。”可知，审委会不以自己的名义对外发布裁判文书，故 C 错误。B、D正确。",
+      "id": "law:fakao-app:2017年客观题#一#87",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "对提交审委会讨论的案件，法官、合议庭也可以不执行审委会的决定"
+        },
+        {
+          "label": "B",
+          "text": "办案责任制体现了“让审理者裁判、让裁判者负责”的精神"
+        },
+        {
+          "label": "C",
+          "text": "提交审委会讨论的案件应以审委会的名义发布裁判文书"
+        },
+        {
+          "label": "D",
+          "text": "法庭审理对于查明事实和公正裁判具有决定性作用"
+        }
+      ],
+      "source": {
+        "nativeId": "2017年客观题#一#87",
+        "path": "真题库/客观题/2017年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某法院推行办案责任制后，直接由独任法官、合议庭裁判的案件比例达到99 . 9%,提交审委会讨论的案件仅占0 . 1%。对此，下列说法正确的是：",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2017"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2017
+    },
+    {
+      "answer": [
         "C"
       ],
       "answerText": null,
@@ -7651,196 +8426,50 @@
     },
     {
       "answer": [
-        "A",
-        "B",
-        "D"
+        "B"
       ],
       "answerText": null,
       "chapter": "宪法的实施与监督",
       "chapterConfidence": "low",
       "chapterOfficial": "宪法的实施与监督",
       "difficulty": null,
-      "explanation": "甲实施盗窃行为时误将李某当作王某而将其打昏的行为，甲主观认识到的(打昏王某)与实际发生的(打昏李某)二者不一致，打昏李某的行为应单独评价为故意伤害行为，不应认定为转化型抢劫罪。选项A 正确。\n入户实施盗窃行为被发现以后，行为人为窝藏赃物、抗拒抓捕或者毁灭罪证而当场使用暴力的，若暴力发生在户内可以认定为“入户抢劫”。乙暴力抗拒抓捕的行为发生于周某卧室内。选项B正确。\n抢劫后逃离的行为致人重伤或死亡属于基本行为以外的行为造成的所谓严重结果，不成立抢劫罪的结果加重犯，应按照故意伤害罪与抢劫罪并罚。选项C  错误。\n丁抢夺张某财物后逃跑，为阻止张某追赶，出于杀害故意向张某开枪射击的行为构成事后抢劫，在事后抢劫中暴力行为导致抓捕者等人死亡的，应认定为抢劫致人死亡。选项D 正确。",
-      "id": "law:fakao-app:2017年客观题#二#60",
+      "explanation": "根据《城乡规划法》第44条的规定： “在城市、镇规划区内进行临时建设的，应当经城市、县人民政府城乡规划主管部门批准。临时建设影响近期建设规划或者控制性详细规划的实施以及交通、市容、安全等的，不得批准。临时建设应当在批准的使用期限内自行拆除。临时建设和临时用地规划管理的具体办法，由省、自治区、直辖市人民政府制定。”临时使用土地的使用者应当按照临时使用土地合同约定的用途使用土地，并不得修建永久性建筑物。临时使用土地期限一般不超过两年，故 A 错误，B 正确。根据《城乡规划法》第66条的规定：“建设单位或者个人有下列行为之一的，由所在地城市、县人民政府城乡规划主管部门责令限期拆除，可以并处临时建设工程造价一倍以下的罚款：(一)未经批准进行临时建设的；(二)未按照批准内容进行临时建设的；(三)临时建筑物、构筑物超过批准期限不拆除的。”故 C 错误。根据《城乡规划法》\n第68条的规定：“城乡规划主管部门作出责令停止建设或者限期拆除的决定后，当事人不停止建设或者逾期不拆除的，建设工程所在地县级以上地方人民政府可以责成有关部门采取查封施工现场、强制拆除等措施。”故 D 错误。",
+      "id": "law:fakao-app:2017年客观题#一#95",
       "knowledgePoints": [],
       "options": [
         {
           "label": "A",
-          "text": "甲欲进王某家盗窃，正撬门时，路人李某经过。甲误以为李某是王某，会阻止自己盗窃，将李某打昏，再从王某家窃走财物。甲不构成抢劫既遂"
+          "text": "如在该市规划区内进行建设的，应经市城管执法部门批准"
         },
         {
           "label": "B",
-          "text": "乙潜入周某家盗窃，正欲离开时，周某回家，进屋将乙堵在卧室内。乙掏出凶器对周某进行恐吓，迫使周某让其携带财物离开。乙构成入户抢劫"
+          "text": "如该搅拌站影响该市近期建设规划的实施，有关部门不得批准"
         },
         {
           "label": "C",
-          "text": "丙窃取刘某汽车时被发现，驾刘某的汽车逃跑，刘某乘出租车追赶。途遇路人陈某过马路，丙也未减速，将陈某撞成重伤。丙构成抢劫致人重伤"
+          "text": "如该搅拌站系未经批准进行临时建设的，由市政府责令限期拆除"
         },
         {
           "label": "D",
-          "text": "丁抢夺张某财物后逃跑，为阻止张某追赶，出于杀害故意向张某开枪射击。子弹未击中张某，但击中路人汪某，致其死亡。丁构成抢劫致人死亡"
+          "text": "如该搅拌站超过批准时限不拆除的，由市城乡规划部门采取强制拆除措施"
         }
       ],
       "source": {
-        "nativeId": "2017年客观题#二#60",
+        "nativeId": "2017年客观题#一#95",
         "path": "真题库/客观题/2017年客观题.md",
         "repo": "fakao-app",
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
-      "stem": "关于抢劫罪的认定，下列哪些选项是正确的?",
+      "stem": "关于该临时搅拌站建设，下列说法正确的是：",
       "subjectId": "xianfa",
       "tags": [
         "fakao-app",
         "md-真题",
-        "section:多项选择题",
+        "section:不定项选择题",
         "year:2017"
       ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2017
-    },
-    {
-      "answer": [
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "公民的基本权利和义务",
-      "chapterConfidence": "high",
-      "chapterOfficial": "公民的基本权利和义务",
-      "difficulty": null,
-      "explanation": "C【解析】《规章制定程序条例》第15条第3款规定：“起草专业性较强的规章，可以吸收相关领域的专家参与起草工作，或者委托有关专家、教学科研单位、社会组织起草。”因此A 项错误。《规章制定程序条例》第16条规定：“……(三)听证会应当制作笔录，如实记录发言人的主要观点和理由……”因此B 项正确。《规章制定程序条例》第15条第1款规定：“起草规章，应当深入调查研究，总结实践经验，广泛听取有关机关、组织和公民的意见……”因此 C 项正确。《规章制定程序条例》第20条规定：“规章送审稿有下列情形之一的，法制机构可以缓办或者退回起草单位：(一)制定规章的基本条件尚不成熟或者发生重大变化的 … … ” 不是必须退回起草单位，还可以缓办。因此D 项错误。",
-      "id": "law:fakao-app:2017年客观题#二#77",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "起草规章可邀请专家参加，但不能委托专家起草"
-        },
-        {
-          "label": "B",
-          "text": "起草单位就规章起草举行听证会，应制作笔录，如实记录发言人的主要观点和理由"
-        },
-        {
-          "label": "C",
-          "text": "起草规章应广泛听取有关机关、组织和公民的意见"
-        },
-        {
-          "label": "D",
-          "text": "如制定规章的基本条件不成熟，法制机构应将规章送审稿退回起草单位"
-        }
-      ],
-      "source": {
-        "nativeId": "2017年客观题#二#77",
-        "path": "真题库/客观题/2017年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "关于规章的起草和审查，下列哪些说法是正确的?",
-      "subjectId": "xianfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2017"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2017
-    },
-    {
-      "answer": [
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "公民的基本权利和义务",
-      "chapterConfidence": "high",
-      "chapterOfficial": "公民的基本权利和义务",
-      "difficulty": null,
-      "explanation": "民法的基本原则是效力贯穿民法始终，对各项民法制度和民法规范起统率和指导作用的基本原则，对民事立法、民事行为和司法均有指导意义。依我国《民法典》第4～7条的规定，自愿原则是指民事主体从事民事活动，应当遵循自愿原则，按照自己的意思设立、变更、终止民事法律关系；公平原则是指民事主体从事民事活动，应当合理确定各方的权利和义务；平等原则是指民事主体在民事活动中的法律地位一律平等；诚信原则是指民事主体从事民事活动，应当遵循秉持诚实，恪守承诺。本题中，乙因琐事与甲多次争吵而郁闷难解，便沿二人宅基地的边界线靠己方一侧，建起高5米围墙，使甲在自家院内却有身处监牢之感，这属于违反诚信原则的行为，故 D 为正确选项。",
-      "id": "law:fakao-app:2017年客观题#三#1",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "自愿原则"
-        },
-        {
-          "label": "B",
-          "text": "公平原则"
-        },
-        {
-          "label": "C",
-          "text": "平等原则"
-        },
-        {
-          "label": "D",
-          "text": "诚信原则"
-        }
-      ],
-      "source": {
-        "nativeId": "2017年客观题#三#1",
-        "path": "真题库/客观题/2017年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲、乙二人同村，宅基地毗邻。甲的宅基地倚山、地势较低，乙的宅基地在上将其环绕。乙因琐事与甲多次争吵而郁闷难解，便沿二人宅基地的边界线靠己方一侧，建起高5米围墙，使甲在自家院内却有身处监牢之感。乙的行为违背民法的下列哪一基本原则?",
-      "subjectId": "xianfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2017"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2017
-    },
-    {
-      "answer": [
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "公民的基本权利和义务",
-      "chapterConfidence": "high",
-      "chapterOfficial": "公民的基本权利和义务",
-      "difficulty": null,
-      "explanation": "(1)《民法典》第497条规定：“有下列情形之一的，该格式条款无效：具有本法第一编第六章第三节……\"本题中，乙公司提供的协议格式条款中载明“如甲单方放弃服务，余款不退”(并注明该条款不得更改),仅对孙某权利进行了约束，而从题面看不出对是否需达到何种服务效果、美容公司在无法达到服务效果时是否应承担责任、美容公司在不能提供相应服务时应承担何种责任等问题有规定。从协议来看，作为消费者的孙某在预付了服务期内的所有费用后，即使对服务效果不满意，亦无法放弃接受服务。显然，提供格式条款的美容公司并未遵循公平的原则来确定双方之间的权利和义务，故这属于提供格式条款一方排除对方主要权利的条款，应归于无效，但该条款无效不等于该美容服务协议无效。由此，本题中A 选项错误，B 选项说法为正确选项。\n(2)本题中. 甲与乙公司订立美容服务协议，约定服务期为半年，服务费预收后逐次计扣，而在协议订立后，甲依约支付5万元服务费，在接受服务1个月并发生费用8000元后，甲感觉美容效果不明显，单方放弃服务并要求退款。在经营者并无违约或过错行为的情形下，孙某单方提出终止消费，是否需要承担违约责任，需要综合服务协议的履行程度、美容公司提供服务的比例、孙某单方放弃服务的过错程度、约定的计价方式等因素，进行综合考量，而 C 、D 选项的说法太过绝对。",
-      "id": "law:fakao-app:2017年客观题#三#11",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "美容服务协议无效"
-        },
-        {
-          "label": "B",
-          "text": "“ 如甲单方放弃服务，余款不退”的条款无效"
-        },
-        {
-          "label": "C",
-          "text": "甲单方放弃服务无须承担违约责任"
-        },
-        {
-          "label": "D",
-          "text": "甲单方放弃服务应承担继续履行的违约责任"
-        }
-      ],
-      "source": {
-        "nativeId": "2017年客观题#三#11",
-        "path": "真题库/客观题/2017年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲与乙公司订立美容服务协议，约定服务期为半年，服务费预收后逐次计扣，乙公司提供的协议格式条款中载明“如甲单方放弃服务，余款不退”(并注明该条款不得更改)。协议订立后，甲依约支付5万元服务费。在接受服务1个月并发生费用8000元后，甲感觉美容效果不明显，单方放弃服务并要求退款，乙公司不同意。甲起诉乙公司要求返还余款。下列哪一选项是正确的?",
-      "subjectId": "xianfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2017"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
       "year": 2017
     },
     {
@@ -7911,6 +8540,35 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "《宪法》的序言明确规定: \"本宪法以法律的形式确认了中国各族人民奋斗的成果,规定了 国家的根本制度和根本任务,是国家的根本法, 具有最高的法律效力。 则下列哪一项说法是正 确的? A. 《宪法》 的序言并不具有最高效力 B。本规定涉及的两处 \"法律\" 均为广义的法律 C. 根据本规定,宪法性法律也具有最高效力 D。国家的基本制度主要规定在《宪法》 的序言中 11。关于我国的各级人大代表,下列哪一项说法是正确的? A。全国人大代表赵某因酒驾被行政拘留,暂停其代表职务 B。某省人大代表钱某被判处有期徒刑 ,其代表资格终止 C。 某县人大代表孙某在县人大会议上发言抨击经济政策,言辞激烈,涉嫌违法,应当追究其法 律责任 D。县公安局欲逮捕涉嫌贪污犯罪的某乡人大代表李某,应当通知乡人大 12。关于国家标志,下列哪一项说法是正确的? A. 中央国家机关应当每日升挂国旗,中国人民政治协商会议。各民主党派应当工作日升挂国旗 B。升挂或者使用破损。污损。褪色国旗的 依法追究刑事责任 C。 出境入境口岸应当悬挂国徽 D. 2018年宪法修正案将国歌写进了宪法 13。设若本题涉及甲。乙 丙丁满足其任职除选项设定条件以外的其他一切条件, 则下列哪一 项说法是错误的? A. 某高校法学院讲授中国法制史20年的甲教授被遴选为法官 某律师事务所从业10年的乙律师被遴选为法官 C。 县检察院检察官丙被市检察院遴选为检察官 D。丁伪造学历取得律师执业证书 ,其律师执业证书应当被吊销 14。关于律师制度与公证制度,下列哪一项做法是正确的? A. 为打造明星律师 卫 , 扩大律师事务所的影响力,甲律师事务所与某直播平合共同设立法律文 化公司 乙律师事务所工作人员张某在某直播平合以律师名义开展公益普法宣传 C. 丙因工伤导致残疾,到公证处要求办理残疾公证,公证处应当办理 D. 丁认为某公证书公证的事项不真实,有权要求出具公证书的公证处撤销 3 --- 第4页 ---",
+      "subjectId": "xianfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "year:2023",
+        "answer-missing"
+      ],
+      "type": "unknown",
+      "typeRaw": null,
+      "year": 2023
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": "国家的基本制度（上）",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国家的基本制度（上）",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2023年客观题-卷一-卷二#一#88",
+      "knowledgePoints": [],
+      "options": [],
+      "source": {
+        "nativeId": "2023年客观题-卷一-卷二#一#88",
+        "path": "真题库/客观题/2023年客观题-卷一-卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "人权是法的主要价值之一,法律必须保障人权。则下列说法不正确的是? A.《宪法》 规定, \"婚姻。家庭。母亲和儿童受国家的保护\" 本条规定的权利属于第三代人权 B《宪法》 规定, \"退休人员的生活受到国家和社会的保障\" ,本条规定的权利属于公民社会经 济权利的范畴 C.《宪法》 规定, 中华人民共和国公民在法律面前-律平等\" ,本条规定的平等权是免予国家 干预的权利 D. 《宪法》 规定 , '国家尊重和保障人权\" ,本条规定的人权特指生存权和发展权",
       "subjectId": "xianfa",
       "tags": [
         "fakao-app",

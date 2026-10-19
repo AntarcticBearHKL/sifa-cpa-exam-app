@@ -11,7 +11,12 @@ pub enum Kind {
     #[default]
     All,
     Choice,
-    Memory,
+    /// Questions with **no options** (主观题). This is exactly the set 记忆自测
+    /// used to select — `Kind::Memory` matched `!q.is_choice()`, i.e. an empty
+    /// `options` list — so the two modes were the same set. 主观题 replaces it
+    /// and is **display-only**: the session shows the question and one
+    /// 显示答案 action, with nothing to answer and nothing to grade.
+    Subjective,
 }
 
 impl Kind {
@@ -19,7 +24,7 @@ impl Kind {
         match self {
             Kind::All => "全部",
             Kind::Choice => "选择题",
-            Kind::Memory => "记忆自测",
+            Kind::Subjective => "主观题",
         }
     }
 
@@ -27,7 +32,9 @@ impl Kind {
         match self {
             Kind::All => true,
             Kind::Choice => q.is_choice(),
-            Kind::Memory => !q.is_choice(),
+            // `options` empty — identical to `!q.is_choice()`, spelled as the
+            // data says it.
+            Kind::Subjective => q.options.is_empty(),
         }
     }
 }
@@ -291,22 +298,27 @@ pub fn judge(q: &Question, selection: &[String]) -> Option<bool> {
 
 /// May the session move on to the next question? The next question is gated
 /// on the current one having been judged: a choice question by submitting it
-/// (graded) or by revealing the answer with 显示答案 (`shown`); a memory /
-/// self-test question by its own self-assessment (记住了 / 没记住). `←` 上一题
-/// and `Esc` stay available, so the gate is never a trap.
-pub fn can_advance(q: &Question, submitted: bool, shown: bool, self_assessed: bool) -> bool {
-    if q.is_choice() {
-        submitted || shown
-    } else {
-        self_assessed
+/// (graded) or by revealing the answer with 显示答案 (`shown`). A **主观题**
+/// (no options) has nothing to answer and nothing to grade, so the gate does
+/// not apply to it at all — 下一题 and `→` work immediately. `←` 上一题 and
+/// `Esc` stay available either way, so the gate is never a trap.
+pub fn can_advance(q: &Question, submitted: bool, shown: bool) -> bool {
+    if !q.is_choice() {
+        return true;
     }
+    submitted || shown
 }
 
 /// Whether 显示答案 can reveal anything for this question: correct option
-/// labels and/or an explanation. Questions with neither are common in the
-/// data; the button stays visible but disabled for them.
+/// labels, an 参考答案 text and/or an explanation. Questions with none of the
+/// three are common in the data; the button stays visible but disabled for
+/// them. A 主观题 very often carries only `answerText`, so it counts as an
+/// answer here.
 pub fn can_reveal(q: &Question) -> bool {
     !q.answer.is_empty()
+        || q.answer_text
+            .as_ref()
+            .is_some_and(|s| !s.trim().is_empty())
         || q
             .explanation
             .as_ref()
@@ -376,17 +388,26 @@ mod tests {
             },
             &u,
         );
-        assert_eq!(choice, vec![0, 1, 2], "记忆自测 must be excluded");
+        assert_eq!(choice, vec![0, 1, 2], "主观题 must be excluded");
 
-        let memory = select(
+        // 主观题 selects the no-options questions — the very set 记忆自测 used
+        // to select (`!is_choice()`), so the two were the same mode.
+        let subjective = select(
             &qs,
             &Filter {
-                kind: Kind::Memory,
+                kind: Kind::Subjective,
                 ..Default::default()
             },
             &u,
         );
-        assert_eq!(memory, vec![3]);
+        assert_eq!(subjective, vec![3]);
+        assert!(
+            qs.iter()
+                .enumerate()
+                .filter(|(_, q)| Kind::Subjective.matches(q))
+                .all(|(_, q)| q.options.is_empty()),
+            "主观题 must only ever select questions with an empty options list"
+        );
     }
 
     /// The single 错题 predicate: no attempts (never answered, or only viewed)
@@ -581,11 +602,11 @@ mod tests {
         );
         assert_eq!(hit, vec![1]);
 
-        // 未作答 ∧ 记忆自测 → q4.
+        // 未作答 ∧ 主观题 → q4.
         let hit = select(
             &qs,
             &Filter {
-                kind: Kind::Memory,
+                kind: Kind::Subjective,
                 accuracy: Accuracy::Unanswered,
                 ..Default::default()
             },
@@ -915,34 +936,31 @@ mod tests {
         assert_eq!(judge(memory, &[]), None, "no options -> not gradable");
     }
 
-    /// 下一题 waits for a judgment: a submitted or revealed choice question
-    /// passes, an untouched one does not; a memory question needs its own
-    /// self-assessment (revealing the answer is not an assessment).
+    /// 下一题 waits for a judgment on a choice question: a submitted or
+    /// revealed one passes, an untouched one does not. A 主观题 (no options)
+    /// has nothing to judge, so the gate does not apply to it.
     #[test]
     fn next_is_gated_until_the_question_is_judged() {
         let qs = questions();
         let choice = &qs[0];
-        assert!(!can_advance(choice, false, false, false), "untouched: no next");
-        assert!(
-            !can_advance(choice, false, false, true),
-            "self-assessment does not judge a choice question"
-        );
-        assert!(can_advance(choice, true, false, false), "submitted: next");
-        assert!(can_advance(choice, false, true, false), "revealed: next");
-        assert!(can_advance(choice, true, true, false));
+        assert!(!can_advance(choice, false, false), "untouched: no next");
+        assert!(can_advance(choice, true, false), "submitted: next");
+        assert!(can_advance(choice, false, true), "revealed: next");
+        assert!(can_advance(choice, true, true));
 
-        let memory = &qs[3];
-        assert!(!can_advance(memory, false, false, false), "not assessed: no next");
+        // 主观题: nothing to answer, nothing to grade — 下一题 is never gated.
+        let subjective = &qs[3];
         assert!(
-            !can_advance(memory, false, true, false),
-            "seeing the answer is not self-assessment"
+            can_advance(subjective, false, false),
+            "a 主观题 is not gated on any judgment"
         );
-        assert!(!can_advance(memory, true, false, false), "submitting does not apply");
-        assert!(can_advance(memory, false, false, true), "self-assessed: next");
+        assert!(can_advance(subjective, false, true), "and stays open after 显示答案");
+        assert!(can_advance(subjective, true, false), "and for any other state");
     }
 
     /// 显示答案 is only offered when there is something to show; an empty
-    /// `answer` with no explanation must not open an empty reveal.
+    /// `answer` with no explanation must not open an empty reveal. A 主观题's
+    /// `answerText` (参考答案) counts as an answer.
     #[test]
     fn can_reveal_needs_an_answer_or_an_explanation() {
         let mut q = q("q1", "single_choice", "第一章", 4, &["A"]);
@@ -956,6 +974,12 @@ mod tests {
 
         q.explanation = Some("   ".to_string());
         assert!(!can_reveal(&q), "a blank explanation counts as none");
+
+        q.answer_text = Some("参考答案正文".to_string());
+        assert!(can_reveal(&q), "a 主观题's 参考答案 is an answer");
+
+        q.answer_text = Some("   ".to_string());
+        assert!(!can_reveal(&q), "a blank 参考答案 counts as none");
     }
 
     /// A wrong verdict must name the correct labels, or say why there are

@@ -345,7 +345,7 @@ pub fn downscale(shot: &Shot, halvings: u8) -> (usize, usize, Vec<[f32; 3]>) {
         if w <= 1 && h <= 1 {
             break;
         }
-        let (nw, nh) = ((w + 1) / 2, (h + 1) / 2);
+        let (nw, nh) = (w.div_ceil(2), h.div_ceil(2));
         rgb = halve(&rgb, w, h, nw, nh);
         w = nw;
         h = nh;
@@ -356,7 +356,7 @@ pub fn downscale(shot: &Shot, halvings: u8) -> (usize, usize, Vec<[f32; 3]>) {
 fn to_rgb(bgra: &[u8], w: usize, h: usize) -> Vec<[f32; 3]> {
     let n = w * h;
     let mut out: Vec<[f32; 3]> = bgra
-        .chunks_exact(4)
+        .as_chunks::<4>().0.iter()
         .take(n)
         .map(|p| {
             [
@@ -547,7 +547,7 @@ mod tests {
             origin: (0, 0),
             width: 5,
             height: 3,
-            bgra: vec![255u8, 128, 0, 255].repeat(15),
+            bgra: [255u8, 128, 0, 255].repeat(15),
         };
 
         let (w0, h0, rgb0) = downscale(&shot, 0);

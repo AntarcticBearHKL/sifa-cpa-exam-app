@@ -134,18 +134,18 @@ impl App {
                                 egui::Layout::left_to_right(egui::Align::Center),
                                 |ui| {
                                     cell(ui, "题型", None);
-                                    let kinds = ["全部", "选择题", "记忆自测"];
+                                    let kinds = ["全部", "选择题", "主观题"];
                                     let sel = match self.set_kind {
                                         logic::Kind::All => 0,
                                         logic::Kind::Choice => 1,
-                                        logic::Kind::Memory => 2,
+                                        logic::Kind::Subjective => 2,
                                     };
                                     if let Some(i) = glass::widgets::segmented(
                                         ui, &tokens, "set_kind", &kinds, sel,
                                     ) {
                                         self.set_kind = match i {
                                             1 => logic::Kind::Choice,
-                                            2 => logic::Kind::Memory,
+                                            2 => logic::Kind::Subjective,
                                             _ => logic::Kind::All,
                                         };
                                     }
@@ -507,17 +507,19 @@ impl App {
             (s.pos + 1, s.order.len(), s.label.clone())
         };
         // `submitted` = graded with 提交答案; `answer_shown` = revealed with
-        // 显示答案 (nothing recorded); `self_assessed` = a memory / self-test
-        // question was rated 记住了 / 没记住. `revealed` is the shared "the
-        // answer is visible" state that drives the same rendering for a
-        // submitted and a merely revealed choice question.
-        let (submitted, answer_shown, self_assessed) = self
+        // 显示答案 (nothing recorded) — for a choice question the correct
+        // options are highlighted and the explanation opens, exactly as after
+        // 提交答案; for a 主观题 it opens the answer / explanation. `revealed`
+        // is the shared "the answer is visible" state.
+        let (submitted, answer_shown) = self
             .session
             .as_ref()
-            .map(|s| (s.submitted, s.shown, s.self_assessed))
-            .unwrap_or((false, false, false));
+            .map(|s| (s.submitted, s.shown))
+            .unwrap_or((false, false));
         let revealed = submitted || answer_shown;
-        let can_next = logic::can_advance(&q, submitted, answer_shown, self_assessed);
+        // A 主观题 (no options) has nothing to judge, so the 下一题 gate does
+        // not apply to it — `can_advance` is true for it in every state.
+        let can_next = logic::can_advance(&q, submitted, answer_shown);
 
         let q_fade = motion::change_progress(
             ui.ctx(),
@@ -594,7 +596,6 @@ impl App {
 
         let mut do_submit = false;
         let mut do_reveal = false;
-        let mut do_assess: Option<bool> = None;
         let mut do_next = false;
         let mut do_prev = false;
         let shake = self.anim.shake(question_key(&q), now) * anim::SHAKE_AMPLITUDE;
@@ -742,18 +743,17 @@ impl App {
             } else if q.is_choice() {
                 self.render_options(ui, &q, reveal);
             } else {
-                self.render_memory(ui, &q, &mut do_assess);
+                // 主观题: the dedicated display-only view — no options, no
+                // grading, one 显示答案 action. It draws its own answer /
+                // explanation, so the `else if` branch below is choice-only.
+                self.render_subjective(ui, &q, reveal);
             }
 
-            if q.is_choice() {
-                if revealed {
-                    ui.scope(|ui| {
-                        ui.set_opacity(reveal);
-                        self.render_explanation(ui, &q);
-                    });
-                }
-            } else if q.answer_text.is_some() || q.explanation.is_some() {
-                self.render_explanation(ui, &q);
+            if q.is_choice() && revealed {
+                ui.scope(|ui| {
+                    ui.set_opacity(reveal);
+                    self.render_explanation(ui, &q);
+                });
             }
 
             ui.add_space(tokens.space.lg);
@@ -847,7 +847,9 @@ impl App {
                         RichText::new(if q.is_choice() {
                             "◀ 上一题 · Enter 提交 · 判定或显示答案后下一题"
                         } else {
-                            "◀ 上一题 · 自评后才能下一题"
+                            // 主观题 is display-only: nothing to judge, so 下一题
+                            // is never gated here.
+                            "◀ 上一题 · 主观题，看完答案直接下一题"
                         })
                         .size(11.5)
                         .color(tokens.palette.ink.muted),
@@ -942,9 +944,6 @@ impl App {
         }
         if do_reveal {
             self.reveal_answer();
-        }
-        if let Some(remembered) = do_assess {
-            self.self_assess(remembered, now);
         }
         if do_next {
             self.next_question();
@@ -1171,47 +1170,66 @@ impl App {
         }
     }
 
-    fn render_memory(&mut self, ui: &mut egui::Ui, q: &Question, assess: &mut Option<bool>) {
+    /// The **display-only** view for 主观题 (a question with no options).
+    ///
+    /// There is nothing to answer and nothing to grade, so the body shows one
+    /// action — 显示答案 — instead of option rows, 提交答案 or 记住了 / 没记住.
+    /// The stem, its chapter / year / type meta and the per-question counts are
+    /// already drawn above by the session view, exactly as for a choice
+    /// question. Once revealed, the 参考答案 / 正确答案 and the 解析 appear; a
+    /// question whose data has neither is called out plainly rather than
+    /// opening an empty box.
+    fn render_subjective(&mut self, ui: &mut egui::Ui, q: &Question, reveal: f32) {
         let tokens = self.tokens;
         let shown = self.session.as_ref().map(|s| s.shown).unwrap_or(false);
+        let revealable = logic::can_reveal(q);
         ui.add_space(tokens.space.sm);
+
         if !shown {
             ui.label(
-                RichText::new("先自己回想，再核对答案。")
+                RichText::new("主观题：不需要作答，直接看答案即可。")
                     .size(13.0)
                     .color(tokens.palette.ink.secondary),
             );
             ui.add_space(tokens.space.sm);
-            if glass::widgets::primary_button(ui, &tokens, "显示答案", true).clicked() {
-                if let Some(s) = self.session.as_mut() {
-                    s.reveal();
+            let button = glass::widgets::primary_button(ui, &tokens, "显示答案", revealable);
+            if revealable {
+                if button.clicked() {
+                    // Same reveal as a choice question's 显示答案: nothing is
+                    // recorded, only the reveal animation is re-armed.
+                    self.reveal_answer();
                 }
-                self.dirty = true;
+            } else {
+                // Neither an answer nor an explanation in the data (common):
+                // say so plainly instead of opening an empty box.
+                button.on_disabled_hover_text("这道题在数据里没有答案");
+                ui.add_space(tokens.space.sm);
+                ui.label(
+                    RichText::new("这道题在数据里没有答案")
+                        .size(13.0)
+                        .color(tokens.palette.ink.muted),
+                );
             }
-        } else {
-            if let Some(at) = q.answer_text.as_ref().filter(|s| !s.trim().is_empty()) {
-                ui.label(RichText::new("参考答案").size(14.5).strong());
-                ui.label(RichText::new(at.trim()).size(15.0));
-            }
-            ui.add_space(tokens.space.md);
-            ui.horizontal(|ui| {
-                if glass::widgets::primary_button(ui, &tokens, "记住了", true).clicked() {
-                    *assess = Some(true);
-                }
-                if glass::widgets::button(
-                    ui,
-                    &tokens,
-                    "forgot",
-                    RichText::new("没记住").size(14.0),
-                    egui::vec2(0.0, 0.0),
-                    true,
-                )
-                .clicked()
-                {
-                    *assess = Some(false);
-                }
-            });
+            return;
         }
+
+        ui.scope(|ui| {
+            ui.set_opacity(reveal);
+            if let Some(at) = q.answer_text.as_ref().filter(|s| !s.trim().is_empty()) {
+                ui.label(RichText::new("参考答案").size(15.0).strong());
+                ui.add_space(tokens.space.xs);
+                ui.label(RichText::new(at.trim()).size(15.5));
+                ui.add_space(tokens.space.md);
+            }
+            if !q.answer.is_empty() {
+                ui.label(RichText::new("正确答案").size(15.0).strong());
+                ui.add_space(tokens.space.xs);
+                ui.label(RichText::new(q.answer.join("、")).size(15.5));
+                ui.add_space(tokens.space.md);
+            }
+            // 解析 draws its own hairline + header, and skips an empty one.
+            self.render_explanation(ui, q);
+        });
     }
 
     fn render_explanation(&mut self, ui: &mut egui::Ui, q: &Question) {

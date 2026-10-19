@@ -30458,6 +30458,54 @@
         "C"
       ],
       "answerText": null,
+      "chapter": "对外贸易管理制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "对外贸易管理制度",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2002年客观题卷一#一#18",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "乙国的上述做法违背其承担的国际法上的义务"
+        },
+        {
+          "label": "B",
+          "text": "甲国的上述关税措施违背其承担的国际法上的"
+        },
+        {
+          "label": "C",
+          "text": "甲国采取的措施属于国际法上的反报措施"
+        },
+        {
+          "label": "D",
+          "text": "甲国采取的措施属于国际法上的报复措施"
+        }
+      ],
+      "source": {
+        "nativeId": "2002年客观题卷一#一#18",
+        "path": "真题库/客观题/2002年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲国是一个香蕉生产大国，其蕉农长期将产品出口 乙国。现乙国颁布法令，禁止甲国的香蕉进口。甲国在 要求乙国撤消该禁令末果后，宣布对乙国出口到甲国的 没有涉及香蕉、化工产品贸易或一般贸易规则的双边或 多边条约。对此，下列判断哪个是正确的?",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2002"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2002
+    },
+    {
+      "answer": [
+        "C"
+      ],
+      "answerText": null,
       "chapter": "国际货物买卖",
       "chapterConfidence": "high",
       "chapterOfficial": "国际货物买卖",
@@ -30999,6 +31047,54 @@
     },
     {
       "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "国际货物买卖",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国际货物买卖",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2002年客观题卷一#一#95",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "我国没行关于赡养的法律适用规范立法，故应"
+        },
+        {
+          "label": "B",
+          "text": "我国没有关于赡养的法律适用规范立法，因此"
+        },
+        {
+          "label": "C",
+          "text": "该案适用《民法通则》的规定来确定准据法"
+        },
+        {
+          "label": "D",
+          "text": "该案适用高某儿子的本国法，即美国法"
+        }
+      ],
+      "source": {
+        "nativeId": "2002年客观题卷一#一#95",
+        "path": "真题库/客观题/2002年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "中国人高某想要得到其具有美国国籍的儿子的赡养 ，要求人民法院给予支持。下列选项中哪些是正确的?",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2002"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2002
+    },
+    {
+      "answer": [
         "B",
         "C",
         "D"
@@ -31052,6 +31148,56 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "下列哪些表述反映了世界贸易组织争端解决机制的 特点?",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2002"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2002
+    },
+    {
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "国际经济法领域的其他法律制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国际经济法领域的其他法律制度",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2002年客观题卷一#一#100",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "计算机程序应作为文学作品保护"
+        },
+        {
+          "label": "B",
+          "text": "各成员可决定商标许可与转让的条件，但不允"
+        },
+        {
+          "label": "C",
+          "text": "成员方必须以专利形式对植物品种提供保护"
+        },
+        {
+          "label": "D",
+          "text": "司法当局有权禁止那些对知识产权构成侵权行"
+        }
+      ],
+      "source": {
+        "nativeId": "2002年客观题卷一#一#100",
+        "path": "真题库/客观题/2002年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "依据《与贸易有关的知识产权》，下列哪些表述是 正确的?",
       "subjectId": "guojijingjifa",
       "tags": [
         "fakao-app",
@@ -31148,6 +31294,102 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "依照《跟单信用证统一惯例》（UCP５００号）的规定 ，下列哪一种情况发生时，银行可拒绝付款？",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2003"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2003
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "国际货物运输与保险",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国际货物运输与保险",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2003年客观题卷一#一#26",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "按普通税率征税"
+        },
+        {
+          "label": "B",
+          "text": "按优惠税率征税"
+        },
+        {
+          "label": "C",
+          "text": "按普惠制税率征税"
+        },
+        {
+          "label": "D",
+          "text": "按特惠税率征税"
+        }
+      ],
+      "source": {
+        "nativeId": "2003年客观题卷一#一#26",
+        "path": "真题库/客观题/2003年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "对原产地国家或地区与中国订有关税互惠协议的进口 货物，应按下列选项中哪一种税率征税？",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2003"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2003
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "对外贸易管理制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "对外贸易管理制度",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2003年客观题卷一#一#27",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "丙烯酸酯的出口人"
+        },
+        {
+          "label": "B",
+          "text": "丙烯酸酯的进口经营者"
+        },
+        {
+          "label": "C",
+          "text": "丙烯酸酯的中国消费者"
+        },
+        {
+          "label": "D",
+          "text": "丙烯酸酯在A、B、C三国的生产者"
+        }
+      ],
+      "source": {
+        "nativeId": "2003年客观题卷一#一#27",
+        "path": "真题库/客观题/2003年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "假设有下列情形：中国甲厂、乙厂和丙厂代表中国丙 烯酸酯产业向主管部门提出了对原产于A国、B国和C国的 丙烯酸酯进行反倾销调查的申请，经审查终局裁定确定 倾销成立并对国内产业造成了损害，决定征收反倾销税 。在此情形下，反倾销税的纳税人应是下列选项中的哪 一个？",
       "subjectId": "guojijingjifa",
       "tags": [
         "fakao-app",
@@ -31357,6 +31599,56 @@
     },
     {
       "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "国际货物买卖",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国际货物买卖",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2003年客观题卷一#一#70",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲公司有权拒绝接收货物"
+        },
+        {
+          "label": "B",
+          "text": "甲公司有权要求退货"
+        },
+        {
+          "label": "C",
+          "text": "甲公司可以将货物寄放于第三方仓库，其费用由乙公"
+        },
+        {
+          "label": "D",
+          "text": "甲公司可以将货物出售，并从出售价款中扣除保全货"
+        }
+      ],
+      "source": {
+        "nativeId": "2003年客观题卷一#一#70",
+        "path": "真题库/客观题/2003年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "中国甲公司从美国乙公司进口一批水果，合同约定货 到验收后付款。货物到达目的港，甲公司提货验收后， 发现货物总重量短少12％，单个体积和重量也不符合合 同规定。下列有关此案的表述哪些是正确的？",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2003"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2003
+    },
+    {
+      "answer": [
         "A",
         "B",
         "D"
@@ -31553,6 +31845,54 @@
     },
     {
       "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "国际货物运输与保险",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国际货物运输与保险",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2004年客观题卷一#一#38",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "船旗国法律"
+        },
+        {
+          "label": "B",
+          "text": "共同海损发生地法律"
+        },
+        {
+          "label": "C",
+          "text": "巴西的法律"
+        },
+        {
+          "label": "D",
+          "text": "理算地法律"
+        }
+      ],
+      "source": {
+        "nativeId": "2004年客观题卷一#一#38",
+        "path": "真题库/客观题/2004年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "一艘悬挂巴拿马国旗并由一巴西海运公司经营的海 船，运送一批属一家日本公司的货物从日本到中国，在 韩国附近海域发生意外。为了安全完成本航程，该海船 驶入韩国某港口避难，发生共同海损，后在中国某港口 进行理算。该共同海损理算应适用什么法律？",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2004"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2004
+    },
+    {
+      "answer": [
         "C"
       ],
       "answerText": null,
@@ -31716,6 +32056,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "平安险是中国人民保险公司海洋货物运输保障的主 要险别之一。下列哪一损失不能包括在平安险的责任范 围之内？",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2004"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2004
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "国际经济法领域的其他法律制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国际经济法领域的其他法律制度",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2004年客观题卷一#一#46",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "该公约采用自动保护原则"
+        },
+        {
+          "label": "B",
+          "text": "该公约不保护演绎作品"
+        },
+        {
+          "label": "C",
+          "text": "非成员国国民的作品在成员国首次发表可以受到公约"
+        },
+        {
+          "label": "D",
+          "text": "该公约保护作者的经济权利"
+        }
+      ],
+      "source": {
+        "nativeId": "2004年客观题卷一#一#46",
+        "path": "真题库/客观题/2004年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "《保护文学艺术作品伯尔尼公约》是著作权领域第 一个世界性多边国际条约，也是至今影响最大的著作权 公约。下列关于该公约的说法哪一个是不正确的？",
       "subjectId": "guojijingjifa",
       "tags": [
         "fakao-app",
@@ -32025,56 +32413,6 @@
     },
     {
       "answer": [
-        "A",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "世界贸易组织",
-      "chapterConfidence": "low",
-      "chapterOfficial": "世界贸易组织",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2004年客观题卷二#二#97",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "华某的证言的证明效力优于叶言的证言"
-        },
-        {
-          "label": "B",
-          "text": "某县公安局申请华某出庭作证，应当在开庭前提出"
-        },
-        {
-          "label": "C",
-          "text": "若华、叶二人的证言相互矛盾，法庭应判决撤销某县"
-        },
-        {
-          "label": "D",
-          "text": "若一审法庭未通知邱某参加诉讼，二审法院应将案件"
-        }
-      ],
-      "source": {
-        "nativeId": "2004年客观题卷二#二#97",
-        "path": "真题库/客观题/2004年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "某县公安局以郭某因邻里纠纷殴打并致邱某轻微伤 为由，对郭某作出拘留10天的处罚。郭某向法院提起诉 讼。某县公安局向法院提交了处罚的主要证据，华某和 邱某舅舅叶某二人的证言及该县中心医院出具的邱某的 伤情证明。下列说法正确的是：",
-      "subjectId": "guojijingjifa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2004"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2004
-    },
-    {
-      "answer": [
         "C"
       ],
       "answerText": null,
@@ -32256,54 +32594,6 @@
     },
     {
       "answer": [
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "国际货物买卖",
-      "chapterConfidence": "low",
-      "chapterOfficial": "国际货物买卖",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2005年客观题卷二#二#10",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "以合同诈骗罪处罚"
-        },
-        {
-          "label": "B",
-          "text": "以偷税罪处罚"
-        },
-        {
-          "label": "C",
-          "text": "以骗取出口退税罪处罚"
-        },
-        {
-          "label": "D",
-          "text": "以偷税罪和骗取出口退税罪并罚"
-        }
-      ],
-      "source": {
-        "nativeId": "2005年客观题卷二#二#10",
-        "path": "真题库/客观题/2005年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "某企业生产的一批外贸供货产品因外商原因无法出 口，该企业采用伪造出口退税单证和签订虚假买卖合同 等方法，骗取出口退税50万元（其中包括该批产品已征 的产品税、增值税等税款19万元）。对该企业应当如何 处理？",
-      "subjectId": "guojijingjifa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2005"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2005
-    },
-    {
-      "answer": [
         "C"
       ],
       "answerText": null,
@@ -32464,6 +32754,54 @@
     },
     {
       "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "国际经济法领域的其他法律制度",
+      "chapterConfidence": "high",
+      "chapterOfficial": "国际经济法领域的其他法律制度",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2006年客观题卷一#一#43",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "《巴黎公约》的优先权原则适用于一切工业产"
+        },
+        {
+          "label": "B",
+          "text": "《巴黎公约》关于驰名商标的特殊保护是对成"
+        },
+        {
+          "label": "C",
+          "text": "《巴黎公约》的国民待遇原则不适用于在我国"
+        },
+        {
+          "label": "D",
+          "text": "对于在北京农展馆举行的农业产品国际博览会"
+        }
+      ],
+      "source": {
+        "nativeId": "2006年客观题卷一#一#43",
+        "path": "真题库/客观题/2006年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据保护知识产权的《巴黎公约》，下列哪种 说法是正确的？",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2006"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2006
+    },
+    {
+      "answer": [
         "C"
       ],
       "answerText": null,
@@ -32610,6 +32948,55 @@
     {
       "answer": [
         "A",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "对外贸易管理制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "对外贸易管理制度",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2006年客观题卷一#一#81",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "可由中外法律专家向法院提供甲国有关交通肇"
+        },
+        {
+          "label": "B",
+          "text": "只有我国驻甲国使领馆才能提供甲国有关交通"
+        },
+        {
+          "label": "C",
+          "text": "王某自己可以向法院提供甲国有关交通肇事损"
+        },
+        {
+          "label": "D",
+          "text": "经各种途径仍不能查明甲国有关法律时，法院"
+        }
+      ],
+      "source": {
+        "nativeId": "2006年客观题卷一#一#81",
+        "path": "真题库/客观题/2006年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "中国公民王某在甲国逗留期间，驾车正常行驶 时被该国某公司雇员驾驶的卡车撞翻，身受重伤。王某 回国后，向该公司在中国的分支机构所在地法院起诉， 要求该公司赔偿其损失。我国《民法通则》规定，侵权 行为的损害赔偿适用侵权行为地法。依此，关于如何查 明应当适用的甲国法，下列哪些选项是正确的？",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2006"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2006
+    },
+    {
+      "answer": [
+        "A",
         "B",
         "C",
         "D"
@@ -32697,6 +33084,55 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "2006年6月，佛易纳公司与晋堂公司签订了一项 买卖运动器材的国际货物销售合同。晋堂公司作为买方 在收到货物后发现其与合同约定不符。依据1980年《联 合国国际货物销售合同公约》的规定，下列哪些表述是 正确的？",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2006"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2006
+    },
+    {
+      "answer": [
+        "A",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "国际经济法领域的其他法律制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国际经济法领域的其他法律制度",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2006年客观题卷一#一#85",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "独创性数据汇编"
+        },
+        {
+          "label": "B",
+          "text": "动植物新品种"
+        },
+        {
+          "label": "C",
+          "text": "计算机程序及电影作品的出租权"
+        },
+        {
+          "label": "D",
+          "text": "疾病的诊断方法"
+        }
+      ],
+      "source": {
+        "nativeId": "2006年客观题卷一#一#85",
+        "path": "真题库/客观题/2006年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据《与贸易有关的知识产权协议》，下列哪 些选项应受到知识产权法律的保护？",
       "subjectId": "guojijingjifa",
       "tags": [
         "fakao-app",
@@ -32887,6 +33323,53 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "巴拿马籍货轮\"安达号\"承运一批运往中国的货 物，中途停靠韩国。\"安达号\"在韩国停靠卸载同船装运 的其他货物时与利比里亚籍\"百利号\"相碰。\"安达号\"受 损但能继续航行，并得知\"百利号\"最后的目的港也是中 国港口。\"安达号\"继续航行至中国港口卸货并在中国某 海事法院起诉\"百利号\"，要求其赔偿碰撞损失。依照我 国法律，该法院处理该争议应适用下列哪一国法律？",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2007",
+        "answer-missing"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2007
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": "国际货物运输与保险",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国际货物运输与保险",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2007年客观题卷一#一#38",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "该协议不得违反我国有关级别管辖和专属管辖"
+        },
+        {
+          "label": "B",
+          "text": "当事人可以在纠纷发生前协议选择我国法院管"
+        },
+        {
+          "label": "C",
+          "text": "如与该合同纠纷有实际联系的地点不在我国领"
+        },
+        {
+          "label": "D",
+          "text": "涉外合同或涉外财产权益纠纷的当事人可以选"
+        }
+      ],
+      "source": {
+        "nativeId": "2007年客观题卷一#一#38",
+        "path": "真题库/客观题/2007年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "国际海上运输合同的当事人在合同中选定我国 某法院作为解决可能发生的纠纷的法院。关于此，下列 哪一选项是错误的？",
       "subjectId": "guojijingjifa",
       "tags": [
         "fakao-app",
@@ -33424,6 +33907,53 @@
       "chapterOfficial": "国际经济法领域的其他法律制度",
       "difficulty": null,
       "explanation": "",
+      "id": "law:fakao-app:2008年客观题卷一#一#43",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "必须将该商标与所属业务同时转让"
+        },
+        {
+          "label": "B",
+          "text": "可以将该商标与所属业务同时转让"
+        },
+        {
+          "label": "C",
+          "text": "不能将该商标与所属业务同时转让"
+        },
+        {
+          "label": "D",
+          "text": "可以通过强制许可形式转让"
+        }
+      ],
+      "source": {
+        "nativeId": "2008年客观题卷一#一#43",
+        "path": "真题库/客观题/2008年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据《与贸易有关的知识产权协定》，关于商 标所有人转让商标，下列哪一选项是正确的？",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2008",
+        "answer-missing"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2008
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": "国际经济法领域的其他法律制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国际经济法领域的其他法律制度",
+      "difficulty": null,
+      "explanation": "",
       "id": "law:fakao-app:2008年客观题卷一#一#45",
       "knowledgePoints": [],
       "options": [
@@ -33762,6 +34292,102 @@
     },
     {
       "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "国际经济法领域的其他法律制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国际经济法领域的其他法律制度",
+      "difficulty": null,
+      "explanation": "本题考查反垄断调查机制。\nAB 项：《反垄断法》第 9 条规定：“国务院设立反垄断委员会，负责组织、协调、指\n导反垄断工作，履行下列职责：（一）研究拟订有关竞争政策；（二）组织调查、评估市场\n总体竞争状况，发布评估报告；（三）制定、发布反垄断指南；（四）协调反垄断行政执法\n工作；（五）国务院规定的其他职责。国务院反垄断委员会的组成和工作规则由国务院规\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n定。”据上述规定可知，国务院反垄断委员会并没有行政执法职责，A 项正确，B 项错误。\nCD 项：《反垄断法》第 10 条第 2 款规定：“国务院反垄断执法机构根据工作需要，可\n以授权省、自治区、直辖市人民政府相应的机构，依照本法规定负责有关反垄断执法工\n作。”但 CD 项都错在“执法”，根据第一段解析可知，国务院反垄断委员会并没有行政执\n法职责，更不能授权其他机关或部门执法，两项均错误。",
+      "id": "law:fakao-app:2009年客观题-卷一#一#24",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "是承担反垄断执法职责的法定机构"
+        },
+        {
+          "label": "B",
+          "text": "应当履行协调反垄断行政执法工作的职责"
+        },
+        {
+          "label": "C",
+          "text": "可以授权国务院相关部门负责反垄断执法工作"
+        },
+        {
+          "label": "D",
+          "text": "可以授权省、自治区、直辖市人民政府的相应机构负责反垄断执法工作"
+        }
+      ],
+      "source": {
+        "nativeId": "2009年客观题-卷一#一#24",
+        "path": "真题库/客观题/2009年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "对于国务院反垄断委员会的机构定位和工作职责，下列哪一选项是正确的？",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2009"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2009
+    },
+    {
+      "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "世界贸易组织",
+      "chapterConfidence": "low",
+      "chapterOfficial": "世界贸易组织",
+      "difficulty": null,
+      "explanation": "本题考查企业所得税法。\nA 项：《企业所得税法》第 1 条第 1 款规定：“在中华人民共和国境内，企业和其他取\n得收入的组织（以下统称企业）为企业所得税的纳税人，依照本法的规定缴纳企业所得\n税。”此项正确。\nB 项：第 1 条第 2 款规定：“个人独资企业、合伙企业不适用本法。”此项正确。\nC 项：第 4 条规定：“企业所得税的税率为 25%。非居民企业取得本法第三条第三款规\n定的所得，适用税率为 20%。”第 3 条第 3 款规定：“非居民企业在中国境内未设立机构、\n场所的，或者虽设立机构、场所但取得的所得与其所设机构、场所没有实际联系的，应当就\n其来源于中国境内的所得缴纳企业所得税。”据此可知，选项中两者的税率并不同，此项错\n误。\nD 项：第 22 条规定：“企业的应纳税所得额乘以适用税率，减除依照本法关于税收优\n惠的规定减免和抵免的税额后的余额，为应纳税额。”第 26 条规定：“企业的下列收入为\n免税收入：（一）国债利息收入；（二）符合条件的居民企业之间的股息、红利等权益性投\n资收益；（三）在中国境内设立机构、场所的非居民企业从居民企业取得与该机构、场所有\n实际联系的股息、红利等权益性投资收益；（四）符合条件的非营利组织的收入。”此项正\n确。",
+      "id": "law:fakao-app:2009年客观题-卷一#一#27",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "在我国境内，企业和其他取得收入的组织为企业所得税的纳税人"
+        },
+        {
+          "label": "B",
+          "text": "个人独资企业、合伙企业不是企业所得税的纳税人"
+        },
+        {
+          "label": "C",
+          "text": "企业所得税的纳税人分为居民企业和非居民企业，二者的适用税率完全不同"
+        },
+        {
+          "label": "D",
+          "text": "企业所得税的税收优惠，居民企业和非居民企业都有权享受"
+        }
+      ],
+      "source": {
+        "nativeId": "2009年客观题-卷一#一#27",
+        "path": "真题库/客观题/2009年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "关于企业所得税的说法，下列哪一选项是错误的？",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2009"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2009
+    },
+    {
+      "answer": [
         "A"
       ],
       "answerText": null,
@@ -33845,6 +34471,102 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "甲国公司（卖方）与乙国公司订立了国际货物买卖合同，FOB 价格条件，采用海上 运输方式。甲乙两国均为《联合国国际货物销售合同公约》（简称《公约》）缔约国，下列 哪一选项是正确的？",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2009"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2009
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "国际经济法领域的其他法律制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国际经济法领域的其他法律制度",
+      "difficulty": null,
+      "explanation": "本题考查 2009 年最高人民法院《关于审理无正本提单交付货物案件适用法律\n若干问题的规定》。\nA 项：最高人民法院《关于审理无正本提单交付货物案件适用法律若干问题的规定》第\n3 条第 2 款规定：“正本提单持有人要求承运人承担无正本提单交付货物民事责任的，适用\n海商法规定；海商法没有规定的，适用其他法律规定。”此项错。\nBD 项：第 3 条第 1 款规定：“承运人因无正本提单交付货物造成正本提单持有人损失\n的，正本提单持有人可以要求承运人承担违约责任，或者承担侵权责任。”故 B 项正确，D\n项错误。\nC 项：第 6 条规定：“承运人因无正本提单交付货物造成正本提单持有人损失的赔偿\n额，按照货物装船时的价值加运费和保险费计算。”此项错。",
+      "id": "law:fakao-app:2009年客观题-卷一#一#41",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "无正本提单交付货物的民事责任应适用交货地法律"
+        },
+        {
+          "label": "B",
+          "text": "乙公司可以要求甲公司承担违约责任或侵权责任"
+        },
+        {
+          "label": "C",
+          "text": "甲公司对因无正本提单交货造成的损失按货物的成本赔偿"
+        },
+        {
+          "label": "D",
+          "text": "丙公司提走了货物，不能要求甲公司承担责任"
+        }
+      ],
+      "source": {
+        "nativeId": "2009年客观题-卷一#一#41",
+        "path": "真题库/客观题/2009年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲公司依运输合同承运一批从某国进口中国的食品，当正本提单持有人乙公司持正 本提单提货时，发现货物已由丙公司以副本提单加保函提走。依我国相关法律规定，下列哪 一选项是正确的？",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2009"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2009
+    },
+    {
+      "answer": [
+        "A"
+      ],
+      "answerText": null,
+      "chapter": "国际经济法领域的其他法律制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国际经济法领域的其他法律制度",
+      "difficulty": null,
+      "explanation": "本题考查《保护工业产权巴黎公约》。\nA 项：优先权并非自动享有，申请人需要于在后申请中\n优先权的获得并不是自动的，需要申请人于“在后申请”中提出优先权申请并提供有关\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n证明文件，此项正确。\nB 项：发明专利和实用新型专利为 12 个月，外观设计和商标为 6 个月，此项错。\nCD 项：《保护工业产权巴黎公约》第 4 条 C 项中规定：“在本联盟同一国家内就第\n（2）所称的以前第一次\n申请同样的主题所提出的后一申请，如果在提出该申请时前一申请已被撤回、放弃或驳\n回，没有提供公众阅览，也没有遗留任何权利，而且如果前一申请还没有成为要求优先权的\n根据，应认为是第一次申请，其申请日应为优先权期间的起算日。在这以后，前一申请不得\n作为要求优先权的根据。”因此，“在先申请”被撤回、放弃或驳回的，“在后申请”的优\n先权地位并未丧失，CD 项均错误。",
+      "id": "law:fakao-app:2009年客观题-卷一#一#42",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "优先权的获得需要申请人于“在后申请”中提出优先权申请并提供有关证明文件"
+        },
+        {
+          "label": "B",
+          "text": "所有的工业产权均享有相同期间的优先权"
+        },
+        {
+          "label": "C",
+          "text": "“在先申请”撤回，“在后申请”的优先权地位随之丧失"
+        },
+        {
+          "label": "D",
+          "text": "“在先申请”被驳回，“在后申请”的优先权地位随之丧失"
+        }
+      ],
+      "source": {
+        "nativeId": "2009年客观题-卷一#一#42",
+        "path": "真题库/客观题/2009年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据《保护工业产权的巴黎公约》，关于优先权，下列哪一选项是正确的？",
       "subjectId": "guojijingjifa",
       "tags": [
         "fakao-app",
@@ -34000,6 +34722,55 @@
     },
     {
       "answer": [
+        "B",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "国际经济法领域的其他法律制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国际经济法领域的其他法律制度",
+      "difficulty": null,
+      "explanation": "本题考查特别使团。\nA 项：特别使团在派遣之前应得到接受国的同意，对具有接受国或第三国国籍的特别使\n团代表，接受国可以随时撤销，此项错误。\nB 项：特别使团的房舍在遇到火灾或其他严重的灾难，同时无法获得使团团长明确答复\n的情况下，接受国可推定获得同意而进入，此项正确。\nC 项：使团人员在执行公务外使用车辆造成交通肇事而引起的诉讼是不享有豁免权的，\n接受国可以管辖，此项错误。\nD 项：特别使团同样适用接受国对使馆人员的“不受欢迎的人”和“不能接受”制度，\n此项正确。",
+      "id": "law:fakao-app:2009年客观题-卷一#一#79",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲国对奥马的任命需征得乙国同意，乙国一经同意则不可撤销此项同意"
+        },
+        {
+          "label": "B",
+          "text": "甲国特别使团下榻的房舍遇到火灾而无法获得使团团长明确答复时，乙国可以推定获"
+        },
+        {
+          "label": "C",
+          "text": "贝登在公务之外开车肇事被诉诸乙国法院，因贝登有豁免权乙国法院无权管辖"
+        },
+        {
+          "label": "D",
+          "text": "特别使团也适用对使馆人员的“不受欢迎的人”的制度"
+        }
+      ],
+      "source": {
+        "nativeId": "2009年客观题-卷一#一#79",
+        "path": "真题库/客观题/2009年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "经乙国同意，甲国派特别使团与乙国进行特定外交任务谈判，甲国国民贝登和丙国 国民奥马均为使团成员，下列哪些选项是正确的？",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2009"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2009
+    },
+    {
+      "answer": [
         "A",
         "B",
         "D"
@@ -34106,6 +34877,56 @@
       ],
       "answerText": null,
       "chapter": "国际经济法领域的其他法律制度",
+      "chapterConfidence": "high",
+      "chapterOfficial": "国际经济法领域的其他法律制度",
+      "difficulty": null,
+      "explanation": "本题考查中国对知识产权保护的边境措施。\nA 项：《知识产权海关保护条例》第 7 条第 1 款规定：“知识产权权利人可以依照本条\n例的规定，将其知识产权向海关总署申请备案；申请备案的，应当提交申请书。”此项正\n确。\nBC 项：第 12 条：“知识产权权利人发现侵权嫌疑货物即将进出口的，可以向货物进出\n境地海关提出扣留侵权嫌疑货物的申请。”故 C 项正确，同时依据第 7 条的规定可知，对于\n涉嫌侵犯知识产权的货物，可以申请备案或扣留，甚至向法院起诉，但不可以仅要求移除侵\n权标记，B 项错误。\nD 项：第 23 条第 1 款：“知识产权权利人在向海关提出采取保护措施的申请后，可以\n依照《中华人民共和国商标法》、《中华人民共和国著作权法》、《中华人民共和国专利\n法》或者其他有关法律的规定，就被扣留的侵权嫌疑货物向人民法院申请采取责令停止侵权\n行为或者财产保全的措施。”此项正确。",
+      "id": "law:fakao-app:2009年客观题-卷一#一#86",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲公司可向海关提出采取知识产权保护措施的备案申请"
+        },
+        {
+          "label": "B",
+          "text": "甲公司可要求海关将涉嫌侵犯“麒麟”商标权的标记移除后再进口"
+        },
+        {
+          "label": "C",
+          "text": "甲公司可向货物进出境地海关提出扣留涉嫌侵权货物的申请"
+        },
+        {
+          "label": "D",
+          "text": "甲公司在向海关提出采取保护措施的申请后，可在起诉前就被扣留的涉嫌侵权货物向"
+        }
+      ],
+      "source": {
+        "nativeId": "2009年客观题-卷一#一#86",
+        "path": "真题库/客观题/2009年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "中国甲公司发现有假冒“麒麟”商标的货物通过海关进口。依我国相关法律规定， 甲公司可以采取下列哪些措施？",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2009"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2009
+    },
+    {
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "国际经济法领域的其他法律制度",
       "chapterConfidence": "low",
       "chapterOfficial": "国际经济法领域的其他法律制度",
       "difficulty": null,
@@ -34200,52 +35021,51 @@
     },
     {
       "answer": [
-        "A",
-        "C"
+        "B"
       ],
       "answerText": null,
       "chapter": "对外贸易管理制度",
-      "chapterConfidence": "high",
+      "chapterConfidence": "low",
       "chapterOfficial": "对外贸易管理制度",
       "difficulty": null,
-      "explanation": "本题考查公务员的基本管理制度。\n《公务员法》第 56 条规定：“处分分为：警告、记过、记大过、降级、撤职、开\n除。”AC 项正确，BD 项错误。",
-      "id": "law:fakao-app:2009年客观题-卷二#二#82",
+      "explanation": "本题考查国家主权豁免。\nAB 项：国家主权豁免是指一国的行为和财产不受另一国的立法，司法和行政等方面的\n管辖。实践中，国家主权豁免主要表现在司法豁免方面，司法豁免包括：一国不对他国的国\n家行为和财产进行管辖，以及，一国的国内法院非经外国同意，不得受理以外国国家作为被\n告或外国国家行为作为诉由的诉讼，也不对外国国家的代表或国家财产采取司法执行措施。\n还有一点值得注意的是，国家放弃管辖豁免并不意味着放弃执行豁免，执行豁免的放弃必须\n另行通过明示方式作出，由此可知 A 项错误，B 项正确。\nCD 项：放弃国家豁免权属于国家的主权行为，应当由国家自愿作出特定和明确的表\n示。现行国家豁免采用的是绝对豁免理论，乙国的主张不是国际法规则，不能适用，且即使\n是相对豁免理论也主张国家在执行上享有绝对豁免权。因此，CD 项错误。",
+      "id": "law:fakao-app:2010年客观题-卷一#一#30",
       "knowledgePoints": [],
       "options": [
         {
           "label": "A",
-          "text": "降级"
+          "text": "乙国法院可对甲国财产进行查封"
         },
         {
           "label": "B",
-          "text": "免职"
+          "text": "乙国法院原则上不能对甲国强制执行判决，除非甲国明示放弃在该案上的执行豁免"
         },
         {
           "label": "C",
-          "text": "撤职"
+          "text": "如第三国法院曾对甲国强制执行判决，则乙国法院可对甲国强制执行判决"
         },
         {
           "label": "D",
-          "text": "责令辞职"
+          "text": "如乙国主张限制豁免，则可对甲国强制执行判决"
         }
       ],
       "source": {
-        "nativeId": "2009年客观题-卷二#二#82",
-        "path": "真题库/客观题/2009年客观题-卷二.md",
+        "nativeId": "2010年客观题-卷一#一#30",
+        "path": "真题库/客观题/2010年客观题-卷一.md",
         "repo": "fakao-app",
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
-      "stem": "下列哪些选项属于对公务员的处分？",
+      "stem": "甲国政府与乙国 A 公司在乙国签订一份资源开发合同后，A 公司称甲国政府未按合 同及时支付有关款项。纠纷发生后，甲国明确表示放弃关于该案的诉讼管辖豁免权。根据国 际法规则，下列哪一选项是正确的？",
       "subjectId": "guojijingjifa",
       "tags": [
         "fakao-app",
         "md-真题",
-        "section:多项选择题",
-        "year:2009"
+        "section:单项选择题",
+        "year:2010"
       ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2009
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2010
     },
     {
       "answer": [
@@ -34336,6 +35156,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "甲公司(卖方)与乙公司于 2007 年 10 月签订了两份同一种农产品的国际贸易合同， 约定交货期分别为 2008 年 1 月底和 3 月中旬，采用付款交单方式。甲公司依约将第一份合 同项下的货物发运后，乙公司以资金周转困难为由，要求变更付款方式为货到后 30 天付 款。甲公司无奈同意该变更。乙公司未依约付款，并以资金紧张为由再次要求延期付款。甲 公司未再发运第二个合同项下的货物并提起仲裁。根据《联合国国际货物销售合同公约》， 下列哪一选项是正确的？",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2010"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2010
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "国际经济法领域的其他法律制度",
+      "chapterConfidence": "high",
+      "chapterOfficial": "国际经济法领域的其他法律制度",
+      "difficulty": null,
+      "explanation": "本题考点为知识产权的国际保护，主要考查《保护工业产权巴黎公约》、《保护文学和\n艺术作品伯尔尼公约》和《与贸易有关的知识产权协议》的有关内容。\nA 项：《伯尔尼公约》第 7 条规定：“但就电影作品而言，本同盟成员国有权规定保护\n期在作者同意下自作品公之于众后五十年期满，如自作品完成后五十年内尚未公之于众，则\n自作品完成后五十年期满。”由此可知该公约对摄影作品的保护期限已有规定，A 项不符合\n题意。\nB 项：《与贸易有关的知识产权协议》对《伯尔尼公约》的补充体现在以下两个方面：\n第一，保护客体方面，将计算机程序和有独创性的数据汇编列为版权保护对象；第二，在权\n利内容方面，增加了计算机程序和电影作品的出租权，由此可知 B 项正确。\nC 项：《伯尔尼公约》第 11 条之二规定：“行使以上第一款所指的权利的条件由本同盟\n成员国的法律规定，但这些条件的效力严格限于对此作出规定的国家。在任何情况下，这些\n条件均不应有损于作者的精神权利，也不应有损于作者获得合理报酬的权利，该报酬在没有\n协议情况下应由主管当局规定。”由此可知《伯尔尼公约》对作者精神权利给予了保护，C\n项表述不符合题意。\nD 项：《与贸易有关的知识产权协议》第 3 条规定了国民待遇原则，依该条规定，在知\n识产权保护方面，在遵守《巴黎公约》、《伯尔尼公约》、《罗马公约》或《关于集成电路\n的知识产权条约》中各自规定的例外的前提下，每一成员给予其他成员国民的待遇不得低于\n给予本国国民的待遇。可见该协议是有例外地实行国民待遇原则。D 项表述错误。（本题答\n案：B）",
+      "id": "law:fakao-app:2010年客观题-卷一#一#41",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "明确了摄影作品的最低保护期限"
+        },
+        {
+          "label": "B",
+          "text": "将计算机程序和有独创性的数据汇编列为版权保护的对象"
+        },
+        {
+          "label": "C",
+          "text": "增加了对作者精神权利方面的保护"
+        },
+        {
+          "label": "D",
+          "text": "无例外地实行国民待遇原则"
+        }
+      ],
+      "source": {
+        "nativeId": "2010年客观题-卷一#一#41",
+        "path": "真题库/客观题/2010年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "关于版权保护，下列哪一选项体现了《与贸易有关的知识产权协议》对《伯尔尼公 约》的补充？",
       "subjectId": "guojijingjifa",
       "tags": [
         "fakao-app",
@@ -34494,6 +35362,56 @@
     {
       "answer": [
         "A",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "国际经济法领域的其他法律制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国际经济法领域的其他法律制度",
+      "difficulty": null,
+      "explanation": "A 项：该项考查企业所得税优惠的适用条件。《企业所得税法》第 25 条规定：“国家对\n重点扶持和鼓励发展的产业和项目，给予企业所得税优惠。”由条文可知 A 项正确。\nB 项：该项考查企业所得税优惠的适用条件。《企业所得税法》第 28 条第 2 款规定：\n“国家需要重点扶持的高新技术企业，减按 15%的税率征收企业所得税。”由条文可知 B 项\n说法错误。\nC 项：该项考查免征、减征企业所得税的适用条件。《企业所得税法》第 27 条第(一)项\n规定：“企业的下列所得，可以免征、减征企业所得税：(一)从事农、林、牧、渔业项目的\n所得。”由条文可知 C 项正确。\nD 项：该项考查应纳税所得额可加计扣除的适用条件。《企业所得税法》第 30 条第(二)\n项规定：“企业的下列支出，可以在计算应纳税所得额时加计扣除：(二)安置残疾人员及国\n家鼓励安置的其他就业人员所支付的工资。”由条文可知 D 项正确。",
+      "id": "law:fakao-app:2010年客观题-卷一#一#71",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "国家对鼓励发展的产业和项目给予企业所得税优惠"
+        },
+        {
+          "label": "B",
+          "text": "国家对需要重点扶持的高新技术企业可以适当提高其企业所得税税率"
+        },
+        {
+          "label": "C",
+          "text": "企业从事农、林、牧、渔业项目的所得可以免征、减征企业所得税"
+        },
+        {
+          "label": "D",
+          "text": "企业安置残疾人员所支付的工资可以在计算应纳税所得额时加计扣除"
+        }
+      ],
+      "source": {
+        "nativeId": "2010年客观题-卷一#一#71",
+        "path": "真题库/客观题/2010年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据《企业所得税法》规定，下列哪些表述是正确的？",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2010"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2010
+    },
+    {
+      "answer": [
+        "A",
         "B",
         "C",
         "D"
@@ -34531,6 +35449,55 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "纳税义务人具有下列哪些情形的，应当按规定办理个人所得税纳税申报？",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2010"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2010
+    },
+    {
+      "answer": [
+        "A",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "世界贸易组织",
+      "chapterConfidence": "low",
+      "chapterOfficial": "世界贸易组织",
+      "difficulty": null,
+      "explanation": "本题考查对非居民营业所得的纳税原则。\nAB 项：营业所得是指纳税人在某个固定场所从事经营活动所取得的纯收益。目前各国\n对非居民营业所得的纳税普遍采用常设机构原则。常设机构原则是指仅对非居民纳税人通过\n在境内常设机构而获取的工商营业利润实行征税的原则。由此可知 A 项正确，B 项错误。\nCD 项：常设机构主要有：管理场所、分支机构、办事处、工厂、车间、作业场所、矿\n场、油井、采石场等。由此可知 C 项正确，D 项错误。",
+      "id": "law:fakao-app:2010年客观题-卷一#一#84",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "仅对非居民纳税人通过在境内的常设机构获得的工商营业利润实行征税"
+        },
+        {
+          "label": "B",
+          "text": "常设机构原则同样适用于有关居民的税收"
+        },
+        {
+          "label": "C",
+          "text": "管理场所、分支机构、办事处、工厂、油井、采石场等属于常设机构"
+        },
+        {
+          "label": "D",
+          "text": "常设机构必须满足公司实体的要求"
+        }
+      ],
+      "source": {
+        "nativeId": "2010年客观题-卷一#一#84",
+        "path": "真题库/客观题/2010年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "目前各国对非居民营业所得的纳税普遍采用常设机构原则。关于该原则，下列哪些 表述是正确的？",
       "subjectId": "guojijingjifa",
       "tags": [
         "fakao-app",
@@ -34692,6 +35659,56 @@
       "type": "indefinite_choice",
       "typeRaw": "不定项选择题",
       "year": 2010
+    },
+    {
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "世界贸易组织",
+      "chapterConfidence": "low",
+      "chapterOfficial": "世界贸易组织",
+      "difficulty": null,
+      "explanation": "本题考查宪法修正案的有关内容。\nA 选项，《宪法修正案》（1999 年）第十三条规定，宪法第五条增加一款，作为第一\n款，规定：\n“中华人民共和国实行依法治国，建设社会主义法治国家”，该条说的是法律制度，而\n非经济制度。A 项错误。\nB 选项，《宪法修正案》（1993）第七条将宪法第十五条修改为：“国家实行社会主义\n市场经济。”“国家加强经济立法，完善宏观调控。”“国家依法禁止任何组织或者个人扰\n乱社会经济秩序。”B 项正确。\nC 选项，现行宪法第六至十八条的对经济制度的规定，仅第九、十二、十八条没有被修\n改过。C 项正确。\nD 选项，《宪法修正案》（1993）第六条将宪法第八条第一款修改为：“农村中的家庭\n联产承包为主的责任制和生产、供销、信用、消费等各种形式的合作经济，是社会主义劳动\n群众集体所有制经济。参加农村集体经济组织的劳动者，有权在法律规定的范围内经营自留\n地、自留山、家庭副业和饲养自留畜。”D 项正确。",
+      "id": "law:fakao-app:2011年客观题-卷一#一#29",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "中华人民共和国实行依法治国，建设社会主义法治国家"
+        },
+        {
+          "label": "B",
+          "text": "国家实行社会主义市场经济"
+        },
+        {
+          "label": "C",
+          "text": "除第九、十二、十八条外，其他各条都进行过修改"
+        },
+        {
+          "label": "D",
+          "text": "农村中的生产、供销、信用、消费等各种形式的合作经济，是社会主义劳动群众集体"
+        }
+      ],
+      "source": {
+        "nativeId": "2011年客观题-卷一#一#29",
+        "path": "真题库/客观题/2011年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "我国宪法第六至十八条对经济制度作了专门规定。关于《宪法修正案》就我国经济 制度规定所作的修改，下列哪些选项是正确的？",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2011"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2011
     },
     {
       "answer": [
@@ -34951,7 +35968,7 @@
       ],
       "answerText": null,
       "chapter": "对外贸易管理制度",
-      "chapterConfidence": "low",
+      "chapterConfidence": "high",
       "chapterOfficial": "对外贸易管理制度",
       "difficulty": null,
       "explanation": "本题主要考察食品生产经营的有关规定。\nA 选项，《食品安全法》第三十九条规定，申请利用新的食品原料从事食品生产或者从\n事食品添加剂新品种、食品相关产品新品种生产活动的单位或者个人，应当向国务院卫生行\n政部门提交相关产品的安全性评估材料。国务院卫生行政部门应当自收到申请之日起六十日\n内组织对相关产品的安全性评估材料进行审查；对符合食品安全要求的，依法决定准予许可\n并予以公布；对不符合食品安全要求的，决定不予许可并书面说明理由。A 项错误。\nB 选项，《食品安全法》第三十九条规定，国家对食品添加剂生产实行许可制度。从事\n食品添加剂生产，应当具有与所生产食品添加剂品种相适应的场所、生产设备或者设施、专\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n业技术人员和管理制度，并依照本法第三十五条第二款规定的程序，取得食品添加剂生产许\n可。说明国家并未对含有食品添加剂的食品的销售实行许可制度，B 项错误。\nC 选项，《食品安全法》第七十条规定，食品添加剂应当有标签、说明书和包装。标\n签、说明书应当载明本法第六十七条第一款第一项至第六项、第八项、第九项规定的事项，\n以及食品添加剂的使用范围、用量、使用方法，并在标签上载明‘食品添加剂’字样。C 项\n正确。\nD 选项，《食品安全法》第六十一条规定，集中交易市场的开办者、柜台出租者和展销\n会举办者，应当依法审查入场食品经营者的许可证，明确其食品安全管理责任，定期对其经\n营环境和条件进行检查，发现其有违反本法规定行为的，应当及时制止并立即报告所在地县\n级人民政府食品药品监督管理部门。《食品安全法》并未要求销售含有食品添加剂的食品\n的，必须在销售场所设置载明“食品添加剂”字样的专柜。D 项错误。",
@@ -34982,6 +35999,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "关于食品添加剂管制，下列哪一说法符合《食品安全法》的规定？",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2011"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2011
+    },
+    {
+      "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "国际经济法领域的其他法律制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国际经济法领域的其他法律制度",
+      "difficulty": null,
+      "explanation": "本题主要考查扣税义务人及其纳税申报的有关内容。\nA 选项考查扣缴义务人的概念，《税收征收管理法》第四条第二款规定，法律、行政法\n规规定负有代扣代缴、代收代缴税款义务的单位和个人为扣缴义务人。A 项正确不应选。\nB 选项考查纳税申报的具体规定，《税收征收管理法》第二十五条第二款规定，扣缴义\n务人必须依照法律、行政法规规定或者税务机关依照法律、行政法规的规定确定的申报期\n限、申报内容如实报送代扣代缴、代收代缴税款报告表以及税务机关根据实际需要要求扣缴\n义务人报送的其他有关资料。B 项正确不应选。\nC 选项考查延期申报纳税。《税收征收管理法》第二十七条第一款规定，纳税人、扣缴\n义务人不能按期办理纳税申报或者报送代扣代缴、代收代缴税款报告表的，经税务机关核\n准，可以延期申报。C 项正确不应选。\nD 选项考查纳税申报的方式。《税收征收管理法》第二十六条规定，纳税人、扣缴义务\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n人可以直接到税务机关办理纳税申报或者报送代扣代缴、代收代缴税款报告表，也可以按照\n规定采取邮寄、数据电文或者其他方式办理上述申报、报送事项。D 项错误应选。",
+      "id": "law:fakao-app:2011年客观题-卷一#一#74",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "是依法负有代扣代缴、代收代缴税款义务的单位和个人"
+        },
+        {
+          "label": "B",
+          "text": "应当按时向税务机关报送代扣代缴、代收代缴税款报告表和其他有关资料"
+        },
+        {
+          "label": "C",
+          "text": "可以向税务机关申请延期报送代扣代缴、代收代缴税款报告表和其他有关资料"
+        },
+        {
+          "label": "D",
+          "text": "应当直接到税务机关报送代扣代缴、代收代缴税款报告表和其他有关资料"
+        }
+      ],
+      "source": {
+        "nativeId": "2011年客观题-卷一#一#74",
+        "path": "真题库/客观题/2011年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "关于扣缴义务人，下列哪一说法是错误的？",
       "subjectId": "guojijingjifa",
       "tags": [
         "fakao-app",
@@ -35031,6 +36096,59 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "中国甲公司与某国乙公司签订茶叶出口合同，并投保水渍险，议定由丙公司“天 然”号货轮承运。下列哪些选项属于保险公司应赔偿范围？",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2011"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2011
+    },
+    {
+      "answer": [
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "对外贸易管理制度",
+      "chapterConfidence": "high",
+      "chapterOfficial": "对外贸易管理制度",
+      "difficulty": null,
+      "explanation": "本题考查见索即付的保函的相关内容。见索即付保函又称为见索即付担保，或独立保\n函，是指一旦主债务人违约，贷款人无须先向主债务人追索，即可无条件要求保证人承担第\n一偿付责任的保证。\nA 选项，见索即付保函具有无条件性，保证人仅凭受益人提出的要求即应付款，而不问\n付款是否有合理依据。A 项错误。\n不能以基础合同的履行、修改或无效等对抗受益人。只要违约事实出现，担保人就须履行保\n函义务。B 项错误，C 项正确。\nD 选项，这里的保函被担保人可直接依据保函要求保证人履行保函义务，而不需对债务\n人采取救济措施。D 项正确。",
+      "id": "law:fakao-app:2011年客观题-卷一#一#79",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "丙银行对该合同因战乱而违约的事实进行实质审查后，方履行保函义务"
+        },
+        {
+          "label": "B",
+          "text": "因该合同违约原因是乙国内战，丙银行可以此为由不履行保函义务"
+        },
+        {
+          "label": "C",
+          "text": "丙银行出具的见索即付保函独立于该合同，只要违约事实出现即须履行保函义务"
+        },
+        {
+          "label": "D",
+          "text": "保函被担保人无须对甲国公司采取各种救济方法，便可直接要求丙银行履行保函义务"
+        },
+        {
+          "label": "B",
+          "text": "C 选项，见索即付保函具有独立性，即担保人所承担的义务独立于基础合同，担保人"
+        }
+      ],
+      "source": {
+        "nativeId": "2011年客观题-卷一#一#79",
+        "path": "真题库/客观题/2011年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲国公司承担乙国某工程，与其签订工程建设合同。丙银行为该工程出具见索即付 的保函。后乙国发生内战，工程无法如期完工。对此，下列哪些选项是正确的？",
       "subjectId": "guojijingjifa",
       "tags": [
         "fakao-app",
@@ -35147,246 +36265,6 @@
       "chapterConfidence": "low",
       "chapterOfficial": "国际经济法领域的其他法律制度",
       "difficulty": null,
-      "explanation": "本题考查纵向垄断协议问题。依据《反垄断法》第 14 条规定，“禁止经营者与交易相\n对人达成下列垄断协议：（1）固定向第三人转售商品的价格；（2）限定向第三人转售商品\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n的最低价格；（3）国务院反垄断执法机构认定的其他垄断协议。”本题中，某白酒公司与\n经销商达成协议，限定向第三人转售商品的最低价格，属于纵向垄断协议，ABC 错误，D 项\n正确。",
-      "id": "law:fakao-app:2011年客观题-卷二#二#27",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "维护品牌形象的正当行为"
-        },
-        {
-          "label": "B",
-          "text": "滥用市场支配地位的行为"
-        },
-        {
-          "label": "C",
-          "text": "价格同盟行为"
-        },
-        {
-          "label": "D",
-          "text": "纵向垄断协议行为"
-        }
-      ],
-      "source": {
-        "nativeId": "2011年客观题-卷二#二#27",
-        "path": "真题库/客观题/2011年客观题-卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "某品牌白酒市场份额较大且知名度较高，因销量急剧下滑，生产商召集经销商开 会，令其不得低于限价进行销售，对违反者将扣除保证金、减少销售配额直至取消销售资 格。关于该行为的性质，下列哪一判断是正确的？",
-      "subjectId": "guojijingjifa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2011"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2011
-    },
-    {
-      "answer": [
-        "A"
-      ],
-      "answerText": null,
-      "chapter": "国际货物买卖",
-      "chapterConfidence": "high",
-      "chapterOfficial": "国际货物买卖",
-      "difficulty": null,
-      "explanation": "A 项考查国际法院法官的选举。《国际法院规约》第八条规定，“大会及安全理事会各\n应独立举行法院法官之选举。”《国际法院规约》第十条规定，“一、候选人在大会及在安\n全理事会得绝对多数票者应认为当选。二、安全理事会之投票，或为法官之选举或为第十二\n条所称联席会议人员之指派，应不论安全理事会常任理事国及非常任理事国之区别。三、如\n同一国家之国民得大会及安全理事会之绝对多数票者不止一人时，其中事最高者应认为当\n选。”可见，联合国安全理事会常任理事国对于国际法院法官选举并无一票否决权。因此，\nA 项错误。\nB 项考查国际法院法官的回避制度。《国际法院规约》第三十一条第一款规定，“属于\n诉讼当事国国籍之法官，于法院受理该诉讼案件时，保有其参与之权。”《国际法院规约》\n第十七条第二款规定，“法官曾以当事国一造之代理人、律师，或辅佐人，或以国内法院或\n国际法院或调查委员会委员，或以其他资格参加任何案件者，不得参与该案件之裁决。”可\n见，国际法院法官对涉及其国籍国的案件，不适用回避制度，但曾参与该案件的，需要回\n避。因此，C 项错误。\nC 项考查国际法院判决的效力。《国际法院规约》第五十九条规定，“法院之裁判除对\n于当事国及本案外，无拘束力。”国际法院判决对案件当事国具有法律拘束力，但不构成国\n际法的渊源。C 项前半句正确，后半句错误。\nD 项考查国际法院咨询意见的效力。国际法院作出的咨询意见没有法律拘束力，但对于\n有关问题的解决以及国际法的发展都具有重要的影响。D 项错误。",
-      "id": "law:fakao-app:2011年客观题-卷二#二#34",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "联合国常任理事国对国际法院法官的选举不具有否决权"
-        },
-        {
-          "label": "B",
-          "text": "国际法院法官对涉及其国籍国的案件，不适用回避制度，即使其就任法官前曾参与该"
-        },
-        {
-          "label": "C",
-          "text": "国际法院判决对案件当事国具有法律拘束力，构成国际法的渊源"
-        },
-        {
-          "label": "D",
-          "text": "国际法院作出的咨询意见具有法律拘束力"
-        }
-      ],
-      "source": {
-        "nativeId": "2011年客观题-卷二#二#34",
-        "path": "真题库/客观题/2011年客观题-卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "关于联合国国际法院的表述，下列哪一选项是正确的？",
-      "subjectId": "guojijingjifa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2011"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2011
-    },
-    {
-      "answer": [
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "国际货物买卖",
-      "chapterConfidence": "high",
-      "chapterOfficial": "国际货物买卖",
-      "difficulty": null,
-      "explanation": "A 项考查 FOB 贸易术语的价格构成。FOB，全称 Free on Board，意为“船上交货(指定装\n运港)”，指卖方以在指定装运港将货物装上买方指定的船舶或通过取得已交付至船上货物的\n方式交货。在该术语下，主要运费应是由买方来承担的。在本题中，应用买方乙公司负责签\n订货物运输合同并支付运费。因此，A 项错误。\nB 项考查 FOB 贸易术语下货物的风险转移。根据 2010 年《国际贸易术语解释通则》，\n在 FOB 贸易术语下，货物的风险不再是在船舷转移，而是在货物装上船时转移，这一点是\n2010 年《国际贸易术语解释通则》的一项重要修改。因此，B 项错误。\nC 项考查卖方妥善包装的义务。《联合国国际货物销售合同公约》第三十五条规定，卖\n方交付的货物必须按照合同所规定的方式装箱或包装。如合同未作规定，货物按照同类货物\n通用的方式装箱或包装，如果没有此种通用方式，则按照足以保全和保护货物的方式装箱或\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n包装。因此，该批设备因未按照同类货物通用方式包装造成损失，应由卖方甲公司承担责\n任，C 项正确。\nD 项考查卖方的知识产权担保责任。《联合国国际货物销售合同公约》第四十二条规\n定，“(1)卖方所交付的货物，必须是第三方不能根据工业产权或其他知识产权主张任何权利\n或要求的货物，但以卖方在订立合同时已知道或不可能不知道的权利或要求为限，而且这种\n权利或要求根据以下国家的法律规定是以工业产权或其他知识产权为基础的：(a)如果双方当\n事人在订立合同时预期货物将在某一国境内转售或做其他使用，则根据货物将在其境内转售\n或做其他使用的国家的法律；或者(b)在任何其他情况下，根据买方营业地所在国家的法律。\n(2)卖方在上一款中的义务不适用于以下情况：(a)买方在订立合同时已知道或不可能不知道此\n项权利或要求；或者(b)此项权利或要求的发生，是由于卖方要遵照买方所提供的技术图样、\n图案、款式或其他规格。”本题中，买方乙公司营业地为中国，如果该批设备侵犯了第三方\n在中国的专利权，卖方甲公司需要对买方乙公司承担责任。D 项错误。",
-      "id": "law:fakao-app:2011年客观题-卷二#二#40",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "甲公司负责签订货物运输合同并支付运费"
-        },
-        {
-          "label": "B",
-          "text": "甲、乙公司的风险承担以货物在装运港越过船舷为界"
-        },
-        {
-          "label": "C",
-          "text": "如该批设备因未按照同类货物通用方式包装造成损失，应由甲公司承担责任"
-        },
-        {
-          "label": "D",
-          "text": "如该批设备侵犯了第三方在中国的专利权，甲公司对乙公司不承担责任"
-        }
-      ],
-      "source": {
-        "nativeId": "2011年客观题-卷二#二#40",
-        "path": "真题库/客观题/2011年客观题-卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "某 国 甲 公 司 向 中 国 乙 公 司 出 售 一 批 设 备 ， 约 定 贸 易 术 语 为 “ FOB （Incoterms2010）”，后设备运至中国。依《国际贸易术语解释通则》和《联合国国际货物 销售合同公约》，下列哪一选项是正确的？",
-      "subjectId": "guojijingjifa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2011"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2011
-    },
-    {
-      "answer": [
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "世界贸易组织",
-      "chapterConfidence": "high",
-      "chapterOfficial": "世界贸易组织",
-      "difficulty": null,
-      "explanation": "A 项考查《服务贸易总协定》的适用范围。《服务贸易总协定》适用于各成员影响服务\n贸易的措施，包括成员的中央、地区或地方政府的措施，以及它们授权行使权力的非政府机\n构采取的措施。但服务贸易总协定不适用于为履行政府职能而提供的服务，即不是在商业基\n础上提供的、又不与任何一个或多个服务提供者相竞争的服务。因此，《服务贸易总协定》\n不适用于成员方的政府服务采购。A 项错误。\nB 项考查《服务贸易总协定》规定的服务贸易方式。《服务贸易总协定》规定了跨境供\n应、境外消费、商业存在、自然人存在四种服务贸易方式。跨境供应是指从一国境内直接向\n其他国境内提供服务——服务产品的流动(不需要提供者和消费者的实际流动)。境外消费是\n指在一国境内向其他国的服务消费者提供服务——消费者的流动。商业存在是指外国实体在\n另一国境内设立附属公司或分支机构，提供服务。自然人存在即一国的服务提供商通过自然\n人到其他国境内提供服务——自然人流动。中国公民接受国外某银行在中国分支机构的服务\n属于商业存在而不是境外消费。B 项错误。\nC 项考查《服务贸易总协定》中的最惠国待遇原则。《服务贸易总协定》第二条第一款\n规定，“关于本协定涵盖的任何措施，每一成员对于任何其他成员的服务和服务提供者，应\n立即和无条件地给予不低于其给予任何其他国家同类服务和服务提供者的待遇。”可见，\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n《服务贸易总协定》中的最惠国待遇既适用于服务，也适用于服务提供者。故 C 项错误。\nD 项考查《服务贸易总协定》中的国民待遇原则。《服务贸易总协定》第十七条第一款\n规定，“对于列入减让表的部门，在遵守其中所列任何条件和资格的前提下，每一成员在影\n响服务提供的所有措施方面给予任何其他成员的服务和服务提供者的待遇，不得低于其给予\n本国同类服务和服务提供者的待遇。”可见，《服务贸易总协定》中的国民待遇义务仅限于\n列入减让表的部门。故 D 项正确。",
-      "id": "law:fakao-app:2011年客观题-卷二#二#42",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "协定适用于成员方的政府服务采购"
-        },
-        {
-          "label": "B",
-          "text": "中国公民接受国外某银行在中国分支机构的服务属于协定中的境外消费"
-        },
-        {
-          "label": "C",
-          "text": "协定中的最惠国待遇只适用于服务产品而不适用于服务提供者"
-        },
-        {
-          "label": "D",
-          "text": "协定中的国民待遇义务，仅限于列入承诺表的部门"
-        }
-      ],
-      "source": {
-        "nativeId": "2011年客观题-卷二#二#42",
-        "path": "真题库/客观题/2011年客观题-卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "根据世界贸易组织《服务贸易总协定》，下列哪一选项是正确的？",
-      "subjectId": "guojijingjifa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2011"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2011
-    },
-    {
-      "answer": [
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "世界贸易组织",
-      "chapterConfidence": "high",
-      "chapterOfficial": "世界贸易组织",
-      "difficulty": null,
-      "explanation": "A 项考查 WTO 争端解决机制中的磋商。磋商是申请设立专家组的前提条件。但磋商事\n项以及磋商的充分性，与设立专家组的申请及专家组将作出的裁定没有关系。磋商仅仅是一\n种程序性要求。故 A 项正确。\nB 项考查 WTO 争端解决机制中的上诉机构。上诉机构是争端解决机构中的常设机构，它\n负责对被提起上诉的专家组报告中的法律问题和专家组进行的法律解释进行审查。上诉案件\n由上诉机构 7 名成员中的 3 人组成上诉庭审理。故 B 项正确。\nC 项考查 WTO 争端解决中的执行机制。如败诉方不遵守争端解决机构的裁决，申诉方可\n以向争端解决机构申请授权报复，对被诉方中止减让或其他义务，但申诉方不可自行采取中\n止减让或中止其他义务的措施。故 C 项错误。\nD 项考查 WTO 争端解决中的执行机制。申诉方拟中止减让或其他义务的程度和范围，\n应与其所受到的损害相等。D 项正确。",
-      "id": "law:fakao-app:2011年客观题-卷二#二#43",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "磋商是争端双方解决争议的必经程序"
-        },
-        {
-          "label": "B",
-          "text": "上诉机构为世界贸易组织争端解决机制中的常设机构"
-        },
-        {
-          "label": "C",
-          "text": "如败诉方不遵守争端解决机构的裁决，申诉方可自行采取中止减让或中止其他义务的"
-        },
-        {
-          "label": "D",
-          "text": "申诉方在实施报复时，中止减让或中止其他义务的程度和范围应与其所受到损害相等"
-        }
-      ],
-      "source": {
-        "nativeId": "2011年客观题-卷二#二#43",
-        "path": "真题库/客观题/2011年客观题-卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "关于世界贸易组织争端解决机制的表述，下列哪一选项是不正确的？",
-      "subjectId": "guojijingjifa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2011"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2011
-    },
-    {
-      "answer": [
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "国际经济法领域的其他法律制度",
-      "chapterConfidence": "low",
-      "chapterOfficial": "国际经济法领域的其他法律制度",
-      "difficulty": null,
       "explanation": "A 选项，根据《选举法》第 18 条第 1 款规定：有少数民族聚居的地方，每一聚居的少\n数民族都应有代表参加当地的人民代表大会。故 A 项正确，不选。\nB 项，《选举法》第 18 条第 4 款规定：聚居境内同一少数民族的总人口数占境内总人口\n数百分之十五以上、不足百分之三十的，每一代表所代表的人口数，可以适当少于当地人民\n代表大会每一代表所代表的人口数，但分配给该少数民族的应选代表名额不得超过代表总名\n额的百分之三十。可知，B 项正确，不选。\nC 项，《选举法》第 18 条第 2 款规定：聚居境内同一少数民族的总人口数占境内总人口\n数百分之三十以上的，每一代表所代表的人口数应相当于当地人民代表大会每一代表所代表\n的人口数。可知，C 项正确，不选。\nD 项，《选举法》第 18 条第 3 款规定：聚居境内同一少数民族的总人口数不足境内总\n人口数百分之十五的，每一代表所代表的人口数可以适当少于当地人民代表大会每一代表所\n代表的人口数，但不得少于二分之一;实行区域自治的民族人口特少的自治县，经省、自治区\n的人民代表大会常务委员会决定，可以少于二分之一。人口特少的其他聚居民族，至少应有\n代表一人。本题中缺少“经省、自治区的人民代表大会常务委员会决定”这个条件，D 项错\n误，应选。",
       "id": "law:fakao-app:2012年客观题-卷一#一#24",
       "knowledgePoints": [],
@@ -35415,6 +36293,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "关于各少数民族人大代表的选举，下列哪一选项是不正确的？",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2012"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2012
+    },
+    {
+      "answer": [
+        "A"
+      ],
+      "answerText": null,
+      "chapter": "对外贸易管理制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "对外贸易管理制度",
+      "difficulty": null,
+      "explanation": "A 项考查倾销的认定。《反倾销条例》第二条规定，“进口产品以倾销方式进入中国市\n场，并对已经建立的国内产业造成实质损害或者产生实质损害威胁，或者对建立国内产业造\n成实质阻碍的，我国应依照反倾销条例进行调查，采取反倾销措施。”可见，进口产品对我\n国化工原材料产业造成了实质损害，或者产生实质损害威胁是构成倾销的前提。\nB 项考查反倾销税的征收标准。《反倾销条例》第四十一条规定，“反倾销税应当根据\n不同出口经营者的倾销幅度，分别确定。对未包括在审查范围内的出口经营者的倾销进口产\n品，需要征收反倾销税的，应当按照合理的方式确定对其适用的反倾销税。”可见，反倾销\n税应当根据不同的企业的倾销幅度分别确定，而不是所有企业一个标准。故 B 项错误。\nC 项考查反倾销税的征收机构。《反倾销条例》第三十八条规定，“征收反倾销税，由\n商务部提出建议，国务院关税税则委员会根据商务部的建议作出决定，由商务部予以公告。\n海关自公告规定实施之日起执行。”可见，反倾销税的征收是由商务部建议、关税税则委员\n会决定，海关执行。故 C 项错误。\nD 项考查负责反倾销对外事务的机构。《反倾销条例》第五十七条规定，“商务部负责\n与反倾销有关的对外磋商、通知和争端解决事宜。”故 D 项错误。",
+      "id": "law:fakao-app:2012年客观题-卷一#一#41",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "构成倾销的前提是进口产品对我国化工原材料产业造成了实质损害，或者产生实质损"
+        },
+        {
+          "label": "B",
+          "text": "对不同出口经营者应该征收同一标准的反倾销税税额"
+        },
+        {
+          "label": "C",
+          "text": "征收反倾销税，由国务院关税税则委员会做出决定，商务部予以执行"
+        },
+        {
+          "label": "D",
+          "text": "与反倾销调查有关的对外磋商、通知和争端事宜由外交部负责"
+        }
+      ],
+      "source": {
+        "nativeId": "2012年客观题-卷一#一#41",
+        "path": "真题库/客观题/2012年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "部分中国企业向商务部提出反倾销调查申请，要求对原产于某国的某化工原材料进 口产品进行相关调查。经查，商务部终局裁定确定倾销成立，决定征收反倾销税。根据我国 相关法律规定，下列哪一说法是正确的？",
       "subjectId": "guojijingjifa",
       "tags": [
         "fakao-app",
@@ -35560,6 +36486,53 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "甲公司的营业所在甲国，乙公司的营业所在中国，甲国和中国均为《联合国国际货 物销售合同公约》的当事国。甲公司将一批货物卖给乙公司，该批货物通过海运运输。货物 运输途中，乙公司将货物转卖给了中国丙公司。根据该公约，下列哪些选项是正确的？",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2012"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2012
+    },
+    {
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "国际贸易支付",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国际贸易支付",
+      "difficulty": null,
+      "explanation": "本题考查信用证欺诈例外的例外。《关于审理信用证纠纷案件若干问题的规定》第十条\n规定，“人民法院认定存在信用证欺诈的，应当裁定中止支付或者判决终止支付信用证项下\n款项，但有下列情形之一的除外：（一）开证行的指定人、授权人已按照开证行的指令善意\n地进行了付款；（二）开证行或者其指定人、授权人已对信用证项下票据善意地作出了承\n兑；（三）保兑行善意地履行了付款义务；（四）议付行善意地进行了议付。”ABCD 项都\n是法院不能裁定中止支付的情形。",
+      "id": "law:fakao-app:2012年客观题-卷一#一#81",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "B",
+          "text": "开证行或者其指定人、授权人已对信用证项下票据善意地作出了承兑"
+        },
+        {
+          "label": "C",
+          "text": "保兑行善意地履行了付款义务"
+        },
+        {
+          "label": "D",
+          "text": "议付行善意地进行了议付"
+        }
+      ],
+      "source": {
+        "nativeId": "2012年客观题-卷一#一#81",
+        "path": "真题库/客观题/2012年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据《最高人民法院关于审理信用证纠纷案件若干问题的规定》，中国法院认定存 在信用证欺诈的，应当裁定中止支付或者判决终止支付信用证项下款项，但存在除外情形。 关于除外情形，下列哪些表述是正确的？ （81）A.开证行的指定人、授权人已按照开证行的指令善意地进行了付款",
       "subjectId": "guojijingjifa",
       "tags": [
         "fakao-app",
@@ -35921,6 +36894,55 @@
     {
       "answer": [
         "B",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "国际经济法领域的其他法律制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国际经济法领域的其他法律制度",
+      "difficulty": null,
+      "explanation": "本题考查企业所得税的应纳税收入。依据《企业所得税法》第 6 条规定，“企业以货币\n形式和非货币形式从各种来源取得的收入，为收入总额。包括：（一）销售货物收入;（二）\n提供劳务收入;（三）转让财产收入;（四）股息、红利等权益性投资收益;（五）利息收入;\n（六）租金收入;（七）特许权使用费收入;（八）接受捐赠收入;（九）其他收入。”B、C 两\n项符合上述法规，正确。\nC 项考查财政拨款是否属于企业所得税的应纳税收入。依据《企业所得税法》第 7 条规\n定，“收入总额中的下列收入为不征税收入：（一）财政拨款;（二）依法收取并纳入财政管\n理的行政事业性收费、政府性基金;（三）国务院规定的其他不征税收入。”C 项说法错误。\nD 项考查国债收入应否为应纳税收入，根据国务院及国家税务总局相关规定，企业购买\n国债的利息收入不纳税，D 项错误。",
+      "id": "law:fakao-app:2013年客观题-卷一#一#92",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "财政拨款"
+        },
+        {
+          "label": "B",
+          "text": "销售产品收入"
+        },
+        {
+          "label": "C",
+          "text": "专利转让收入"
+        },
+        {
+          "label": "D",
+          "text": "国债利息收入"
+        }
+      ],
+      "source": {
+        "nativeId": "2013年客观题-卷一#一#92",
+        "path": "真题库/客观题/2013年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "2012 年 12 月，某公司对县税务局确定的企业所得税的应纳税所得额、应纳税额及 在 12 月 30 日前缴清税款的要求极为不满，决定撤离该县，且不缴纳税款。县税务局得知 后，责令该公司在 12 月 15 日前纳税。当该公司有转移生产设备的明显迹象时，县税务局责 成其提供纳税担保。 该公司取得的下列收入中，属于《企业所得税法》规定的应纳税收入的是：",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2013"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2013
+    },
+    {
+      "answer": [
+        "B",
         "D"
       ],
       "answerText": null,
@@ -35965,56 +36987,6 @@
       ],
       "type": "indefinite_choice",
       "typeRaw": "不定项选择题",
-      "year": 2013
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "国际经济法领域的其他法律制度",
-      "chapterConfidence": "low",
-      "chapterOfficial": "国际经济法领域的其他法律制度",
-      "difficulty": null,
-      "explanation": "最高院《关于进一步加强合议庭职责的若干规定》第 10 条规定：合议庭组成人员存在\n违法审判行为的，应当按照《人民法院审判人员违法审判责任追究办法（试行）》等规定追\n究相应责任。合议庭审理案件有下列情形之一的，合议庭成员不承担责任：（一）因对法律\n理解和认识上的偏差而导致案件被改判或者发回重审的；（二）因对案件事实和证据认识上\n的偏差而导致案件被改判或者发回重审的；（三）因新的证据而导致案件被改判或者发回重\n审的；（四）因法律修订或者政策调整而导致案件被改判或者发回重审的；（五）因裁判所\n依据的其他法律文书被撤销或变更而导致案件被改判或者发回重审的；（六）其他依法履行\n审判职责不应当承担责任的情形。\nA 项正确，当选。A 项所述情形属于《加强合议庭职责的若干规定》中，合议庭成员不\n承担责任的规情形第（三）项。故 A 项当选。\nB 项正确，当选。B 项所述情形属于《加强合议庭职责的若干规定》中，合议庭成员不\n承担责任的规定情形第（二）项。故 B 项当选。\nC 项错误，不可选。C 项所述不属于《加强合议庭职责的若干规定》中，合议庭成员不\n承担责任的规定定情形，故合议庭成员应当承担责任，C 项不可选。\nD 项正确，当选。D 项所述情形属于《加强合议庭职责的若干规定》中，合议庭成员不\n承担责任的规定情形第（五）项，可知 D 项当选。",
-      "id": "law:fakao-app:2013年客观题-卷二#二#73",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "发现了新的无罪证据，合议庭作出的判决被改判的"
-        },
-        {
-          "label": "B",
-          "text": "合议庭认为审前供述虽非自愿，但能够与其他证据相印证，因此予以采纳，该供述后"
-        },
-        {
-          "label": "C",
-          "text": "辩护方提出被告人不在犯罪现场的线索和证据材料，合议庭不予调查，作出有罪判决"
-        },
-        {
-          "label": "D",
-          "text": "合议庭对某一事实的认定以生效的民事判决为依据，后来该民事判决被撤销，导致刑"
-        }
-      ],
-      "source": {
-        "nativeId": "2013年客观题-卷二#二#73",
-        "path": "真题库/客观题/2013年客观题-卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "下列哪些情形下，合议庭成员不承担责任?",
-      "subjectId": "guojijingjifa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2013"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
       "year": 2013
     },
     {
@@ -36102,6 +37074,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "中国甲公司向加拿大乙公司出口一批农产品，CFR 价格条件。货装船后，乙公司因始终未收到甲公司的通知，未办理保险。部分货物在途中因海上风暴毁损。根据相关规则，下列哪一选项是正确的?",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2014"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2014
+    },
+    {
+      "answer": [
+        "A"
+      ],
+      "answerText": null,
+      "chapter": "对外贸易管理制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "对外贸易管理制度",
+      "difficulty": null,
+      "explanation": "一、反倾销税\n终局裁定确定倾销成立并由此对国内产业造成损害的，可以征收反倾销税。其要点如下：\n1. 征收反倾销税应符合公共利益。\n2. 国务院关税税则委员会根据商务部建议决定采取，商务部予以公布，海关负责征收。可见，并不由商务部决定或者征收反倾销税。\n3. 反倾销税的纳税人为倾销进口产品的进口经营者。\n注意：外国出口商在倾销，而向进口商征税的原因在于，出口商在外国，进口国对之征税不现实。另外，向进口商征税可以达到反倾销的目的。\n例：美国甲公司销售矿泉水给中国乙公司。该矿泉水调整后的正常价格是0.9元/瓶，调整后的出口价格是0.45元/瓶，倾销幅度是100%。此时，进口商乙公司向海关交100%的反倾销税，税款为0.45元/瓶。那么,对其而言，一瓶矿泉水已耗费0.9元。其在中国市场转售的价格只有高于0.9元才有利可图，这样就提高了该矿泉水在国内市场的价格，达到了保护竞争的目的。B 项为向出口经营者征税，故错误。\n4. 反倾销税税额不得超过终局裁定确定的倾销\n幅度。\n注意：反倾销措施是一种恢复性的救济措施，其目的是保护竞争，而不是消灭竞争。出口商利用其自身优势在进口国低价销售产品是一种不公平竞争行为，采取反倾销措施，消除这种不公平行为即是保护竞争。因此，反倾销税不是征得越多越好，受不能超过倾销幅度的限制，故A 项说法正确。\n5. 反倾销税对终局裁定公告之日后进口的产品适用，但在特殊情况下也可以追溯征收。追溯条件和追溯时间是应特别注意的问题。除上述违反价格承诺的情形外，还包括另外两种情形：\n(1)对已经实施临时反倾销措施的期间追溯征收。\n①终裁决定确定存在实质损害或实质损害威胁，并且在此前已经采取临时反倾销措施的，商务部可以\n决定对已经实施临时反倾销措施的期间追溯征收。\n②对实施临时反倾销税的期间追溯征收的，采取多退少不补的原则。即终裁决定确定的反倾销税额高于已付或应付临时反倾销税或担保金额的，差额部分不予征收；低于已付或应付临时反倾销税或担保金额的，差额部分应予退还或重新计算。\n(2)对立案调查后、实施临时反倾销税之前90天内进口的产品追溯征收反倾销税。\n满足下列两项条件时，可以对立案调查后、实施临时反倾销税之前90天内进口的产品追溯征收反倾销税：①倾销进口产品有对国内产业造成损害的倾销历史，或者该产品的进口经营者知道或者应当知道出口经营者实施倾销并且倾销对国内产业将造成损害； ②倾销进口产品在短期内大量进口，并且可能会严重破坏即将实施的反倾销税的补救效果。\n6. 终局裁定确定不征收反倾销税的，或者终局裁定未确定追溯征收反倾销税的，应当退还已征收的临时反倾销税、已收取的保证金，解除保函或者其他形式的担保。\n倾销进口产品的出口经营者在反倾销调查期间，可以向商务部作出改变价格或者停止以倾销价格出口的价格承诺。其要点如下：\n(1)商务部作出初步裁定前不得寻求或者接受价格承诺。\n(2)商务部可以建议但不得强迫出口经营者作出价格承诺。出口经营者不作出价格承诺或不接受价格承诺建议，不妨碍反倾销案件的调查和确定，故 C 项错误。\n(3)是否接受价格承诺，由商务部决定。\n(4)商务部认为价格承诺能够接受并符合公共利益的，可以决定中止或终止反倾销调查，不采取临时反倾销措施或征收反倾销税。\n(5)应出口商请求，或商务部认为有必要，商务部接受价格承诺后继续进行调查并作出否定的倾销或损害的终局裁定，价格承诺自动失效；作出肯定的倾销和损害裁定的，价格承诺一直有效。\n(6)出口经营者违反价格承诺，商务部可立即恢复反倾销调查；根据可获得的最佳信息，可决定采取临时反倾销措施，并可以对实施临时反倾销措施前90天内进口的产品追溯征收反倾销税，但违反价格承诺前进口的产品除外。\n倾销进口产品来自两个以上国家(地区),并且同时满足下列条件的，可以就倾销进口产品对国内产业造成的影响进行累积评估：①来自每一国家(地区)的倾销进口产品的倾销幅度不小于2%,并且其进口量不属于可忽略不计的；②根据倾销进口产品之间以及倾销进口产品与国内同类产品之间的竞争条件，进行累积评估是适当的，故 D 项说法错误。本题答案为 A 项。",
+      "id": "law:fakao-app:2014年客观题#一#42",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "反倾销税税额不应超过终裁决定确定的倾销幅度"
+        },
+        {
+          "label": "B",
+          "text": "反倾销税的纳税人为倾销进口产品的甲、乙、丙三国企业"
+        },
+        {
+          "label": "C",
+          "text": "商务部可要求甲、乙、丙三国企业作出价格承诺，否则不能进口"
+        },
+        {
+          "label": "D",
+          "text": "倾销进口产品来自两个以上国家，即可就倾销进口产品对国内产业造成的影响进行累积评估"
+        }
+      ],
+      "source": {
+        "nativeId": "2014年客观题#一#42",
+        "path": "真题库/客观题/2014年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲、乙、丙三国企业均向中国出口某化工产品，2010年中国生产同类化工产品的企业认为进口的这一化工产品价格过低，向商务部提出了反倾销调查申请。根据相关规则，下列哪一选项是正确的?",
       "subjectId": "guojijingjifa",
       "tags": [
         "fakao-app",
@@ -36263,55 +37283,6 @@
     },
     {
       "answer": [
-        "B",
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "国际经济法领域的其他法律制度",
-      "chapterConfidence": "low",
-      "chapterOfficial": "国际经济法领域的其他法律制度",
-      "difficulty": null,
-      "explanation": "D【解析】《商标法》第18条规定，申请商标注册或者办理其他商标事宜，可以自行办理，也可以委托依法设立的商标代理机构办理。外国人或者外国企业在中国申请商标注册和办理其他商标事宜的，应当委托依法设立的商标代理机构办理。由此可知，A  国的甲公司欲在我国申请注册商标，应当委托依法设立的商标代理机构办理，所以A 选项正确，不当选。\n《商标法》第22条规定，商标注册申请人应当按规定的商品分类表填报使用商标的商品类别和商品名称，提出注册申请。商标注册申请人可以通过一份申请就多个类别的商品申请注册同一商标。商标注册申请等有关文件，可以以书面方式或者数据电文方式提\n出。由此可知，商标申请可以一标多类。因此，B 选项错。\n该法第25条第1款规定，商标注册申请人自其商标在外国第一次提出商标注册申请之日起六个月内，又在中国就相同商品以同一商标提出商标注册申请的，依照该外国同中国签订的协议或者共同参加的国际条约，或者按照相互承认优先权的原则，可以享有优先权。由此可知，享有优先权的时间是商标在外国第一次提出商标注册申请之日起六个月内，而题中甲公司在 A 国是2012年8月1日提出，在中国与2013年5月30日提出，很显然已经超过6个月，故，甲公司不再享有优先权，所以 C 选项错误。\n该法第14条第5款规定，生产、经营者不得将“驰名商标”字样用于商品、商品包装或者容器上，或者用于广告宣传、展览以及其他商业活动中。由此可知， “驰名商标”是不可以进行广告宣传的，故D 选项错误，当选。",
-      "id": "law:fakao-app:2014年客观题#三#64",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "甲公司应委托依法设立的商标代理机构代理申请商标注册"
-        },
-        {
-          "label": "B",
-          "text": "甲公司必须提出三份注册申请，分别在三类商品上申请注册同一商标"
-        },
-        {
-          "label": "C",
-          "text": "甲公司可依法享有优先权"
-        },
-        {
-          "label": "D",
-          "text": "如商标局在异议程序中认定“白雪”商标为驰名商标，甲公司可在其牛奶包装上使用“驰名商标”字样"
-        }
-      ],
-      "source": {
-        "nativeId": "2014年客观题#三#64",
-        "path": "真题库/客观题/2014年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲公司是《保护工业产权巴黎公约》成员国 A 国的企业，于2012年8月1日向 A 国在牛奶产品上申请注册“白雪”商标被受理后，又于2013年5月30日向我国商标局申请注册“白雪” 商标，核定使用在牛奶、糕点和食品容器这三类商品上。下列哪些说法是错误的?",
-      "subjectId": "guojijingjifa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2014"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2014
-    },
-    {
-      "answer": [
         "D"
       ],
       "answerText": null,
@@ -36347,6 +37318,102 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "中国甲公司与法国乙公司签订了向中国进口服装的合同，价格条件 CIF 。货到目的港时，甲公司发现有两箱货物因包装不当途中受损。因此拒收，该货物在目的港码头又被雨淋受损。依1980年《联合国国际货物销售合同公约》及相关规则，下列哪一选项是正确的?",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2015"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2015
+    },
+    {
+      "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "国际货物运输与保险",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国际货物运输与保险",
+      "difficulty": null,
+      "explanation": "根据收货人不同，提单的种类可以分为记名提单(不能转)、不记名提单(随便转)、指示提单(背书转),本题中的提单属于指示提单，必须经过背书才能转让，不是简单的交付就能转让，所以 C 项错吴，不当选。\n根据《海牙规则》,承运人承担的是不完全的过失责任，两种过失免责：第一是承运人的驾船过失免责，第二是火灾过失免责，但是承运人的实际过失或私谋引起的除外。其他都是无过失免责，包括：(1)不可抗力、自然灾害；(2)救助或企图救助海上人命或财产；\n3)货方原因：由于货物的固有缺陷、性质造成的体积或重量的亏损或任何其他损坏，包装不当，标志不清或不当。本题中，货物变质是由于货物的固有缺陷造成的，是因为生产过程中水分过大，这是卖方的违约行为，所以承运人不需要承担责任。因此 A 错误，D  E确。\n本案货物虽然投了一切险，但是造成货物损失的原因是由于货物的质量缺陷造成的，属于保险人的除责任，所以保险公司不用赔，B 错误。",
+      "id": "law:fakao-app:2015年客观题#一#41",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "承运人没有尽到途中管货的义务，应承担货物途中变质的赔偿责任"
+        },
+        {
+          "label": "B",
+          "text": "因货物投保了一切险，保险人应承担货物变质的赔偿责任"
+        },
+        {
+          "label": "C",
+          "text": "本提单可通过交付进行转让"
+        },
+        {
+          "label": "D",
+          "text": "承运人对啤酒花的变质可以免责"
+        }
+      ],
+      "source": {
+        "nativeId": "2015年客观题#一#41",
+        "path": "真题库/客观题/2015年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "青田轮承运一批啤酒花从中国运往欧洲某港，货物投保了一切险，提单上的收货人一栏写明“凭指示”,因生产过程中水分过大，啤酒花到目的港时已变质。依《海牙规则》及相关保险规则，下列哪一选项是正确的?",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2015"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2015
+    },
+    {
+      "answer": [
+        "A"
+      ],
+      "answerText": null,
+      "chapter": "国际贸易支付",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国际贸易支付",
+      "difficulty": null,
+      "explanation": "《关于审理信用证纠纷案件若干问页的规定》第10条规定：“人民法院认定存在信用证欺\n诈的，应当裁定中止支付或者判决终止支付信用证项下款项，但有下列情形之一的除外：(一)开证行的指定人、授权人已按照开证行的指令善意地进行了付款； (二)开证行或者其指定人、授权人已对信用证项下票据善意地作出了承兑；(三)保兑行善意地履行了付款义务；(四)议付行善意地进行了议付。”因此 A 项说法正确。B、C、D项均错误，都是信用证欺诈的表现。",
+      "id": "law:fakao-app:2015年客观题#一#42",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "开证行的授权人已对信用证项下票据善意地作出了承兑"
+        },
+        {
+          "label": "B",
+          "text": "受益人交付的货物无价值"
+        },
+        {
+          "label": "C",
+          "text": "受益人和开证申请人串通提交假单据"
+        },
+        {
+          "label": "D",
+          "text": "受益人提交记载内容虚假的单据"
+        }
+      ],
+      "source": {
+        "nativeId": "2015年客观题#一#42",
+        "path": "真题库/客观题/2015年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "依最高人民法院《关于审理信用证纠纷案件若干问题的规定》,出现下列哪一情况时，不能再通过司法手段干预信用证项下的付款行为?",
       "subjectId": "guojijingjifa",
       "tags": [
         "fakao-app",
@@ -36409,6 +37476,57 @@
     {
       "answer": [
         "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "世界贸易组织",
+      "chapterConfidence": "low",
+      "chapterOfficial": "世界贸易组织",
+      "difficulty": null,
+      "explanation": "A 选项正确，村民会议和村委会属于领导关系。因此村民会议有权改变或撤销村委会不适当的决定和命令。 B 选项正确，基层群众自治组织的核心在于理解自治二字，这意味着大多数的事项都是自治组织自己决定的，只有在特定的情形下，政府才能干预，概括为：出了问题政府可以责令改正，设\n立需要批准，制定规则需要备案。 C 选项正确，依据是《村委会组织法》第36条。 D 选项正确，三分之一以上的村民代表联名可以提出对于村委会成员的罢免案。",
+      "id": "law:fakao-app:2015年客观题#一#64",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "村民会议有权撤销该方案"
+        },
+        {
+          "label": "B",
+          "text": "由该村所在地的乡镇级政府责令改正"
+        },
+        {
+          "label": "C",
+          "text": "受侵害的村民可以申请法院予以撤销"
+        },
+        {
+          "label": "D",
+          "text": "村民代表可以就此联名提出罢免村委会成员的要求"
+        }
+      ],
+      "source": {
+        "nativeId": "2015年客观题#一#64",
+        "path": "真题库/客观题/2015年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某村村委会未经村民会议讨论，制定了土地承包经营方案，侵害了村民的合法权益，引发了村民的强烈不满。根据《村民委员会组织法》的规定，下列哪些做法是正确的?",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2015"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2015
+    },
+    {
+      "answer": [
+        "A",
         "C"
       ],
       "answerText": null,
@@ -36453,6 +37571,105 @@
       ],
       "type": "multiple_choice",
       "typeRaw": "多项选择题",
+      "year": 2015
+    },
+    {
+      "answer": [
+        "B",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "国际经济法领域的其他法律制度",
+      "chapterConfidence": "high",
+      "chapterOfficial": "国际经济法领域的其他法律制度",
+      "difficulty": null,
+      "explanation": "为便利葡萄酒地理标识的保护，应在TRIPS  理事会内谈判建立关于葡萄酒地理标识通知和注册的多边制度，使之能在参加该多边制度的成员中获得保护。香槟是法国的地名，中国企业为了推广葡萄酒，拟注册香槟商标，违反了 TRIPS  有关地理标识的规定，容易让公众对其来源地产生误解。因此应当拒绝注册，且注册该商标有暗示的成分在里面，应当拒绝注册，B、C 表述正确，A 错误。 TRIPS  协议规定了国民待遇和最惠国待遇原则，所谓的国民待遇原则是指在遵守公约规定的前提下，每一成员给予其他成员国民的待遇不得低于给予本国国民的待遇，本题中，香槟是法国的地名，允许来自法国的企业注册而不允许中国企业注册并不违反国民待遇原则，所以 D 项错误。",
+      "id": "law:fakao-app:2015年客观题#一#81",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "只要该企业有关“香槟”的商标注册申请在先，商标局就可以为其注册"
+        },
+        {
+          "label": "B",
+          "text": "如该注册足以使公众对该产品的来源误认，则应拒绝注册"
+        },
+        {
+          "label": "C",
+          "text": "如该企业是在利用香槟这一地理标志进行暗示，则应拒绝注册"
+        },
+        {
+          "label": "D",
+          "text": "如允许来自法国香槟的酒产品注册“香槟”的商标，而不允许中国企业注册该商标，则违反了国民待遇原则"
+        }
+      ],
+      "source": {
+        "nativeId": "2015年客观题#一#81",
+        "path": "真题库/客观题/2015年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "香槟是法国地名，中国某企业为了推广其葡萄酒产品，拟为该产品注册“香槟”商标。依 《与贸易有关的知识产权协议》,下列哪些选项是正确的 ?",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2015"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2015
+    },
+    {
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "国际经济法领域的其他法律制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国际经济法领域的其他法律制度",
+      "difficulty": null,
+      "explanation": "本题只有 A 选项是错误的，因为本案当中虽然涉及了张某住宅的拆迁问题，但宪法中的公民住宅权只排除非法侵入和非法搜查这两类行为。因此张某最终被迫签署了拆迁协议只构成对张某财产权的侵犯，不涉及住宅权的问题。",
+      "id": "law:fakao-app:2015年客观题#一#92",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "张某的住宅不受侵犯权"
+        },
+        {
+          "label": "B",
+          "text": "张某的财产权"
+        },
+        {
+          "label": "C",
+          "text": "李某的劳动权"
+        },
+        {
+          "label": "D",
+          "text": "张某儿子的受教育权"
+        }
+      ],
+      "source": {
+        "nativeId": "2015年客观题#一#92",
+        "path": "真题库/客观题/2015年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某县政府以较低补偿标准进行征地拆迁。张某因不同意该补偿标准，拒不拆迁自己的房屋。为此，县政府责令张某的儿子所在中学不为其办理新学期注册手续，并通知财政局解除张某的女婿李某(财政局工勤人员)与该局的劳动合同。张某最终被迫签署了拆迁协议。关于当事人被侵犯的权利，下列选项正确的是：",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2015"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
       "year": 2015
     },
     {
@@ -36553,6 +37770,103 @@
     },
     {
       "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "国际经济法领域的其他法律制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国际经济法领域的其他法律制度",
+      "difficulty": null,
+      "explanation": "《多边投资担保机构公约》第11条规定：“承保险别：一、本机构在不违反下列第2和3款\n规定的前提下，可为合格的投资就因以下一种或几种风险而产生的损失作担保：(一)货币汇兑。东道国政府采取新的措施，限制其货币兑换成可自由使用货币或被保险人可接受的另一种货币，及汇出东道国境外，包括东道国政府未能在合理的时间内对该被保险人提出的此类汇兑申请作出行动；”故A 错误。\n\"(二)征收和类似的措施。东道国政府采取立法或行政措施，或懈怠行为，实际上剥夺了被保险人对其投资的所有权或控制权，或其应从该投资中得到的大量收益。但政府为管理其境内的经济活动而通常采取的普遍适用的非歧视性措施不在此列。”故C 错误。\n“(三)违约。东道国政府不履行或违反与被保险人签订的合同，并且1.被保险人无法求助于司法或仲裁机关对其提出的有关诉讼作出裁决，或2.该司法或仲裁机关未能在担保合同根据机构的条例规定的合理期限内作出裁决，或3.虽有这样的裁决但未能执行。” 故 D 正确。\n“(四)战争和内乱。依照第66条本公约适用的东道国境内任何地区的任何军事行动或内乱。”故 B  错误。\n“二、应投资者与东道国的联合申请，董事会经特别多数票通过，可将本公约的担保范围扩大到上述第1款中提及的风险以外的其他的非商业性风险。但在任何情况下都不包括货币的贬值或降值。”也可得出 A 错误。",
+      "id": "law:fakao-app:2016年客观题#一#44",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "乙国货币大幅贬值造成 T  公司损失，属货币汇兑险的范畴"
+        },
+        {
+          "label": "B",
+          "text": "工人罢工影响了自来水厂的正常营运，属战争内乱险的范畴"
+        },
+        {
+          "label": "C",
+          "text": "乙国新所得税法致 T  公司所得税增加，属征收和类似措施险的范畴"
+        },
+        {
+          "label": "D",
+          "text": "乙国政府不履行与 T 公司签订的合同，乙国法院又拒绝受理相关诉讼，属政府违约险的"
+        }
+      ],
+      "source": {
+        "nativeId": "2016年客观题#一#44",
+        "path": "真题库/客观题/2016年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲国 T 公司与乙国政府签约在乙国建设自来水厂，并向多边投资担保机构投保。依相关规则，下列哪一选项是正确的?",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2016"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2016
+    },
+    {
+      "answer": [
+        "A",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "国际经济法领域的其他法律制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国际经济法领域的其他法律制度",
+      "difficulty": null,
+      "explanation": "根据《反垄断法》第13条的规定，禁止具有竞争关系的经营者达成下列垄断协议：(一)固定或者变更商品价格；(二)限制商品的生产数量或者销售数量；(三)分割销售市场或者原材料采购市场；\n(四)限制购买新技术、新设备或者限制开发新技术、新产品；(五)联合抵制交易；(六)国务院反垄断执法机构认定的其他垄断协议。本法所称垄断协议，是指排除、限制竞争的协议、决定或者其他协同行为。题述案例就是在会计师行业自律委员会组织下达成的排除、限制竞争的协议，这将使得当地的会计师事务所的竞争格局得以保持不变，让当地会计师失去竞争的动力，故  A 项说法正确，B 项说法错误。根据《反垄断法》第46条第3款的规定，行业协会违反本法规定，组织本行业的经营者达成垄断协议的，反垄断执法机构可以处五十万元以下的罚款；情节严重的，社会团体登记管理机关可以依法撤销登记。因而，C 项说法错误。根据《反垄断法》第46条第1款的规定，经营者违反本法规定. 达成并实施垄断协议的，由反垄断执法机构责令停止违法行为，没收违法所得，并处上一年度销售额百分之一以上百分之十以下的罚款；尚未实施所达成的垄断\n协议的，可以处五十万元以下的罚款。因而D 项说法正确。",
+      "id": "law:fakao-app:2016年客观题#一#67",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "该协议限制了当地会计师行业的竞争，具有违法性"
+        },
+        {
+          "label": "B",
+          "text": "抑强扶弱有利于培育当地会计服务市场，法律不予禁止"
+        },
+        {
+          "label": "C",
+          "text": "此事不能由省级工商行政管理部门受理，应由该委员会成员自行协商解决"
+        },
+        {
+          "label": "D",
+          "text": "即使该协议尚未实施，如构成违法，也可予以查处"
+        }
+      ],
+      "source": {
+        "nativeId": "2016年客观题#一#67",
+        "path": "真题库/客观题/2016年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某县会计师行业自律委员会成立之初，达成统筹分配当地全行业整体收入的协议，要求当年市场份额提高的会员应分出自己的部分收入，补贴给市场份额降低的会员。事后，有会员向省级工商行政管理部门书面投诉。关于此事，下列哪些说法是正确的?",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2016"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2016
+    },
+    {
+      "answer": [
         "C",
         "D"
       ],
@@ -36607,7 +37921,7 @@
       ],
       "answerText": null,
       "chapter": "世界贸易组织",
-      "chapterConfidence": "low",
+      "chapterConfidence": "high",
       "chapterOfficial": "世界贸易组织",
       "difficulty": null,
       "explanation": "《服务贸易总协定》及相关税法规则规定：商业存在( Commercial     Presence),是 GATS  中最重要的一种服务提供方式，一成员的服务提供者在任何其他成员境内建立商业机构(附属企业或分支机构),为所在国和其他成员的服务消费者提供服务，以获取报酬。包括通过设立分支机构或代理，提供服务等，故A 项正确。\n无限纳税义务亦称“全面纳税义务”,是“有限纳税义务”的对称。指纳税人就其来源于全球范围内的所得或财产对其所在国负有纳税义务。无限纳税义务只适用于本国居民(公民),故 B 项正确。国际重叠征税又称“国际双层征税”,是指两个以上的国家对不同的纳税人就同一课税对象或同一税源在同一期间内课征相同或类似性质的税收，故C 、D错误。",
@@ -36656,7 +37970,7 @@
       ],
       "answerText": null,
       "chapter": "对外贸易管理制度",
-      "chapterConfidence": "low",
+      "chapterConfidence": "high",
       "chapterOfficial": "对外贸易管理制度",
       "difficulty": null,
       "explanation": "根据最高人民法院《法院第四个五年改革纲要(2014—2018)》有关深化法院人事管理改革的重要措施包括：(1)配合省以下法院人事统管改革，推动在省一级设立法官遴选委员会，从专业角度提出法官人选，由组织人事、纪检监察部门在政治素养、廉洁自律等方面考察把关，人大依照法律程序任免。\n(2)推进法院人员分类管理制度改革，将法院人员分为法官、审判辅助人员和司法行政人员，实行分类管理。与之配套的，则是拓宽审判辅助人员的来源渠道，建立审判辅助人员的正常增补机制，减少法官事务性工作负担。(3)建立法官员额制度，对法官在编制限额内实行员额管理，确保法官主要集中在审判一线，高素质人才能够充实到审判一线。(4)完善法官等级定期晋升机制，确保一线办案法官即使不担任领导职务，也可以正常晋升至较高的法官等级。(5)完善法官选任制度，针对不同层级的法院，设置不同的法官任职条件。初任法官首先到基层人民法院任职，上级人民法院法官原则上从下一级人民法院遴选产生，故 A 项说法不准确，分类应当为法官、审判辅助人员和司法行政人员。\nB、C项说法正确。在省一级设立法官遴选委员会，而未在市一级设立，故D 项说法错误。",
@@ -36752,7 +38066,7 @@
       ],
       "answerText": null,
       "chapter": "对外贸易管理制度",
-      "chapterConfidence": "low",
+      "chapterConfidence": "high",
       "chapterOfficial": "对外贸易管理制度",
       "difficulty": null,
       "explanation": "《民族区域自治法》第10条规定：  “民族自治地方的自治机关保障本地方各民族都有使用和发展自己的语言文字的自由，都有保持或者改革自己的风俗习惯的自由。”故 A 正确。第31条第1款规定：“民族自治地方依照国家规定，可以开展对外经济贸易活动，经国务院批准，可以开辟对外贸易口岸。” 故B 正确。第20条规定：“上级国家机关的决议、决定、命令和指示，如有不适合民族自治地方实际情况的，自治机关可以报经该上级国家机关批准，变通执行或者停止执行；该上级国家机关应当在收到报告之日起六十日内给予答复。”可知，自治地方变通执行或停止执行权需上级国家机关批准，故D 错误。",
@@ -36844,6 +38158,54 @@
     },
     {
       "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "国际经济法领域的其他法律制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国际经济法领域的其他法律制度",
+      "difficulty": null,
+      "explanation": "根据《东京公约》《海牙公约》以及《蒙特利尔公约》的规定，下列国家拥有对于危害民航安全罪行的管辖权：航空器登记国；航空器降落地国，当犯罪嫌疑人仍在航空器内；承租人的营业国或常驻地国，当航空器是不带机组的出租；嫌疑人所在国；嫌疑人国籍国或永久居所国；犯罪行为发生地国；罪行后果涉及国，包括受害人国籍国或永久居所国、后果涉及领土国、罪行危及其安全的国家；根据本国法行使管辖权的其他国家。\n本题中，犯罪嫌疑人国籍国为甲国，甲国有管辖权。航空器登记国为乙国，乙国有管辖权。犯罪行为发生地为丙国，丙国有管辖权，故 A  错误，B  正确， C 错误。\n国际刑事法院管辖范围限于灭绝种族罪、战争罪、危害人类罪、侵略罪等几大类，危害民航安全罪不属于国际刑事法院的管辖范围，故D 错误。",
+      "id": "law:fakao-app:2017年客观题#一#32",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "劫机发生在丙国领空，仅丙国有管辖权"
+        },
+        {
+          "label": "B",
+          "text": "犯罪嫌疑人为甲国公民，甲国有管辖权"
+        },
+        {
+          "label": "C",
+          "text": "劫机发生在乙国航空器上，仅乙国有管辖权"
+        },
+        {
+          "label": "D",
+          "text": "本案涉及国际刑事犯罪，应由国际刑事法院管辖"
+        }
+      ],
+      "source": {
+        "nativeId": "2017年客观题#一#32",
+        "path": "真题库/客观题/2017年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "乘坐乙国航空公司航班的甲国公民，在飞机进入丙国领空后实施劫机，被机组人员制服后交丙国警方羁押。甲、乙、丙三国均为1963年《东京公约》、1970年《海牙公约》及1971年《蒙特利尔公约》缔约国。据此，下列哪一选项是正确的?",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2017"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2017
+    },
+    {
+      "answer": [
         "A"
       ],
       "answerText": null,
@@ -36879,6 +38241,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "中国伟业公司与甲国利德公司签订了采取铁路运输方式由中国出口一批货物的合同。后甲国法律发生变化，利德公司在收货后又自行将该批货物转卖到乙国，现乙国一公司声称该批货物侵犯了其知识产权。中国和甲国均为《国际 货物销售合同公约》和《国际铁路货物联运协定》缔约国。依相关规则，下列哪一选项是正确的?",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2017"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2017
+    },
+    {
+      "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "国际货物运输与保险",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国际货物运输与保险",
+      "difficulty": null,
+      "explanation": "本题中，收货人一栏写明“凭指示” 的字样的提单为指示提单，此类提单经背书可以转让，故 A 错误。\n《海牙规则》规定，对17项原因引起或造成的货物灭失或损害，承运人不承担责任：(1)船长、船员、引水员或承运人的雇佣人在驾驶或管理船舶中的行为、疏忽或不履行职责；(2)火灾，但由于承运人实际过失或私谋所造成者除外；(3)海上或其他可航水域的风险、危险或意外事故；(4)天灾；(5)战争行为；(6)公敌行为；(7)君主、统治者或人民的扣留或拘禁或依法扣押；\n(8)检疫限制；(9)货物托运人或货主、其代理人或代表的行为或不行为；(10)不论由于何种原因引起的局部或全面的罢工、关厂、停工或劳动力受到限制；(11)暴乱和民变；(12)救助或企图救助海上人命或财产；\n(13)由于货物的固有瑕疵、性质或缺陷所造成的容积或重量的损失，或任何其他灭失或损害；(14)包装不当；(15)标志不清或不当；(16)尽适当的谨慎所不能发现的潜在缺陷；(17)不是由于承运人的实际过失或私谋，或是承运人的代理人或受雇人员的过失或疏忽所引起的任何其他原因。本题中，因船方过失致货轮与他船相撞属于第一项免责事由，承运人不承担责任，故 B 错误。\n本题中的仪器受损的损失属于“由于运输工具遭受搁浅、触礁、沉没、互撞、与流冰或其他物体碰撞以及失火、爆炸等意外事故造成货物的全部或部分损失”, 在水渍险的保险范围之内，故C 正确。\n《海牙规则》规定 ·承运人的责任期间是从货物装上船起至卸完船为止，故D 错误。",
+      "id": "law:fakao-app:2017年客观题#一#41",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "该提单交付即可转让"
+        },
+        {
+          "label": "B",
+          "text": "因船舶碰撞是由船方过失导致，故承运人应对仪器受损承担赔偿责任"
+        },
+        {
+          "label": "C",
+          "text": "保险人应向货主赔偿部分仪器受损的损失"
+        },
+        {
+          "label": "D",
+          "text": "承运人的责任期间是从其接收货物时起至交付货物时止"
+        }
+      ],
+      "source": {
+        "nativeId": "2017年客观题#一#41",
+        "path": "真题库/客观题/2017年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "中国某公司进口了一批仪器，采取海运方式并投保了水渍险，提单上的收货人一栏写明 “凭指示”的字样。途中因船方过失致货轮与他船相撞，部分仪器受损。依《海牙规则》及相关保险条款，下列哪一选项是正确的?",
       "subjectId": "guojijingjifa",
       "tags": [
         "fakao-app",
@@ -36943,6 +38353,57 @@
     },
     {
       "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "对外贸易管理制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "对外贸易管理制度",
+      "difficulty": null,
+      "explanation": "根据《企业所得税法》第2条的规定，居民企业，是指依法在中国境内成立，或者依照外国(地区)法律成立但实际管理机构在中国境内的企业。本法所称非居民企业，是指依照外国(地区)法律成立且实际管理机构不在中国境内，但在中国境内设立机构、场所的，或者在中国境内未设立机构、场所，但有来源于中国境内所得的企业。 A 基金注册在境外某群岛并在当地设置总部，实际管理机构不在中国境内，因而系非居民企业。 D 公司是注册在中国境内的，因而系居民企业。 A、B项说法正确。由于 A 基金转让 F   公司股权实质上是转让D 公司股权，因而应当向我国税务机关进行纳税申报，故C 项说法正确。根据《企业所得税法》第47条的规定，企业实施其他不具有合理商业目的的安排而减少其应纳税收入或者所得额的，\n税务机关有权按照合理方法调整。题述案例通过转让海外空壳公司股权的方式来实质转让境内公司的权益，当其适用的税率较低时，可以判定其不具有合理的商业目的，对其进行纳税调整，故D 项说法正确。",
+      "id": "law:fakao-app:2017年客观题#一#70",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "A  基金系非居民企业"
+        },
+        {
+          "label": "B",
+          "text": "D   公司系居民企业"
+        },
+        {
+          "label": "C",
+          "text": "A   基金应就股权转让所得向我国税务机关进行纳税申报"
+        },
+        {
+          "label": "D",
+          "text": "如 A 基金进行纳税申报，我国税务机关有权按照合理方法调整其应纳税收入"
+        }
+      ],
+      "source": {
+        "nativeId": "2017年客观题#一#70",
+        "path": "真题库/客观题/2017年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "A 基金在我国境外某群岛注册并设置总部，该群岛系低税率地区。香港 B 公司和浙江 C 公司在浙江签约设立杭州 D 公司，其中 B 公司占95%的股权，后 D 公司获杭州公路收费权。F 公司在该群岛注册成立，持有 B 公司1 0 0 % 的股权。随后，A 基金通过认购新股方式获得了 F 公司26%的股权，多年后又将该股权转让给境外 M 上市公司。 M 公司对外披露其实际收购标的为 D 公司股权。经查，A 基金、F 公司和 M 公司均不从事实质性经营活动，F 公司股权的转让价主要取决于 D 公司的估值。对此，根据我国税法，下列哪些说法是正确的?",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2017"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2017
+    },
+    {
+      "answer": [
         "C",
         "D"
       ],
@@ -36989,54 +38450,6 @@
       "type": "multiple_choice",
       "typeRaw": "多项选择题",
       "year": 2017
-    },
-    {
-      "answer": [
-        "A"
-      ],
-      "answerText": null,
-      "chapter": "国际货物买卖",
-      "chapterConfidence": "high",
-      "chapterOfficial": "国际货物买卖",
-      "difficulty": null,
-      "explanation": "国际法官对于涉及其国籍国的案件，不适用回避制度，除非其就任法官前曾参与该案\n件。A 项正确。国际法官在联合国大会(重要事项， 2/3多数通过)和安理会(程序性事项，9个同意票通过)  中分别独立进行选举，只有在这两个机关同时获得绝对多数票方可当选。可见在安理会并非2/3通过，B项错误，D项错误。国际法官在安理会进行选举的规则是(程序性事项，9个同意票通过),对于程序性事项常\n任理事国并没有一票否决权，所以即便乙国投否决票，\n只要同意票有9个，约翰依然是可以当选国际法官的， C项错误。",
-      "id": "law:fakao-app:2022年客观题-回忆版#一#20",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "约翰若当选国际法官，对涉及甲国的案件不需要申请回避"
-        },
-        {
-          "label": "B",
-          "text": "国际法官在大会和安理会投票表决均超过2/"
-        },
-        {
-          "label": "C",
-          "text": "若乙国投出否决票，则约翰不能当选国际"
-        },
-        {
-          "label": "D",
-          "text": "甲国驻联合国代表团可提名约翰为国际法院法官"
-        }
-      ],
-      "source": {
-        "nativeId": "2022年客观题-回忆版#一#20",
-        "path": "真题库/客观题/2022年客观题-回忆版.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "约翰为甲国国际法学者，拟参选联合国国际法院法官，常任理事国乙国坚决反对，下列关于联合国国际法官的说法正确的是?",
-      "subjectId": "guojijingjifa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2022"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2022
     },
     {
       "answer": [
@@ -37264,6 +38677,35 @@
     {
       "answer": [],
       "answerText": null,
+      "chapter": "对外贸易管理制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "对外贸易管理制度",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2023年客观题-卷一-卷二#二#27",
+      "knowledgePoints": [],
+      "options": [],
+      "source": {
+        "nativeId": "2023年客观题-卷一-卷二#二#27",
+        "path": "真题库/客观题/2023年客观题-卷一-卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "西川县城乡规划管理局通过无人机航拍发现,在该县城郊花田村农田中出现一栋高层建筑。 经调查。农田地块属于花田村的集体建设用地 后由开发商承包开发建成该建筑,开发商未取得预 售许可证但已经开始商品房销售。 对此,下列说法正确的是? A。开发商补办土地规划许可证之后就可以对外出售了 B 开发商补办建设工程规划许可证且符合该乡的规划要求就可以对外出售了 C。补办乡村建设许可证就可以进行出售 D。有关部门可以责令限期拆除",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "year:2023",
+        "answer-missing"
+      ],
+      "type": "unknown",
+      "typeRaw": null,
+      "year": 2023
+    },
+    {
+      "answer": [],
+      "answerText": null,
       "chapter": "国际货物买卖",
       "chapterConfidence": "high",
       "chapterOfficial": "国际货物买卖",
@@ -37284,6 +38726,35 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "张冰于1970年元旦创作了国画《踏雪寻梅》 , 邀请好友洪玲题字, 张冰的画作和洪玲的书法 相得益彰。画作于 1970年1月在杂志上发表。2000 年89 月期间张冰。洪玲相继离世。 2023 年 视线网未经张冰。洪玲继承人的同意,将该幅画作扫描后上传其网络图片库,用户付费后可以查看 _ 下载。关于视线网的行为 _ 下列说法正确的是? A。既侵犯张冰的著作权又侵犯洪玲的著作权 B。既不侵犯张冰的著作权也不侵犯洪玲的著作权 C. 仅侵犯张冰的著作权 D。仅侵犯洪玲的著作权 29。下列哪项发明创造能获得实用新型专利? A. 具有特定弧度的座椅,能缓解腰部酸痛 B。快速缓解感冒的药品 C. 芯片间接传输数据的方法 D。造型新颖的照明小合灯,很好看但没有改进性能 30。下列哪种形状可以无须经使用即可被核准, 成为注册商标? 25 --- 第26页 --- A。用于快递服务的文字 \"一日达\" B 用于鞋子的铺满鞋底的红色 C。 用于饮料的 灵逸低糖 D。用于眼部按摩仪的多点凸起的立体造型,这些凸起在按摩时能降低眼睛的疲劳感 31。张某注册了网络接单平合账号,和平合签了接单协议7网络配送协议。协议约定: 平合通过 算法按区域随机推送外卖订单, 注册者可以自主决定接单且不限制接单时间。接单次数, 最后通过 订单配送量来结算报酬。平合按照统一规定收取服务费, 平台可以根据配送超时。顾客给差评等扣 除相应服务费。平台对于上班时间没有规定,张某一周工作0~3天, 一天工作1 ~3 小时。关于张某 和平合的关系 ,下列说法正确的是? A。非全日制用工关系 B。劳动关系 C。 劳务关系 D。劳务派遣关系 32。经常居所地同在上海的中国人孙倩和德国人汊森结婚后收养了越南女童阮灵,3 年后汊森因 病去世,留下 IO0 万元存款但未留遗嘱 孙倩无力独自抚养阮灵,遂向中国某法院起诉, 请求解除与 阮灵的收养关系并继承汊森的遗产,法院的下列哪一做法是正确的? A。遗产继承适用德国法 B。收养的手续适用中国法 C。 收养的效力适用中国法 D。收养的解除适用中国法。德国法或越南法中有利于阮灵的法律 33。意大利人马丁在中国某购物平台网购了一套服装,后与卖家中国人刘某因发货时间,服装款 式 质地等问题发生纠纷 马丁在意大利某法院起诉要求解除网购合同, 意大利法院受理案件并向 刘某送达了起诉书副本。刘某在收到起诉书副本前5天向中国某法院起诉 要求马丁履行网购合同。 根据我国相关法律和司法解释 ,下列哪一选项是正确的? A。即使意大利法院受理了该纠纷在先,中国法院仍有权受理刘某的起诉 B。若马丁认为意大利法院管辖本案更为方便,中国法院核实后可裁定驳回刘某起诉,告知其去 意大利应诉 C。 中国法院若受理此案,应通过外交途径向马丁送达起诉书副本 D. 中国法院应适用双方合意选择的意大利法来解决本案消费者合同纠纷 34。中国奥奇公司从甲国 MC 公司进口网络设备,买卖合同选用了《2020年国际贸易术语解释通 则》的 FCA 术语 , 该批货物需要陆海联运 , 双方在合同中约定中国奥奇公司应告知海运承运人,货 物装船后向 MC 公司签发己装船清洁提单。根据国际经济法的相关规则和实践,下列说法正确的是 哪项? A。本案签发的正本提单必须有明确的提货人 B FCA 术语适用任何运输方式,包括国际多式联运 C。双方约定海运承运人向 MC 公司签发已装船提单,故运输中的风俭应由 MC 公司承担 D。本案进口的是网络设备,必须经过国家网络安全审查 35。营业地在中国的甲公司和营业地在新加坡的乙公司签订了中文文本的商事合同, 合同约定若 发生履约纠纷由中国法院管辖 但未选择合同适用的法律。已知中国和新加坡都是1980年《联合国 国际货物销售合同公约》 (简称《1980年公约》) 缔约国,下列哪项判断是正确的? 26 --- 第27页 ---",
+      "subjectId": "guojijingjifa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "year:2023",
+        "answer-missing"
+      ],
+      "type": "unknown",
+      "typeRaw": null,
+      "year": 2023
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": "国际货物买卖",
+      "chapterConfidence": "low",
+      "chapterOfficial": "国际货物买卖",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2023年客观题-卷一-卷二#二#41",
+      "knowledgePoints": [],
+      "options": [],
+      "source": {
+        "nativeId": "2023年客观题-卷一-卷二#二#41",
+        "path": "真题库/客观题/2023年客观题-卷一-卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "刘某与赵某买卖合同纠纷一案,法院多次向赵某送达应诉通知书 赵某和同住的成年家属均 不在家。通过向赵某的邻居了解情况,得知赵某因公出差巳一年多未归。此时法院应采用何种方式 向赵某进行送达? A。邮寄送达 电子送达 C。 公告送达 D. 留置送达",
       "subjectId": "guojijingjifa",
       "tags": [
         "fakao-app",
@@ -37323,48 +38794,6 @@
       "type": "unknown",
       "typeRaw": null,
       "year": 2023
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "国际货物买卖",
-      "chapterConfidence": "low",
-      "chapterOfficial": "国际货物买卖",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2024年客观题-卷一-卷二-回忆版#一#49",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "国际渔业组织可与联合国经社理事会签订协议成为联合国的专门机构"
-        },
-        {
-          "label": "C",
-          "text": "国际渔业组织就渔业管理作出的决议在效力上优先于《联合国海洋法公约》"
-        },
-        {
-          "label": "D",
-          "text": "国际渔业组织解决甲乙两国争端须经联合国安理会授权"
-        }
-      ],
-      "source": {
-        "nativeId": "2024年客观题-卷一-卷二-回忆版#一#49",
-        "path": "真题库/客观题/2024年客观题-卷一-卷二-回忆版.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲乙两国都是《联合国海洋法公约》的缔约国。也是政府间国际组织一一国际渔业组织的成员国。 现甲乙两国因相交海域的渔业开发产生纠纷。根据国际法相关规则和实践。下列说法正确的是哪一项?",
-      "subjectId": "guojijingjifa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "year:2024",
-        "answer-missing"
-      ],
-      "type": "unknown",
-      "typeRaw": null,
-      "year": 2024
     },
     {
       "answer": [],

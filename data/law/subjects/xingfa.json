@@ -21050,106 +21050,6 @@
   "questions": [
     {
       "answer": [
-        "B",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "刑罚概说",
-      "chapterConfidence": "low",
-      "chapterOfficial": "刑罚概说",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2002年客观题卷一#一#49",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "中标项目禁止分包，甲企业作为中标人应承担"
-        },
-        {
-          "label": "B",
-          "text": "中标项目可以分包，若分包项目出现问题，可"
-        },
-        {
-          "label": "C",
-          "text": "分包人乙企业只与甲企业有合同关系，与招标"
-        },
-        {
-          "label": "D",
-          "text": "招标人既可以要求甲企业承担全部责任，也可"
-        }
-      ],
-      "source": {
-        "nativeId": "2002年客观题卷一#一#49",
-        "path": "真题库/客观题/2002年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲企业作为某工程项目的总承包中标人，将中标项 目的部分工作发包给乙企业完成，现乙企业分包项目出 现问题。下列说法哪些是正确的?",
-      "subjectId": "xingfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2002"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2002
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "刑法概说",
-      "chapterConfidence": "low",
-      "chapterOfficial": "刑法概说",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2002年客观题卷一#一#51",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "税务机关有根据认为纳税人有逃避纳税义务行"
-        },
-        {
-          "label": "B",
-          "text": "纳税人不能提供纳税担保的"
-        },
-        {
-          "label": "C",
-          "text": "必须经县级以上税务局(分局)局长批准"
-        },
-        {
-          "label": "D",
-          "text": "扣押、查封物品的价值，须与纳税人应履行的"
-        }
-      ],
-      "source": {
-        "nativeId": "2002年客观题卷一#一#51",
-        "path": "真题库/客观题/2002年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "税务机关采取税收保全措施有着严格的适用条件。 下列几种情况哪些属于税务机关采取税收保全措施必须 满足的条件?",
-      "subjectId": "xingfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2002"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2002
-    },
-    {
-      "answer": [
         "D"
       ],
       "answerText": null,
@@ -21195,6 +21095,54 @@
       "type": "single_choice",
       "typeRaw": "单项选择题",
       "year": 2002
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "单位犯罪",
+      "chapterConfidence": "low",
+      "chapterOfficial": "单位犯罪",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2003年客观题卷二#二#8",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "以盗伐林木罪定罪处罚"
+        },
+        {
+          "label": "B",
+          "text": "以盗窃罪定罪处罚"
+        },
+        {
+          "label": "C",
+          "text": "以盗伐林木罪和盗窃罪定罪，实行数罪并罚"
+        },
+        {
+          "label": "D",
+          "text": "以盗伐林木罪、盗窃罪和销售赃物罪定罪，实行数罪"
+        }
+      ],
+      "source": {
+        "nativeId": "2003年客观题卷二#二#8",
+        "path": "真题库/客观题/2003年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "李某多次尾随盗伐林木人员，将其砍倒尚未运走的林 木偷偷运走，销赃获利数千元。此外，他还盗伐了他人 自留地、责任田等地边田坎种植的零星树木５个多立方 米。对李某的上述行为应当如何定罪处罚？",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2003"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2003
     },
     {
       "answer": [
@@ -21709,6 +21657,54 @@
     },
     {
       "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "刑罚种类",
+      "chapterConfidence": "low",
+      "chapterOfficial": "刑罚种类",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2004年客观题卷二#二#9",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "罚金"
+        },
+        {
+          "label": "B",
+          "text": "剥夺政治权利"
+        },
+        {
+          "label": "C",
+          "text": "没收财产"
+        },
+        {
+          "label": "D",
+          "text": "赔偿经济损失"
+        }
+      ],
+      "source": {
+        "nativeId": "2004年客观题卷二#二#9",
+        "path": "真题库/客观题/2004年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "罗某犯放火罪应被判处10年有期徒刑，此时人民法院 对罗某还可以适用的附加刑是：",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2004"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2004
+    },
+    {
+      "answer": [
         "C"
       ],
       "answerText": null,
@@ -21792,6 +21788,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "根据刑法第20条前两款的规定，____行为不负刑事责 任；但_____必须符合一定条件，否则就会造成新的不法 侵害。误认为存在不法侵害，进行“防卫”的，属于___ _；不法侵害已经结束后，进行“防卫”的，属于____。 防卫行为明显超过必要限度造成重大损害的，属于____ ；关于____的罪过形式，刑法理论上存在争议，但可以 肯定的是，____不是独立罪名，应根据其符合的犯罪构 成确定罪名，；对于______，应当酌情减轻或者免除处罚 。在这段话的空格中：",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2004"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2004
+    },
+    {
+      "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "犯罪构成",
+      "chapterConfidence": "low",
+      "chapterOfficial": "犯罪构成",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2004年客观题卷二#二#33",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "裁定全案终止审理，原判决自行生效"
+        },
+        {
+          "label": "B",
+          "text": "裁定对上诉终止审理，维持一审判决"
+        },
+        {
+          "label": "C",
+          "text": "裁定撤销一审判决，发回原审法院重审"
+        },
+        {
+          "label": "D",
+          "text": "宣布对曹某终止审理，对其他被告人仍应作出判决或"
+        }
+      ],
+      "source": {
+        "nativeId": "2004年客观题卷二#二#33",
+        "path": "真题库/客观题/2004年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某人民法院对被告人曹某等共同抢劫一案作出一审 判决。曹某对犯罪事实供认不讳，仅以量刑过重为由提 出上诉，其他被告人未提出上诉，人民检察院也未抗诉 。二审法院经审理认为曹某构成犯罪，但曹某在二审作 出裁判前因病死亡。二审法院应当如何处理该案件？",
       "subjectId": "xingfa",
       "tags": [
         "fakao-app",
@@ -22019,6 +22063,56 @@
     },
     {
       "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "破坏社会主义市场经济秩序罪",
+      "chapterConfidence": "low",
+      "chapterOfficial": "破坏社会主义市场经济秩序罪",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2004年客观题卷二#二#99",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲有权申请法院强制执行审批机关2001年4月1日确认股"
+        },
+        {
+          "label": "B",
+          "text": "甲乙之间关于股权回购的约定有效，甲可以对乙的违"
+        },
+        {
+          "label": "C",
+          "text": "审批机关2001年6月作出的批复并未设定新的权利义务"
+        },
+        {
+          "label": "D",
+          "text": "甲在2003年8月对审批机关2001年6月1日作出的批复提起"
+        }
+      ],
+      "source": {
+        "nativeId": "2004年客观题卷二#二#99",
+        "path": "真题库/客观题/2004年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某合资企业的甲、乙两股东就股权转让达成协议。 后因情况发生变化，甲、乙两股东又签订了一项合同修 正案，约定在该合同批准后一年内甲有权以一定的价格 向乙回购已经出让的股权。2001年4月1日，股权转让合同 以及合同修正案一同获得批准。7月2日，甲提出回购， 乙不同意，并告知甲原审查批准机关于2001年6月1日又作 出一批复，该批复指出，2001年4月1日批复只是批准股权 转让合同，未批准股权回购条款，股权回购时仍需报批 。下列说法正确的是：",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2004"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2004
+    },
+    {
+      "answer": [
         "D"
       ],
       "answerText": null,
@@ -22115,6 +22209,54 @@
     },
     {
       "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "破坏社会主义市场经济秩序罪",
+      "chapterConfidence": "low",
+      "chapterOfficial": "破坏社会主义市场经济秩序罪",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2005年客观题卷二#二#9",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "虚报注册资本罪"
+        },
+        {
+          "label": "B",
+          "text": "虚假出资罪"
+        },
+        {
+          "label": "C",
+          "text": "虚报注册资本罪与抽逃出资罪"
+        },
+        {
+          "label": "D",
+          "text": "虚假出资罪与抽逃出资罪"
+        }
+      ],
+      "source": {
+        "nativeId": "2005年客观题卷二#二#9",
+        "path": "真题库/客观题/2005年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲、乙二人出资10万元，同时通过购买并使用伪造的 商业零售发票，虚填商品实物价值人民币50万元，骗取 审计事务所出具验资报告，欺骗公司登记主管部门，以 60万元注册资本取得“XX贸易有限公司”营业执照。后 甲、乙又合谋将上述10万元资本金转移用于注册另一公 司。甲、乙二人的行为构成：",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2005"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2005
+    },
+    {
+      "answer": [
         "B"
       ],
       "answerText": null,
@@ -22150,6 +22292,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "甲公司为了解决资金不足，以与虚构的单位签订供 货合同的方法，向银行申请获得贷款200万元，并将该款 用于购置造酒设备和原料，后因生产、销售假冒注册商 标的红酒被查处，导致银行贷款不能归还。甲公司获取 贷款的行为构成：",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2005"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2005
+    },
+    {
+      "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "危害国家安全罪",
+      "chapterConfidence": "low",
+      "chapterOfficial": "危害国家安全罪",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2005年客观题卷二#二#18",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲定职务侵占罪，乙定贪污罪，两人不是共同犯罪"
+        },
+        {
+          "label": "B",
+          "text": "甲定职务侵占罪，乙定贪污罪，但两人是共同犯罪"
+        },
+        {
+          "label": "C",
+          "text": "甲定职务侵占罪，乙是共犯，也定职务侵占罪"
+        },
+        {
+          "label": "D",
+          "text": "乙定贪污罪，甲是共犯，也定贪污罪"
+        }
+      ],
+      "source": {
+        "nativeId": "2005年客观题卷二#二#18",
+        "path": "真题库/客观题/2005年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲为非国家工作人员，是某国有公司控股的股份有 限公司主管财务的副总经理；乙为国家工作人员，是该 公司财务部主管。甲与乙勾结，分别利用各自的职务便 利，共同侵吞了本单位的财物100万元。对甲、乙两人应 当如何定性？",
       "subjectId": "xingfa",
       "tags": [
         "fakao-app",
@@ -22214,6 +22404,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "叶某因挪用资金罪被判处有期徒刑一年缓刑两年， 判决宣告时叶某表示不上诉。其被解除羁押后经向他人 咨询，认为自己不构成犯罪，于是又想提出上诉。下列 哪一项是正确的？",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2005"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2005
+    },
+    {
+      "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "刑法概说",
+      "chapterConfidence": "low",
+      "chapterOfficial": "刑法概说",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2005年客观题卷二#二#43",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "地方性法规与部门规章对同一事项的规定不一致，不"
+        },
+        {
+          "label": "B",
+          "text": "不同行政法规的特别规定与一般规定不一致不能确定"
+        },
+        {
+          "label": "C",
+          "text": "地方政府规章内容不适当的，国务院应当予以改变或"
+        },
+        {
+          "label": "D",
+          "text": "凡被授权机关制定的法规违背授权目的的，授权和所"
+        }
+      ],
+      "source": {
+        "nativeId": "2005年客观题卷二#二#43",
+        "path": "真题库/客观题/2005年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "下列有关法律规范的适用和备案的哪一种说法是正 确的？",
       "subjectId": "xingfa",
       "tags": [
         "fakao-app",
@@ -22478,6 +22716,55 @@
     },
     {
       "answer": [
+        "B",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "破坏社会主义市场经济秩序罪",
+      "chapterConfidence": "low",
+      "chapterOfficial": "破坏社会主义市场经济秩序罪",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2005年客观题卷二#二#64",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲具有法定从重处罚情节"
+        },
+        {
+          "label": "B",
+          "text": "甲不构成累犯"
+        },
+        {
+          "label": "C",
+          "text": "对甲的盗窃罪不能适用缓刑"
+        },
+        {
+          "label": "D",
+          "text": "对甲应当数罪并罚"
+        }
+      ],
+      "source": {
+        "nativeId": "2005年客观题卷二#二#64",
+        "path": "真题库/客观题/2005年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "2000年8月21日，甲因犯诈骗罪被人民法院判处有期徒 刑3年，缓刑5年。2005年6月20日，甲又犯盗窃罪。对于甲 的量刑，下列表述哪些是正确的？",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2005"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2005
+    },
+    {
+      "answer": [
         "A",
         "B",
         "D"
@@ -22524,6 +22811,144 @@
       ],
       "type": "multiple_choice",
       "typeRaw": "多项选择题",
+      "year": 2005
+    },
+    {
+      "answer": [
+        "A",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "妨害社会管理秩序罪",
+      "chapterConfidence": "low",
+      "chapterOfficial": "妨害社会管理秩序罪",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2005年客观题卷二#二#88",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "某公司应当对其申请材料实质内容的真实性负责"
+        },
+        {
+          "label": "B",
+          "text": "某市人民政府应当组织上述四个职能部门联合为某公"
+        },
+        {
+          "label": "C",
+          "text": "拟建化工厂附近居民对核发该项目许可证照享有听证"
+        },
+        {
+          "label": "D",
+          "text": "如果某公司的申请符合条件，某市人民政府相关职能"
+        }
+      ],
+      "source": {
+        "nativeId": "2005年客观题卷二#二#88",
+        "path": "真题库/客观题/2005年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某公司准备在某市郊区建一座化工厂，向某市规划 局、土地管理局、环境保护局和建设局等职能部门申请 有关证照。下列哪些说法是正确的？",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2005"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2005
+    },
+    {
+      "answer": [
+        "B",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "犯罪排除事由",
+      "chapterConfidence": "low",
+      "chapterOfficial": "犯罪排除事由",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2005年客观题卷二#二#92",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "属于刑讯逼供行为"
+        },
+        {
+          "label": "B",
+          "text": "属于暴力取证行为"
+        },
+        {
+          "label": "C",
+          "text": "应按故意杀人罪处罚"
+        },
+        {
+          "label": "D",
+          "text": "属于意外事件，不负刑事责任"
+        }
+      ],
+      "source": {
+        "nativeId": "2005年客观题卷二#二#92",
+        "path": "真题库/客观题/2005年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某派出所民警甲接到关于某旅店老板乙涉嫌组织卖 淫的举报，即前往该旅店，但没有碰见乙，便将怀疑是 卖淫女的服务员丙带回派出所连夜审讯，要她交代从事 卖淫以及乙组织卖淫活动的事。由于丙拒不承认有这些 事，甲便指使其他民警对丙进行多次殴打逼其交代，丙 于次日晨死于审讯室。法医出具的尸检报告称：\"因受 外力击打造成下肢大面积皮下出血，引起患有心脏功能 障碍的丙心力衰竭而死。\"对于甲的行为，下列说法正 确的是：",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2005"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2005
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "犯罪构成",
+      "chapterConfidence": "low",
+      "chapterOfficial": "犯罪构成",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2005年客观题卷二#二#93",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "走私罪（共犯）                          B.洗钱罪"
+        },
+        {
+          "label": "C",
+          "text": "逃汇罪                                  D.单位受贿罪"
+        }
+      ],
+      "source": {
+        "nativeId": "2005年客观题卷二#二#93",
+        "path": "真题库/客观题/2005年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲公司走私汽车获利人民币4000万元后，欲通过乙公 司（非国有）的帐户将这笔资金换成外汇转移至香港， 并说明可按资金数额的10%支付\"手续费\"。乙公司得知该 笔资金为甲公司走私犯罪所得，仍同意为该资金转帐提 供帐户，并在收取\"手续费\"400万元后，将该资金折换成4 38万美元，以预付货款为名汇往甲公司在香港的帐户。 乙公司的行为构成：",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2005"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
       "year": 2005
     },
     {
@@ -23267,6 +23692,53 @@
     {
       "answer": [],
       "answerText": null,
+      "chapter": "犯罪构成",
+      "chapterConfidence": "low",
+      "chapterOfficial": "犯罪构成",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2007年客观题卷二#二#47",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "本案调查中，警察经出示工作证件，可以检查"
+        },
+        {
+          "label": "B",
+          "text": "如果在法院判决时张某的行政拘留已经执行完"
+        },
+        {
+          "label": "C",
+          "text": "如果张某之父为其提供担保，则公安机关可暂"
+        },
+        {
+          "label": "D",
+          "text": "由公安局将张某送到看守所执行行政拘留"
+        }
+      ],
+      "source": {
+        "nativeId": "2007年客观题卷二#二#47",
+        "path": "真题库/客观题/2007年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "张某因打伤李某被公安局处以行政拘留15天的 处罚，张某不服，申请行政复议。不久，受害人李某向 法院提起刑事自诉，法院经审理认为张某的行为已经构 成犯罪，判决拘役2个月。下列哪一选项是正确的？",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2007",
+        "answer-missing"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2007
+    },
+    {
+      "answer": [],
+      "answerText": null,
       "chapter": "刑法概说",
       "chapterConfidence": "low",
       "chapterOfficial": "刑法概说",
@@ -23455,146 +23927,49 @@
     {
       "answer": [],
       "answerText": null,
-      "chapter": "犯罪排除事由",
+      "chapter": "单位犯罪",
       "chapterConfidence": "low",
-      "chapterOfficial": "犯罪排除事由",
+      "chapterOfficial": "单位犯罪",
       "difficulty": null,
       "explanation": "",
-      "id": "law:fakao-app:2008年客观题卷一#一#3",
+      "id": "law:fakao-app:2007年客观题卷二#二#86",
       "knowledgePoints": [],
       "options": [
         {
           "label": "A",
-          "text": "价值位阶原则"
+          "text": "路面被污染的沿途三个区的执法机关对本案均"
         },
         {
           "label": "B",
-          "text": "个案平衡原则"
+          "text": "对该运输公司应当依法从轻或者减轻行政处罚"
         },
         {
           "label": "C",
-          "text": "比例原则"
+          "text": "本案的违法行为人是该运输公司"
         },
         {
           "label": "D",
-          "text": "功利原则"
+          "text": "本案的违法行为人是该运输公司和司机"
         }
       ],
       "source": {
-        "nativeId": "2008年客观题卷一#一#3",
-        "path": "真题库/客观题/2008年客观题卷一.md",
+        "nativeId": "2007年客观题卷二#二#86",
+        "path": "真题库/客观题/2007年客观题卷二.md",
         "repo": "fakao-app",
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
-      "stem": "我国《刑法》第二十一条规定，为了使国家、 公共利益、本人或者他人的人身、财产和其他权利免受 正在发生的危险，不得已采取的紧急避险行为，造成损 害的，不负刑事责任。紧急避险超过必要限度造成不应 有的损害的，应当负刑事责任，但是应当减轻或者免除 处罚。该条文中的价值平衡，适用的是下列哪一项原则 ？",
-      "subjectId": "xingfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2008",
-        "answer-missing"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2008
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "刑法概说",
-      "chapterConfidence": "high",
-      "chapterOfficial": "刑法概说",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2008年客观题卷一#一#11",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "公法和私法"
-        },
-        {
-          "label": "B",
-          "text": "人法、物法和诉讼法"
-        },
-        {
-          "label": "C",
-          "text": "自然法、市民法和万民法"
-        },
-        {
-          "label": "D",
-          "text": "市民法与长官法"
-        }
-      ],
-      "source": {
-        "nativeId": "2008年客观题卷一#一#11",
-        "path": "真题库/客观题/2008年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "关于罗马法的法律分类，下列哪一类是以法律 的适用范围为根据划分的？",
-      "subjectId": "xingfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2008",
-        "answer-missing"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2008
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "刑法概说",
-      "chapterConfidence": "low",
-      "chapterOfficial": "刑法概说",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2008年客观题卷一#一#51",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "案件审判中，先适用法律原则，后适用法律规"
-        },
-        {
-          "label": "B",
-          "text": "案件审判中，法律原则都必须无条件地适用"
-        },
-        {
-          "label": "C",
-          "text": "法律原则的适用可以弥补法律规则的漏洞"
-        },
-        {
-          "label": "D",
-          "text": "法律原则的适用采取\"全有或全无\"的方式"
-        }
-      ],
-      "source": {
-        "nativeId": "2008年客观题卷一#一#51",
-        "path": "真题库/客观题/2008年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "关于法律原则的适用，下列哪些选项是错误的 ？",
+      "stem": "运输公司指派本单位司机运送白灰膏。由于泄 漏，造成沿途路面大面积严重污染。司机发现后即向公 司汇报。该公司即组织人员清扫被污染路面。下列哪些 选项是正确的？",
       "subjectId": "xingfa",
       "tags": [
         "fakao-app",
         "md-真题",
         "section:多项选择题",
-        "year:2008"
+        "year:2007",
+        "answer-missing"
       ],
       "type": "multiple_choice",
       "typeRaw": "多项选择题",
-      "year": 2008
+      "year": 2007
     },
     {
       "answer": [],
@@ -23740,6 +24115,53 @@
     {
       "answer": [],
       "answerText": null,
+      "chapter": "单位犯罪",
+      "chapterConfidence": "low",
+      "chapterOfficial": "单位犯罪",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2008年客观题卷二#二#29",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "继续审理"
+        },
+        {
+          "label": "B",
+          "text": "终止审理"
+        },
+        {
+          "label": "C",
+          "text": "终止审理，建议检察机关对公司董事长、总经"
+        },
+        {
+          "label": "D",
+          "text": "退回检察机关，建议检察机关对公司董事长、"
+        }
+      ],
+      "source": {
+        "nativeId": "2008年客观题卷二#二#29",
+        "path": "真题库/客观题/2008年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某电子科技有限公司因涉嫌虚开增值税专用发 票罪被提起公诉，公司董事长、总经理、会计等5人被 认定为该单位犯罪的直接责任人员。在法院审理中，该 公司被注销。关于法院的处理，下列哪一选项是正确的 ？",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2008",
+        "answer-missing"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2008
+    },
+    {
+      "answer": [],
+      "answerText": null,
       "chapter": "侵犯公民人身权利、民主权利罪",
       "chapterConfidence": "high",
       "chapterOfficial": "侵犯公民人身权利、民主权利罪",
@@ -23782,6 +24204,100 @@
       ],
       "type": "multiple_choice",
       "typeRaw": "多项选择题",
+      "year": 2008
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": "单位犯罪",
+      "chapterConfidence": "low",
+      "chapterOfficial": "单位犯罪",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2008年客观题卷二#二#84",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "若张某在对罚款不服申请复议时一并对县政府"
+        },
+        {
+          "label": "B",
+          "text": "某县政府的文件属违法设定许可和处罚，有权"
+        },
+        {
+          "label": "C",
+          "text": "生猪管理办公室若以自己名义作出罚款决定，"
+        },
+        {
+          "label": "D",
+          "text": "若张某直接向法院起诉，应以某县政府为被告"
+        }
+      ],
+      "source": {
+        "nativeId": "2008年客观题卷二#二#84",
+        "path": "真题库/客观题/2008年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "为严格本地生猪屠宰市场管理，某县政府以文 件形式规定，凡本县所有猪类屠宰单位和个人，须在规 定期限内到生猪管理办公室申请办理生猪屠宰证，违者 予以警告或罚款。个体户张某未按文件规定申请办理生 猪屠宰证，生猪管理办公室予以罚款200元。下列哪些说 法是错误的？",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2008",
+        "answer-missing"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2008
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": "刑罚概说",
+      "chapterConfidence": "low",
+      "chapterOfficial": "刑罚概说",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2008年客观题卷二#二#92",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲挪用救灾款的行为，不构成挪用特定款物罪"
+        },
+        {
+          "label": "B",
+          "text": "甲挪用办公经费的行为构成挪用公款罪，挪用"
+        },
+        {
+          "label": "C",
+          "text": "甲挪用办公经费后销毁账目且未归还的行为构"
+        },
+        {
+          "label": "D",
+          "text": "对于甲应当以挪用公款罪、贪污罪实行并罚"
+        }
+      ],
+      "source": {
+        "nativeId": "2008年客观题卷二#二#92",
+        "path": "真题库/客观题/2008年客观题卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "国有公司财务人员甲于2007年6月挪用单位救灾 款100万元，供自己购买股票，后股价大跌，甲无力归还 该款项。2008年1月，甲挪用单位办公经费70万元为自己 购买商品房。两周后，甲采取销毁账目的手段，使挪用 的办公经费70万元中的50万元难以在单位财务账上反映 出来。甲一直未归还上述所有款项。关于甲的行为定性 ，下列选项正确的是：",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2008",
+        "answer-missing"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
       "year": 2008
     },
     {
@@ -23830,54 +24346,6 @@
       "type": "indefinite_choice",
       "typeRaw": "不定项选择题",
       "year": 2008
-    },
-    {
-      "answer": [
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "犯罪排除事由",
-      "chapterConfidence": "high",
-      "chapterOfficial": "犯罪排除事由",
-      "difficulty": null,
-      "explanation": "本题考查归责与免责。\nA 项：在任何时候、任何状态下都是存在着法律的，此项错。\nB 项：此项说法是对紧急避险的免责阐述，正确。\nC 项：法律的出现并不会阻止紧急状态的出现，两者之间没有必然的联系，此项错。\nD 项：法律以社会生产力和生产关系的社会条件作为产生和发展的根本条件，故此项\n错。",
-      "id": "law:fakao-app:2009年客观题-卷一#一#6",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "在紧急状态下是不存在法律的"
-        },
-        {
-          "label": "B",
-          "text": "人们在紧急状态下采取紧急避险行为可以不受法律处罚"
-        },
-        {
-          "label": "C",
-          "text": "有法律，就不会有紧急状态"
-        },
-        {
-          "label": "D",
-          "text": "任何时候，法律都以紧急状态作为产生和发展的根本条件"
-        }
-      ],
-      "source": {
-        "nativeId": "2009年客观题-卷一#一#6",
-        "path": "真题库/客观题/2009年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "法律格言说：“紧急时无法律。”关于这句格言涵义的阐释，下列哪一选项是正确 的？",
-      "subjectId": "xingfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2009"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2009
     },
     {
       "answer": [
@@ -24156,6 +24624,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "关于假释，下列哪一选项是错误的？",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2009"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2009
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "单位犯罪",
+      "chapterConfidence": "low",
+      "chapterOfficial": "单位犯罪",
+      "difficulty": null,
+      "explanation": "本题考查为境外窃取、刺探、收买、非法提供国家秘密、情报罪和受贿罪。\n国家机关机要员黄某借工作之便为某国间谍戴某搞到密级为“机密”的报告，该行为触\n犯为境外窃取、刺探、收买、非法提供国家秘密、情报罪、故意泄露国家秘密罪和非法获取\n国家秘密罪，但是故意泄露国家秘密罪、非法获取国家秘密罪与为境外窃取、刺探、收买、\n非法提供国家秘密、情报罪是法条竞合关系，应当适用特殊法条，以为境外窃取、刺探、收\n买、非法提供国家秘密、情报罪来定罪处罚。事后戴某送给黄某一部手机，并提供了六万元\n资金，该行为黄某构成受贿罪，与为境外窃取、刺探、收买、非法提供国家秘密、情报罪数\n罪并罚，因此 B 项正确。",
+      "id": "law:fakao-app:2009年客观题-卷二#二#13",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "资助危害国家安全犯罪活动罪、非法获取国家秘密罪，数罪并罚"
+        },
+        {
+          "label": "B",
+          "text": "为境外窃取、刺探、收买、非法提供国家秘密、情报罪与受贿罪，数罪并罚"
+        },
+        {
+          "label": "C",
+          "text": "非法获取国家秘密罪、受贿罪，数罪并罚"
+        },
+        {
+          "label": "D",
+          "text": "故意泄露国家秘密罪、受贿罪，从一重罪处断"
+        }
+      ],
+      "source": {
+        "nativeId": "2009年客观题-卷二#二#13",
+        "path": "真题库/客观题/2009年客观题-卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某国间谍戴某，结识了我某国家机关机要员黄某。戴某谎称来华投资建厂需了解政 策动向，让黄某借工作之便为其搞到密级为“机密”的《内参报告》四份。戴某拿到文件后 送给黄某一部手机，并为其子前往某国留学提供了六万元资金。对黄某的行为如何定罪处 罚？",
       "subjectId": "xingfa",
       "tags": [
         "fakao-app",
@@ -24608,6 +25124,56 @@
       "answer": [
         "A",
         "B",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "危害国防利益罪",
+      "chapterConfidence": "low",
+      "chapterOfficial": "危害国防利益罪",
+      "difficulty": null,
+      "explanation": "ABC 项考查利用影响力受贿罪。A 项：甲作为某国企总经理的妻子，利用自身作为国家\n工作人员近亲属的身份以及丈夫的影响力，为谋取不正当利益而收受他人赠送的轿车一辆，\n此行为成立利用影响力受贿罪，此项正确。\nB 项：已离职的国家工作人员乙已经不能构成受贿罪，但其利用先前职务上的影响而为\n他人谋取不正当利益，之后收受贿款的情形，成立利用影响力受贿罪，此项正确。\nC 项：丙利用自身作为某国家机关官员之子的影响力，利用其父管理之便，为他人谋取\n不正当利益并收受财物的行为，成立利用影响力受贿罪，此项正确。\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\nD 项：丁在在职时为他人谋取了利益，在离职后该公司在并未与丁约定一致的情形下自\n作主张赠与财物表达感谢的，由于不存在不正当的权钱输送，不成立犯罪，此项错误。",
+      "id": "law:fakao-app:2009年客观题-卷二#二#64",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲系某国企总经理之妻，甲让其夫借故辞退企业财务主管，而以好友陈某取而代之，"
+        },
+        {
+          "label": "B",
+          "text": "乙系已离职的国家工作人员，请接任处长为缺少资质条件的李某办理了公司登记，收"
+        },
+        {
+          "label": "C",
+          "text": "丙系某国家机关官员之子，利用其父管理之便，请其父下属将不合条件的某企业列入"
+        },
+        {
+          "label": "D",
+          "text": "丁系国家工作人员，在主管土地拍卖工作时向一家房地产公司通报了重要情况，使其"
+        }
+      ],
+      "source": {
+        "nativeId": "2009年客观题-卷二#二#64",
+        "path": "真题库/客观题/2009年客观题-卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据《刑法》有关规定，下列哪些说法是正确的？",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2009"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2009
+    },
+    {
+      "answer": [
+        "A",
+        "B",
         "D"
       ],
       "answerText": null,
@@ -24754,153 +25320,6 @@
     },
     {
       "answer": [
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "刑罚执行",
-      "chapterConfidence": "low",
-      "chapterOfficial": "刑罚执行",
-      "difficulty": null,
-      "explanation": "本题考查中国古代的刑罚制度。\n本题考查的内容纯属记忆性知识点。B 项中，汉代最先在死刑的执行实行“秋冬行刑”\n制度，唐律受此影响规定“立春后不决死刑”，由此可知，该项说法错误。",
-      "id": "law:fakao-app:2010年客观题-卷一#一#15",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "“八议”制度自曹魏《魏律》正式入律，其思想渊源为《周礼？秋官》的“八辟丽邦"
-        },
-        {
-          "label": "B",
-          "text": "“秋冬行刑”制度自唐代始，其理论渊源为《礼记？月令》关于秋冬季节“戮有罪，"
-        },
-        {
-          "label": "C",
-          "text": "“大诰”是明初的一种特别刑事法规，其法律形式源自《尚书？大诰》周公对臣民之"
-        },
-        {
-          "label": "D",
-          "text": "“明刑弼教”作为明清推行重典治国政策的思想基础，其理论依据源自《尚书？大禹"
-        }
-      ],
-      "source": {
-        "nativeId": "2010年客观题-卷一#一#15",
-        "path": "真题库/客观题/2010年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "关于中国古代刑罚制度的说法，下列哪一选项是错误的？",
-      "subjectId": "xingfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2010"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2010
-    },
-    {
-      "answer": [
-        "A",
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "犯罪构成",
-      "chapterConfidence": "low",
-      "chapterOfficial": "犯罪构成",
-      "difficulty": null,
-      "explanation": "本题考查故杀与谋杀制度。\n《唐律》贼盗、斗讼篇中依犯罪人主观意图区分了“六杀”，即“谋杀”、“故杀”、\n“斗杀”、“误杀”、“过失杀”、“戏杀”。“谋杀”是指有预谋杀人；“故杀”是指事\n先虽无预谋，但情急杀人时已有杀人的意念；“斗杀”指在斗殴中出于激愤失手将人杀死；\n“误杀”指由于种种原因错置来了杀人对象，“过失杀”指“耳目所不及，思虑所不到”，\n即出于过失杀人，“戏杀”指“以力共戏”而导致杀人，由此可推知 AC 符合题意。",
-      "id": "law:fakao-app:2010年客观题-卷一#一#58",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "唐达根系没有预谋、临时起意将宋万田打死，应定“故杀”"
-        },
-        {
-          "label": "B",
-          "text": "唐达根系恼羞成怒，欲夺赌钱故意将宋万田打死，应定“谋杀”"
-        },
-        {
-          "label": "C",
-          "text": "唐达根系无心之下，斗殴中不期将宋万田打死，应定“斗殴杀”"
-        },
-        {
-          "label": "D",
-          "text": "唐达根系无怨恨杀人动机，“以力共戏”将宋万田打死，应定“戏杀”"
-        }
-      ],
-      "source": {
-        "nativeId": "2010年客观题-卷一#一#58",
-        "path": "真题库/客观题/2010年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "乾隆五十一年，四川发生一起杀人案：唐达根与宋万田本不相识，因赴集市买苞谷 遂结伴同行。途中山洞避雨，宋万田提议二人赌钱。后宋万田得赢，唐达根将钱如数送上。 归途，宋万田再次提议赌钱，唐达根得赢。宋万田声称唐达根耍骗不肯给钱，唐达根与之争 吵进而双方互殴，争斗中唐达根将宋万田打死。依据《大清律例》及《大清律辑注》，你认 为唐达根有可能被官府认定犯下列哪些罪行？",
-      "subjectId": "xingfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2010"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2010
-    },
-    {
-      "answer": [
-        "A",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "刑法概说",
-      "chapterConfidence": "low",
-      "chapterOfficial": "刑法概说",
-      "difficulty": null,
-      "explanation": "A 项：该项考查企业所得税优惠的适用条件。《企业所得税法》第 25 条规定：“国家对\n重点扶持和鼓励发展的产业和项目，给予企业所得税优惠。”由条文可知 A 项正确。\nB 项：该项考查企业所得税优惠的适用条件。《企业所得税法》第 28 条第 2 款规定：\n“国家需要重点扶持的高新技术企业，减按 15%的税率征收企业所得税。”由条文可知 B 项\n说法错误。\nC 项：该项考查免征、减征企业所得税的适用条件。《企业所得税法》第 27 条第(一)项\n规定：“企业的下列所得，可以免征、减征企业所得税：(一)从事农、林、牧、渔业项目的\n所得。”由条文可知 C 项正确。\nD 项：该项考查应纳税所得额可加计扣除的适用条件。《企业所得税法》第 30 条第(二)\n项规定：“企业的下列支出，可以在计算应纳税所得额时加计扣除：(二)安置残疾人员及国\n家鼓励安置的其他就业人员所支付的工资。”由条文可知 D 项正确。",
-      "id": "law:fakao-app:2010年客观题-卷一#一#71",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "国家对鼓励发展的产业和项目给予企业所得税优惠"
-        },
-        {
-          "label": "B",
-          "text": "国家对需要重点扶持的高新技术企业可以适当提高其企业所得税税率"
-        },
-        {
-          "label": "C",
-          "text": "企业从事农、林、牧、渔业项目的所得可以免征、减征企业所得税"
-        },
-        {
-          "label": "D",
-          "text": "企业安置残疾人员所支付的工资可以在计算应纳税所得额时加计扣除"
-        }
-      ],
-      "source": {
-        "nativeId": "2010年客观题-卷一#一#71",
-        "path": "真题库/客观题/2010年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "根据《企业所得税法》规定，下列哪些表述是正确的？",
-      "subjectId": "xingfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2010"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2010
-    },
-    {
-      "answer": [
         "D"
       ],
       "answerText": null,
@@ -24953,7 +25372,7 @@
       ],
       "answerText": null,
       "chapter": "犯罪构成",
-      "chapterConfidence": "low",
+      "chapterConfidence": "high",
       "chapterOfficial": "犯罪构成",
       "difficulty": null,
       "explanation": "本题考查伪造货币与变造货币的认定。\nA 项：《刑法》第 170 条规定了伪造货币罪，第 173 条规定了变造货币罪。《最高人民\n法院关于审理伪造货币等案件具体应用法律若干问题的解释（二）》第 1 条规定：“仿照真\n货币的图案、形状、色彩等特征非法制造假币，冒充真币的行为，应当认定为刑法第一百七\n十条规定的“伪造货币。\n对真货币采用剪贴、挖补、揭层、涂改、移位、重印等方法加工处理，改变真币形态、\n价值的行为，应当认定为刑法第一百七十三条规定的“变造货币”。可知伪造与变造的含义\n不同：伪造是仿照真币制造假币的行为，完全是以假充真。变造是指对货币采用剪贴、挖\n补、揭层、涂改、拼接等手段对真正的货币进行加工处理从而改变货币币值或者货币数量的\n行为。以货币碎片为材料，加入其他纸张，制作成假币的行为属于变造货币。\nB 项：金属货币溶化后已经丧失了货币的功能，不能再称之为货币而只是液体金属，因\n此将此种液体金属制造成货币的，属于伪造货币。该项说法错误。\nC 项：《刑法》第 172 条规定了使用假币罪。此罪中的“使用”不仅包括以购物、存入\n银行、赠与他人等外表合法的方式使用，也可以赌博等以非法的方式使用。因此 C 项说法正\n确。\nD 项：根据《最高人民法院关于审理伪造货币等案件具体应用法律若干问题的解释》第\n2 条第 2 款规定，“行为人出售、运输假币构成犯罪，同时有使用假币行为的，依照刑法第\n一百七十一条、第一百七十二条的规定，实行数罪并罚。”因此运输假币并使用假币的，应\n当实行数罪并罚。",
@@ -25886,42 +26305,41 @@
     },
     {
       "answer": [
-        "A",
         "C"
       ],
       "answerText": null,
-      "chapter": "犯罪排除事由",
-      "chapterConfidence": "high",
-      "chapterOfficial": "犯罪排除事由",
+      "chapter": "妨害社会管理秩序罪",
+      "chapterConfidence": "low",
+      "chapterOfficial": "妨害社会管理秩序罪",
       "difficulty": null,
-      "explanation": "本题考查义务的分类。义务具有强制履行的性质，义务人对于义务的内容不可随意转让\n或违反。义务在结构上包括两个部分：第一，义务人必须根据权利的内容作出一定的行为。\n在法学上被称为“作为义务”或“积极义务”，如赡养父母、抚养子女、纳税、服兵役等。\n第二，义务人不得作出一定行为内容的义务，称为“不作为义务”或“消极义务”，例如，\n不得破坏财产，禁止非法拘禁，严禁刑讯逼供等。\nA 选项，赡养父母是子女须为一定作为的义务，属于积极义务。A 项正确。\nB 选项，严禁刑讯逼供，是禁止人们作出一定的行为，属于消极义务。B 项错误。\nC 选项，依法纳税，需要公民积极缴纳一定税款，属于积极义务。C 项正确。\nD 选项，紧急避险属于一项权利，而非义务。D 项错误。",
-      "id": "law:fakao-app:2011年客观题-卷一#一#14",
+      "explanation": "A 选项正确。人民是依法治国的主体和力量源泉，社会成员学法、尊法、守法、用法的\n社会意识就是建设中国特色社会主义法治的社会基础。因此 A 选项正确。\nB 选项中依法治国必须从中国实际出发，需要和不同发展阶段的社会实践结合起来。B\n选项正确。\nC 选项中运用法律手段解决公共卫生保障等现实问题是依法治国的具体工作，不是首要\n目的，C 选项错误。\nD 选项依法治国首先要求领导干部带头守法，用法治思维推动和深化改革，D 选项正\n确。",
+      "id": "law:fakao-app:2011年客观题-卷二#二#2",
       "knowledgePoints": [],
       "options": [
         {
           "label": "A",
-          "text": "子女赡养父母"
+          "text": "社会成员要知法、信法、守法、用法，这是依法治国方略实施的社会基础"
         },
         {
           "label": "B",
-          "text": "严禁刑讯逼供"
+          "text": "依法治国需要与我国不同发展阶段的主要实践结合起来"
         },
         {
           "label": "C",
-          "text": "公民依法纳税"
+          "text": "实现依法治国的首要目的是运用法律手段加快解决公共卫生保障、文化教育、保障性"
         },
         {
           "label": "D",
-          "text": "紧急避险"
+          "text": "依法治国要求领导干部善于运用法治思维和法治方式深化改革、推动发展、化解矛盾"
         }
       ],
       "source": {
-        "nativeId": "2011年客观题-卷一#一#14",
-        "path": "真题库/客观题/2011年客观题-卷一.md",
+        "nativeId": "2011年客观题-卷二#二#2",
+        "path": "真题库/客观题/2011年客观题-卷二.md",
         "repo": "fakao-app",
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
-      "stem": "下列哪些选项属于积极义务的范畴？",
+      "stem": "关于贯彻依法治国理念的基本要求，下列哪一说法是不正确的？",
       "subjectId": "xingfa",
       "tags": [
         "fakao-app",
@@ -25935,41 +26353,137 @@
     },
     {
       "answer": [
-        "C"
+        "D"
       ],
       "answerText": null,
-      "chapter": "危害国家安全罪",
+      "chapter": "破坏社会主义市场经济秩序罪",
       "chapterConfidence": "low",
-      "chapterOfficial": "危害国家安全罪",
+      "chapterOfficial": "破坏社会主义市场经济秩序罪",
       "difficulty": null,
-      "explanation": "本题主要考查法的价值冲突及其解决。法的价值冲突指法的价值之间的抵触与冲突，主\n要包括：（1）个体之间法律所承认的价值发生冲突，例如行使个人自由可能导致他人利益\n的损失；（2）共同体之间价值发生冲突，例如国际人权与一国主权之间可能导致的矛盾；\n（3）个体与共同体之间的价值冲突，如个人自由与社会秩序的冲突。处理法的价值冲突的\n方法包括价值位阶原则，个案平衡原则和比例原则。\nA 选项，个案平衡原则，指对处于同一位阶上的法的价值之间发生冲突时，必须综合考\n虑主体之间的特定情形、需求和利益，以使得个案的解决能够适当兼顾双方的利益。本题\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n中，公共秩序、社会安全、犯罪分子生命属于不同位阶的法的价值，故不能适用个案平衡原\n则。A 项错误。\nB 选项，比例原则，指为保护某种较为优越的法益须侵及一种法益时，不得逾越此目的\n所必要的程度。换句话说，即使某种价值的实现必然会以其他价值的损害为代价，也应当使\n被损害的价值减低到最小限度。本题中，“该依法重判的坚决重判，该依法判处死刑立即执\n行的绝不手软”，完全牺牲了犯罪分子生命，没有体现比例原则。B 项错误。\nC 选项，题干表明对罪大恶极的犯罪分子，该重判重判，该判死刑的判死刑，也就是说\n对于公共秩序、社会安全、犯罪分子生命之间存在的法律价值冲突，优先考虑社会秩序与公\n共安全，属于适用价值位阶原则解决法的价值之间的冲突。C 项正确。\nD 选项，法的价值冲突的解决中没有自由裁量原则。D 项错误。",
-      "id": "law:fakao-app:2011年客观题-卷一#一#37",
+      "explanation": "A 项错误。公平正义要求坚持法律面前人人平等原则。公安局以纳税多少来作为是否对\n其人身安全进行重点保护的标准，此种标准显然违反公平正义理念，不选。\nB 项错误。公平正义要求坚持不偏不倚、不枉不纵、秉公执法原则。B 项中，某法官在\n庭审外主动到医院咨询、调查，未充分听取纠纷双方的意见，而只偏听医院一方意见，有违\n程序正当原则，违反公平正义理念，不选。\nC 项错误。公平正义要求坚持以事实为根据，以法律为准绳的原则。C 项中，某法院给\n予从轻处罚时考虑某官员工作上的贡献与案件无关，有违公平正义理念。排除 C 项。\nD 项正确。D 项中，因无质量问题，故法院判决李法官败诉，没有因为其法官身份而给\n予特别对待，而是依法判决，故符合公平正义理念。",
+      "id": "law:fakao-app:2011年客观题-卷二#二#6",
       "knowledgePoints": [],
       "options": [
         {
           "label": "A",
-          "text": "个案平衡原则"
+          "text": "某市公安局对年纳税过亿的企业家的人身安全进行重点保护"
         },
         {
           "label": "B",
-          "text": "比例原则"
+          "text": "某法官审理一起医疗纠纷案件，主动到医院咨询相关的医学知识，调查纠纷的事实情"
         },
         {
           "label": "C",
-          "text": "价值位阶原则"
+          "text": "某法院审理某官员受贿案件时，考虑到其在工作上有重大贡献，给予从轻处罚"
         },
         {
           "label": "D",
-          "text": "自由裁量原则"
+          "text": "某县李法官因家具质量问题与县城商场争执并起诉商场，法院审理后认为无质量问"
         }
       ],
       "source": {
-        "nativeId": "2011年客观题-卷一#一#37",
-        "path": "真题库/客观题/2011年客观题-卷一.md",
+        "nativeId": "2011年客观题-卷二#二#6",
+        "path": "真题库/客观题/2011年客观题-卷二.md",
         "repo": "fakao-app",
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
-      "stem": "宽严相济是我国的基本刑事政策，要求法院对于危害国家安全、恐怖组织犯罪、 “黑恶”势力犯罪等严重危害社会秩序和人民生命财产安全的犯罪分子，尤其对于极端仇视 国家和社会，以不特定人为侵害对象，所犯罪行特别严重的犯罪分子，该依法重判的坚决重 判，该依法判处死刑立即执行的绝不手软。对于解决公共秩序、社会安全、犯罪分子生命之 间存在的法律价值冲突，该政策遵循下列哪一原则？",
+      "stem": "公平正义理念是社会主义法治的价值追求。下列哪一选项体现了公平正义理念？",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2011"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2011
+    },
+    {
+      "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "破坏社会主义市场经济秩序罪",
+      "chapterConfidence": "low",
+      "chapterOfficial": "破坏社会主义市场经济秩序罪",
+      "difficulty": null,
+      "explanation": "A 选项正确。马克思主义列宁主义是我国建设社会主义法治国家的指导思想，中国的法\n治建设是一个马克思主义法律思想中国化的过程，党的领导理念可以追溯到列宁关于无产阶\n级专政与社会主义法治的思想。\nB 选项正确。《中共中央关于全面推进依法治国若干重大问题的决定》（以下简称《决\n定》）指出：“把依法治国基本方略同依法执政基本方式统一起来”，应将党所倡导的政治\n文明充分体现在对法治实践活动的领导之中。\nC 选项正确。根据《决定》的基本精神，党的领导并不是具体法律事务的直接领导和办\n理，而集中体现在思想领导、政治领导和组织领导三个方面。\n选项 D 说法错误。根据《决定》的基本精神，党对依法治国的领导非常重要的一个方面\n就是健全党对法治各项工作的监督机制，包括各国家机关内部的党委监督、党作为社会组织\n对立法、执法和司法机关的监督等。",
+      "id": "law:fakao-app:2011年客观题-卷二#二#8",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "党的领导理念可以追溯到列宁关于无产阶级专政与社会主义法治的思想"
+        },
+        {
+          "label": "B",
+          "text": "应将党所倡导的政治文明充分体现在对法治实践活动的领导之中"
+        },
+        {
+          "label": "C",
+          "text": "党对法治事业的领导，集中体现在思想领导、政治领导和组织领导三个方面"
+        },
+        {
+          "label": "D",
+          "text": "党对法治事业的组织领导，主要是指党在宏观上把握好法治发展和运行的方向，而不"
+        }
+      ],
+      "source": {
+        "nativeId": "2011年客观题-卷二#二#8",
+        "path": "真题库/客观题/2011年客观题-卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "关于党对法治事业的领导，下列哪一说法是不正确的？",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2011"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2011
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "刑法概说",
+      "chapterConfidence": "low",
+      "chapterOfficial": "刑法概说",
+      "difficulty": null,
+      "explanation": "本题考大清民律草案的基本思路，题干中“（三）求最适于中国民情之法则”\n体现了“中学为体”，“（二）注重世界最普通之法则”体现了“西学为用”，可知，清末\n修订民律的基本思路为“中学为体、西学为用”，故选 B。",
+      "id": "law:fakao-app:2011年客观题-卷二#二#17",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "西学为体、中学为用"
+        },
+        {
+          "label": "B",
+          "text": "中学为体、西学为用"
+        },
+        {
+          "label": "C",
+          "text": "坚持德治、排斥法治"
+        },
+        {
+          "label": "D",
+          "text": "抛弃传统、尽采西说"
+        }
+      ],
+      "source": {
+        "nativeId": "2011年客观题-卷二#二#17",
+        "path": "真题库/客观题/2011年客观题-卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "清末修律时，修订法律大臣俞廉三在“奏进民律前三编草案折”中表示：“此次编 辑之旨，约分四端：（一）注重世界最普通之法则。（二）原本后出最精确之法理。（三） 求最适于中国民情之法则。（四）期于改进上最有利益之法则。”关于清末修订民律的基本 思路，下列哪一表述是最合适的？",
       "subjectId": "xingfa",
       "tags": [
         "fakao-app",
@@ -26018,6 +26532,294 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "“名例律”作为中国古代律典的“总则”篇，经历了发展、变化的过程。下列哪一 表述是不正确的？",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2011"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2011
+    },
+    {
+      "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "罪刑各论概说",
+      "chapterConfidence": "low",
+      "chapterOfficial": "罪刑各论概说",
+      "difficulty": null,
+      "explanation": "A 项正确。秦国商鞅变法全面贯彻法家“以法治国”和“明法重刑”的主张，主张“轻\n罪重刑，重罪不来”、“不赦不宥，凡有罪者皆应受罚”，大大加重量刑幅度，并运用法律\n手段推行富国强兵措施。故 A 项正确。\nB 项正确。文帝十三年，齐太仓令获罪当施黥刑，其小女缇萦上书请求将自己没官为\n奴，替父赎罪，并指出肉刑制度断绝犯人自新之路的严重问题。文帝为之所动，开始刑罚改\n革，下令废除肉刑。故 B 项正确。\nC 项错误。南北朝时期，北魏规定鞭刑和杖刑，北朝、南朝相继宣布废除宫刑。并非 C\n项所说“唐代废除宫刑，创设鞭刑和杖刑”。\nD 项正确。清廷于 1911 年 1 月 25 日正式公布《大清新刑律》。虽然《大清新刑律》仍\n保持着旧律维护专制制度和封建伦理的传统，但它抛弃了旧律诸法合体的编纂形式，以罪名\n和刑罚等专属刑法范畴的条文作为法典的惟一内容;在体例上抛弃了旧律的结构形式，将法典\n分为总则和分则两篇，后附《暂行章程》5 条;确立了新刑罚制度，规定刑罚分主刑、从刑;采\n用了一些近代西方资产阶级的刑法原则和刑法制度，如罪刑法定原则和缓刑制度等。故 D 项\n正确。",
+      "id": "law:fakao-app:2011年客观题-卷二#二#19",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "秦国商鞅实施变法改革，全面贯彻法家“明法重刑”的主张，加大量刑幅度，对轻罪"
+        },
+        {
+          "label": "B",
+          "text": "西汉文帝为齐太仓令之女缇萦请求将自己没官为奴、替父赎罪的行为所动，下令废除"
+        },
+        {
+          "label": "C",
+          "text": "唐代废除了宫刑制度，创设了鞭刑和杖刑，以宽减刑罚，缓解社会矛盾"
+        },
+        {
+          "label": "D",
+          "text": "《大清新刑律》抛弃了旧律诸法合体的编纂形式，采用了罪刑法定原则，规定刑罚分"
+        }
+      ],
+      "source": {
+        "nativeId": "2011年客观题-卷二#二#19",
+        "path": "真题库/客观题/2011年客观题-卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "中国历史上曾进行多次法制变革以适应社会的发展。关于这些法制变革的表述，下 列哪一选项是错误的？",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2011"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2011
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "侵犯公民人身权利、民主权利罪",
+      "chapterConfidence": "low",
+      "chapterOfficial": "侵犯公民人身权利、民主权利罪",
+      "difficulty": null,
+      "explanation": "A 项正确。《宪法》第 38 条规定：“中华人民共和国公民的人格尊严不受侵犯。禁止用\n任何方法对公民进行侮辱、诽谤和诬告陷害。”\nB 项错误。人身自由包括狭义和广义两方面。狭义的人身自由主要指公民的身体不受非\n法侵犯，广义的人身自由则还包括与狭义人身自由相关联的生命权、人格尊严、住宅不受侵\n犯、通信自由和通信秘密等与公民个人生活有关的权利和自由。人身自由是公民参加各种社\n会活动和实际享受其他权利的前提。但我国《宪法》未明确规定生命权是公民基本权利，故\nB 项错误。\nC 项正确。《宪法》第 37 条第 3 款规定：“禁止非法拘禁和以其他方法非法剥夺或者限\n制公民的人身自由，禁止非法搜查公民的身体。”\nD 项正确。《宪法》第 39 条规定：“中华人民共和国公民的住宅不受侵犯。禁止非法\n搜查或者非法侵入公民的住宅。”\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考",
+      "id": "law:fakao-app:2011年客观题-卷二#二#25_1",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "禁止用任何方法对公民进行侮辱、诽谤和诬告陷害"
+        },
+        {
+          "label": "B",
+          "text": "生命权是《宪法》明确规定的公民基本权利，属于广义的人身自由权"
+        },
+        {
+          "label": "C",
+          "text": "禁止非法搜查公民身体"
+        },
+        {
+          "label": "D",
+          "text": "禁止非法搜查或非法侵入公民住宅"
+        }
+      ],
+      "source": {
+        "nativeId": "2011年客观题-卷二#二#25",
+        "path": "真题库/客观题/2011年客观题-卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "关于《宪法》对人身自由的规定，下列哪一选项是不正确的？",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2011"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2011
+    },
+    {
+      "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "破坏社会主义市场经济秩序罪",
+      "chapterConfidence": "low",
+      "chapterOfficial": "破坏社会主义市场经济秩序罪",
+      "difficulty": null,
+      "explanation": "本题考查纵向垄断协议问题。依据《反垄断法》第 14 条规定，“禁止经营者与交易相\n对人达成下列垄断协议：（1）固定向第三人转售商品的价格；（2）限定向第三人转售商品\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n的最低价格；（3）国务院反垄断执法机构认定的其他垄断协议。”本题中，某白酒公司与\n经销商达成协议，限定向第三人转售商品的最低价格，属于纵向垄断协议，ABC 错误，D 项\n正确。",
+      "id": "law:fakao-app:2011年客观题-卷二#二#27",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "维护品牌形象的正当行为"
+        },
+        {
+          "label": "B",
+          "text": "滥用市场支配地位的行为"
+        },
+        {
+          "label": "C",
+          "text": "价格同盟行为"
+        },
+        {
+          "label": "D",
+          "text": "纵向垄断协议行为"
+        }
+      ],
+      "source": {
+        "nativeId": "2011年客观题-卷二#二#27",
+        "path": "真题库/客观题/2011年客观题-卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某品牌白酒市场份额较大且知名度较高，因销量急剧下滑，生产商召集经销商开 会，令其不得低于限价进行销售，对违反者将扣除保证金、减少销售配额直至取消销售资 格。关于该行为的性质，下列哪一判断是正确的？",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2011"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2011
+    },
+    {
+      "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "共同犯罪",
+      "chapterConfidence": "low",
+      "chapterOfficial": "共同犯罪",
+      "difficulty": null,
+      "explanation": "A 项考查商业银行贷款合同的形式。依据《商业银行法》第 37 条规定：“商业银行贷\n款，应当与借款人订立书面合同。合同应当约定贷款种类、借款用途、金额、利率、还款期\n限、还款方式、违约责任和双方认为需要约定的其他事项。”A 项错误。\nB 项考查银行的呆账贷款问题。对此，《商业银行法》本身并无明确规定。我国目前按\n照国际标准，实行贷款五级分类制度，根据内在风险程度将商业贷款划分为正常、关注、次\n级、可疑、损失五类。不良贷款分为逾期贷款（借款合同到期未按期归还的贷款）、呆滞贷\n款（逾期超过一年期限仍未归还的贷款）、呆账贷款（不能收回的贷款）。本题中经展期后\n到期仍未偿还的贷款可能属于呆滞贷款，不一定就属于呆账贷款，B 项错误。\nC 项考查政府是否有权要求银行贷款。依据《商业银行法》第 41 条规定：“任何单位和\n个人不得强令商业银行发放贷款或者提供担保。商业银行有权拒绝任何单位和个人强令要求\n其发放贷款或者提供担保。”C 项正确。\nD 项考查银行对关系人的贷款问题。依据《商业银行法》第 40 条第 1 款规定：“商业\n银行不得向关系人发放信用贷款；向关系人发放担保贷款的条件不得优于其他借款人同类贷\n款的条件。”可见，对于关系人，担保贷款是可以发放的，只是对其条件有所限制。D 项错\n误。",
+      "id": "law:fakao-app:2011年客观题-卷二#二#29",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "商业银行与借款人订立贷款合同，可采取口头、书面或其他形式"
+        },
+        {
+          "label": "B",
+          "text": "借款合同到期未偿还，经展期后到期仍未偿还的贷款，为呆账贷款"
+        },
+        {
+          "label": "C",
+          "text": "政府部门强令商业银行向市政建设项目发放贷款的，商业银行有权拒绝"
+        },
+        {
+          "label": "D",
+          "text": "商业银行对关系人提出的贷款申请，无论是信用贷款还是担保贷款，均应予拒绝"
+        }
+      ],
+      "source": {
+        "nativeId": "2011年客观题-卷二#二#29",
+        "path": "真题库/客观题/2011年客观题-卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据现行银行贷款制度，关于商业银行贷款，下列哪一说法是正确的？",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2011"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2011
+    },
+    {
+      "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "破坏社会主义市场经济秩序罪",
+      "chapterConfidence": "low",
+      "chapterOfficial": "破坏社会主义市场经济秩序罪",
+      "difficulty": null,
+      "explanation": "A 项考查 FOB 贸易术语的价格构成。FOB，全称 Free on Board，意为“船上交货(指定装\n运港)”，指卖方以在指定装运港将货物装上买方指定的船舶或通过取得已交付至船上货物的\n方式交货。在该术语下，主要运费应是由买方来承担的。在本题中，应用买方乙公司负责签\n订货物运输合同并支付运费。因此，A 项错误。\nB 项考查 FOB 贸易术语下货物的风险转移。根据 2010 年《国际贸易术语解释通则》，\n在 FOB 贸易术语下，货物的风险不再是在船舷转移，而是在货物装上船时转移，这一点是\n2010 年《国际贸易术语解释通则》的一项重要修改。因此，B 项错误。\nC 项考查卖方妥善包装的义务。《联合国国际货物销售合同公约》第三十五条规定，卖\n方交付的货物必须按照合同所规定的方式装箱或包装。如合同未作规定，货物按照同类货物\n通用的方式装箱或包装，如果没有此种通用方式，则按照足以保全和保护货物的方式装箱或\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n包装。因此，该批设备因未按照同类货物通用方式包装造成损失，应由卖方甲公司承担责\n任，C 项正确。\nD 项考查卖方的知识产权担保责任。《联合国国际货物销售合同公约》第四十二条规\n定，“(1)卖方所交付的货物，必须是第三方不能根据工业产权或其他知识产权主张任何权利\n或要求的货物，但以卖方在订立合同时已知道或不可能不知道的权利或要求为限，而且这种\n权利或要求根据以下国家的法律规定是以工业产权或其他知识产权为基础的：(a)如果双方当\n事人在订立合同时预期货物将在某一国境内转售或做其他使用，则根据货物将在其境内转售\n或做其他使用的国家的法律；或者(b)在任何其他情况下，根据买方营业地所在国家的法律。\n(2)卖方在上一款中的义务不适用于以下情况：(a)买方在订立合同时已知道或不可能不知道此\n项权利或要求；或者(b)此项权利或要求的发生，是由于卖方要遵照买方所提供的技术图样、\n图案、款式或其他规格。”本题中，买方乙公司营业地为中国，如果该批设备侵犯了第三方\n在中国的专利权，卖方甲公司需要对买方乙公司承担责任。D 项错误。",
+      "id": "law:fakao-app:2011年客观题-卷二#二#40",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲公司负责签订货物运输合同并支付运费"
+        },
+        {
+          "label": "B",
+          "text": "甲、乙公司的风险承担以货物在装运港越过船舷为界"
+        },
+        {
+          "label": "C",
+          "text": "如该批设备因未按照同类货物通用方式包装造成损失，应由甲公司承担责任"
+        },
+        {
+          "label": "D",
+          "text": "如该批设备侵犯了第三方在中国的专利权，甲公司对乙公司不承担责任"
+        }
+      ],
+      "source": {
+        "nativeId": "2011年客观题-卷二#二#40",
+        "path": "真题库/客观题/2011年客观题-卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某 国 甲 公 司 向 中 国 乙 公 司 出 售 一 批 设 备 ， 约 定 贸 易 术 语 为 “ FOB （Incoterms2010）”，后设备运至中国。依《国际贸易术语解释通则》和《联合国国际货物 销售合同公约》，下列哪一选项是正确的？",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2011"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2011
+    },
+    {
+      "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "刑法概说",
+      "chapterConfidence": "low",
+      "chapterOfficial": "刑法概说",
+      "difficulty": null,
+      "explanation": "A 项考查《服务贸易总协定》的适用范围。《服务贸易总协定》适用于各成员影响服务\n贸易的措施，包括成员的中央、地区或地方政府的措施，以及它们授权行使权力的非政府机\n构采取的措施。但服务贸易总协定不适用于为履行政府职能而提供的服务，即不是在商业基\n础上提供的、又不与任何一个或多个服务提供者相竞争的服务。因此，《服务贸易总协定》\n不适用于成员方的政府服务采购。A 项错误。\nB 项考查《服务贸易总协定》规定的服务贸易方式。《服务贸易总协定》规定了跨境供\n应、境外消费、商业存在、自然人存在四种服务贸易方式。跨境供应是指从一国境内直接向\n其他国境内提供服务——服务产品的流动(不需要提供者和消费者的实际流动)。境外消费是\n指在一国境内向其他国的服务消费者提供服务——消费者的流动。商业存在是指外国实体在\n另一国境内设立附属公司或分支机构，提供服务。自然人存在即一国的服务提供商通过自然\n人到其他国境内提供服务——自然人流动。中国公民接受国外某银行在中国分支机构的服务\n属于商业存在而不是境外消费。B 项错误。\nC 项考查《服务贸易总协定》中的最惠国待遇原则。《服务贸易总协定》第二条第一款\n规定，“关于本协定涵盖的任何措施，每一成员对于任何其他成员的服务和服务提供者，应\n立即和无条件地给予不低于其给予任何其他国家同类服务和服务提供者的待遇。”可见，\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n《服务贸易总协定》中的最惠国待遇既适用于服务，也适用于服务提供者。故 C 项错误。\nD 项考查《服务贸易总协定》中的国民待遇原则。《服务贸易总协定》第十七条第一款\n规定，“对于列入减让表的部门，在遵守其中所列任何条件和资格的前提下，每一成员在影\n响服务提供的所有措施方面给予任何其他成员的服务和服务提供者的待遇，不得低于其给予\n本国同类服务和服务提供者的待遇。”可见，《服务贸易总协定》中的国民待遇义务仅限于\n列入减让表的部门。故 D 项正确。",
+      "id": "law:fakao-app:2011年客观题-卷二#二#42",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "协定适用于成员方的政府服务采购"
+        },
+        {
+          "label": "B",
+          "text": "中国公民接受国外某银行在中国分支机构的服务属于协定中的境外消费"
+        },
+        {
+          "label": "C",
+          "text": "协定中的最惠国待遇只适用于服务产品而不适用于服务提供者"
+        },
+        {
+          "label": "D",
+          "text": "协定中的国民待遇义务，仅限于列入承诺表的部门"
+        }
+      ],
+      "source": {
+        "nativeId": "2011年客观题-卷二#二#42",
+        "path": "真题库/客观题/2011年客观题-卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据世界贸易组织《服务贸易总协定》，下列哪一选项是正确的？",
       "subjectId": "xingfa",
       "tags": [
         "fakao-app",
@@ -26274,6 +27076,54 @@
         "C"
       ],
       "answerText": null,
+      "chapter": "犯罪排除事由",
+      "chapterConfidence": "high",
+      "chapterOfficial": "犯罪排除事由",
+      "difficulty": null,
+      "explanation": "A 选项，《刑法》第四百三十四条规定，战时自伤身体，逃避军事义务的，处三年以下\n有期徒刑；情节严重的，处三年以上七年以下有期徒刑。A 项正确。\nB 选项，故意伤害罪是指非法故意伤害他人身体健康的行为。帮助有责任能力的人自伤\n的，并非是行为人自己主动的去故意伤害被害人，应视为被害人自己的行为，因此，不能成\n立故意伤害罪。B 项正确。\nC 选项，《刑法》第一百九十八条第二款规定，投保人、受益人故意造成被保险人死\n亡、伤残或者疾病，骗取保险金的，同时构成其他犯罪的，依照数罪并罚的规定处罚。据此\n可知，只有在受益人故意造成被保险人伤残，同时又构成故意伤害罪的情况下，才数罪并\n罚。而对于六十周岁具有完全民事行为能力的人，他具有自己的主观意识，可以判断行为的\n结果，其实施自伤的行为属于自己的意志选择，因此，对于唆使六十周岁的被保险人自伤、\n骗取保险金的，不能成立故意伤害罪与保险诈骗罪。当然，如果被保险人自己以骗取保险金\n为目的实施了自伤行为的，仍然可以构成保险诈骗罪。C 项错误。\nD 选项，父母作为限制民事行为能力人的监护人，有义务去救助其未成年子女，倘若对\n其自伤行为放任不管，依据放任的结果可以成立不作为的故意杀人罪或遗弃罪。D 项正确。",
+      "id": "law:fakao-app:2011年客观题-卷二#二#13_1",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "军人在战时自伤身体、逃避军事义务的，成立战时自伤罪"
+        },
+        {
+          "label": "B",
+          "text": "帮助有责任能力成年人自伤的，不成立故意伤害罪"
+        },
+        {
+          "label": "C",
+          "text": "受益人唆使 60 周岁的被保险人自伤、骗取保险金的，成立故意伤害罪与保险诈骗罪"
+        },
+        {
+          "label": "D",
+          "text": "父母故意不救助自伤的 12 周岁儿子而致其死亡的，视具体情形成立故意杀人罪或者"
+        }
+      ],
+      "source": {
+        "nativeId": "2011年客观题-卷二#二#13",
+        "path": "真题库/客观题/2011年客观题-卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "关于自伤，下列哪一选项是错误的？",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2011"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2011
+    },
+    {
+      "answer": [
+        "C"
+      ],
+      "answerText": null,
       "chapter": "刑罚概说",
       "chapterConfidence": "low",
       "chapterOfficial": "刑罚概说",
@@ -26415,6 +27265,54 @@
     },
     {
       "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "犯罪排除事由",
+      "chapterConfidence": "high",
+      "chapterOfficial": "犯罪排除事由",
+      "difficulty": null,
+      "explanation": "本题考查人民陪审员的职责，根据《最高人民法院关于人民陪审员参加审判活动若干问\n题的规定》第九条规定，人民陪审员同合议庭其他组成人员意见分歧，要求合议庭将案件提\n请院长决定是否提交审判委员会讨论决定的，应当说明理由；人民陪审员提出的要求及理由\n应当写入评议笔录。D 项正确，A、B、C 项错误。",
+      "id": "law:fakao-app:2011年客观题-卷二#二#35_1",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "要求合议庭将案件提请院长决定是否展开调查"
+        },
+        {
+          "label": "B",
+          "text": "要求合议庭将案件提交审判委员会讨论决定"
+        },
+        {
+          "label": "C",
+          "text": "提请院长决定是否提交审判委员会讨论决定"
+        },
+        {
+          "label": "D",
+          "text": "要求合议庭提请院长决定是否提交审判委员会讨论决定"
+        }
+      ],
+      "source": {
+        "nativeId": "2011年客观题-卷二#二#35",
+        "path": "真题库/客观题/2011年客观题-卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "陪审员王某参加一起案件审判。被告辩护人当庭提出被告有正当防卫和自首情节， 公诉人予以否定，提请合议庭不予采信，审判长没有就此进行调查。王某对审判长没有征询 合议庭其他成员意见就决定不予调查，在评议时提出异议，但审判长不同意。对此，关于王 某可以行使的权力，下列哪一选项是正确的？",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2011"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2011
+    },
+    {
+      "answer": [
         "A",
         "B",
         "C",
@@ -26471,7 +27369,7 @@
       ],
       "answerText": null,
       "chapter": "犯罪构成",
-      "chapterConfidence": "low",
+      "chapterConfidence": "high",
       "chapterOfficial": "犯罪构成",
       "difficulty": null,
       "explanation": "本题考查具体的事实认识错误。\nA 选项考查狭义的因果关系错误，即结果的发生不是按照行为人对因果关系的发展所预\n见的进程来实现的情况。本选项中，甲为使被害人溺死而将其推入井中致其摔死，甲对乙的\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n死亡存在故意，其杀人行为与乙的死亡之间存在因果关系，仅未明确认识因果发展的具体样\n态，这是因果关系错误。A 项错误应选。\nB 选项考查犯罪构成的提前实现，即提前实现了行为人所预想的结果。通说认为，只要\n行为人在实施第一个行为时就已在着手实施犯罪，此时行为人在实施第一行为时就认识到该\n行为与结果之间关联性，且其行为本身有导致被害人死亡的急迫可能性，其主观上也有杀人\n的故意，则应认定为故意杀人既遂。B 选项正确不应选。\n体现相同的法益，行为人的认识内容与客观事实仍属同一犯罪构成的情况。C 选项，无论按\n照具体符合说还是法定符合说，丙对汪某都成立故意杀人罪既遂；D 选项，丁的行为成立故\n意杀人既遂。C 项错误应选，D 项错误不应选。",
@@ -26720,6 +27618,107 @@
     {
       "answer": [
         "A",
+        "B",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "侵犯公民人身权利、民主权利罪",
+      "chapterConfidence": "low",
+      "chapterOfficial": "侵犯公民人身权利、民主权利罪",
+      "difficulty": null,
+      "explanation": "关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n本题考查非法占有目的，非法占有目的，是指排除权利人、将他人的财物作为自己的所\n有物进行支配，并遵从财物的用途进行利用、处分的意思。非法占有目的由“排除意思”和\n“利用意思”构成。\nA 选项，男性基于癖好入户窃取女士内衣，其具有排除意思，且因为利用意思不限于遵\n从财物的经济用途来进行，其仍具有利用意思。A 项正确。\nB 选项，为了燃柴取暖而窃取他人木制家具，其具有排除意思，也具有利用意思。B 项\n正确。\nC 选项，骗取他人钢材后作为废品卖出，具有排除意思和利用意思。C 项正确。\nD 选项，在具有毁坏、隐匿的意思的同时还具有其他动机，该动机不能评价为具有遵从\n财物可能具有的用途进行利用、处分的意思时，不能认定具有利用意思。因此杀人后为了避\n免公安机关识别被害人身份将其钱包等物丢弃，没有利用意思，不构成非法占有目的。D 项\n错误。",
+      "id": "law:fakao-app:2011年客观题-卷二#二#61",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "男性基于癖好入户窃取女士内衣"
+        },
+        {
+          "label": "B",
+          "text": "为了燃柴取暖而窃取他人木质家具"
+        },
+        {
+          "label": "C",
+          "text": "骗取他人钢材后作为废品卖给废品回收公司"
+        },
+        {
+          "label": "D",
+          "text": "杀人后为避免公安机关识别被害人身份，将被害人钱包等物丢弃"
+        }
+      ],
+      "source": {
+        "nativeId": "2011年客观题-卷二#二#61",
+        "path": "真题库/客观题/2011年客观题-卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "下列哪些选项的行为人具有非法占有目的？",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2011"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2011
+    },
+    {
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "共同犯罪",
+      "chapterConfidence": "low",
+      "chapterOfficial": "共同犯罪",
+      "difficulty": null,
+      "explanation": "本题考查侵占罪，侵占罪是指将代为保管的他人财物非法占为己有，数额较大，拒不退\n还的，或者将他人的遗忘物或者埋藏物非法占为己有，数额较大，拒不交出的行为。\nA 选项，他人停放在车棚内未上锁的自行车依旧为自行车所有者占有，自行车非遗忘\n物，因此甲将自行车骑走卖掉的行为构成盗窃罪，而非侵占罪。A 项错误应选。\nB 选项，遗忘物，是指非基于他人本意而脱离他人占有，偶尔（即不是基于委托关系）\n由行为人占有或者占有人不明的财物。对于遗失行李箱的乘客来说，行李箱属于遗忘物，但\n落在车子后备箱里，无论司机发现与否都自动归转出租车司机占有，乙拿走的行为构成盗窃\n罪而非侵占罪。B 项错误应选。\nC 选项，学生用语占座的手机仍归学生占有，是有主物，并将其拿走卖掉的行为构成盗\n窃罪。C 项错误应选。\nD 选项，邻居委托丁看房，但是其锁在柜里的手提电脑仍归其自己占有，并不是代为保\n管物，丁将其拿走变卖的行为成立盗窃罪。D 项错误应选。",
+      "id": "law:fakao-app:2011年客观题-卷二#二#62",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲将他人停放在车棚内未上锁的自行车骑走卖掉。甲行为构成侵占罪"
+        },
+        {
+          "label": "B",
+          "text": "乙下车取自己行李时将后备厢内乘客遗忘的行李箱一并拿走变卖。乙行为构成侵占罪"
+        },
+        {
+          "label": "C",
+          "text": "丙在某大学食堂将学生用于占座的手机拿走卖掉。丙行为成立侵占罪"
+        },
+        {
+          "label": "D",
+          "text": "丁受托为外出邻居看房，将邻居锁在柜里的手提电脑拿走变卖。丁行为成立侵占罪"
+        }
+      ],
+      "source": {
+        "nativeId": "2011年客观题-卷二#二#62",
+        "path": "真题库/客观题/2011年客观题-卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "关于侵占罪的认定（不考虑数额），下列哪些选项是错误的？",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2011"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2011
+    },
+    {
+      "answer": [
+        "A",
         "C",
         "D"
       ],
@@ -26871,41 +27870,41 @@
     },
     {
       "answer": [
-        "C"
+        "A"
       ],
       "answerText": null,
-      "chapter": "破坏社会主义市场经济秩序罪",
+      "chapter": "刑罚概说",
       "chapterConfidence": "low",
-      "chapterOfficial": "破坏社会主义市场经济秩序罪",
+      "chapterOfficial": "刑罚概说",
       "difficulty": null,
-      "explanation": "A 项考查模仿、混淆行为是否属于正当竞争行为。不正当竞争经营者有悖于商业道德且\n违反法律规定的市场竞争行为。正当竞争符合商业道德，不具有违法性。该行为是不正当竞\n争行为，不选 A。\nB 项考查商业秘密。依据《反不正当竞争法》第 10 条规定：“经营者不得采用下列手段\n侵犯商业秘密：（1）以盗窃、利诱、胁迫或者其他不正当手段获取权利人的商业秘密；\n（2）披露、使用或者允许他人使用以前项手段获取的权利人的商业秘密；（3）违反约定或\n者违反权利人有关保守商业秘密的要求，披露、使用或者允许他人使用其所掌握的商业秘\n密。\n商业秘密，“秘密”者，不为人所知也。“大队长酒楼”经营特色不属商业秘密，“牛\n记酒楼”不构成侵犯商业秘密。B 项错误。\nC 项考查混淆行为。所谓混淆行为，是指经营者在经营活动中，以种种伪造或不实手段\n对自己的商品或服务作虚假表示、承诺或说明，或利用他人的设计包装、商业模式等推销自\n己的商品或服务，使用户或消费者产生误解，进而扰乱市场秩序、损害消费者利益的行为。\n根据《反不正当竞争法》第 5 条的规定，混淆行为包括以下 4 种：（1）假冒他人的注册商\n标；（2）擅自使用知名商品特有的名称、包装、装潢，或者使用与知名商品近似的名称、\n包装、装潢，造成和他人的知名商品相混淆，使购买者误认为是该知名商品；（3）擅自使\n用他人的企业名称或者姓名，引人误认为是他人的商品；（4）在商品上伪造或者冒用认证\n标志、名优标志等质量标志，伪造产地，对商品质量作引人误解的虚假表示。“牛记酒楼”\n全盘照搬照抄的行为是典型的混淆行为。C 项正确。\nD 项考查虚假宣传行为。依据《反不正当竞争法》第 9 条规定，“经营者不得利用广告\n或者其他方法，对商品的质量、制作成分、性能、用途、生产者、有效期限、产地等作引人\n误解的虚假宣传”。“牛记酒楼”不构成虚假宣传。D 项错误。（本题答案：C）",
-      "id": "law:fakao-app:2012年客观题-卷一#一#27",
+      "explanation": "A 选项正确，符合《刑法》第 48 条的规定，即如果能够将甲的杀人行为评价为罪行极其\n严重，就可判处甲死刑。结合本案来看，甲因失恋对恋人连捅十几刀，致乙当场惨死，其行\n为符合罪行极其严重的条件。\nB 选项错误。刑法权威以及社会主义法治权威都不能靠死刑的适用来维护。\nC 选项错误。刑罚一般预防的功能应该受到一定限制。在公平正义的社会主义法治理念\n之下，不允许在个人罪不至死的情况下，为达到一般预防的目的，对甲判处死刑。\nD 选项错误。刑罚适用不能不适度考虑民意，但是不能由网民的意见所左右，因此，其\n说法错误。",
+      "id": "law:fakao-app:2012年客观题-卷二#二#2_1",
       "knowledgePoints": [],
       "options": [
         {
           "label": "A",
-          "text": "正当的竞争行为"
+          "text": "根据《刑法》规定，当甲的杀人行为被评价为“罪行极其严重”时，可判处甲死刑"
         },
         {
           "label": "B",
-          "text": "侵犯商业秘密行为"
+          "text": "从维护《刑法》权威考虑，无论甲是否存在从轻情节，均应判处甲死刑"
         },
         {
           "label": "C",
-          "text": "混淆行为"
+          "text": "甲轻率杀人，为严防效尤，即使甲自首悔罪，也应判处死刑立即执行"
         },
         {
           "label": "D",
-          "text": "虚假宣传行为"
+          "text": "应当充分考虑并尊重网民呼声，以此决定是否判处甲死刑立即执行"
         }
       ],
       "source": {
-        "nativeId": "2012年客观题-卷一#一#27",
-        "path": "真题库/客观题/2012年客观题-卷一.md",
+        "nativeId": "2012年客观题-卷二#二#2",
+        "path": "真题库/客观题/2012年客观题-卷二.md",
         "repo": "fakao-app",
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
-      "stem": "某县“大队长酒楼”自创品牌后声名渐隆，妇孺皆知。同县的“牛记酒楼”经暗访 发现，“大队长酒楼”经营特色是，服务员统一着上世纪 60 年代服装，播放该年代歌曲， 店堂装修、菜名等也具有时代印记。“牛记酒楼”遂改名为“老社长酒楼”，服装、歌曲、 装修、菜名等一应照搬。根据《反不正当竞争法》的规定，“牛记酒楼”的行为属于下列哪 一种行为？",
+      "stem": "甲与乙女恋爱。乙因甲伤残提出分手，甲不同意，拉住乙不许离开，遭乙痛骂拒 绝。甲绝望大喊：“我得不到你，别人也休想”，连捅十几刀，致乙当场惨死。甲逃跑数日 后，投案自首，有悔罪表现。关于本案的死刑适用，下列哪一说法符合法律实施中的公平正 义理念？",
       "subjectId": "xingfa",
       "tags": [
         "fakao-app",
@@ -27251,6 +28250,54 @@
     },
     {
       "answer": [
+        "A"
+      ],
+      "answerText": null,
+      "chapter": "危害公共安全罪",
+      "chapterConfidence": "low",
+      "chapterOfficial": "危害公共安全罪",
+      "difficulty": null,
+      "explanation": "A 选项，甲作为个体干洗店老板，受他人委托，在洗衣期间代为保管他人财物，发现衣\n袋内有钱时将钱藏匿，属于侵占代为保管的他人财物，构成侵占罪。\nB 选项，乙利用职务之便，将自己占有但公司所有的财物隐匿，成立职务侵占罪。\nC 选项有一定的争议，有人认为，钱包属于他人的遗忘物，应成立侵占罪。也有人认\n为，航空器相对封闭，旅客人数有限，不同于人员流动性大、开放性较强的火车、公共汽车\n等，且空乘人员对航空器的控制、监视力度大，因此，如果失主还在飞机上，该财物由失主\n占有；如果失主已经下飞机，该财物由空乘人员占有，因此，丙从他人占有下把钱包拿走，\n构成盗窃罪。2012 年司法考试命题人持第二种观点。\nD 选项，客人将礼品存于前台让朋友自取，该财物是主人特别声明或者故意放置在特定\n场所的财物。根据一般的社会观念，在其他客人来领取财物之间，该财物由放置者占有，丁\n窃取了他人占有的财物，成立盗窃罪。",
+      "id": "law:fakao-app:2012年客观题-卷二#二#18_1",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲是个体干洗店老板，洗衣时发现衣袋内有钱，将钱藏匿"
+        },
+        {
+          "label": "B",
+          "text": "乙受公司委托外出收取货款，隐匿收取的部分货款"
+        },
+        {
+          "label": "C",
+          "text": "丙下飞机时发现乘客钱包掉在座位底下，捡起钱包离去"
+        },
+        {
+          "label": "D",
+          "text": "丁是宾馆前台服务员，客人将礼品存于前台让朋友自取。丁见久无人取，私吞礼品"
+        }
+      ],
+      "source": {
+        "nativeId": "2012年客观题-卷二#二#18",
+        "path": "真题库/客观题/2012年客观题-卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "不计数额，下列哪一选项构成侵占罪？",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2012"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2012
+    },
+    {
+      "answer": [
         "D"
       ],
       "answerText": null,
@@ -27405,7 +28452,7 @@
       ],
       "answerText": null,
       "chapter": "犯罪构成",
-      "chapterConfidence": "low",
+      "chapterConfidence": "high",
       "chapterOfficial": "犯罪构成",
       "difficulty": null,
       "explanation": "根据《刑法》第 128 条第 2 款的规定，依法配备公务用枪的人员，非法出租、出借枪支\n的，即构成犯罪。A 项正确。乙没有法律依据非法持有枪支，也构成犯罪，B 项正确。丙为\n检举、控告乙非法持有枪支的犯罪事实而偷拿枪支的行为，不具有非法占有目的，不构成盗\n窃枪支罪。刑法意义上立功的成立，以行为人自身构成犯罪为前提。如果行为人的行为自身\n不构成犯罪，其检举揭发他人的犯罪行为的，属于合法行使宪法赋予公民的控告、举报权\n利，丙的行为不构成犯罪，就谈不上对其送交枪支到派出所是否要成立立功的问题，故 C、\nD 项错误。",
@@ -27653,7 +28700,7 @@
       ],
       "answerText": null,
       "chapter": "破坏社会主义市场经济秩序罪",
-      "chapterConfidence": "low",
+      "chapterConfidence": "high",
       "chapterOfficial": "破坏社会主义市场经济秩序罪",
       "difficulty": null,
       "explanation": "A 项，甲将 2 万元真币送给赵某，构成对非国家工作人员行贿罪，而非(对国家工作人员\n所实施的)行贿罪。A 项说法错误。B 项，甲将 10 万元假币冒充真币送给赵某，其行为、故\n意都符合对非国家工作人员行贿罪的特征，不能评价为诈骗罪。B 项正确。C 项，赵某不具\n有国家工作人员的主体资格，其收受他人财物，妨害公司管理制度的，应构成非国家工作人\n员受贿罪。C 项正确。D 项，由于《刑法》第 167 条签订、履行合同失职被骗罪的主体是国\n有公司、企业、事业单位直接负责的主管人员，而赵某不具有这一主体资格，因而不构成该\n罪。D 项说法错误。",
@@ -27891,56 +28938,6 @@
       "type": "indefinite_choice",
       "typeRaw": "不定项选择题",
       "year": 2012
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "犯罪未完成形态",
-      "chapterConfidence": "high",
-      "chapterOfficial": "犯罪未完成形态",
-      "difficulty": null,
-      "explanation": "A 项正确。董仲舒解说“春秋决狱”：“春秋之听狱也，必本其事而原其志;志邪者不待\n成，首恶者罪特重，本直者其论轻。”其要旨是：必须根据案情事实，追究行为人的动机;动\n机邪恶者即使犯罪未遂也不免刑责。故 A 项应选。\nB 项正确。“志邪者不待成”和“本直者其论轻”体现了审断时应重视行为人在案情中\n的主观动机，主观上无恶念者从轻处理；“首恶者从重惩治”，体现了依据事实分别首犯、\n从犯，“志邪者不待成”体现了依据事实分别已遂、未遂。故 B 项应选。\nC 项错误。《春秋》决狱实行“论心定罪”原则，若犯罪人主观动机符合儒家“忠”、\n“孝”精神，即使其行为构成社会危害，也可以减免刑责。题干中也表明“本直者其论\n轻”，而非“不给予刑事处罚”故 C 项不选。\nD 项正确。春秋决狱，论心定罪。春秋决狱以《春秋》经义决狱为司法原则，认为只要\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n犯罪人主观动机严重违背儒家倡导的精神，即使没有造成严重危害后果，也要认定犯罪给予\n严惩。这对传统司法和审判是一种积极的补充。但是，若专以主观动机判断有罪无罪或罪行\n轻重，容易忽略客观事实，往往会成为司法官吏主观臆断和陷害无辜的口实，在某种程度上\n为司法擅断提供了依据。故 D 项应选。",
-      "id": "law:fakao-app:2013年客观题-卷一#一#57",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "断案必须根据事实，要追究犯罪人的动机，动机邪恶者即使犯罪未遂也不免刑责"
-        },
-        {
-          "label": "B",
-          "text": "在着重考察动机的同时，还要依据事实，分别首犯、从犯和已遂、未遂"
-        },
-        {
-          "label": "C",
-          "text": "如犯罪人主观动机符合儒家“忠”、“孝”精神，即使行为构成社会危害，也不给予"
-        },
-        {
-          "label": "D",
-          "text": "以《春秋》经义决狱为司法原则，对当时传统司法审判有积极意义，但某种程度上为"
-        }
-      ],
-      "source": {
-        "nativeId": "2013年客观题-卷一#一#57",
-        "path": "真题库/客观题/2013年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "董仲舒解说“春秋决狱”：“春秋之听狱也，必本其事而原其志；志邪者不待成， 首恶者罪特重，本直者其论轻。”关于该解说之要旨和倡导，下列哪些表述是正确的？",
-      "subjectId": "xingfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2013"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2013
     },
     {
       "answer": [
@@ -28315,6 +29312,102 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "关于罪数判断，下列哪一选项是正确的?",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2013"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2013
+    },
+    {
+      "answer": [
+        "A"
+      ],
+      "answerText": null,
+      "chapter": "危害公共安全罪",
+      "chapterConfidence": "low",
+      "chapterOfficial": "危害公共安全罪",
+      "difficulty": null,
+      "explanation": "建筑工地并不属于公共交通运输领域，因此，甲开车不小心将工友、撞伤的行为不成立\n交通肇事罪，而是成立重大责任事故罪。A 选项错,BC 选项正确。\n甲为逃避法律责任，将丙带离事故现场后遗弃，这一行为将丙置于更危险的境地，最终\n丙不得救治而亡。因此，甲的行为还成立故意杀人罪。D 选项正确。",
+      "id": "law:fakao-app:2013年客观题-卷二#二#12",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲违反交通运输管理法规，因而发生重大事故，致人死伤，触犯交通肇事罪"
+        },
+        {
+          "label": "B",
+          "text": "甲在作业中违反安全管理规定，发生重大伤亡事故，触犯重大责任事故罪"
+        },
+        {
+          "label": "C",
+          "text": "甲不构成交通肇事罪与重大责任事故罪的想象竞合犯"
+        },
+        {
+          "label": "D",
+          "text": "甲为逃避法律责任，将丙带离事故现场后遗弃，致丙不得救治而亡，还触犯故意杀人"
+        }
+      ],
+      "source": {
+        "nativeId": "2013年客观题-卷二#二#12",
+        "path": "真题库/客观题/2013年客观题-卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲在建筑工地开翻斗车。某夜，甲开车时未注意路况，当场将工友乙撞死、丙撞 伤。甲背丙去医院，想到会坐牢，遂将丙弃至路沟后逃跑。丙不得救治而亡。关于本案，下 列哪一选项是错误的?",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2013"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2013
+    },
+    {
+      "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "侵犯财产罪",
+      "chapterConfidence": "low",
+      "chapterOfficial": "侵犯财产罪",
+      "difficulty": null,
+      "explanation": "A 选项错误。虚报注册资本罪是指申请公司登记使用虚假证明文件或者采取其他欺诈手\n段虚报注册资本，欺骗公司登记主管部门，取得公司登记，虚报注册资本数额巨大、后果严\n重或者有其他严重情节的行为。本案中，甲不存在使用虚假证明文件或者其他欺诈手段的行\n为，故不成立虚报注册资本罪。\nBC 选项错误。虚假出资、抽逃出资罪是指公司发起人、股东违反公司法的规定未交付货\n币、实物或者未转移财产权，虚假出资，或者在公司成立后又抽逃其出资，数额巨大、后果\n严重或者有其他严重情节的行为。本案中，甲实际上已经出资，不存在虚假出资的行为；成\n立公司之后，甲将公司资金借给其他公司的行为也不属于抽逃出资的行为。故甲的行为不成\n立虚假出资、抽逃出资罪。\nD 选项正确。本案中，A 公司取得营业执照后，由甲经手将 A 公司 50 万元借给 B 公\n司，这一行为并没导致公司资金丧失。实际上，该行为不过是单位向单位借款的行为，不成\n立抽逃出资罪，也不构成挪用资金罪等，属于无罪行为。\n需要注意的是，按照《公司法》最新规定，只有涉及注册资本未采取实缴登记制的公\n司，才有可能成立虚报注册资本罪、虚假出资、抽逃出资罪。",
+      "id": "law:fakao-app:2013年客观题-卷二#二#13",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "虚报注册资本罪"
+        },
+        {
+          "label": "B",
+          "text": "虚假出资罪"
+        },
+        {
+          "label": "C",
+          "text": "抽逃出资罪"
+        },
+        {
+          "label": "D",
+          "text": "无罪"
+        }
+      ],
+      "source": {
+        "nativeId": "2013年客观题-卷二#二#13",
+        "path": "真题库/客观题/2013年客观题-卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲向乙借款 50 万元注册成立 A 公司，乙与甲约定在 A 公司取得营业执照的第二 天，乙的 B 公司向 A 公司借款 50 万元。A 公司取得营业执照后，由甲经手将 A 公司 50 万元 借给 B 公司。关于甲的行为性质，下列哪一选项是正确的?",
       "subjectId": "xingfa",
       "tags": [
         "fakao-app",
@@ -29073,6 +30166,57 @@
       "answer": [
         "A",
         "B",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "单位犯罪",
+      "chapterConfidence": "low",
+      "chapterOfficial": "单位犯罪",
+      "difficulty": null,
+      "explanation": "本案中，丁指使王某做伪证的行为成立妨害作证罪的实行犯，而非妨害作证罪的教唆\n犯，因为刑法将该行为独立规定为犯罪。丁不成立包庇罪，因为本犯不可能成立针对自己的\n窝藏、包庇罪，当然也就不可能成立针对自己的包庇罪的教唆犯。丁的行为属于妨害作证罪\n的实行犯，因此无所谓教唆未遂的问题。ABCD 错。",
+      "id": "law:fakao-app:2013年客观题-卷二#二#90",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "丁指使王某作伪证，构成妨害作证罪的教唆犯"
+        },
+        {
+          "label": "B",
+          "text": "丁构成包庇罪的教唆犯"
+        },
+        {
+          "label": "C",
+          "text": "丁的教唆行为属于教唆未遂，应以未遂犯追究刑事责任"
+        },
+        {
+          "label": "D",
+          "text": "对丁的妨害作证行为与包庇行为应从一重罪处罚"
+        }
+      ],
+      "source": {
+        "nativeId": "2013年客观题-卷二#二#90",
+        "path": "真题库/客观题/2013年客观题-卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲于某晚 9 时驾驶货车在县城主干道超车时，逆行进入对向车道，撞上乙驾驶的小 轿车，乙被卡在车内无法动弹，乙车内黄某当场死亡、胡某受重伤。后查明，乙无驾驶资 格，事发时略有超速，且未采取有效制动措施。(事实一) 甲驾车逃逸。急救人员 5 分钟后赶到现场，胡某因伤势过重被送医院后死亡。(事实二) 交警对乙车进行切割，试图将乙救出。此时，醉酒后的丙(血液中的酒精含量为 152mg/100ml)与丁各自驾驶摩托车“飙车”经过此路段。(事实三) 丙发现乙车时紧急刹车，摩托车侧翻，猛烈撞向乙车左前门一侧，丙受重伤。20 分钟 后，交警将乙抬出车时，发现其已死亡。现无法查明乙被丙撞击前是否已死亡，也无法查明 乙被丙撞击前所受创伤是否为致命伤。(事实四) 丁离开现场后，找到无业人员王某，要其假冒飙车者去公安机关投案。(事实五) 王某虽无替丁顶罪的意思，但仍要丁给其 5 万元酬劳，否则不答应丁的要求，丁只好付 钱。王某第二天用该款购买 100 克海洛因藏在家中，用于自己吸食。5 天后，丁被司法机关 抓获。(事实六) 关于事实五的定性，下列选项错误的是：",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2013"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2013
+    },
+    {
+      "answer": [
+        "A",
+        "B",
         "C"
       ],
       "answerText": null,
@@ -29169,304 +30313,11 @@
     },
     {
       "answer": [
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "渎职罪",
-      "chapterConfidence": "high",
-      "chapterOfficial": "渎职罪",
-      "difficulty": null,
-      "explanation": "秦代规定了官员的渎职罪：(1)“见知不举”罪：“有敢偶语《诗》《书》者，弃市。以古非今者，族。吏见知不举者，与同罪。”这个属于故意犯罪而不是过失犯罪，故B 项说法错误。(2)“不直”罪和“纵囚”罪：前者指罪应重而故意轻判，应轻而故意重判，故 D项说法正确。后者指应当论罪而故意不论罪，以及设法减轻案情，故意使案犯达不到定罪标准，从而判其无罪，故A 项说法正确。(3)“失刑”罪，指因过失而量刑不当(若系故意，则构成“不直”罪),故C 项说法正确。本题选非，故答案为 B。",
-      "id": "law:fakao-app:2014年客观题#一#16",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "故意使罪犯未受到惩罚，属于“纵囚”"
-        },
-        {
-          "label": "B",
-          "text": "对已经发生的犯罪，由于过失未能揭发、检举，属于“见知不举”"
-        },
-        {
-          "label": "C",
-          "text": "对犯罪行为由于过失而轻判者，属于“失刑”"
-        },
-        {
-          "label": "D",
-          "text": "对犯罪行为故意重判者，属于“不直”"
-        }
-      ],
-      "source": {
-        "nativeId": "2014年客观题#一#16",
-        "path": "真题库/客观题/2014年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "秦律明确规定了司法官渎职犯罪的内容。关于秦朝司法官渎职的说法，下列哪一选项是不正确的?",
-      "subjectId": "xingfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2014"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2014
-    },
-    {
-      "answer": [
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "刑法概说",
-      "chapterConfidence": "low",
-      "chapterOfficial": "刑法概说",
-      "difficulty": null,
-      "explanation": "由于类推原则适用的前提是法律没有明文规定。因此在法律有明文规定时应当直接援引法律的规定进行定罪处罚，此时就无所谓“比附援引” (即适用类推处理)了。因此，A 选项搞错了类推原则的适用前提，错误。“诸断罪而无正条，其应出罪者，则\n举重以明轻；其应入罪者，则举轻以明重”翻译成白话文的意思是：法官裁判案件时，如果遇到法律没有规定的情形，凡应当减轻处罚的，就比照重罪的刑罚减轻处罚，凡应当加重处罚的，就比照轻罪的刑罚加重处罚。而不是比照同类案件，据此，B 选项、C 选项不正确。类推原则可被视为是当时刑法中的“兜底性条款”,这无疑反映了当时立法技术的高超。因此，D 选项正确。",
-      "id": "law:fakao-app:2014年客观题#一#17",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "类推是适用法律的一般形式，有明文规定也可“比附援引”"
-        },
-        {
-          "label": "B",
-          "text": "被类推定罪的行为，处罚应重于同类案件"
-        },
-        {
-          "label": "C",
-          "text": "被类推定罪的行为，处罚应轻于同类案件"
-        },
-        {
-          "label": "D",
-          "text": "唐代类推原则反映了当时立法技术的发达"
-        }
-      ],
-      "source": {
-        "nativeId": "2014年客观题#一#17",
-        "path": "真题库/客观题/2014年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "《唐律 · 名例律》规定：“诸断罪而无正条，其应出罪者，则举重以明轻；其应入罪者，则举轻以明重。”关于唐代类推原则，下列哪一说法是正确的?",
-      "subjectId": "xingfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2014"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2014
-    },
-    {
-      "answer": [
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "危害国家安全罪",
-      "chapterConfidence": "low",
-      "chapterOfficial": "危害国家安全罪",
-      "difficulty": null,
-      "explanation": "《中华人民共和国出境入境管理法》第14条规定：“定居国外的中国公民在中国境内办理金融、教育、医疗、交通、电信、社会保险、财产登记等事务需要提供身份证明的，可以凭本人的护照证明其身份。”因此，王某办理房屋登记可凭其护照证明其身份。所以 B 项正确，C 项错误。\n根据该法第11条第1款规定：“中国公民出境入境，应当向出入境边防检查机关交验本人的护照或者其他旅行证件等出境入境证件，履行规定的手续，经查验准许，方可出境入境。”王某是定居美国的中国公民，由于王某还是中国公民，所以回国是回到自己的国家，不需要签证。因此其出境入境无须办理签证。所以 A   项错误。\n根据该法第12条规定：“中国公民有下列情形之一的，不准出境：(一)未持有效出境入境证件或者拒\n绝、逃避接受边防检查的；(二)被判处刑罚尚未执行完毕或者属于刑事案件被告人、犯罪嫌疑人的；(三)有未了结的民事案件，法院决定不准出境的；(四)因妨害国  (边)境管理受到刑事处罚或者因非法出境、非法居留、非法就业被其他国家或者地区遣返，未满不准出境规定年限的；(五)可能危害国家安全和利益，国务院有关主管部门决定不准出境的；(六)法律、行政法规规定不准出境的其他情形。”因此，当其有未了结的民事案件时，只有当法院决定不准出境时，王某才不能出境。所以 D 项错误。",
-      "id": "law:fakao-app:2014年客观题#一#34",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "王某应向中国驻美签证机关申请办理赴中国的签证"
-        },
-        {
-          "label": "B",
-          "text": "王某办理所购房产登记需提供身份证明的，可凭其护照证明其身份"
-        },
-        {
-          "label": "C",
-          "text": "因王某是中国公民，故需持身份证办理房产登记"
-        },
-        {
-          "label": "D",
-          "text": "王某回中国后，只要其有未了结的民事案件，就不准出境"
-        }
-      ],
-      "source": {
-        "nativeId": "2014年客观题#一#34",
-        "path": "真题库/客观题/2014年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "王某是定居美国的中国公民，2013年10月回国为父母购房。根据我国相关法律规定，下列哪一选项是正确的?",
-      "subjectId": "xingfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2014"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2014
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "破坏社会主义市场经济秩序罪",
-      "chapterConfidence": "low",
-      "chapterOfficial": "破坏社会主义市场经济秩序罪",
-      "difficulty": null,
-      "explanation": "本题考查混淆行为。\n混淆行为是指经营者在市场经营活动中，以种种不实手法对自己的商品或服务做虚假表示、说明或承诺，或不当利用他人的智力劳动成果推销自己的商品或服务，使用户或者消费者产生误解，扰乱市场秩序、损害同业竞争者的利益或消费者利益的行为。\n根据《反不正当竞争法》第6条规定：经营者不得实施下列混淆行为，引人误认为是他人商品或者与他人存在特定联系：(一)擅自使用与他人有一定影响的\n商品名称、包装、装潢等相同或者近似的标识；(二)擅自使用他人有一定影响的企业名称(包括简称、字号等)、社会组织名称(包括简称等)、姓名(包括笔名、艺名、译名等);(三)擅自使用他人有一定影响的域名主体部分、网站名称、网页等；(四)其他足以引人误认为是他人商品或者与他人存在特定联系的混淆行为。\n法律、行政规章之所以对知名商品特有的名称、包装、装潢进行保护，是因为商品特有的名称、包装、装潢是权利人创造性劳动的成果，在使用过程中，权利人投入一定的人力财力进行宣传，才使其由普通商品成为知名商品。他人擅自制造、使用销售知名商品特有的名称、包装、装潢，目的在于利用其良好的商品信誉和一定的知名度推销自己的商品或牟取其他非法利益，其不正当性是显而易见的。\n由此可以看出，构成混淆行为的前提必须是“使购买者误认为是该知名商品的”,在 C 选项中，虽然甲模仿了乙厂白酒的包装、装潢等，但是不足以使得消费者误认，所以不构成混淆行为。 C 选项正确。\nA 选项，即使乙厂的包装、装潢未获得外观设计专利，但是商品特有的名称、包装、装潢是权利人创造性劳动的成果，在使用过程中，权利人投入一定的人力财力进行宣传，所以，如果对这种包装、装潢的模仿使购买者误认为是该知名商品，则同样构成混淆行为。因此，A 选项错误。\nB 选项，即使甲厂标明了自己的厂名、厂址、商标，但是依然造成购买者误认的，同样也是混淆行为。因此，B 选项错误。\nD 选项，混淆行为中的“购买者误认”其主体是“一般的购买者”,而不是“长期消费者”。因此 D 选项错误。本题答案为 A、B、D。",
-      "id": "law:fakao-app:2014年客观题#一#65",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "如果乙厂的包装、装潢未获得外观设计专利，则甲厂摹仿行为合法"
-        },
-        {
-          "label": "B",
-          "text": "如果甲厂在包装、装潢上标明了自己的厂名、厂址、商标，则不构成混淆行为"
-        },
-        {
-          "label": "C",
-          "text": "如果甲厂白酒的包装、装潢不足以使消费者误认为是乙厂白酒，则不构成混淆行为"
-        },
-        {
-          "label": "D",
-          "text": "如果乙厂白酒的长期消费者留意之下能够辨别出二者差异，则不构成混淆行为"
-        }
-      ],
-      "source": {
-        "nativeId": "2014年客观题#一#65",
-        "path": "真题库/客观题/2014年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲酒厂为扩大销量，精心摹仿乙酒厂知名白酒的包装、装潢。关于甲厂摹仿行为，下列哪些判断是错误的?",
-      "subjectId": "xingfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2014"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2014
-    },
-    {
-      "answer": [
-        "A",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "刑法概说",
-      "chapterConfidence": "low",
-      "chapterOfficial": "刑法概说",
-      "difficulty": null,
-      "explanation": "《食品安全法》第34条规定，禁止生产经营下列食品、食品添加剂、食品相关产品：\n(一)用非食品原料生产的食品或者添加食品添加剂以外的化学物质和其他可能危害人体健康物质的食品，或者用回收食品作为原料生产的食品；(二)致病性微生物，农药残留、兽药残留、生物毒素、重金属等污染物质以及其他危害人体健康的物质含量超过食品安全标准限量的食品、食品添加剂、食品相关产品；(三)用超过保质期的食品原料、食品添加剂生产的食品、食品添加剂；(四)超范围、超限量使用食品添加剂的食品； (五)营养成分不符合食品安全标准的专供婴幼儿和其他特定人群的主辅食品；(六)腐败变质、油脂酸败、霉变生虫、污秽不洁、混有异物、掺假掺杂或者感官性状异常的食品、食品添加剂；(七)病死、毒死或者死因不明的禽、畜、兽、水产动物肉类及其制品；……由第(三) 项可知，销售超过保质期的食品属于违反法律禁止性规定的行为。因此A 项正确，B 项错误；同时因为超市违反法律的禁止性规定，根据合同法的基本原理，曾某有权要求超市退还价款。因此C 项正确。\n根据《食品安全法》第136条规定，造成人身、财产或者其他损害的，依法承担赔偿责任。\n该法第148条第2款规定，生产不符合食品安全标准的食品或者经营明知是不符合食品安全标准的食品，消费者除要求赔偿损失外，还可以向生产者或者经营者要求支付价款十倍或者损失三倍的赔偿金。\n题中曾某购买的酸奶保质期已过造成了其全家的上吐下泻，依照《食品安全法》第147、148条的规定，曾某可以要求赔偿医疗费且可要求支付价款十倍的赔偿金，故D 项正确。",
-      "id": "law:fakao-app:2014年客观题#一#67",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "销售超过保质期的食品属于违反法律禁止性规定的行为"
-        },
-        {
-          "label": "B",
-          "text": "曾某在购买时未仔细查看商品上的生产日期，应当自负其责"
-        },
-        {
-          "label": "C",
-          "text": "曾某有权要求该超市退还其购买酸奶所付的价款"
-        },
-        {
-          "label": "D",
-          "text": "曾某有权要求该超市赔偿8 0 0元医疗费，并增加赔偿8 0 0元"
-        }
-      ],
-      "source": {
-        "nativeId": "2014年客观题#一#67",
-        "path": "真题库/客观题/2014年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "曾某在某超市以80元购买酸奶数盒，食用后全家上吐下泻，为此支付医疗费800元。事后发现，其所购的酸奶在出售时已超过保质期，曾某遂要求超市赔偿。对此，下列哪些判断是正确的 ?",
-      "subjectId": "xingfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2014"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2014
-    },
-    {
-      "answer": [
-        "A",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "破坏社会主义市场经济秩序罪",
-      "chapterConfidence": "high",
-      "chapterOfficial": "破坏社会主义市场经济秩序罪",
-      "difficulty": null,
-      "explanation": "《宪法》第15条规定：国家实行社会主义市场经济，故 A 项说法正确。《宪法》第16条规定：国有企业在法律规定的范围内有权自主经营。国有企业依照法律规定，通过职工代表大会和其他形式，实行民主管理，故 B 项错误。国有企业不在政府的安排下，应当政企分开。《宪法》第8条规定，农村集体经济组织实行家庭承包经营为基础、统分结合的双层经营体制。不是所有的集体经济都适用，故 C 项说法错误。《宪法》第10条规定，任何组织或者个人不得侵占、买卖或者以其他形式非法转让土地。土地的使用权可以依照法律的规定转让，故 D 项说法正确。本题答案为 A、D。",
-      "id": "law:fakao-app:2014年客观题#一#95",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "国家实行社会主义市场经济"
-        },
-        {
-          "label": "B",
-          "text": "国有企业在法律规定范围内和政府统一安排下，开展管理经营"
-        },
-        {
-          "label": "C",
-          "text": "集体经济组织实行家庭承包经营为基础、统分结合的双层经营体制"
-        },
-        {
-          "label": "D",
-          "text": "土地的使用权可以依照法律的规定转让"
-        }
-      ],
-      "source": {
-        "nativeId": "2014年客观题#一#95",
-        "path": "真题库/客观题/2014年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "根据《宪法》规定，关于我国基本经济制度的说法，下列选项正确的是：",
-      "subjectId": "xingfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2014"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2014
-    },
-    {
-      "answer": [
         "D"
       ],
       "answerText": null,
       "chapter": "犯罪构成",
-      "chapterConfidence": "low",
+      "chapterConfidence": "high",
       "chapterOfficial": "犯罪构成",
       "difficulty": null,
       "explanation": "近年来，在一些地方，医患矛盾突出，医患关系紧张。在出现医疗纠纷时，患者当然有权维护自己的合法权益，但维权也应通过正当途径进行，而不能通过起哄闹事，扰乱社会公共秩序的方式进行，否则，如果以违法的方式，甚至犯罪的方式进行所谓的 “维权”,就会侵犯到他人的合法权益，侵犯到社会公共利益，作为司法机关，当然要严厉打击，如果构成犯罪，当然也要依法从严惩处，这是执法为民与服务大局理念的基本要求。 A 项正确。\n根据《刑法》第293条的规定，在公共场所起哄闹事，只有在造成公共场所秩序严重混乱的，方构成寻衅滋事罪。如果虽然有起哄闹事行为，但对公共秩序并没有造成严重混乱的，则不能认定为寻衅滋事罪，这是罪刑法定原则及刑法谦抑性的体现。 B 项正确。\n如果甲母的死亡确系医院救治不力所致，则医院存在重大过错，甲的行为情有可原，在不足以认定其行为达到“造成医院秩序严重混乱的程度”的情况下，则不能轻易认定甲构成寻衅滋事罪。 C 项正确。\n根据《刑法》第72条第2款的规定，宣告缓刑，法院可以根据犯罪情况，对犯罪分子宣告禁止令。但禁止令的内容，应当充分考虑与犯罪分子所犯罪行的关联程度，不能影响犯罪分子的基本生活需要。 D 项中， “法院可同时发布禁止令”的说法是正确的，但“禁止甲1年内出入医疗机构”的说法就是错误的，因为在甲生病时，也有到医院就医的权利，法院不能剥夺其到医院就医的正当权利。\n综上，本题答案为D 项。",
@@ -30294,54 +31145,6 @@
     },
     {
       "answer": [
-        "A"
-      ],
-      "answerText": null,
-      "chapter": "罪刑各论概说",
-      "chapterConfidence": "low",
-      "chapterOfficial": "罪刑各论概说",
-      "difficulty": null,
-      "explanation": "《唐律疏议 ·名例律》规定：“诸断罪而无正条，其应出罪者，则举重以明轻；其应入罪者，则举轻以明重。”即对律文无明文规定的同类案件，凡应\n减轻处罚的，则列举重罪处罚规定，比照以解决轻案；凡应加重处罚的罪案，则列举轻罪处罚规定，比照以解决重案。如唐律疏议举例说，谋杀尊亲处斩，但无已伤已杀重罪的条文，在处理已杀已伤尊亲的案件时，通过类推就可以知道更应处以斩刑。又举例说，夜半闯入人家，主人出于防卫，登时杀死闯入者，不论罪。律文没有致伤的条文，但比照规定，杀死已不论罪，致伤更不论罪。唐代类推原则的完善反映了当时立法技术的发达。据此，A 正确，B 选项错误。根据《唐律》规定，谋杀殴打尊亲属的行为属于十恶不赦当中的恶逆，对于十恶不赦所列罪名，因其危害统治阶级根本利益，故应当判决死刑且不得赦免。因此，C、D 选项均错误。",
-      "id": "law:fakao-app:2015年客观题#一#17",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "按“诸断罪而无正条，其应入罪者，则举轻以明重”,应处斩刑"
-        },
-        {
-          "label": "B",
-          "text": "按“诸断罪而无正条，其应出罪者，则举重以明轻”,应处绞刑"
-        },
-        {
-          "label": "C",
-          "text": "致伤未死，应处流三千里"
-        },
-        {
-          "label": "D",
-          "text": "属于“十恶”犯罪中的“不孝”行为，应处极刑"
-        }
-      ],
-      "source": {
-        "nativeId": "2015年客观题#一#17",
-        "path": "真题库/客观题/2015年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "唐永徽年间，甲由祖父乙抚养成人。甲好赌欠债，多次索要乙一祖传玉坠未果，起意杀乙。某日，甲趁乙熟睡，以木棒狠击乙头部，以为致死 (后被救活),遂夺玉坠逃走。唐律规定，谋杀尊亲处斩，但无致伤如何处理的规定。对甲应当实行下列哪一处罚?",
-      "subjectId": "xingfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2015"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2015
-    },
-    {
-      "answer": [
         "C"
       ],
       "answerText": null,
@@ -30569,6 +31372,102 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "下列哪一行为应以危险驾驶罪论处?",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2015"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2015
+    },
+    {
+      "answer": [
+        "A"
+      ],
+      "answerText": null,
+      "chapter": "破坏社会主义市场经济秩序罪",
+      "chapterConfidence": "low",
+      "chapterOfficial": "破坏社会主义市场经济秩序罪",
+      "difficulty": null,
+      "explanation": "乙全家外出数月，邻居甲主动帮乙照看房屋。此时，乙家的财物依然在乙的占有之下，而不在甲的占有之下，甲未经乙的同意，将乙家门口的石狮当作自己的财物卖给他人，对乙而言成立盗窃罪，而非侵占罪。至于甲对购买者是否成立诈骗罪，关键看购买者是否存在财产的损失。如果认为购买者能够取得石狮的所有权，则购买者没有损失，甲对购买者不成立诈骗罪，仅对乙成立盗窃罪；如果认为购买者不能取得石狮的所有权，则购买者存在财产损失，甲对购买者成立诈骗罪，同时对乙成立盗窃罪，即甲同时触犯诈骗罪与盗窃罪。综上分析，无论购买者是否存在财产损失，甲对乙都成立盗窃罪。所以，B、C、D项说法正确， A 项说法错误。",
+      "id": "law:fakao-app:2015年客观题#二#18",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲同时触犯侵占罪与诈骗罪"
+        },
+        {
+          "label": "B",
+          "text": "如认为购买者无财产损失，则甲仅触犯盗窃罪"
+        },
+        {
+          "label": "C",
+          "text": "如认为购买者有财产损失，则甲同时触犯盗窃罪与诈骗罪"
+        },
+        {
+          "label": "D",
+          "text": "不管购买者是否存在财产损失，甲都触犯盗窃罪"
+        }
+      ],
+      "source": {
+        "nativeId": "2015年客观题#二#18",
+        "path": "真题库/客观题/2015年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "乙全家外出数月，邻居甲主动帮乙照看房屋。某日，甲谎称乙家门口的一对石狮为自家所有，将石狮卖给外地人，得款1万元据为己有。 关于甲的行为定性，下列哪一选项是错误的?",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2015"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2015
+    },
+    {
+      "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "破坏社会主义市场经济秩序罪",
+      "chapterConfidence": "low",
+      "chapterOfficial": "破坏社会主义市场经济秩序罪",
+      "difficulty": null,
+      "explanation": "根据社会的一般生活观念，即使刘某不在旁边，小区路旁长条桌上的蔬菜及铁盒内的钱财，均在刘某的占有之下，甲未经刘某同意，以公开手段，将刘某占有的财物转移为自己占有，构成盗窃罪。需要特别说明的是，小区理发店的店员出于好奇心，虽然经常出来查看是否有人偷菜，但蔬菜不属于理发店店员占有。D 项正确，B 项错误。\n抢夺罪是指以非法占有为目的，直接夺取他人“紧密占有”的数额较大的公私财物的行为。按照这种观点，由于抢夺的对象是他人紧密占有之物(比如肩背、手提等),所以，实施抢夺行为时，具有致人伤亡的可能性。本案中，蔬菜虽然在刘某的占有之下，但并不属于刘某紧密占有之物，甲拿走蔬菜，也没有致人伤亡的可能性，所以，不构成抢夺罪，故A 项错误。\n成立诈骗罪，被骗人必须要基于错误认识处分财物。在本案中，刘某显然并没有陷入错误认识将蔬菜处分给甲的意思，所以，甲不构成诈骗罪，故C 项错误。",
+      "id": "law:fakao-app:2015年客观题#二#19",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲乘人不备，公然拿走刘某所有的蔬菜，构成抢夺罪"
+        },
+        {
+          "label": "B",
+          "text": "蔬菜为经常出来查看的店员占有，甲构成盗窃罪"
+        },
+        {
+          "label": "C",
+          "text": "甲假装放钱而实际未放钱，属诈骗行为，构成诈骗罪"
+        },
+        {
+          "label": "D",
+          "text": "刘某虽距现场3公里，但仍占有蔬菜，甲构成盗窃罪"
+        }
+      ],
+      "source": {
+        "nativeId": "2015年客观题#二#19",
+        "path": "真题库/客观题/2015年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "菜贩刘某将蔬菜装入袋中，放在居民小区路旁长条桌上，写明“每袋20元，请将钱放在铁盒内”。然后，刘某去3公里外的市场卖菜。小区理发店的店员经常好奇地出来看看是否有人偷菜。甲数次公开拿走蔬菜时假装往铁盒里放钱。关于甲的行为定性(不考虑数额),下列哪一选项是正确的 ?",
       "subjectId": "xingfa",
       "tags": [
         "fakao-app",
@@ -30875,102 +31774,6 @@
       "type": "indefinite_choice",
       "typeRaw": "不定项选择题",
       "year": 2015
-    },
-    {
-      "answer": [
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "共同犯罪",
-      "chapterConfidence": "low",
-      "chapterOfficial": "共同犯罪",
-      "difficulty": null,
-      "explanation": "法人的分类包括两种，即中国法人分类和外国法人分类。首先，中国法人分类，以法人是否营利为目的，分为企业法人(营利性)和非企业法人(公益性)。其中，非企业法人又分为机关法人、事业单位法人和社会团体法人三类。本题中的基金会法人在中国法人分类中属于典型的社会团体法人。其次，外国法人分类，以法人的设立基础不同，分为社团法人和财\n团法人；以法人的设立目的不同，分为营利法人和公益法人。其中，社团法人既可以是营利法人亦可以是公益法人；但财团法人只能是公益法人。本题中的基金会法人在外国法人分类中属于典型的财团法人和公益法人。据此可知，不管在中国法人分类中抑或在外国法人分类中，基金会法人均是公益法人。根据财团法人的基本原理，财团法人的本质是财产的集合而非人的集合，即只有钱而没有人。因此，财团法人只有管理机关而没有意思机关。据此可知，甲在捐资后，捐资的财产则与甲及其家庭成员无关，甲及其家庭成员均不得干涉该基金会的决策，故 A 、C项错误，不当选。根据国务院民政部颁布的《基金会管理条例》第21条第1款的规定，理事会是基金会的决策机构，依法行使章程规定的职权。同时，该条第3款规定，下列重要事项的决议，须经出席理事表决，2/3以上通过方为有效：(一) 章程的修改；据此可知，作为理事长的乙不得单独决定修改章程，故 B 项错误，不当选。",
-      "id": "law:fakao-app:2015年客观题#三#1",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "甲作出决定即可，因甲是创始人和出资人"
-        },
-        {
-          "label": "B",
-          "text": "乙作出决定即可，因乙是法定代表人"
-        },
-        {
-          "label": "C",
-          "text": "应由甲的家庭成员共同决定，因甲是用家庭共有财产捐资的"
-        },
-        {
-          "label": "D",
-          "text": "应由基金会法人按照程序申请，经过上级主管部门批准"
-        }
-      ],
-      "source": {
-        "nativeId": "2015年客观题#三#1",
-        "path": "真题库/客观题/2015年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲以自己的名义，用家庭共有财产捐资设立以资助治疗麻风病为目的的基金会法人，由乙任理事长。后因对该病的防治工作卓有成效使其几乎绝迹，为实现基金会的公益性，现欲改变宗旨和目的。下列哪一选项是正确的?",
-      "subjectId": "xingfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2015"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2015
-    },
-    {
-      "answer": [
-        "A"
-      ],
-      "answerText": null,
-      "chapter": "犯罪排除事由",
-      "chapterConfidence": "low",
-      "chapterOfficial": "犯罪排除事由",
-      "difficulty": null,
-      "explanation": "认定经营者具有市场支配地位要考\n虑该经营者在相关市场的市场份额，以及相关市场的竞争状况。因此反垄断机构执法时应界定该公司所涉相关市场，故A 项正确。\n根据《反垄断法》第18条规定，认定经营者需具有市场支配地位需要考虑多种因素，故B 项错误。根据《反垄断法》第17条第1款第5项规定，禁止具有市场支配地位的经营者没有正当理由搭售商品，或者在交易时附加其他不合理的交易条件。可见，“正当理由” 是阻却行为违法性的事由，而上游企业收取预付款，不能成为该公司转嫁经营成本的正当事由。该公司行为违法，故C、D项错误。",
-      "id": "law:fakao-app:2016年客观题#一#28",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "反垄断机构执法时应界定该公司所涉相关市场"
-        },
-        {
-          "label": "B",
-          "text": "只要该公司在当地独家经营，就能认定其具有市场支配地位"
-        },
-        {
-          "label": "C",
-          "text": "如该公司的上游气源企业向其收取预付款，该公司就可向客户收取“预付气费款”"
-        },
-        {
-          "label": "D",
-          "text": "县政府规定了“ 一个地域只能有一家燃气"
-        }
-      ],
-      "source": {
-        "nativeId": "2016年客观题#一#28",
-        "path": "真题库/客观题/2016年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "某燃气公司在办理燃气入户前，要求用户缴纳一笔“预付气费款”,否则不予供气。待不再用气时，用户可申请返还该款项。经查，该款项在用户日常购气中不能冲抵燃气费。根据《反垄断法》的规定，下列哪一说法是正确的?",
-      "subjectId": "xingfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2016"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2016
     },
     {
       "answer": [
@@ -31410,6 +32213,57 @@
     },
     {
       "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "共同犯罪",
+      "chapterConfidence": "high",
+      "chapterOfficial": "共同犯罪",
+      "difficulty": null,
+      "explanation": "A 选项，公立高校普通任课老师不属于国家工作人员，但其受学校委派开展招生工作属于公务活动. 甲的行为成立受贿罪。 A 正确。B  选项，无论是国有医院还是非国有医院的医生“开单提成”行为，均应按非国家工作人员受贿罪论处。主要理由是医生的处方行为不具有公务的性质。《全国法院审理经济犯罪案件工作座谈会纪要》规定：“从事公务，是指代表国家机关、国有公司、企业事业单位、人民团体等履行组织、领导、监督、管理等职责。公务主要表现为与职权相联系的公共事务以及监督、管理国有财产的职务活动。如国家机关工作人员依法履行职责，国有公司的董事、经理、监事、会计、出纳人员等管理、监督国有财产等活动，属于从事公务。那些不具备职权内容的劳务活动、技术服务工作，如售货员、售票员等所从事的工作，一般不认为是公务。”医生的处方行为虽然是一种职务行为，但不具有从事公务的性质，因而不符合受贿罪的主体特征 · 应当按非国家工作人员受贿论处。B 正确。C 选项，村委会主任不属于国家工作人员，其在村集体企业招投标过程中收受贿赂的行为构成非国家工作人员受贿罪。 C 正确。 D 选项. 国有公司临时工不属于国家工作人员，但按照共同犯罪理论其与副总经理构成受贿罪的共同犯罪。 D 正确。",
+      "id": "law:fakao-app:2016年客观题#二#62",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲是公立高校普通任课教师，在学校委派其招生时，利用职务便利收受考生家长10万元。甲成立受贿罪"
+        },
+        {
+          "label": "B",
+          "text": "乙是国有医院副院长，收受医药代表10万元，承诺为病人开处方时多开相关药品。乙成立非国家工作人员受贿罪"
+        },
+        {
+          "label": "C",
+          "text": "丙是村委会主任，在村集体企业招投标过程中，利用职务收受他人财物10万元，为其谋利。丙成立非国家工作人员受贿罪"
+        },
+        {
+          "label": "D",
+          "text": "丁为国有公司临时工，与本公司办理采购业务的副总经理相勾结，收受10万元回扣归二人所有。丁构成受贿罪"
+        }
+      ],
+      "source": {
+        "nativeId": "2016年客观题#二#62",
+        "path": "真题库/客观题/2016年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "关于贿赂犯罪的认定，下列哪些选项是正确的?",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2016"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2016
+    },
+    {
+      "answer": [
         "C",
         "D"
       ],
@@ -31610,7 +32464,7 @@
       ],
       "answerText": null,
       "chapter": "犯罪构成",
-      "chapterConfidence": "low",
+      "chapterConfidence": "high",
       "chapterOfficial": "犯罪构成",
       "difficulty": null,
       "explanation": "串通投标罪是指投标者相互串通投标报价，损害招标人或者其他投标人利益，或者投标者与招标者串通投标，损害国家、集体、公民的合法权益，情节严重的行为。本案中，甲与程某串通投标，属于投标者与招标者串通投标，但并未损害国家、集体、公民的合法权益，且不属于情节严重。因此不构成串通投标罪。A 正确。甲教唆程某与他人串通投标，同时对整个投标行为进行了具体安排，构成串通投标罪的实行犯而非教唆犯。 B 错误。程某向甲赠送仿制古董的行为，因仿制古董价值未达到行贿罪起刑点，不构成犯罪。C 错误。甲有受贿的主观故意，实施了受贿行为，但客观上收受的贿赂价值未达到受贿罪起刑点，甲的行为不构成受贿罪。 D 错误。",
@@ -31641,6 +32495,57 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "关于事实二的分析，下列选项正确的是：",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2016"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2016
+    },
+    {
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "犯罪构成",
+      "chapterConfidence": "high",
+      "chapterOfficial": "犯罪构成",
+      "difficulty": null,
+      "explanation": "甲因公务垫付费用5万元，由于票据超期无法报销，甲实际为公司支出了5万元。甲虽指使程某虚构劳务合同并虚开发票，但其主观上\n并没有非法占有公共财物的非法目的，既不构成贪污罪也不构成诈骗罪。 A、B错误。程某协助甲实施欺骗行为，由于甲不构成犯罪，程某自然也不能构成贪污罪的帮助犯，不再另外成立诈骗罪。因此C、D 错误。",
+      "id": "law:fakao-app:2016年客观题#二#91",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲以非法手段骗取国有公司的财产，构成诈骗罪"
+        },
+        {
+          "label": "B",
+          "text": "甲具有非法占有公共财物的目的，构成贪污罪"
+        },
+        {
+          "label": "C",
+          "text": "程某协助甲对公司财务人员进行欺骗，构成诈骗罪与贪污罪的想象竞合犯"
+        },
+        {
+          "label": "D",
+          "text": "程某并非国家工作人员，但帮助国家工作"
+        }
+      ],
+      "source": {
+        "nativeId": "2016年客观题#二#91",
+        "path": "真题库/客观题/2016年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "关于事实三的分析，下列选项错误的是：",
       "subjectId": "xingfa",
       "tags": [
         "fakao-app",
@@ -31701,106 +32606,6 @@
       "type": "indefinite_choice",
       "typeRaw": "不定项选择题",
       "year": 2016
-    },
-    {
-      "answer": [
-        "B",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "单位犯罪",
-      "chapterConfidence": "low",
-      "chapterOfficial": "单位犯罪",
-      "difficulty": null,
-      "explanation": "市场环境不良是企业行贿的诱因，但不是减轻对此类犯罪处罚的理由，故 A 错误。\nB、C、D正确。",
-      "id": "law:fakao-app:2017年客观题#一#51",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "市场环境不良是企业行贿的诱因，应适当减轻对此类犯罪的处罚"
-        },
-        {
-          "label": "B",
-          "text": "应健全以公平为核心的市场法律制度，维护公平竞争的市场秩序"
-        },
-        {
-          "label": "C",
-          "text": "应加快反腐败立法，从源头上堵塞企业行贿的漏洞"
-        },
-        {
-          "label": "D",
-          "text": "必须强化对公权力的制约，核心是正确处理政府和市场的关系"
-        }
-      ],
-      "source": {
-        "nativeId": "2017年客观题#一#51",
-        "path": "真题库/客观题/2017年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "有研究表明，在实施行贿犯罪的企业中，有一部分企业是由于担心竞争对手提前行贿，自己不行贿就会“输在起跑线上”,才实施了行贿行为。对此，下列哪些说法是正确的?",
-      "subjectId": "xingfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2017"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2017
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "侵犯公民人身权利、民主权利罪",
-      "chapterConfidence": "low",
-      "chapterOfficial": "侵犯公民人身权利、民主权利罪",
-      "difficulty": null,
-      "explanation": "人民代表大会制度是我国人民行使当家做主权利、实现社会主义民主的一种形式。在各种实现社会主义民主的形式中，人民代表大会制度居于最重要的地位。但是人民代表大会制度不是实现社会主义民主的唯一形式，故 D 错误。A、B、C  正确。",
-      "id": "law:fakao-app:2017年客观题#一#92",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "国家的一切权力属于人民，这是人民代表大会制度的核心内容和根本准则"
-        },
-        {
-          "label": "B",
-          "text": "各级人大都由民主选举产生，对人民负责，受人民监督"
-        },
-        {
-          "label": "C",
-          "text": "“ 一府两院”都由人大产生，对它负责，受它监督"
-        },
-        {
-          "label": "D",
-          "text": "人民代表大会制度是实现社会主义民主的唯一形式"
-        }
-      ],
-      "source": {
-        "nativeId": "2017年客观题#一#92",
-        "path": "真题库/客观题/2017年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "人民代表大会制度是我国的根本政治制度。关于人民代表大会制度，下列表述正确的是：",
-      "subjectId": "xingfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2017"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2017
     },
     {
       "answer": [
@@ -31935,6 +32740,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "关于危害公共安全罪的认定，下列哪一选项是正确的?",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2017"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2017
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "刑罚概说",
+      "chapterConfidence": "low",
+      "chapterOfficial": "刑罚概说",
+      "difficulty": null,
+      "explanation": "票据诈骗罪中利用的金融票据主要包括银行的汇票、本票和支票。使用伪造的银行存单实施贷款诈骗的行为应成立金融凭证诈骗罪。选项 A  错误。刑法没有将单位规定为贷款诈骗罪的主体，对于为了单位利益的贷款诈骗行为，虽然不能直接处罚单位，但对于负有责任的自然人应以贷款诈骗罪论处。选项 B 正确。购买意外伤害保险后，制造自己意外受伤的假象骗取巨额保险金的行为，同时构成了保险诈骗罪与合同诈骗罪，应依照数罪并罚的规定处罚。选项 C 错误。合同诈骗罪是指以非法占有为目的，在签订、履行合同的过程中，骗取对方财物，数额较大的行为。其非法占有的目的既可以产生于签订合同时，也可以产生于履行合同的过程中。选项D 错误。",
+      "id": "law:fakao-app:2017年客观题#二#14",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "与银行工作人员相勾结，使用伪造的银行存单，骗取银行巨额存款的，只能构成票据诈骗罪，不构成金融凭证诈骗罪"
+        },
+        {
+          "label": "B",
+          "text": "单位以非法占有目的骗取银行贷款的，不能以贷款诈骗罪追究单位的刑事责任，但可以该罪追究策划人员的刑事责任"
+        },
+        {
+          "label": "C",
+          "text": "购买意外伤害保险，制造自己意外受重伤假象，骗取保险公司巨额保险金的，仅构成保险诈骗罪，不构成合同诈骗罪"
+        },
+        {
+          "label": "D",
+          "text": "签订合同时并无非法占有目的，履行合同过程中才产生非法占有目的，后收受被害人货款逃匿的，不构成合同诈骗罪"
+        }
+      ],
+      "source": {
+        "nativeId": "2017年客观题#二#14",
+        "path": "真题库/客观题/2017年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "关于诈骗犯罪的论述，下列哪一选项是正确的(不考虑数额)?",
       "subjectId": "xingfa",
       "tags": [
         "fakao-app",
@@ -33508,6 +34361,54 @@
     },
     {
       "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "犯罪构成",
+      "chapterConfidence": "high",
+      "chapterOfficial": "犯罪构成",
+      "difficulty": null,
+      "explanation": "保险诈骗罪，是指投保人、被保险人、受益人，以使自己或者第三者获取保险金为目的，\n采取虚构保险标的、保险事故或者制造保险事故等方\n法，骗取保险金，数额较大的行为。徐某、麻某不具有这一身份，因此不能构成保险诈骗罪的正犯(但若与被保险人共谋则构成保险诈骗罪的帮助犯)。 A、C 项错误。徐某、麻某通过伪造事实，使保险公司相信两人是受被保险人委托就虚假的保险事项进行理赔，并基于该错误认识向两人赔付，符合诈骗罪的犯罪构成。B 项正确。合同诈骗罪，是指以非法占有为目的，在签订、履行合同过程中，使用欺骗手段，骗取对方当事人财物，数额较大的行为。本题中徐某、麻某并不是以签订履行合同\n为名骗取财物，而是利用实际存在的他人的合同关系骗取财物，因此不构成合同诈骗罪。D 项错误。",
+      "id": "law:fakao-app:2022年客观题-回忆版#一#99",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "徐某、麻某的行为构成保险诈骗罪的间接正犯"
+        },
+        {
+          "label": "B",
+          "text": "徐某、麻某的行为成立诈骗罪"
+        },
+        {
+          "label": "C",
+          "text": "徐某、麻某的行为构成保险诈骗罪的直接正犯"
+        },
+        {
+          "label": "D",
+          "text": "徐某、麻某的行为成立合同诈骗罪"
+        }
+      ],
+      "source": {
+        "nativeId": "2022年客观题-回忆版#一#99",
+        "path": "真题库/客观题/2022年客观题-回忆版.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "被告人徐某全面负责经营某有限公司，被告 人麻某系徐某的侄子，在该公司负责前台接待和事故车辆修理等事项。2006年11月至2008年5月间，被告人徐某为谋取单位非法利益，利用客户留下的驾驶证、行驶证、身份证复印件，通过指使江某(已 判刑)或者自己开具虚假内容的事故认定书，编造未曾发生的车辆保险事故，并指使被告人麻某伪造车辆痕迹或碰撞现场，冒用被保险人的名义，先后共计80余次向某保险公司提出理赔，骗取保险金80余万 元。下列哪个说法是正确的?",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2022"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2022
+    },
+    {
+      "answer": [
         "A",
         "B",
         "C",
@@ -33555,102 +34456,6 @@
       ],
       "type": "indefinite_choice",
       "typeRaw": "不定项选择题",
-      "year": 2022
-    },
-    {
-      "answer": [
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "贪污贿赂罪",
-      "chapterConfidence": "low",
-      "chapterOfficial": "贪污贿赂罪",
-      "difficulty": null,
-      "explanation": "A 项错误，《商业银行法》第二十七条第四项规定，个人所负数额较大的债务到期未清偿的，不得担任商业银行董事，该项规定与《公司法》规定一致。王虎存在大额债务到期未清偿，且属于失信名单，自然不能担任银行董事。 B 项正确，《商业银行法》第二十七条第一项规定，因犯有贪污、贿赂、侵占财产、挪用财产罪或者破坏社会经济秩序罪，被判处刑罚，或者因犯罪被剥夺政治权利的，不得担任商业银行的董事。虽然《公司法》第一百四十六条规定，犯有前述罪行，被判处刑罚的，只要执行期满五年即满足公司法的董事任职资格，但是显然商业银行法的规定更为严格。因此，张政犯有经济犯罪，且被判处刑罚，虽然执行期已满五年，但是依然不能担保商业银行董事。 C 项错误，《商业银行法》第二十七条第二项规定，担任因经营不善破产清算的公司、企业的董事、经理，并对该公司、企业的破产负有个人责任的，不得担任商业银行的董事；虽然《公司法》第一百四十六条的规定存在三年的限制，但是在商业银行法有特别规定时，应当适用商业银行法。综上所述，D 项错误。",
-      "id": "law:fakao-app:2022年客观题-回忆版#二#14",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "王虎可以担任"
-        },
-        {
-          "label": "B",
-          "text": "张政不能担任"
-        },
-        {
-          "label": "C",
-          "text": "李遥可以担任"
-        },
-        {
-          "label": "D",
-          "text": "三人均可担任"
-        }
-      ],
-      "source": {
-        "nativeId": "2022年客观题-回忆版#二#14",
-        "path": "真题库/客观题/2022年客观题-回忆版.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "2022年平昌县拟设立平昌城商银行。在筹 备中，申请人准备了向中国银行保险监督管理委员会提交的拟聘任董事名单，包括王虎、张政、李遥等三人。经调查发现，王虎系法院认定的失信人员，尚 存在大额个人债务未能执行法院判决；张政因财产犯罪，曾在十年前被判处有期徒刑一年；李遥在2010年作为某公司董事长，为弥补公司财务缺口向银行 借贷了2000余万元的资金，最终因个人原因不能偿 还导致该公司被法院裁定破产清算。关于平昌城商银行董事的职位人选，下列哪一说法是正确的?",
-      "subjectId": "xingfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2022"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2022
-    },
-    {
-      "answer": [
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "破坏社会主义市场经济秩序罪",
-      "chapterConfidence": "low",
-      "chapterOfficial": "破坏社会主义市场经济秩序罪",
-      "difficulty": null,
-      "explanation": "《产品质量法》第十五条第四款规定，生产者、销售者对抽查检验的结果有异议的，可以自收到检验结果之日起十五日内向实施监督抽查的市场监督管理部门或者其上级市场监督管理部门申请复检，由受理复检的市场监督管理部门作出复检结论。依据该条规定，A 项正确。《产品质量法》第十八条规定，县级以上市场监督管理部门根据已经取得的违法嫌疑证据或者举报，对涉嫌违反本法规定的行为进行查处时，可以行使下列职权：(一)对当事人涉嫌从事违反本法的生产、销售活动的场所实施现场检查；(二)向当事人的法定代表人、主要负责人和其他有关人员调查、了解与涉嫌从事违反本法的生产、销售活动有关的情况；(三)查阅、复制当事人有关的合同、发票、帐簿以及其他有关资料；(四)对有根据认为不符合保障人体健康和人身、财产安全的国家标准、行业标准的产品或者有其他严重质量问题的产品，以及直接用于生产、销售该项产品的原辅材料、包装物、生产工具，予以查封或者扣押。依据该条规定，B 项错误。《产品质量法》\n第二十七条规定，产品或者其包装上的标识必须真实，并符合下列要求：(一)有产品质量检验合格证明；(二) 有中文标明的产品名称、生产厂厂名和厂址：(三)根据产品的特点和使用要求，需要标明产品规格、等级、所含主要成分的名称和含量的，用中文相应予以标明；需\n要事先让消费者知晓的，应当在外包装上标明，或者预先向消费者提供有关资料；(四)限期使用的产品，应当\n在显著位置清晰地标明生产日期和安全使用期或者失\n效日期；(五)使用不当，容易造成产品本身损坏或者可能危及人身、财产安全的产品，应当有警示标志或者中\n文警示说明。裸装的食品和其他根据产品的特点难以\n附加标识的裸装产品，可以不附加产品标识。依据该\n条规定，CD项正确。\n二、多项选择题",
-      "id": "law:fakao-app:2022年客观题-回忆版#二#50",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "生产者、销售者对抽检的结果有异议的，可以自收到检验结果之日起十五日内申请复检"
-        },
-        {
-          "label": "B",
-          "text": "县市场监督管理部门对违法行为进行查处时不得复制当事人的帐簿资料"
-        },
-        {
-          "label": "C",
-          "text": "产品或者其包装上对于可能危及人身、财产安全的产品，应当有警示标志或者中文警示说明"
-        },
-        {
-          "label": "D",
-          "text": "裸装的食品和其他根据产品的特点难以附加标识的裸装产品，可以不附加产品标识"
-        }
-      ],
-      "source": {
-        "nativeId": "2022年客观题-回忆版#二#50",
-        "path": "真题库/客观题/2022年客观题-回忆版.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "关于产品质量监督以及生产者的义务，下列哪一表述是不正确的?",
-      "subjectId": "xingfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2022"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
       "year": 2022
     },
     {
@@ -33923,6 +34728,52 @@
     {
       "answer": [],
       "answerText": null,
+      "chapter": "危害国防利益罪",
+      "chapterConfidence": "low",
+      "chapterOfficial": "危害国防利益罪",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2024年客观题-卷一-卷二-回忆版#一#28",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "股份是分红的依据,丙还未取得分红,故不成立受贿既遂"
+        },
+        {
+          "label": "B",
+          "text": "甲。乙构成行贿未遂犯。丙构成受贿中止,因为丙自动放弃持有的代持股协议"
+        },
+        {
+          "label": "C",
+          "text": "甲。乙的行贿数额与丙的受贿数额应按代持股协议的数额计算"
+        },
+        {
+          "label": "D",
+          "text": "丙要求甲代持股份并保有两份协议的行为可评价为索取贿赂"
+        }
+      ],
+      "source": {
+        "nativeId": "2024年客观题-卷一-卷二-回忆版#一#28",
+        "path": "真题库/客观题/2024年客观题-卷一-卷二-回忆版.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲与乙成立4公司。两人为谋取不正当利益送给国家工作人员丙20%的股份。丙要求甲为自己代 持股份。甲与丙签订两份代持股协议并由丙保存。三个月后丙与甲。乙发生纠纷。丙担心甲 乙两人检举 自己受贿事实。就当着甲。乙两人的面销毁了代持股协议。下面选项正确的是?",
+      "subjectId": "xingfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "year:2024",
+        "answer-missing"
+      ],
+      "type": "unknown",
+      "typeRaw": null,
+      "year": 2024
+    },
+    {
+      "answer": [],
+      "answerText": null,
       "chapter": "侵犯公民人身权利、民主权利罪",
       "chapterConfidence": "high",
       "chapterOfficial": "侵犯公民人身权利、民主权利罪",
@@ -33967,48 +34818,6 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "关于侵犯公民入身权利的犯罪。下列选项正确的是?",
-      "subjectId": "xingfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "year:2024",
-        "answer-missing"
-      ],
-      "type": "unknown",
-      "typeRaw": null,
-      "year": 2024
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "破坏社会主义市场经济秩序罪",
-      "chapterConfidence": "low",
-      "chapterOfficial": "破坏社会主义市场经济秩序罪",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2024年客观题-卷一-卷二-回忆版#二#95",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "B",
-          "text": "经调查后。可对四家公司负责人处以罚款"
-        },
-        {
-          "label": "C",
-          "text": "启动调杳前,"
-        },
-        {
-          "label": "D",
-          "text": "经调查后,可对四家公司处以罚款"
-        }
-      ],
-      "source": {
-        "nativeId": "2024年客观题-卷一-卷二-回忆版#二#95",
-        "path": "真题库/客观题/2024年客观题-卷一-卷二-回忆版.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "某省汽车工业协会负责人郭某, 召集省内四家新能源汽车公司的负责人,签订了《新能源汽车行 业维护公平市场秩序承诺书》。提出共度时艰。共谋发展。四家公司对旗下所有新能源汽车的降价幅度不 得高于5%。统计显示。四家公司在省内新能源汽车市场的占有率合计达75%。依据《反垄断法》。该省市 场监管局接到举报后。关于其针对上述行为可以采取的措施。下列说法正确的是? 经调查后,可对汽车工业协会处以罚款 第38页:",
       "subjectId": "xingfa",
       "tags": [
         "fakao-app",
@@ -34258,53 +35067,6 @@
     {
       "answer": [],
       "answerText": null,
-      "chapter": "侵犯财产罪",
-      "chapterConfidence": "low",
-      "chapterOfficial": "侵犯财产罪",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2025年客观题-卷二-回忆版#二#90",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "若甲诉请乙商场承担违约损害赔偿责任，法院应予支持"
-        },
-        {
-          "label": "B",
-          "text": "若甲诉请乙商场承担产品侵权赔偿责任，法院应予驳回"
-        },
-        {
-          "label": "C",
-          "text": "若甲诉请丙公司承担违约损害赔偿责任，法院应予驳回"
-        },
-        {
-          "label": "D",
-          "text": "若甲诉请丙公司承担产品侵权赔偿责任，法院应予支持"
-        }
-      ],
-      "source": {
-        "nativeId": "2025年客观题-卷二-回忆版#二#90",
-        "path": "真题库/客观题/2025年客观题-卷二-回忆版.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲在乙商场购买了一个丙公司生产的高压锅。一日，甲正常使用该高压锅时，因缺陷导致该高压锅爆炸，所幸除了高压锅全毁外，没有造成其他财产损害，亦未造成人身损害。对此，下列表述正确的是？",
-      "subjectId": "xingfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2025",
-        "answer-missing"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2025
-    },
-    {
-      "answer": [],
-      "answerText": null,
       "chapter": "破坏社会主义市场经济秩序罪",
       "chapterConfidence": "low",
       "chapterOfficial": "破坏社会主义市场经济秩序罪",
@@ -34320,36 +35082,6 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "伪造、变造居民身份证罪是指违反国家有关居民身份证 管理的法规，伪造、变造居民身份证的行为。李某在行 人较多的马路边询问行人是否需要身份证，然后将身份 证送何某伪造。何某伪造后再由李某交给购买者。李某 和何某有分工和协作构成了伪造、变造居民身份证的共 同犯罪。 诈骗罪是以非法占有为目的，以虚构事实或者隐瞒真相 的方法，骗取数额较大的公私财物的行为。《最高人民 法院关于审理扰乱电信市场管理秩序案件具体应用法律 问题的若干解释》第9条规定，以虚假、冒用的身份证 件办理入网手续并使用移动电话，造成电信资费损失数 额较大的，依照《刑法》第266条的规定，以诈骗罪定罪 处罚。题中李某使用伪造的居民身份证，办理了手机入 网手续，造成电信资费损失3000余元，其行为符合该解 释的规定，故构成诈骗罪。 根据《刑法》第267条第2款规定，携带凶器抢夺的，依 照抢劫罪处理。李某携带三角刮刀进行抢夺，构成抢劫 罪。 李某妨害赵某履行公务，并将赵某刺成重伤，系想象竞 合犯，应从一重罪即按故意伤害罪处理。李某携带凶器 抢夺，已经构成抢劫罪，因此，不存在由抢夺罪转化为 抢劫罪的问题。 李某使用信用卡进行恶意透支，并且数额较大，构成信 用卡诈骗罪。信用卡诈骗罪是指以非法占有为目的，利 用信用卡进行诈骗活动，骗取数额较大的财物的行为。 信用卡诈骗罪客观方面表现为：(1)使用伪造的信用卡； (2)使用作废的信用卡；(3)冒用他人信用卡；(4)恶意透支 。",
-      "subjectId": "xingfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "subjective",
-        "year:2002",
-        "answer-unmatched"
-      ],
-      "type": "comprehensive",
-      "typeRaw": "(本题10分)",
-      "year": 2002
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "侵犯公民人身权利、民主权利罪",
-      "chapterConfidence": "low",
-      "chapterOfficial": "侵犯公民人身权利、民主权利罪",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2002年主观题卷四#subj#12",
-      "knowledgePoints": [],
-      "options": [],
-      "source": {
-        "nativeId": "2002年主观题卷四#subj#12",
-        "path": "真题库/主观题/2002年主观题卷四.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "陈某夺取摩托车的行为构成紧急避险。紧急避险是指为 了使国家、公共利益、本人或者他人的人身、财产和其 他权利免受正在发生的危险，不得已给另一较小合法权 益造成损害的行为。题中陈某因揭发他人违法行为，而 被两名加害人报复砍伤，在逃跑的过程中迫不得已为了 保护自己的人身权利，夺用丁的摩托车逃走，虽损害了 他人合法权益，但保全了较大的合法利益，符合紧急避 险的构成要件。 ˜v^ \\X[USnc:Nò] gïS/fH–Ðgv^ N能实际占有20000元。 陈某使用伪造的身份证将20000元取出的行为构成诈骗罪 。诈骗罪是以非法占有为目的，以虚构事实或者隐瞒真 相的方法，骗取数额较大的公私财物的行为。其中，伪 造身份证的犯罪行为和诈骗罪属于牵连犯，按从一重罪 处罚的原则，对陈某只定为诈骗罪。 陈某将摩托车故意推下山崖的行为构成故意毁坏财物罪 。故意毁坏财物罪是指故意毁坏公私财物，数额较大或 者有其严重情节的行为。题中陈某故意将丁的摩托车推 下山崖致其毁损的因而构成故意毁损财物罪。",
       "subjectId": "xingfa",
       "tags": [
         "fakao-app",
@@ -34396,36 +35128,6 @@
       "answer": [],
       "answerText": null,
       "chapter": "共同犯罪",
-      "chapterConfidence": "low",
-      "chapterOfficial": "共同犯罪",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2003年主观题卷四#subj#1",
-      "knowledgePoints": [],
-      "options": [],
-      "source": {
-        "nativeId": "2003年主观题卷四#subj#1",
-        "path": "真题库/主观题/2003年主观题卷四.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "t1uÒb gYO0H–Ðg后来觉得甲年纪小、太可怜，便放甲返回家乡 。陈某找到张某要求退回6000元钱。张某拒绝退还，陈 某便于深夜将张某的一辆价值4000元的摩托车骑走。 问题：请根据上述案情，分析张某、郭某、陈某的 刑事责任。",
-      "subjectId": "xingfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "subjective",
-        "year:2003",
-        "answer-unmatched"
-      ],
-      "type": "comprehensive",
-      "typeRaw": "（本题9分）",
-      "year": 2003
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "共同犯罪",
       "chapterConfidence": "high",
       "chapterOfficial": "共同犯罪",
       "difficulty": null,
@@ -34451,36 +35153,6 @@
       "type": "comprehensive",
       "typeRaw": "（本题9分）",
       "year": 2003
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "犯罪未完成形态",
-      "chapterConfidence": "high",
-      "chapterOfficial": "犯罪未完成形态",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2004年主观题卷四#subj#14",
-      "knowledgePoints": [],
-      "options": [],
-      "source": {
-        "nativeId": "2004年主观题卷四#subj#14",
-        "path": "真题库/主观题/2004年主观题卷四.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "（一）关于甲和乙的行为 1. 甲、乙构成抢劫罪共犯。因二人有抢劫的共同故意和抢 劫的共同行为。甲、乙的抢劫属于入户抢劫，因为丙的 房间属于其生活的与外界相对隔离的住所；由于乙与甲 共谋入户，甲事实上也实施了入户抢劫行为，所以乙虽 没有入户，对乙也应适用入户抢劫的法定刑。 综合本案主客观方面的事实，可以认定甲为主犯，乙为 从犯，对于从犯乙应当从轻、减轻或者免除处罚。 2. 甲、乙虽构成抢劫罪共犯，但二人的犯罪形态不同： （1）甲的抢劫属于犯罪中止。因为在当时的情况下， 甲完全能够达到抢劫既遂，但他自动放弃了抢劫行为； 由于抢劫中止行为没有造成任何损害，所以，对于甲的 抢劫中止，应当免除处罚。 （2）乙的抢劫属于犯罪未遂。一方面，不能因为甲事 实上取得了手表，就认定乙抢劫既遂，因为该手表并非 甲抢劫既遂所得的财物；另一方面，乙并没有自动放弃 自己的抢劫行为，甲的中止行为对于乙来说，属于意志 以外的原因。根据刑法规定，对于未遂犯乙，可以比照 既遂犯从轻或者减轻处罚。 （二）关于甲的行为 1. 甲逼迫丙脱光衣服并猥亵丙的行为，成立强制猥亵妇女 罪。 2. 甲乘机拿走丙手表的行为，成立盗窃罪。因为拿走手表 的行为完全符合盗窃罪的构成要件。拿走手表已不属于 抢劫罪中的强取财物的行为，即不属于因暴力、胁迫或 其他方法压制或足以压制了被害人反抗而取得手表的情 形。所以，不能将取得手表的事实评价在抢劫罪中，而 应另认定为盗窃罪。 （三）关于乙的行为 1. 乙的行为不成立盗窃罪。乙客观上为甲盗窃手表起到了 一定作用（望风），但乙并不明知甲会盗窃财物，所以 ，乙并不与甲构成盗窃罪的共犯。 2. 基于同样的理由，乙的行为也不成立强制猥亵妇女罪的 共犯。 ir„vLˆ:Nv^ N2uqQ irv^ a 物罪。",
-      "subjectId": "xingfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "subjective",
-        "year:2004",
-        "answer-unmatched"
-      ],
-      "type": "comprehensive",
-      "typeRaw": "（本题25分）",
-      "year": 2004
     },
     {
       "answer": [],
@@ -34511,36 +35183,6 @@
       "type": "comprehensive",
       "typeRaw": "（本题15分）",
       "year": 2005
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "共同犯罪",
-      "chapterConfidence": "high",
-      "chapterOfficial": "共同犯罪",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2007年主观题卷四#subj#2",
-      "knowledgePoints": [],
-      "options": [],
-      "source": {
-        "nativeId": "2007年主观题卷四#subj#2",
-        "path": "真题库/主观题/2007年主观题卷四.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "案情：陈某见熟人赵某做生意赚了不少钱便产生歹 意，勾结高某，谎称赵某欠自已10万元货款未还，请高 某协助索要，并承诺要回款项后给高某1万元作为酬谢 。高某同意。某日，陈某和高某以谈生意为 Lˆ NlQíV¤NÙ~H–Ðg0H–Ðg c>mØšÐg0RlQíVÖS±”0NgÐg来到约定地点，见来人不认识 ，就不肯把钱交给高某。高某威胁李某说：\"赵某已被 我们扣押，不把钱给我，我们就把赵某给杀了\"。李某 不得已将10万元现金交给高某。高某回到宾馆房间，发 现陈某不在，赵某倒在窗前已经断气。见此情形，高某 到公安机关投案，并协助司法机关将陈某抓获归案。事 后查明，赵某因爬窗逃跑被陈某用木棒猛击脑部，致赵 某身亡。 问题： 1．陈某将赵某扣押向其索要10万元的行为构成何种 犯罪？为什么？ 2．高某将赵某扣押向其索要10万元的行为构成何种 犯罪？为什么？ 3．陈某与高某是否构成共同犯罪？为什么？ 4．高某在公园取得李某10万元的行为是否另行构成 敲诈勒索罪？为什么？ 5．陈某对赵某的死亡，应当如何承担刑事责任？ 为什么？ 6．高某对赵某的死亡后果是否承担 HYPERLINK 7．高某的投案行为是否成立自首与立功？为什么 ？",
-      "subjectId": "xingfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "subjective",
-        "year:2007",
-        "answer-unmatched"
-      ],
-      "type": "comprehensive",
-      "typeRaw": "（本题22分）",
-      "year": 2007
     },
     {
       "answer": [],
@@ -34630,36 +35272,6 @@
       ],
       "type": "comprehensive",
       "typeRaw": "参考答案：",
-      "year": 2008
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "妨害社会管理秩序罪",
-      "chapterConfidence": "high",
-      "chapterOfficial": "妨害社会管理秩序罪",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2008年主观题卷四#subj#14",
-      "knowledgePoints": [],
-      "options": [],
-      "source": {
-        "nativeId": "2008年主观题卷四#subj#14",
-        "path": "真题库/主观题/2008年主观题卷四.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "为了自由，我们应作法律的奴仆 \\jv`GP]lKN Lˆ:N1\\ NÅN O)RÊvƒ[ NÍy应为法律禁止甚至惩罚的违法行为。 Œte„v†˜ßWÕl‹_ Yr^„˜06q€Å_{˜b¤‹„v°sž[/føˆJ€$\\vQ/f gP„vøˆJ€Lˆ:N tÊSQÜ~’ZSO„veP·^ÑSU\\&^eg†NqS³[0ôf:N%NÍ‘„v/f1uŽNQ Ü~通讯的隐秘性和传播性，裸聊行为还会引发其他的违 法活动，比如网络淫秽图片的传播，利用裸体照片进行 的欺骗和敲诈等等。这些情况表明，对于网络行为，该 允许的应当允许，但如果某些行为超出了自由的限度， 伤害了他人和社会，则必须接受法律的规制。 当然，法律对于自由的限制，应以宪法为依据，以 正当程序和人权保障为原则。考虑到网络技术的特殊性 ，对于裸聊等网络违法行为，国家应尽量先通过行政处 罚的手段加以约束，只有在该行为具有严重社会危害性 的情况下，而且在不挑衅“罪刑法定原则”的情况下， 才可以运用刑罚的手段加以惩处。 古罗马思想家西塞罗曾说：“为了自由，我们应作 法律的奴仆”，自由是有限度的，公民只有服从法律， 才有自由和权利可言，这句话，对于走向法治的中国社 会，应当具有积极的启发意义。（李红勃） 参考范文2： 同样“裸聊”，不同结果 N*NPg™e-N _ÐgøˆJ€ N7h„vøˆJ€ N7h„vÓ~œg其差别的关键在于刑法中一个重要原则— —罪刑法定原则。 Å_{˜ cgqÕl‹_Äš[eg$Re€ NÅNÅN/f b¯rj„vÕl‹_ag‡e_N N^\\ŽNëmýyáOo` (uàVdk RÕl第362条、367条的规定，应认定为方某构成传播淫秽 物品牟利罪。 罪刑法定原则是法治主义在刑法中的直接体现，是 法治社会与专制社会中刑法的根本分野所在。其反对罪 刑擅断和刑事类推，不仅对保护社会安宁有重要作用， 对保障人权具有更重大的意义。对于类似裸聊的新生事 物，可以通过行政处罚、规范网络秩序等其他手段进行 管理，并进一步完善法制。不能一味追求严刑厉法，否 则只能得不偿失。 2008年国家司法考试试卷四参考答案",
-      "subjectId": "xingfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "subjective",
-        "year:2008",
-        "answer-unmatched"
-      ],
-      "type": "comprehensive",
-      "typeRaw": "参考范文1：",
       "year": 2008
     },
     {

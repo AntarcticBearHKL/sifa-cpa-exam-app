@@ -453,7 +453,7 @@ fn best_two<'a, T>(
     let mut best: Option<(&T, f64)> = None;
     let mut second = f64::NEG_INFINITY;
     for (item, value) in scores {
-        if best.map_or(true, |(_, current)| value > current) {
+        if best.is_none_or(|(_, current)| value > current) {
             if let Some((_, current)) = best {
                 second = second.max(current);
             }
@@ -553,16 +553,16 @@ fn contains_either_way(query: &str, title: &str) -> bool {
         && (query == title || query.contains(title) || title.contains(query))
 }
 
-fn longest_match<'a>(
-    chapters: &'a [ChapterNode],
+fn longest_match(
+    chapters: &[ChapterNode],
     matches: impl Fn(&ChapterNode) -> bool,
-) -> Option<&'a ChapterNode> {
+) -> Option<&ChapterNode> {
     let mut best: Option<&ChapterNode> = None;
     for chapter in chapters {
         if !matches(chapter) {
             continue;
         }
-        if best.map_or(true, |current| chapter.key.chars().count() > current.key.chars().count()) {
+        if best.is_none_or(|current| chapter.key.chars().count() > current.key.chars().count()) {
             best = Some(chapter);
         }
     }
@@ -608,7 +608,7 @@ fn tier3<'a>(subject: &'a SubjectNode, features: &Features) -> Option<&'a Chapte
             key == &chapter.key || key.contains(&chapter.key)
         });
         if let Some(candidate) = candidate {
-            if best.map_or(true, |current| candidate.key.chars().count() > current.key.chars().count())
+            if best.is_none_or(|current| candidate.key.chars().count() > current.key.chars().count())
             {
                 best = Some(candidate);
             }
@@ -692,6 +692,71 @@ fn decide<'a>(
     }
 }
 
+/// Integer year from the free-form `year` JSON value, when it is one.
+fn year_of(value: &Value) -> Option<i64> {
+    value
+        .as_i64()
+        .or_else(|| value.as_str().and_then(|text| text.trim().parse::<i64>().ok()))
+}
+
+/// The subjects an official exam paper can hold, when the source label names
+/// one. `None` means "no constraint".
+///
+/// Both exams divide their objective papers by subject, so a paper label is a
+/// reliable constraint on the subject — and the only signal that can separate
+/// textually similar subjects such as 刑事诉讼法 / 民事诉讼法. 法考 (2018–) uses
+/// the taxonomy's own 卷一 / 卷二 stages; 司考 (≤2017) is fixed by that exam's
+/// structure (卷一 综合, 卷二 刑事与行政, 卷三 民商事; 卷四 is 主观题, so it is
+/// left unconstrained). Only consulted when the source `subjectId` is not an
+/// official one.
+fn paper_candidates<'a>(
+    cpa: bool,
+    year: Option<i64>,
+    chapter: &str,
+    nodes: &'a [SubjectNode],
+) -> Option<Vec<&'a SubjectNode>> {
+    if cpa {
+        return None;
+    }
+    let year = year?;
+    let chapter = chapter.trim();
+    if year >= 2018 {
+        let stage = match chapter {
+            "试卷一" => "卷一",
+            "试卷二" => "卷二",
+            _ => return None,
+        };
+        let picked: Vec<&SubjectNode> =
+            nodes.iter().filter(|node| node.group == stage).collect();
+        return (!picked.is_empty()).then_some(picked);
+    }
+    let ids: &[&str] = match chapter {
+        // 司考 卷一: 综合知识 (法理学/法制史/宪法/经济法(含劳动·环境)/国际法三科/司法制度).
+        "试卷一" => &[
+            "falixue",
+            "zhongguo-falvshi",
+            "xianfa",
+            "jingjifa",
+            "laodongshebao",
+            "huanjingziyuanfa",
+            "guojifa",
+            "guojisifa",
+            "guojijingjifa",
+            "sifa-zhidu",
+        ],
+        // 司考 卷二: 刑事与行政法律制度.
+        "试卷二" => &["xingfa", "xingsufa", "xingzhengfa"],
+        // 司考 卷三: 民商事法律制度 (民法/商法/民诉/知识产权).
+        "试卷三" => &["minfa", "zhishichanquanfa", "shangfa", "minsufa"],
+        _ => return None,
+    };
+    let picked: Vec<&SubjectNode> = nodes
+        .iter()
+        .filter(|node| ids.contains(&node.id.as_str()))
+        .collect();
+    (!picked.is_empty()).then_some(picked)
+}
+
 fn classify(
     question: &Question,
     nodes: &[SubjectNode],
@@ -706,11 +771,20 @@ fn classify(
     let (subject, subject_ambiguous) = match nodes.iter().find(|node| node.id == existing) {
         Some(node) => (node, false),
         None => {
-            let (best, second) = best_two(
-                nodes
-                    .iter()
-                    .map(|node| (node, node.scorer.score(&features.text_grams))),
-            );
+            let candidates =
+                paper_candidates(cpa, year_of(&question.year), &features.chapter, nodes);
+            let (best, second) = match &candidates {
+                Some(candidates) => best_two(
+                    candidates
+                        .iter()
+                        .map(|node| (*node, node.scorer.score(&features.text_grams))),
+                ),
+                None => best_two(
+                    nodes
+                        .iter()
+                        .map(|node| (node, node.scorer.score(&features.text_grams))),
+                ),
+            };
             match best {
                 Some((node, value)) if value >= SUBJECT_MIN => {
                     (node, is_ambiguous(value, second))
@@ -1740,6 +1814,80 @@ mod tests {
     }
 
     #[test]
+    fn paper_candidates_are_era_aware() {
+        fn ids_of(picked: &[&SubjectNode]) -> Vec<String> {
+            picked.iter().map(|node| node.id.clone()).collect()
+        }
+        let nodes = build_nodes(&taxonomy());
+        // 司考 (≤2017): 试卷二 is 刑事与行政.
+        assert_eq!(
+            ids_of(&paper_candidates(false, Some(2002), "试卷二", &nodes).unwrap()),
+            vec!["xingfa"]
+        );
+        // 法考 (≥2018): 试卷一 is the taxonomy's 卷一, 试卷二 its 卷二.
+        assert_eq!(
+            ids_of(&paper_candidates(false, Some(2022), "试卷一", &nodes).unwrap()),
+            vec!["xingfa"]
+        );
+        assert_eq!(
+            ids_of(&paper_candidates(false, Some(2022), "试卷二", &nodes).unwrap()),
+            vec!["minfa"]
+        );
+        // no year, unknown label, or cpa -> no constraint.
+        assert!(paper_candidates(false, None, "试卷二", &nodes).is_none());
+        assert!(paper_candidates(false, Some(2002), "犯罪构成", &nodes).is_none());
+        assert!(paper_candidates(false, Some(2002), "试卷四", &nodes).is_none());
+        assert!(paper_candidates(true, Some(2002), "试卷二", &nodes).is_none());
+    }
+
+    #[test]
+    fn a_paper_label_overrides_a_wrong_text_match() {
+        // 卷二 holds 民法; 卷一 holds 刑法.
+        let taxa = Taxonomy {
+            exam: "law".into(),
+            edition: "2026".into(),
+            stages: vec![
+                Stage {
+                    name: "卷一".into(),
+                    subjects: vec![subject(
+                        "xingfa",
+                        "刑法",
+                        vec![chapter("犯罪构成", &["犯罪构成要件"])],
+                    )],
+                },
+                Stage {
+                    name: "卷二".into(),
+                    subjects: vec![subject(
+                        "minfa",
+                        "民法",
+                        vec![
+                            chapter("民法概述", &["民法的调整对象"]),
+                            chapter("物权", &["所有权的取得"]),
+                            chapter("合同", &["合同的订立"]),
+                            chapter("侵权责任", &["侵权责任的构成"]),
+                        ],
+                    )],
+                },
+            ],
+        };
+        let nodes = build_nodes(&taxa);
+        let stem = "民法概述 民法的调整对象 所有权的取得 合同的订立 侵权责任的构成 犯罪构成要件";
+        // control: no paper label -> free-text similarity picks 民法.
+        let mut free = question(stem, None, None);
+        free.subject_id = Some("unknown".into());
+        let free_features = features(&free, &HashMap::new());
+        let (control, _) = classify(&free, &nodes, false, &free_features);
+        assert_eq!(control.subject_id, "minfa");
+        // the same text filed under 2002 试卷二 (刑事与行政) must stay in that paper.
+        let mut filed = question(stem, None, Some("试卷二"));
+        filed.subject_id = Some("unknown".into());
+        filed.year = json!(2002);
+        let filed_features = features(&filed, &HashMap::new());
+        let (assignment, _) = classify(&filed, &nodes, false, &filed_features);
+        assert_eq!(assignment.subject_id, "xingfa");
+    }
+
+    #[test]
     fn dump_scores_for_tuning() {
         let Ok(taxonomy_path) = std::env::var("CLASSIFY_TRACE_TAX") else {
             return;
@@ -1762,11 +1910,20 @@ mod tests {
                 let (subject, subject_ambiguous) = match official {
                     Some(node) => (node, false),
                     None => {
-                        let (best, second) = best_two(
-                            nodes
-                                .iter()
-                                .map(|node| (node, node.scorer.score(&features.text_grams))),
-                        );
+                        let candidates =
+                            paper_candidates(false, year_of(&item.year), &features.chapter, &nodes);
+                        let (best, second) = match &candidates {
+                            Some(candidates) => best_two(
+                                candidates
+                                    .iter()
+                                    .map(|node| (*node, node.scorer.score(&features.text_grams))),
+                            ),
+                            None => best_two(
+                                nodes
+                                    .iter()
+                                    .map(|node| (node, node.scorer.score(&features.text_grams))),
+                            ),
+                        };
                         match best {
                             Some((node, value)) if value >= SUBJECT_MIN => {
                                 (node, is_ambiguous(value, second))

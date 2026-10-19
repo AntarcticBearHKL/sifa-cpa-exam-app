@@ -1307,6 +1307,107 @@
     },
     {
       "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "隋唐宋元时期的法律思想与制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "隋唐宋元时期的法律思想与制度",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2002年客观题卷一#一#63",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "德国甲公司与法国乙公司依照《中华人民共和"
+        },
+        {
+          "label": "B",
+          "text": "美国甲公司与我国乙公司依照《中华人民共和"
+        },
+        {
+          "label": "C",
+          "text": "日本国甲公司与意大利国乙公司及中国丁公司"
+        },
+        {
+          "label": "D",
+          "text": "中国甲公司与新加坡乙公司签订的在中国境内"
+        }
+      ],
+      "source": {
+        "nativeId": "2002年客观题卷一#一#63",
+        "path": "真题库/客观题/2002年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "依照我国法律的规定，下列哪些合同必须适用我国 法律?",
+      "subjectId": "zhongguo-falvshi",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2002"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2002
+    },
+    {
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "隋唐宋元时期的法律思想与制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "隋唐宋元时期的法律思想与制度",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2002年客观题卷一#一#73",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "限制受让方自由选择从不同来源购买材料及零"
+        },
+        {
+          "label": "B",
+          "text": "限制受让方从其他来源获得类似技术"
+        },
+        {
+          "label": "C",
+          "text": "双方改进技术的条件不对等"
+        },
+        {
+          "label": "D",
+          "text": "禁止受让方在合同期满后继续使用引进的技术"
+        }
+      ],
+      "source": {
+        "nativeId": "2002年客观题卷一#一#73",
+        "path": "真题库/客观题/2002年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "依我国法律，在技术贸易中，技术的供方不得强迫 受让方接受不合理的限制性要求。下列哪些内容属于未 经审批机关特殊批准，合同中不得含有的限制性条款?",
+      "subjectId": "zhongguo-falvshi",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2002"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2002
+    },
+    {
+      "answer": [
         "D"
       ],
       "answerText": null,
@@ -1443,6 +1544,46 @@
     },
     {
       "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "隋唐宋元时期的法律思想与制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "隋唐宋元时期的法律思想与制度",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2003年客观题卷一#一#23",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "美国法                          B.英国法"
+        },
+        {
+          "label": "C",
+          "text": "中国法                          D.印度法"
+        }
+      ],
+      "source": {
+        "nativeId": "2003年客观题卷一#一#23",
+        "path": "真题库/客观题/2003年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "美国人马丁和英国人安娜夫妇是来华工作的外国专家 。来华之前，两人长期在印度工作，并在那里有惯常居 所。在中国工作期间，马丁向我国人民法院提起离婚的 诉讼请求。对于马丁和安娜的离婚纠纷，我国法院应该 适用下列哪一国法律加以解决？",
+      "subjectId": "zhongguo-falvshi",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2003"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2003
+    },
+    {
+      "answer": [
         "A",
         "B",
         "D"
@@ -1493,8 +1634,9 @@
     },
     {
       "answer": [
-        "A",
-        "C"
+        "B",
+        "C",
+        "D"
       ],
       "answerText": null,
       "chapter": "中华民国时期的法律思想与制度",
@@ -1502,33 +1644,82 @@
       "chapterOfficial": "中华民国时期的法律思想与制度",
       "difficulty": null,
       "explanation": "",
-      "id": "law:fakao-app:2003年客观题卷二#二#70",
+      "id": "law:fakao-app:2003年客观题卷一#一#36",
       "knowledgePoints": [],
       "options": [
         {
           "label": "A",
-          "text": "《实施办法》超越了《种子法》的规定，无效"
+          "text": "会审公廨是１８６４年清廷与欧洲列强协议建立的"
         },
         {
           "label": "B",
-          "text": "《实施办法》没有超越《种子法》的规定，有效"
+          "text": "在会审公廨中，凡涉及外国人案件，必须有领事官员"
         },
         {
           "label": "C",
-          "text": "国务院若认为《实施办法》超越了《种子法》的规定"
+          "text": "在会审公廨中，凡中国人与外国人间诉讼案，由本国"
         },
         {
           "label": "D",
-          "text": "受处罚人不服处罚申请行政复议的同时，可以对《实"
+          "text": "会审公廨设在租界内"
         }
       ],
       "source": {
-        "nativeId": "2003年客观题卷二#二#70",
-        "path": "真题库/客观题/2003年客观题卷二.md",
+        "nativeId": "2003年客观题卷一#一#36",
+        "path": "真题库/客观题/2003年客观题卷一.md",
         "repo": "fakao-app",
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
-      "stem": "我国《种子法》规定，违法经营、推广应当审定而未 经审定通过的种子的，可处以1万元以上5万元以下罚款 。某省人民政府在其制定的《某省种子法实施办法》中 规定，违法经营、推广应当审定而未经审定通过的种子 的，可处以3万元以上5万元以下罚款。下列说法哪些是 正确的？",
+      "stem": "清末外国在华领事裁判权制度中设有一种特殊的审判 机构，即“会审公廨”。下列关于这一机构的表述哪些 是正确的？",
+      "subjectId": "zhongguo-falvshi",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2003"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2003
+    },
+    {
+      "answer": [
+        "A",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2003年客观题卷一#一#65",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "中国公司直接向有管辖权的瑞士法院申请承认和执行"
+        },
+        {
+          "label": "B",
+          "text": "中国公司向国际法院申请承认和执行"
+        },
+        {
+          "label": "C",
+          "text": "由人民法院依照我国缔结或者参加的国际条约的规定"
+        },
+        {
+          "label": "D",
+          "text": "由人民法院直接采取强制措施执行"
+        }
+      ],
+      "source": {
+        "nativeId": "2003年客观题卷一#一#65",
+        "path": "真题库/客观题/2003年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "中国法院就一家中国公司和一家瑞士公司之间的技术 转让纠纷作出判决。判决发生效力后，瑞士公司拒不执 行法院判决，而且该公司在中国既无办事机构、分支机 构和代理机构，也无财产。关于该判决的承认和执行， 下列选项中的哪些表述是正确的？",
       "subjectId": "zhongguo-falvshi",
       "tags": [
         "fakao-app",
@@ -2029,102 +2220,6 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "下列关于中国古代法制思想和法律制度的说法，哪 些是正确的？",
-      "subjectId": "zhongguo-falvshi",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2005"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2005
-    },
-    {
-      "answer": [
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "中华民国时期的法律思想与制度",
-      "chapterConfidence": "low",
-      "chapterOfficial": "中华民国时期的法律思想与制度",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2005年客观题卷二#二#40",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "某区人民政府必须在受理李某和张某的申请之日起20"
-        },
-        {
-          "label": "B",
-          "text": "某区人民政府按照张某和李某申请的先后顺序作出批"
-        },
-        {
-          "label": "C",
-          "text": "李某有权对某区人民政府批准张某申请的行为提起行"
-        },
-        {
-          "label": "D",
-          "text": "A幼儿园有权对某区人民政府批准再建幼儿园的决定提"
-        }
-      ],
-      "source": {
-        "nativeId": "2005年客观题卷二#二#40",
-        "path": "真题库/客观题/2005年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "一小区已建有A幼儿园，为满足需要，某区人民政府 拟在该小区内再建一所幼儿园。张某和李某先后向某区 人民政府提出申请，张某获批准。下列哪一种说法是正 确的？",
-      "subjectId": "zhongguo-falvshi",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2005"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2005
-    },
-    {
-      "answer": [
-        "A"
-      ],
-      "answerText": null,
-      "chapter": "中华民国时期的法律思想与制度",
-      "chapterConfidence": "low",
-      "chapterOfficial": "中华民国时期的法律思想与制度",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2005年客观题卷二#二#44",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "住户对甲省人民政府征用土地的批复不服，应当先申"
-        },
-        {
-          "label": "B",
-          "text": "住户可以对乙市人民政府征用补偿决定提起诉讼"
-        },
-        {
-          "label": "C",
-          "text": "住户可以对乙市规划建设局授予丁公司拆迁许可证的"
-        },
-        {
-          "label": "D",
-          "text": "住户可以请求甲省人民政府撤销乙市规划建设局授予"
-        }
-      ],
-      "source": {
-        "nativeId": "2005年客观题卷二#二#44",
-        "path": "真题库/客观题/2005年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲省乙市人民政府决定征用乙市某村全部土地用于 建设，甲省人民政府作出了批准乙市在该村征用土地的 批复。其后，乙市规划建设局授予丁公司拆迁许可证， 决定拆除该村一组住户的房屋。一组住户不服，欲请求 救济。下列哪一种说法不正确？",
       "subjectId": "zhongguo-falvshi",
       "tags": [
         "fakao-app",
@@ -2833,6 +2928,100 @@
       "chapterOfficial": "新民主主义革命时期民主政权法制",
       "difficulty": null,
       "explanation": "",
+      "id": "law:fakao-app:2008年客观题卷一#一#36",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "朗文的主张构成对我国法院就同一案件实体问"
+        },
+        {
+          "label": "B",
+          "text": "我国法院对戴某的起诉没有管辖权"
+        },
+        {
+          "label": "C",
+          "text": "我国法院对涉外民事诉讼案件的管辖权不受任"
+        },
+        {
+          "label": "D",
+          "text": "我国法院可以受理戴某的起诉"
+        }
+      ],
+      "source": {
+        "nativeId": "2008年客观题卷一#一#36",
+        "path": "真题库/客观题/2008年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "朗文与戴某缔结了一个在甲国和中国履行的合 同。履约过程中发生争议，朗文向甲国法院起诉戴某并 获得胜诉判决。戴某败诉后就同一案件向我国法院提起 诉讼。朗文以该案件已经甲国法院判决生效为由对中国 法院提出管辖权异议。依据我国法律、司法解释以及我 国缔结的相关条约，下列哪一选项是正确的？",
+      "subjectId": "zhongguo-falvshi",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2008",
+        "answer-missing"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2008
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": null,
+      "chapterConfidence": "none",
+      "chapterOfficial": null,
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2008年客观题卷一#一#39",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "尊重普拉克的这一请求，使用其本国的语言进"
+        },
+        {
+          "label": "B",
+          "text": "驳回普拉克的这一请求，使用中文进行案件的"
+        },
+        {
+          "label": "C",
+          "text": "驳回普拉克的这一请求，以中文进行案件的审"
+        },
+        {
+          "label": "D",
+          "text": "驳回普拉克的这一请求，使用中文进行案件的"
+        }
+      ],
+      "source": {
+        "nativeId": "2008年客观题卷一#一#39",
+        "path": "真题库/客观题/2008年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "普拉克是外国公民，在一起由中国法院审理的 涉外侵权案件中为原告。普拉克请求使用其本国语言进 行诉讼。关于中国法院对该请求的处理，下列哪一选项 是正确的？",
+      "subjectId": "zhongguo-falvshi",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2008",
+        "answer-missing"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2008
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": "新民主主义革命时期民主政权法制",
+      "chapterConfidence": "low",
+      "chapterOfficial": "新民主主义革命时期民主政权法制",
+      "difficulty": null,
+      "explanation": "",
       "id": "law:fakao-app:2008年客观题卷一#一#47",
       "knowledgePoints": [],
       "options": [
@@ -3156,6 +3345,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "关于德国法律制度，下列哪一表述是正确的？",
+      "subjectId": "zhongguo-falvshi",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2009"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2009
+    },
+    {
+      "answer": [
+        "A"
+      ],
+      "answerText": null,
+      "chapter": "隋唐宋元时期的法律思想与制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "隋唐宋元时期的法律思想与制度",
+      "difficulty": null,
+      "explanation": "本题考查人民法院的组织与制度。\nA 项：此项是对专门人民法院的定义，说法正确。\nB 项：军事法院的基层法院应设在军级，此项错。\nC 项：海事法院判决和裁定的上诉案件应当由海事法院所在地的高级人民法院管辖，此\n项错。\nD 项：铁路运输法院、森林法院都分基层、中级两级，此项错。",
+      "id": "law:fakao-app:2009年客观题-卷一#一#18",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "专门人民法院是设在特定部门或针对特定案件而设立，受理与设立部门相关的专业性"
+        },
+        {
+          "label": "B",
+          "text": "军事法院负责审判军事人员犯罪的刑事案件，军事法院的基层法院设在师级"
+        },
+        {
+          "label": "C",
+          "text": "海事法院判决和裁定的上诉案件，由最高法院管辖"
+        },
+        {
+          "label": "D",
+          "text": "铁路运输法院、森林法院只设基层法院"
+        }
+      ],
+      "source": {
+        "nativeId": "2009年客观题-卷一#一#18",
+        "path": "真题库/客观题/2009年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "关于专门人民法院，下列哪一选项是正确的？",
       "subjectId": "zhongguo-falvshi",
       "tags": [
         "fakao-app",
@@ -3759,6 +3996,55 @@
     },
     {
       "answer": [
+        "B",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "中华民国时期的法律思想与制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "中华民国时期的法律思想与制度",
+      "difficulty": null,
+      "explanation": "A 选项，《村民委员会组织法》第二十一条第一款规定，村民会议由本村十八周岁以上\n的村民组成。该条规定并没有排除被剥夺政治权利的人参加村民会议的资格，因此，被剥夺\n政治权利的村民也可以参加村民会议。A 项错误。\nB 选项，《村民委员会组织法》第五条第一款规定，乡、民族乡、镇的人民政府对村民\n委员会的工作给予指导、支持和帮助，但是不得干预依法属于村民自治范围内的事项。B 项\n正确。\nC 选项，《村民委员会组织法》第十六条第二款规定，罢免村民委员会成员，须有登记\n参加选举的村民过半数投票，并须经投票的村民过半数通过。C 项错误。\nD 选项，《村民委员会组织法》第三十五条第一款规定，村民委员会成员实行任期和离\n任经济责任审计。D 项正确。",
+      "id": "law:fakao-app:2011年客观题-卷一#一#38",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "村民会议由本村 18 周岁以上，没有被剥夺政治权利的村民组成"
+        },
+        {
+          "label": "B",
+          "text": "乡、民族乡、镇的人民政府不得干预依法属于村民自治范围内的事项"
+        },
+        {
+          "label": "C",
+          "text": "罢免村民委员会成员，须经参加投票的村民过半数通过"
+        },
+        {
+          "label": "D",
+          "text": "村民委员会成员实行任期和离任经济责任审计"
+        }
+      ],
+      "source": {
+        "nativeId": "2011年客观题-卷一#一#38",
+        "path": "真题库/客观题/2011年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据《宪法》和《村民委员会组织法》的规定，下列哪些选项是正确的？",
+      "subjectId": "zhongguo-falvshi",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2011"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2011
+    },
+    {
+      "answer": [
         "B"
       ],
       "answerText": null,
@@ -3906,97 +4192,48 @@
         "C"
       ],
       "answerText": null,
-      "chapter": "秦汉至魏晋南北朝时期的法律思想与制度",
-      "chapterConfidence": "high",
-      "chapterOfficial": "秦汉至魏晋南北朝时期的法律思想与制度",
+      "chapter": "新民主主义革命时期民主政权法制",
+      "chapterConfidence": "low",
+      "chapterOfficial": "新民主主义革命时期民主政权法制",
       "difficulty": null,
-      "explanation": "A 项正确。秦国商鞅变法全面贯彻法家“以法治国”和“明法重刑”的主张，主张“轻\n罪重刑，重罪不来”、“不赦不宥，凡有罪者皆应受罚”，大大加重量刑幅度，并运用法律\n手段推行富国强兵措施。故 A 项正确。\nB 项正确。文帝十三年，齐太仓令获罪当施黥刑，其小女缇萦上书请求将自己没官为\n奴，替父赎罪，并指出肉刑制度断绝犯人自新之路的严重问题。文帝为之所动，开始刑罚改\n革，下令废除肉刑。故 B 项正确。\nC 项错误。南北朝时期，北魏规定鞭刑和杖刑，北朝、南朝相继宣布废除宫刑。并非 C\n项所说“唐代废除宫刑，创设鞭刑和杖刑”。\nD 项正确。清廷于 1911 年 1 月 25 日正式公布《大清新刑律》。虽然《大清新刑律》仍\n保持着旧律维护专制制度和封建伦理的传统，但它抛弃了旧律诸法合体的编纂形式，以罪名\n和刑罚等专属刑法范畴的条文作为法典的惟一内容;在体例上抛弃了旧律的结构形式，将法典\n分为总则和分则两篇，后附《暂行章程》5 条;确立了新刑罚制度，规定刑罚分主刑、从刑;采\n用了一些近代西方资产阶级的刑法原则和刑法制度，如罪刑法定原则和缓刑制度等。故 D 项\n正确。",
-      "id": "law:fakao-app:2011年客观题-卷二#二#19",
+      "explanation": "A 项错误。《春秋》决狱是汉代的司法制度，是指依据儒家经典《春秋》等著作的精神\n原则来审判案件，本题中并未根据著作精神进行断案，A 项不符合题意。\nB 项错误。“听讼”即听理诉讼，在古代主要是指审理民事案件，而“断狱”主要就是\n指审理刑事案件，本题是刑事案件，B 项不符合题意。\nC 项正确。“据状断之”是指对于那些人赃俱获，却没有拷讯获得口供，或者拷讯后仍\n拒不认罪的，也可“据状断之”，即根据证据定罪。本案是通过证据确凿而进行定罪，C 项\n符合题意。\nD 项错误。九卿会审是明朝的一种诉讼制度，是由六部尚书及都察院左都御使、大理寺\n卿、通政使司的通政使九人会审皇帝交付的案件或已判决但囚犯仍翻供不服之案，可知，D\n项不符合题意。",
+      "id": "law:fakao-app:2012年客观题-卷一#一#17",
       "knowledgePoints": [],
       "options": [
         {
           "label": "A",
-          "text": "秦国商鞅实施变法改革，全面贯彻法家“明法重刑”的主张，加大量刑幅度，对轻罪"
+          "text": "《春秋》决狱"
         },
         {
           "label": "B",
-          "text": "西汉文帝为齐太仓令之女缇萦请求将自己没官为奴、替父赎罪的行为所动，下令废除"
+          "text": "“听讼”、“断狱”"
         },
         {
           "label": "C",
-          "text": "唐代废除了宫刑制度，创设了鞭刑和杖刑，以宽减刑罚，缓解社会矛盾"
+          "text": "“据状断之”"
         },
         {
           "label": "D",
-          "text": "《大清新刑律》抛弃了旧律诸法合体的编纂形式，采用了罪刑法定原则，规定刑罚分"
+          "text": "九卿会审"
         }
       ],
       "source": {
-        "nativeId": "2011年客观题-卷二#二#19",
-        "path": "真题库/客观题/2011年客观题-卷二.md",
+        "nativeId": "2012年客观题-卷一#一#17",
+        "path": "真题库/客观题/2012年客观题-卷一.md",
         "repo": "fakao-app",
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
-      "stem": "中国历史上曾进行多次法制变革以适应社会的发展。关于这些法制变革的表述，下 列哪一选项是错误的？",
+      "stem": "《折狱龟鉴》载一案例：张泳尚书镇蜀日，因出过委巷，闻人哭，惧而不哀，遂使 讯之。云：“夫暴卒。”乃付吏穷治。吏往熟视，略不见其要害。而妻教吏搜顶发，当有 验。乃往视之，果有大钉陷其脑中。吏喜，辄矜妻能，悉以告泳。泳使呼出，厚加赏方，问 所知之由，并令鞫其事，盖尝害夫，亦用此谋。发棺视尸，其钉尚在，遂与哭妇俱刑于市。 关于本案，张泳运用了下列哪一断案方法？",
       "subjectId": "zhongguo-falvshi",
       "tags": [
         "fakao-app",
         "md-真题",
         "section:单项选择题",
-        "year:2011"
+        "year:2012"
       ],
       "type": "single_choice",
       "typeRaw": "单项选择题",
-      "year": 2011
-    },
-    {
-      "answer": [
-        "A",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "中华民国时期的法律思想与制度",
-      "chapterConfidence": "low",
-      "chapterOfficial": "中华民国时期的法律思想与制度",
-      "difficulty": null,
-      "explanation": "本题考查地方行政机构编制管理。\nA 选项，《地方各级人民政府机构设置和编制管理条例》第八条第一款规定，地方各级\n人民政府行政机构应当根据履行职责的需要，适时调整。但是，在一届政府任期内，地方各\n级人民政府的工作部门应当保持相对稳定。A 项正确。\nB 选项，《地方政府机构设置和编制条例》第五条规定，县级以上各级人民政府机构编\n制管理机关应当按照管理权限履行管理职责，并对下级机构编制工作进行业务指导和监督。\n因此，上级编制管理机关对下级编制管理机关是业务指导和监督的关系，非上下级领导关\n系。B 项错误。\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\nC 选项，《地方政府机构设置和编制条例》第十六条规定，地方各级人民政府的行政编\n制总额，由省、自治区、直辖市人民政府提出，经国务院机构编制管理机关审核后，报国务\n院批准。因此，只需要由省级政府将本省各级政府行政编制的总额报请国务院批准。C 项错\n误。\nD 选项，《地方政府机构设置和编制条例》第十八条规定，地方各级人民政府根据调整\n职责的需要，可以在行政编制总额内调整本级人民政府有关部门的行政编制。但是，在同一\n个行政区域不同层级之间调配使用行政编制的，应当由省、自治区、直辖市人民政府机构编\n制管理机关报国务院机构编制管理机关审批。因此 D 项正确。",
-      "id": "law:fakao-app:2011年客观题-卷二#二#98",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "在一届政府任期内，甲市政府的工作部门应保持相对稳定"
-        },
-        {
-          "label": "B",
-          "text": "乙省机构编制管理机关与甲市机构编制管理机关为上下级领导关系"
-        },
-        {
-          "label": "C",
-          "text": "甲市政府的行政编制总额，由甲市政府提出，报乙省政府批准"
-        },
-        {
-          "label": "D",
-          "text": "甲市政府根据调整职责的需要，可以在行政编制总额内调整市政府有关部门的行政编"
-        }
-      ],
-      "source": {
-        "nativeId": "2011年客观题-卷二#二#98",
-        "path": "真题库/客观题/2011年客观题-卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲市为乙省政府所在地的市。关于甲市政府行政机构设置和编制管理，下列说法正 确的是",
-      "subjectId": "zhongguo-falvshi",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2011"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2011
+      "year": 2012
     },
     {
       "answer": [
@@ -4160,6 +4397,57 @@
     },
     {
       "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "新民主主义革命时期民主政权法制",
+      "chapterConfidence": "low",
+      "chapterOfficial": "新民主主义革命时期民主政权法制",
+      "difficulty": null,
+      "explanation": "A 项考查引渡中的双重犯罪原则。《引渡法》第七条规定，“外国向中华人民共和国提\n出的引渡请求必须同时符合下列条件，才能准予引渡：（一）引渡请求所指的行为，依照中\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n华人民共和国法律和请求国法律均构成犯罪；”因此，A 项正确。\nB 项考查中国可以拒绝引渡的情形。《引渡法》第九条规定，“外国向中华人民共和国\n提出的引渡请求，有下列情形之一的，可以拒绝引渡：（一）中华人民共和国对于引渡请求\n所指的犯罪具有刑事管辖权，并且对被请求引渡人正在进行刑事诉讼或者准备提起刑事诉讼\n的；（二）由于被请求引渡人的年龄、健康等原因，根据人道主义原则不宜引渡的。”因\n此，B 项正确。\nC 项和 D 项考查中国应当拒绝引渡的情形。《引渡法》第八条规定，“外国向中华人民\n共和国提出的引渡请求，有下列情形之一的，应当拒绝引渡：（一）根据中华人民共和国法\n律，被请求引渡人具有中华人民共和国国籍的；（二）在收到引渡请求时，中华人民共和国\n的司法机关对于引渡请求所指的犯罪已经作出生效判决，或者已经终止刑事诉讼程序的；\n（三）因政治犯罪而请求引渡的，或者中华人民共和国已经给予被请求引渡人受庇护权利\n的；（四）被请求引渡人可能因其种族、宗教、国籍、性别、政治见解或者身份等方面的原\n因而被提起刑事诉讼或者执行刑罚，或者被请求引渡人在司法程序中可能由于上述原因受到\n不公正待遇的；（五）根据中华人民共和国或者请求国法律，引渡请求所指的犯罪纯属军事\n犯罪的；（六）根据中华人民共和国或者请求国法律，在收到引渡请求时，由于犯罪已过追\n诉时效期限或者被请求引渡人已被赦免等原因，不应当追究被请求引渡人的刑事责任的；\n（七）被请求引渡人在请求国曾经遭受或者可能遭受酷刑或者其他残忍、不人道或者有辱人\n格的待遇或者处罚的；（八）请求国根据缺席判决提出引渡请求的。但请求国承诺在引渡后\n对被请求引渡人给予在其出庭的情况下进行重新审判机会的除外。”不管是根据中国法律，\n还是根据请求国甲国法律，引渡请求所指的犯罪纯属军事犯罪的，中国都应当拒绝引渡。因\n此，C 项和 D 项都正确。",
+      "id": "law:fakao-app:2013年客观题-卷一#一#97",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲国引渡请求所指的行为依照中国法律和甲国法律均构成犯罪，是中国准予引渡的条"
+        },
+        {
+          "label": "B",
+          "text": "由于库克健康原因，根据人道主义原则不宜引渡，中国可以拒绝引渡"
+        },
+        {
+          "label": "C",
+          "text": "根据中国法律，引渡请求所指的犯罪纯属军事犯罪的，中国应当拒绝引渡"
+        },
+        {
+          "label": "D",
+          "text": "根据甲国法律，引渡请求所指的犯罪纯属军事犯罪的，中国应当拒绝引渡"
+        }
+      ],
+      "source": {
+        "nativeId": "2013年客观题-卷一#一#97",
+        "path": "真题库/客观题/2013年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲国公民库克被甲国刑事追诉，现在中国居留，甲国向中国请求引渡库克，中国和 甲国间无引渡条约。关于引渡事项，下列选项正确的是：",
+      "subjectId": "zhongguo-falvshi",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2013"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2013
+    },
+    {
+      "answer": [
         "B"
       ],
       "answerText": null,
@@ -4243,6 +4531,102 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "根据《宪法》和法律的规定，关于特别行政 区，下列哪一选项是正确的?",
+      "subjectId": "zhongguo-falvshi",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2014"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2014
+    },
+    {
+      "answer": [
+        "A"
+      ],
+      "answerText": null,
+      "chapter": "中华民国时期的法律思想与制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "中华民国时期的法律思想与制度",
+      "difficulty": null,
+      "explanation": "根据《村民委员会组织法》第3条的规定，村民委员会的设立、撤销、范围调整，由乡、民族乡、镇的人民政府提出，经村民会议讨论同意，报县级人民政府批准。据此，A 选项正确。\n征地补偿费用的使用和分配方案属于涉及全体村民重大利益的事项，应由村民会议讨论决定，无须报乡镇政府批准。据此，B 选项错误。\n根据《城市居民委员会组织法》第15条的规定，居民公约由居民会议讨论制定，报不设区的市、市辖区的人民政府或者它的派出机关备案，由居民委员会监督执行。据此，居民公约只需报不设区的市、市辖区或者它的派出机关备案即可，无须批准。据此，C  选项错误。\n根据《城市居民委员会组织法》第6条的规定，居民委员会的设立、撤销、规模调整，由不设区的市、市辖\n区的人民政府决定。据此，D 选项错误。",
+      "id": "law:fakao-app:2014年客观题#一#25",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "村民委员会的设立、撤销，由乡镇政府提出，经村民会议讨论同意，报县级政府批准"
+        },
+        {
+          "label": "B",
+          "text": "有关征地补偿费用的使用和分配方案，经村民会议讨论通过后，报乡镇政府批准"
+        },
+        {
+          "label": "C",
+          "text": "居民公约由居民会议讨论通过后，报不设区的市、市辖区或者它的派出机关批准"
+        },
+        {
+          "label": "D",
+          "text": "居民委员会的设立、撤销，由不设区的市、市辖区政府提出，报市政府批准"
+        }
+      ],
+      "source": {
+        "nativeId": "2014年客观题#一#25",
+        "path": "真题库/客观题/2014年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据《宪法》和法律的规定，关于基层群众自治，下列哪一选项是正确的?",
+      "subjectId": "zhongguo-falvshi",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2014"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2014
+    },
+    {
+      "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "中华民国时期的法律思想与制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "中华民国时期的法律思想与制度",
+      "difficulty": null,
+      "explanation": "根据《监督法》第8条规定，各级人民代表大会常务委员会每年选择若干关系改革发展稳定大局和群众切身利益、社会普遍关注的重大问题，有计划地安排听取和审议本级人民政府、人民法院和人民检察院的专项工作报告。《监督法》第13条规定，专项工作报告由人民政府、人民法院或者人民检察院的负责人向本级人民代表大会常务委员会报告，人民政府也可以委托有关部门负责人向本级人民代表大会常务委员会报告，据此，A 选项正确。\n根据《监督法》第38条的规定，质询案以口头答复的，由受质询机关的负责人到会答复。质询案以书面答复的，由受质询机关的负责人签署。据此，B 选项正确。\nC 选项错误，根据《监督法》第42条第3款的规定，调查委员会在调查过程中，可以不公布调查的情况和材料。\n根据《监督法》第46条的规定，撤职案的表决采用无记名投票的方式，由常务委员会全体组成人员的过半数通过。据此，D 选项正确。",
+      "id": "law:fakao-app:2014年客观题#一#26",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "政府可委托有关部门负责人向本级人大常委会作专项工作报告"
+        },
+        {
+          "label": "B",
+          "text": "以口头答复的质询案，由受质询机关的负责人到会答复"
+        },
+        {
+          "label": "C",
+          "text": "特定问题调查委员会在调查过程中，应当公布调查的情况和材料"
+        },
+        {
+          "label": "D",
+          "text": "撤职案的表决采用无记名投票的方式，由常委会全体组成人员的过半数通过"
+        }
+      ],
+      "source": {
+        "nativeId": "2014年客观题#一#26",
+        "path": "真题库/客观题/2014年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据《监督法》的规定，关于监督程序，下列哪一选项是不正确的?",
       "subjectId": "zhongguo-falvshi",
       "tags": [
         "fakao-app",
@@ -4456,6 +4840,102 @@
         "D"
       ],
       "answerText": null,
+      "chapter": "中华民国时期的法律思想与制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "中华民国时期的法律思想与制度",
+      "difficulty": null,
+      "explanation": "根据《宪法》规定，我国行政区域变更的法律程序包括：(1)省、自治区、直辖市的设立、撤销、更名，特别行政区的设立 ·应由全国人大审议决定  (《宪法》第62条);(2)省、自治区、直辖市行政区域界线的变更，自治州、县、自治县、市、市辖区的设立、撤销、更名或者隶属关系的变更，自治州、自治县的行政区域界线的变更，县、市的行政区域界线的重大变更，都须经国务院审批(《宪法》第89条);(3)县、市、市辖区部分行政区域界线的变更，由国务院授权省、自治区、直辖市人民政府审批(《国务院关于行政区划管理的规定》第5条):(4)乡、民族乡、镇的设立、撤销、更名或者变更行政区域的界线，由省、自治区、直辖市人民政府审批(《宪法》第107条)。据此可知，A 项错误，甲县更名须经国务院审批；B 项错误，乙省行政区域界线的变更.须经国务院审批；C 项错误，丙镇与邻镇合并，由两镇所属的省级政府审批。 D 项正确。",
+      "id": "law:fakao-app:2015年客观题#一#23",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲县欲更名，须报该县所属的省级政府"
+        },
+        {
+          "label": "B",
+          "text": "乙省行政区域界线的变更，应由全国人大审议决定"
+        },
+        {
+          "label": "C",
+          "text": "丙镇与邻近的一个镇合并，须报两镇所属的县级政府审批"
+        },
+        {
+          "label": "D",
+          "text": "丁市部分行政区域界线的变更，由国务院授权丁市所属的省级政府审批"
+        }
+      ],
+      "source": {
+        "nativeId": "2015年客观题#一#23",
+        "path": "真题库/客观题/2015年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据《宪法》和法律法规的规定，关于我国行政区划变更的法律程序，下列哪一选项是正确的?",
+      "subjectId": "zhongguo-falvshi",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2015"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2015
+    },
+    {
+      "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "中华民国时期的法律思想与制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "中华民国时期的法律思想与制度",
+      "difficulty": null,
+      "explanation": "本题是对《不动产登记暂行条例》的考查，根据该条例第14条规定：“因买卖、设定抵押权等申请不动产登记的，应当由当事人双方共同申请。属于下列情形之一的，可以由当事人单方申请：(一)尚未登记的不动产首次申请登记的(二)继承、接受遗赠取得不动产权利的；(三)人民法院、仲裁委员会生效的法律文书或者人民政府生效的决定等设立、变更、转让、消灭不动产权利的；(四)权利人姓名、名称或者自然状况发生变化，申请变更登记的；(五)不动产灭失或者权利人放弃不动产权利，申请注销登记的；(六)申请更正登记或者异议登记的；(七)法律、行政法规规定可以由当事人单方申请的其他情形。”据上述法条可以看出，只有C 选项属于双方申请，A、B、D 分别属于单方申请中的5、2和6项。因此，本题答案选 C。",
+      "id": "law:fakao-app:2015年客观题#一#29",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "赵某放弃不动产权利，申请注销登记"
+        },
+        {
+          "label": "B",
+          "text": "钱某接受不动产遗赠，申请转移登记"
+        },
+        {
+          "label": "C",
+          "text": "孙某将房屋抵押给银行以获得贷款，申请抵押登记"
+        },
+        {
+          "label": "D",
+          "text": "李某认为登记于周某名下的房屋为自己所有，申请更正登记"
+        }
+      ],
+      "source": {
+        "nativeId": "2015年客观题#一#29",
+        "path": "真题库/客观题/2015年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "申请不动产登记时，下列哪一情形应由当事人双方共同申请?",
+      "subjectId": "zhongguo-falvshi",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2015"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2015
+    },
+    {
+      "answer": [
+        "D"
+      ],
+      "answerText": null,
       "chapter": "新民主主义革命时期民主政权法制",
       "chapterConfidence": "low",
       "chapterOfficial": "新民主主义革命时期民主政权法制",
@@ -4488,54 +4968,6 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "元代人在《唐律疏议序》中说：“乘之(指唐律)则过，除之则不及，过与不及，其失均矣。”表达了对唐律的敬畏之心。下列关于唐律的哪一表述是错误的?",
-      "subjectId": "zhongguo-falvshi",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2016"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2016
-    },
-    {
-      "answer": [
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "中华民国时期的法律思想与制度",
-      "chapterConfidence": "low",
-      "chapterOfficial": "中华民国时期的法律思想与制度",
-      "difficulty": null,
-      "explanation": "《地方各级人民政府机构设置和编制管理条例》第29条规定，地方的事业单位机构和编\n制管理办法，由省、自治区、直辖市人民政府机构编制管理机关拟定，报国务院机构编制管理机关审核后，由省、自治区、直辖市人民政府发布，故 B 项正确。选项\nA、C、D 均为干扰项。",
-      "id": "law:fakao-app:2016年客观题#二#43",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "国务院"
-        },
-        {
-          "label": "B",
-          "text": "省、自治区、直辖市人民政府"
-        },
-        {
-          "label": "C",
-          "text": "国务院机构编制管理机关"
-        },
-        {
-          "label": "D",
-          "text": "省、自治区、直辖市人民政府机构编制管理机关"
-        }
-      ],
-      "source": {
-        "nativeId": "2016年客观题#二#43",
-        "path": "真题库/客观题/2016年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "根据规定，地方的事业单位机构和编制管理办法由省、自治区、直辖市人民政府机构编制管理机关拟定，报国务院机构编制管理机关审核后，由下列哪一机关发布?",
       "subjectId": "zhongguo-falvshi",
       "tags": [
         "fakao-app",
@@ -4641,6 +5073,151 @@
       ],
       "type": "single_choice",
       "typeRaw": "单项选择题",
+      "year": 2017
+    },
+    {
+      "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "中华民国时期的法律思想与制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "中华民国时期的法律思想与制度",
+      "difficulty": null,
+      "explanation": "《香港基本法》第19条第3款规定： “香港特别行政区法院对国防、外交等国家行为无管辖权。香港特别行政区法院在审理案件中遇有涉及国防、外交等国家行为的事实问题，应取得行政长官就该等问题发出的证明文件，上述文件对法院有约束力。行政长官在发出证明文件前，须取得中央人民政府的证明书。”故 A 错误。第49条规定：“香港特别行政区\n行政长官如认为立法会通过的法案不符合香港特别行政区的整体利益，可在三个月内将法案发回立法会重议，立法会如以不少于全体议员三分之二多数再次通过原案，行政长官必须在一个月内签署公布或按本法第50条的规定处理。”第50条规定：“香港特别行政区行政长官如拒绝签署立法会再次通过的法案或立法会拒绝通过政府提出的财政预算案或其他重要法案，经协商仍不能取得一致意见，行政长官可解散立法会。行政长官在解散立法会前，须征询行政会议的意见。行政长官在其一任任期内只能解散立法会一次。”故 B  错误，题中情形，依据基本法规定，行政长官可以签署公布或者解散立法会。第95条规定：“香港特别行政区可与全国其他地区的司法机关通过协商依法进行司法方面的联系和相互提供协助。”故 C 正确。第55条规定：“香港特别行政区行政会议的成员由行政长官从行政机关的主要官员、立法会议员和社会人士中委任，其任免由行政长官决定。”故D 错误。",
+      "id": "law:fakao-app:2017年客观题#一#24",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "行政长官就法院在审理案件中涉及的国防、外交等国家行为的事实问题发出的证明文件，对法院无约束力"
+        },
+        {
+          "label": "B",
+          "text": "行政长官对立法会以不少于全体议员2/3多数再次通过的原法案，必须在1个月内签署公布"
+        },
+        {
+          "label": "C",
+          "text": "香港特别行政区可与全国其他地区的司法机关通过协商依法进行司法方面的联系和相互提供协助"
+        },
+        {
+          "label": "D",
+          "text": "行政长官仅从行政机关的主要官员和社会人士中委任行政会议的成员"
+        }
+      ],
+      "source": {
+        "nativeId": "2017年客观题#一#24",
+        "path": "真题库/客观题/2017年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据《宪法》和《香港特别行政区基本法》规定，下列哪一选项是正确的?",
+      "subjectId": "zhongguo-falvshi",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2017"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2017
+    },
+    {
+      "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "中华民国时期的法律思想与制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "中华民国时期的法律思想与制度",
+      "difficulty": null,
+      "explanation": "根据《审计法》第17条的规定，审计署在国务院总理领导下，对中央预算执行情况和其他财政收支情况进行审计监督，向国务院总理提出审计结果报告。地方各级审计机关分别在省长、自治区主席、市长、州长、县长、区长和上一级审计机关的领导下，对本级预算执行情况和其他财政收支情况进行审计监督，向本级人民政府和上一级审计机关提出审计结果报告。根据《审计法》第18条的规定，审计署对中\n央银行的财务收支，进行审计监督。审计机关对国有金融机构的资产、负债、损益，进行审计监督。因而 A、 B项说法错误，地方审计机关可以对国有金融机构进行审计监督，且不需要被审计对象的行业主管部门同意。根据《审计法》第33条第2款规定，审计机关经县级以上人民政府审计机关负责人批准，有权查询被审计单位在金融机构的账户，故C 项说法正确，事实上只需要经该县审计局局长批准即可，如果是上一级的副职领导也可以归类为负责人。 D 项说法错误，虽然该企业不是国有企业，但是由于其接受和使用了财政资金，因而属于“依法应当接受审计机关审计监督的其他单位”。",
+      "id": "law:fakao-app:2017年客观题#一#31",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "只有审计署才能对当地农业银行的财政收支情况进行审计监督"
+        },
+        {
+          "label": "B",
+          "text": "只有经银监机构同意，该县审计局才能对当地农业银行的财务收支进行审计监督"
+        },
+        {
+          "label": "C",
+          "text": "该县审计局经上一级审计局副职领导批准，有权查询当地扶贫办在银行的账户"
+        },
+        {
+          "label": "D",
+          "text": "申请财政贴息的该企业并非国有企业，故该县审计局无权对其进行审计调查"
+        }
+      ],
+      "source": {
+        "nativeId": "2017年客观题#一#31",
+        "path": "真题库/客观题/2017年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某县开展扶贫资金专项调查，对申请财政贴息贷款的企业进行核查。审计中发现某企业申请了数百万元贴息贷款，但其生产规模并不需要这么多，遂要求当地农业银行、扶贫办和该企业提供贷款记录。对此，下列哪一说法是正确的 ?",
+      "subjectId": "zhongguo-falvshi",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2017"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2017
+    },
+    {
+      "answer": [
+        "A",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "中华民国时期的法律思想与制度",
+      "chapterConfidence": "low",
+      "chapterOfficial": "中华民国时期的法律思想与制度",
+      "difficulty": null,
+      "explanation": "《出境入境管理法》第25条第2款：“对不准入境的，出入境边防检查机关可以不说明理由。”故A 正确。\n《外国人入境出境管理条例》第22条：“持学习类居留证件的外国人需要在校外勤工助学或者实习的，应当经所在学校同意后，向公安机关出入境管理机构申请居留证件加注勤工助学或者实习地点、期限等信息。持学习类居留证件的外国人所持居留证件未加注前款规定信息的，不得在校外勤工助学或者实习。”故  B 错误。\n《出境入境管理法》第39条第2款：“外国人在旅馆以外的其他住所居住或者住宿的，应当在入住后二十四小时内由本人或者留宿人，向居住地的公安机关办理登记。”故C 正确。\n《出境入境管理法》第28条：“外国人有下列情形之一的，不准出境：(一)被判处刑罚尚未执行完毕或者属于刑事案件被告人、犯罪嫌疑人的，但是按照中国与外国签订的有关协议，移管被判刑人的除外；(二)有未了结的民事案件，法院决定不准出境的；(三)拖欠劳动者的劳动报酬，经国务院有关部门或者省、自治区、直辖市人民政府决定不准出境的；(四)法律、行政法规规定不准出境的其他情形。”上述(一)、(二)涉诉情形不允许出境，其他情形须经法院或有关政府决定，故D  错误。",
+      "id": "law:fakao-app:2017年客观题#一#76",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "马萨入境中国时，如出入境边防检查机关不准其入境，可以不说明理由"
+        },
+        {
+          "label": "B",
+          "text": "如马萨留学期间发现就业机会，即可兼职工作"
+        },
+        {
+          "label": "C",
+          "text": "马萨留学期间在同学家中短期借住，应按规定向居住地的公安机关办理登记"
+        },
+        {
+          "label": "D",
+          "text": "如马萨涉诉，则不得出境"
+        }
+      ],
+      "source": {
+        "nativeId": "2017年客观题#一#76",
+        "path": "真题库/客观题/2017年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "马萨是一名来华留学的甲国公民，依中国法律规定，下列哪些选项是正确的?",
+      "subjectId": "zhongguo-falvshi",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2017"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
       "year": 2017
     },
     {
@@ -4857,147 +5434,6 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "下列关于魏晋南北朝时期法律思想与制度的说法正确的是？",
-      "subjectId": "zhongguo-falvshi",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2025",
-        "answer-missing"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2025
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "隋唐宋元时期的法律思想与制度",
-      "chapterConfidence": "low",
-      "chapterOfficial": "隋唐宋元时期的法律思想与制度",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2025年客观题-卷二-回忆版#二#17",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "如果张某和福克斯约定适用墨西哥法律，则该案的法律性质应依墨西哥法律认定"
-        },
-        {
-          "label": "B",
-          "text": "如果双方没有约定合同适用的法律，则法院应根据最密切联系原则对案件性质进行认定"
-        },
-        {
-          "label": "C",
-          "text": "如果张某和福克斯约定适用墨西哥法律，则当事人应向法院提供该法律"
-        },
-        {
-          "label": "D",
-          "text": "如果无法查明相关法律，则应适用我国和墨西哥共同参加的国际条约"
-        }
-      ],
-      "source": {
-        "nativeId": "2025年客观题-卷二-回忆版#二#17",
-        "path": "真题库/客观题/2025年客观题-卷二-回忆版.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "中国人张某与墨西哥人福克斯订立服装饰品的买卖合同，后因福克斯供货不符合合同要求，张某在中国法院起诉。关于本案的定性和法律查明，下列说法正确的是？",
-      "subjectId": "zhongguo-falvshi",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2025",
-        "answer-missing"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2025
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "新民主主义革命时期民主政权法制",
-      "chapterConfidence": "low",
-      "chapterOfficial": "新民主主义革命时期民主政权法制",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2025年客观题-卷二-回忆版#二#70",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "若英格兰法允许反致，法院应根据英格兰的冲突规范确定合同适用的法律"
-        },
-        {
-          "label": "B",
-          "text": "若应适用的英格兰法为判例法，当事人应提交相关判例的全文"
-        },
-        {
-          "label": "C",
-          "text": "若该合同涉及劳动者权益保护问题，应直接适用中国法"
-        },
-        {
-          "label": "D",
-          "text": "若乙公司向法庭提交的英格兰法是通过法律专家获得的，该法律专家应出庭接受询问"
-        }
-      ],
-      "source": {
-        "nativeId": "2025年客观题-卷二-回忆版#二#70",
-        "path": "真题库/客观题/2025年客观题-卷二-回忆版.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "法国甲公司与中国乙公司因合同纠纷诉至中国某人民法院，合同约定适用英格兰法。依中国法律及司法实践，下列哪些选项是正确的？",
-      "subjectId": "zhongguo-falvshi",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2025",
-        "answer-missing"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2025
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "中华民国时期的法律思想与制度",
-      "chapterConfidence": "low",
-      "chapterOfficial": "中华民国时期的法律思想与制度",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2025年客观题-卷二-回忆版#二#74",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "对于初步裁定确定倾销成立并由此对国内产业造成损害的，可以采取临时反倾销措施"
-        },
-        {
-          "label": "B",
-          "text": "情况紧急的，商务部自立案之日起可以先行采取临时反倾销措施"
-        },
-        {
-          "label": "C",
-          "text": "临时反倾销税的数额不得超过初步裁定确定的倾销幅度"
-        },
-        {
-          "label": "D",
-          "text": "终裁确定的反倾销税税额高于临时反倾销税的数额的，差额部分应当由纳税义务人补足"
-        }
-      ],
-      "source": {
-        "nativeId": "2025年客观题-卷二-回忆版#二#74",
-        "path": "真题库/客观题/2025年客观题-卷二-回忆版.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "根据《中华人民共和国反倾销条例》（以下简称《反倾销条例》），下列有关临时反倾销措施的陈述正确的有哪些？",
       "subjectId": "zhongguo-falvshi",
       "tags": [
         "fakao-app",

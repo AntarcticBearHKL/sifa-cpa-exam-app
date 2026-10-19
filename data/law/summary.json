@@ -1,10 +1,10 @@
 {
   "counts": {
     "knowledgePoints": 7396,
-    "questions": 52775
+    "questions": 52710
   },
   "domain": "law",
-  "generatedAt": "2026-10-17T09:20:16Z",
+  "generatedAt": "2026-10-19T08:24:16Z",
   "schemaVersion": "cmf-1.0",
   "subjects": [
     {
@@ -13,7 +13,7 @@
       "knowledgePoints": 532,
       "name": "习近平法治思想",
       "order": 1,
-      "questions": 1893
+      "questions": 1788
     },
     {
       "group": "卷一",
@@ -21,7 +21,7 @@
       "knowledgePoints": 94,
       "name": "法理学",
       "order": 2,
-      "questions": 1476
+      "questions": 1492
     },
     {
       "group": "卷一",
@@ -29,7 +29,7 @@
       "knowledgePoints": 66,
       "name": "宪法",
       "order": 3,
-      "questions": 1321
+      "questions": 1335
     },
     {
       "group": "卷一",
@@ -37,7 +37,7 @@
       "knowledgePoints": 57,
       "name": "中国法律史",
       "order": 4,
-      "questions": 681
+      "questions": 690
     },
     {
       "group": "卷一",
@@ -45,7 +45,7 @@
       "knowledgePoints": 502,
       "name": "国际法",
       "order": 5,
-      "questions": 2857
+      "questions": 2882
     },
     {
       "group": "卷一",
@@ -53,7 +53,7 @@
       "knowledgePoints": 32,
       "name": "司法制度和法律职业道德",
       "order": 6,
-      "questions": 908
+      "questions": 947
     },
     {
       "group": "卷一",
@@ -61,7 +61,7 @@
       "knowledgePoints": 909,
       "name": "刑法",
       "order": 7,
-      "questions": 6233
+      "questions": 6244
     },
     {
       "group": "卷一",
@@ -69,7 +69,7 @@
       "knowledgePoints": 712,
       "name": "刑事诉讼法",
       "order": 8,
-      "questions": 6784
+      "questions": 6747
     },
     {
       "group": "卷一",
@@ -77,7 +77,7 @@
       "knowledgePoints": 671,
       "name": "行政法与行政诉讼法",
       "order": 9,
-      "questions": 4464
+      "questions": 4471
     },
     {
       "group": "卷二",
@@ -85,7 +85,7 @@
       "knowledgePoints": 1748,
       "name": "民法",
       "order": 10,
-      "questions": 7215
+      "questions": 7177
     },
     {
       "group": "卷二",
@@ -93,7 +93,7 @@
       "knowledgePoints": 48,
       "name": "知识产权法",
       "order": 11,
-      "questions": 792
+      "questions": 778
     },
     {
       "group": "卷二",
@@ -101,7 +101,7 @@
       "knowledgePoints": 1215,
       "name": "商法",
       "order": 12,
-      "questions": 8190
+      "questions": 8104
     },
     {
       "group": "卷二",
@@ -109,7 +109,7 @@
       "knowledgePoints": 36,
       "name": "经济法",
       "order": 13,
-      "questions": 1252
+      "questions": 1272
     },
     {
       "group": "卷二",
@@ -117,7 +117,7 @@
       "knowledgePoints": 13,
       "name": "环境资源法",
       "order": 14,
-      "questions": 282
+      "questions": 276
     },
     {
       "group": "卷二",
@@ -125,7 +125,7 @@
       "knowledgePoints": 25,
       "name": "劳动与社会保障法",
       "order": 15,
-      "questions": 468
+      "questions": 467
     },
     {
       "group": "卷二",
@@ -133,7 +133,7 @@
       "knowledgePoints": 29,
       "name": "国际私法",
       "order": 16,
-      "questions": 1177
+      "questions": 1239
     },
     {
       "group": "卷二",
@@ -141,7 +141,7 @@
       "knowledgePoints": 34,
       "name": "国际经济法",
       "order": 17,
-      "questions": 1131
+      "questions": 1161
     },
     {
       "group": "卷二",
@@ -149,7 +149,7 @@
       "knowledgePoints": 652,
       "name": "民事诉讼法与仲裁制度",
       "order": 18,
-      "questions": 5295
+      "questions": 5177
     },
     {
       "group": null,
@@ -157,7 +157,7 @@
       "knowledgePoints": 21,
       "name": "未分类",
       "order": 999,
-      "questions": 356
+      "questions": 463
     }
   ]
 }

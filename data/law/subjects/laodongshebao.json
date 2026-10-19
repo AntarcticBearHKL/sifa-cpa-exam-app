@@ -13940,7 +13940,7 @@
       ],
       "answerText": null,
       "chapter": "劳动法",
-      "chapterConfidence": "low",
+      "chapterConfidence": "high",
       "chapterOfficial": "劳动法",
       "difficulty": null,
       "explanation": "",
@@ -14139,54 +14139,6 @@
       "chapterOfficial": "劳动法",
       "difficulty": null,
       "explanation": "",
-      "id": "law:fakao-app:2003年客观题卷二#二#23",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "向全国人大书面提出进行审查的建议"
-        },
-        {
-          "label": "B",
-          "text": "向全国人大常委会书面提出进行审查的建议"
-        },
-        {
-          "label": "C",
-          "text": "向国务院书面提出进行审查的要求"
-        },
-        {
-          "label": "D",
-          "text": "向省人大书面提出进行审查的要求"
-        }
-      ],
-      "source": {
-        "nativeId": "2003年客观题卷二#二#23",
-        "path": "真题库/客观题/2003年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "某地方性法规规定，企业终止与职工的劳动合同的， 必须给予相应的经济补偿。某企业认为该规定与劳动法 相抵触，有权作下列何种处理？",
-      "subjectId": "laodongshebao",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2003"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2003
-    },
-    {
-      "answer": [
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "劳动法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "劳动法",
-      "difficulty": null,
-      "explanation": "",
       "id": "law:fakao-app:2004年客观题卷一#一#28",
       "knowledgePoints": [],
       "options": [
@@ -14267,50 +14219,51 @@
     },
     {
       "answer": [
-        "A"
+        "A",
+        "C"
       ],
       "answerText": null,
-      "chapter": "社会保障法",
+      "chapter": "劳动法",
       "chapterConfidence": "low",
-      "chapterOfficial": "社会保障法",
+      "chapterOfficial": "劳动法",
       "difficulty": null,
       "explanation": "",
-      "id": "law:fakao-app:2004年客观题卷二#二#5",
+      "id": "law:fakao-app:2004年客观题卷一#一#100",
       "knowledgePoints": [],
       "options": [
         {
           "label": "A",
-          "text": "以诈骗罪论处"
+          "text": "公司让全体民工对偷窃和毁坏设备者造成的损失承担"
         },
         {
           "label": "B",
-          "text": "以保险诈骗罪论处"
+          "text": "全体民工有义务与公司协商确定赔偿损失的数额"
         },
         {
           "label": "C",
-          "text": "以合同诈骗罪论处"
+          "text": "偷窃和毁坏设备事件与民工工资无关，应循其他合法"
         },
         {
           "label": "D",
-          "text": "属于民事欺诈，不以犯罪论处"
+          "text": "全体民工有义务查出偷窃和毁坏设备者，查出前可暂"
         }
       ],
       "source": {
-        "nativeId": "2004年客观题卷二#二#5",
-        "path": "真题库/客观题/2004年客观题卷二.md",
+        "nativeId": "2004年客观题卷一#一#100",
+        "path": "真题库/客观题/2004年客观题卷一.md",
         "repo": "fakao-app",
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
-      "stem": "个体户甲开办的汽车修理厂系某保险公司指定的汽 车修理厂家。甲在为他人修理汽车时，多次夸大汽车毁 损程度，向保险公司多报汽车修理费用，从保险公司骗 取12万余元。对甲的行为应如何论处？",
+      "stem": "对于建筑公司的主张，劳动行政主管部门应如何认 定？",
       "subjectId": "laodongshebao",
       "tags": [
         "fakao-app",
         "md-真题",
-        "section:单项选择题",
+        "section:不定项选择题",
         "year:2004"
       ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
       "year": 2004
     },
     {
@@ -14352,6 +14305,56 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "某企业与职工解除劳动关系时，在经济补偿方 面的下列哪些做法不符合《劳动法》的规定？",
+      "subjectId": "laodongshebao",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2006"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2006
+    },
+    {
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "社会保障法",
+      "chapterConfidence": "low",
+      "chapterOfficial": "社会保障法",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2006年客观题卷一#一#70",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "公司应在当年8月底以前向证监会和交易所报送"
+        },
+        {
+          "label": "B",
+          "text": "公司应在4月底以前向证监会和交易所报送上一"
+        },
+        {
+          "label": "C",
+          "text": "公司的中期报告和年度报告都必须记载公司财"
+        },
+        {
+          "label": "D",
+          "text": "公司的中期报告和年度报告都必须记载持有公"
+        }
+      ],
+      "source": {
+        "nativeId": "2006年客观题卷一#一#70",
+        "path": "真题库/客观题/2006年客观题卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "根据《证券法》关于上市公司及时向社会披露 信息的规定，下列哪些表述是正确的？",
       "subjectId": "laodongshebao",
       "tags": [
         "fakao-app",
@@ -14421,7 +14424,7 @@
       ],
       "answerText": null,
       "chapter": "劳动法",
-      "chapterConfidence": "low",
+      "chapterConfidence": "high",
       "chapterOfficial": "劳动法",
       "difficulty": null,
       "explanation": "",
@@ -14461,57 +14464,6 @@
       ],
       "type": "multiple_choice",
       "typeRaw": "多项选择题",
-      "year": 2006
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "社会保障法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "社会保障法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2006年客观题卷二#二#93",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "王某对处分不服，可自接到处分决定之日起30日"
-        },
-        {
-          "label": "B",
-          "text": "王某对处分不服申请复核时，复核期间应暂停"
-        },
-        {
-          "label": "C",
-          "text": "王某受处分期间，不得晋升级别和享受年终奖"
-        },
-        {
-          "label": "D",
-          "text": "处分解除后，王某的原级别即自行恢复"
-        }
-      ],
-      "source": {
-        "nativeId": "2006年客观题卷二#二#93",
-        "path": "真题库/客观题/2006年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "王某为某县劳动与社会保障局的一名科长，因 违纪受到降级处分。下列何种说法不符合《公务员法》 的规定？",
-      "subjectId": "laodongshebao",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2006"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
       "year": 2006
     },
     {
@@ -14818,13 +14770,61 @@
     },
     {
       "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "劳动法",
+      "chapterConfidence": "low",
+      "chapterOfficial": "劳动法",
+      "difficulty": null,
+      "explanation": "本题考查《劳动合同法》。\nA 项：《劳动合同法》第 69 条第 2 款规定：“从事非全日制用工的劳动者可以与一个\n或者一个以上用人单位订立劳动合同；但是，后订立的劳动合同不得影响先订立的劳动合同\n的履行。”由此可知 A 项表述正确。\nB 项：《劳动合同法》第 70 条规定：“非全日制用工双方当事人不得约定试用期。”由\n此可知 B 项表述正确。\nC 项：《劳动合同法》第 71 条规定：“非全日制用工双方当事人任何一方都可以随时通\n知对方终止用工。终止用工，用人单位不向劳动者支付经济补偿。”由此可知 C 项说法错\n误。\nD 项：《劳动合同法》第 72 条第 2 款规定：“非全日制用工劳动报酬结算支付周期最\n长不得超过十五日。”D 项说法正确。",
+      "id": "law:fakao-app:2010年客观题-卷一#一#27",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "从事非全日制用工的劳动者与多个用人单位订立劳动合同的，后订立的合同不得影响"
+        },
+        {
+          "label": "B",
+          "text": "非全日制用工合同不得约定试用期"
+        },
+        {
+          "label": "C",
+          "text": "非全日制用工终止时，用人单位应当向劳动者支付经济补偿"
+        },
+        {
+          "label": "D",
+          "text": "非全日制用工劳动报酬结算支付周期最长不得超过十五日"
+        }
+      ],
+      "source": {
+        "nativeId": "2010年客观题-卷一#一#27",
+        "path": "真题库/客观题/2010年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "关于非全日制用工的说法，下列哪一选项不符合《劳动合同法》规定？",
+      "subjectId": "laodongshebao",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2010"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2010
+    },
+    {
+      "answer": [
         "A",
         "C",
         "D"
       ],
       "answerText": null,
       "chapter": "劳动法",
-      "chapterConfidence": "low",
+      "chapterConfidence": "high",
       "chapterOfficial": "劳动法",
       "difficulty": null,
       "explanation": "A 项：该项考查不满十六周岁的未成年人可从事的劳动。《劳动法》第 15 条规定：“禁\n止用人单位招用未满十六周岁的未成年人。文艺、体育和特种工艺单位招用未满十六周岁的\n未成年人，必须依照国家有关规定，履行审批手续并保障其接受义务教育的权利。”可见，\nA 选项说法过于绝对，不符合劳动法的规定。\nB 项：该项考查劳动者的休息制度。《劳动法》第 38 条规定：“用人单位应当保证劳动\n者每周至少休息一日。”故双方当事人可以约定周六加班，保证每周至少休息一日即可，B\n选项没有违反劳动法的规定。\nC 项：该项考查试用期的相关规定。《劳动合同法》第 19 条第 1 款规定：“劳动合同期\n限三个月以上不满一年的，试用期不得超过一个月，劳动合同期限一年以上不满三年的，试\n用期不得超过二个月，三年以上固定期限和无固定期限的劳动合同，试用期不得超过六个\n月。”由法条可知 C 选项说法违反劳动法的规定。\nD 项：该项考查劳动合同的违约金条款。《劳动合同法》第 25 条规定：“除本法第二\n十二条和第二十三条规定的情形外，用人单位不得与劳动者约定由劳动者承担违约金。”由\n此例外规定可知 D 项表述不符合法律规定。",
@@ -14922,54 +14922,6 @@
     },
     {
       "answer": [
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "社会保障法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "社会保障法",
-      "difficulty": null,
-      "explanation": "本题考查先予执行。\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\nA 项：《最高人民法院关于执行〈中华人民共和国行政诉讼法〉若干问题的解释》第 48\n条第 2 款规定：“人民法院审理起诉行政机关没有依法发给抚恤金、社会保险金、最低生活\n保障费等案件，可以根据原告的申请，依法书面裁定先予执行。”由法条可知，原告无需提\n供担保。A 项说法错误。\nB 项：陈某的先予执行申请，属于对行政机关没有依法发给最低生活保障费的情形，由\n法条可知，该情形属于先于执行的范围，B 项说法错误。\nC 项：《最高人民法院关于执行〈中华人民共和国行政诉讼法〉若干问题的解释》第 48\n条第 3 款规定：“当事人对财产保全或者先予执行的裁定不服的，可以申请复议。复议期间\n不停止裁定的执行。”由法条可知，C 项说法正确。\nD 项：《最高人民法院关于执行〈中华人民共和国行政诉讼法〉若干问题的解释》第 48\n条第 2 款的规定可知，该裁定应当以书面方式作出，D 项说法错误。",
-      "id": "law:fakao-app:2010年客观题-卷二#二#47",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "陈某提出先予执行申请时，应提供相应担保"
-        },
-        {
-          "label": "B",
-          "text": "陈某的先予执行申请，不属于《行政诉讼法》规定的先予执行范围"
-        },
-        {
-          "label": "C",
-          "text": "如法院作出先予执行裁定，民政局不服可以申请复议"
-        },
-        {
-          "label": "D",
-          "text": "如法院作出先予执行裁定，情况特殊的可以采用口头方式"
-        }
-      ],
-      "source": {
-        "nativeId": "2010年客观题-卷二#二#47",
-        "path": "真题库/客观题/2010年客观题-卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "陈某申请领取最低生活保障费，遭民政局拒绝。陈某诉至法院，要求判令民政局履 行法定职责，同时申请法院先予执行。对此，下列哪一说法是正确的？",
-      "subjectId": "laodongshebao",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2010"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2010
-    },
-    {
-      "answer": [
         "A",
         "B",
         "C"
@@ -15017,6 +14969,54 @@
       "type": "multiple_choice",
       "typeRaw": "多项选择题",
       "year": 2011
+    },
+    {
+      "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "社会保障法",
+      "chapterConfidence": "high",
+      "chapterOfficial": "社会保障法",
+      "difficulty": null,
+      "explanation": "A 选项正确。依法治国理念既包括推进法治国家也包括全面推进法治社会的建设。充分\n运用法律手段，不断创新社会管理是推进法治社会的必然要求，社会管理创新主要针对社会\n管理领域的重点人群、重点区域和重点行业，因此 A 选项正确。\nB 选项正确。《中共中央关于全面推进依法治国若干重大问题的决定》明确指出：健全\n社会矛盾纠纷预防化解机制，完善调解、仲裁、行政裁决、行政复议、诉讼等有机衔接、相\n互协调的多元化纠纷解决机制，本选项提及的大调解格局是一种社会矛盾多元调解机制?，\n因此 B 选项正确。\nC 选项正确。《决定》指出：完善调解、仲裁、行政裁决、行政复议、诉讼等有机衔\n接、相互协调的多元化纠纷解决机制。本选项中提及的建立以法律手段为主体，多种手段协\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n调配合的管理和控制体系，正是推进法治社会、创新社会管理的必然要求。\nD 选项错误。基层群众性自治组织在我国宪法与法律中只有村民委员会和居民委员会，\n不包括社区网络。故 D 说法错误。",
+      "id": "law:fakao-app:2012年客观题-卷一#一#5",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "社会管理创新主要针对社会管理领域的重点人群、重点区域和重点行业"
+        },
+        {
+          "label": "B",
+          "text": "大调解格局是一种社会矛盾多元调解机制"
+        },
+        {
+          "label": "C",
+          "text": "社会管理创新要求建立以法律手段为主体，多种手段协调配合的管理和控制体系"
+        },
+        {
+          "label": "D",
+          "text": "社区网格与村民委员会、居民委员会的法律地位一样，属于基层群众性自治组织"
+        }
+      ],
+      "source": {
+        "nativeId": "2012年客观题-卷一#一#5",
+        "path": "真题库/客观题/2012年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "作为创新社会管理的方式之一，社区网格化管理是根据各社区实际居住户数、区域 面积大小、管理难度等情况，将社区划分数个网格区域，把党建、维稳、综治、民政、劳动 和社会保障、计划生育、信访等社会管理工作落实到网格，形成了“网中有格、格中定人、 人负其责、专群结合、各方联动、无缝覆盖”的工作格局，以此建立社情民意收集反馈机制 和社会矛盾多元调解机制。关于充分运用法律手段创新社会管理，下列哪一说法是不准确 的？",
+      "subjectId": "laodongshebao",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2012"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2012
     },
     {
       "answer": [
@@ -15223,6 +15223,56 @@
     {
       "answer": [
         "A",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "社会保障法",
+      "chapterConfidence": "low",
+      "chapterOfficial": "社会保障法",
+      "difficulty": null,
+      "explanation": "执法为民就是要求在法治实践中，充分关注民情，着力改善民生，切实保障民权，努力\n扩大和发展民主。A、C、D 项体现了执法为民的要求。公平的朴素含义是公允持平、不偏不\n倚、办事公道、利益均衡;正义则意味着惩恶扬善、激浊扬清、是否清楚、道义分明。B 项体\n现了公平正义的要求，故不选。",
+      "id": "law:fakao-app:2013年客观题-卷一#一#84",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "民庭段法官加班加点，春节前及时审结拖欠农民工工资案件"
+        },
+        {
+          "label": "B",
+          "text": "刑庭范法官拒绝承办案件辩护律师的宴请"
+        },
+        {
+          "label": "C",
+          "text": "立案庭刘法官将收案材料细化分类整理，方便群众查询"
+        },
+        {
+          "label": "D",
+          "text": "执行庭肖法官多方调查被执行人财产，成功执行赡养费支付判决"
+        }
+      ],
+      "source": {
+        "nativeId": "2013年客观题-卷一#一#84",
+        "path": "真题库/客观题/2013年客观题-卷一.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "法官的下列哪些做法体现了执法为民的要求？",
+      "subjectId": "laodongshebao",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2013"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2013
+    },
+    {
+      "answer": [
+        "A",
         "B",
         "C"
       ],
@@ -15269,6 +15319,54 @@
       "type": "indefinite_choice",
       "typeRaw": "不定项选择题",
       "year": 2013
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "社会保障法",
+      "chapterConfidence": "high",
+      "chapterOfficial": "社会保障法",
+      "difficulty": null,
+      "explanation": "《中华人民共和国出境入境管理法》第14条规定：“定居国外的中国公民在中国境内办理金融、教育、医疗、交通、电信、社会保险、财产登记等事务需要提供身份证明的，可以凭本人的护照证明其身份。”因此，王某办理房屋登记可凭其护照证明其身份。所以 B 项正确，C 项错误。\n根据该法第11条第1款规定：“中国公民出境入境，应当向出入境边防检查机关交验本人的护照或者其他旅行证件等出境入境证件，履行规定的手续，经查验准许，方可出境入境。”王某是定居美国的中国公民，由于王某还是中国公民，所以回国是回到自己的国家，不需要签证。因此其出境入境无须办理签证。所以 A   项错误。\n根据该法第12条规定：“中国公民有下列情形之一的，不准出境：(一)未持有效出境入境证件或者拒\n绝、逃避接受边防检查的；(二)被判处刑罚尚未执行完毕或者属于刑事案件被告人、犯罪嫌疑人的；(三)有未了结的民事案件，法院决定不准出境的；(四)因妨害国  (边)境管理受到刑事处罚或者因非法出境、非法居留、非法就业被其他国家或者地区遣返，未满不准出境规定年限的；(五)可能危害国家安全和利益，国务院有关主管部门决定不准出境的；(六)法律、行政法规规定不准出境的其他情形。”因此，当其有未了结的民事案件时，只有当法院决定不准出境时，王某才不能出境。所以 D 项错误。",
+      "id": "law:fakao-app:2014年客观题#一#34",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "王某应向中国驻美签证机关申请办理赴中国的签证"
+        },
+        {
+          "label": "B",
+          "text": "王某办理所购房产登记需提供身份证明的，可凭其护照证明其身份"
+        },
+        {
+          "label": "C",
+          "text": "因王某是中国公民，故需持身份证办理房产登记"
+        },
+        {
+          "label": "D",
+          "text": "王某回中国后，只要其有未了结的民事案件，就不准出境"
+        }
+      ],
+      "source": {
+        "nativeId": "2014年客观题#一#34",
+        "path": "真题库/客观题/2014年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "王某是定居美国的中国公民，2013年10月回国为父母购房。根据我国相关法律规定，下列哪一选项是正确的?",
+      "subjectId": "laodongshebao",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2014"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2014
     },
     {
       "answer": [
@@ -15367,152 +15465,6 @@
       ],
       "type": "indefinite_choice",
       "typeRaw": "不定项选择题",
-      "year": 2014
-    },
-    {
-      "answer": [
-        "A",
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "社会保障法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "社会保障法",
-      "difficulty": null,
-      "explanation": "最高人民法院《政府信息公开案件规定》第5条第7款规定：原告起诉被告拒绝更正政府信息记录的，应当提供其向被告提出过更正申请以及政府信息与其自身相关且记录不准确的事实根据。 A 项正确，当选。\n最高人民法院《政府信息公开案件规定》第5条第3款规定：被告拒绝更正与原告相关的政府信息记录的，应当对拒绝的理由进行举证和说明。 B 项正确，当选。\n最高人民法院《政府信息公开案件规定》第9条第4款规定：被告依法应当更正而不更正与原告相关的政府信息记录的，人民法院应当判决被告在一定期限内更正。尚需被告调查、裁量的，判决其在一定期限内重新答复。被告无权更正的，判决其转送有权更正的行政机关处理。可知，涉案信息有误但该局无权更正的，法院不是适用驳回王某诉讼请求的判决，而是判决转送有权更正的行政机关处理。若被告有权更正的，并不是一律判决更正，若尚需被告调查、裁量的，判决其在一定期限内重新答复。 C、D 两项错误。",
-      "id": "law:fakao-app:2014年客观题#二#83",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "王某应当提供其向该局提出过更正申请以及政府信息与其自身相关且记录不准确的事实根据"
-        },
-        {
-          "label": "B",
-          "text": "该局应当对拒绝的理由进行举证和说明"
-        },
-        {
-          "label": "C",
-          "text": "如涉案信息有误但该局无权更正的，法院即应判决驳回王某的诉讼请求"
-        },
-        {
-          "label": "D",
-          "text": "如涉案信息有误且该局有权更正的，法院即应判决在15日内更正"
-        }
-      ],
-      "source": {
-        "nativeId": "2014年客观题#二#83",
-        "path": "真题库/客观题/2014年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "王某认为社保局提供的社会保障信息有误，要求该局予以更正。该局以无权更正为由拒绝更正。王某向法院起诉，法院受理。下列哪些说法是正确的?",
-      "subjectId": "laodongshebao",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2014"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2014
-    },
-    {
-      "answer": [
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "社会保障法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "社会保障法",
-      "difficulty": null,
-      "explanation": "《保险法解释(二)》第3条规定：投保人或者投保人的代理人订立保险合同时没有亲自签字或者盖章，而由保险人或者保险人的代理人代为签字或者盖章的，对投保人不生效。但投保人已经交纳保险费的，视为其对代签字或者盖章行为的追认。可见本题中，何某缴纳保险费应视为其对谢某代签字行为的追认，所以该保险合同有效，应由甲公司承担保险责任，保险代理人的行为后果由保险公司承担，C 项正确，ABD 项错误。本题答案为C 项。",
-      "id": "law:fakao-app:2014年客观题#三#34",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "谢某代签字，应由谢某承担保险责任"
-        },
-        {
-          "label": "B",
-          "text": "甲公司承保错误，无须承担保险责任，"
-        },
-        {
-          "label": "C",
-          "text": "何某已经交纳了保险费，应由甲公司承担保险责任"
-        },
-        {
-          "label": "D",
-          "text": "何某默认谢某代签字有过错，应由何某和甲公司按过错比例承担责任"
-        }
-      ],
-      "source": {
-        "nativeId": "2014年客观题#三#34",
-        "path": "真题库/客观题/2014年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲公司代理人谢某代投保人何某签字，签订了保险合同，何某也依约交纳了保险费。在保险期间内发生保险事故，何某要求甲公司承担保险责任。下列哪一表述是正确的?",
-      "subjectId": "laodongshebao",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2014"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2014
-    },
-    {
-      "answer": [
-        "A",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "社会保障法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "社会保障法",
-      "difficulty": null,
-      "explanation": "根据《保险法解释(二)》第6条第1款规定，投保人的告知义务限于保险人询问的范围和内容。当事人对询问范围及内容有争议的，保险人负举证责任，故A 项正确，B 项错误。\n根据该解释第6条第2款规定，保险人以投保人违反了对投保单询问表中所列概括性条款的如实告知义务为由请求解除合同的，法院不予支持。但该概括性条款有具体内容的除外。题目中并未给出该概括性条款有具体内容的信息，不满足但书条款，所以，保险人不得以此为由解除合同，C 项错误。\n根据该解释第7条规定，保险人在保险合同成立后知道或者应当知道投保人未履行如实告知义务，仍然收取保险费，又依照保险法第16条第2款的规定主\n-\n张解除合同的，法院不予支持。 D 项正确。",
-      "id": "law:fakao-app:2014年客观题#三#76",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "投保人的告知义务，限于保险人询问的范围和内容"
-        },
-        {
-          "label": "B",
-          "text": "当事人对询问范围及内容有争议的，投保人负举证责任"
-        },
-        {
-          "label": "C",
-          "text": "投保人未如实告知投保单询问表中概括性条款时，则保险人可以此为由解除合同"
-        },
-        {
-          "label": "D",
-          "text": "在保险合同成立后，保险人获悉投保人未履行如实告知义务，但仍然收取保险费，则保险人不得解除合同"
-        }
-      ],
-      "source": {
-        "nativeId": "2014年客观题#三#76",
-        "path": "真题库/客观题/2014年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "关于投保人在订立保险合同时的告知义务，下列哪些表述是正确的?",
-      "subjectId": "laodongshebao",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2014"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
       "year": 2014
     },
     {
@@ -15761,6 +15713,54 @@
     },
     {
       "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "社会保障法",
+      "chapterConfidence": "low",
+      "chapterOfficial": "社会保障法",
+      "difficulty": null,
+      "explanation": "十八届四中全会《决定》要求，构建对维护群众利益具有重大作用的制度体系，建立健全社会矛盾预警机制、利益表达机制、协商沟通机制、救济救助机制，畅通群众利益协调、权益保障法律渠道。把信访纳入法治轨道，保障合理合法诉求依照法律规定和程序就能得到合理合法的结果。 D 项，丁市律协要求律师不得代理群体性纠纷案件，无助于纠纷的解决，故当选。ABC 有助于消除此现象。",
+      "id": "law:fakao-app:2016年客观题#一#7",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲市将信访纳入法治轨道，承诺对合理合法的诉求依法及时处理"
+        },
+        {
+          "label": "B",
+          "text": "乙区通过举办“群众吐槽会”建立群众利益沟通机制"
+        },
+        {
+          "label": "C",
+          "text": "丙县通过地方戏等形式普及“即使有理也要守法”观念"
+        },
+        {
+          "label": "D",
+          "text": "丁市律协要求律师不得代理群体性纠纷案件"
+        }
+      ],
+      "source": {
+        "nativeId": "2016年客观题#一#7",
+        "path": "真题库/客观题/2016年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "法治社会建设要求健全依法维权和化解纠纷机制，杜绝“大闹大解决、小闹小解决、不闹不解决”现象。下列哪一做法无助于消除此现象?",
+      "subjectId": "laodongshebao",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2016"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2016
+    },
+    {
+      "answer": [
         "B",
         "C"
       ],
@@ -15858,51 +15858,50 @@
     },
     {
       "answer": [
-        "A",
-        "B"
+        "D"
       ],
       "answerText": null,
-      "chapter": "社会保障法",
+      "chapter": "劳动法",
       "chapterConfidence": "low",
-      "chapterOfficial": "社会保障法",
+      "chapterOfficial": "劳动法",
       "difficulty": null,
-      "explanation": "《保险法》第27条第3款规定：“保险事故发生后，投保人、被保险人或者受益人以伪造、变造的有关证明、资料或者其他证据，编造虚假的事故\n原因或者夸大损失程度的，保险人对其虚报的部分不承担赔偿或者给付保险金的责任。”据此，在投保人等夸大损失的情形，保险人对于夸大的部分不支付保险金，对于实际损失则需要按照约定支付保险金，故A 项正确，C 项错误。\n《保险法》第27条第4款规定：“投保人、被保险人或者受益人有前3款规定行为之一，致使保险人支付保险金或者支出费用的，应当退回或者赔偿。”据此，B 项正确。\nD 项，投保人等夸大保险损失并非解除保险合同的理由，故 D 项错误。",
-      "id": "law:fakao-app:2016年客观题#三#76",
+      "explanation": "根据《劳动合同法》第14条的规定，用人单位自用工之日起满一年不与劳动者订立书面劳动合同的，视为用人单位与劳动者已订立无固定期限劳动合同。由于王某用工时间不满一年，故 A 项说法错误。根据《劳动合同法》第19条第4款的规定，试用期包含在劳动合同期限内。劳动合同仅约定试用期的，试用期不成立，该期限为劳动合同期限，故 B 项说法错误，劳动合同期限自2012年2月1日起算。由于是劳动者主动辞职，且单位不存在过错，该公司不需要支付经济补偿金，故 C 项说法错误。根据《劳动合同法》第40条的规定，有下列情形之一的，用人单位提前\n三十日以书面形式通知劳动者本人或者额外支付劳动者一个月工资后，可以解除劳动合同： ……(二)劳动者不能胜任工作，经过培训或者调整工作岗位，仍不能胜任工作的；故D 项说法正确。",
+      "id": "law:fakao-app:2016年客观题#一#96",
       "knowledgePoints": [],
       "options": [
         {
           "label": "A",
-          "text": "应当向甲公司给付约定的保险金"
+          "text": "王某与公司之间视作已订立无固定期限劳动合同"
         },
         {
           "label": "B",
-          "text": "有权向甲公司主张5万元花费损失"
+          "text": "该劳动合同期限自2012年3月1日起算"
         },
         {
           "label": "C",
-          "text": "有权拒绝向甲公司给付保险金"
+          "text": "该公司应向王某支付半个月工资的经济补偿金"
         },
         {
           "label": "D",
-          "text": "有权解除与甲公司的保险合同"
+          "text": "如王某不能胜任且经培训仍不能胜任工作，公司提前30日以书面形式通知王某，可将其辞退"
         }
       ],
       "source": {
-        "nativeId": "2016年客观题#三#76",
+        "nativeId": "2016年客观题#一#96",
         "path": "真题库/客观题/2016年客观题.md",
         "repo": "fakao-app",
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
-      "stem": "甲公司投保了财产损失险的厂房被烧毁，甲公司伪造证明，夸大此次火灾的损失，向保险公司索赔100万元，保险公司为查清此事，花费5万元。关于保险公司的权责，下列哪些选项是正确的?",
+      "stem": "关于该劳动合同的订立与解除，下列说法正确的是：",
       "subjectId": "laodongshebao",
       "tags": [
         "fakao-app",
         "md-真题",
-        "section:多项选择题",
+        "section:不定项选择题",
         "year:2016"
       ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
       "year": 2016
     },
     {
@@ -15953,54 +15952,6 @@
       ],
       "type": "multiple_choice",
       "typeRaw": "多项选择题",
-      "year": 2017
-    },
-    {
-      "answer": [
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "社会保障法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "社会保障法",
-      "difficulty": null,
-      "explanation": "《保险法》第52条第1款规定：“在合同有效期内，保险标的的危险程度显著增加的，被保险人应当按照合同约定及时通知保险人，保险人可以按照合同约定增加保险费或者解除合同。保险人解除合同的 ·应当将已收取的保险费，按照合同约定扣除自保险责任开始之日起至合同解除之日止应收的部分后，退还投保人。”据此，被保险人违反了保险标的危险程度增加的通知义务，保险公司有权解除合同，但不影响保险合同的效力，故 A 项错误。保险公司解除保险合同时，应当将超过保险合同期限部分的保险费退还给投保人，故 D 项错误。\n《保险法》第52条第2款规定：“被保险人未履行前款规定的通知义务的，因保险标的的危险程度显著增加而发生的保险事故，保险人不承担赔偿保险金的责任。”本题中，姜某因为夜晚载客，与人发生碰撞而导致车损，该保险事故的发生应当属于“因保险标的的危险程度显著增加而发生的保险事故”,故保险公司不承担赔偿责任，故 B 项错误，C 项正确。",
-      "id": "law:fakao-app:2017年客观题#三#34",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "保险合同无效"
-        },
-        {
-          "label": "B",
-          "text": "姜某有权主张约定的保险金"
-        },
-        {
-          "label": "C",
-          "text": "保险公司不承担赔偿保险金的责任"
-        },
-        {
-          "label": "D",
-          "text": "保险公司有权解除保险合同并不退还保险费"
-        }
-      ],
-      "source": {
-        "nativeId": "2017年客观题#三#34",
-        "path": "真题库/客观题/2017年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "姜某的私家车投保商业车险，年保险费为3000元。姜某发现当网约车司机收入不错，便用手机软件接单载客，后辞职专门跑网约车。某晚，姜某载客途中与他人相撞，造成车损10万元。姜某向保险公司索赔，保险公司调查后拒赔。关于本案，下列哪一选项是正确的?",
-      "subjectId": "laodongshebao",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2017"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
       "year": 2017
     },
     {

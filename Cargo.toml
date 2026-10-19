@@ -1,8 +1,8 @@
 [package]
 name = "sfzklearning"
-version = "0.11.0"
+version = "0.12.0"
 edition = "2021"
-description = "法考 / 注会 native study helper (CMF data) + stdio MCP server"
+description = "法考 / 注会 native study helper (CMF data)"
 # Keep off so module files under src/bin/studyapp/ are never auto-discovered as binaries.
 autobins = false
 
@@ -13,10 +13,6 @@ path = "src/lib.rs"
 [[bin]]
 name = "sfzklearning"
 path = "src/bin/studyapp/main.rs"
-
-[[bin]]
-name = "sfzklearning-mcp"
-path = "src/bin/sfzklearning-mcp.rs"
 
 [[bin]]
 name = "classify"

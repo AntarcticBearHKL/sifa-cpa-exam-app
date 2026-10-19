@@ -298480,2132 +298480,11 @@
     },
     {
       "answer": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "准合同",
-      "chapterConfidence": "low",
-      "chapterOfficial": "准合同",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2002年客观题卷一#一#73",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "限制受让方自由选择从不同来源购买材料及零"
-        },
-        {
-          "label": "B",
-          "text": "限制受让方从其他来源获得类似技术"
-        },
-        {
-          "label": "C",
-          "text": "双方改进技术的条件不对等"
-        },
-        {
-          "label": "D",
-          "text": "禁止受让方在合同期满后继续使用引进的技术"
-        }
-      ],
-      "source": {
-        "nativeId": "2002年客观题卷一#一#73",
-        "path": "真题库/客观题/2002年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "依我国法律，在技术贸易中，技术的供方不得强迫 受让方接受不合理的限制性要求。下列哪些内容属于未 经审批机关特殊批准，合同中不得含有的限制性条款?",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2002"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2002
-    },
-    {
-      "answer": [
-        "A"
-      ],
-      "answerText": null,
-      "chapter": "合同的变更、转让和权利义务终止",
-      "chapterConfidence": "low",
-      "chapterOfficial": "合同的变更、转让和权利义务终止",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2002年客观题卷二#二#25",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "撤销变更登记，恢复到原来的登记状态"
-        },
-        {
-          "label": "B",
-          "text": "吊销企业法人营业执照"
-        },
-        {
-          "label": "C",
-          "text": "撤销企业法人营业执照，对于由此给企业造成"
-        },
-        {
-          "label": "D",
-          "text": "注销企业法人营业执照，给予企业适当补偿"
-        }
-      ],
-      "source": {
-        "nativeId": "2002年客观题卷二#二#25",
-        "path": "真题库/客观题/2002年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "某工商局在办理完毕某企业变更法定代表人登 记1年之后，发现办理登记的工作人员由于工作疏忽未 认真核实有关材料，导致作出了错误的变更登记。在这 种情况下，工商局应当如何处理?",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2002"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2002
-    },
-    {
-      "answer": [
-        "B",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "完成工作交付成果合同",
-      "chapterConfidence": "low",
-      "chapterOfficial": "完成工作交付成果合同",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2003年客观题卷一#一#70",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "甲公司有权拒绝接收货物"
-        },
-        {
-          "label": "B",
-          "text": "甲公司有权要求退货"
-        },
-        {
-          "label": "C",
-          "text": "甲公司可以将货物寄放于第三方仓库，其费用由乙公"
-        },
-        {
-          "label": "D",
-          "text": "甲公司可以将货物出售，并从出售价款中扣除保全货"
-        }
-      ],
-      "source": {
-        "nativeId": "2003年客观题卷一#一#70",
-        "path": "真题库/客观题/2003年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "中国甲公司从美国乙公司进口一批水果，合同约定货 到验收后付款。货物到达目的港，甲公司提货验收后， 发现货物总重量短少12％，单个体积和重量也不符合合 同规定。下列有关此案的表述哪些是正确的？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2003"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2003
-    },
-    {
-      "answer": [
-        "B",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "所有权",
-      "chapterConfidence": "low",
-      "chapterOfficial": "所有权",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2003年客观题卷二#二#73",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "甲村无权向人民法院申请强制执行"
-        },
-        {
-          "label": "B",
-          "text": "县政府可以向人民法院申请强制执行"
-        },
-        {
-          "label": "C",
-          "text": "甲村可以要求县政府履行法定职责"
-        },
-        {
-          "label": "D",
-          "text": "甲村可以对乙村提起民事诉讼"
-        }
-      ],
-      "source": {
-        "nativeId": "2003年客观题卷二#二#73",
-        "path": "真题库/客观题/2003年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲乙两村因某一土地所有权发生争议，县人民政府将 该土地确定为甲村所有，乙村在法定期限内没有向法院 起诉，但仍继续占有并使用该片土地。下列说法哪些是 正确的？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2003"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2003
-    },
-    {
-      "answer": [
-        "A",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "侵权责任概述",
-      "chapterConfidence": "low",
-      "chapterOfficial": "侵权责任概述",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2003年客观题卷二#二#80",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "公安人员盘问过程中殴打刘某"
-        },
-        {
-          "label": "B",
-          "text": "海关违法扣留张某5小时"
-        },
-        {
-          "label": "C",
-          "text": "法院以转移被查封财产为由错误拘留陈某15日"
-        },
-        {
-          "label": "D",
-          "text": "镇政府公布本镇有不良嗜好人员名单"
-        }
-      ],
-      "source": {
-        "nativeId": "2003年客观题卷二#二#80",
-        "path": "真题库/客观题/2003年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "下列哪些国家侵权行为不适用消除影响、恢复名誉、 赠礼道歉的责任方式？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2003"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2003
-    },
-    {
-      "answer": [
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "遗产的处理",
-      "chapterConfidence": "high",
-      "chapterOfficial": "遗产的处理",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2004年客观题卷一#一#26",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "审批后1年内不用的，应当按照省、自治区、直辖市的"
-        },
-        {
-          "label": "B",
-          "text": "审批后1年以上未动工建设的，应当由原耕种该幅耕地"
-        },
-        {
-          "label": "C",
-          "text": "审批后连续2年未使用的，或者间断使用，累计闲置达"
-        },
-        {
-          "label": "D",
-          "text": "依法由县级以上人民政府无偿收回土地使用权的土地"
-        }
-      ],
-      "source": {
-        "nativeId": "2004年客观题卷一#一#26",
-        "path": "真题库/客观题/2004年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "对于已经办理审批手续但未使用的非农业建设占用 耕地的处理，下列表述哪一项是正确的？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2004"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2004
-    },
-    {
-      "answer": [
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "遗嘱继承和遗赠",
-      "chapterConfidence": "low",
-      "chapterOfficial": "遗嘱继承和遗赠",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2004年客观题卷一#一#40",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "依甲国法处理"
-        },
-        {
-          "label": "B",
-          "text": "依涉外继承的准据法处理"
-        },
-        {
-          "label": "C",
-          "text": "依中国法律处理，但中甲两国缔结或参加的国际条约"
-        },
-        {
-          "label": "D",
-          "text": "交甲国驻华使领馆依甲国法处理"
-        },
-        {
-          "label": "A",
-          "text": "C公司可以免责"
-        },
-        {
-          "label": "B",
-          "text": "A公司应向B公司提出索赔，因为其提供的货物与合同"
-        },
-        {
-          "label": "C",
-          "text": "A公司应向C公司提出索赔，因为其没有尽到保管货物"
-        },
-        {
-          "label": "D",
-          "text": "A公司应向B公司提出索赔，因为其没有履行适当安排"
-        }
-      ],
-      "source": {
-        "nativeId": "2004年客观题卷一#一#40",
-        "path": "真题库/客观题/2004年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲国人琼斯在我国工作期间不幸病故。琼斯在我国 境内遗留有价值300万元人民币的财产，但未留遗嘱，亦 无继承人。在这种情况下，琼斯遗留在我国的财产应依 据什么法律处理？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2004"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2004
-    },
-    {
-      "answer": [
-        "A"
-      ],
-      "answerText": null,
-      "chapter": "所有权",
-      "chapterConfidence": "high",
-      "chapterOfficial": "所有权",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2004年客观题卷二#二#42",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "房屋所有权证、房屋买卖合同、房屋产权登记申请、"
-        },
-        {
-          "label": "B",
-          "text": "李某可以在一审庭审结束前向法院提交房屋买卖合同"
-        },
-        {
-          "label": "C",
-          "text": "田某向法院提交其房屋所有权证是承担举证责任的表"
-        },
-        {
-          "label": "D",
-          "text": "法院在收到被告提交的证据后应当出具收据，加盖法"
-        }
-      ],
-      "source": {
-        "nativeId": "2004年客观题卷二#二#42",
-        "path": "真题库/客观题/2004年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "田某对某市房管局向李某核发房屋所有权证的行为 不服，以自己是房屋所有权人为由请求法院判决撤销某 市房管局的发证行为。田某向法院提交了房屋所有权证 ，李某向法院提交了该房屋买卖合同，某市房管局向法 院提交了李某的房屋产权登记申请、契税完税证等证据 。下列哪一说法是正确的？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2004"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2004
-    },
-    {
-      "answer": [
-        "A",
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "占有",
-      "chapterConfidence": "high",
-      "chapterOfficial": "占有",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2004年客观题卷二#二#88",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "由于甲误认为提包为遗忘物，所以，甲的认识错误属"
-        },
-        {
-          "label": "B",
-          "text": "由于甲误认为提包为遗忘物，因而没有盗窃他人财物"
-        },
-        {
-          "label": "C",
-          "text": "由于提包实际上属于司机的财物，所以，甲的行为成"
-        },
-        {
-          "label": "D",
-          "text": "由于提包实际上属于司机的财物，而甲又没有盗窃的"
-        }
-      ],
-      "source": {
-        "nativeId": "2004年客观题卷二#二#88",
-        "path": "真题库/客观题/2004年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲乘坐长途公共汽车时，误以为司机座位后的提包 为身边的乙所有（实为司机所有）；乙中途下车后，甲 误以为乙忘了拿走提包。为了非法占有该提包内的财物 （内有司机为他人代购的13部手机，价值2．6万元）， 甲提前下车，并将提包拿走。司机到站后发现自己的手 提包丢失，便报案。公安人员发现甲有重大嫌疑，便询 问甲，但甲拒不承认，也不交出提包。关于本案，下列 说法正确的是：",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2004"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2004
-    },
-    {
-      "answer": [
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "遗产的处理",
-      "chapterConfidence": "low",
-      "chapterOfficial": "遗产的处理",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2005年客观题卷二#二#14",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "抢劫罪和绑架罪并罚"
-        },
-        {
-          "label": "B",
-          "text": "以故意杀人罪、盗窃罪和绑架罪并罚"
-        },
-        {
-          "label": "C",
-          "text": "以抢劫罪和敲诈勒索罪并罚"
-        },
-        {
-          "label": "D",
-          "text": "以故意杀人罪、侵占罪和敲诈勒索罪并罚"
-        }
-      ],
-      "source": {
-        "nativeId": "2005年客观题卷二#二#14",
-        "path": "真题库/客观题/2005年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲、乙为劫取财物将在河边散步的丙杀死，当场取 得丙随身携带的现金2000余元。甲、乙随后从丙携带的 名片上得知丙是某公司总经理。两人经谋划后，按名片 上的电话给丙的妻子丁打电话，声称丙已被绑架，丁必 须于次日中午12点将10万元现金放在某处，否则杀害丙 。丁立即报警，甲、乙被抓获。关于本案的处理，下列 哪一种说法是正确的？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2005"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2005
-    },
-    {
-      "answer": [
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "技术合同",
-      "chapterConfidence": "low",
-      "chapterOfficial": "技术合同",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2005年客观题卷二#二#94",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "强迫交易罪                              B.敲诈勒索罪"
-        },
-        {
-          "label": "C",
-          "text": "绑架罪"
-        },
-        {
-          "label": "D",
-          "text": "侵犯商业秘密罪"
-        }
-      ],
-      "source": {
-        "nativeId": "2005年客观题卷二#二#94",
-        "path": "真题库/客观题/2005年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲公司拥有某项独家技术每年为公司带来100万元利 润，故对该技术严加保密。乙公司经理丙为获得该技术 ，带人将甲公司技术员丁在其回家路上强行拦截并推入 丙的汽车，对丁说如果他提供该技术资料就给他2万元 ，如果不提供就将他嫖娼之事公之于众。丁同意配合。 次日丁向丙提供了该技术资料，并获得2万元报酬。丙 的行为构成：",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2005"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2005
-    },
-    {
-      "answer": [
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "合同的履行",
-      "chapterConfidence": "high",
-      "chapterOfficial": "合同的履行",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2006年客观题卷一#一#28",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "未建立工会的企业，集体合同应由职工推举的"
-        },
-        {
-          "label": "B",
-          "text": "劳动合同中的劳动条件和劳动报酬标准可以高"
-        },
-        {
-          "label": "C",
-          "text": "并非所有的企业都必须签订集体合同"
-        },
-        {
-          "label": "D",
-          "text": "集体合同必须经劳动行政部门审查批准方能生"
-        }
-      ],
-      "source": {
-        "nativeId": "2006年客观题卷一#一#28",
-        "path": "真题库/客观题/2006年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "关于集体合同的下列哪一表述是错误的？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2006"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2006
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "所有权",
-      "chapterConfidence": "low",
-      "chapterOfficial": "所有权",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2006年客观题卷一#一#100",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "征得委托人的同意后，将该轿车再行拍卖"
-        },
-        {
-          "label": "B",
-          "text": "要求张某支付在第一次拍卖中其本人和委托人"
-        },
-        {
-          "label": "C",
-          "text": "要求张某补足该轿车再行拍卖的价款低于原拍"
-        },
-        {
-          "label": "D",
-          "text": "要求张某支付该轿车在两次拍卖期间的保管费"
-        }
-      ],
-      "source": {
-        "nativeId": "2006年客观题卷一#一#100",
-        "path": "真题库/客观题/2006年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "如果张某拒绝签订成交确认书的理由不成立， 但坚持不履行合同，拍卖公司有权采取何种措施？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2006",
-        "answer-missing"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2006
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "所有权",
-      "chapterConfidence": "high",
-      "chapterOfficial": "所有权",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2007年客观题卷一#一#24",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "\"这件事，乡政府可以出面召集你们双方协商解"
-        },
-        {
-          "label": "B",
-          "text": "\"如果你们双方达不成协议，我们乡政府是无权"
-        },
-        {
-          "label": "C",
-          "text": "\"你们可以去县政府申请处理，也可以直接去县"
-        },
-        {
-          "label": "D",
-          "text": "\"在纠纷解决之前，你们双方必须维持土地利用"
-        }
-      ],
-      "source": {
-        "nativeId": "2007年客观题卷一#一#24",
-        "path": "真题库/客观题/2007年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "李庄和赵庄为相邻一块土地的所有权归属发生 争议，李庄的村干部就此事请示乡长。乡长的下列哪一 答复意见是错误的？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2007",
-        "answer-missing"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2007
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "合同的履行",
-      "chapterConfidence": "high",
-      "chapterOfficial": "合同的履行",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2007年客观题卷一#一#38",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "该协议不得违反我国有关级别管辖和专属管辖"
-        },
-        {
-          "label": "B",
-          "text": "当事人可以在纠纷发生前协议选择我国法院管"
-        },
-        {
-          "label": "C",
-          "text": "如与该合同纠纷有实际联系的地点不在我国领"
-        },
-        {
-          "label": "D",
-          "text": "涉外合同或涉外财产权益纠纷的当事人可以选"
-        }
-      ],
-      "source": {
-        "nativeId": "2007年客观题卷一#一#38",
-        "path": "真题库/客观题/2007年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "国际海上运输合同的当事人在合同中选定我国 某法院作为解决可能发生的纠纷的法院。关于此，下列 哪一选项是错误的？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2007",
-        "answer-missing"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2007
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "占有",
-      "chapterConfidence": "low",
-      "chapterOfficial": "占有",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2008年客观题卷二#二#18",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "甲虽然是国家工作人员，但没有利用职务上的"
-        },
-        {
-          "label": "B",
-          "text": "甲虽然没有利用职务上的便利，但也不属于将"
-        },
-        {
-          "label": "C",
-          "text": "甲将自己基于职务保管的财物据为己有，应成"
-        },
-        {
-          "label": "D",
-          "text": "甲实际上是通过欺骗手段获得财物的，应认定"
-        }
-      ],
-      "source": {
-        "nativeId": "2008年客观题卷二#二#18",
-        "path": "真题库/客观题/2008年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "某国有公司出纳甲意图非法占有本人保管的公 共财物，但不使用自己手中的钥匙和所知道的密码，而 是使用铁棍将自己保管的保险柜打开并取走现金3万元 。之后，甲伪造作案现场，声称失窃。关于本案，下列 哪一选项是正确的？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2008",
-        "answer-missing"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2008
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "诉讼时效与期间",
-      "chapterConfidence": "high",
-      "chapterOfficial": "诉讼时效与期间",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2008年客观题卷二#二#43",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "本案应由中级法院管辖"
-        },
-        {
-          "label": "B",
-          "text": "因法院的生效判决已对某银行与某公司的民事"
-        },
-        {
-          "label": "C",
-          "text": "法院应当判决确认某县政府的复函合法"
-        },
-        {
-          "label": "D",
-          "text": "法院应当判决驳回某银行的诉讼请求"
-        }
-      ],
-      "source": {
-        "nativeId": "2008年客观题卷二#二#43",
-        "path": "真题库/客观题/2008年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "某银行以某公司未偿还贷款为由向法院起诉， 法院终审判决认定其请求已过诉讼时效，予以驳回。某 银行向某县政府发函，要求某县政府落实某公司的还款 责任。某县政府复函：\"请贵行继续依法主张债权，我 们将配合做好有关工作。\"尔后，某银行向法院起诉， 请求某县政府履行职责。法院经审理认为，某县政府已 履行相应职责，某银行的债权不能实现的原因在于其主 张债权时已超过诉讼时效。下列哪一选项是错误的？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2008",
-        "answer-missing"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2008
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "所有权",
-      "chapterConfidence": "low",
-      "chapterOfficial": "所有权",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2008年客观题卷二#二#92",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "甲挪用救灾款的行为，不构成挪用特定款物罪"
-        },
-        {
-          "label": "B",
-          "text": "甲挪用办公经费的行为构成挪用公款罪，挪用"
-        },
-        {
-          "label": "C",
-          "text": "甲挪用办公经费后销毁账目且未归还的行为构"
-        },
-        {
-          "label": "D",
-          "text": "对于甲应当以挪用公款罪、贪污罪实行并罚"
-        }
-      ],
-      "source": {
-        "nativeId": "2008年客观题卷二#二#92",
-        "path": "真题库/客观题/2008年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "国有公司财务人员甲于2007年6月挪用单位救灾 款100万元，供自己购买股票，后股价大跌，甲无力归还 该款项。2008年1月，甲挪用单位办公经费70万元为自己 购买商品房。两周后，甲采取销毁账目的手段，使挪用 的办公经费70万元中的50万元难以在单位财务账上反映 出来。甲一直未归还上述所有款项。关于甲的行为定性 ，下列选项正确的是：",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2008",
-        "answer-missing"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2008
-    },
-    {
-      "answer": [
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "违约责任",
-      "chapterConfidence": "low",
-      "chapterOfficial": "违约责任",
-      "difficulty": null,
-      "explanation": "本题考查 2009 年最高人民法院《关于审理无正本提单交付货物案件适用法律\n若干问题的规定》。\nA 项：最高人民法院《关于审理无正本提单交付货物案件适用法律若干问题的规定》第\n3 条第 2 款规定：“正本提单持有人要求承运人承担无正本提单交付货物民事责任的，适用\n海商法规定；海商法没有规定的，适用其他法律规定。”此项错。\nBD 项：第 3 条第 1 款规定：“承运人因无正本提单交付货物造成正本提单持有人损失\n的，正本提单持有人可以要求承运人承担违约责任，或者承担侵权责任。”故 B 项正确，D\n项错误。\nC 项：第 6 条规定：“承运人因无正本提单交付货物造成正本提单持有人损失的赔偿\n额，按照货物装船时的价值加运费和保险费计算。”此项错。",
-      "id": "law:fakao-app:2009年客观题-卷一#一#41",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "无正本提单交付货物的民事责任应适用交货地法律"
-        },
-        {
-          "label": "B",
-          "text": "乙公司可以要求甲公司承担违约责任或侵权责任"
-        },
-        {
-          "label": "C",
-          "text": "甲公司对因无正本提单交货造成的损失按货物的成本赔偿"
-        },
-        {
-          "label": "D",
-          "text": "丙公司提走了货物，不能要求甲公司承担责任"
-        }
-      ],
-      "source": {
-        "nativeId": "2009年客观题-卷一#一#41",
-        "path": "真题库/客观题/2009年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲公司依运输合同承运一批从某国进口中国的食品，当正本提单持有人乙公司持正 本提单提货时，发现货物已由丙公司以副本提单加保函提走。依我国相关法律规定，下列哪 一选项是正确的？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2009"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2009
-    },
-    {
-      "answer": [
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "合同的保全和债的担保",
-      "chapterConfidence": "low",
-      "chapterOfficial": "合同的保全和债的担保",
-      "difficulty": null,
-      "explanation": "本题考查信用证。\nABC 项：根据最高人民法院《关于审理信用证纠纷案件若干问题的规定》第 10 条规\n定：“人民法院认定存在信用证欺诈的，应当裁定中止支付或者判决终止支付信用证项下款\n项，但有下列情形之一的除外：（一）开证行的指定人、授权人已按照开证行的指令善意地\n进行了付款”本题中指定行已经善意支付了信用证项下的款项，故法院不应禁止中国丙银行\n对外付款，B 项正确，AC 项错误。\nD 项：《跟单信用证统一惯例》只调整信用证各方当事人之间的关系，丁银行与甲公司\n之间的担保关系不属其调整范围，此项错。",
-      "id": "law:fakao-app:2009年客观题-卷一#一#46",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "中国法院可以诈欺为由禁止开证行对外支付"
-        },
-        {
-          "label": "B",
-          "text": "因指定行已善意支付了信用证项下的款项，中国法院不应禁止中国丙银行对外付款"
-        },
-        {
-          "label": "C",
-          "text": "如确有证据证明单据为乙公司伪造，中国法院可判决终止支付"
-        },
-        {
-          "label": "D",
-          "text": "丁银行与甲公司之间的担保关系应适用《跟单信用证统一惯例》规定"
-        }
-      ],
-      "source": {
-        "nativeId": "2009年客观题-卷一#一#46",
-        "path": "真题库/客观题/2009年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "中国甲公司（买方）与某国乙公司签订仪器买卖合同，付款方式为信用证，中国丙 银行为开证行，中国丁银行为甲公司申请开证的保证人，担保合同未约定法律适用。乙公司 向信用证指定行提交单据后，指定行善意支付了信用证项下的款项。后甲公司以乙公司伪造 单据为由，向中国某法院申请禁止支付令。依我国相关法律规定，下列哪一选项是正确的？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2009"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2009
-    },
-    {
-      "answer": [
-        "B",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "合同的订立和效力",
-      "chapterConfidence": "high",
-      "chapterOfficial": "合同的订立和效力",
-      "difficulty": null,
-      "explanation": "本题考查劳动合同的订立。\n《劳动合同法》第 14 条规定：“无固定期限劳动合同，是指用人单位与劳动者约定无\n确定终止时间的劳动合同。用人单位与劳动者协商一致，可以订立无固定期限劳动合同。有\n下列情形之一，劳动者提出或者同意续订、订立劳动合同的，除劳动者提出订立固定期限劳\n动合同外，应当订立无固定期限劳动合同：（一）劳动者在该用人单位连续工作满十年的；\n（二）用人单位初次实行劳动合同制度或者国有企业改制重新订立劳动合同时，劳动者在该\n用人单位连续工作满十年且距法定退休年龄不足十年的；（三）连续订立二次固定期限劳动\n合同，且劳动者没有本法第三十九条和第四十条第一项、第二项规定的情形，续订劳动合同\n的。用人单位自用工之日起满一年不与劳动者订立书面劳动合同的，视为用人单位与劳动者\n已订立无固定期限劳动合同。”\nA 项：不满足上述规定，此项不选。\nB 项：国家法定退休年龄男性为 60 周岁，女性为 50 周岁，因此钱先生已满足第 14 条\n第（二）项的情形，此项正确。\nC 项：该项符合第 14 条第（三）项情形，此项正确。\nD 项：用人单位与劳动者协商一致签订无固定期限劳动合同的，可以订立，此项正确。",
-      "id": "law:fakao-app:2009年客观题-卷一#一#71",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "赵女士于 1995 年 1 月到某公司工作，1999 年 2 月辞职，2002 年 1 月回到该公司工作"
-        },
-        {
-          "label": "B",
-          "text": "钱先生于 1985 年进入某国有企业工作。2006 年 3 月，该企业改制成为私人控股的有"
-        },
-        {
-          "label": "C",
-          "text": "孙女士于 2000 年 2 月进入某公司担任技术开发工作，签定了为期三年、到期自动续期"
-        },
-        {
-          "label": "D",
-          "text": "李先生原为甲公司的资深业务员，于 2008 年 2 月被乙公司聘请担任市场开发经理，"
-        }
-      ],
-      "source": {
-        "nativeId": "2009年客观题-卷一#一#71",
-        "path": "真题库/客观题/2009年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "2009 年 2 月，下列人员向所在单位提出订立无固定期限劳动合同，哪些人具备法定 条件？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2009"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2009
-    },
-    {
-      "answer": [
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "诉讼时效与期间",
-      "chapterConfidence": "low",
-      "chapterOfficial": "诉讼时效与期间",
-      "difficulty": null,
-      "explanation": "本题考查产品责任的归责原则及产品缺陷致人损害的赔偿请求权。\nAB 项：《产品质量法》第 41 条规定：“因产品存在缺陷造成人身、缺陷产品以外的其\n他财产(以下简称他人财产)损害的，生产者应当承担赔偿责任。生产者能够证明有下列情形\n之一的，不承担赔偿责任：(一)未将产品投入流通的；(二)产品投入流通时，引起损害的缺陷\n尚不存在的；(三)将产品投入流通时的科学技术水平尚不能发现缺陷的存在的。”第 42 条规\n定：“由于销售者的过错使产品存在缺陷，造成人身、他人财产损害的，销售者应当承担赔\n偿责任。销售者不能指明缺陷产品的生产者也不能指明缺陷产品的供货者的，销售者应当承\n担赔偿责任。”由条文可知，《产品质量法》对生产者产品缺陷实行严格责任。A 项错误，\nB 项正确。\nCD 项：第 45 条规定：“因产品存在缺陷造成损害要求赔偿的诉讼时效期间为二年，自\n当事人知道或者应当知道其权益受到损害时起计算。因产品存在缺陷造成损害要求赔偿的请\n求权，在造成损害的缺陷产品交付最初消费者满十年丧失；但是，尚未超过明示的安全使用\n期的除外。”由此可知，CD 项说法错误。",
-      "id": "law:fakao-app:2010年客观题-卷一#一#24",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "《产品质量法》对生产者、销售者的产品缺陷责任均实行严格责任"
-        },
-        {
-          "label": "B",
-          "text": "《产品质量法》对生产者产品缺陷实行严格责任，对销售者实行过错责任"
-        },
-        {
-          "label": "C",
-          "text": "产品缺陷造成损害要求赔偿的诉讼时效期间为二年，从产品售出之日起计算"
-        },
-        {
-          "label": "D",
-          "text": "产品缺陷造成损害要求赔偿的请求权在缺陷产品生产日期满十年后丧失"
-        }
-      ],
-      "source": {
-        "nativeId": "2010年客观题-卷一#一#24",
-        "path": "真题库/客观题/2010年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "根据《产品质量法》规定，下列哪一说法是正确的？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2010"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2010
-    },
-    {
-      "answer": [
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "合同的履行",
-      "chapterConfidence": "high",
-      "chapterOfficial": "合同的履行",
-      "difficulty": null,
-      "explanation": "本题考查《劳动合同法》。\nA 项：《劳动合同法》第 69 条第 2 款规定：“从事非全日制用工的劳动者可以与一个\n或者一个以上用人单位订立劳动合同；但是，后订立的劳动合同不得影响先订立的劳动合同\n的履行。”由此可知 A 项表述正确。\nB 项：《劳动合同法》第 70 条规定：“非全日制用工双方当事人不得约定试用期。”由\n此可知 B 项表述正确。\nC 项：《劳动合同法》第 71 条规定：“非全日制用工双方当事人任何一方都可以随时通\n知对方终止用工。终止用工，用人单位不向劳动者支付经济补偿。”由此可知 C 项说法错\n误。\nD 项：《劳动合同法》第 72 条第 2 款规定：“非全日制用工劳动报酬结算支付周期最\n长不得超过十五日。”D 项说法正确。",
-      "id": "law:fakao-app:2010年客观题-卷一#一#27",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "从事非全日制用工的劳动者与多个用人单位订立劳动合同的，后订立的合同不得影响"
-        },
-        {
-          "label": "B",
-          "text": "非全日制用工合同不得约定试用期"
-        },
-        {
-          "label": "C",
-          "text": "非全日制用工终止时，用人单位应当向劳动者支付经济补偿"
-        },
-        {
-          "label": "D",
-          "text": "非全日制用工劳动报酬结算支付周期最长不得超过十五日"
-        }
-      ],
-      "source": {
-        "nativeId": "2010年客观题-卷一#一#27",
-        "path": "真题库/客观题/2010年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "关于非全日制用工的说法，下列哪一选项不符合《劳动合同法》规定？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2010"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2010
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "合同的变更、转让和权利义务终止",
-      "chapterConfidence": "low",
-      "chapterOfficial": "合同的变更、转让和权利义务终止",
-      "difficulty": null,
-      "explanation": "本题考察商品房预售条件。\nA 项：《城市房地产管理法》第 45 条第 1 款第(四)项规定：“商品房预售，应当符合下\n列条件：(四)向县级以上人民政府房产管理部门办理预售登记，取得商品房预售许可证\n明。”由此可知 A 项表述符合法律规定。\nB 项：《预售商品房认购书》独立于商品房预售合同，《预售商品房认购书》规定的权\n利义务只是条件具备时，当事人应当签订商品房预售合同，不以取得商品房销售许可证为条\n件，B 项正确。\nC 项：本案中，双方签订商品房预售合同时，公司已经取得商品房预售许可证，具备了\n商品房预售的法定条件，C 项正确。\nD 项：《合同法》第 60 条第 1 款规定：“当事人应当按照约定全面履行自己的义\n务。”由此可知，即使因施工进度及竣工交付日期变化的，房地产开发公司也应当按照合同\n约定全面履行义务，不得将房屋另售他人，D 项错误。",
-      "id": "law:fakao-app:2010年客观题-卷一#一#95",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "法律规定，取得商品房预售许可证是商品房预售的必备条件之一"
-        },
-        {
-          "label": "B",
-          "text": "《预售商品房认购书》不是商品房预售合同，不以取得商品房销售许可证为条件"
-        },
-        {
-          "label": "C",
-          "text": "双方签订商品房预售合同时，公司已具备商品房预售的法定条件，该合同有效"
-        },
-        {
-          "label": "D",
-          "text": "因施工进度及竣工交付日期变化的，房屋可另售他人"
-        }
-      ],
-      "source": {
-        "nativeId": "2010年客观题-卷一#一#95",
-        "path": "真题库/客观题/2010年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "2010 年 1 月，高某与某房地产开发公司签订了一份《预售商品房认购书》。《认购 书》约定，公司为高某预留所选房号，双方于公司取得商品房预售许可证时正式签订商品房 预售合同。《认购书》还约定，认购人于签订认购书时缴纳“保证金”一万元，该款于双方 签订商品房预售合同时自动转为合同定金，如认购人接到公司通知后七日内不签订商品房预 售合同，则该款不予退还。同年 2 月，高某接到公司已经取得商品房预售许可证的通知，立 即前往公司签订了商品房预售合同，并当场缴纳了首期购房款 80 万元。同年 5 月，高某接 到公司通知：房屋预售合同解除。经了解，该套房屋已经被公司以更高价格出售给第三人。 双方发生争议。公司主张，双方在签订《预售商品房认购书》时，公司尚未取得商品房预售 许可证，故该《认购书》无效，以此为基础订立的商品房预售合同也应无效。对此，下列判 断正确的是：",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2010"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2010
-    },
-    {
-      "answer": [
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "违约责任",
-      "chapterConfidence": "high",
-      "chapterOfficial": "违约责任",
-      "difficulty": null,
-      "explanation": "本题考查违约责任。\n本题中，《预售商品房认购书》与商品房预售合同是独立的有效合同，均具有约束力，\n因此 AB 项说法错误。\n《合同法》第 107 条规定：“当事人一方不履行合同义务或者履行合同义务不符合约定\n的，应当承担继续履行、采取补救措施或者赔偿损失等违约责任。”第 115 条规定：“当事\n人可以依照《中华人民共和国担保法》约定一方向对方给付定金作为债权的担保。债务人履\n行债务后，定金应当抵作价款或者收回。给付定金的一方不履行约定的债务的，无权要求返\n还定金；收受定金的一方不履行约定的债务的，应当双倍返还定金。”本案中，开发商违约\n应当双倍返还定金，对于给高某造成的损失，高某有权请求开发商进行赔偿，CD 项正确。",
-      "id": "law:fakao-app:2010年客观题-卷一#一#97",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "商品房预售合同无约束力，只能按公司的意见办理退款"
-        },
-        {
-          "label": "B",
-          "text": "商品房预售合同有效，但《预售商品房认购书》无效，故应按公司的意见办理退款"
-        },
-        {
-          "label": "C",
-          "text": "《预售商品房认购书》和商品房预售合同均有效，应该支持高某的主张"
-        },
-        {
-          "label": "D",
-          "text": "开发商违约，高某有权请求赔偿损失"
-        }
-      ],
-      "source": {
-        "nativeId": "2010年客观题-卷一#一#97",
-        "path": "真题库/客观题/2010年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "2010 年 1 月，高某与某房地产开发公司签订了一份《预售商品房认购书》。《认购 书》约定，公司为高某预留所选房号，双方于公司取得商品房预售许可证时正式签订商品房 预售合同。《认购书》还约定，认购人于签订认购书时缴纳“保证金”一万元，该款于双方 签订商品房预售合同时自动转为合同定金，如认购人接到公司通知后七日内不签订商品房预 售合同，则该款不予退还。同年 2 月，高某接到公司已经取得商品房预售许可证的通知，立 即前往公司签订了商品房预售合同，并当场缴纳了首期购房款 80 万元。同年 5 月，高某接 到公司通知：房屋预售合同解除。经了解，该套房屋已经被公司以更高价格出售给第三人。 双方发生争议。经双方协商，高某同意解除商品房预售合同。但在款项支付问题上，双方发 生分歧。高某要求返还 80 万元首期房款本息并双倍返还定金。公司主张只退还 80 万元首期 房款和一万元“保证金”。对此，下列判断正确的是：",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2010"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2010
-    },
-    {
-      "answer": [
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "违约责任",
-      "chapterConfidence": "high",
-      "chapterOfficial": "违约责任",
-      "difficulty": null,
-      "explanation": "本题考查公务员聘任制。\nA 项：《公务员法》第 95 条规定：“机关根据工作需要，经省级以上公务员主管部门批\n准，可以对专业性较强的职位和辅助性职位实行聘任制。前款所列职位涉及国家秘密的，不\n实行聘任制。”由此可知涉及国家秘密的职位不实行聘任制即对于负责保密工作的计算机程\n序员不可以实行聘任，A 项表述错误。\nB 项：《公务员法》第 98 条规定：“聘任合同应当具备合同期限，职位及其职责要求，\n工资、福利、保险待遇，违约责任等条款。聘任合同期限为一年至五年。聘任合同可以约定\n试用期，试用期为一个月至六个月。聘任制公务员按照国家规定实行协议工资制，具体办法\n由中央公务员主管部门规定。”由此可知 B 项正确，由此可知 C 项表述错误。\nD 项：“《公务员法》第 97 条第 2 款规定：“聘任合同的签订、变更或者解除，应当\n报同级公务员主管部门备案。”可知聘任合同只需报同级公务员主管部门备案，无需经上级\n机关批准，D 项说法错误。",
-      "id": "law:fakao-app:2010年客观题-卷二#二#98",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "某县保密局聘任两名负责保密工作的计算机程序员"
-        },
-        {
-          "label": "B",
-          "text": "某县财政局与所聘任的一名精算师实行协议工资制"
-        },
-        {
-          "label": "C",
-          "text": "某市林业局聘任公务员的合同期限为十年"
-        },
-        {
-          "label": "D",
-          "text": "某县公安局聘任网络管理员的合同需经上级公安机关批准"
-        }
-      ],
-      "source": {
-        "nativeId": "2010年客观题-卷二#二#98",
-        "path": "真题库/客观题/2010年客观题-卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "关于聘任制公务员，下列做法正确的是：",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2010"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2010
-    },
-    {
-      "answer": [
-        "A",
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "违约责任",
-      "chapterConfidence": "high",
-      "chapterOfficial": "违约责任",
-      "difficulty": null,
-      "explanation": "A 选项，侵犯商业秘密，属于侵犯权利人经济性权利的行为，在本质上属于侵权。违反\n竞业禁止义务，要求责任人与被侵害人之间存在竞业禁止约定，在本质上属于违约行为。A\n项正确。\n身、财产权益的，受损害方有权选择依照本法要求其承担违约责任或者依照其他法律要求其\n承担侵权责任。这里 K 公司既可以要求邓某承担违反竞业禁止义务的违约责任，也可以要求\n邓某承担侵犯商业秘密的侵权责任。根据法律规定，权利人 K 公司享有选择权，邓某没有选\n择权，其主张得不到法律支持。B 项正确，D 项错误。\nC 选项，劳动关系和商事关系均属于广义上的民事法律关系，相互之间没有先后之分。C\n项错误。",
-      "id": "law:fakao-app:2011年客观题-卷一#一#33",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "侵犯商业秘密本质上属于侵权，违反竞业禁止本质上属于违约"
-        },
-        {
-          "label": "B",
-          "text": "本案存在法律关系竞合，K 公司有选择权"
-        },
-        {
-          "label": "C",
-          "text": "劳动关系优先于商事关系"
-        },
-        {
-          "label": "D",
-          "text": "邓某的主张应予支持"
-        },
-        {
-          "label": "B",
-          "text": "D 选项，《合同法》第一百二十二条规定，因当事人一方的违约行为，侵害对方人"
-        }
-      ],
-      "source": {
-        "nativeId": "2011年客观题-卷一#一#33",
-        "path": "真题库/客观题/2011年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "邓某系 K 制药公司技术主管。2008 年 2 月，邓某私自接受 Y 制药公司聘请担任其技 术顾问。5 月，K 公司得知后质问邓某。邓某表示自愿退出 K 公司，并承诺 5 年内不以任何 直接或间接方式在任何一家制药公司任职或提供服务，否则将向 K 公司支付 50 万元违约 金。2009 年，K 公司发现邓某已担任 Y 公司的副总经理，并持有 Y 公司 20%股份，而且 Y 公 司新产品已采用 K 公司研发的配方。K 公司以 Y 公司和邓某为被告提起侵犯商业秘密的诉 讼。案件审理期间邓某提出，本案纠纷起因于自己与 K 公司的劳动关系，应属劳动争议案 件，故 K 公司应向劳动争议仲裁机构提起仲裁申请，遂请求法院裁定驳回起诉。关于该主 张，下列说法正确的是",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2011"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2011
-    },
-    {
-      "answer": [
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "合同的变更、转让和权利义务终止",
-      "chapterConfidence": "low",
-      "chapterOfficial": "合同的变更、转让和权利义务终止",
-      "difficulty": null,
-      "explanation": "本题主要考查人权。人权在本源上具有历史性，人权存在和发展的内因是人的自然属\n性，外因是社会的经济、文化状况。“权利永远不能超出社会的经济结构以及由经济结构所\n制约的文化发展。”人权不是天赋的，也不是理性的产物，而是历史地产生的，最终是由一\n定的物质生活条件所决定的。它的具体内容和范围总是随历史发展、社会进步而不断丰富和\n扩展的。因此，不同时代对人权的取舍、理解和使用都会有所差异。\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\nA 选项，该选项表达了天赋人权的思想，认为自由是人的本性。但该项并非体现人权的\n历史性特征，A 项错误。\nB 选项，“没有无义务的权利，也没有无权利的义务”，这句话表明权利义务是对立统\n一的，在结构上密切联系、不可分割；在数量上，总量相等；从产生和发展看，两者经历了\n一个从浑然一体到分裂对立再到相对一致的过程。但该选项并未体现人权的历史性特征，B\n项错误。\nC 选项，该选项表达了天赋人权的思想，认为人权是“造物主”赋予的，C 项错误。\nD 选项，权利永远不能超出社会的经济结构以及由经济结构所制约的文化发展，反映了\n人权的历史性特征。D 项正确。",
-      "id": "law:fakao-app:2011年客观题-卷一#一#43",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "“根据自然法，一切人生而自由，既不知有奴隶，也就无所谓释放”"
-        },
-        {
-          "label": "B",
-          "text": "“没有无义务的权利，也没有无权利的义务”"
-        },
-        {
-          "label": "C",
-          "text": "“人人生而平等，他们都从他们的‘造物主’那里被赋予某些不可转让的权利”"
-        },
-        {
-          "label": "D",
-          "text": "“权利永远不能超出社会的经济结构以及由经济结构所制约的文化发展”"
-        }
-      ],
-      "source": {
-        "nativeId": "2011年客观题-卷一#一#43",
-        "path": "真题库/客观题/2011年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "下列哪一表述说明人权在本原上具有历史性？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2011"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2011
-    },
-    {
-      "answer": [
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "合同的履行",
-      "chapterConfidence": "high",
-      "chapterOfficial": "合同的履行",
-      "difficulty": null,
-      "explanation": "本题考查见索即付的保函的相关内容。见索即付保函又称为见索即付担保，或独立保\n函，是指一旦主债务人违约，贷款人无须先向主债务人追索，即可无条件要求保证人承担第\n一偿付责任的保证。\nA 选项，见索即付保函具有无条件性，保证人仅凭受益人提出的要求即应付款，而不问\n付款是否有合理依据。A 项错误。\n不能以基础合同的履行、修改或无效等对抗受益人。只要违约事实出现，担保人就须履行保\n函义务。B 项错误，C 项正确。\nD 选项，这里的保函被担保人可直接依据保函要求保证人履行保函义务，而不需对债务\n人采取救济措施。D 项正确。",
-      "id": "law:fakao-app:2011年客观题-卷一#一#79",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "丙银行对该合同因战乱而违约的事实进行实质审查后，方履行保函义务"
-        },
-        {
-          "label": "B",
-          "text": "因该合同违约原因是乙国内战，丙银行可以此为由不履行保函义务"
-        },
-        {
-          "label": "C",
-          "text": "丙银行出具的见索即付保函独立于该合同，只要违约事实出现即须履行保函义务"
-        },
-        {
-          "label": "D",
-          "text": "保函被担保人无须对甲国公司采取各种救济方法，便可直接要求丙银行履行保函义务"
-        },
-        {
-          "label": "B",
-          "text": "C 选项，见索即付保函具有独立性，即担保人所承担的义务独立于基础合同，担保人"
-        }
-      ],
-      "source": {
-        "nativeId": "2011年客观题-卷一#一#79",
-        "path": "真题库/客观题/2011年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲国公司承担乙国某工程，与其签订工程建设合同。丙银行为该工程出具见索即付 的保函。后乙国发生内战，工程无法如期完工。对此，下列哪些选项是正确的？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2011"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2011
-    },
-    {
-      "answer": [
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "违约责任",
-      "chapterConfidence": "high",
-      "chapterOfficial": "违约责任",
-      "difficulty": null,
-      "explanation": "A 项考查商业银行贷款合同的形式。依据《商业银行法》第 37 条规定：“商业银行贷\n款，应当与借款人订立书面合同。合同应当约定贷款种类、借款用途、金额、利率、还款期\n限、还款方式、违约责任和双方认为需要约定的其他事项。”A 项错误。\nB 项考查银行的呆账贷款问题。对此，《商业银行法》本身并无明确规定。我国目前按\n照国际标准，实行贷款五级分类制度，根据内在风险程度将商业贷款划分为正常、关注、次\n级、可疑、损失五类。不良贷款分为逾期贷款（借款合同到期未按期归还的贷款）、呆滞贷\n款（逾期超过一年期限仍未归还的贷款）、呆账贷款（不能收回的贷款）。本题中经展期后\n到期仍未偿还的贷款可能属于呆滞贷款，不一定就属于呆账贷款，B 项错误。\nC 项考查政府是否有权要求银行贷款。依据《商业银行法》第 41 条规定：“任何单位和\n个人不得强令商业银行发放贷款或者提供担保。商业银行有权拒绝任何单位和个人强令要求\n其发放贷款或者提供担保。”C 项正确。\nD 项考查银行对关系人的贷款问题。依据《商业银行法》第 40 条第 1 款规定：“商业\n银行不得向关系人发放信用贷款；向关系人发放担保贷款的条件不得优于其他借款人同类贷\n款的条件。”可见，对于关系人，担保贷款是可以发放的，只是对其条件有所限制。D 项错\n误。",
-      "id": "law:fakao-app:2011年客观题-卷二#二#29",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "商业银行与借款人订立贷款合同，可采取口头、书面或其他形式"
-        },
-        {
-          "label": "B",
-          "text": "借款合同到期未偿还，经展期后到期仍未偿还的贷款，为呆账贷款"
-        },
-        {
-          "label": "C",
-          "text": "政府部门强令商业银行向市政建设项目发放贷款的，商业银行有权拒绝"
-        },
-        {
-          "label": "D",
-          "text": "商业银行对关系人提出的贷款申请，无论是信用贷款还是担保贷款，均应予拒绝"
-        }
-      ],
-      "source": {
-        "nativeId": "2011年客观题-卷二#二#29",
-        "path": "真题库/客观题/2011年客观题-卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "根据现行银行贷款制度，关于商业银行贷款，下列哪一说法是正确的？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2011"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2011
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "占有",
-      "chapterConfidence": "low",
-      "chapterOfficial": "占有",
-      "difficulty": null,
-      "explanation": "关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n本题考查非法占有目的，非法占有目的，是指排除权利人、将他人的财物作为自己的所\n有物进行支配，并遵从财物的用途进行利用、处分的意思。非法占有目的由“排除意思”和\n“利用意思”构成。\nA 选项，男性基于癖好入户窃取女士内衣，其具有排除意思，且因为利用意思不限于遵\n从财物的经济用途来进行，其仍具有利用意思。A 项正确。\nB 选项，为了燃柴取暖而窃取他人木制家具，其具有排除意思，也具有利用意思。B 项\n正确。\nC 选项，骗取他人钢材后作为废品卖出，具有排除意思和利用意思。C 项正确。\nD 选项，在具有毁坏、隐匿的意思的同时还具有其他动机，该动机不能评价为具有遵从\n财物可能具有的用途进行利用、处分的意思时，不能认定具有利用意思。因此杀人后为了避\n免公安机关识别被害人身份将其钱包等物丢弃，没有利用意思，不构成非法占有目的。D 项\n错误。",
-      "id": "law:fakao-app:2011年客观题-卷二#二#61",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "男性基于癖好入户窃取女士内衣"
-        },
-        {
-          "label": "B",
-          "text": "为了燃柴取暖而窃取他人木质家具"
-        },
-        {
-          "label": "C",
-          "text": "骗取他人钢材后作为废品卖给废品回收公司"
-        },
-        {
-          "label": "D",
-          "text": "杀人后为避免公安机关识别被害人身份，将被害人钱包等物丢弃"
-        }
-      ],
-      "source": {
-        "nativeId": "2011年客观题-卷二#二#61",
-        "path": "真题库/客观题/2011年客观题-卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "下列哪些选项的行为人具有非法占有目的？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2011"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2011
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "占有",
-      "chapterConfidence": "high",
-      "chapterOfficial": "占有",
-      "difficulty": null,
-      "explanation": "本题考查侵占罪，侵占罪是指将代为保管的他人财物非法占为己有，数额较大，拒不退\n还的，或者将他人的遗忘物或者埋藏物非法占为己有，数额较大，拒不交出的行为。\nA 选项，他人停放在车棚内未上锁的自行车依旧为自行车所有者占有，自行车非遗忘\n物，因此甲将自行车骑走卖掉的行为构成盗窃罪，而非侵占罪。A 项错误应选。\nB 选项，遗忘物，是指非基于他人本意而脱离他人占有，偶尔（即不是基于委托关系）\n由行为人占有或者占有人不明的财物。对于遗失行李箱的乘客来说，行李箱属于遗忘物，但\n落在车子后备箱里，无论司机发现与否都自动归转出租车司机占有，乙拿走的行为构成盗窃\n罪而非侵占罪。B 项错误应选。\nC 选项，学生用语占座的手机仍归学生占有，是有主物，并将其拿走卖掉的行为构成盗\n窃罪。C 项错误应选。\nD 选项，邻居委托丁看房，但是其锁在柜里的手提电脑仍归其自己占有，并不是代为保\n管物，丁将其拿走变卖的行为成立盗窃罪。D 项错误应选。",
-      "id": "law:fakao-app:2011年客观题-卷二#二#62",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "甲将他人停放在车棚内未上锁的自行车骑走卖掉。甲行为构成侵占罪"
-        },
-        {
-          "label": "B",
-          "text": "乙下车取自己行李时将后备厢内乘客遗忘的行李箱一并拿走变卖。乙行为构成侵占罪"
-        },
-        {
-          "label": "C",
-          "text": "丙在某大学食堂将学生用于占座的手机拿走卖掉。丙行为成立侵占罪"
-        },
-        {
-          "label": "D",
-          "text": "丁受托为外出邻居看房，将邻居锁在柜里的手提电脑拿走变卖。丁行为成立侵占罪"
-        }
-      ],
-      "source": {
-        "nativeId": "2011年客观题-卷二#二#62",
-        "path": "真题库/客观题/2011年客观题-卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "关于侵占罪的认定（不考虑数额），下列哪些选项是错误的？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2011"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2011
-    },
-    {
-      "answer": [
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "侵权责任概述",
-      "chapterConfidence": "low",
-      "chapterOfficial": "侵权责任概述",
-      "difficulty": null,
-      "explanation": "关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\nA 项考查瑕疵产品对第三人的侵权责任，依据《消费者权益保护法》第 2 条规定，消费\n者为生活消费需要购买、使用商品或者接受服务，其权益受本法保护；本法未作规定的，受\n其他有关法律、法规保护。《产品质量法》本题钱某不是本法所规定的消费者，故不适用\n《消费者权益保护法》。但可依据《产品质量法》请求赔偿。A 说法正确，不选。\nB 项考查瑕疵产品损害赔偿的消费者选择权。依据《产品质量法》35 条第 2 款规定，消\n费者或者其他受害人因商品缺陷造成人身、财产损害的，可以向销售者要求赔偿，也可以向\n生产者要求赔偿。属于生产者责任的，销售者赔偿后，有权向生产者追偿。属于销售者责任\n的，生产者赔偿后，有权向销售者追偿。据此，赵某可向该厂也可向该商场请求赔偿，B 项\n说法正确，不选。\nC 项考查生产商应承担的产品责任。依据《产品质量法》第 41 条，因产品存在缺陷造成\n人身、缺陷产品以外的其他财产（以下简称他人财产）损害的，生产者应当承担赔偿责任。\n生产者能够证明有下列情形之一的，不承担赔偿责任：（1）未将产品投入流通的；（2）产\n品投入流通时，引起损害的缺陷尚不存在的；（3）将产品投入流通时的科学技术水平尚不\n能发现缺陷的存在的。因此，虽然生产者的产品责任是无过错责任，法律规定了一定的免责\n事由，其中缺陷不存在，则可免责。C 项说法正确，不选。\nD 项考查考查生产者的免责事由。依据《产品质量法》第 42 条规定，“由于销售者的\n过错使产品存在缺陷，造成人身、他人财产损害的，销售者应当承担赔偿责任。销售者不能\n指明缺陷产品的生产者也不能指明缺陷产品的供货者的，销售者应当承担赔偿责任”。商场\n作为销售者对产品承担过错责任，不论产品是否缺陷，只要对产品或服务存在过错，就要承\n担责任，除非证明无过错。D 项错误。（本题答案：D）",
-      "id": "law:fakao-app:2012年客观题-卷一#一#28",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "钱某不得依据《消费者权益保护法》请求赔偿"
-        },
-        {
-          "label": "B",
-          "text": "如高压锅被认定为缺陷产品，赵某可向该厂也可向该商场请求赔偿"
-        },
-        {
-          "label": "C",
-          "text": "如高压锅未被认定为缺陷产品则该厂不承担赔偿责任"
-        },
-        {
-          "label": "D",
-          "text": "如该商场证明目前科技水平尚不能发现缺陷存在则不承担赔偿责任"
-        }
-      ],
-      "source": {
-        "nativeId": "2012年客观题-卷一#一#28",
-        "path": "真题库/客观题/2012年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "赵某从某商场购买了某厂生产的高压锅，烹饪时邻居钱某到其厨房聊天，高压锅爆 炸致 2 人受伤。下列哪一选项是错误的？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2012"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2012
-    },
-    {
-      "answer": [
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "遗产的处理",
-      "chapterConfidence": "low",
-      "chapterOfficial": "遗产的处理",
-      "difficulty": null,
-      "explanation": "A 项考查战争开始的引起的条约关系的变化。战争开始的法律后果之一是条约关系发生\n变化。仅以交战国为当事国的条约效力根据以下情况决定：第一，凡以维持共同政治行动或\n友好关系为前提的条约，如同盟条约、互助条约或和平友好条约立即废止。第二，一般的政\n治和经济类条约，如引渡条约、商务条约等，除条约另有规定外，也停止效力。这类条约战\n后的效力如何，一般由缔约方在这类条约中或在和约中明确。第三，关于规定缔约国间固定\n或永久状态的条约，如边界条约、割让条约等一般应继续维持，除非这类条约另有规定，或\n缔约方另有协议。因此，A 项符合战争法。\nB 项考查战争开始对敌产的影响。交战国在战争中对敌产的处理应区分公产和私产：第\n一，交战国对于其境内的敌国国家财产，除属于使馆的财产档案等外，可予以没收；第二，\n对占领区内属军事性的敌国动产可以征用；对不动产可以使用，但不得拥有、变卖或作其他\n改变物权所有者的处置；第三，具有军事性的不动产，如桥梁、要塞等可于必要时予以破\n坏；第四，交战国对于其境内的敌国人民的私产可予以限制，如禁止转移、冻结或征用，但\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n不得没收；第五，对占领区内的敌国人民之私产不应以任何方式干涉或没收，但对可供军事\n需要的财产可征用。因此，B 项符合战争法。\nC 项考查中立国的权利。中立国的权利包括以下三个方面：（1）中立国的领土主权应得\n到交战国的尊重。交战国不得在中立国领土或其管辖区域从事战争行为，不得将中立国领土\n作为其作战基地、通讯设施基地，或在中立国领土或领水内将商船改装为军舰；（2）中立\n国人员的权益应得到保护。交战国有义务采取措施，防止其境内或其管辖区域内的中立国使\n节及国民遭受虐待；防止其境内或其管辖区内的中立国人民的合法权益受到侵犯。中立国与\n交战国关系中的某些特殊权利。中立国有权与交战国的任一方保持正常的外交和商务关系。\n本题中，丙作为中立国，在甲、乙交战期间可与其任一方保持正常外交和商务关系。因此，\nC 项符合战争法。\nD 项考查中立国的义务。中立国的义务一般可以分为不作为的义务、防止的义务和容忍\n的义务三个方面：（1）不作为的义务，是指中立国不得直接或间接地向任何交战国提供军\n事支持或帮助。包括不得提供军队、武器、给养、贷款或向交战国军队提供庇护场所等。\n（2）防止的义务，是指中立国有义务釆取一切可能的措施，防止交战国在其领土或其管辖\n范围内的区域从事战争，或利用其资源准备从事战争敌对行动以及战争相关的行动，包括在\n该区域中征兵、备战、建立军事设施或捕获法庭、军队及军用装备过境等。（3）容忍的义\n务，指中立国须容忍交战国根据战争法对其国家和人民釆取的有关措施，包括对其有关船舶\n的临检、对其从事非中立义务的船舶的拿捕审判、处罚或非常征用。本题中，甲、乙交战期\n间，丙同意甲通过自己的领土过境运输军用装备不符合战争法。因此，D 项不符合战争法。",
-      "id": "law:fakao-app:2012年客观题-卷一#一#34",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "甲、乙战争开始后，除条约另有规定外，二国间商务条约停止效力"
-        },
-        {
-          "label": "B",
-          "text": "甲、乙不得对其境内敌国人民的私产予以没收"
-        },
-        {
-          "label": "C",
-          "text": "甲、乙交战期间，丙可与其任一方保持正常外交和商务关系"
-        },
-        {
-          "label": "D",
-          "text": "甲、乙交战期间，丙同意甲通过自己的领土过境运输军用装备"
-        }
-      ],
-      "source": {
-        "nativeId": "2012年客观题-卷一#一#34",
-        "path": "真题库/客观题/2012年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲、乙国发生战争，丙国发表声明表示恪守战时中立义务。对此，下列哪一做法不 符合战争法？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2012"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2012
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "所有权",
-      "chapterConfidence": "high",
-      "chapterOfficial": "所有权",
-      "difficulty": null,
-      "explanation": "条规定，农村村民一户只能拥有一处宅基地，其宅基地的面积不得超过省、自治区、直辖市\n规定的标准。农村村民住宅用地，经乡（镇）人民政府审核，由县级人民政府批准；其中，\n涉及占用农用地的，依照本法第 44 条的规定办理审批手续。农村村民出卖、出租住房后，\n再申请宅基地的，不予批准。AB 项说法错误，应选。\nCD 考查农村宅基地转让合同的效力。依据土地管理法规定，农村村民宅基地的所有权\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n属于村民集体所有，村民只有使用权，没有所有权，禁止擅自买卖或非法转让。但买受方是\n本集体经济组织成员的，可依法办理宅基地用地手续。C、D 说法错误，应选。",
-      "id": "law:fakao-app:2012年客观题-卷一#一#72",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "由于甲无一技之长，在外找不到工作，只能返乡务农。政府应再批给甲一处宅基地建"
-        },
-        {
-          "label": "B",
-          "text": "根据“一户一宅”的原则，甲作为本村村民应拥有自己的住房。政府应再批给甲一处"
-        },
-        {
-          "label": "C",
-          "text": "由于农村土地具有保障功能，宅基地不得买卖，甲乙之间的转让合同无效。乙应返还"
-        },
-        {
-          "label": "D",
-          "text": "由于与乙的转让合同未经有关政府批准，转让合同无效。乙应返还房屋及宅基地使用"
-        },
-        {
-          "label": "A",
-          "text": "B 项考查转让宅基地后，能否在向政府请求审批宅基地。依据《土地管理法》第 62"
-        }
-      ],
-      "source": {
-        "nativeId": "2012年客观题-卷一#一#72",
-        "path": "真题库/客观题/2012年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "农户甲外出打工，将自己房屋及宅基地使用权一并转让给同村农户乙，5 年后甲返 回该村。关于甲返村后的住宅问题，下列哪些说法是错误的？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2012"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2012
-    },
-    {
-      "answer": [
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "转移财产权利合同",
-      "chapterConfidence": "high",
-      "chapterOfficial": "转移财产权利合同",
-      "difficulty": null,
-      "explanation": "本题 ABC 三项问题不大，主要的疑惑在于 D 项。拒不支付劳动报酬罪指以转移财产、逃\n匿等方法逃避支付劳动者的劳动报酬或者有能力支付而支付劳动报酬，数额较大，经政府有\n关部门责令支付仍不支付的行为。本案例中，“劳动部门下达责令支付通知书后，甲故意失\n踪。”已属于“经政府有关部门责令支付仍不支付”的范围，在侦查阶段支付的行为，只是\n可以减轻或者免除处罚，D 项错误。",
-      "id": "law:fakao-app:2012年客观题-卷二#二#1_1",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "《刑法修正案（八）》增设拒不支付劳动报酬罪，体现了立法服务大局、保护民生的"
-        },
-        {
-          "label": "B",
-          "text": "公安机关积极破案解决社会问题，发挥了保障民生的作用"
-        },
-        {
-          "label": "C",
-          "text": "依据《刑法修正案（八）》对欠薪案的审理，体现了惩教并举，引导公民守法、社会"
-        },
-        {
-          "label": "D",
-          "text": "甲已支付所欠工资，可不再追究甲的刑事责任，以利于实现良好的社会效果"
-        }
-      ],
-      "source": {
-        "nativeId": "2012年客观题-卷二#二#1",
-        "path": "真题库/客观题/2012年客观题-卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "老板甲春节前转移资产，拒不支付农民工工资。劳动部门下达责令支付通知书后， 甲故意失踪。公安机关接到报警后，立即抽调警力，迅速将甲抓获。在侦查期间，甲主动支 付了所欠工资。起诉后，法院根据《刑法修正案（八）》拒不支付劳动报酬罪认定甲的行 为，甲表示认罪。关于此案，下列哪一说法是错误的？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2012"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2012
-    },
-    {
-      "answer": [
-        "A",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "合同的履行",
-      "chapterConfidence": "low",
-      "chapterOfficial": "合同的履行",
-      "difficulty": null,
-      "explanation": "A 项甲系机关保卫处长，但不是司法工作人员，不构成刑讯逼供罪，有非法拘禁之嫌。\nB 项人民陪审员在参与庭审，履行职责期间是司法工作人员，但其殴打刘某的行为，是为了\n泄愤，而不是逼取口供，不构成刑讯逼供罪，B 项正确。C 项按照《刑法》第 247 条关于法\n律拟制的规定，构成故意伤害罪，而不构成刑讯逼供罪，C 项说法错误。D 项并未使用暴力\n进行刑讯逼供，也没有其他变相刑讯逼供的行为，而只有取证过程中的欺骗行为.不构成刑讯\n逼供罪。D 项说法错误。",
-      "id": "law:fakao-app:2012年客观题-卷二#二#60",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "甲系机关保卫处长，采用多日不让小偷睡觉的方式，迫其承认偷盗事实。甲构成刑讯"
-        },
-        {
-          "label": "B",
-          "text": "乙系教师，受聘为法院人民陪审员，因庭审时被告人刘某气焰嚣张，乙气愤不过，一"
-        },
-        {
-          "label": "C",
-          "text": "丙系检察官，为逼取口供殴打犯罪嫌疑人郭某，致其重伤。对丙应以刑讯逼供罪论处"
-        },
-        {
-          "label": "D",
-          "text": "丁系警察，讯问时佯装要实施酷刑，犯罪嫌疑人因害怕承认犯罪事实。丁构成刑讯逼"
-        }
-      ],
-      "source": {
-        "nativeId": "2012年客观题-卷二#二#60",
-        "path": "真题库/客观题/2012年客观题-卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "关于刑讯逼供罪的认定，下列哪些选项是错误的？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2012"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2012
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "违约责任",
-      "chapterConfidence": "high",
-      "chapterOfficial": "违约责任",
-      "difficulty": null,
-      "explanation": "A 项考查瑕疵产品侵权的责任主体问题。依据《产品质量法》第 43 条规定，“因产品存\n在缺陷造成人身、他人财产损害的，受害人可以向产品的生产者要求赔偿，也可以向产品的\n销售者要求赔偿。属于产品的生产者的责任，产品的销售者赔偿的，产品的销售者有权向产\n品的生产者追偿。属于产品的销售者的责任，产品的生产者赔偿的，产品的生产者有权向产\n品的销售者追偿。”A 项正确。\nB 项考查孙某能否向煌煌商贸公司索赔的问题。本题中煌煌商贸公司并非生产者而是总\n经销商，二者之间不存在合同关系，严格来说对孙某不承担侵权责任；同时煌煌商贸公司与\n孙某之间不存在合同关系，对孙某不承担违约责任。《产品质量法》第 43 条是否突破了合\n同相对性，特别赋予缺陷产品的受害人向销售链条上的任何销售者索赔的权利，存在疑问。\n司法部认为 B 项正确，可以商榷。\nC 项考查销售商与生产商的法律责任，依据《产品质量法》第 43 条规定，C 项正确。\nD 项考查经销商的法律责任。由于超市与煌煌商贸公司之间存在合同关系，自然可以追\n究煌煌商贸公司的违约责任，D 项正确。",
-      "id": "law:fakao-app:2013年客观题-卷一#一#66",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "孙某有权向该跑步机生产商索赔"
-        },
-        {
-          "label": "B",
-          "text": "孙某有权向煌煌商贸公司、超市索赔"
-        },
-        {
-          "label": "C",
-          "text": "超市向孙某赔偿后，有权向该跑步机生产商索赔"
-        },
-        {
-          "label": "D",
-          "text": "超市向孙某赔偿后，有权向煌煌商贸公司索赔"
-        }
-      ],
-      "source": {
-        "nativeId": "2013年客观题-卷一#一#66",
-        "path": "真题库/客观题/2013年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "孙某从某超市买回的跑步机在使用中出现故障并致其受伤。经查询得知，该型号跑 步机数年前已被认定为不合格产品，超市从总经销商煌煌商贸公司依正规渠道进货。下列哪 些选项是正确的？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2013"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2013
-    },
-    {
-      "answer": [
-        "B",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "合同的变更、转让和权利义务终止",
-      "chapterConfidence": "low",
-      "chapterOfficial": "合同的变更、转让和权利义务终止",
-      "difficulty": null,
-      "explanation": "产转让时，土地使用权出让合同载明的权利、义务随之转移。”我国实行房地一体，地上建\n筑物不能脱离土地使用权而单独存在，A 项错误，B 项正确。\nC 项考查受让方改变土地用途是否只需转让方同意。依据《城市房地产管理法》第 44 条\n规定：“以出让方式取得土地使用权的，转让房地产后，受让人改变原土地使用权出让合同\n约定的土地用途的，必须取得原出让方和市、县人民政府城市规划行政主管部门的同意，签\n订土地使用权出让合同变更协议或者重新签订土地使用权出让合同，相应调整土地使用权出\n让金。”C 项错误。\nD 项考查转让土地使用权的使用年限。依据《城市房地产管理法》第 43 条规定，“以\n出让方式取得土地使用权的，转让房地产后，其土地使用权的使用年限为原土地使用权出让\n合同约定的使用年限减去原土地使用者已经使用年限后的剩余年限。”据此，乙公司的土地\n使用权年限为 47 年。又依据《城市房地产管理法》第 22 条第 1 款规定，“土地使用权出让\n合同约定的使用年限届满，土地使用者需要继续使用土地的，应当至迟于届满前一年申请续\n期，除根据社会公共利益需要收回该幅土地的，应当予以批准。经批准准予续期的，应当重\n新签订土地使用权出让合同，依照规定支付土地使用权出让金。”据此，D 项正确。",
-      "id": "law:fakao-app:2013年客观题-卷一#一#72",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "如该楼房已取得房屋所有权证，则甲公司可只转让整幅地块的使用权而不转让该楼房"
-        },
-        {
-          "label": "B",
-          "text": "甲公司在土地使用权出让合同中载明的权利、义务应由乙公司整体承受"
-        },
-        {
-          "label": "C",
-          "text": "乙公司若要改变原土地使用权出让合同约定的土地用途，取得原出让方的同意即可"
-        },
-        {
-          "label": "D",
-          "text": "乙公司受让后，可以在其土地使用权的使用年限满 46 年之前申请续期"
-        },
-        {
-          "label": "A",
-          "text": "B 项考查土地及房屋的转让问题。依据《城市房地产管理法》第 42 条规定：“房地"
-        }
-      ],
-      "source": {
-        "nativeId": "2013年客观题-卷一#一#72",
-        "path": "真题库/客观题/2013年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲公司以出让方式取得某地块 50 年土地使用权，用于建造写字楼。土地使用权满 3 年时，甲公司将该地块的使用权转让给乙公司，但将该地块上已建成的一幢楼房留作自用。 对此，下列哪些选项是正确的？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2013"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2013
-    },
-    {
-      "answer": [
-        "B",
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "提供劳务合同",
-      "chapterConfidence": "high",
-      "chapterOfficial": "提供劳务合同",
-      "difficulty": null,
-      "explanation": "本题考查企业所得税的应纳税收入。依据《企业所得税法》第 6 条规定，“企业以货币\n形式和非货币形式从各种来源取得的收入，为收入总额。包括：（一）销售货物收入;（二）\n提供劳务收入;（三）转让财产收入;（四）股息、红利等权益性投资收益;（五）利息收入;\n（六）租金收入;（七）特许权使用费收入;（八）接受捐赠收入;（九）其他收入。”B、C 两\n项符合上述法规，正确。\nC 项考查财政拨款是否属于企业所得税的应纳税收入。依据《企业所得税法》第 7 条规\n定，“收入总额中的下列收入为不征税收入：（一）财政拨款;（二）依法收取并纳入财政管\n理的行政事业性收费、政府性基金;（三）国务院规定的其他不征税收入。”C 项说法错误。\nD 项考查国债收入应否为应纳税收入，根据国务院及国家税务总局相关规定，企业购买\n国债的利息收入不纳税，D 项错误。",
-      "id": "law:fakao-app:2013年客观题-卷一#一#92",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "财政拨款"
-        },
-        {
-          "label": "B",
-          "text": "销售产品收入"
-        },
-        {
-          "label": "C",
-          "text": "专利转让收入"
-        },
-        {
-          "label": "D",
-          "text": "国债利息收入"
-        }
-      ],
-      "source": {
-        "nativeId": "2013年客观题-卷一#一#92",
-        "path": "真题库/客观题/2013年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "2012 年 12 月，某公司对县税务局确定的企业所得税的应纳税所得额、应纳税额及 在 12 月 30 日前缴清税款的要求极为不满，决定撤离该县，且不缴纳税款。县税务局得知 后，责令该公司在 12 月 15 日前纳税。当该公司有转移生产设备的明显迹象时，县税务局责 成其提供纳税担保。 该公司取得的下列收入中，属于《企业所得税法》规定的应纳税收入的是：",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2013"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2013
-    },
-    {
-      "answer": [
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "合同的变更、转让和权利义务终止",
-      "chapterConfidence": "high",
-      "chapterOfficial": "合同的变更、转让和权利义务终止",
-      "difficulty": null,
-      "explanation": "A 选项错误，依法纳税是我国宪法规定的公民基本义务，故王某作为中国公民，有依法纳税的义务。\nB 选项错误。凡年满18周岁的公民，均有依法服兵役的义务，王某今年23岁，显然满足条件，只是由于其之前在高校就读，可以缓征，在毕业后只要满足服现役条件，仍然可以被征集服现役。\nC 选项正确，根据选举权普遍原则，公民只要年满18周岁，未被剥夺政治权利，均依法享有选举权和被选举权。\nD 选项错误，宪法当中的休息权是一项非常特殊的身份性权利，仅针对劳动者，王某未就业，显然不属于劳动者，自然不享有休息权(但不能理解为不能休息)。",
-      "id": "law:fakao-app:2014年客观题#一#24",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "无须承担纳税义务"
-        },
-        {
-          "label": "B",
-          "text": "不得被征集服现役"
-        },
-        {
-          "label": "C",
-          "text": "有选举权和被选举权"
-        },
-        {
-          "label": "D",
-          "text": "有休息的权利"
-        }
-      ],
-      "source": {
-        "nativeId": "2014年客观题#一#24",
-        "path": "真题库/客观题/2014年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "王某为某普通高校应届毕业生，23岁，尚未就业。根据《宪法》和法律的规定，关于王某的权利义务，下列哪一选项是正确的?",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2014"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2014
-    },
-    {
-      "answer": [
-        "B",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "担保物权",
-      "chapterConfidence": "low",
-      "chapterOfficial": "担保物权",
-      "difficulty": null,
-      "explanation": "补贴是指出口国(地区)政府或者其任何公共机构(以下统称出口国政府)提供的并为接受者带来利益的财政资助以及任何形式的收入或者价格支持。构成补贴须具备两个要素：政府提供的财政资助和接受者获得的利益。\n根据《反补贴条例》第3条：补贴，是指出口国(地区)政府或者其任何公共机构提供的并为接受者带来利益的财政资助以及任何形式的收入或者价格支持。出口国(地区)政府或者其任何公共机构，以下统称出口国(地区)政府。本条第1款所称财政资助，包括：\n(1)出口国(地区)政府以拨款、贷款、资本注入等形式直接提供资金，或者以贷款担保等形式潜在地直接转让资金或者债务；(2)出口国(地区)政府放弃或者不收缴应收收入；(3)出口国(地区)政府提供除一般基础设施以外的货物、服务，或者由出口国(地区)政府购买货物；(4)出口国(地区)政府通过向筹资机构付款，或者委托、指令私营机构履行上述职能。\n题中 A 项属于政府进行基础设施建设的行为，并非针对特定企业、产业，属于提供公共产品的行为，不是补贴，其余皆为补贴。",
-      "id": "law:fakao-app:2014年客观题#一#82",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "出口国政府出资兴建通向口岸的高速公路"
-        },
-        {
-          "label": "B",
-          "text": "出口国政府给予企业的免税优惠"
-        },
-        {
-          "label": "C",
-          "text": "出口国政府提供的贷款"
-        },
-        {
-          "label": "D",
-          "text": "出口国政府通过向筹资机构付款，转而向企业提供资金"
-        }
-      ],
-      "source": {
-        "nativeId": "2014年客观题#一#82",
-        "path": "真题库/客观题/2014年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "根据《中华人民共和国反补贴条例》,下列哪些选项属于补贴?",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2014"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2014
-    },
-    {
-      "answer": [
-        "B",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "违约责任",
-      "chapterConfidence": "high",
-      "chapterOfficial": "违约责任",
-      "difficulty": null,
-      "explanation": "根据法律责任竞合的构成要件，A   选项不符合条件，因为属于典型的一个非法行医行为导致一个刑事法律责任。因此不属于法律责任竞合。 B 选项属于典型的法律责任竞合，根据《民法典》第186条的规定，因当事人一方的违约行为，损害对方人身权益、财产权益的，受损害方有权请求其承担违约责任或者侵权责任。 C 选项错误，因为民事责任和刑事责任可以同时追究，不存在责任竞合的问题。 D 选项满足题意要求，戴某用10万元假币购买一块劳力士手表的行为，同时满足使用假币罪和诈骗罪的构成要件，应从一重罪以诈骗罪处罚，不实行数罪并罚，故属于法律责任竞合。",
-      "id": "law:fakao-app:2014年客观题#一#91",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "方某因无医师资格开设诊所被卫生局没收非法所得，并被法院以非法行医罪判处3年有期徒刑"
-        },
-        {
-          "label": "B",
-          "text": "王某通话时，其手机爆炸导致右耳失聪，可选择以侵权或违约为由追究手机制造商法律责任"
-        },
-        {
-          "label": "C",
-          "text": "林某因故意伤害罪被追究刑事责任和民事责任"
-        },
-        {
-          "label": "D",
-          "text": "戴某用1 0万元假币购买一块劳力士手表，其行为同时触犯诈骗罪与使用假币罪"
-        }
-      ],
-      "source": {
-        "nativeId": "2014年客观题#一#91",
-        "path": "真题库/客观题/2014年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "下列构成法律责任竞合的情形是：",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2014"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2014
-    },
-    {
-      "answer": [
         "D"
       ],
       "answerText": null,
       "chapter": "法定继承",
-      "chapterConfidence": "low",
+      "chapterConfidence": "high",
       "chapterOfficial": "法定继承",
       "difficulty": null,
       "explanation": "本案，薛某驾车撞死一行人，属于机动车交通事故责任，依法应当承担损害赔偿责任，薛某与受害人之间发生了民事法律关系，具体来说是侵权赔偿的债的法律关系。就该笔赔偿而言，义务人或者说责任人是薛某，对应的权利人当然是存在的，就是受害人的法定继承人。所以 A 项错误。\n该6万元赔偿费并不属于交警大队，交警大队作为行使公权力的机关，是代权利人暂时持有(占有)这笔财产，可见交警大队并未受有任何利益，所以谈不上不当得利的构成，B 项错误。\n交警大队既然是代收6万元，行使的并非行政职权，而是民事权利，属于债权债务的代收而已，仍然没有脱离民事法律关系之范畴，所以C 项错误。当然，交警大队之所以能够代收而不是其他主体来代收，确实与其行政职权有关联，但代收本身并非行政法律关系。\n该笔赔偿由死者的法定继承人享有，如果真的一直未找到权利人(即法定继承人),根据《民法典》第1160条的规定，无人继承又无人受遗赠的遗产，归国家所有；死者生前是集体所有制组织成员的，归所在集体所有制组织所有。据此可知，该6万元赔偿费用此时已成无主财产，依法应收归国库，故 D 项正确，当选。",
@@ -300732,6 +298611,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "甲公司向乙公司催讨一笔已过诉讼时效期限的10万元货款。乙公司书面答复称：“该笔债务已过时效期限，本公司本无义务偿还，但鉴于双方的长期合作关系，可偿还3万元。”甲公司遂向法院起诉，要求偿还10万元。乙公司接到应诉通知后书面回函甲公司称：“既然你公司起诉，则不再偿还任何货款。”下列哪一选项是正确的?",
+      "subjectId": "minfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2014"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2014
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "违约责任",
+      "chapterConfidence": "high",
+      "chapterOfficial": "违约责任",
+      "difficulty": null,
+      "explanation": "本题考查按份共有人的收益分配、侵权责任的适用范围。根据《民法典》第297条的规定，不动产或者动产可以由两个以上单位、个人共有。共有包括按份共有和共同共有。据此可知，共有制度本身包括两类即共同共有和按份共有。本题中，张某和李某共有一台机器，各占50%份额，属于“按份共有”。根据《民法典》第309条的规定，按份共有人对共有的不动产或者动产享有的份额，没有约定或者约定不明确的，按照出资额确定；只有不能确定出资额的，视为等额享有。可见，份额的确定实行约定优先原则。据\n此，本题中，双方当事人约定张某和李某分别享有6万元和4万元，也即60%、40%的份额。因此，对于返还的份额问题，故 A、C项表述错误，不当选。\n最后，关于“该10万元暂存李某账户，由其在3个月后返还给张某6万元。”的约定，后来由于第三人申请的执行行为而不能得到履行，李某构成“违约”。依照《民法典》第577条规定，违约责任的归责原则属于无过错责任，所以即使李某没有过错，也要承担违约责任；又依据《民法典》第593条规定，由于第三人的行为导致债务人违约的，仍由债务人对于债权人承担违约责任。所以本题中由于第三人王某的介入导致李某对张某违约，仍由李某承担违约责任，故B 项正确。\n关于李某是否构成侵权，答案是否定的，一般侵权责任的构成需要行为人具有过错，就本题而论，看不出李某有何过错。 D 项错误，不当选。\n最后解答一个关联疑问：王某是否可以执行李某账户上的10万元?答案是肯定的，因为张某李某之约定，属于内部约定。按照合同相对性原则，自不能约束第三人，更何况王某是不知情的第三人。综上，本题答案为 B 项。",
+      "id": "law:fakao-app:2014年客观题#三#6",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "李某构成违约，张某可请求李某返还5万元"
+        },
+        {
+          "label": "B",
+          "text": "李某构成违约，张某可请求李某返还6万元"
+        },
+        {
+          "label": "C",
+          "text": "李某构成侵权，张某可请求李某返还5万元"
+        },
+        {
+          "label": "D",
+          "text": "李某构成侵权，张某可请求李某返还6万元"
+        }
+      ],
+      "source": {
+        "nativeId": "2014年客观题#三#6",
+        "path": "真题库/客观题/2014年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "张某与李某共有一台机器，各占50%份额。双方共同将机器转卖获得10万元，约定张某和李某分别享有6万元和4万元。同时约定该10万元暂存李某账户，由其在3个月后返还给张某6万元。后该账户全部款项均被李某债权人王某申请法院查封并执行，致李某不能按期返还张某款项。下列哪一表述是正确的?",
       "subjectId": "minfa",
       "tags": [
         "fakao-app",
@@ -300889,6 +298816,54 @@
     },
     {
       "answer": [
+        "A"
+      ],
+      "answerText": null,
+      "chapter": "合同的履行",
+      "chapterConfidence": "high",
+      "chapterOfficial": "合同的履行",
+      "difficulty": null,
+      "explanation": "根据《民法典》第509条规定，当事人应当按照约定全面履行自己的义务。甲公司按时预付第一笔款后，没有违约行为；乙公司于9月30日发函单方要求提价的行为，实际上是要求单方变更合同，于法无据；甲公司于10月1日拒绝接受提价请求，于法有据；在等待乙公司回复的过程中，仅仅迟延了两天履行第二笔款项的支付，于情于理都是合理的，并不构成违约，故A 项正确，当选。\n《民法典》第563条规定：有下列情形之一的，当事人可以解除合同：(1)因不可抗力致使不能实现合同目的；(2)在履行期限届满前，当事人一方明确表示或者以自己的行为表明不履行主要债务；(3)当事人一方迟延履行主要债务，经催告后在合理期限内仍未履行；\n(4)当事人一方迟延履行债务或者有其他违约行为致使不能实现合同目的；(5)法律规定的其他情形。本题中，甲公司并未出现违约行为，也没有发生其他符合上述情形之一的情形。因此，乙公司并未取得法定单方解除权，不得解除合同，故B 项错误，不当选。\n关于先履行抗辩权，《民法典》第526条规定：当事人互负债务，有先后履行顺序，应当先履行债务一方未履行的，后履行一方有权拒绝其履行要求。先履行一方履行债务不符合约定的，后履行一方有权拒绝其相应的履行请求。本题中，固然甲公司是先履行方，但已经依约履行第一笔、第二笔预付款，是故，后履行方乙公司不得行使先履行抗辩权，故C 项错误。\n最后，在合同履行过程中，双方当事人应依据“诚实信用原则”进行履行，原材料价格上涨，如果并未达到情势变更的程度，就属于“正常的商业风险”,乙公司不可单方要求提高合同价格，故D 项亦错误，不当选。",
+      "id": "law:fakao-app:2014年客观题#三#12",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲公司不构成违约"
+        },
+        {
+          "label": "B",
+          "text": "乙公司有权解除合同"
+        },
+        {
+          "label": "C",
+          "text": "乙公司可行使先履行抗辩权"
+        },
+        {
+          "label": "D",
+          "text": "乙公司可要求提高合同价格"
+        }
+      ],
+      "source": {
+        "nativeId": "2014年客观题#三#12",
+        "path": "真题库/客观题/2014年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲公司向乙公司购买小轿车，约定7月1日预付10万元，10月1日预付20万元，12月1日乙公司交车时付清尾款。甲公司按时预付第一笔款。乙公司于9月30日发函称因原材料价格上涨，需提高小轿车价格。甲公司于10月1日拒绝，等待乙公司答复未果后于10月3日向乙公司汇去20万元。乙公司当即拒收，并称甲公司迟延付款构成违约，要求解除合同，甲公司则要求乙公司继续履行。下列哪一表述是正确的?",
+      "subjectId": "minfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2014"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2014
+    },
+    {
+      "answer": [
         "C"
       ],
       "answerText": null,
@@ -300941,7 +298916,7 @@
       ],
       "answerText": null,
       "chapter": "自然人",
-      "chapterConfidence": "low",
+      "chapterConfidence": "high",
       "chapterOfficial": "自然人",
       "difficulty": null,
       "explanation": "根据民法基本原理，民法主体包括三类即自然人、法人和其他组织；其中其他组织中最典型的即法人的分支机构。据此可知，法人的分支机构在性质上属于“其他组织”,在法人授权范围内能以自己名义从事营业活动，有相对独立的民事主体资格，即  “有独立的诉讼地位但无独立的实体地位”。本题中，乙支行借给张某20万元，由李某提供保证担保，届期，张某李某均未还款，此时，乙支行应以“自己的名义”向张某行使追索权，故 D 项正确，当选。虽然甲银行并不属于借款合同的主体，但是乙支行作为甲银行的分支机构在实体上不具有独立的地位。因此，作为保证人的李某和甲银行的特别约定是有效的，故A 项错误，不当选。\n《民法典》第686条：当事人对保证方式没有约定或者约定不明确的，按照一般责任保证承担保证责任。据此可知，本题中，李某即为一般责任保证人，依法应当承担保证责任，故B 项错误，不当选。\n最后，《民法典》第700条规定：保证人承担保证责任后，除当事人另有约定外，有权在其承担保证责任的范围内向债务人追偿。据此，只要保证人承担了保证责任即有权向债务人追偿，故C 项亦错误，不当选。",
@@ -301116,6 +299091,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "欣欣美容医院在为青年女演员欢欢实施隆鼻手术过程中，因未严格消毒导致欢欢面部感染，经治愈后面部仍留下较大疤痕。欢欢因此诉诸法院，要求欣欣医院赔偿医疗费并主张精神损害赔偿。该案受理后不久，欢欢因心脏病急性发作猝死。网络名人洋洋在其博客上杜撰欢欢吸毒过量致死。下列哪一表述是错误的?",
+      "subjectId": "minfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2014"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2014
+    },
+    {
+      "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "所有权",
+      "chapterConfidence": "low",
+      "chapterOfficial": "所有权",
+      "difficulty": null,
+      "explanation": "《民法典》第1063条规定：下列财产为夫妻一方的财产：(1)一方的婚前财产；(2)一方因受到人身损害获得的赔偿或者补偿；(3)遗嘱或者赠与合同中确定只归一方的财产；(4)一方专用的生活用品；\n(5)其他应当归一方的财产。据此可知，甲婚前所有的一间门面房属于个人财产。同时根据《婚姻法解释  (三)》第6条规定：婚前或者婚姻关系存续期间，当事人约定将一方所有的房产赠与另一方，赠与方在赠与房产变更登记之前撤销赠与，另一方请求判令继续履行的，法院可以按照《合同法》第186条的规定处理。 (《合同法》第186条现为《民法典》第658条)《民法典》第658条规定：赠与人在赠与财产的权利转移之前可以撤销赠与。经过公证的赠与合同或者依法不得撤销的具有救灾、扶贫、助残等公益、道德义务性质的赠与合同，不适用前款规定。本题中，虽然甲承诺将该门面房变更登记为夫妻共同财产，但女儿丙出生，甲不愿兑现承诺，就是属于赠与人行使任意撤销权。既然甲不履行赠与合同，该门面房仍然属于甲的个人财产。因此，甲与乙离婚时，乙无权请求将门面房作为夫妻共同财产分割，故A 项表述正确，不当选。\n丙随乙生活，乙作为与未成年人一起生活的监护人承担监护责任，丙重病住院，乙有义务承担医疗费予以救治；甲虽然没有与丙一起生活，但也是丙的监护人，除了承担依照原来的离婚协议约定或者离婚判决书规定来履行自己的支付生活费义务，在乙无力承担医疗费的时候，也有义务承担该医疗费。又《婚姻法解释(三)》第16条规定：夫妻之间订立借款协议，以夫妻共同财产出借给一方从事个人经营活动或用于其他个人事务的，应视为双方约定处分夫妻共同财产的行为，离婚时可按照借款协议的约定处理。本题中，为救助丙急需的医疗费20万元，甲与丁签订借款协议从夫妻共同财产中支取该20万元，根据上述司法解释规定可知，B、C 项表述均正确，不当选。\n最后，根据《婚姻法解释(三)》第4条第2项的规定：婚姻关系存续期间，夫妻一方请求分割共同财产的，法院不予支持，但有下列重大理由且不损害债权人利益的除外： …… (2)一方负有法定扶养义务的人患重大疾病需要医治，另一方不同意支付相关医疗费用的。据此可知，如丁不同意甲支付医疗费，甲为了救治自己的女儿，有权要求分割夫妻共有财产，故 D 项表述错误，当选。",
+      "id": "law:fakao-app:2014年客观题#三#23",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲与乙离婚时，乙无权请求将门面房作为夫妻共同财产分割"
+        },
+        {
+          "label": "B",
+          "text": "甲与丁的协议应视为双方约定处分共同财产"
+        },
+        {
+          "label": "C",
+          "text": "如甲、丁离婚，有关医疗费按借款协议约定处理"
+        },
+        {
+          "label": "D",
+          "text": "如丁不同意甲支付医疗费，甲无权要求分割共有财产"
+        }
+      ],
+      "source": {
+        "nativeId": "2014年客观题#三#23",
+        "path": "真题库/客观题/2014年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲(男)、乙(女)结婚后，甲承诺，在子女出生后，将其婚前所有的一间门面房，变更登记为夫妻共同财产。后女儿丙出生，但甲不愿兑现承诺，导致夫妻感情破裂离婚，女儿丙随乙一起生活。后甲又与丁(女)结婚。未成年的丙因生重病住院急需医疗费20万元，甲与丁签订借款协议从夫妻共同财产中支取该20万元。下列哪一表述是错误的?",
       "subjectId": "minfa",
       "tags": [
         "fakao-app",
@@ -301326,6 +299349,55 @@
     },
     {
       "answer": [
+        "B",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "所有权",
+      "chapterConfidence": "low",
+      "chapterOfficial": "所有权",
+      "difficulty": null,
+      "explanation": "根据《民法典》第272条的规定，业主对其建筑物专有部分享有占有、使用、收益和处分的权利。业主行使权利不得危及建筑物的安全，不得损害其他业主的合法权益。同时，根据《民法典》第286条第2款的规定，业主大会或者业主委员会，对任意弃置垃圾、排放污染物或者噪声、违反规定饲养动物、违章搭建、侵占通道、拒付物业费等损害他人合法权益的行为，有权依照法律、法规以及管理规约，要求行为人停止侵害、排除妨碍、消除危险、恢复原状、赔偿损失。业主对侵害自己合法权益的行为，可以依法向法院提起诉讼。《建筑物区分所有权解释》第15条第4款进一步规定，业主或者其他行为人违反法律、法规、国家相关强制性标准、管理规约，或者违反业主大会、业主委员会依法作出的决定，实施下列行为的，可以认定为物权法第83条第2款所称的其他“损害他人合法权益的行为”:(四)违章加建、改建，侵占、挖掘公共通道、道路、场地或者其他共有部分。\n本题中，徐某未获得规划许可证和施工许可证便在自住房前扩建一个门面房，挤占小区人行通道，依法应当自行拆除，其对该门面房不享有所有权，但对该门面房构成“占有”。根据上述法律规定，其他业主可以向“法院起诉”,但不得自行随意拆除。如随意拆除虽不侵犯所有权，但侵犯“占有”这种事实状态或事实管领力，故A 、C项错误，不当选；B 项正确，当选。最后，在自行拆除门面房的同时，毁坏了徐某“自住房屋”的墙砖，依法构成侵权。根据《民法典》第238条的规定 · 侵害物权，造成权利人损害的，权利人可以依法请求损害赔偿，也可以依法请求承担其他民事责任，故D 项正确，当选。综上所述，本题的正确答案为 B、D。",
+      "id": "law:fakao-app:2014年客观题#三#58",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "侵犯了徐某门面房的所有权"
+        },
+        {
+          "label": "B",
+          "text": "侵犯了徐某的占有"
+        },
+        {
+          "label": "C",
+          "text": "其他业主应恢复原状"
+        },
+        {
+          "label": "D",
+          "text": "其他业主应赔偿徐某自住房屋墙砖毁坏的损失"
+        }
+      ],
+      "source": {
+        "nativeId": "2014年客观题#三#58",
+        "path": "真题库/客观题/2014年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某小区徐某未获得规划许可证和施工许可证便在自住房前扩建一个门面房，挤占小区人行通道。小区其他业主多次要求徐某拆除未果后，将该门面房强行拆除，毁坏了徐某自住房屋的墙砖。关于拆除行为，下列哪些表述是正确的?",
+      "subjectId": "minfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2014"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2014
+    },
+    {
+      "answer": [
         "A",
         "B",
         "D"
@@ -301522,6 +299594,55 @@
     },
     {
       "answer": [
+        "B",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "遗产的处理",
+      "chapterConfidence": "low",
+      "chapterOfficial": "遗产的处理",
+      "difficulty": null,
+      "explanation": "根据民法基本原理，有抚养关系的继父母子女关系的形成，必须子女属于“未成年人”,如属于成年人则不能形成有抚养关系的继父母子女关系。本题中，甲与丙(女)再婚时，甲的儿子小明已经20岁，属于“成年人”,不能与丙(女)形成有抚养关系的继母与继子的关系。\n根据《民法典》第1105条的规定：收养应当向县级以上人民政府民政部门登记。收养关系自登记之日起成立。本题中，甲与丙收养孤儿小光为养子，视同己出，但“未办理收养手续”,依法不能形成“养父母子女的关系”。\n最后，根据《民法典》第1127条的规定，遗产按照下列顺序继承：第一顺序：配偶、子女、父母。本法所说的子女，包括婚生子女、非婚生子女、养子女和有扶养关系的继子女。当丙去世时，甲(男)属于配偶、小亮属于儿子。因此，只有二者能作为丙遗产的第一顺序继承人，故A、D项错误，不当选；B、C 项正确，当选。",
+      "id": "law:fakao-app:2014年客观题#三#65",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "小明"
+        },
+        {
+          "label": "B",
+          "text": "小亮"
+        },
+        {
+          "label": "C",
+          "text": "甲"
+        },
+        {
+          "label": "D",
+          "text": "小光"
+        }
+      ],
+      "source": {
+        "nativeId": "2014年客观题#三#65",
+        "path": "真题库/客观题/2014年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲(男)与乙(女)结婚，其子小明20周岁时，甲与乙离婚。后甲与丙(女)再婚，丙子小亮8周岁，随甲、丙共同生活。小亮成年成家后，甲与丙甚感孤寂，收养孤儿小光为养子，视同己出，未办理收养手续。丙去世，其遗产的第一顺序继承人有哪些?",
+      "subjectId": "minfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2014"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2014
+    },
+    {
+      "answer": [
         "A",
         "C"
       ],
@@ -301607,6 +299728,55 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "甲参加乙旅行社组织的旅游活动。未经甲和其他旅游者同意，乙旅行社将本次业务转让给当地的丙旅行社。丙旅行社聘请丁公司提供大巴运输服务。途中，由于丁公司司机黄某酒后驾驶与迎面违章变道的个体运输户刘某货车相撞，造成甲受伤。甲的下列哪些请求能够获得法院的支持?",
+      "subjectId": "minfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2014"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2014
+    },
+    {
+      "answer": [
+        "A",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "合同的履行",
+      "chapterConfidence": "low",
+      "chapterOfficial": "合同的履行",
+      "difficulty": null,
+      "explanation": "根据《保险法解释(二)》第6条第1款规定，投保人的告知义务限于保险人询问的范围和内容。当事人对询问范围及内容有争议的，保险人负举证责任，故A 项正确，B 项错误。\n根据该解释第6条第2款规定，保险人以投保人违反了对投保单询问表中所列概括性条款的如实告知义务为由请求解除合同的，法院不予支持。但该概括性条款有具体内容的除外。题目中并未给出该概括性条款有具体内容的信息，不满足但书条款，所以，保险人不得以此为由解除合同，C 项错误。\n根据该解释第7条规定，保险人在保险合同成立后知道或者应当知道投保人未履行如实告知义务，仍然收取保险费，又依照保险法第16条第2款的规定主\n-\n张解除合同的，法院不予支持。 D 项正确。",
+      "id": "law:fakao-app:2014年客观题#三#76",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "投保人的告知义务，限于保险人询问的范围和内容"
+        },
+        {
+          "label": "B",
+          "text": "当事人对询问范围及内容有争议的，投保人负举证责任"
+        },
+        {
+          "label": "C",
+          "text": "投保人未如实告知投保单询问表中概括性条款时，则保险人可以此为由解除合同"
+        },
+        {
+          "label": "D",
+          "text": "在保险合同成立后，保险人获悉投保人未履行如实告知义务，但仍然收取保险费，则保险人不得解除合同"
+        }
+      ],
+      "source": {
+        "nativeId": "2014年客观题#三#76",
+        "path": "真题库/客观题/2014年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "关于投保人在订立保险合同时的告知义务，下列哪些表述是正确的?",
       "subjectId": "minfa",
       "tags": [
         "fakao-app",
@@ -301869,394 +300039,6 @@
     },
     {
       "answer": [
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "合同的变更、转让和权利义务终止",
-      "chapterConfidence": "low",
-      "chapterOfficial": "合同的变更、转让和权利义务终止",
-      "difficulty": null,
-      "explanation": "本题是对《不动产登记暂行条例》的考查，根据该条例第14条规定：“因买卖、设定抵押权等申请不动产登记的，应当由当事人双方共同申请。属于下列情形之一的，可以由当事人单方申请：(一)尚未登记的不动产首次申请登记的(二)继承、接受遗赠取得不动产权利的；(三)人民法院、仲裁委员会生效的法律文书或者人民政府生效的决定等设立、变更、转让、消灭不动产权利的；(四)权利人姓名、名称或者自然状况发生变化，申请变更登记的；(五)不动产灭失或者权利人放弃不动产权利，申请注销登记的；(六)申请更正登记或者异议登记的；(七)法律、行政法规规定可以由当事人单方申请的其他情形。”据上述法条可以看出，只有C 选项属于双方申请，A、B、D 分别属于单方申请中的5、2和6项。因此，本题答案选 C。",
-      "id": "law:fakao-app:2015年客观题#一#29",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "赵某放弃不动产权利，申请注销登记"
-        },
-        {
-          "label": "B",
-          "text": "钱某接受不动产遗赠，申请转移登记"
-        },
-        {
-          "label": "C",
-          "text": "孙某将房屋抵押给银行以获得贷款，申请抵押登记"
-        },
-        {
-          "label": "D",
-          "text": "李某认为登记于周某名下的房屋为自己所有，申请更正登记"
-        }
-      ],
-      "source": {
-        "nativeId": "2015年客观题#一#29",
-        "path": "真题库/客观题/2015年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "申请不动产登记时，下列哪一情形应由当事人双方共同申请?",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2015"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2015
-    },
-    {
-      "answer": [
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "违约责任",
-      "chapterConfidence": "low",
-      "chapterOfficial": "违约责任",
-      "difficulty": null,
-      "explanation": "根据收货人不同，提单的种类可以分为记名提单(不能转)、不记名提单(随便转)、指示提单(背书转),本题中的提单属于指示提单，必须经过背书才能转让，不是简单的交付就能转让，所以 C 项错吴，不当选。\n根据《海牙规则》,承运人承担的是不完全的过失责任，两种过失免责：第一是承运人的驾船过失免责，第二是火灾过失免责，但是承运人的实际过失或私谋引起的除外。其他都是无过失免责，包括：(1)不可抗力、自然灾害；(2)救助或企图救助海上人命或财产；\n3)货方原因：由于货物的固有缺陷、性质造成的体积或重量的亏损或任何其他损坏，包装不当，标志不清或不当。本题中，货物变质是由于货物的固有缺陷造成的，是因为生产过程中水分过大，这是卖方的违约行为，所以承运人不需要承担责任。因此 A 错误，D  E确。\n本案货物虽然投了一切险，但是造成货物损失的原因是由于货物的质量缺陷造成的，属于保险人的除责任，所以保险公司不用赔，B 错误。",
-      "id": "law:fakao-app:2015年客观题#一#41",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "承运人没有尽到途中管货的义务，应承担货物途中变质的赔偿责任"
-        },
-        {
-          "label": "B",
-          "text": "因货物投保了一切险，保险人应承担货物变质的赔偿责任"
-        },
-        {
-          "label": "C",
-          "text": "本提单可通过交付进行转让"
-        },
-        {
-          "label": "D",
-          "text": "承运人对啤酒花的变质可以免责"
-        }
-      ],
-      "source": {
-        "nativeId": "2015年客观题#一#41",
-        "path": "真题库/客观题/2015年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "青田轮承运一批啤酒花从中国运往欧洲某港，货物投保了一切险，提单上的收货人一栏写明“凭指示”,因生产过程中水分过大，啤酒花到目的港时已变质。依《海牙规则》及相关保险规则，下列哪一选项是正确的?",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2015"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2015
-    },
-    {
-      "answer": [
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "自然人",
-      "chapterConfidence": "high",
-      "chapterOfficial": "自然人",
-      "difficulty": null,
-      "explanation": "根据《公证法》第11条规定，自然人、法人或者其他组织的申请，公证机构办理下列公证事项：(1)合同；(2)继承；(3)委托、声明、赠与、遗嘱；\n(4)财产分割；(5)招标投标、拍卖；(6)婚姻状况、亲属关系、收养关系；(7)出生、生存、死亡、身份、经历、学历、学位、职务、职称、有无违法犯罪记录；(8)公司章程；(9)保全证据；(10)文书上的签名、印鉴、日期，文书的副本、影印本与原本相符；(11)自然人、法人或者其他组织自愿申请办理的其他公证事项。法律、行政法规规定应当公证的事项。有关自然人、法人或者其他组织应当向公证机构申请办理公证。由上述第(9)项规定可知，A 项说法错误。\n根据《公证程序规则》第10条规定和第11条规定，收养关系的公证，应该由本人亲自申办，不能委托他人，B 项说法错误。\n根据《公证法》第37条规定，对经公证的以给付为内容并载明债务人愿意接受强制执行承诺的债权文书，债务人不履行，或履行不适当的，债权人可以依法向有管辖权的人民法院申请执行。前款规定的债权文书确有错误的，人民法院裁定不予执行，并将裁定书送达双方当事人和公证机构，故D 项说法错误，人民法院仅仅裁定不予执行，并不撤销公证文书。本题答案为 C 项。\n二、多项选择题",
-      "id": "law:fakao-app:2015年客观题#一#50",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "申请人向公证机关提出保全网上交易记录，公证机关以不属于公证事项为由拒绝"
-        },
-        {
-          "label": "B",
-          "text": "自然人委托他人办理财产分割、赠与、收养关系公证的，公证机关不得拒绝"
-        },
-        {
-          "label": "C",
-          "text": "因公证具有较强的法律效力，要求公证机关在办理公证业务时不能仅作形式审查"
-        },
-        {
-          "label": "D",
-          "text": "法院发现当事人申请执行的公证债权文书确有错误的，应裁定不予执行并撤销该公证书"
-        }
-      ],
-      "source": {
-        "nativeId": "2015年客观题#一#50",
-        "path": "真题库/客观题/2015年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "关于我国公证的业务范围、办理程序和效力，下列哪一选项符合《公证法》的规定?",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2015"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2015
-    },
-    {
-      "answer": [
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "所有权",
-      "chapterConfidence": "high",
-      "chapterOfficial": "所有权",
-      "difficulty": null,
-      "explanation": "A 选项属于理论性考点，所谓“动态财产税”是指因无偿转移而发生所有权变动财产按其价值所课征的财产税，遗产税就属于典型的动态税。个人所得税属于典型的所得税而不是财产税，A 选项错误。\nB 选项，根据《个人所得税法》第1条，居民纳税人和非居民纳税人是按照住所或居住时间为标准进行区分的，而不是按照国籍。因此B 选项错误。同时，对于居民纳税人要求境内外所得均要求缴纳个人所得税。因此 C 选项正确。\nD 选项，《个人所得税法》第3条规定：“个人所得税的税率：(一)综合所得，适用百分之三至百分之四十五的超额累进税率……”由以上两条可知，劳务报酬所得适用的是百分之三至百分之四十五的超额累进税率而不是比例税率。因此，D 选项错误。\n综上，本题答案选C。",
-      "id": "law:fakao-app:2015年客观题#一#69",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "以课税对象为划分标准，个人所得税属于动态财产税"
-        },
-        {
-          "label": "B",
-          "text": "非居民纳税人是指不具有中国国籍但有来源于中国境内所得的个人"
-        },
-        {
-          "label": "C",
-          "text": "居民纳税人从中国境内、境外取得的所得均应依法缴纳个人所得税"
-        },
-        {
-          "label": "D",
-          "text": "劳务报酬所得适用比例税率，对劳务报酬所得一次收入畸高的，可实行加成征收"
-        }
-      ],
-      "source": {
-        "nativeId": "2015年客观题#一#69",
-        "path": "真题库/客观题/2015年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "关于个人所得税，下列哪些表述是正确的 ?",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2015"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2015
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "合同的履行",
-      "chapterConfidence": "high",
-      "chapterOfficial": "合同的履行",
-      "difficulty": null,
-      "explanation": "A 选项，根据《劳动合同法》第43条规定，本题属于用人单位的随时解除，依照第43条的规定依然需要通知工会，所以 A 正确。\nB选项，根据《劳动合同法》第39条的规定，田某连续旷工，严重违反规章制度，单位单方解除合同主张符合法律规定。同时，虽然田某处于疾病期间，根据《劳动合同法》第42条，用人单位不可以依据第40条和第41条来解除劳动合同，但是田某在符合第39条的情况下用人单位依然可以解除劳动合同。因此B 选项正确，同时劳动者符合第39条在有过错的情况下用人单位解除合同的，无须支付经济补偿。因此 C 选项\n正确。\nD 选项，根据《劳动合同法》第48条和第87条规定，可以看出继续履行合同和赔偿金只能选择其中之一。因此D 选项错误，不当选。综上，本题答案选 A、\nB、C。",
-      "id": "law:fakao-app:2015年客观题#一#70",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "该厂单方解除劳动合同，应事先将理由通知工会"
-        },
-        {
-          "label": "B",
-          "text": "因田某严重违反规章制度，无论是否在规定的医疗期内该厂均有权解除劳动合同"
-        },
-        {
-          "label": "C",
-          "text": "如该厂解除劳动合同的理由成立，无须向田某支付经济补偿金"
-        },
-        {
-          "label": "D",
-          "text": "如该厂解除劳动合同的理由违法，田某有权要求继续履行劳动合同并主张经济补偿金2倍的赔偿金"
-        }
-      ],
-      "source": {
-        "nativeId": "2015年客观题#一#70",
-        "path": "真题库/客观题/2015年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "某厂工人田某体检时被初诊为脑瘤，万念俱灰，既不复检，也未经请假就外出旅游。该厂以田某连续旷工超过15天，严重违反规章制度为由解除劳动合同。对于由此引起的劳动争议，下列哪些说法是正确的?",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2015"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2015
-    },
-    {
-      "answer": [
-        "B",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "转移财产权利合同",
-      "chapterConfidence": "low",
-      "chapterOfficial": "转移财产权利合同",
-      "difficulty": null,
-      "explanation": "本题只有 A 选项是错误的，因为本案当中虽然涉及了张某住宅的拆迁问题，但宪法中的公民住宅权只排除非法侵入和非法搜查这两类行为。因此张某最终被迫签署了拆迁协议只构成对张某财产权的侵犯，不涉及住宅权的问题。",
-      "id": "law:fakao-app:2015年客观题#一#92",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "张某的住宅不受侵犯权"
-        },
-        {
-          "label": "B",
-          "text": "张某的财产权"
-        },
-        {
-          "label": "C",
-          "text": "李某的劳动权"
-        },
-        {
-          "label": "D",
-          "text": "张某儿子的受教育权"
-        }
-      ],
-      "source": {
-        "nativeId": "2015年客观题#一#92",
-        "path": "真题库/客观题/2015年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "某县政府以较低补偿标准进行征地拆迁。张某因不同意该补偿标准，拒不拆迁自己的房屋。为此，县政府责令张某的儿子所在中学不为其办理新学期注册手续，并通知财政局解除张某的女婿李某(财政局工勤人员)与该局的劳动合同。张某最终被迫签署了拆迁协议。关于当事人被侵犯的权利，下列选项正确的是：",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2015"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2015
-    },
-    {
-      "answer": [
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "合同的履行",
-      "chapterConfidence": "high",
-      "chapterOfficial": "合同的履行",
-      "difficulty": null,
-      "explanation": "使用假币，是将假币作为真币而使用。既可以是以外表合法的方式使用假币，如购买商品、兑换另一货币、存入银行、赠与他人，或者将假币用于交纳罚金或者罚款等，也可以是以非法的方式使用货币，如将假币用于赌博。此外，将假币交付给不知情的他人使用的，以及向自动售货机中投入假币以取得商品的，均成立使用假币罪。本题中，A、B、C项均属于典型的使用假币的情形，成立使用假币罪。\n同时需要注意，使用假币一定要将假币置于流通领域，否则不成立使用假币罪。比如将假币作为证明自己信用能力的资本而给他人查看的，为了与对方签订合同，将假币给对方查看，以证明自己有能力履行合同的，均不是使用假币的行为。 D 项，与网友见面时，显示假币以证明经济实力，但并没有将假币置于流通领域，不成立假币使用罪。本题答案选 D。",
-      "id": "law:fakao-app:2015年客观题#二#15",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "用假币缴纳罚款"
-        },
-        {
-          "label": "B",
-          "text": "用假币兑换外币"
-        },
-        {
-          "label": "C",
-          "text": "在朋友结婚时，将假币塞进红包送给朋友"
-        },
-        {
-          "label": "D",
-          "text": "与网友见面时，显示假币以证明经济实力"
-        }
-      ],
-      "source": {
-        "nativeId": "2015年客观题#二#15",
-        "path": "真题库/客观题/2015年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "下列哪一行为不成立使用假币罪 ( 不考虑数额)?",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2015"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2015
-    },
-    {
-      "answer": [
-        "A"
-      ],
-      "answerText": null,
-      "chapter": "所有权",
-      "chapterConfidence": "high",
-      "chapterOfficial": "所有权",
-      "difficulty": null,
-      "explanation": "乙全家外出数月，邻居甲主动帮乙照看房屋。此时，乙家的财物依然在乙的占有之下，而不在甲的占有之下，甲未经乙的同意，将乙家门口的石狮当作自己的财物卖给他人，对乙而言成立盗窃罪，而非侵占罪。至于甲对购买者是否成立诈骗罪，关键看购买者是否存在财产的损失。如果认为购买者能够取得石狮的所有权，则购买者没有损失，甲对购买者不成立诈骗罪，仅对乙成立盗窃罪；如果认为购买者不能取得石狮的所有权，则购买者存在财产损失，甲对购买者成立诈骗罪，同时对乙成立盗窃罪，即甲同时触犯诈骗罪与盗窃罪。综上分析，无论购买者是否存在财产损失，甲对乙都成立盗窃罪。所以，B、C、D项说法正确， A 项说法错误。",
-      "id": "law:fakao-app:2015年客观题#二#18",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "甲同时触犯侵占罪与诈骗罪"
-        },
-        {
-          "label": "B",
-          "text": "如认为购买者无财产损失，则甲仅触犯盗窃罪"
-        },
-        {
-          "label": "C",
-          "text": "如认为购买者有财产损失，则甲同时触犯盗窃罪与诈骗罪"
-        },
-        {
-          "label": "D",
-          "text": "不管购买者是否存在财产损失，甲都触犯盗窃罪"
-        }
-      ],
-      "source": {
-        "nativeId": "2015年客观题#二#18",
-        "path": "真题库/客观题/2015年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "乙全家外出数月，邻居甲主动帮乙照看房屋。某日，甲谎称乙家门口的一对石狮为自家所有，将石狮卖给外地人，得款1万元据为己有。 关于甲的行为定性，下列哪一选项是错误的?",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2015"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2015
-    },
-    {
-      "answer": [
         "A",
         "B",
         "C"
@@ -302342,6 +300124,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "张某和李某设立的甲公司伪造房产证，以优惠价格与乙企业(国有)签订房屋买卖合同，以骗取钱财。乙企业交付房款后，因甲公司不能交房而始知被骗。关于乙企业可以采取的民事救济措施，下列哪一选项是正确的?",
+      "subjectId": "minfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2015"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2015
+    },
+    {
+      "answer": [
+        "A"
+      ],
+      "answerText": null,
+      "chapter": "所有权",
+      "chapterConfidence": "low",
+      "chapterOfficial": "所有权",
+      "difficulty": null,
+      "explanation": "首先，《民法典》第220条第1款规定，权利人、利害关系人认为不动产登记簿记载的事项错误的，可以申请更正登记。不动产登记簿记载的权利人书面同意更正或者有证据证明登记确有错误的，登记机构应当予以更正。据此可知，甲可向登记机关提出更正登记。因此A 项正确，当选。\n其次，根据《民法典》第234条的规定，因物权的归属、内容发生争议的，利害关系人可以请求确认权利。据此可知，房屋虽然登记在乙名下，但实质上该房屋所有权系属于甲，甲当然可以向法院起诉请求乙过户。因此B 项错误，不当选。\n再次，甲与乙签订的《协议》中约定，乙能够以自己的名义代甲购房，实质上属于隐名的间接代理关系，而非借款购房关系。因此C 项亦错误，不当选。\n根据《民法典》第311条规定，无处分权人将不动产或者动产转让给受让人的，所有权人有权追回；除法律另有规定外，符合下列情形的，受让人取得该不动产或者动产的所有权：(一)受让人受让该不动产或者动产时是善意；(二)以合理的价格转让；(三)转让的不动产或者动产依照法律规定应当登记的已经登记，不需要登记的已经交付给受让人。受让人依据前款规定取得不动产或者动产的所有权的，原所有权人有权向无处分权人请求损害赔偿。当事人善意取得其他物权的，参照适用前两款规定。乙与开发商和银行分别签订了房屋买卖合同和贷款合同，故乙将房屋过户给丙，属于有权处分，所以不适用于善意取得制度，因此 D 项错误，不当选。",
+      "id": "law:fakao-app:2015年客观题#三#5",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲有权提出更正登记"
+        },
+        {
+          "label": "B",
+          "text": "房屋登记在乙名下，甲不得请求乙过户"
+        },
+        {
+          "label": "C",
+          "text": "《协议》名为代购房关系，实为借款购房关系"
+        },
+        {
+          "label": "D",
+          "text": "如乙将房屋过户给不知《协议》的丙，丙支付合理房款则构成善意取得"
+        }
+      ],
+      "source": {
+        "nativeId": "2015年客观题#三#5",
+        "path": "真题库/客观题/2015年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲与乙签订《协议》,由乙以自己名义代甲购房，甲全权使用房屋并获取收益。乙与开发商和银行分别签订了房屋买卖合同和贷款合同。甲把首付款和月供款给乙，乙再给开发商和银行，房屋登记在乙名下。后甲要求乙过户，乙主张是自己借款购房。下列哪一选项是正确的?",
       "subjectId": "minfa",
       "tags": [
         "fakao-app",
@@ -302691,6 +300521,54 @@
     },
     {
       "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "侵权责任概述",
+      "chapterConfidence": "low",
+      "chapterOfficial": "侵权责任概述",
+      "difficulty": null,
+      "explanation": "首先，《民法典》第1229条规定，因污染环境、破坏生态造成他人损害的，侵权人应当承担侵权责任。关于环境污染责任，其归责原则为相对无过错责任。行为人证明自己主观上没有过错是徒劳无益的，不能免责，故 A 项错误，不当选。其次，本题中三家公司排放的污水均分别经过处理且符合国家标准，即单独行为不足以导致损害结果的发生。但当地大旱导致河水水位大幅下降，三家公司排放的污水混合发生化学反应，产生有毒物质致使河流下游丁养殖场的鱼类大量死亡，属于原因力结合。根据《民法典》第1172条的规定，二人以上分别实施侵权行为造成同一损害，能够确定责任大小的，各自承担相应的责任；难以确定责任大小的，平均赔偿责任。同时，根据《民法典》第177条的规定，可知，三家公司应按照污染物的种类、排放量等因素承担按份责任，而非连带责任，故  B 项错误，不当选；D 项正确，当选。最后，根据《环境保护法》第66条的规定，提起环境损害赔偿诉讼的时效期间为三年，从当事人知道或者应当知道其受到损害时起计算。环境污染案件的诉讼时效期间为3年而非2年，故C 项亦错误，不当选。综上所述，本题的正确答案为D。",
+      "id": "law:fakao-app:2015年客观题#三#22",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "三家公司均无过错，不承担赔偿责任"
+        },
+        {
+          "label": "B",
+          "text": "三家公司对丁养殖场的损害承担连带责任"
+        },
+        {
+          "label": "C",
+          "text": "本案的诉讼时效是2年"
+        },
+        {
+          "label": "D",
+          "text": "三家公司应按照污染物的种类、排放量等因素承担责任"
+        }
+      ],
+      "source": {
+        "nativeId": "2015年客观题#三#22",
+        "path": "真题库/客观题/2015年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲、乙、丙三家公司生产三种不同的化工产品，生产场地的排污口相邻。某年，当地大旱导致河水水位大幅下降，三家公司排放的污水混合 发生化学反应，产生有毒物质致使河流下游丁养殖场的鱼类大量死亡。经查明，三家公司排放的污水均分别经过处理且符合国家排放标准。后丁养殖场向三家公司索赔。下列哪一选项是正确的 ?",
+      "subjectId": "minfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2015"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2015
+    },
+    {
+      "answer": [
         "C"
       ],
       "answerText": null,
@@ -302936,6 +300814,106 @@
     },
     {
       "answer": [
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "占有",
+      "chapterConfidence": "high",
+      "chapterOfficial": "占有",
+      "difficulty": null,
+      "explanation": "留置权包括两类，即民事留置和商事留置。根据《民法典》第447、448条的规定，A 项中，张某为王某送货，约定货物送到后一周内支付运费。张某在货物运到后立刻要求王某支付运费被拒绝。此时，债权尚未到期，不符合留置权的构成要件。因此，张某不可以行使留置权，故 A 项错误，不当选。 B项中，刘某把房屋租给方某，方某退租搬离时尚有部分租金未付。虽然租金债权已到期，但刘某并非合法占有方某的部分家具，更非基于同一法律关系。因此，刘某亦不可留置方某的部分家具，故 B 项错误，不当选。C 项中，何某将丁某的行李存放在火车站小件寄存处，后丁某取行李时认为寄存费过高而拒绝支付。根据《担保法解释》第108条的规定：债权人合法占有\n债务人交付的动产时，不知债务人无处分该动产的权利，债权人可以按照《担保法》第82条的规定行使留置权。据此可知，该条规定了留置权的善意取得问题，故 C 项正确，当选。D 项中，甲公司加工乙公司的机器零件，约定先付费后加工。付费和加工均已完成，但乙公司尚欠甲公司借款。该情形属于商事留置，可不基于同一法律关系。此时，甲公司可留置机器零件，故D 项亦正确。",
+      "id": "law:fakao-app:2015年客观题#三#55",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "张某为王某送货，约定货物送到后一周内支付运费。张某在货物运到后立刻要求王某支付运费被拒绝，张某可留置部分货物"
+        },
+        {
+          "label": "B",
+          "text": "刘某把房屋租给方某，方某退租搬离时尚有部分租金未付，刘某可留置方某部分家具"
+        },
+        {
+          "label": "C",
+          "text": "何某将丁某的行李存放在火车站小件寄存处，后丁某取行李时认为寄存费过高而拒绝支付，寄存处可留置该行李"
+        },
+        {
+          "label": "D",
+          "text": "甲公司加工乙公司的机器零件，约定先付费后加工。付费和加工均已完成，但乙公司尚欠甲公司借款，甲公司可留置机器零件"
+        }
+      ],
+      "source": {
+        "nativeId": "2015年客观题#三#55",
+        "path": "真题库/客观题/2015年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "下列哪些情形下权利人可以行使留置权?",
+      "subjectId": "minfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2015"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2015
+    },
+    {
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "所有权",
+      "chapterConfidence": "high",
+      "chapterOfficial": "所有权",
+      "difficulty": null,
+      "explanation": "占有的分类，我们口诀的方式来表述即“有无善恶、自他直间”。其中，“有无”代表有权占有和无权占有；“善恶”代表善意占有和恶意占有； “自他”代表自主占有和他主占有；“直间”代表直接占有和间接占有。首先，有权占有和无权占有的区分标准即本权或权源，如有本权或权源而占有的属于有权占有，如没有本权或权源而占有的属于无权占有。其次，对于无权占有又可再区分为善意占有和恶意占有。如有理由误信其有占有的权源即属于善意占有；如没有理由误信其有占有的权源即属于恶意占有。再次，自主占有和他主占有的区分标准即是否以所有的意思而占有。以自己所有的意思进行占有的属于自主占有；不以自己所有的意思进行占有的属于他主占有；最后，直接占有和间接占有的区分标准即是否直接占有特定物。直接占有特定物的属于直接占有；间接占有，是指对于他人直接占有之物基于特定法律关系有返还请求权，由此对其物有间接管领力。间接占有的构成要件包括：(1)须有占有媒介关系；(2)直接占有人须为他主占有；(3)在直接占有人在占有媒介关系消灭后，对间接占有人负返还占有物的义务。本题中，乙丢失手机后，虽然对手机已丧失事实上的管领，但仍对手机享有物权请求权，对手机为直接占有，故 A 项正确，当选。甲拾得乙的手机，对手机的占有系无权占有，且其将手机卖给不知情的丙并交付，以行为的方式表明其主观上为自主占有，故 B 项正确，当选。相对所有权人乙而言，丙属于无权占有，但其对甲无权处分不知情，有理由误信有占有的权源。因此，属于善意占有，故 C   项正确，当选。作为承揽人的丁基于承揽合同而占有手机属于有权占有，但属于他主占有，故 D 项正确，当选。",
+      "id": "law:fakao-app:2015年客观题#三#56",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "乙丢失手机后，由直接占有变为间接占有"
+        },
+        {
+          "label": "B",
+          "text": "甲为无权占有、自主占有"
+        },
+        {
+          "label": "C",
+          "text": "丙为无权占有、善意占有"
+        },
+        {
+          "label": "D",
+          "text": "丁为有权占有、他主占有"
+        }
+      ],
+      "source": {
+        "nativeId": "2015年客观题#三#56",
+        "path": "真题库/客观题/2015年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲拾得乙的手机，以市价卖给不知情的丙并交付。丙把手机交给丁维修。修好后丙拒付部分维修费，丁将手机扣下。关于手机的占有状态，下列哪些选项是正确的?",
+      "subjectId": "minfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2015"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2015
+    },
+    {
+      "answer": [
         "B",
         "C"
       ],
@@ -303023,6 +301001,104 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "赵某从商店购买了一台甲公司生产的家用洗衣机，洗涤衣物时，该洗衣机因技术缺陷发生爆裂，叶轮飞出造成赵某严重人身损害并毁坏衣物。赵某的下列哪些诉求是正确的?",
+      "subjectId": "minfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2015"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2015
+    },
+    {
+      "answer": [
+        "B",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "合同的履行",
+      "chapterConfidence": "low",
+      "chapterOfficial": "合同的履行",
+      "difficulty": null,
+      "explanation": "首先，郭某父亲乙与甲签订的协议：“如把孩子顺利生下来，就送十根金条给孩子。”属于附生效条件的赠与合同。虽然孩子为胎儿，不具备权利能力，但该赠与合同的双方当事人系乙与甲。因此，该赠与合同成立但未生效，而非无效，故 A 项错误，不当选。其次，后孩子顺利出生，则赠与合同成立并生效，故乙不得拒绝赠与，故B 项正确，当选。本题中，孩子出生后，作为法定监护人的父母的父亲(郭某)意外死亡。因此，该孩子的法定监护人即母亲甲。此时，祖父乙不得主张监护权且甲并不存在乙行使法定撤销权的情形。因此，已经交付的八根金条，乙不得要求退回，故C 项正确，当选。本题中，郭某父亲乙(即孩子的祖父)在孩子出生后未交付的两根金条以应交付，因该情形属于道德义务性质的赠与，不得行使任意撤销权，故 D 项错误，不当选。",
+      "id": "law:fakao-app:2015年客观题#三#60",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "孩子为胎儿，不具备权利能力，故协议无效"
+        },
+        {
+          "label": "B",
+          "text": "孩子已出生，故乙不得拒绝赠与"
+        },
+        {
+          "label": "C",
+          "text": "八根金条已交付，故乙不得要求退回"
+        },
+        {
+          "label": "D",
+          "text": "两根金条未交付，故乙有权不交付"
+        }
+      ],
+      "source": {
+        "nativeId": "2015年客观题#三#60",
+        "path": "真题库/客观题/2015年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "郭某意外死亡，其妻甲怀孕两个月。郭某父亲乙与甲签订协议：“如把孩子顺利生下来，就送十根金条给孩子。”当日乙把八根金条交给了甲。孩子顺利出生后，甲不同意由乙抚养孩子，乙拒绝交付剩余的两根金条，并要求甲退回八根金条。下列哪些选项是正确的?",
+      "subjectId": "minfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2015"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2015
+    },
+    {
+      "answer": [
+        "A",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "所有权",
+      "chapterConfidence": "low",
+      "chapterOfficial": "所有权",
+      "difficulty": null,
+      "explanation": "根据《民法典》第122条规定，因他人没有法律根据，取得不当利益，受损失的人有权请求其返还不当利益。本题中，甲窃取丙的美茄手表和4000元现金，构成不当得利，丙可以请求甲返还美茄手表和4000元，故 B 项错误，不当选；D 项正确，当选。同时，甲将美茄手表交乙并补偿乙1000元，乙亦构成不当得利。但乙不知甲盗窃情节，即属于善意。因此，乙仅需要返还现存利益即可。其中，乙支付某自来水公司水费的500元无须返还。乙花500元购买的衬衣及赠送给丁的手表均可以要求返还，故 A 项正确，当选；C 项错误，不当选。",
+      "id": "law:fakao-app:2015年客观题#三#61",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "丙可请求丁返还手表"
+        },
+        {
+          "label": "B",
+          "text": "丙可请求甲返还3000元、请求自来水公司和商场各返还500元"
+        },
+        {
+          "label": "C",
+          "text": "丙可请求乙返还1000元不当得利"
+        },
+        {
+          "label": "D",
+          "text": "丙可请求甲返还4000元不当得利"
+        }
+      ],
+      "source": {
+        "nativeId": "2015年客观题#三#61",
+        "path": "真题库/客观题/2015年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲遗失其为乙保管的迪亚手表，为偿还乙，甲窃取丙的美茄手表和4000元现金。甲将美茄手表交乙，因美茄手表比迪亚手表便宜1000元，甲又从4000元中补偿乙1000元。乙不知甲盗窃情节。乙将美茄手表赠与丁，又用该1000元的一半支付某自来水公司水费，另一半购得某商场一件衬衣。下列哪些说法是正确的?",
       "subjectId": "minfa",
       "tags": [
         "fakao-app",
@@ -303333,105 +301409,41 @@
     },
     {
       "answer": [
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "所有权",
-      "chapterConfidence": "low",
-      "chapterOfficial": "所有权",
-      "difficulty": null,
-      "explanation": "本题考查南宋关于户绝财产继承的规定。户绝指家无男子承继。户绝立继承人有两种方式：凡“夫亡而妻在”,立继从妻，称“立继”;凡“夫妻俱亡”,立继从其尊长亲属，称为“命继”。继子与户绝之女均享有继承权，但只有在室女(未嫁女)的，在室女享有3/4的财产继承权，继子享有1/4的财产继承权；只有出嫁女(已婚女)的，出嫁女享有1/3的财产继承权，继子享有1/3,另外的1/3收为官府所有。本题属于只有出嫁女(已婚女)的情况。因此霍甲、霍丙、官府各享有1/3,D 项正确。",
-      "id": "law:fakao-app:2016年客观题#一#18",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "霍甲9000两"
-        },
-        {
-          "label": "B",
-          "text": "霍甲6000两，霍丙3000两"
-        },
-        {
-          "label": "C",
-          "text": "霍甲、霍乙、霍丙各3000两"
-        },
-        {
-          "label": "D",
-          "text": "霍甲、霍丙各3000两，余3000两收归官府19.1903年，清廷发布上谕：“通商惠工，为古"
-        },
-        {
-          "label": "A",
-          "text": "《钦定大清商律》为清朝第一部商律，由《商人通例》《公司律》和《破产律》构成"
-        },
-        {
-          "label": "B",
-          "text": "清廷制定商律，表明随着中国近代工商业发展，其传统工商政策从“重农抑商”转为“重商抑农”"
-        },
-        {
-          "label": "C",
-          "text": "商事立法分为两阶段，先由新设立商部负责，后主要商事法典改由修订法律馆主持起草"
-        },
-        {
-          "label": "D",
-          "text": "《大清律例》《大清新刑律》《大清民律草案》与《大清商律草案》同属清末修律成果"
-        }
-      ],
-      "source": {
-        "nativeId": "2016年客观题#一#18",
-        "path": "真题库/客观题/2016年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "南宋时，霍某病故，留下遗产值银9000两。霍某妻子早亡，夫妻二人无子，只有一女霍甲，已嫁他乡。为了延续霍某姓氏，霍某之叔霍乙立本族霍丙为霍某继子。下列关于霍某遗产分配的哪一说法是正确的?",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2016"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2016
-    },
-    {
-      "answer": [
         "B"
       ],
       "answerText": null,
-      "chapter": "合同的履行",
+      "chapter": "民事法律行为",
       "chapterConfidence": "high",
-      "chapterOfficial": "合同的履行",
+      "chapterOfficial": "民事法律行为",
       "difficulty": null,
-      "explanation": "《反倾销条例》第20条规定：“商务部可以采用问卷、抽样、听证会、现场核查等方式向利害关系方了解情况，进行调查。商务部应当为有关利害关系方提供陈述意见和论据的机会。商务部认为必要时，可以派出工作人员赴有关国家(地区)进行调查；但是，有关国家(地区)提出异议的除外。”故A 错误。\n第42条规定：“反倾销税税额不超过终裁决定确定的倾销幅度。”故B 正确。\n第31条规定：“倾销进口产品的出口经营者在反倾销调查期间，可以向商务部作出改变价格或者停止以倾销价格出口的价格承诺。商务部可以向出口经营者提出价格承诺的建议。商务部不得强迫出口经营者作出价格承诺。”故C 错误。\n第48条规定：“反倾销税的征收期限和价格承诺的履行期限不超过5年；但是，经复审确定终止征收反倾销税有可能导致倾销和损害的继续或者再度发生的，反倾销税的征收期限可以适当延长。”故 D 错误。",
-      "id": "law:fakao-app:2016年客观题#一#42",
+      "explanation": "在人类社会生活中，有不受法律调整的社会关系，也有很多受各种不同性质法律调整的社会关系，而民事法律关系是依民法规范确立的法律关系。\n(1)民法调整的社会关系是平等主体之间的财产关系和人身关系，所以依民法规范确立的法律关系也就只能是平等主体之间的关系。平等性是民事法律关系的基本属性。这是民事法律关系区别于行政、刑事法律关系的重要特征。本题选项A 中，税务机关与纳税人之间的税收征缴法律关系非平等主体之间的关系，故不受民法调整，排除 A 选项。\n(2)需要注意的是，有些社会关系的主体之间即使具有平等性，是当事人之间自主形成的，但如果没有纳人法律调整范围之列，当然也不是民事法律关系。至于平等主体之间的哪些社会关系可以成为民事法律关系，应该属于一个价值判断问题。就民法的价值判断来看，本题选项中的C、D两项即属于不受法律调整(当然也不受民法调整)的社会关系，即非法律关系，故排除 C、D 选项。\n(3)本题B 选项中，乙手机丢失后发布的寻物启事\n属于单方允诺，依《最高人民法院关于适用<中华人民共和国合同法>若干问题的解释(二)》第3条的规定， “悬赏人以公开方式声明对完成一定行为的人支付报酬，完成特定行为的人请求悬赏人支付报酬的，法院依法予以支持”,受民法调整。综上，B 选项正确。",
+      "id": "law:fakao-app:2016年客观题#三#1",
       "knowledgePoints": [],
       "options": [
         {
           "label": "A",
-          "text": "商务部的调查只能限于中国境内"
+          "text": "甲请求税务机关退还其多缴的个人所得税"
         },
         {
           "label": "B",
-          "text": "反倾销税税额不应超过终裁确定的倾销幅度"
+          "text": "乙手机丢失后发布寻物启事称：“拾得者送还手机，本人当面酬谢”"
         },
         {
           "label": "C",
-          "text": "甲国某化工产品的出口经营者必须接受商务部有关价格承诺的建议"
+          "text": "丙对女友书面承诺：“如我在上海找到工作，则陪你去欧洲旅游”"
         },
         {
           "label": "D",
-          "text": "针对甲国某化工产品的反倾销税征收期限为5年，不得延长"
+          "text": "丁作为青年志愿者，定期去福利院做帮工"
         }
       ],
       "source": {
-        "nativeId": "2016年客观题#一#42",
+        "nativeId": "2016年客观题#三#1",
         "path": "真题库/客观题/2016年客观题.md",
         "repo": "fakao-app",
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
-      "stem": "应国内化工产业的申请，中国商务部对来自甲国的某化工产品进行了反倾销调查。依《反倾销条例》,下列哪一选项是正确的?",
+      "stem": "根据法律规定，下列哪一种社会关系应由民法调整?",
       "subjectId": "minfa",
       "tags": [
         "fakao-app",
@@ -303445,149 +301457,50 @@
     },
     {
       "answer": [
-        "D"
+        "A"
       ],
       "answerText": null,
-      "chapter": "所有权",
-      "chapterConfidence": "high",
-      "chapterOfficial": "所有权",
-      "difficulty": null,
-      "explanation": "《多边投资担保机构公约》第11条规定：“承保险别：一、本机构在不违反下列第2和3款\n规定的前提下，可为合格的投资就因以下一种或几种风险而产生的损失作担保：(一)货币汇兑。东道国政府采取新的措施，限制其货币兑换成可自由使用货币或被保险人可接受的另一种货币，及汇出东道国境外，包括东道国政府未能在合理的时间内对该被保险人提出的此类汇兑申请作出行动；”故A 错误。\n\"(二)征收和类似的措施。东道国政府采取立法或行政措施，或懈怠行为，实际上剥夺了被保险人对其投资的所有权或控制权，或其应从该投资中得到的大量收益。但政府为管理其境内的经济活动而通常采取的普遍适用的非歧视性措施不在此列。”故C 错误。\n“(三)违约。东道国政府不履行或违反与被保险人签订的合同，并且1.被保险人无法求助于司法或仲裁机关对其提出的有关诉讼作出裁决，或2.该司法或仲裁机关未能在担保合同根据机构的条例规定的合理期限内作出裁决，或3.虽有这样的裁决但未能执行。” 故 D 正确。\n“(四)战争和内乱。依照第66条本公约适用的东道国境内任何地区的任何军事行动或内乱。”故 B  错误。\n“二、应投资者与东道国的联合申请，董事会经特别多数票通过，可将本公约的担保范围扩大到上述第1款中提及的风险以外的其他的非商业性风险。但在任何情况下都不包括货币的贬值或降值。”也可得出 A 错误。",
-      "id": "law:fakao-app:2016年客观题#一#44",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "乙国货币大幅贬值造成 T  公司损失，属货币汇兑险的范畴"
-        },
-        {
-          "label": "B",
-          "text": "工人罢工影响了自来水厂的正常营运，属战争内乱险的范畴"
-        },
-        {
-          "label": "C",
-          "text": "乙国新所得税法致 T  公司所得税增加，属征收和类似措施险的范畴"
-        },
-        {
-          "label": "D",
-          "text": "乙国政府不履行与 T 公司签订的合同，乙国法院又拒绝受理相关诉讼，属政府违约险的"
-        }
-      ],
-      "source": {
-        "nativeId": "2016年客观题#一#44",
-        "path": "真题库/客观题/2016年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲国 T 公司与乙国政府签约在乙国建设自来水厂，并向多边投资担保机构投保。依相关规则，下列哪一选项是正确的?",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2016"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2016
-    },
-    {
-      "answer": [
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "合同的订立和效力",
-      "chapterConfidence": "high",
-      "chapterOfficial": "合同的订立和效力",
-      "difficulty": null,
-      "explanation": "根据《劳动合同法》第14条的规定，用人单位自用工之日起满一年不与劳动者订立书面劳动合同的，视为用人单位与劳动者已订立无固定期限劳动合同。由于王某用工时间不满一年，故 A 项说法错误。根据《劳动合同法》第19条第4款的规定，试用期包含在劳动合同期限内。劳动合同仅约定试用期的，试用期不成立，该期限为劳动合同期限，故 B 项说法错误，劳动合同期限自2012年2月1日起算。由于是劳动者主动辞职，且单位不存在过错，该公司不需要支付经济补偿金，故 C 项说法错误。根据《劳动合同法》第40条的规定，有下列情形之一的，用人单位提前\n三十日以书面形式通知劳动者本人或者额外支付劳动者一个月工资后，可以解除劳动合同： ……(二)劳动者不能胜任工作，经过培训或者调整工作岗位，仍不能胜任工作的；故D 项说法正确。",
-      "id": "law:fakao-app:2016年客观题#一#96",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "王某与公司之间视作已订立无固定期限劳动合同"
-        },
-        {
-          "label": "B",
-          "text": "该劳动合同期限自2012年3月1日起算"
-        },
-        {
-          "label": "C",
-          "text": "该公司应向王某支付半个月工资的经济补偿金"
-        },
-        {
-          "label": "D",
-          "text": "如王某不能胜任且经培训仍不能胜任工作，公司提前30日以书面形式通知王某，可将其辞退"
-        }
-      ],
-      "source": {
-        "nativeId": "2016年客观题#一#96",
-        "path": "真题库/客观题/2016年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "关于该劳动合同的订立与解除，下列说法正确的是：",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2016"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2016
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "提供劳务合同",
+      "chapter": "民事法律行为",
       "chapterConfidence": "low",
-      "chapterOfficial": "提供劳务合同",
+      "chapterOfficial": "民事法律行为",
       "difficulty": null,
-      "explanation": "甲因公务垫付费用5万元，由于票据超期无法报销，甲实际为公司支出了5万元。甲虽指使程某虚构劳务合同并虚开发票，但其主观上\n并没有非法占有公共财物的非法目的，既不构成贪污罪也不构成诈骗罪。 A、B错误。程某协助甲实施欺骗行为，由于甲不构成犯罪，程某自然也不能构成贪污罪的帮助犯，不再另外成立诈骗罪。因此C、D 错误。",
-      "id": "law:fakao-app:2016年客观题#二#91",
+      "explanation": "《民法典》第510条规定：“合同生效后，当事人就质量、价款或者报酬、履行地点等内容没有约定或者约定不明确的，可以协议补充；不能达成补充协议的，按照合同相关条款或者交易习惯确定。”《合同法若干问题的解释(二)》第七条规定：“下列情形，不违反法律、行政法规强制性规定的，人民法院可以认定为合同法所称‘交易习惯’:(一)在交易行为当地或者某一领域、某一行业通常采用并为交易对方订立合同时所知道或者应当知道的做法；(二)当事人双方经常使用的习惯做法。”因此，商家无权要求潘某退货，故 A     项正确。《民法典》第6条规定：“民事主体从事民事活动，应当遵循公平原则，合理确定各方的权利和义务。” 公平原则是民法的一项基本原则，它要求当事人在民事活动中应以社会正义、公平的观念指导自己的行为、平衡各方的利益，要求以社会正义、公平的观念来处理当事人之间的纠纷。潘某的做法符合相关要求，所以商家不能基于公平原则要求潘某适当补偿，故 B 项错误。《民法典》第147条规定：“基于重大误解实施的民事法律行为，行为人有权请求人民法院或者仲裁机构予以撤销。”商家和潘某在交易时对交易的性质、标的物的品种并无错误的认识。“赌石”活动的规则即是买者购买原石后自行剖切，损益自负，商家在明知规则的情况下，仍与潘某交易，所以该交易过程不存在重大误解，商家不可主张撤销，故C 项错误。《民法典》第151条规定：“一方利用对方处于危困状态、缺乏判断能力\n等情形，致使民事法律行为成立时显失公平的，受损害方有权请求人民法院或者仲裁机构予以撤销。”案例中的商家不处于危困状态、缺乏判断能力的情形，不符合 “显失公平”的情形，故D 项错误。",
+      "id": "law:fakao-app:2016年客观题#三#3",
       "knowledgePoints": [],
       "options": [
         {
           "label": "A",
-          "text": "甲以非法手段骗取国有公司的财产，构成诈骗罪"
+          "text": "商家无权要求潘某退货"
         },
         {
           "label": "B",
-          "text": "甲具有非法占有公共财物的目的，构成贪污罪"
+          "text": "商家可基于公平原则要求潘某适当补偿"
         },
         {
           "label": "C",
-          "text": "程某协助甲对公司财务人员进行欺骗，构成诈骗罪与贪污罪的想象竞合犯"
+          "text": "商家可基于重大误解而主张撤销交易"
         },
         {
           "label": "D",
-          "text": "程某并非国家工作人员，但帮助国家工作"
+          "text": "商家可基于显失公平而主张撤销交易"
         }
       ],
       "source": {
-        "nativeId": "2016年客观题#二#91",
+        "nativeId": "2016年客观题#三#3",
         "path": "真题库/客观题/2016年客观题.md",
         "repo": "fakao-app",
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
-      "stem": "关于事实三的分析，下列选项错误的是：",
+      "stem": "潘某去某地旅游，当地玉石资源丰富，且盛行“赌石”活动，买者购买原石后自行剖切，损益自负。潘某花5000元向某商家买了两块原石，切开后发现其中一块为极品玉石，市场估价上百万元。商家深觉不公，要求潘某退还该玉石或补交价款。对此，下列哪一选项是正确的?",
       "subjectId": "minfa",
       "tags": [
         "fakao-app",
         "md-真题",
-        "section:不定项选择题",
+        "section:单项选择题",
         "year:2016"
       ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
       "year": 2016
     },
     {
@@ -303640,11 +301553,107 @@
     },
     {
       "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "占有",
+      "chapterConfidence": "low",
+      "chapterOfficial": "占有",
+      "difficulty": null,
+      "explanation": "(1)从本题涉及法律关系来看，甲、乙之间存在借用法律关系，甲、丙之间存在承揽合同法律关系。在乙通知甲解除借用关系并告知丙，同时要求丙不得将自行车交给甲，丙也向甲核实而甲承认后，甲、乙之间的借用法律关系解除，此时原甲丙之间的承揽合同法律关系中的定作人也由原来的甲变更为乙，故甲无权再请求丙返还自行车，而乙无论作为承揽合同法律关系的定作人还是自行车的所有人，均有权请求丙返还自行车，也无须经过甲同意。由此可知 A、B  选项错误。\n(2)《民法典》第447条规定，债务人不履行到期债务，债权人可以留置已经合法占有的债务人的动产，并有权就该动产优先受偿。前款规定的债权人为留置权人，占有的动产为留置财产。本题中，因为原甲丙之间的承揽合同法律关系中的定作人也由原来的甲变更为乙，故乙有权要求丙返还自行车，但在100元修理费未支付前，丙就自行车享有留置权。由此可知 C 选项正确而 D 选项错误。当然，在乙支付丙100元修理费后，基于甲是“因莽撞骑行造成自行车链条断裂”,所以乙也有权要求甲偿还100元。",
+      "id": "law:fakao-app:2016年客观题#三#7",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲有权请求丙返还自行车"
+        },
+        {
+          "label": "B",
+          "text": "丙如将自行车返还给乙，必须经过甲当场同意"
+        },
+        {
+          "label": "C",
+          "text": "乙有权要求丙返还自行车，但在修理费未支付前，丙就自行车享有留置权"
+        },
+        {
+          "label": "D",
+          "text": "如乙要求丙返还自行车，即使修理费未付，丙也不得对乙主张留置权"
+        }
+      ],
+      "source": {
+        "nativeId": "2016年客观题#三#7",
+        "path": "真题库/客观题/2016年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲借用乙的山地自行车，刚出门就因莽撞骑行造成自行车链条断裂，甲将自行车交给丙修理，约定修理费100元。乙得知后立刻通知甲解除借用关系并告知丙，同时要求丙不得将自行车交给甲。丙向甲核实，甲承认。自行车修好后，甲、乙均请求丙返还。对此，下列哪一选项是正确的?",
+      "subjectId": "minfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2016"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2016
+    },
+    {
+      "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "诉讼时效与期间",
+      "chapterConfidence": "low",
+      "chapterOfficial": "诉讼时效与期间",
+      "difficulty": null,
+      "explanation": "根据《民法典》第307条规定可知，共有物造成他人损害的，除法律另有规定或者第三人知道共有人不具有连带债权债务关系的以外，共有人应当承担连带责任。根据《最高人民法院关于审理人身损害赔偿案件适用法律若干问题的解释》第5条规定，赔偿权利人在诉讼中放弃对部分共同侵权人的诉讼请求的，其他共同侵权人对被放弃诉讼请求的被告应当承担的赔偿份额不承担连带责任。由此可知，被侵权人单方免除部分债务人债务的，被免除债务的债务人对剩余全部债务仍应当承担连带责任。本题中，如果戊免除了甲的损害赔偿责任，则甲乙仍然对未免除部分的债务承担连带损害赔偿责任，故 A 项错误。\n根据《民法典》第402条规定，以本法第395条第1款第1项至第3项规定的财产或者第五项规定的正在建造的建筑物抵押的，应当办理抵押登记。抵押权自登记时设立。”甲、乙将货车抵押给债权人丁，此时丁对\n货车享有抵押权；后该货车在运输过程中将戊撞伤，此时戊享有人身损害赔偿请求权。虽然未办理抵押登记，但抵押权人丁仍然先于戊受偿，故 B 项错误。\n根据《民法典》第419条规定：“抵押权人应当在主债权诉讼时效期间行使抵押权；未行使的，法院不予保护。”由此可知，丁应当在主债权的诉讼时效期间内行使抵押权，抵押权未行使的，丧失了胜诉权，故 C 项错误。\n根据《民法典》第307条规定：“……在共有人内部关系上，除共有人另有约定外，按份共有人按照份额享有债权、承担债务，共同共有人共同享有债权、承担债务。偿还债务超过自己应当承担份额的按份共有人，有权向其他共有人追偿。”本题中，甲、乙按3:7的比例按份共有货车，如甲对丁承担了全部担保责任，则在内部关系上甲有权向乙追偿，故 D 项正确。",
+      "id": "law:fakao-app:2016年客观题#三#8",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "如戊免除了甲的损害赔偿责任，则应由乙承担损害赔偿责任"
+        },
+        {
+          "label": "B",
+          "text": "因抵押权未登记，戊应优先于丁受偿"
+        },
+        {
+          "label": "C",
+          "text": "如丁对丙的债权超过诉讼时效，仍可在两年内要求甲、乙承担担保责任"
+        },
+        {
+          "label": "D",
+          "text": "如甲对丁承担了全部担保责任，则有权向乙追偿"
+        }
+      ],
+      "source": {
+        "nativeId": "2016年客观题#三#8",
+        "path": "真题库/客观题/2016年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲、乙二人按照3:7的份额共有一辆货车，为担保丙的债务，甲、乙将货车抵押给债权人丁，但未办理抵押登记。后该货车在运输过程中将戊撞伤。对此，下列哪一选项是正确的?",
+      "subjectId": "minfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2016"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2016
+    },
+    {
+      "answer": [
         "B"
       ],
       "answerText": null,
       "chapter": "所有权",
-      "chapterConfidence": "low",
+      "chapterConfidence": "high",
       "chapterOfficial": "所有权",
       "difficulty": null,
       "explanation": "(1)题涉戒指非埋藏物、遗失物等有可能判决归国家所有的情形，也无由甲、乙共同共有的背景，故C、D为可以直接排除选项。\n(2)我国现行法对于占有的推定效力未作明确规定。如果每个人对自己占有的财产，都要证明其享有所有权，这就会给人们的生产生活带来极大不便利。如果不能举证证明自己占有的财产是自己享有所有权的财产，其财产的合法性就会受到他人挑战，这样财产的秩序、安全就会受到重大损害，也带来高昂的成本。为此，占有的推定规则已经被各国和地区的立法所普遍采纳。依学理通说，占有推定规则是指占有人于占有物上行使的权利，推定其适法有此权利。质言之，为保护占有人起见，法律基于社会生活的一般情况，为占有人设各项推定，免除其举证责任，即受权利推定的占有人，免除举证责任，占有人可以直接援用该推定对抗相对人，无须证明自己是权利人。但是，需要注意的是，在相对人提出反证时，占有人为推翻该反证，仍须举证。本题中，争议发生时乙对戒指为现实直接占有，且主张所有权，故可先推定其对戒指有所有权，但在甲无法证明对该戒指拥有所有权，但能够针对乙的主张提出反证证明在2015年10月1日前一直合法占有该戒指的情形下，乙就应该提供自2015年10月1日后从甲处合法取得戒指的证据推翻该反证，否则，应当认定因甲证明了自己的先前占有，而推定甲对戒指享有合法权利。综上可知，A 选项错误，B 选项正确。",
@@ -303880,6 +301889,54 @@
     },
     {
       "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "债与合同概述",
+      "chapterConfidence": "low",
+      "chapterOfficial": "债与合同概述",
+      "difficulty": null,
+      "explanation": "《民法典》第1063条规定：“下列财产为夫妻一方的个人财产：(一)一方的婚前财产；(二) 一方因受到人身损害获得的赔偿或补偿；(三)遗嘱或者赠与合同中确定只归一方的财产；(四)一方专用的生活用品；(五)其他应当归一方的财产。”《最高人民法院关于适用<中华人民共和国婚姻法>若干问题的解释 (一)》第19条规定：“婚姻法第18条规定为夫妻一方所有的财产，不因婚姻关系的延续而转化为夫妻共同\n财产。但当事人另有约定的除外。”本题中，刘山峰婚前个人名下拥有别墅一栋，属于其婚前个人财产。根据上述规定，A 选项“该别墅不可能转化为夫妻共同财产”、B 选项“婚后该别墅自动转化为夫妻共同财产”、C   选项“婚姻持续满八年后该别墅即依法转化为夫妻共同财产”的表达均错误，只有 D 选项“刘、王可约定婚姻持续八年后该别墅转化为夫妻共同财产”的表达正确。综上，D 为正确选项。",
+      "id": "law:fakao-app:2016年客观题#三#20",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "该别墅不可能转化为夫妻共同财产"
+        },
+        {
+          "label": "B",
+          "text": "婚后该别墅自动转化为夫妻共同财产"
+        },
+        {
+          "label": "C",
+          "text": "婚姻持续满八年后该别墅即依法转化为夫妻共同财产"
+        },
+        {
+          "label": "D",
+          "text": "刘、王可约定婚姻持续八年后该别墅转化为夫妻共同财产"
+        }
+      ],
+      "source": {
+        "nativeId": "2016年客观题#三#20",
+        "path": "真题库/客观题/2016年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "刘山峰、王翠花系老夫少妻，刘山峰婚前个人名下拥有别墅一栋。关于婚后该别墅的归属，下列哪一选项是正确的?",
+      "subjectId": "minfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2016"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2016
+    },
+    {
+      "answer": [
         "A",
         "B"
       ],
@@ -303916,6 +301973,102 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "贡某立公证遗嘱：死后财产全部归长子贡文所有。贡文知悉后，自书遗嘱：贡某全部遗产归弟弟贡武，自己全部遗产归儿子贡小文。贡某随后在贡文遗嘱上书写：同意，但还是留10万元给贡小文。其后，贡文先于贡某死亡。关于遗嘱的效力，下列哪一选项是正确的?",
+      "subjectId": "minfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2016"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2016
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "自然人",
+      "chapterConfidence": "high",
+      "chapterOfficial": "自然人",
+      "difficulty": null,
+      "explanation": "(1)生命权是指自然人维持生命和维护生命安全利益的权利，其客体是生命及其安全利益，这与身体权和健康权明显不同，A 选项中“甲女视其长发如生命，被情敌乙尽数剪去”,侵犯的显然非生命权，而可能是身体权；C“ 选项中戊为报复欲置己于死地，结果将己打成重伤”,侵犯的也非生命权，而是健康权；D 选项中“庚医师因误诊致辛出生即残疾”依我国目前的立法侵犯的是辛的母亲的健康权，而非辛的生命权。由此，A、C、D选项均不选。\n(2)我国未认可“安乐死”,所以 B 选项“丙应丁要求，协助丁完成自杀行为”,丙的行为构成对丁的生命权的侵犯，故 B 为正确选项。",
+      "id": "law:fakao-app:2016年客观题#三#22",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲女视其长发如生命，被情敌乙尽数剪去"
+        },
+        {
+          "label": "B",
+          "text": "丙应丁要求，协助丁完成自杀行为"
+        },
+        {
+          "label": "C",
+          "text": "戊为报复欲置己于死地，结果将己打成重伤"
+        },
+        {
+          "label": "D",
+          "text": "庚医师因误诊致辛出生即残疾，辛认为庚应对自己的错误出生负责"
+        }
+      ],
+      "source": {
+        "nativeId": "2016年客观题#三#22",
+        "path": "真题库/客观题/2016年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "下列哪一情形构成对生命权的侵犯?",
+      "subjectId": "minfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2016"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2016
+    },
+    {
+      "answer": [
+        "A"
+      ],
+      "answerText": null,
+      "chapter": "民事法律行为",
+      "chapterConfidence": "low",
+      "chapterOfficial": "民事法律行为",
+      "difficulty": null,
+      "explanation": "《民法典》第1218条规定：“患者在诊疗活动中受到损害，医疗机构或者其医务人员有过错的，由医疗机构承担赔偿责任。”由此，医疗损害责任\n的一般归责原则是过错责任原则，应由患方承担举证责任，故A 项正确。\n《民法典》第1220条规定：“因抢救生命垂危的患者等紧急情况，不能取得患者或者其近亲属意见的，经医疗机构负责人或者授权的负责人批准，可以立即实施相应的医疗措施。”田某病重，无法取得其同意，但医院能够联系到田某父亲并取得同意，所以不能自主决定，故 B 项错误。\n《民法典》第1223条规定，因药品、消毒产品、医疗器械的缺陷，或者输入不合格的血液造成患者损害的，患者可以向药品上市许可持有人、生产者、血液提供机构请求赔偿，也可以向医疗机构请求赔偿。患者向医疗机构请求赔偿的，医疗机构赔偿后，有权向负有责任的药品上市许可持有人、生产者、血液提供机构追偿。” 由此可见，如因医疗器械缺陷致损，患方不仅能向生产者主张赔偿，也能向医疗机构请求赔偿，故 C 项错误。\n《民法典》第1225条规定医疗机构及其医务人员应当按照规定填写并妥善保管住院志、医嘱单、检验报告、手术及麻醉记录、病理资料、护理记录等病历资料。患者要求查阅、复制前款规定的病历资料的，医疗机构应当提供。《民法典》第1222条规定，患者在诊疗活动中受到损害，有下列情形之一的，推定医疗机构有过错：(一)违反法律、行政法规、规章以及其他有关诊疗规范的规定；(二)隐匿或者拒绝提供与纠纷有关的病历资料；(三)遗失、伪造、篡改或者违法销毁病历资料。由此可知医院拒绝提供相关病历资料时适用过错推定的归责原则，由医疗机构承担赔偿责任，故 D 项错误。",
+      "id": "law:fakao-app:2016年客观题#三#23",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "医疗损害适用过错责任原则，由患方承担举证责任"
+        },
+        {
+          "label": "B",
+          "text": "医院实施该手术，无法取得田某的同意，可自主决定"
+        },
+        {
+          "label": "C",
+          "text": "如因医疗器械缺陷致损，患方只能向生产者主张赔偿"
+        },
+        {
+          "label": "D",
+          "text": "医院有权拒绝提供相关病历，且不会因此承担不利后果"
+        }
+      ],
+      "source": {
+        "nativeId": "2016年客观题#三#23",
+        "path": "真题库/客观题/2016年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "田某突发重病神志不清，田父将其送至医院，医院使用进口医疗器械实施手术，手术失败，田某死亡。田父认为医院在诊疗过程中存在一系列违规操作，应对田某的死亡承担赔偿责任。关于本案，下列哪一选项是正确的?",
       "subjectId": "minfa",
       "tags": [
         "fakao-app",
@@ -304325,199 +302478,6 @@
     },
     {
       "answer": [
-        "A"
-      ],
-      "answerText": null,
-      "chapter": "违约责任",
-      "chapterConfidence": "high",
-      "chapterOfficial": "违约责任",
-      "difficulty": null,
-      "explanation": "根据《消费者权益保护法》第40条规定：“消费者在购买、使用商品时，其合法权益受到损害的，可以向销售者要求赔偿。销售者赔偿后，属于生产者的责任或者属于向销售者提供商品的其他销售者的责任的，销售者有权向生产者或者其他销售者追偿。消费者或者其他受害人因商品缺陷造成人身、财产损害的，可以向销售者要求赔偿，也可以向生产者要求赔偿。属于生产者责任的，销售者赔偿后，有权向生产者追偿。属于销售者责任的，生产者赔偿后，有权向销售者追偿。”另外，《消费者权益保护法》第48条规定：“经营者提供商品或者服务有下列情形之一的，除本法另有规定外，应当依照其他有关法律、法规的规定，承担民事责任： ……(四)不符合商品说明、实物样品等方式表明的质量状况的；……”因而A 项说法正确，霍某与靓顺公司存在机动车的买卖合同，且车载气囊电脑存在质量问题，因而可以要求其承担违约责任。 B 项说法错误，虽然气囊电脑的质量问题不是销售者造成的，但是根据《消费者权益保护法》的前述规定，霍某可以向销售者靓顺公司主张维修、更换。 C 项说法错误，产品侵权责任成立的前提是消费者遭受了人身或财产损失。D 项说法错误，销售者和生产者并不是连带责任，销售者有先行承担赔付责任的义务，如果是生产者的责任，则接下来由销售者向生产者追责。",
-      "id": "law:fakao-app:2017年客观题#一#30",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "霍某有权请求靓顺公司承担违约责任"
-        },
-        {
-          "label": "B",
-          "text": "霍某只能请求该车生产商承担免费更换责任"
-        },
-        {
-          "label": "C",
-          "text": "霍某有权请求靓顺公司承担产品侵权责任"
-        },
-        {
-          "label": "D",
-          "text": "靓顺公司和该车生产商应当连带承担产品侵权责任"
-        }
-      ],
-      "source": {
-        "nativeId": "2017年客观题#一#30",
-        "path": "真题库/客观题/2017年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "霍某在靓顺公司购得一辆汽车，使用半年后前去靓顺公司维护保养。工作人员告诉霍某该车气囊电脑存在故障，需要更换。霍某认为此 为产品质量问题，要求靓顺公司免费更换，靓顺公司认为是霍某使用不当所致，要求其承担更换费用。经查，该车气囊电脑不符合产品说明所述质量。对此，下列哪一说法是正确的?",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2017"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2017
-    },
-    {
-      "answer": [
-        "B",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "合同的履行",
-      "chapterConfidence": "high",
-      "chapterOfficial": "合同的履行",
-      "difficulty": null,
-      "explanation": "权利的行使与义务的履行均具有其界限，没有无限制的权利，也没有无限度的义务，故  B 正确。但是义务具有强制履行的性质，而权利具有一定的自主性，权利主体可以按照自己的愿望决定是否实施某种行为。因此，依情理林某应探望儿子，但是探望权作为一种权利，不具有强制履行的性质，故从法理上看，法院不可判决其行使探望权，故 A 、C错误。\n权利总是与义务人的义务相连，需要相应的义务做保障。林某探望权对应的是许某的协助义务，包括积极义务和消极义务 ·故 B、D 正确。",
-      "id": "law:fakao-app:2017年客观题#一#89",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "依情理林某应探望儿子，故从法理上看，法院可判决强制其行使探望权"
-        },
-        {
-          "label": "B",
-          "text": "从理论上讲，权利的行使与义务的履行均具有其界限"
-        },
-        {
-          "label": "C",
-          "text": "林某的探望权是林某必须履行一定作为或不作为的法律约束"
-        },
-        {
-          "label": "D",
-          "text": "许某的协助义务同时包括积极义务和消极义务"
-        }
-      ],
-      "source": {
-        "nativeId": "2017年客观题#一#89",
-        "path": "真题库/客观题/2017年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "许某与妻子林某协议离婚，约定8岁的儿子小虎由许某抚养，林某可随时行使对儿子的探望权，许某有协助的义务。离婚后两年间林某从未探望过儿子，小虎诉至法院，要求判令林某每月探视自己不少于4天。对此，下列说法正确的是：",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2017"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2017
-    },
-    {
-      "answer": [
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "自然人",
-      "chapterConfidence": "high",
-      "chapterOfficial": "自然人",
-      "difficulty": null,
-      "explanation": "票据诈骗罪中利用的金融票据主要包括银行的汇票、本票和支票。使用伪造的银行存单实施贷款诈骗的行为应成立金融凭证诈骗罪。选项 A  错误。刑法没有将单位规定为贷款诈骗罪的主体，对于为了单位利益的贷款诈骗行为，虽然不能直接处罚单位，但对于负有责任的自然人应以贷款诈骗罪论处。选项 B 正确。购买意外伤害保险后，制造自己意外受伤的假象骗取巨额保险金的行为，同时构成了保险诈骗罪与合同诈骗罪，应依照数罪并罚的规定处罚。选项 C 错误。合同诈骗罪是指以非法占有为目的，在签订、履行合同的过程中，骗取对方财物，数额较大的行为。其非法占有的目的既可以产生于签订合同时，也可以产生于履行合同的过程中。选项D 错误。",
-      "id": "law:fakao-app:2017年客观题#二#14",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "与银行工作人员相勾结，使用伪造的银行存单，骗取银行巨额存款的，只能构成票据诈骗罪，不构成金融凭证诈骗罪"
-        },
-        {
-          "label": "B",
-          "text": "单位以非法占有目的骗取银行贷款的，不能以贷款诈骗罪追究单位的刑事责任，但可以该罪追究策划人员的刑事责任"
-        },
-        {
-          "label": "C",
-          "text": "购买意外伤害保险，制造自己意外受重伤假象，骗取保险公司巨额保险金的，仅构成保险诈骗罪，不构成合同诈骗罪"
-        },
-        {
-          "label": "D",
-          "text": "签订合同时并无非法占有目的，履行合同过程中才产生非法占有目的，后收受被害人货款逃匿的，不构成合同诈骗罪"
-        }
-      ],
-      "source": {
-        "nativeId": "2017年客观题#二#14",
-        "path": "真题库/客观题/2017年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "关于诈骗犯罪的论述，下列哪一选项是正确的(不考虑数额)?",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2017"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2017
-    },
-    {
-      "answer": [
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "所有权",
-      "chapterConfidence": "high",
-      "chapterOfficial": "所有权",
-      "difficulty": null,
-      "explanation": "基于不法原因给付的财物，不能成立侵占罪。张某委托甲代为保管的为行贿赃款，张某对行贿款没有返还请求权，不能认定甲侵占了张某的财物。选项A 错误。乙将房屋出售给赵某但尚未进行所有权转移登记，乙仍然是房屋的所有权人，对房屋具有处分权，其一房二卖的行为不构成侵占罪。选项 B  错误。侵占罪的犯罪对象主要包含委托物、脱离占有物(遗忘物或埋藏物)。灾区居民来不及带走的贵重财物并没有脱离占有，房屋中的财物仍然由居民占有。丙取走他人财物的行为构成盗窃罪。选项C 错误。分期付款购物的场合，约定车款付清前车辆所有权归卖方所有，买方在付清车款前处分车辆的，属于对委托物的侵占行为。选项D正确。",
-      "id": "law:fakao-app:2017年客观题#二#18",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "张某欲向县长钱某行贿，委托甲代为将5万元贿赂款转交钱某。甲假意答应，拿到钱后据为己有"
-        },
-        {
-          "label": "B",
-          "text": "乙将自己的房屋出售给赵某，虽收取房款却未进行所有权转移登记，后又将房屋出售给李某"
-        },
-        {
-          "label": "C",
-          "text": "丙发现洪灾灾区的居民已全部转移，遂进入居民房屋，取走居民来不及带走的贵重财物"
-        },
-        {
-          "label": "D",
-          "text": "丁分期付款购买汽车，约定车款付清前汽车由丁使用，所有权归卖方。丁在车款付清前将车另售他人"
-        }
-      ],
-      "source": {
-        "nativeId": "2017年客观题#二#18",
-        "path": "真题库/客观题/2017年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "下列哪一行为成立侵占罪?",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2017"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2017
-    },
-    {
-      "answer": [
         "B"
       ],
       "answerText": null,
@@ -304618,7 +302578,7 @@
       ],
       "answerText": null,
       "chapter": "占有",
-      "chapterConfidence": "low",
+      "chapterConfidence": "high",
       "chapterOfficial": "占有",
       "difficulty": null,
       "explanation": "(1)依《民法典》第314条、316条、317条的规定，拾得遗失物，应当返还权利人；拾得人在遗失物送交有关部门前，有关部门在遗失物被领取前，应当妥善保管遗失物，因故意或者重大过失致使遗失物毁损、灭失的，应当承担民事责任；权利人悬赏寻找遗失物的，领取遗失物时应当按照承诺履行义务。本题中，甲遗失手链1条，被乙拾得，甲知道后要求乙返还，乙有义务返还，但与此同时，返还前乙应当妥善保管手链，而乙却没有尽到保管义务，以致在桥边玩耍时手链掉入河中被冲走，故乙应承担赔偿责任。由此可知，本题中C、D 选项的说法均错误。\n(2)依《民法典》第217条第3款的规定，拾得人侵占遗失物的，无权请求保管遗失物等支出的费用，也无权请求权利人按照承诺履行义务，即拾得人构成侵占的，即丧失报酬请求权。本题中，甲承诺给付报酬，但要求乙返还手链时却不同意给付，双方数次交涉无果的情况下乙仍然继续占有手链，乙的行为虽有不妥，但尚不构成侵占，因而乙并不因此而丧失请求支付报酬的权利。但是，该项链于乙在桥边玩耍时掉人河中被河水冲走，即最终乙并没有归还甲项链，即没有完成甲悬赏广告中指定的行为，因而也无权索要报酬，故本题中 A 选项说法错误，B 选项说法正确。",
@@ -304770,6 +302730,102 @@
     },
     {
       "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "违约责任",
+      "chapterConfidence": "high",
+      "chapterOfficial": "违约责任",
+      "difficulty": null,
+      "explanation": "(1)《民法典》第497条规定：“有下列情形之一的，该格式条款无效：具有本法第一编第六章第三节……\"本题中，乙公司提供的协议格式条款中载明“如甲单方放弃服务，余款不退”(并注明该条款不得更改),仅对孙某权利进行了约束，而从题面看不出对是否需达到何种服务效果、美容公司在无法达到服务效果时是否应承担责任、美容公司在不能提供相应服务时应承担何种责任等问题有规定。从协议来看，作为消费者的孙某在预付了服务期内的所有费用后，即使对服务效果不满意，亦无法放弃接受服务。显然，提供格式条款的美容公司并未遵循公平的原则来确定双方之间的权利和义务，故这属于提供格式条款一方排除对方主要权利的条款，应归于无效，但该条款无效不等于该美容服务协议无效。由此，本题中A 选项错误，B 选项说法为正确选项。\n(2)本题中. 甲与乙公司订立美容服务协议，约定服务期为半年，服务费预收后逐次计扣，而在协议订立后，甲依约支付5万元服务费，在接受服务1个月并发生费用8000元后，甲感觉美容效果不明显，单方放弃服务并要求退款。在经营者并无违约或过错行为的情形下，孙某单方提出终止消费，是否需要承担违约责任，需要综合服务协议的履行程度、美容公司提供服务的比例、孙某单方放弃服务的过错程度、约定的计价方式等因素，进行综合考量，而 C 、D 选项的说法太过绝对。",
+      "id": "law:fakao-app:2017年客观题#三#11",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "美容服务协议无效"
+        },
+        {
+          "label": "B",
+          "text": "“ 如甲单方放弃服务，余款不退”的条款无效"
+        },
+        {
+          "label": "C",
+          "text": "甲单方放弃服务无须承担违约责任"
+        },
+        {
+          "label": "D",
+          "text": "甲单方放弃服务应承担继续履行的违约责任"
+        }
+      ],
+      "source": {
+        "nativeId": "2017年客观题#三#11",
+        "path": "真题库/客观题/2017年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲与乙公司订立美容服务协议，约定服务期为半年，服务费预收后逐次计扣，乙公司提供的协议格式条款中载明“如甲单方放弃服务，余款不退”(并注明该条款不得更改)。协议订立后，甲依约支付5万元服务费。在接受服务1个月并发生费用8000元后，甲感觉美容效果不明显，单方放弃服务并要求退款，乙公司不同意。甲起诉乙公司要求返还余款。下列哪一选项是正确的?",
+      "subjectId": "minfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2017"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2017
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "合同的履行",
+      "chapterConfidence": "low",
+      "chapterOfficial": "合同的履行",
+      "difficulty": null,
+      "explanation": "(1)依《民法典》第500条的规定： “当事人在订立合同过程中有下列情形之一，给对方造成损失的，应当承担损害赔偿责任：(一)假借订立合同，恶意进行磋商；(二)故意隐瞒与订立合同有关的重要事实或者提供虚假情况；(三)有其他违背诚实信用原则的行为。”本题中，德凯公司在无真实交易意图的情况下，佯装感兴趣并屡次向真诚公司表达将签署合同的意愿，但均在最后一刻推脱拒签，这一行为明显属于假借订立合同，恶意进行磋商。而真诚公司安排授权代表往返十余次，每次都准备了详尽可操作的合作\n方案，最终没有签署合同，真诚公司因此受到损失。而\n德凯公司虽然在此过程中也付出了大量的工作成本，但其损失是由自己造成。由此，本题中 A、D 选项说法均错误，B 选项说法为正确选项。\n(2)依《民法典》第851条的规定，当事人在订立合同过程中知悉的商业秘密或者其他应当保密的信息，无论合同是否成立，不得泄露、不正当地使用；泄露或者不正当地使用该商业秘密或者信息，造成对方损失的.应当承担损害赔偿责任。本题中，双方当事人虽然未订立合同，德凯公司也不应将缔约过程中知悉的真诚公司的部分商业秘密不当泄露，故本题中C 选项的说法错误。",
+      "id": "law:fakao-app:2017年客观题#三#12",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "未缔结合同，则德凯公司就磋商事宜无须承担责任"
+        },
+        {
+          "label": "B",
+          "text": "虽未缔结合同，但德凯公司构成恶意磋商，应赔偿损失"
+        },
+        {
+          "label": "C",
+          "text": "未缔结合同，则商业秘密属于真诚公司自"
+        },
+        {
+          "label": "D",
+          "text": "德凯公司也付出了大量的工作成本，如被对方主张赔偿，则据此可主张抵销"
+        }
+      ],
+      "source": {
+        "nativeId": "2017年客观题#三#12",
+        "path": "真题库/客观题/2017年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "德凯公司拟为新三板上市造势，在无真实交易意图的情况下，短期内以业务合作为由邀请多家公司来其主要办公地点洽谈。其中，真诚公司安排授权代表往返十余次，每次都准备了详尽可操作的合作方案，德凯公司佯装感兴趣并屡次表达将签署合同的意愿，但均在最后一刻推脱拒签。其间，德凯公司还将知悉的真诚公司的部分商业秘密不当泄露。对此，下列哪一说法是正确的?",
+      "subjectId": "minfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2017"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2017
+    },
+    {
+      "answer": [
         "D"
       ],
       "answerText": null,
@@ -304805,6 +302861,55 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "甲、乙两公司约定：甲公司向乙公司支付5万元研发费用，乙公司完成某专用设备的研发生产后双方订立买卖合同，将该设备出售给甲公司，价格暂定为100万元，具体条款另行商定。乙公司完成研发生产后，却将该设备以120万元卖给丙公司，甲公司得知后提出异议。下列哪一选项是正确的?",
+      "subjectId": "minfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2017"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2017
+    },
+    {
+      "answer": [
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "收养",
+      "chapterConfidence": "high",
+      "chapterOfficial": "收养",
+      "difficulty": null,
+      "explanation": "(原答案为C)    【解析】(1)依《民法典》第1093条规定：“下列未成年人，可以被收养：(一)丧失父母的孤儿；(二)查找不到生父母的未成年人；(三)生父母有特殊困难无力抚养的子女。”依《民法典》第1094条规定：“下列个人、组织可以作送养人：(一)孤儿的监护人；(二)儿童福利机构；(三)有特殊困难无力抚养子女的生父母。”根据该两条的规定，亲生父母有特殊困难无力抚养子女时，才可以将子女送养，但根据《民法典》第1099条的规定，收养三代以内旁系同辈血亲的子女，可以不受本法第1093条第3项、第1094条第3项和第1102条规定的限制。本题中，由徐某的姐姐要求收养小强即可不受《民法典》第1093条规定的限制，故 A 项错误。\n(2)依《民法典》第1098条规定：“收养人应当同时具备下列条件：(一)无子女或者只有一名子女；(二)有抚养、教育和保护被收养人的能力；(三)未患有在医学上认为不应当收养子女的疾病；(四)无不利于被收养人健康成长的违法犯罪记录；(五)年满三十周岁。再依《民法典》第1099条的规定，华侨收养三代以内旁系同辈血亲的子女，还可以不受本法第1098条第1项规定的限制，故B 项错误。\n(3)依《民法典》第1108条的规定：“配偶一方死亡，另一方送养未成年子女的，死亡一方的父母有优先抚养的权利。”本题中，谭某父母为退休教师，也要求抚养小强，故谭某父母有优先抚养的权利，故C 项正确。\n(4)依《民法典》第1104规定：“收养人收养与送养人送养，应当双方自愿。收养八周岁以上未成年人的，应当征得被收养人的同意。”本题中，小强现年9周岁，所以收养须征得小强同意，故D 项正确。(民法典施行后，征得被收养人同意的年龄由10周岁修改为8周岁。)",
+      "id": "law:fakao-app:2017年客观题#三#19",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "徐某因有抚养能力不能将小强送其姐姐收养"
+        },
+        {
+          "label": "B",
+          "text": "徐某的姐姐因有子女不能收养小强"
+        },
+        {
+          "label": "C",
+          "text": "谭某父母有优先抚养的权利"
+        },
+        {
+          "label": "D",
+          "text": "收养应征得小强同意"
+        }
+      ],
+      "source": {
+        "nativeId": "2017年客观题#三#19",
+        "path": "真题库/客观题/2017年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "小强现年9周岁，生父谭某已故，生母徐某虽有抚养能力，但因准备再婚决定将其送养。徐某的姐姐要求收养，其系华侨富商，除已育有一子外符合收养人的其他条件；谭某父母为退休教师，也要求抚养。下列哪一选项是正确的 ?",
       "subjectId": "minfa",
       "tags": [
         "fakao-app",
@@ -304949,6 +303054,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "王某因全家外出旅游，请邻居戴某代为看管其饲养的宠物狗。戴某看管期间，张某偷狗，被狗咬伤。关于张某被咬伤的损害，下列哪一选项是正确的?",
+      "subjectId": "minfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2017"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2017
+    },
+    {
+      "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "合同的履行",
+      "chapterConfidence": "high",
+      "chapterOfficial": "合同的履行",
+      "difficulty": null,
+      "explanation": "《保险法》第52条第1款规定：“在合同有效期内，保险标的的危险程度显著增加的，被保险人应当按照合同约定及时通知保险人，保险人可以按照合同约定增加保险费或者解除合同。保险人解除合同的 ·应当将已收取的保险费，按照合同约定扣除自保险责任开始之日起至合同解除之日止应收的部分后，退还投保人。”据此，被保险人违反了保险标的危险程度增加的通知义务，保险公司有权解除合同，但不影响保险合同的效力，故 A 项错误。保险公司解除保险合同时，应当将超过保险合同期限部分的保险费退还给投保人，故 D 项错误。\n《保险法》第52条第2款规定：“被保险人未履行前款规定的通知义务的，因保险标的的危险程度显著增加而发生的保险事故，保险人不承担赔偿保险金的责任。”本题中，姜某因为夜晚载客，与人发生碰撞而导致车损，该保险事故的发生应当属于“因保险标的的危险程度显著增加而发生的保险事故”,故保险公司不承担赔偿责任，故 B 项错误，C 项正确。",
+      "id": "law:fakao-app:2017年客观题#三#34",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "保险合同无效"
+        },
+        {
+          "label": "B",
+          "text": "姜某有权主张约定的保险金"
+        },
+        {
+          "label": "C",
+          "text": "保险公司不承担赔偿保险金的责任"
+        },
+        {
+          "label": "D",
+          "text": "保险公司有权解除保险合同并不退还保险费"
+        }
+      ],
+      "source": {
+        "nativeId": "2017年客观题#三#34",
+        "path": "真题库/客观题/2017年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "姜某的私家车投保商业车险，年保险费为3000元。姜某发现当网约车司机收入不错，便用手机软件接单载客，后辞职专门跑网约车。某晚，姜某载客途中与他人相撞，造成车损10万元。姜某向保险公司索赔，保险公司调查后拒赔。关于本案，下列哪一选项是正确的?",
       "subjectId": "minfa",
       "tags": [
         "fakao-app",
@@ -305210,6 +303363,104 @@
     },
     {
       "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "所有权",
+      "chapterConfidence": "low",
+      "chapterOfficial": "所有权",
+      "difficulty": null,
+      "explanation": "依《民法典》第275、276条的规定，建筑区划内，规划用于停放汽车的车位、车库应当首先满足业主的需要；建筑区划内，规划用于停放汽车的车位、车库的归属，由当事人通过出售、附赠或者出租等方式约定；占用业主共有的道路或者其他场地用于停放汽车的车位，属于业主共有。本题中，小区地下停车场设有的500个车位，非占用业主共有的道路或者其他场地用于停放汽车的车位，不属于业主共有.而是应由开发商通过出售、附赠或者出租等方式确定，由此可知本题中 A 选项说法错误，C 选项说法正确。依《民法典》第273条的规定，业主对建筑物专有部分以外的共有部分，享有权利，承担义务；不得以放弃权利不履行义务。业主转让建筑物内的住宅、经营性用房，其对共有部分享有的共有和共同管理的权利一并转让。我国相关法律并未规定在小区其他业主出售车位时，无车位的业主在同等条件下享有优先购买权，也未规定小区业主如出售房屋，其所购车位应一同转让。所以.本题中 B、D选项说法错误。",
+      "id": "law:fakao-app:2017年客观题#三#86",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "蒋某等业主对地下停车场享有业主共有权"
+        },
+        {
+          "label": "B",
+          "text": "如小区其他业主出售车位，蒋某等无车位业主在同等条件下享有优先购买权"
+        },
+        {
+          "label": "C",
+          "text": "开发商出租车位，应优先满足蒋某等无车位业主的需要"
+        },
+        {
+          "label": "D",
+          "text": "小区业主如出售房屋，其所购车位应一同转让"
+        }
+      ],
+      "source": {
+        "nativeId": "2017年客观题#三#86",
+        "path": "真题库/客观题/2017年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "小区地下停车场设有车位500个，开发商销售了300个，另200个用于出租。蒋某购房时未买车位，现因购车需使用车位。下列选项正确的是：",
+      "subjectId": "minfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2017"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2017
+    },
+    {
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "所有权",
+      "chapterConfidence": "high",
+      "chapterOfficial": "所有权",
+      "difficulty": null,
+      "explanation": "依《民法典》第279条的规定，业主不得违反法律、法规以及管理规约，将住宅改变为经营性用房。业主将住宅改变为经营性用房的，除遵守法律、法规以及管理规约外，应当经有利害关系的业主一致同意。依《关于审理建筑物区分所有权纠纷案件司法解释》第11条的规定，业主将住宅改变为经营性用房，本栋建筑物内的其他业主，应当认定为《物权法》第77条所称“有利害关系的业主”;建筑区划内，本栋建筑物之外的业主，主张与自己有利害关系的，应证明其房屋价值、生活质量受到或者可能受到不利影响。\n依该两条规定，本题中，小区业主田某将其位于一楼的住宅用于开办茶馆，除遵守法律、法规以及管理规约外，应当经本栋建筑物内的其他业主同意；本栋建筑物之外的业主，主张与田某住宅用途的改变有利害关系的，应证明其房屋价值、生活质量受到或者可能受到不利影响。题面没有给出蒋某和田某是否为同一栋建筑物的业主这样的信息，但无论是否属于同一栋楼的业主，本题中 A、B、C 选项的说法均正确，而 D 选项说法错误。",
+      "id": "law:fakao-app:2017年客观题#三#87",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "如蒋某是同一栋住宅楼的业主，法院应支持其请求"
+        },
+        {
+          "label": "B",
+          "text": "如蒋某能证明因田某开办茶馆而影响其房屋价值，法院应支持其请求"
+        },
+        {
+          "label": "C",
+          "text": "如蒋某能证明因田某开办茶馆而影响其生活质量，法院应支持其请求"
+        },
+        {
+          "label": "D",
+          "text": "如田某能证明其开办茶馆得到多数有利害关系业主的同意，法院应驳回蒋某的请求"
+        }
+      ],
+      "source": {
+        "nativeId": "2017年客观题#三#87",
+        "path": "真题库/客观题/2017年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "该小区业主田某将其位于一楼的住宅用于开办茶馆，蒋某认为此举不妥，交涉无果后向 法院起诉，要求田某停止开办。下列选项正确的是：",
+      "subjectId": "minfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:不定项选择题",
+        "year:2017"
+      ],
+      "type": "indefinite_choice",
+      "typeRaw": "不定项选择题",
+      "year": 2017
+    },
+    {
+      "answer": [
         "B",
         "D"
       ],
@@ -305354,54 +303605,6 @@
       "type": "indefinite_choice",
       "typeRaw": "不定项选择题",
       "year": 2017
-    },
-    {
-      "answer": [
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "占有",
-      "chapterConfidence": "low",
-      "chapterOfficial": "占有",
-      "difficulty": null,
-      "explanation": "保险诈骗罪，是指投保人、被保险人、受益人，以使自己或者第三者获取保险金为目的，\n采取虚构保险标的、保险事故或者制造保险事故等方\n法，骗取保险金，数额较大的行为。徐某、麻某不具有这一身份，因此不能构成保险诈骗罪的正犯(但若与被保险人共谋则构成保险诈骗罪的帮助犯)。 A、C 项错误。徐某、麻某通过伪造事实，使保险公司相信两人是受被保险人委托就虚假的保险事项进行理赔，并基于该错误认识向两人赔付，符合诈骗罪的犯罪构成。B 项正确。合同诈骗罪，是指以非法占有为目的，在签订、履行合同过程中，使用欺骗手段，骗取对方当事人财物，数额较大的行为。本题中徐某、麻某并不是以签订履行合同\n为名骗取财物，而是利用实际存在的他人的合同关系骗取财物，因此不构成合同诈骗罪。D 项错误。",
-      "id": "law:fakao-app:2022年客观题-回忆版#一#99",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "徐某、麻某的行为构成保险诈骗罪的间接正犯"
-        },
-        {
-          "label": "B",
-          "text": "徐某、麻某的行为成立诈骗罪"
-        },
-        {
-          "label": "C",
-          "text": "徐某、麻某的行为构成保险诈骗罪的直接正犯"
-        },
-        {
-          "label": "D",
-          "text": "徐某、麻某的行为成立合同诈骗罪"
-        }
-      ],
-      "source": {
-        "nativeId": "2022年客观题-回忆版#一#99",
-        "path": "真题库/客观题/2022年客观题-回忆版.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "被告人徐某全面负责经营某有限公司，被告 人麻某系徐某的侄子，在该公司负责前台接待和事故车辆修理等事项。2006年11月至2008年5月间，被告人徐某为谋取单位非法利益，利用客户留下的驾驶证、行驶证、身份证复印件，通过指使江某(已 判刑)或者自己开具虚假内容的事故认定书，编造未曾发生的车辆保险事故，并指使被告人麻某伪造车辆痕迹或碰撞现场，冒用被保险人的名义，先后共计80余次向某保险公司提出理赔，骗取保险金80余万 元。下列哪个说法是正确的?",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2022"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2022
     },
     {
       "answer": [
@@ -305693,6 +303896,54 @@
     },
     {
       "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "民事法律行为",
+      "chapterConfidence": "high",
+      "chapterOfficial": "民事法律行为",
+      "difficulty": null,
+      "explanation": "变更之诉是要求法院改变或者消灭既存的民事法律关系，也称形成之诉，本案中法院离婚判决已经对子女抚养问题进行处理，固定为一种现存的法律关系，但邢某起诉要求变更这种既存的法律关系，因此属于形成之诉。",
+      "id": "law:fakao-app:2022年客观题-回忆版#二#11",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "确认之诉"
+        },
+        {
+          "label": "B",
+          "text": "形成之诉"
+        },
+        {
+          "label": "C",
+          "text": "给付之诉"
+        },
+        {
+          "label": "D",
+          "text": "重复起诉，法院应裁定不予受理"
+        }
+      ],
+      "source": {
+        "nativeId": "2022年客观题-回忆版#二#11",
+        "path": "真题库/客观题/2022年客观题-回忆版.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "陈某和邢某婚后育有一子，两人感情不和法院判决准予离婚，儿子由女方陈某抚养，男方邢某支付抚养费。一年后，邢某发现孩子成绩下降，起诉要求法院将孩子判给自己抚养，邢某提起的诉属于何种性质?",
+      "subjectId": "minfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2022"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2022
+    },
+    {
+      "answer": [
         "D"
       ],
       "answerText": null,
@@ -305933,6 +304184,54 @@
     },
     {
       "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "民事法律行为",
+      "chapterConfidence": "low",
+      "chapterOfficial": "民事法律行为",
+      "difficulty": null,
+      "explanation": "消极确认之诉，是指原告起诉要求法院确认其主张的法律关系不存在的诉讼。据此，孙某起诉的目的不在于请求法院确认不存在某种法律关系，不属于消极确认之诉。故 A 项错误。积极确认之诉，是指原告起诉要求法院确认其主张的法律关系存在的诉讼。据此，孙某起诉的目的在于要求法院停止对股权执行，而非确认他与其他主体之间存在某种民事法律关系，不属于积极确认之诉。故 B 项错误。变更之诉又称形成之诉，是指原告请求法院以判决改变或消灭既存的某种民事法律关系的诉。据此，孙某提\n起案外人异议之诉，其目的在于要求法院变更现有的执行法上的关系，即撤销执行机构的不当执行，因此属于形成之诉(又称为变更之诉)。故C 项正确。给付之诉，是指原告请求法院判令被告向其履行特定给付义务的诉讼。据此，孙某起诉要求停止对股权执行，并非要求被告完成给付义务，不属于给付之诉。故D 项错误。",
+      "id": "law:fakao-app:2022年客观题-回忆版#二#26",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "消极确认之诉"
+        },
+        {
+          "label": "B",
+          "text": "积极确认之诉"
+        },
+        {
+          "label": "C",
+          "text": "变更之诉"
+        },
+        {
+          "label": "D",
+          "text": "给付之诉"
+        }
+      ],
+      "source": {
+        "nativeId": "2022年客观题-回忆版#二#26",
+        "path": "真题库/客观题/2022年客观题-回忆版.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "赵某因钱某拖欠其借款而起诉，获得生效胜 诉判决后，申请法院强制执行钱某持有的甲公司股权，法院裁定冻结该部分股权。后隐名股东孙某提出执行异议，被法院裁定驳回，孙某遂以自己是实际出资人为由提起诉讼，要求暂停对股权的执行并解除冻结措施。关于孙某提起诉讼的类型，下列哪一 说法是正确的?",
+      "subjectId": "minfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2022"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2022
+    },
+    {
+      "answer": [
         "A"
       ],
       "answerText": null,
@@ -306025,6 +304324,56 @@
       ],
       "type": "single_choice",
       "typeRaw": "单项选择题",
+      "year": 2022
+    },
+    {
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "所有权",
+      "chapterConfidence": "low",
+      "chapterOfficial": "所有权",
+      "difficulty": null,
+      "explanation": "根据《民法典》第一千二百一十五条规定：“盗窃、抢劫或者抢夺的机动车发生交通事\n故造成损害的，由盗窃人、抢劫人或者抢夺人承担赔偿责任。盗窃人、抢劫人或者抢夺人与机动车使用人不\n是同一人，发生交通事故造成损害，属于该机动车一方\n责任的，由盗窃人、抢劫人或者抢夺人与机动车使用人承担连带责任。”根据《民法典》一百七十八条第一款规\n定：“二人以上依法承担连带责任的，权利人有权请求\n部分或者全部连带责任人承担责任。”本案中，苏某系盗窃人，牛某系机动车使用人，发生交通事故将任某撞\n伤，应由苏某和牛某承担连带责任。连带责任侵权应\n根据原告的起诉来确定被告，故既可以牛某为被告，也可以苏某为被告，也可将二者列为共同被告，故 A、C、D\n项正确。",
+      "id": "law:fakao-app:2022年客观题-回忆版#二#51",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "以牛某为被告提起诉讼"
+        },
+        {
+          "label": "B",
+          "text": "以刘某为被告提起诉讼"
+        },
+        {
+          "label": "C",
+          "text": "以牛某和苏某为共同被告提起诉讼"
+        },
+        {
+          "label": "D",
+          "text": "以苏某为被告提起诉讼"
+        }
+      ],
+      "source": {
+        "nativeId": "2022年客观题-回忆版#二#51",
+        "path": "真题库/客观题/2022年客观题-回忆版.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "牛某驾车把任某撞伤。经查：该车系刘某所有，被苏某所盗，后苏某将该盗来的车辆出租给了牛某，此时任某欲提起诉讼，应该如何起诉?",
+      "subjectId": "minfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2022"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
       "year": 2022
     },
     {
@@ -306230,7 +304579,7 @@
       ],
       "answerText": null,
       "chapter": "违约责任",
-      "chapterConfidence": "low",
+      "chapterConfidence": "high",
       "chapterOfficial": "违约责任",
       "difficulty": null,
       "explanation": "本题的核心问题是甲乙两公司之间的订餐合同是否已经成立并生效。甲公司发送了订饭邮件，在性质上属于要约(《民法典》第四百七十二条),比较有疑问的是乙公司未回复(沉默)是否构成承诺。《民法典》第一百四十条第二款规定：“沉默只有在有法律规定、当事人约定或者符合当事人之间的交易习惯时，才可以视为意思表示。”据此可知，沉默只有在例外情形下才能视为意思表示。本题中，甲公司一直在乙公司订餐，以往的方式都是电子邮件沟通，乙公司看到邮件无异议就开始准备，有意见时才会回复，这一事实表明，甲乙之间关于订餐是存在明确的交易习惯的，即对于甲公司的订餐要约，乙公司的沉默就视为承诺。在这一交易习惯之下，乙公司的沉默应视为承诺，而且这一交易习惯不因乙公司内部员工的更替而改变。因此，尽管乙公司更换了新员工，但是其未回复邮件，仍应视为承诺，甲乙之间订餐的合同已经成立并生效。在此基础上，乙公司未能按照合同内容备餐并交付提供给甲公司，陷入违约状态，应当基于违约责任赔偿甲公司2000元损失。由于乙公司违反的是合同义务而非先合同义务，乙公司所应承担的不是缔约过失责任，而是违约责任。因此，AB 项错误，CD 项正确。",
@@ -306429,7 +304778,7 @@
       ],
       "answerText": null,
       "chapter": "所有权",
-      "chapterConfidence": "low",
+      "chapterConfidence": "high",
       "chapterOfficial": "所有权",
       "difficulty": null,
       "explanation": "本题解题的关键在于结合各个法律事实发生的时间节点分析手镯的所有权归属。2020年1月12日，甲因车祸意外去世，甲生前的合法财产作为遗产会发生继承。《民法典》第二百三十条规定： “因继承取得物权的，自继承开始时发生效力。”据此可知，小甲作为甲的唯一继承人，于2020年1月12日成为甲遗产的所有权人。手镯是甲的遗产之一，因此，小甲于2020年1月12日取得手镯的所有权。至于手镯哪天被发现，并不影响其所有权归属。选项A 错误。2月15日，小甲将手镯卖给乙，并约定小甲再借用4天。小甲作为手镯的所有权人，将其卖给乙，属于有权处分。《民法典》第二百二十八条规定：“动产物权转让时，当事人又约定由出让人继续占有该动产的，物权自该约定生效时发生效力。”该条规定了占有改定。占有改定通常可以拆解为三个交易环节：买卖合同+所有权移转的合意+占有媒介关系(如借用、租赁等)。本题中，小甲与乙约定小甲再借用4天，背后所包含的意思是所有权直接移转(否则没必要借用),双方的交易结构与占有改定相符。因此，2月15日，小甲通过占有改定的方式将手镯所有权移转给乙。2月16日，小甲又将手镯以市价卖给不知情的丙，且双方当场完成价款和手镯的交付。当日小甲已经不是手镯的所有权人，因此小甲的行为属于无权处分。结合《民法典》第三百一十一条第一款对善意取得的规定，丙是善意的，约定了合理的价格且已经完成了交付，符合善意取得的构成要件，因此丙通过善意取得的方式成为手镯所有权人。小甲将玉镯出卖给丙的行为，侵犯了乙的所有权，乙可以对小甲主张侵权损害赔偿。 C 项正确。\n当日丙取得手镯后回家的路上，不小心将手镯遗失，被\n路过的丁拾得，丁作为拾得人并不能取得手镯的所有\n权，丙仍然是手镯的所有权人。2月20日，丁找到不知情的戊，将该手镯以市价出卖给戊，并完成交付。由于丁并非手镯的所有权人，丁将手镯卖给戊，属于无权处分，需要考虑戊是否构成善意取得。结合《民法典》第三百一十二条的规定，遗失物作为占有脱离物，在适用善意取得规则时需要受到限制，在《民法典》第三百一十二条规定的2年期间内，遗失物不发生善意取得。本题中，2年期间显然还未经过，因此戊不能善意取得该手镯，手镯的所有权人仍然是丙。 B 项错误。既然\n手镯的所有权人仍然是丙，戊对手镯的占有属于无权\n占有，丙作为所有权人自然有权依据《民法典》第二百\n三十五条请求无权占有人戊返还手镯。D 项正确。",
@@ -306688,6 +305037,35 @@
       "answer": [],
       "answerText": null,
       "chapter": "违约责任",
+      "chapterConfidence": "low",
+      "chapterOfficial": "违约责任",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2023年客观题-卷一-卷二#二#53",
+      "knowledgePoints": [],
+      "options": [],
+      "source": {
+        "nativeId": "2023年客观题-卷一-卷二#二#53",
+        "path": "真题库/客观题/2023年客观题-卷一-卷二.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "2022年4月,甲将其使用了两年的 A车以10万元的价格出卖给乙,已经完成交付。但一苴 未给乙办理 A 车所有权的过户登记。甲对丙负担9万元的借款债务到期未还, 丙起诉获得胜诉生效 判决后,甲仍未支付,丙申请法院对甲强制执行。因 A 车所有权登记在甲名下 法院应丙的申请扣 押了 A车。乙向法院提出书面执行异议,请求法院解除对 A 车的扣押。对此,下列表述正确的是? A. 乙尚未取得对 A 车的所有权 乙巳经取得对 A车的所有权 C。 乙的异议成立,法院应当裁定中止对 A车的执行 D 乙的异议不成立,法院应当裁定驳回乙的异议 54。甲。乙 丙约定: 甲向乙借款11万元,借期1年,利息1万元。为担保甲对乙借款债务的 履行 甲将其 A表 (甲一个月前在二手市场以15万元的价格购得) 以12 万元的价格出卖给乙并交 付。若甲到期末还款 , A 表即确定归乙所有 ,无须清算 (无须多退少补) 。若甲到期未还款, 乙也有 权选择请求丙以12 万元的价格替甲回购 A 表。' 9 乙按约向甲提供了借款,甲按约向乙交付了 A表。 后,借期届满,甲未按约还款。对此,下列表述正确的是? A. A 表确定归乙所有的约定无效 乙只能请求甲偿还借款,没有其他救济途径 C 乙有权请求丙支付12万元 D. 乙有权请求甲以15万元的价格回购 A 表 55。甲公司因经营不善歇业,欠司机潘某3万元工资 ,潘某多次讨要未果 , 一怒之下将甲公司的 ~辆面包车开走,声称若3 天内再不支付工资 就以该车抵工资。甲公司的母公司乙公司第二天听说 后 ,为免甲公司其他员工效法潘某的行为,向潘某提出先代甲公司支付2 万元,潘某收下了2万元。 对此。下列表述正确的是? A。潘某开走面包车的行为属于自助 乙公司代付2万元的行为成立无因管理 C。 甲公司还欠潘某工资3 万元 D. 甲公司还欠潘某工资1万元 56。外卖送货员甲送货途中 见乙从桥上跳河自杀。甲立即停下, 将自己的手机交给在河边卖水 果的摊贩丙帮忙保管,甲立即跳入河中抢救乙。因水流湍急,努力数次才将乙救上岸,甲的背部因 30 --- 第31页 --- 此扭伤 乙的胳膊也在施救过程中被甲扭伤。丙在岸上围观甲救助乙期间. 不慎将甲委托保管的手 机掉在地上摔坏。对此,下列表述正确的是? A. 乙因胳膊扭伤所受损害,有权请求甲全额赔偿 召 甲因背部扭伤所受损害,有权请求乙适当补偿 C 甲因手机摔坏所受损失,有权请求乙适当补偿 D. 甲因手机摔坏所受损失,有权请求丙全额赔偿 57.3月1日,甲在单位食堂吃午饭时,碰巧和在另一个部门工作的好友乙坐在一桌。甲告诉乙, 甲要将现在使用的燃油车 A 车出卖后更换电动车, A 车现在的市价约为 I5 万元 但是甲愿意以8万 元的低价出卖给乙,乙可在3月3 日前决定是否购买, 乙表示考虑考虑。乙回到办公窒后说起此事, 并表示有点纠结。同一办公窒的丙听阐后不动声色,在下班前找到甲并表示 \"你的 A 车8万元我买 了\" ,甲表示要看乙是否购买,3月4日以后再说。乙一苴没有回复甲 3月4日,丙拟定好买卖合同 后找到甲,要求甲签订丙以8万元购买 A 车的书面买卖合同,甲表示已经改变主意,不再出售 A车。 关于 A 车的买卖;下列表述正确的是? A。3月1日,甲对乙作出的以8万元出卖 A 车的表示属于要约 B。3 月1日, 丙对甲作出的以8万元购买 A 车的表示属于要约 C.3月1日,丙对甲作出的以8万元购买 A 车的表示属于承诺 D. 3月4日。甲以8万元将 A 车出卖给丙的买卖合同成立并生效 58。甲装修房屋,网购了一个新的盥洗盆,出卖的商家在网店明确承诺 \"免费安装\" 。由于安装 前需先拆除旧的盥洗盆。上门安装的师傅乙表示若拆除需另支付乙50元。甲电话询问, 商家表示承 诺的免费安装义务不包括拆除的内容。且由商家委托第三方代为履行。为免耽误安装,甲于是让乙 先拆除后安装,并支付给乙50元。乙在拆除时因过失损坏瓷砖 ,修好需费用40元,乙在安装时因过 失打碎一个冼漱杯,价值60元。关于甲有权主张的救济 ,下列表述中符合法律规定的是? A。有权请求商家赔付150 元 (拆除费50元。瓷砖修理费40元。洗漱杯赔偿费60元) R。有权请求商家赔付 100 元 (瓷砖修理费40元。洗漱杯赔偿费60元) C. 有权请求乙赔付40元 (瓷砖修理费40元) D。有权请求乙赔付 100 元 (瓷砖修理费40元。洗漱杯赔偿费60元) 59. M 市的甲自B市的乙处购买一批运动自行车用于参加8月8日在 M 市举办的自行车公路赛。 双方约定,由乙负责运输,8月5日前送货上门。考虑到 M 市与B市间的正常送货时间为2天,乙公 司于8月3日早上开始运输,8月4日因山体滑坡导致运输的逍路完全中断 乙立即通知甲并选择最 近的替代路线继续运输,8月8日运抵 M 市时,自行车比赛已经结束。关于甲_ 乙间的这一自行车买 卖合同,下列表述正确的是? A。甲可以合同目的不能实现为由解除合同 召 甲有权请求乙承担迟延履行的违约责任 C。 乙可主张因不可抗力免于对甲承担责任 D 乙主张免责应当于合理期限内提供证明 60。甲公司将一厂房的建设工程发包给乙公司,约定工程款为 IOOO 万元。经过甲公司同意, 乙 公司将主体工程分包给丙公司, 约定工程款为 &00 万元。竣工验收合格并交付使用后, 乙公司已经向 丙公司支付了200 万元工程款 ,剩余的经多次催告一直未支付 ,丙公司于是以甲公司为被告起诉,诉 请甲公司向丙公司支付 600 万元工程款, 诉讼中,法院追加乙公司为第三人。同时 法院查明,甲公 司已经向乙公司支付了500 万元工程款。对此,下列表述正确的是? A. 法院应当判决认定乙。丙间的建设工程施工合同无效 31 --- 第32页 --- B 法院应当判决驳回丙的全部诉讼请求 C。 法院应当判决甲向丙支付 G00 万元工程款 D。法院应当判决甲向丙支付500 万元工程款, 乙向丙支付 IOO 万元工程款",
+      "subjectId": "minfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "year:2023",
+        "answer-missing"
+      ],
+      "type": "unknown",
+      "typeRaw": null,
+      "year": 2023
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": "违约责任",
       "chapterConfidence": "high",
       "chapterOfficial": "违约责任",
       "difficulty": null,
@@ -306745,48 +305123,31 @@
     {
       "answer": [],
       "answerText": null,
-      "chapter": "遗产的处理",
-      "chapterConfidence": "high",
-      "chapterOfficial": "遗产的处理",
+      "chapter": "所有权",
+      "chapterConfidence": "low",
+      "chapterOfficial": "所有权",
       "difficulty": null,
       "explanation": "",
-      "id": "law:fakao-app:2024年客观题-卷一-卷二-回忆版#一#72",
+      "id": "law:fakao-app:2023年客观题-卷一-卷二#二#100",
       "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "若赵某家中有需要抚养的无劳动能力者,公安机关提请逮捕的,检察院可以不批淮逮捕但可要求"
-        },
-        {
-          "label": "B",
-          "text": "若赵某的母亲病重,"
-        },
-        {
-          "label": "C",
-          "text": "若赵某被判处死刑,检察院通知指派了法律援助律师。但是其近亲属也委托了辩护律师,应直接退"
-        },
-        {
-          "label": "D",
-          "text": "若左某被烧死。检察院应当逮捕赵某"
-        }
-      ],
+      "options": [],
       "source": {
-        "nativeId": "2024年客观题-卷一-卷二-回忆版#一#72",
-        "path": "真题库/客观题/2024年客观题-卷一-卷二-回忆版.md",
+        "nativeId": "2023年客观题-卷一-卷二#二#100",
+        "path": "真题库/客观题/2023年客观题-卷一-卷二.md",
         "repo": "fakao-app",
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
-      "stem": "赵某跟左某有仇,某晚决定放火烧死左某。关于本案的处理, 下列说法正确的是?",
+      "stem": "甲市 A 区的李某和王某婚后因感情不和协议离婚 约定在 C 区银行的50万元存款和位于D 区价值 100 万元的房屋归李某所有。 后王某离开甲市,将户口迂到乙市D区。半年后 ,王某得知李某 39 --- 第40页 --- 婚内出轨,提出重新分割夫妻共同财产 李某拒绝, 王某对此提起诉讼。该案的管辖法院是? A. 甲市 A 区法院 B。甲市 B区法院 C. 甲市 C 区法院 D. 乙市 D 区法院 40",
       "subjectId": "minfa",
       "tags": [
         "fakao-app",
         "md-真题",
-        "year:2024",
+        "year:2023",
         "answer-missing"
       ],
       "type": "unknown",
       "typeRaw": null,
-      "year": 2024
+      "year": 2023
     },
     {
       "answer": [],
@@ -307053,6 +305414,52 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "甲对乙的债权 600 万到期后, 乙无法履行,约定签订房屋抵偿协议。将一栋房屋给甲抵债。后乙 不办理过户登记。也不交付房屋。下列正确的是?",
+      "subjectId": "minfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "year:2024",
+        "answer-missing"
+      ],
+      "type": "unknown",
+      "typeRaw": null,
+      "year": 2024
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": "提供劳务合同",
+      "chapterConfidence": "low",
+      "chapterOfficial": "提供劳务合同",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2024年客观题-卷一-卷二-回忆版#二#72",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "医院应当允许劳务派遣人员加入工会"
+        },
+        {
+          "label": "B",
+          "text": "医院应当支付劳务派遣人员加班费"
+        },
+        {
+          "label": "C",
+          "text": "医院可设置临时性工作岗位直到扩建工程结束"
+        },
+        {
+          "label": "D",
+          "text": "医院可雇佣其股东成立的劳务派遣机构中的劳务人员"
+        }
+      ],
+      "source": {
+        "nativeId": "2024年客观题-卷一-卷二-回忆版#二#72",
+        "path": "真题库/客观题/2024年客观题-卷一-卷二-回忆版.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某医院打算扩建。扩建工期为一年,扩建期间因缺乏就诊引导人员, 医院秩序十分混乱。为规范 就医秩序,加强引导措施,医院拟通过劳务派遣方式向社会招聘多名引导工作人员,该工作平时需要加班。 对此。下列说法正确的是?",
       "subjectId": "minfa",
       "tags": [
         "fakao-app",
@@ -307396,66 +305803,6 @@
     {
       "answer": [],
       "answerText": null,
-      "chapter": "所有权",
-      "chapterConfidence": "high",
-      "chapterOfficial": "所有权",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2002年主观题卷四#subj#5",
-      "knowledgePoints": [],
-      "options": [],
-      "source": {
-        "nativeId": "2002年主观题卷四#subj#5",
-        "path": "真题库/主观题/2002年主观题卷四.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "\\ÓNUS„v nYO>k0 åwfN ¡lÙ~bT，如果这笔钱要不回来就要你们赔偿！ 根据以上案情，请回答下列问题并简要说明理由。 1．兴都公司与纺织厂买卖合同约定的是哪种类型 的交付，所交付棉花所有权从什么时候起转移? 2．在纺织厂提交付款保证书并请求交付时，兴都 公司有何理由拒绝向纺织厂交付货物? 3．伏牛公司未经兴都公司同意向纺织厂交付仓单 要承担什么责任? 4．纺织厂在取得仓单但未付款以前对棉花有没有 所有权?为什么?",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "subjective",
-        "year:2002",
-        "answer-unmatched"
-      ],
-      "type": "comprehensive",
-      "typeRaw": "（本题10分）",
-      "year": 2002
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "合同的履行",
-      "chapterConfidence": "low",
-      "chapterOfficial": "合同的履行",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2002年主观题卷四#subj#6",
-      "knowledgePoints": [],
-      "options": [],
-      "source": {
-        "nativeId": "2002年主观题卷四#subj#6",
-        "path": "真题库/主观题/2002年主观题卷四.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "\\ NlQøSpN TYNlQøSØN>k0 0÷‹ÞVT{ TT„vÅ`b_ ûN Cg:NÀNHN Œ„v_c1Y”^1uŒbÅb:NÀNHN ¦~³Qš[ ¦~Ñ‘î•vQ;N _ý€否得到支持？为什么？ 5. 丙公司与丁公司所签合同的效力如何？为什么？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "subjective",
-        "year:2002",
-        "answer-unmatched"
-      ],
-      "type": "comprehensive",
-      "typeRaw": "（本题10分）",
-      "year": 2002
-    },
-    {
-      "answer": [],
-      "answerText": null,
       "chapter": "违约责任",
       "chapterConfidence": "high",
       "chapterOfficial": "违约责任",
@@ -307521,36 +305868,6 @@
       "chapterOfficial": "违约责任",
       "difficulty": null,
       "explanation": "",
-      "id": "law:fakao-app:2003年主观题卷四#subj#4",
-      "knowledgePoints": [],
-      "options": [],
-      "source": {
-        "nativeId": "2003年主观题卷四#subj#4",
-        "path": "真题库/主观题/2003年主观题卷四.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "ñ]„v blQøS„vèlŒQFU h“银河”，并以每台4000元的价格卖给不知情的李某2台 ，李某将其中一台赠送给好友胡某。 问题： 1．如果丙大学使用的50台电脑出现质量问题，应向谁主 张违约责任？ 2．丁公司出租电脑的行为是否侵犯M软件的出租权？为 什么？ 3．乙公司如果起诉请求支付20台电脑货款，应以谁为被 告？怎样确定管辖法院？ 4．乙公司更换商标的行为应如何定性？哪些主体可以 作为适格的原告起诉乙公司？ 5．如李某购买的2台电脑没有质量问题，能否向卖方双 倍索赔？为什么？ 6．如胡某接受赠与的电脑出现质量问题，能否要求李 某承担瑕疵担保责任？为什么？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "subjective",
-        "year:2003",
-        "answer-unmatched"
-      ],
-      "type": "comprehensive",
-      "typeRaw": "（本题11分）",
-      "year": 2003
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "违约责任",
-      "chapterConfidence": "high",
-      "chapterOfficial": "违约责任",
-      "difficulty": null,
-      "explanation": "",
       "id": "law:fakao-app:2003年主观题卷四#subj#12",
       "knowledgePoints": [],
       "options": [],
@@ -307572,126 +305889,6 @@
       "type": "comprehensive",
       "typeRaw": "（本题11分）",
       "year": 2003
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "合同的履行",
-      "chapterConfidence": "low",
-      "chapterOfficial": "合同的履行",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2004年主观题卷四#subj#2",
-      "knowledgePoints": [],
-      "options": [],
-      "source": {
-        "nativeId": "2004年主观题卷四#subj#2",
-        "path": "真题库/主观题/2004年主观题卷四.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "O÷NÉ^„v ñ]„v 0R NT N直拒付货款，致全宇公司一直无法向天鹅公司支付货 款。交货2个星期后，全宇公司向天鹅公司披露了是受 大兴公司委托代为购买彩电的情况。 问题： 1．天鹅公司事先并不知晓全宇公司系受大兴公司委托 购买彩电，知悉这一情况后，天鹅公司能否要求大兴公 司支付货款？为什么？ 2．全宇公司与天鹅公司订立的合同中的定金条款效力 如何？为什么？ 3．大兴公司多收的5台彩电应如何处理？为什么？ 4．如追尾的肇事车辆逃逸，20台受损彩电的损失应由谁 承担？为什么？ 5．如天鹅公司以全宇公司为被告提起诉讼后，在诉讼 过程中，天鹅公司认为要求大兴公司支付货款更为有利 ，能否改为主张由大兴公司履行合同义务？为什么？",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "subjective",
-        "year:2004",
-        "answer-unmatched"
-      ],
-      "type": "comprehensive",
-      "typeRaw": "（本题12分）",
-      "year": 2004
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "违约责任",
-      "chapterConfidence": "high",
-      "chapterOfficial": "违约责任",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2004年主观题卷四#subj#9",
-      "knowledgePoints": [],
-      "options": [],
-      "source": {
-        "nativeId": "2004年主观题卷四#subj#9",
-        "path": "真题库/主观题/2004年主观题卷四.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "ô•YO \\2u«N gãNMOç~bCg0EeYO 0‹s小甲应各分得1间。 2. 有效。该6间房虽属共有财产，但转让协议已经其他共 有人张某及王小甲的监护人李某同意。 3. 曹某与朱某签订的协议有效。曹某与钱某签订的协议亦 有效。 4. 不能。因曹某已与钱某办理了房屋过户登记手续，钱某 已取得了该房屋的所有权，曹某履行不能，朱某只能要 求曹某承担违约责任。 5. 能。根据合同法的规定，债务人放弃其到期债权对债权 人造成损害的，债权人可以请求人民法院撤销债务人放 弃债权的行为。 6. 不能。因该赔偿金是专属于曹某自身的债权，根据合同 法的规定，王乙不能行使代位权。",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "subjective",
-        "year:2004",
-        "answer-unmatched"
-      ],
-      "type": "comprehensive",
-      "typeRaw": "（本题15分）",
-      "year": 2004
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "担保物权",
-      "chapterConfidence": "high",
-      "chapterOfficial": "担保物权",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2006年主观题卷四#subj#7",
-      "knowledgePoints": [],
-      "options": [],
-      "source": {
-        "nativeId": "2006年主观题卷四#subj#7",
-        "path": "真题库/主观题/2006年主观题卷四.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "_N NbÅbÎ˜i– _0 Lˆµb¼bå‹µb¼bàeHe0 Cg0 R0 ir0 ‡€‹Nj0 R ûN Nq_ÍTlQøS¾‹Ëz„vHe›R0 Ñ‘0 Nhˆ³Q³Qš[0 Ðg„v3u¥b N TlQøS;N _:PCg0 ö”Lˆ4x产债权成立；但该担保是保证担保，B银行不享 有担保物权，无权优先受偿。乙公司的请求应当支持。 乙公司仍是A楼房的产权人，故其可依法收回该楼房。 ûN0 R l‹NÉ‹¼‹ÕlsQŽNHQˆNgbLˆ„vÄš[0 É‹„vÕlb– t0 LˆØSôfÕlb–”^ˆNÆQ¸‹0 N¡[$R³Q¤‹:NG•ZQÔY„vchHhPg™e Ný€\\O:NÁ‹nc/f •ï‹„v0 Œã b„vMb”^S_ÑSÞVÍ‘¡[0 Åb0 R Ø_ir0 è• Lˆvš„vLˆ:Nò]Ï~^\\ŽN´f›RLˆ:NàV€ S‹W¢b«R€”^ôv¥c¤‹š[:N¢b«Rj€ N^\\ŽN¢b«Rj„vÓ~œg RÍ‘¯r0 bÐb—š?Qåzj€ N `0 bÈ‹—šj0 ›Oj0 fàV€ bËz0 0È‹—šj –™_N bËz0 R W[0 R ébvQÖNÒ度作答； 2．在分析、比较、评价的基础上，提出观点并运用法 学知识阐述理由； 3．观点明确，论证充分，逻辑严谨，文字通顺； 4．不少于600字。",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "subjective",
-        "year:2006",
-        "answer-unmatched"
-      ],
-      "type": "comprehensive",
-      "typeRaw": "（本题16分）",
-      "year": 2006
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "违约责任",
-      "chapterConfidence": "low",
-      "chapterOfficial": "违约责任",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2007年主观题卷三#subj#3",
-      "knowledgePoints": [],
-      "options": [],
-      "source": {
-        "nativeId": "2007年主观题卷三#subj#3",
-        "path": "真题库/主观题/2007年主观题卷三.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "个以上正确答案，不答、少答或多答均不得分。本部分 91－100题，每题2分，共20分。 （一） aNFO/f”^S_ \\ Næe2uS_sS将此事通知了乙。 2006年3月10日，甲向丙公司订购了一批饲料，约定4 月10日至20日期间送货上门，甲验收后10日内付款。甲在 3月26日把鸡只死亡情况通知了丙公司，要求取消交易。 丙公司称：货物已经备好，不同意解约，除非甲赔偿其 损失。请回答91-93题。 91．关于甲与乙公司之间关系，表述正确的是： A．乙公司虽在3月21日没有付款，但不应承担违约 责任 B．甲3月20日电话中关于将不交货的表示构成违约 C．甲不需承担不能交付标的物的违约责任 D．乙公司有权解除合同 92．关于甲与丙公司之间关系，表述正确的是： A．由于甲所养殖的鸡只于3月25日已经大部灭失， 合同自动解除 B．甲取消交易构成违约，应对丙承担 HYPERLINK C．甲有权单方解除合同，但是应赔偿丙公司的损 失 D．丙有权要求甲继续履行合同 93．假设甲所养的鸡并未因失火导致鸡棚倒塌所灭 ，但当地政府为防止疫情爆发，自3月21日起对甲的养殖 场实行管制，禁止鸡鸭外运，一旦发现疫情即全部扑杀 ，乙知情后没有支付首期价款，关于甲、乙之间关系， 表述正确的是： A．虽然乙公司在3月21日前没有付款，也不应承担 违约责任 B．甲有权以乙未付首期价款为由拒绝履行相应的 交货义务 C．如果双方协商解除合同，甲应当适当赔偿乙公 司的损失 D．如果双方协商解除合同，乙公司应当适当赔偿 甲的损失 （二） 2007年4月2日，王某与丁某约定：王某将一栋房屋出 售给丁某，房价20万, 元。, 丁某支付房屋价款后，王某交付了房屋，但没有办理产 权移转登记。丁某接收房屋作了装修，于2007年5月20日 出租给叶某，租期为2年。2007年5月29日，王某因病去世 ，全部遗产由其子小王继承。小王于2007年6月将该房屋 卖给杜某，并办理了所有权移转登记。请回答94-96题。 94．如王某生前或王某死后其继承人小王欲出卖房 屋前向丁某请求返还房屋，下列选项正确的是： A．王某无权请求丁某返还房屋 B．王某有权请求丁某返还房屋 C．小王无权请求丁某返还房屋 D．小王有权请求丁某返还房屋 95．如杜某向丁某、叶某请求返还房屋，下列选项 正确的是： A．杜某无权请求丁某返还房屋 B．杜某有权请求丁某返还房屋 C．杜某无权请求叶某返还房屋 D．杜某有权请求叶某返还房屋 96．关于小王和杜某间的房屋买卖，下列选项正确 的是： A．交付标的物是房屋买卖合同的有效要件 B．小王须将所继承的房屋登记在自己的名下，才 能将其所有权转移给杜某 C．房屋所有权转移自记载于不动产登记薄时发生 效力 D．该房屋的利害关系人可以申请查询该房屋登记 资料 （三） 0护理费、误工费等各项费用共2.8万元。本案被告在答 辩中认为，司机紧急刹车是因为行人陈某违章过路引起 ，责任应当由陈某承担，因此要求追加陈某作为无独立 请求权的第三人参加诉讼。请回答97-100题。 97．本案参加诉讼的人在诉讼中的正确地位是： A．小龙是原告，李某是原告的委托代理人，寰宇 公司和张某是被告 B．小龙是原告，李某是原告的委托代理人，寰宇 公司是被告 C．小龙是原告，李某是原告的法定代理人，寰宇 公司和张某是被告 D．小龙是原告，李某是原告的法定代理人，寰宇 公司是被告 98．法院就追加行人陈某作为无独立请求权的第三 人参加诉讼，正确的做法是： A．法院可以依职权追加 B．只要被告提出申请，法院就应当追加 C．要有被告的申请，法院才可以追加 D．法院可以根据当事人的申请而追加 99．依照有关法律的规定，李某将被告承担违约责 任变更为承担侵权责任应在： A．在第一审程序判决作出前 B．在第一审程序的举证期限届满前 C．在被告提交答辩状期间内 D．在第一审的法庭辩论终结前, 100．2006年7月20日，法院判决被告赔偿原告医疗费 等1.8万元，陈某无过错不承担责任。2006年7月25日，李 某以诉讼代理人的身份，以一审被告为被上诉人提起上 诉；被告以陈某为被上诉人提起上诉；陈某以一审被告 为被上诉人提起上诉。依据法律和司法解释，下列选项 正确的是： A．李某、一审被告、陈某的上诉都是合法的 B．一审被告的上诉不合法，因一审判决没有涉及 陈某的责任，陈某不可以作为被上诉人 C．李某的上诉是不合法的 D．陈某的上诉不合法，因一审判决没有涉及陈某 的责任，陈某不可以作为上诉人 试卷三参考答案",
-      "subjectId": "minfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "subjective",
-        "year:2007",
-        "answer-unmatched"
-      ],
-      "type": "comprehensive",
-      "typeRaw": "不定项选择题，每题所给的选项中有一个或一",
-      "year": 2007
     },
     {
       "answer": [],

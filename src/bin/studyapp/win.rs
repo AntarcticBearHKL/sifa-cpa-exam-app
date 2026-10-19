@@ -314,7 +314,7 @@ mod tests {
         };
 
         // Frame 1 establishes the pointer position, frame 2 is the press.
-        let _ = ctx.run_ui(raw(vec![egui::Event::PointerMoved(pos)]), |ui| {
+        let mut warmup = ctx.run_ui(raw(vec![egui::Event::PointerMoved(pos)]), |ui| {
             if with_widget {
                 let rect = Rect::from_center_size(pos, egui::vec2(120.0, 120.0));
                 ui.scope_builder(egui::UiBuilder::new().max_rect(rect), |ui| {
@@ -323,8 +323,12 @@ mod tests {
             }
             chrome(ui.ctx());
         });
+        // Headless frames produce font texture deltas; these tests do not
+        // render, so they are consumed on purpose — dropping them unconsumed
+        // panics inside epaint.
+        warmup.textures_delta.clear();
 
-        let out = ctx.run_ui(
+        let mut out = ctx.run_ui(
             raw(vec![egui::Event::PointerButton {
                 pos,
                 button: egui::PointerButton::Primary,
@@ -341,6 +345,7 @@ mod tests {
                 chrome(ui.ctx());
             },
         );
+        out.textures_delta.clear();
 
         out.viewport_output
             .values()
@@ -360,7 +365,7 @@ mod tests {
     fn hovering_a_window_edge_shows_the_matching_resize_cursor() {
         let cursor_at = |pos| {
             let ctx = egui::Context::default();
-            let out = ctx.run_ui(
+            let mut out = ctx.run_ui(
                 egui::RawInput {
                     screen_rect: Some(screen()),
                     events: vec![egui::Event::PointerMoved(pos)],
@@ -368,6 +373,9 @@ mod tests {
                 },
                 |ui| chrome(ui.ctx()),
             );
+            // See `press_starts_drag`: consume the headless font texture deltas
+            // so dropping the output does not panic.
+            out.textures_delta.clear();
             out.platform_output.cursor_icon
         };
 
@@ -412,10 +420,12 @@ mod tests {
             events,
             ..Default::default()
         };
-        let _ = ctx.run_ui(raw(vec![egui::Event::PointerMoved(pos)]), |ui| {
+        let mut warmup = ctx.run_ui(raw(vec![egui::Event::PointerMoved(pos)]), |ui| {
             chrome(ui.ctx());
         });
-        let out = ctx.run_ui(
+        // See `press_starts_drag`: consume the headless font texture deltas.
+        warmup.textures_delta.clear();
+        let mut out = ctx.run_ui(
             raw(vec![egui::Event::PointerButton {
                 pos,
                 button: egui::PointerButton::Primary,
@@ -424,6 +434,7 @@ mod tests {
             }]),
             |ui| chrome(ui.ctx()),
         );
+        out.textures_delta.clear();
         out.viewport_output
             .values()
             .flat_map(|v| v.commands.iter().cloned())

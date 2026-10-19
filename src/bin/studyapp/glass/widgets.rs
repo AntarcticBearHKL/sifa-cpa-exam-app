@@ -677,7 +677,7 @@ mod tests {
         let screen = Rect::from_min_size(Pos2::ZERO, Vec2::new(800.0, 600.0));
         let mut observed: Option<(Pos2, Pos2)> = None;
 
-        let _ = ctx.run_ui(
+        let mut out = ctx.run_ui(
             egui::RawInput {
                 screen_rect: Some(screen),
                 ..Default::default()
@@ -691,6 +691,10 @@ mod tests {
                 });
             },
         );
+        // A headless frame produces font texture deltas; this test does not
+        // render, so they are consumed on purpose — dropping them unconsumed
+        // panics inside epaint.
+        out.textures_delta.clear();
 
         let (base, placed) = observed.expect("the shifted block must run");
         assert!(

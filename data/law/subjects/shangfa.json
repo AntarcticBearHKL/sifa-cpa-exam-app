@@ -355475,3632 +355475,6 @@
     },
     {
       "answer": [
-        "A",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "证券法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "证券法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2002年客观题卷一#一#91",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "证券自营业务"
-        },
-        {
-          "label": "B",
-          "text": "证券经纪业务"
-        },
-        {
-          "label": "C",
-          "text": "证券承销业务"
-        },
-        {
-          "label": "D",
-          "text": "证券融资业务"
-        }
-      ],
-      "source": {
-        "nativeId": "2002年客观题卷一#一#91",
-        "path": "真题库/客观题/2002年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "根据我国证券法的规定，经纪类证券公司不得经营 下列哪些业务?",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2002"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2002
-    },
-    {
-      "answer": [
-        "B",
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "证券法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "证券法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2002年客观题卷一#一#92",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "资产评估机构"
-        },
-        {
-          "label": "B",
-          "text": "证券公司"
-        },
-        {
-          "label": "C",
-          "text": "证券交易所"
-        },
-        {
-          "label": "D",
-          "text": "律师事务所"
-        }
-      ],
-      "source": {
-        "nativeId": "2002年客观题卷一#一#92",
-        "path": "真题库/客观题/2002年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "根据《证券法》的规定，下列哪些机构对客户开立 的账户负有保密的义务?",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2002"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2002
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2002年客观题卷二#二#33",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "对陈某的行为以抢夺罪从重处罚即可"
-        },
-        {
-          "label": "B",
-          "text": "对陈某的行为以盗窃罪从重处罚即可"
-        },
-        {
-          "label": "C",
-          "text": "对陈某的行为以抢夺罪与盗窃罪实行数罪并罚"
-        },
-        {
-          "label": "D",
-          "text": "对陈某的行为以抢夺罪与故意毁坏财物罪实行"
-        }
-      ],
-      "source": {
-        "nativeId": "2002年客观题卷二#二#33",
-        "path": "真题库/客观题/2002年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "陈某在街上趁刘莱不备，将其手机(价值2590元) 夺走。随后陈某反复使用该手机拔打国际长途电话，致 使刘莱损失话费5200元。一周后，陈某将该手机丢弃在 某邮局门口，引起保安人员的怀疑，经询问案发。下列 有关此案的说法中，哪些是不正确的?",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2002"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2002
-    },
-    {
-      "answer": [
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2003年客观题卷一#一#16",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "房屋租赁合同无效，甲公司应先补交土地使用权出让"
-        },
-        {
-          "label": "B",
-          "text": "房屋租赁合同有效，已取得的租金归甲公司，但甲公"
-        },
-        {
-          "label": "C",
-          "text": "房屋租赁合同有效，已取得的租金归甲公司，但甲公"
-        },
-        {
-          "label": "D",
-          "text": "房屋租赁合同无效，甲公司应补交土地使用权出让金"
-        }
-      ],
-      "source": {
-        "nativeId": "2003年客观题卷一#一#16",
-        "path": "真题库/客观题/2003年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲公司通过划拨方式取得了国有土地使用权，在该土 地上建成了一栋房屋，并将该房屋出租给乙公司，每月 得租金１万元。后被土地管理部门发现。下列哪一选项 是对甲公司的行为和取得的租金收入进行恰当处置的方 式？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2003"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2003
-    },
-    {
-      "answer": [
-        "B",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2003年客观题卷一#一#36",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "会审公廨是１８６４年清廷与欧洲列强协议建立的"
-        },
-        {
-          "label": "B",
-          "text": "在会审公廨中，凡涉及外国人案件，必须有领事官员"
-        },
-        {
-          "label": "C",
-          "text": "在会审公廨中，凡中国人与外国人间诉讼案，由本国"
-        },
-        {
-          "label": "D",
-          "text": "会审公廨设在租界内"
-        }
-      ],
-      "source": {
-        "nativeId": "2003年客观题卷一#一#36",
-        "path": "真题库/客观题/2003年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "清末外国在华领事裁判权制度中设有一种特殊的审判 机构，即“会审公廨”。下列关于这一机构的表述哪些 是正确的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2003"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2003
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "证券法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "证券法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2003年客观题卷一#一#54",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "发行人的董事、监事、经理"
-        },
-        {
-          "label": "B",
-          "text": "承销商的董事、监事、经理"
-        },
-        {
-          "label": "C",
-          "text": "出具证券投资咨询意见的咨询机构"
-        },
-        {
-          "label": "D",
-          "text": "出具法律意见书的律师事务所"
-        }
-      ],
-      "source": {
-        "nativeId": "2003年客观题卷一#一#54",
-        "path": "真题库/客观题/2003年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "证券发行中因虚假陈述致使投资者在证券投资中遭受 损失的，发行人、承销商应承担赔偿责任，下列哪些人 应负连带赔偿责任？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2003"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2003
-    },
-    {
-      "answer": [
-        "A",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2003年客观题卷一#一#55",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "甲公司最近2年连续亏损"
-        },
-        {
-          "label": "B",
-          "text": "甲公司的法定代表人发生变更"
-        },
-        {
-          "label": "C",
-          "text": "甲公司发生重大违法行为"
-        },
-        {
-          "label": "D",
-          "text": "甲公司未按照公司债券募集办法的规定履行义务"
-        }
-      ],
-      "source": {
-        "nativeId": "2003年客观题卷一#一#55",
-        "path": "真题库/客观题/2003年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲股份有限公司债券上市交易后因出现法定情形被暂 停上市。下列哪些表述符合暂停上市的规定？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2003"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2003
-    },
-    {
-      "answer": [
-        "A",
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "证券法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "证券法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2003年客观题卷一#一#56",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "发行人所持股票，在公司成立之日起3年内不得转让"
-        },
-        {
-          "label": "B",
-          "text": "公司董事、经理、监事在任职期间不得转让本公司股"
-        },
-        {
-          "label": "C",
-          "text": "持有一个公司已发行股份5％的股东，其股票在买入后"
-        },
-        {
-          "label": "D",
-          "text": "公司绝对控股的股东，其股票于购入之日起1年内不得"
-        }
-      ],
-      "source": {
-        "nativeId": "2003年客观题卷一#一#56",
-        "path": "真题库/客观题/2003年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "根据《证券法》和《公司法》的规定，下列关于证券 交易限制情形的表述哪些是正确的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2003"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2003
-    },
-    {
-      "answer": [
-        "A",
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2003年客观题卷一#一#65",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "中国公司直接向有管辖权的瑞士法院申请承认和执行"
-        },
-        {
-          "label": "B",
-          "text": "中国公司向国际法院申请承认和执行"
-        },
-        {
-          "label": "C",
-          "text": "由人民法院依照我国缔结或者参加的国际条约的规定"
-        },
-        {
-          "label": "D",
-          "text": "由人民法院直接采取强制措施执行"
-        }
-      ],
-      "source": {
-        "nativeId": "2003年客观题卷一#一#65",
-        "path": "真题库/客观题/2003年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "中国法院就一家中国公司和一家瑞士公司之间的技术 转让纠纷作出判决。判决发生效力后，瑞士公司拒不执 行法院判决，而且该公司在中国既无办事机构、分支机 构和代理机构，也无财产。关于该判决的承认和执行， 下列选项中的哪些表述是正确的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2003"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2003
-    },
-    {
-      "answer": [
-        "A",
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "保险法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "保险法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2003年客观题卷一#一#68",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "对于细菌超过标准的货物，中国公司应向A国公司索赔"
-        },
-        {
-          "label": "B",
-          "text": "对短少的货物，中国公司应向A国公司索赔"
-        },
-        {
-          "label": "C",
-          "text": "对短少的货物，中国公司应向承运人索赔"
-        },
-        {
-          "label": "D",
-          "text": "对细菌超过标准的货物，中国公司可以要求减少价金"
-        }
-      ],
-      "source": {
-        "nativeId": "2003年客观题卷一#一#68",
-        "path": "真题库/客观题/2003年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "A国某公司以CIF价与中国某公司签订了向中国出口食 品2000箱的合同，A国公司在货物装运后，凭已装船清洁 提单和已投保一切险及战争险的保险单，向银行办理了 结汇，货到目的港后经复验发现，该批货物中的342箱食 品所含的沙门氏细菌超过进口国的标准，中国公司只实 收1995箱货物，短少5箱。下列选项哪些说法是正确的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2003"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2003
-    },
-    {
-      "answer": [
-        "A",
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2003年客观题卷二#二#65",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "王某承认盗窃事实的供述"
-        },
-        {
-          "label": "B",
-          "text": "王某有关公司拖欠他工资的辩解"
-        },
-        {
-          "label": "C",
-          "text": "秦某的证言"
-        },
-        {
-          "label": "D",
-          "text": "手提电脑"
-        }
-      ],
-      "source": {
-        "nativeId": "2003年客观题卷二#二#65",
-        "path": "真题库/客观题/2003年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "某公司被盗手提电脑一台，侦查人员怀疑是王某所为 ，王某一开始不承认，但后来经过刑讯承认了盗窃事实 ，并供述已将电脑卖给刘某，同时还说他之所以拿公司 的电脑是因为公司拖欠了6个月的工资。侦查人员找到 刘某后，刘某说电脑又倒卖给了秦某。秦某起初不承认 ，侦查人员威胁他：“如果不承认就按共同盗窃论罪！ ”秦某害怕，承认了购买电脑一事，并交出了电脑。此 案中下列哪些证据不能作为定案的根据？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2003"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2003
-    },
-    {
-      "answer": [
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2004年客观题卷一#一#38",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "船旗国法律"
-        },
-        {
-          "label": "B",
-          "text": "共同海损发生地法律"
-        },
-        {
-          "label": "C",
-          "text": "巴西的法律"
-        },
-        {
-          "label": "D",
-          "text": "理算地法律"
-        }
-      ],
-      "source": {
-        "nativeId": "2004年客观题卷一#一#38",
-        "path": "真题库/客观题/2004年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "一艘悬挂巴拿马国旗并由一巴西海运公司经营的海 船，运送一批属一家日本公司的货物从日本到中国，在 韩国附近海域发生意外。为了安全完成本航程，该海船 驶入韩国某港口避难，发生共同海损，后在中国某港口 进行理算。该共同海损理算应适用什么法律？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2004"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2004
-    },
-    {
-      "answer": [
-        "B",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "海商法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "海商法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2004年客观题卷一#一#71",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "船舶抵押权适用抵押地法律"
-        },
-        {
-          "label": "B",
-          "text": "船舶优先权适用受理案件的法院所在地法律"
-        },
-        {
-          "label": "C",
-          "text": "船舶所有权的取得、转让和消灭适用行为地法律"
-        },
-        {
-          "label": "D",
-          "text": "船舶在光船租赁期间设立船舶抵押权的，适用原船舶"
-        }
-      ],
-      "source": {
-        "nativeId": "2004年客观题卷一#一#71",
-        "path": "真题库/客观题/2004年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "根据我国《海商法》关于船舶物权问题的规定，下 列表述哪些是正确的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2004"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2004
-    },
-    {
-      "answer": [
-        "A",
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "个人独资企业法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "个人独资企业法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2004年客观题卷一#一#77",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "遵循一定的程序，A公司有资格事先向多边投资担保机"
-        },
-        {
-          "label": "B",
-          "text": "如甲国投资者、A公司和乙国政府同意，A公司可以请"
-        },
-        {
-          "label": "C",
-          "text": "甲国投资者本人不可以请求“解决投资争端的国际中"
-        },
-        {
-          "label": "D",
-          "text": "多边投资担保机构在向投保人赔付后，可以向甲国政"
-        }
-      ],
-      "source": {
-        "nativeId": "2004年客观题卷一#一#77",
-        "path": "真题库/客观题/2004年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲乙两国均为《多边投资担保机构公约》和《解决 国家与他国国民之间投资争端的公约》的缔约国。A公 司是甲国投资者在乙国依乙国法设立的一家外商独资企 业。乙国政府对A公司采取了征收措施。根据前述两公 约，下列说法哪些是正确的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2004"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2004
-    },
-    {
-      "answer": [
-        "A",
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2004年客观题卷一#一#100",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "公司让全体民工对偷窃和毁坏设备者造成的损失承担"
-        },
-        {
-          "label": "B",
-          "text": "全体民工有义务与公司协商确定赔偿损失的数额"
-        },
-        {
-          "label": "C",
-          "text": "偷窃和毁坏设备事件与民工工资无关，应循其他合法"
-        },
-        {
-          "label": "D",
-          "text": "全体民工有义务查出偷窃和毁坏设备者，查出前可暂"
-        }
-      ],
-      "source": {
-        "nativeId": "2004年客观题卷一#一#100",
-        "path": "真题库/客观题/2004年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "对于建筑公司的主张，劳动行政主管部门应如何认 定？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2004"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2004
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2004年客观题卷二#二#76",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "甲公司可以对商务部关于倾销幅度的终裁决定提起行"
-        },
-        {
-          "label": "B",
-          "text": "乙公司可以对商务部征收144％的反倾销税的决定提起"
-        },
-        {
-          "label": "C",
-          "text": "法院应当参照国务院部门规章和地方政府规章对被诉"
-        },
-        {
-          "label": "D",
-          "text": "法院可以参照有关涉外民事诉讼程序规定审理反倾销"
-        }
-      ],
-      "source": {
-        "nativeId": "2004年客观题卷二#二#76",
-        "path": "真题库/客观题/2004年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "商务部根据中国四家公司的申请并经调查公布了反 倾销调查的终裁决定，认定从A国进口苯酚存在倾销， 有关公司倾销幅度为6％-144％，决定自2004年2月1日起， 对A国甲公司征收6％、乙公司征收144％的反倾销税，期 限均为5年。下列哪些说法是正确的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2004"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2004
-    },
-    {
-      "answer": [
-        "B",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "个人独资企业法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "个人独资企业法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2004年客观题卷二#二#99",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "甲有权申请法院强制执行审批机关2001年4月1日确认股"
-        },
-        {
-          "label": "B",
-          "text": "甲乙之间关于股权回购的约定有效，甲可以对乙的违"
-        },
-        {
-          "label": "C",
-          "text": "审批机关2001年6月作出的批复并未设定新的权利义务"
-        },
-        {
-          "label": "D",
-          "text": "甲在2003年8月对审批机关2001年6月1日作出的批复提起"
-        }
-      ],
-      "source": {
-        "nativeId": "2004年客观题卷二#二#99",
-        "path": "真题库/客观题/2004年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "某合资企业的甲、乙两股东就股权转让达成协议。 后因情况发生变化，甲、乙两股东又签订了一项合同修 正案，约定在该合同批准后一年内甲有权以一定的价格 向乙回购已经出让的股权。2001年4月1日，股权转让合同 以及合同修正案一同获得批准。7月2日，甲提出回购， 乙不同意，并告知甲原审查批准机关于2001年6月1日又作 出一批复，该批复指出，2001年4月1日批复只是批准股权 转让合同，未批准股权回购条款，股权回购时仍需报批 。下列说法正确的是：",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2004"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2004
-    },
-    {
-      "answer": [
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2005年客观题卷二#二#9",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "虚报注册资本罪"
-        },
-        {
-          "label": "B",
-          "text": "虚假出资罪"
-        },
-        {
-          "label": "C",
-          "text": "虚报注册资本罪与抽逃出资罪"
-        },
-        {
-          "label": "D",
-          "text": "虚假出资罪与抽逃出资罪"
-        }
-      ],
-      "source": {
-        "nativeId": "2005年客观题卷二#二#9",
-        "path": "真题库/客观题/2005年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲、乙二人出资10万元，同时通过购买并使用伪造的 商业零售发票，虚填商品实物价值人民币50万元，骗取 审计事务所出具验资报告，欺骗公司登记主管部门，以 60万元注册资本取得“XX贸易有限公司”营业执照。后 甲、乙又合谋将上述10万元资本金转移用于注册另一公 司。甲、乙二人的行为构成：",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2005"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2005
-    },
-    {
-      "answer": [
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "证券法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "证券法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2005年客观题卷二#二#13",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "属于法无明文规定的情形，不以犯罪论处"
-        },
-        {
-          "label": "B",
-          "text": "以盗窃罪论处"
-        },
-        {
-          "label": "C",
-          "text": "以故意毁坏财物罪论处"
-        },
-        {
-          "label": "D",
-          "text": "以操纵证券价格罪论处"
-        }
-      ],
-      "source": {
-        "nativeId": "2005年客观题卷二#二#13",
-        "path": "真题库/客观题/2005年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲在某证券交易大厅偷窥获得在该营业部开户的乙 的资金账号及交易密码后，通过电话委托等方式在乙的 资金账号上高吃低抛某一支股票，同时通过自己在证券 交易部的资金账号低吃高抛同一支股票，造成乙损失30 万元，甲从中获利20万元。对甲应当如何处理？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2005"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2005
-    },
-    {
-      "answer": [
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2005年客观题卷二#二#18",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "甲定职务侵占罪，乙定贪污罪，两人不是共同犯罪"
-        },
-        {
-          "label": "B",
-          "text": "甲定职务侵占罪，乙定贪污罪，但两人是共同犯罪"
-        },
-        {
-          "label": "C",
-          "text": "甲定职务侵占罪，乙是共犯，也定职务侵占罪"
-        },
-        {
-          "label": "D",
-          "text": "乙定贪污罪，甲是共犯，也定贪污罪"
-        }
-      ],
-      "source": {
-        "nativeId": "2005年客观题卷二#二#18",
-        "path": "真题库/客观题/2005年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲为非国家工作人员，是某国有公司控股的股份有 限公司主管财务的副总经理；乙为国家工作人员，是该 公司财务部主管。甲与乙勾结，分别利用各自的职务便 利，共同侵吞了本单位的财物100万元。对甲、乙两人应 当如何定性？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2005"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2005
-    },
-    {
-      "answer": [
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2005年客观题卷二#二#93",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "走私罪（共犯）                          B.洗钱罪"
-        },
-        {
-          "label": "C",
-          "text": "逃汇罪                                  D.单位受贿罪"
-        }
-      ],
-      "source": {
-        "nativeId": "2005年客观题卷二#二#93",
-        "path": "真题库/客观题/2005年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲公司走私汽车获利人民币4000万元后，欲通过乙公 司（非国有）的帐户将这笔资金换成外汇转移至香港， 并说明可按资金数额的10%支付\"手续费\"。乙公司得知该 笔资金为甲公司走私犯罪所得，仍同意为该资金转帐提 供帐户，并在收取\"手续费\"400万元后，将该资金折换成4 38万美元，以预付货款为名汇往甲公司在香港的帐户。 乙公司的行为构成：",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2005"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2005
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "证券法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "证券法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2006年客观题卷一#一#70",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "公司应在当年8月底以前向证监会和交易所报送"
-        },
-        {
-          "label": "B",
-          "text": "公司应在4月底以前向证监会和交易所报送上一"
-        },
-        {
-          "label": "C",
-          "text": "公司的中期报告和年度报告都必须记载公司财"
-        },
-        {
-          "label": "D",
-          "text": "公司的中期报告和年度报告都必须记载持有公"
-        }
-      ],
-      "source": {
-        "nativeId": "2006年客观题卷一#一#70",
-        "path": "真题库/客观题/2006年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "根据《证券法》关于上市公司及时向社会披露 信息的规定，下列哪些表述是正确的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2006"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2006
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "企业破产法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "企业破产法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2006年客观题卷一#一#73",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "仅以不能清偿到期债务为破产原因"
-        },
-        {
-          "label": "B",
-          "text": "破产宣告前须经国务院银行业监督管理机构同"
-        },
-        {
-          "label": "C",
-          "text": "清算组成员须包括国务院银行业监督管理机构"
-        },
-        {
-          "label": "D",
-          "text": "破产清算时应优先支付个人储蓄存款的本息"
-        }
-      ],
-      "source": {
-        "nativeId": "2006年客观题卷一#一#73",
-        "path": "真题库/客观题/2006年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "与《企业破产法》的规定相比较，《商业银行 法》对商业银行破产的规定有哪些特殊之处？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2006"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2006
-    },
-    {
-      "answer": [
-        "A",
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2006年客观题卷一#一#81",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "可由中外法律专家向法院提供甲国有关交通肇"
-        },
-        {
-          "label": "B",
-          "text": "只有我国驻甲国使领馆才能提供甲国有关交通"
-        },
-        {
-          "label": "C",
-          "text": "王某自己可以向法院提供甲国有关交通肇事损"
-        },
-        {
-          "label": "D",
-          "text": "经各种途径仍不能查明甲国有关法律时，法院"
-        }
-      ],
-      "source": {
-        "nativeId": "2006年客观题卷一#一#81",
-        "path": "真题库/客观题/2006年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "中国公民王某在甲国逗留期间，驾车正常行驶 时被该国某公司雇员驾驶的卡车撞翻，身受重伤。王某 回国后，向该公司在中国的分支机构所在地法院起诉， 要求该公司赔偿其损失。我国《民法通则》规定，侵权 行为的损害赔偿适用侵权行为地法。依此，关于如何查 明应当适用的甲国法，下列哪些选项是正确的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2006"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2006
-    },
-    {
-      "answer": [
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2006年客观题卷一#一#97",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "拍卖公司不得在拍卖活动中拍卖自己的物品，"
-        },
-        {
-          "label": "B",
-          "text": "拍卖公司不得在拍卖活动中拍卖自己的物品，"
-        },
-        {
-          "label": "C",
-          "text": "拍卖公司如果在拍卖活动中拍卖了本公司工作"
-        },
-        {
-          "label": "D",
-          "text": "拍卖公司如果在拍卖活动中拍卖了本公司工作"
-        }
-      ],
-      "source": {
-        "nativeId": "2006年客观题卷一#一#97",
-        "path": "真题库/客观题/2006年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "张某主张，拍卖公司本次拍卖的车辆中有本公 司职员的车辆，本次拍卖无效。下列关于这一问题的何 种判断是正确的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2006"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2006
-    },
-    {
-      "answer": [
-        "B",
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2006年客观题卷二#二#90",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "县公安局的行为有刑事诉讼法明确授权，依法"
-        },
-        {
-          "label": "B",
-          "text": "县公安局的行为属于以办理刑事案件为名插手"
-        },
-        {
-          "label": "C",
-          "text": "乙公司有权提起行政诉讼，请求确认县公安局"
-        },
-        {
-          "label": "D",
-          "text": "甲公司获得乙公司还款是基于两公司之间的债"
-        }
-      ],
-      "source": {
-        "nativeId": "2006年客观题卷二#二#90",
-        "path": "真题库/客观题/2006年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲公司与乙公司签订建设工程施工合同，甲公 司向乙公司支付工程保证金30万元。后由于情况发生变 化，原合同约定的工程项目被取消，乙公司也无资金退 还甲公司，甲公司向县公安局报案称被乙公司法定代表 人王某诈骗30万元。公安机关立案后，将王某传唤到公 安局，要求王某与甲公司签订了还款协议书，并将扣押 的乙公司和王的财产移交给甲公司后将王某释放。下列 哪些说法是正确的?",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2006"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2006
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "个人独资企业法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "个人独资企业法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2007年客观题卷一#一#23",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "扣押甲已出售并交付给刘某、但刘某尚未付款"
-        },
-        {
-          "label": "B",
-          "text": "扣押甲一台价值4800元的电视机"
-        },
-        {
-          "label": "C",
-          "text": "查封甲唯一的一辆家用轿车"
-        },
-        {
-          "label": "D",
-          "text": "查封甲唯一的一套居住用房"
-        }
-      ],
-      "source": {
-        "nativeId": "2007年客观题卷一#一#23",
-        "path": "真题库/客观题/2007年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲创办了销售电脑的个人独资企业。至2007年8 月，该企业欠缴税款近8000元。根据《税收征收管理法 》的规定，税务机关采取的下列哪一强制措施是合法的 ？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2007",
-        "answer-missing"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2007
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2007年客观题卷一#一#25",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "甲发布招标公告的行为属于要约"
-        },
-        {
-          "label": "B",
-          "text": "乙寄出投标书的行为属于承诺"
-        },
-        {
-          "label": "C",
-          "text": "甲向乙发出中标通知书时合同即成立"
-        },
-        {
-          "label": "D",
-          "text": "甲向乙发出中标通知书的行为属于承诺"
-        }
-      ],
-      "source": {
-        "nativeId": "2007年客观题卷一#一#25",
-        "path": "真题库/客观题/2007年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲小区业主大会通过媒体发布招标公告选聘物 业服务公司，乙公司寄送了投标书。经评标，乙公司中 标，甲向其发出中标通知书。下列哪一选项是正确的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2007",
-        "answer-missing"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2007
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "证券法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "证券法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2007年客观题卷一#一#75",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "证券法上的证券均具有流通性"
-        },
-        {
-          "label": "B",
-          "text": "证券代表的权利可以是债权"
-        },
-        {
-          "label": "C",
-          "text": "所有证券投资均具有风险性"
-        },
-        {
-          "label": "D",
-          "text": "所有证券发行均应公开进行"
-        }
-      ],
-      "source": {
-        "nativeId": "2007年客观题卷一#一#75",
-        "path": "真题库/客观题/2007年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "根据《证券法》规定和证券法原理，下列哪些 选项是正确的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2007",
-        "answer-missing"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2007
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2007年客观题卷一#一#80",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "法院可向该公司设在中国的任何分支机构送达"
-        },
-        {
-          "label": "B",
-          "text": "法院可向该公司设在中国的任何代表机构送达"
-        },
-        {
-          "label": "C",
-          "text": "如该公司的主要负责人位于中国境内时，法院"
-        },
-        {
-          "label": "D",
-          "text": "法院可向该公司在中国的诉讼代理人送达"
-        }
-      ],
-      "source": {
-        "nativeId": "2007年客观题卷一#一#80",
-        "path": "真题库/客观题/2007年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "某中国企业因与在境外设立的斯坦利公司的争 议向我国法院提起诉讼。根据我国现行司法解释，关于 向斯坦利公司有效送达司法文书的问题，下列哪些选项 是正确的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2007",
-        "answer-missing"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2007
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "合伙企业法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "合伙企业法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2007年客观题卷一#一#100",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "工会认为该决定不适当的，有权提出意见"
-        },
-        {
-          "label": "B",
-          "text": "工会认为该决定违反法律、法规或者劳动合同"
-        },
-        {
-          "label": "C",
-          "text": "被裁减人员提起诉讼的，工会应当依法给予支"
-        },
-        {
-          "label": "D",
-          "text": "被裁减人员提起诉讼有困难的，工会可以代表"
-        },
-        {
-          "label": "C",
-          "text": "当事人、公证事项的利害关系人对公证书内容"
-        },
-        {
-          "label": "D",
-          "text": "自然人、法人或者其他组织办理公证，均可委"
-        }
-      ],
-      "source": {
-        "nativeId": "2007年客观题卷一#一#100",
-        "path": "真题库/客观题/2007年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "对于企业裁减人员的决定，工会依法可采取的 行动是：",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2007",
-        "answer-missing"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2007
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2007年客观题卷二#二#86",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "路面被污染的沿途三个区的执法机关对本案均"
-        },
-        {
-          "label": "B",
-          "text": "对该运输公司应当依法从轻或者减轻行政处罚"
-        },
-        {
-          "label": "C",
-          "text": "本案的违法行为人是该运输公司"
-        },
-        {
-          "label": "D",
-          "text": "本案的违法行为人是该运输公司和司机"
-        }
-      ],
-      "source": {
-        "nativeId": "2007年客观题卷二#二#86",
-        "path": "真题库/客观题/2007年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "运输公司指派本单位司机运送白灰膏。由于泄 漏，造成沿途路面大面积严重污染。司机发现后即向公 司汇报。该公司即组织人员清扫被污染路面。下列哪些 选项是正确的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2007",
-        "answer-missing"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2007
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "个人独资企业法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "个人独资企业法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2008年客观题卷一#一#21",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "责令李某在出境前提供担保"
-        },
-        {
-          "label": "B",
-          "text": "李某是在延期期间出境，无须采取任何措施"
-        },
-        {
-          "label": "C",
-          "text": "告知李某：欠税人在延期期间一律不得出境"
-        },
-        {
-          "label": "D",
-          "text": "直接通知出境管理机关阻止其出境"
-        }
-      ],
-      "source": {
-        "nativeId": "2008年客观题卷一#一#21",
-        "path": "真题库/客观题/2008年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "李某是个人独资企业的业主。该企业因资金周 转困难，到期不能缴纳税款。经申请，税务局批准其延 期三个月缴纳。在此期间，税务局得知李某申请出国探 亲，办理了签证并预定了机票。对此，税务局应采取下 列哪一种处理方式？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2008",
-        "answer-missing"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2008
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2008年客观题卷一#一#49",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "马某拿着一份合同复印件到公证机关要求公证"
-        },
-        {
-          "label": "B",
-          "text": "女青年李某29岁，至今未婚，到公证机关办理处"
-        },
-        {
-          "label": "C",
-          "text": "张某与王某大学毕业工作多年，各自都有些积"
-        },
-        {
-          "label": "D",
-          "text": "杨父因正在读初中的儿子整天沉迷于网络游戏"
-        }
-      ],
-      "source": {
-        "nativeId": "2008年客观题卷一#一#49",
-        "path": "真题库/客观题/2008年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "根据我国《公证法》规定，对下列哪一事项公 证机关可予办理公证？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2008",
-        "answer-missing"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2008
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2008年客观题卷一#一#67",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "未经股东大会决议批准，公司董事会不得实施"
-        },
-        {
-          "label": "B",
-          "text": "如果股东大会决议不批准，公司董事会坚持此"
-        },
-        {
-          "label": "C",
-          "text": "证券监督管理机构有权对擅自改变募集资金用"
-        },
-        {
-          "label": "D",
-          "text": "在未经股东大会批准而实施了此项购置计划的"
-        }
-      ],
-      "source": {
-        "nativeId": "2008年客观题卷一#一#67",
-        "path": "真题库/客观题/2008年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "某上市公司招股说明书中列明的募集资金用途 是环保新技术研发。现公司董事会决议将募集资金用于 购置办公大楼。对此，下列哪些选项是正确的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2008"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2008
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2008年客观题卷一#一#68",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "该收益应当全部归公司所有"
-        },
-        {
-          "label": "B",
-          "text": "该收益应由公司董事会负责收回"
-        },
-        {
-          "label": "C",
-          "text": "董事会不收回该收益的，股东有权要求董事会"
-        },
-        {
-          "label": "D",
-          "text": "董事会未在规定期限内执行股东关于收回吴某"
-        }
-      ],
-      "source": {
-        "nativeId": "2008年客观题卷一#一#68",
-        "path": "真题库/客观题/2008年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "某上市公司董事吴某，持有该公司6%的股份。 吴某将其持有的该公司股票在买入后的第5个月卖出， 获利600万元。关于此收益，下列哪些选项是正确的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2008"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2008
-    },
-    {
-      "answer": [
-        "B",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "证券法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "证券法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2008年客观题卷一#一#69",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "为客户买卖证券提供融资融券服务"
-        },
-        {
-          "label": "B",
-          "text": "有偿使用客户的交易结算资金"
-        },
-        {
-          "label": "C",
-          "text": "将自营账户借给他人使用"
-        },
-        {
-          "label": "D",
-          "text": "接受客户的全权委托"
-        }
-      ],
-      "source": {
-        "nativeId": "2008年客观题卷一#一#69",
-        "path": "真题库/客观题/2008年客观题卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "证券公司的下列行为，哪些是《证券法》所禁 止的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2008"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2008
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2008年客观题卷二#二#29",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "继续审理"
-        },
-        {
-          "label": "B",
-          "text": "终止审理"
-        },
-        {
-          "label": "C",
-          "text": "终止审理，建议检察机关对公司董事长、总经"
-        },
-        {
-          "label": "D",
-          "text": "退回检察机关，建议检察机关对公司董事长、"
-        }
-      ],
-      "source": {
-        "nativeId": "2008年客观题卷二#二#29",
-        "path": "真题库/客观题/2008年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "某电子科技有限公司因涉嫌虚开增值税专用发 票罪被提起公诉，公司董事长、总经理、会计等5人被 认定为该单位犯罪的直接责任人员。在法院审理中，该 公司被注销。关于法院的处理，下列哪一选项是正确的 ？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2008",
-        "answer-missing"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2008
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2008年客观题卷二#二#81",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "某县两个职能局的合并"
-        },
-        {
-          "label": "B",
-          "text": "某省民政厅增设内设机构"
-        },
-        {
-          "label": "C",
-          "text": "某市职能局名称的改变"
-        },
-        {
-          "label": "D",
-          "text": "某县人民政府设立议事协调机构"
-        }
-      ],
-      "source": {
-        "nativeId": "2008年客观题卷二#二#81",
-        "path": "真题库/客观题/2008年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "下列哪些行政机构的设置事项，应当经上一级 人民政府机构编制管理机关审核后，报上一级人民政府 批准？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2008",
-        "answer-missing"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2008
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "个人独资企业法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "个人独资企业法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2008年客观题卷二#二#84",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "若张某在对罚款不服申请复议时一并对县政府"
-        },
-        {
-          "label": "B",
-          "text": "某县政府的文件属违法设定许可和处罚，有权"
-        },
-        {
-          "label": "C",
-          "text": "生猪管理办公室若以自己名义作出罚款决定，"
-        },
-        {
-          "label": "D",
-          "text": "若张某直接向法院起诉，应以某县政府为被告"
-        }
-      ],
-      "source": {
-        "nativeId": "2008年客观题卷二#二#84",
-        "path": "真题库/客观题/2008年客观题卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "为严格本地生猪屠宰市场管理，某县政府以文 件形式规定，凡本县所有猪类屠宰单位和个人，须在规 定期限内到生猪管理办公室申请办理生猪屠宰证，违者 予以警告或罚款。个体户张某未按文件规定申请办理生 猪屠宰证，生猪管理办公室予以罚款200元。下列哪些说 法是错误的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2008",
-        "answer-missing"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2008
-    },
-    {
-      "answer": [
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "个人独资企业法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "个人独资企业法",
-      "difficulty": null,
-      "explanation": "本题考查企业所得税法。\nA 项：《企业所得税法》第 1 条第 1 款规定：“在中华人民共和国境内，企业和其他取\n得收入的组织（以下统称企业）为企业所得税的纳税人，依照本法的规定缴纳企业所得\n税。”此项正确。\nB 项：第 1 条第 2 款规定：“个人独资企业、合伙企业不适用本法。”此项正确。\nC 项：第 4 条规定：“企业所得税的税率为 25%。非居民企业取得本法第三条第三款规\n定的所得，适用税率为 20%。”第 3 条第 3 款规定：“非居民企业在中国境内未设立机构、\n场所的，或者虽设立机构、场所但取得的所得与其所设机构、场所没有实际联系的，应当就\n其来源于中国境内的所得缴纳企业所得税。”据此可知，选项中两者的税率并不同，此项错\n误。\nD 项：第 22 条规定：“企业的应纳税所得额乘以适用税率，减除依照本法关于税收优\n惠的规定减免和抵免的税额后的余额，为应纳税额。”第 26 条规定：“企业的下列收入为\n免税收入：（一）国债利息收入；（二）符合条件的居民企业之间的股息、红利等权益性投\n资收益；（三）在中国境内设立机构、场所的非居民企业从居民企业取得与该机构、场所有\n实际联系的股息、红利等权益性投资收益；（四）符合条件的非营利组织的收入。”此项正\n确。",
-      "id": "law:fakao-app:2009年客观题-卷一#一#27",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "在我国境内，企业和其他取得收入的组织为企业所得税的纳税人"
-        },
-        {
-          "label": "B",
-          "text": "个人独资企业、合伙企业不是企业所得税的纳税人"
-        },
-        {
-          "label": "C",
-          "text": "企业所得税的纳税人分为居民企业和非居民企业，二者的适用税率完全不同"
-        },
-        {
-          "label": "D",
-          "text": "企业所得税的税收优惠，居民企业和非居民企业都有权享受"
-        }
-      ],
-      "source": {
-        "nativeId": "2009年客观题-卷一#一#27",
-        "path": "真题库/客观题/2009年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "关于企业所得税的说法，下列哪一选项是错误的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2009"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2009
-    },
-    {
-      "answer": [
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "本题考查外资非正常撤离中国相关利益方跨国追究与诉讼的问题。\nA 项：根据《外资非正常撤离中国相关利益方跨国追究与诉讼工作指引》第 3 条规定：\n“不履行正常清算义务给债权人造成损失的，根据最高法院《关于适用&lt;中华人民共和国\n公司法>若干问题的规定（二）》的最新规定，作为有限责任公司的股东、股份有限公司的\n控股股东和董事以及公司实际控制人的外国企业或个人仍应承担相应民事责任，对公司债务\n承担连带清偿责任。”此项错。\nB 项：第 6 条规定：“对极少数恶意逃避欠缴，税额巨大，涉嫌犯罪的嫌疑人员，国家\n有关主管部门在立案后，可视具体案情通过条约规定的中央机关或外交渠道向犯罪嫌疑人逃\n往国提出引渡请求或刑事诉讼移转请求，以最大程度地确保犯罪嫌疑人受到法律追究。”题\n中格里尚未达到涉嫌犯罪且应引渡的程度，此项错。\nC 项：第 2 条规定：“外资非正常撤离事件发生后，中方当事人要及时向有关司法主管\n部门（法院或侦查机关）申请民商事或刑事案件立案。”此项正确。\nD 项：当事人的诉讼代理人不可以直接向国外主管机关提出调取证据的请求，故此项错\n误。",
-      "id": "law:fakao-app:2009年客观题-卷一#一#37",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "因格里已离开中国，上述债务只应由合资企业的中方承担清偿责任"
-        },
-        {
-          "label": "B",
-          "text": "中国有关主管部门在立案后可向甲国提出引渡格里的请求"
-        },
-        {
-          "label": "C",
-          "text": "中方当事人可在中国有管辖权的法院对格里申请立案"
-        },
-        {
-          "label": "D",
-          "text": "中方当事人的诉讼代理人可请求甲国主管机关代为调取有关格里的证据"
-        }
-      ],
-      "source": {
-        "nativeId": "2009年客观题-卷一#一#37",
-        "path": "真题库/客观题/2009年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲国人格里为中国境内某中外合资企业的控股股东。2009 年因金融危机该企业出现 财务困难，格里于 6 月回国后再未返回，尚欠企业员工工资及厂房租金和其他债务数万元。 中国与甲国均为《海牙取证公约》缔约国，依我国相关法律规定，下列哪一选项是正确的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2009"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2009
-    },
-    {
-      "answer": [
-        "B",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "本题考查特别使团。\nA 项：特别使团在派遣之前应得到接受国的同意，对具有接受国或第三国国籍的特别使\n团代表，接受国可以随时撤销，此项错误。\nB 项：特别使团的房舍在遇到火灾或其他严重的灾难，同时无法获得使团团长明确答复\n的情况下，接受国可推定获得同意而进入，此项正确。\nC 项：使团人员在执行公务外使用车辆造成交通肇事而引起的诉讼是不享有豁免权的，\n接受国可以管辖，此项错误。\nD 项：特别使团同样适用接受国对使馆人员的“不受欢迎的人”和“不能接受”制度，\n此项正确。",
-      "id": "law:fakao-app:2009年客观题-卷一#一#79",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "甲国对奥马的任命需征得乙国同意，乙国一经同意则不可撤销此项同意"
-        },
-        {
-          "label": "B",
-          "text": "甲国特别使团下榻的房舍遇到火灾而无法获得使团团长明确答复时，乙国可以推定获"
-        },
-        {
-          "label": "C",
-          "text": "贝登在公务之外开车肇事被诉诸乙国法院，因贝登有豁免权乙国法院无权管辖"
-        },
-        {
-          "label": "D",
-          "text": "特别使团也适用对使馆人员的“不受欢迎的人”的制度"
-        }
-      ],
-      "source": {
-        "nativeId": "2009年客观题-卷一#一#79",
-        "path": "真题库/客观题/2009年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "经乙国同意，甲国派特别使团与乙国进行特定外交任务谈判，甲国国民贝登和丙国 国民奥马均为使团成员，下列哪些选项是正确的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2009"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2009
-    },
-    {
-      "answer": [
-        "B",
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "本题考查中国内地与港澳台地区之间的送达。\nA 项：《最高人民法院关于涉台民事诉讼文书送达的若干规定》第 3 条第 1 款规定：\n“人民法院向住所地在台湾地区的当事人送达民事诉讼文书，可以采用下列方式：……\n（四）受送达人在大陆有代表机构、分支机构、业务代办人的，向其代表机构或者经受送达\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n人明确授权接受送达的分支机构、业务代办人送达；（五）受送达人在台湾地区的地址明确\n的，可以邮寄送达”根据第（四）项，必须为“经受送达人明确授权接受送达的业务代办\n人”，此项错误。\nB 项：第 3 条第 2 款：“采用上述方式不能送达或者台湾地区的当事人下落不明的，公\n告送达。”此项正确。\nC 项：第 5 条第 1 款：“采用本规定第三条第一款第（五）项方式送达的，应当附有送\n达回证。受送达人未在送达回证上签收但在邮件回执上签收的，视为送达，签收日期为送达\n日期。”此项正确。\nD 项：第 5 条第 2 款：“自邮寄之日起满三个月，如果未能收到送达与否的证明文件，\n且根据各种情况不足以认定已经送达的，视为未送达。”此项错误。",
-      "id": "law:fakao-app:2009年客观题-卷一#一#82",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "可向乙公司在大陆的任何业务代办人送达"
-        },
-        {
-          "label": "B",
-          "text": "如乙公司的相关当事人在台湾下落不明的，可采用公告送达"
-        },
-        {
-          "label": "C",
-          "text": "邮寄送达的，如乙公司未在送达回证上签收而只是在邮件回执上签收，可视为送达"
-        },
-        {
-          "label": "D",
-          "text": "邮寄送达未能收到送达与否证明文件的，满三个月即可视为已送达"
-        }
-      ],
-      "source": {
-        "nativeId": "2009年客观题-卷一#一#82",
-        "path": "真题库/客观题/2009年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "大陆甲公司与台湾地区乙公司签订了出口家具合同，双方在合同履行中产生纠纷， 乙公司拒绝向甲公司付款。甲公司在大陆将争议诉诸法院。关于向台湾当事人送达文书，下 列哪些选项是正确的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2009"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2009
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "本题考查监督管理措施。\nA 项：《银行业监督管理法》第 40 条第 1 款：“银行业金融机构被接管、重组或者被\n撤销的，国务院银行业监督管理机构有权要求该银行业金融机构的董事、高级管理人员和其\n他工作人员，按照国务院银行业监督管理机构的要求履行职责。”此项正确。\nBCD 项：第 40 条第 2 款：“在接管、机构重组或者撤销清算期间，经国务院银行业监\n督管理机构负责人批准，对直接负责的董事、高级管理人员和其他直接责任人员，可以采取\n下列措施：（一）直接负责的董事、高级管理人员和其他直接责任人员出境将对国家利益造\n成重大损失的，通知出境管理机关依法阻止其出境；（二）申请司法机关禁止其转移、转让\n财产或者对其财产设定其他权利。”D 项错误，BC 项正确。",
-      "id": "law:fakao-app:2009年客观题-卷一#一#96",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "对该行全体人员发出通知，要求各自坚守岗位，认真履行职责"
-        },
-        {
-          "label": "B",
-          "text": "该行副行长邱某、薛某持有出境旅行证件却拒不交出。对此，通知出境管理机关阻止"
-        },
-        {
-          "label": "C",
-          "text": "该行董事范某欲抛售其持有的一批股票。对此，申请司法机关禁止其转让股票"
-        },
-        {
-          "label": "D",
-          "text": "该行会计师佘某欲将自己的一处房屋转让给他人。对此，通知房产管理部门停止办理"
-        }
-      ],
-      "source": {
-        "nativeId": "2009年客观题-卷一#一#96",
-        "path": "真题库/客观题/2009年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "某城市商业银行在合并多家城市信用社的基础上设立，其资产质量差，经营队伍 弱，长期以来资本充足率、资产流动性、存贷款比例等指标均不能达到监管标准。在作出对 该银行的行政处置决定后，负责处置的机构对该银行的人员采取了以下措施，其中符合法律 规定的是？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2009"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2009
-    },
-    {
-      "answer": [
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "本题考查全国人大的会议制度。\n《全国人民代表大会组织法》第 20 条规定：“全国人民代表大会会议公开举行；在必\n要的时候，经主席团和各代表团团长会议决定，可以举行秘密会议。”由此可知有权决定举\n行秘密会议的是主席团和各代表团团长。C 项符合题意。",
-      "id": "law:fakao-app:2010年客观题-卷一#一#20",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "十个以上代表团联名"
-        },
-        {
-          "label": "B",
-          "text": "全国人大常委会委员长会议"
-        },
-        {
-          "label": "C",
-          "text": "全国人大主席团和各代表团团长会议"
-        },
-        {
-          "label": "D",
-          "text": "全国人大常委会和全国人大主席团"
-        }
-      ],
-      "source": {
-        "nativeId": "2010年客观题-卷一#一#20",
-        "path": "真题库/客观题/2010年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "根据《全国人大组织法》规定，在必要的时候，下列哪一机构有权决定全国人民代 表大会会议秘密举行？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2010"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2010
-    },
-    {
-      "answer": [
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "本题考查村民委员会。\nA 项：该项考查村民委员会的村务公开制度。《村民委员会组织法》第 30 条规定：“村\n民委员会实行村务公开制度。村民委员会应当及时公布下列事项，接受村民的监督：（一）\n本法第二十三条、第二十四条规定的由村民会议、村民代表会议讨论决定的事项及其实施情\n况；（二）国家计划生育政策的落实方案；（三）政府拨付和接受社会捐赠的救灾救助、补\n贴补助等资金、物资的管理使用情况；（四）村民委员会协助人民政府开展工作的情况；\n（五）涉及本村村民利益，村民普遍关心的其他事项。前款规定事项中，一般事项至少每季\n度公布一次；集体财务往来较多的，财务收支情况应当每月公布一次；涉及村民利益的重大\n事项应当随时公布。村民委员会应当保证所公布事项的真实性，并接受村民的查询。”由此\n可知一年公布一次的说法错误，A 项表述错误。\nB 项：该项考查村委会的工作方法。《村民委员会组织法》第 29 条的规定：“村民委员\n会应当实行少数服从多数的民主决策机制和公开透明的工作原则，建立健全各种工作制\n度。”由此可知村民委员会主任负责制说法错误。\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\nC 项:该项考查村委会机构的设立。《村民委员会组织法》第 7 条规定：“村民委员会根\n据需要设人民调解、治安保卫、公共卫生等委员会。”由此可知 C 项表述正确。\nD 项：该项考察村民委员会的组成。《村民委员会组织法》第 6 条的规定：“村民委员\n会由主任、副主任和委员共三至七人组成。”由此可知，村民小组长不是村民委员会组成人\n员，D 项错误。",
-      "id": "law:fakao-app:2010年客观题-卷一#一#21",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "村民委员会实行村务公开制度，涉及财务的事项至少每年公布一次"
-        },
-        {
-          "label": "B",
-          "text": "村民委员会决定问题，采取村民委员会主任负责制"
-        },
-        {
-          "label": "C",
-          "text": "村民委员会根据需要设人民调解、治安保卫、公共卫生委员会"
-        },
-        {
-          "label": "D",
-          "text": "村民委员会由主任、副主任和村民小组长若干人组成"
-        }
-      ],
-      "source": {
-        "nativeId": "2010年客观题-卷一#一#21",
-        "path": "真题库/客观题/2010年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "关于村民委员会，下列哪一说法是正确的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2010"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2010
-    },
-    {
-      "answer": [
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "本题考查国务院银行业监督管理机构职责范围。\nA 项：《银行业监督管理法》第 16 条规定：“国务院银行业监督管理机构依照法律、行\n政法规规定的条件和程序，审查批准银行业金融机构的设立、变更、终止以及业务范围。”\n由此可知 A 项属于银监会的职责范围。\nB 项：《银行业监督管理法》第 17 条规定：“申请设立银行业金融机构，或者银行业金\n融机构变更持有资本总额或者股份总额达到规定比例以上的股东的，国务院银行业监督管理\n机构应当对股东的资金来源、财务状况、资本补充能力和诚信状况进行审查。”由此可知 B\n项属于银监会的职责范围。\nC 项：《银行业监督管理法》第 18 条规定：“银行业金融机构业务范围内的业务品种，\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n应当按照规定经国务院银行业监督管理机构审查批准或者备案。需要审查批准或者备案的业\n务品种，由国务院银行业监督管理机构依照法律、行政法规作出规定并公布。”由此可知 C\n选项属于属于银监会的职责范围。\nD 项：《中国人民银行法》第 22 条规定：“中国人民银行为执行货币政策，可以运用\n下列货币政策工具：(一)要求银行业金融机构按照规定的比例交存存款准备金；……”由此\n可知 D 项是人民银行的职责范围。",
-      "id": "law:fakao-app:2010年客观题-卷一#一#26",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "审查批准银行业金融机构的设立、变更、终止以及业务范围"
-        },
-        {
-          "label": "B",
-          "text": "受理银行业金融机构设立申请或者资本变更申请时，审查其股东的资金来源、财务状"
-        },
-        {
-          "label": "C",
-          "text": "审查批准或者备案银行业金融机构业务范围内的业务品种"
-        },
-        {
-          "label": "D",
-          "text": "接收商业银行交存的存款准备金和存款保险金"
-        }
-      ],
-      "source": {
-        "nativeId": "2010年客观题-卷一#一#26",
-        "path": "真题库/客观题/2010年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "下列哪一选项不属于国务院银行业监督管理机构职责范围？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2010"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2010
-    },
-    {
-      "answer": [
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "外商投资法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "外商投资法",
-      "difficulty": null,
-      "explanation": "本题考查涉外合同的法律适用。\n《合同法》第 126 条第 1 款规定：“涉外合同当事人可以选择处理合同争议所适用的法\n律，但法律另有规定的除外。涉外合同的当事人没有选择的，适用与合同有最密切联系的国\n家的法律。”《最高人民法院关于审理涉外民事或商事合同纠纷案件法律适用若干问题的规\n定》第 8 条规定：“在中华人民共和国领域内履行的下列合同，适用中华人民共和国法\n律：……(七)外国自然人、法人或者其他组织认购中华人民共和国领域内的非外商投资有限\n责任公司或者股份有限公司增资的合同；……”由条文可知，本案中的认购增资合同只能适\n用中国法律，当事人不能对处理该合同争议所适用的法律进行选择，B 选项正确，AC 选项错\n误。解决该认购增资合同纠纷，双方当事人除了诉讼还可约定选择外国仲裁机构仲裁，故 D\n选项错误。",
-      "id": "law:fakao-app:2010年客观题-卷一#一#34",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "双方可以采用明示方式自由约定该合同所适用的法律"
-        },
-        {
-          "label": "B",
-          "text": "该合同只能适用中国法律"
-        },
-        {
-          "label": "C",
-          "text": "如出现争议，双方在一审法庭辩论终结前还可就法律适用进行选择"
-        },
-        {
-          "label": "D",
-          "text": "双方当事人只能选择中国仲裁机构仲裁"
-        }
-      ],
-      "source": {
-        "nativeId": "2010年客观题-卷一#一#34",
-        "path": "真题库/客观题/2010年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲国某公司拟认购中国境内一家股份有限公司的增资股份，该股份有限公司股东均 为中国公民。根据我国相关法律规定，关于该认购增资合同的法律适用和管辖，下列哪一选 项是正确的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2010"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2010
-    },
-    {
-      "answer": [
-        "A",
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "本题考查对非居民营业所得的纳税原则。\nAB 项：营业所得是指纳税人在某个固定场所从事经营活动所取得的纯收益。目前各国\n对非居民营业所得的纳税普遍采用常设机构原则。常设机构原则是指仅对非居民纳税人通过\n在境内常设机构而获取的工商营业利润实行征税的原则。由此可知 A 项正确，B 项错误。\nCD 项：常设机构主要有：管理场所、分支机构、办事处、工厂、车间、作业场所、矿\n场、油井、采石场等。由此可知 C 项正确，D 项错误。",
-      "id": "law:fakao-app:2010年客观题-卷一#一#84",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "仅对非居民纳税人通过在境内的常设机构获得的工商营业利润实行征税"
-        },
-        {
-          "label": "B",
-          "text": "常设机构原则同样适用于有关居民的税收"
-        },
-        {
-          "label": "C",
-          "text": "管理场所、分支机构、办事处、工厂、油井、采石场等属于常设机构"
-        },
-        {
-          "label": "D",
-          "text": "常设机构必须满足公司实体的要求"
-        }
-      ],
-      "source": {
-        "nativeId": "2010年客观题-卷一#一#84",
-        "path": "真题库/客观题/2010年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "目前各国对非居民营业所得的纳税普遍采用常设机构原则。关于该原则，下列哪些 表述是正确的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2010"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2010
-    },
-    {
-      "answer": [
-        "A"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "本题考查国务院行政机构设置和编制。\n《国务院行政机构设置和编制管理条例》第 14 条规定：“国务院行政机构的司级内设\n机构的增设、撤销或者合并，经国务院机构编制管理机关审核方案，报国务院批准。国务院\n行政机构的处级内设机构的设立、撤销或者合并，由国务院行政机构根据国家有关规定决\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n定，按年度报国务院机构编制管理机关备案。”由此可知，国务院某部的处级内设机构的合\n并，由该部作出决定报国务院机构编制管理机关备案，故选项 A 正确，为本题当选项。",
-      "id": "law:fakao-app:2010年客观题-卷二#二#40",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "该部决定，报国务院机构编制管理机关备案"
-        },
-        {
-          "label": "B",
-          "text": "该部提出方案，报国务院机构编制管理机关批准"
-        },
-        {
-          "label": "C",
-          "text": "国务院机构编制管理机关决定，报国务院备案"
-        },
-        {
-          "label": "D",
-          "text": "国务院机构编制管理机关提出方案，报国务院决定"
-        }
-      ],
-      "source": {
-        "nativeId": "2010年客观题-卷二#二#40",
-        "path": "真题库/客观题/2010年客观题-卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "国务院某部拟合并处级内设机构。关于机构合并，下列哪一说法是正确的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2010"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2010
-    },
-    {
-      "answer": [
-        "B",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "本题考察向关系人发放贷款。\n款；向关系人发放担保贷款的条件不得优于其他借款人同类贷款的条件。据此可知，商业银\n行可以向关系人发放担保贷款，但放贷条件不得优于其他同类借款人。A 项错误，B 项正\n确。\n该贷款合同有效。C 项错误，D 项正确。",
-      "id": "law:fakao-app:2011年客观题-卷一#一#21",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "L 公司为 M 银行的关系人，依照法律规定，M 银行不得向 L 公司发放任何贷款"
-        },
-        {
-          "label": "B",
-          "text": "L 公司为 M 银行的关系人，依照法律规定，M 银行可以向 L 公司发放担保贷款，但不"
-        },
-        {
-          "label": "C",
-          "text": "该贷款合同无效"
-        },
-        {
-          "label": "D",
-          "text": "该贷款合同有效"
-        },
-        {
-          "label": "A",
-          "text": "B 选项，《商业银行法》第四十条第一款规定，商业银行不得向关系人发放信用贷"
-        },
-        {
-          "label": "C",
-          "text": "D 选项，根据《商业银行法》的规定可知，M 银行可以向 L 公司发放担保贷款，故"
-        }
-      ],
-      "source": {
-        "nativeId": "2011年客观题-卷一#一#21",
-        "path": "真题库/客观题/2011年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "李大伟是 M 城市商业银行的董事，其妻张霞为 S 公司的总经理，其子李小武为 L 公 司的董事长。2009 年 9 月，L 公司向 M 银行的下属分行申请贷款 1，000 万元。其间，李大 伟对分行负责人谢二宝施加压力，令其按低于同类贷款的优惠利息发放此笔贷款。L 公司提 供了由保证人陈富提供的一张面额为 2，000 万元的个人储蓄存单作为贷款质押。贷款到期 后，L 公司无力偿还，双方发生纠纷。根据《商业银行法》的规定关于 M 银行向 L 公司发放 贷款的行为，下列判断正确的是",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2011"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2011
-    },
-    {
-      "answer": [
-        "A",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "本题主要考察违反商业银行法的法律责任。\nA 选项，《商业银行法》第五十二条第（三）项规定，商业银行的工作人员不得违反规\n定徇私向亲属、朋友发放贷款或者提供担保。本案中，李大伟强令下属机构发放贷款，违反\n了《商业银行法》的禁止性规定。A 项正确。\n定，商业银行不得向关系人发放信用贷款；向关系人发放担保贷款的条件不得优于其他借款\n人同类贷款的条件。据此可知，M 银行可以向 L 公司发放贷款，该贷款合同有效，但不得提\n供优于同类贷款人的便利条件。因此，李大伟应当承担因提供不正当优惠条件给银行带来的\n损失。B 项错误，C 项正确。\nD 选项，《商业银行法》第八十八条第二款规定，商业银行的工作人员对单位或者个人\n强令其发放贷款或者提供担保未予拒绝的，应当给予纪律处分；造成损失的，应当承担相应\n的赔偿责任。本案中，谢二宝明知此项贷款违法却未拒绝，且贷款到期后，L 公司无力偿\n还，因此，其应当承担相应责任。D 项正确。",
-      "id": "law:fakao-app:2011年客观题-卷一#一#24",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "李大伟强令下属机构发放贷款，是《商业银行法》禁止的行为"
-        },
-        {
-          "label": "B",
-          "text": "该贷款合同无效，李大伟应当承担由合同无效引起的一切损失"
-        },
-        {
-          "label": "C",
-          "text": "该贷款合同有效，李大伟应当承担因不正当优惠条件给银行造成的包括利息差额在内"
-        },
-        {
-          "label": "D",
-          "text": "分行负责人谢二宝也应当承担相应的赔偿责任"
-        },
-        {
-          "label": "B",
-          "text": "C 选项考察违规向关系人发放贷款的法律后果，《商业银行法》第四十条第一款规"
-        }
-      ],
-      "source": {
-        "nativeId": "2011年客观题-卷一#一#24",
-        "path": "真题库/客观题/2011年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "李大伟是 M 城市商业银行的董事，其妻张霞为 S 公司的总经理，其子李小武为 L 公 司的董事长。2009 年 9 月，L 公司向 M 银行的下属分行申请贷款 1，000 万元。其间，李大 伟对分行负责人谢二宝施加压力，令其按低于同类贷款的优惠利息发放此笔贷款。L 公司提 供了由保证人陈富提供的一张面额为 2，000 万元的个人储蓄存单作为贷款质押。贷款到期 后，L 公司无力偿还，双方发生纠纷。根据《商业银行法》的规定关于李大伟在此项贷款交 易中的行为，下列判断正确的是",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2011"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2011
-    },
-    {
-      "answer": [
-        "A",
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "金以个人名义开立账户存储。据此可知，公款私存行为是商业银行法禁止的违法行为，应承\n担法律责任，并非一般财务违纪行为。A 项正确，B 项错误。\n立账户存储的，由国务院银行业监督管理机构责令改正，有违法所得的，没收违法所得，违\n法所得五万元以上的，并处违法所得一倍以上五倍以下罚款；没有违法所得或者违法所得不\n足五万元的，处五万元以上五十万元以下罚款。本题中，保证人陈富提供的是名为个人储蓄\n实为公司资金的质押，属于将单位资金以个人名义开立账户储蓄的情形，应当由银监会予以\n收缴。C 项正确，D 项错误。",
-      "id": "law:fakao-app:2011年客观题-卷一#一#27",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "S 公司公款私存，是我国银行法禁止的行为"
-        },
-        {
-          "label": "B",
-          "text": "S 公司公款私存，只是一般的财务违纪行为"
-        },
-        {
-          "label": "C",
-          "text": "S 公司管理层获取的 50 万元报酬应当由银监会予以收缴"
-        },
-        {
-          "label": "D",
-          "text": "S 公司管理层获取的 50 万元报酬应当归 S 公司所有"
-        },
-        {
-          "label": "A",
-          "text": "B 选项，《商业银行法》第四十八条第二款规定，任何单位和个人不得将单位的资"
-        },
-        {
-          "label": "C",
-          "text": "D 选项，《商业银行法》第七十九条第（三）项规定，将单位的资金以个人名义开"
-        }
-      ],
-      "source": {
-        "nativeId": "2011年客观题-卷一#一#27",
-        "path": "真题库/客观题/2011年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "李大伟是 M 城市商业银行的董事，其妻张霞为 S 公司的总经理，其子李小武为 L 公 司的董事长。2009 年 9 月，L 公司向 M 银行的下属分行申请贷款 1，000 万元。其间，李大 伟对分行负责人谢二宝施加压力，令其按低于同类贷款的优惠利息发放此笔贷款。L 公司提 供了由保证人陈富提供的一张面额为 2，000 万元的个人储蓄存单作为贷款质押。贷款到期 后，L 公司无力偿还，双方发生纠纷。根据《商业银行法》的规定现查明，保证人陈富为 S 公司财务总监，其用于质押的存单是以 S 公司的资金办理的存储。并查明，L 公司取得贷款 后，曾向 S 公司管理层支付 50 万元报酬。对此，下列判断正确的是",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2011"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2011
-    },
-    {
-      "answer": [
-        "B",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "A 选项，《村民委员会组织法》第二十一条第一款规定，村民会议由本村十八周岁以上\n的村民组成。该条规定并没有排除被剥夺政治权利的人参加村民会议的资格，因此，被剥夺\n政治权利的村民也可以参加村民会议。A 项错误。\nB 选项，《村民委员会组织法》第五条第一款规定，乡、民族乡、镇的人民政府对村民\n委员会的工作给予指导、支持和帮助，但是不得干预依法属于村民自治范围内的事项。B 项\n正确。\nC 选项，《村民委员会组织法》第十六条第二款规定，罢免村民委员会成员，须有登记\n参加选举的村民过半数投票，并须经投票的村民过半数通过。C 项错误。\nD 选项，《村民委员会组织法》第三十五条第一款规定，村民委员会成员实行任期和离\n任经济责任审计。D 项正确。",
-      "id": "law:fakao-app:2011年客观题-卷一#一#38",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "村民会议由本村 18 周岁以上，没有被剥夺政治权利的村民组成"
-        },
-        {
-          "label": "B",
-          "text": "乡、民族乡、镇的人民政府不得干预依法属于村民自治范围内的事项"
-        },
-        {
-          "label": "C",
-          "text": "罢免村民委员会成员，须经参加投票的村民过半数通过"
-        },
-        {
-          "label": "D",
-          "text": "村民委员会成员实行任期和离任经济责任审计"
-        }
-      ],
-      "source": {
-        "nativeId": "2011年客观题-卷一#一#38",
-        "path": "真题库/客观题/2011年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "根据《宪法》和《村民委员会组织法》的规定，下列哪些选项是正确的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2011"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2011
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "企业破产法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "企业破产法",
-      "difficulty": null,
-      "explanation": "本题主要考察劳工合同的解除和终止。《劳动合同法》第四十一条第一款规定，有下列\n情形之一，需要裁减人员二十人以上或者裁减不足二十人但占企业职工总数百分之十以上\n的，用人单位提前三十日向工会或者全体职工说明情况，听取工会或者职工的意见后，裁减\n人员方案经向劳动行政部门报告，可以裁减人员：（一）依照企业破产法规定进行重整的；\n（二）生产经营发生严重困难的；（三）企业转产、重大技术革新或者经营方式调整，经变\n更劳动合同后，仍需裁减人员的；（四）其他因劳动合同订立时所依据的客观经济情况发生\n重大变化，致使劳动合同无法履行的。\nA 选项，《劳动合同法》规定只是要求向工会或全体职工说明情况，听取工会或职工意\n见，没有规定必须经过职工代表大会批准。A 项错误应选。\nB 选项，公司因为受金融危机影响，订单锐减陷入困境，已经属于《劳动合同法》第四\n十一条第（二）项规定的“生产经营发生严重困难”的情形，因此，可以裁员。B 项错误应\n选。\n选项 C 有法律依据。《劳动合同法》第四十一条第二款第（三）项规定，家庭无其他就\n业人员，有需要扶养的老人或者未成年人的。在裁减人员时，应当优先留用。C 项正确不\n选。\nD 选项，丁属于可裁减的人员。D 项错误应选。",
-      "id": "law:fakao-app:2011年客观题-卷一#一#51",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "职工甲：公司裁减决定没有经过职工代表大会批准，无效"
-        },
-        {
-          "label": "B",
-          "text": "职工乙：公司没有进入破产程序，不能裁员"
-        },
-        {
-          "label": "C",
-          "text": "职工丙：我一家 4 口，有 70 岁老母 10 岁女儿，全家就我有工作，公司不能裁减我"
-        },
-        {
-          "label": "D",
-          "text": "职工丁：我在公司销售部门曾连续 3 年评为优秀，对公司贡献大，公司不能裁减我"
-        }
-      ],
-      "source": {
-        "nativeId": "2011年客观题-卷一#一#51",
-        "path": "真题库/客观题/2011年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "某公司从事出口加工，有职工 500 人。因国际金融危机影响，订单锐减陷入困境， 拟裁减职工 25 人。公司决定公布后，职工提出异议。下列哪些说法缺乏法律依据？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2011"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2011
-    },
-    {
-      "answer": [
-        "A"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "本题考查《银行业监督管理法》的适用范围。\n《银行业监督管理法》第二条第三款规定，对在中华人民共和国境内设立的金融资产管\n理公司、信托投资公司、财务公司、金融租赁公司以及经国务院银行业监督管理机构批准设\n立的其他金融机构的监督管理，适用本法对银行业金融机构监督管理的规定。因此，信托投\n资公司、金融资产管理公司、财务公司和金融租赁公司均适用《银行业监督管理法》的规\n定。A 项正确，B、C、D 项错误。",
-      "id": "law:fakao-app:2011年客观题-卷一#一#72",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "信托投资公司适用本法"
-        },
-        {
-          "label": "B",
-          "text": "金融租赁公司不适用本法"
-        },
-        {
-          "label": "C",
-          "text": "金融资产管理公司不适用本法"
-        },
-        {
-          "label": "D",
-          "text": "财务公司不适用本法"
-        }
-      ],
-      "source": {
-        "nativeId": "2011年客观题-卷一#一#72",
-        "path": "真题库/客观题/2011年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "关于《银行业监督管理法》的适用范围，下列哪一说法是正确的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2011"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2011
-    },
-    {
-      "answer": [
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "本题考查《服务贸易总协定》规定的服务贸易方式。《服务贸易总协定》规定了跨境供\n应、境外消费、商业存在、自然人存在四种服务贸易方式。跨境供应是指从一国境内直接向\n其他国境内提供服务——服务产品的流动(不需要提供者和消费者的实际流动)。境外消费是\n指在一国境内向其他国的服务消费者提供服务——消费者的流动。商业存在是指外国实体在\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n另一国境内设立附属公司或分支机构，提供服务。自然人存在即一国的服务提供商通过自然\n人到其他国境内提供服务——自然人流动。A 项中国某运动员应聘到美国担任体育教练属于\n自然人的存在；B 项中国某旅行公司组团到泰国旅游属于境外消费；C 项加拿大某银行在中\n国设立分支机构属于商业存在；D 项中国政府援助非洲某国一笔资金不属于四种服务贸易方\n式之一。",
-      "id": "law:fakao-app:2012年客观题-卷一#一#40",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "中国某运动员应聘到美国担任体育教练"
-        },
-        {
-          "label": "B",
-          "text": "中国某旅行公司组团到泰国旅游"
-        },
-        {
-          "label": "C",
-          "text": "加拿大某银行在中国设立分支机构"
-        },
-        {
-          "label": "D",
-          "text": "中国政府援助非洲某国一笔资金"
-        }
-      ],
-      "source": {
-        "nativeId": "2012年客观题-卷一#一#40",
-        "path": "真题库/客观题/2012年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "《服务贸易总协定》规定了服务贸易的方式，下列哪一选项不属于协定规定的服务 贸易？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2012"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2012
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "本题考查商业银行的分支机构。依据《商业银行法》第 19 条规定，商业银行根据业务\n需要可以在中华人民共和国境内外设立分支机构。设立分支机构必须经国务院银行业监督管\n理机构审查批准。在中华人民共和国境内的分支机构，不按行政区划设立。商业银行在中华\n人民共和国境内设立分支机构，应当按照规定拨付与其经营规模相适应的营运资金额。拨付\n各分支机构营运资金额的总和，不得超过总行资本金总额的百分之六十。据此，A、B、D 项\n错误，应选。第 22 条规定，商业银行对其分支机构实行全行统一核算，统一调度资金，分\n级管理的财务制度。商业银行分支机构不具有法人资格，在总行授权范围内依法开展业务，\n其民事责任由总行承担。C 项说法正确，不选。（本题答案：ABD）",
-      "id": "law:fakao-app:2012年客观题-卷一#一#66",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "在中国境内应当按行政区划设立"
-        },
-        {
-          "label": "B",
-          "text": "经地方政府批准即可设立"
-        },
-        {
-          "label": "C",
-          "text": "分支机构不具有法人资格"
-        },
-        {
-          "label": "D",
-          "text": "拨付各分支机构营运资金额的总和，不得超过总行资本金总额的 70%"
-        }
-      ],
-      "source": {
-        "nativeId": "2012年客观题-卷一#一#66",
-        "path": "真题库/客观题/2012年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "根据《商业银行法》，关于商业银行分支机构，下列哪些说法是错误的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2012"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2012
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "本题考查商业银行的设立和变更。依据《商业银行法》第 13 条第 2 款规定，国务院银\n行业监督管理机构根据审慎监管的要求可以调整注册资本最低限额，但不得少于前款规定的\n限额。也就是说，银监会可以提出更高的限额。A 项说法正确。\nB 项考查商业银行的组织形式。依据《商业银行法》第 17 条第 1 款规定，商业银行的组\n织形式、组织机构适用《中华人民共和国公司法》的规定。B 项正确。\nC 项考查商业银行的分立、合并。依据《商业银行法》第 25 条规定，商业银行的分立、\n合并，适用《公司法》的规定。C 项错误。\nD 项考查商业银行的投资人的审批制度。依据《商业银行法》第 28 条规定，任何单位\n和个人购买商业银行股份总额百分之五以上的，应当事先经国务院银行业监督管理机构批\n准。D 项正确。（本题答案：ABD）",
-      "id": "law:fakao-app:2012年客观题-卷一#一#67",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "国务院银行业监督管理机构可以根据审慎监管的要求，在法定标准的基础上提高商业"
-        },
-        {
-          "label": "B",
-          "text": "商业银行的组织形式、组织机构适用《公司法》"
-        },
-        {
-          "label": "C",
-          "text": "商业银行的分立、合并不适用《公司法》"
-        },
-        {
-          "label": "D",
-          "text": "任何单位和个人购买商业银行股份总额 5%以上的，应事先经国务院银行业监督管理机"
-        }
-      ],
-      "source": {
-        "nativeId": "2012年客观题-卷一#一#67",
-        "path": "真题库/客观题/2012年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "根据《商业银行法》，关于商业银行的设立和变更，下列哪些说法是正确的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2012"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2012
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "A 项考查小规模纳税人的会计账簿问题。依据《税收征收管理法实施细则》第 23 条规\n定，生产、经营规模小又确无建账能力的纳税人，可以聘请经批准从事会计代理记账业务的\n专业机构或者经税务机关认可的财会人员代为建账和办理账务；聘请上述机构或者人员有实\n际困难的，经县以上税务机关批准，可以按照税务机关的规定，建立收支凭证粘贴簿、进货\n销货登记簿或者使用税控装置。A 项正确。\nBC 正确考查电算会计问题。依据《税收征收管理法实施细则》第 24 条第 2 款规定，纳\n税人使用计算机记账的，应当在使用前将会计电算化系统的会计核算软件、使用说明书及有\n关资料报送主管税务机关备案。《税收征收管理法实施细则》第 26 条第 1 款规定，纳税\n人、扣缴义务人会计制度健全，能够通过计算机正确、完整计算其收入和所得或者代扣代\n缴、代收代缴税款情况的，其计算机输出的完整的书面会计记录，可视同会计账簿。BC 项正\n确。\nD 项考查会计账簿的保存年限。依据《税收征收管理法实施细则》第 29 条第 2 款规\n定，账簿、记账凭证、报表、完税凭证、发票、出口凭证以及其他有关涉税资料应当保存 10\n年；但是，法律、行政法规另有规定的除外。（本题答案：ABCD）",
-      "id": "law:fakao-app:2012年客观题-卷一#一#69",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "纳税人生产、经营规模小又确无建账能力的，可聘请经税务机关认可的财会人员代为"
-        },
-        {
-          "label": "B",
-          "text": "纳税人使用计算机记账的，应在使用前将会计电算化系统的会计核算软件、使用说明"
-        },
-        {
-          "label": "C",
-          "text": "纳税人会计制度健全，能够通过计算机正确、完整计算其收入和所得情况的，其计算"
-        },
-        {
-          "label": "D",
-          "text": "纳税人的账簿、记账凭证、报表、完税凭证、发票、出口凭证以及其他有关涉税资"
-        }
-      ],
-      "source": {
-        "nativeId": "2012年客观题-卷一#一#69",
-        "path": "真题库/客观题/2012年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "根据税收征收管理法规，关于从事生产、经营的纳税人账簿，下列哪些说法是正确 的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2012"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2012
-    },
-    {
-      "answer": [
-        "A"
-      ],
-      "answerText": null,
-      "chapter": "保险法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "保险法",
-      "difficulty": null,
-      "explanation": "1995 年《保险法》和 2009 年修订《保险法》的规定是同一机关制定的相同位阶的法\n律，是新法与旧法，前法与后法的关系，A 选项正确。\n新旧《保险法》之间不是一般法与特别法的关系，B 选项错误。\n新旧《保险法》均由全国人大常委会制定，不是上位法与下位法的关系，因此 C 选项错\n误。\n1995 年和 2009 年的《保险法》是同一部法律的新旧版本，《保险法》属于正式的法的\n渊源，D 选项错误。",
-      "id": "law:fakao-app:2012年客观题-卷一#一#86",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "“前法”与“后法”之间的关系"
-        },
-        {
-          "label": "B",
-          "text": "“一般法”与“特别法”之间的关系"
-        },
-        {
-          "label": "C",
-          "text": "“上位法”与“下位法”之间的关系"
-        },
-        {
-          "label": "D",
-          "text": "法的正式渊源与法的非正式渊源之间的关系"
-        }
-      ],
-      "source": {
-        "nativeId": "2012年客观题-卷一#一#86",
-        "path": "真题库/客观题/2012年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "1995 年颁布的《保险法》第 91 条规定：“保险公司的设立、变更、解散和清算事 项，本法未作规定的，适用公司法和其他有关法律、行政法规的规定。”2009 年修订的《保 险法》第 94 条规定：“保险公司，除本法另有规定外，适用《中华人民共和国公司法》的 规定。”根据法的渊源的知识，关于《保险法》上述二条规定之间的关系，下列理解正确的 是：",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2012"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2012
-    },
-    {
-      "answer": [
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "保险法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "保险法",
-      "difficulty": null,
-      "explanation": "所谓委任性规则，是指内容尚未确定，而只规定某种概括性指示，由相应国家机关通过\n相应途径或程序加以确定的法律规则。而本题中的两个条文并未明确规定由某一具体的国家\n机关制定相应的规则，因此 A 选项错误。\n所谓任意性规则，是指规定在一定范围内，允许人们自行选择或协商确定为与不为、为\n的方式以及法律关系中的权利义务内容的法律规则。本题中两条文省略的道义助动词是“应\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n当”，即“本法未作规定的，（应当）适用公司法和其他有关法律、行政法规的规定”，\n“保险公司，除本法另有规定外，（应当）适用《中华人民共和国公司法》的规定”。因此\n不是可以由当事人意志进行自由选择的任意性规则。B 选项错误。\n所谓准用性规则，是指内容本身没有规定人们具体的行为模式，而是可以援引或参照其\n他相应内容规定的规则。本题中的两条文均规定了未作规定的情况适用其他相关法律法规的\n内容，是准用性规则。C 选项正确。\n禁止性规则，是指规定人们的消极义务（不作为义务），即禁止人们作出一定行为的规\n则，本题中的两个条文并未禁止人们作出某一类行为，因此 D 选项错误。",
-      "id": "law:fakao-app:2012年客观题-卷一#一#87",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "均属委任性规则"
-        },
-        {
-          "label": "B",
-          "text": "均属任意性规则"
-        },
-        {
-          "label": "C",
-          "text": "均属准用性规则"
-        },
-        {
-          "label": "D",
-          "text": "均属禁止性规则"
-        }
-      ],
-      "source": {
-        "nativeId": "2012年客观题-卷一#一#87",
-        "path": "真题库/客观题/2012年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "1995 年颁布的《保险法》第 91 条规定：“保险公司的设立、变更、解散和清算事 项，本法未作规定的，适用公司法和其他有关法律、行政法规的规定。”2009 年修订的《保 险法》第 94 条规定：“保险公司，除本法另有规定外，适用《中华人民共和国公司法》的 规定。”关于二条文规定的内容，下列理解正确的是：",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2012"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2012
-    },
-    {
-      "answer": [
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n本题考查划拨土地转让问题。依据《城市房地产管理法》第 40 条规定，以划拨方式取\n得土地使用权的，转让房地产时，应当按照国务院规定，报有批准权的人民政府审批。有批\n准权的人民政府准予转让的，应当由受让方办理土地使用权出让手续，并依照国家有关规定\n缴纳土地使用权出让金。A、B 项错误，C 项正确。\nD 项考查取得出让土地后的开发问题。依据《城市房地产管理法》第 28 条规定，依法\n取得的土地使用权，可以依照本法和有关法律、行政法规的规定，作价入股，合资、合作开\n发经营房地产。D 项错误。",
-      "id": "law:fakao-app:2012年客观题-卷一#一#92",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "将划拨土地使用权转为出让土地使用权后再行转让属于土地投机，为法律所禁止"
-        },
-        {
-          "label": "B",
-          "text": "乙公司应当先将划拨土地使用权转让给玫园公司，然后由后者向政府申请办理土地使"
-        },
-        {
-          "label": "C",
-          "text": "该土地使用权由划拨转为出让，应当报有批准权的政府审批，经批准后方可办理土地"
-        },
-        {
-          "label": "D",
-          "text": "如乙公司取得该地块的出让土地使用权，则只能自己进行开发，不能与他人合作开发"
-        }
-      ],
-      "source": {
-        "nativeId": "2012年客观题-卷一#一#92",
-        "path": "真题库/客观题/2012年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲房地产公司与乙国有工业公司签订《合作协议》，在乙公司原有的仓库用地上开 发商品房。双方约定，共同成立“玫园置业有限公司”（以下简称“玫园公司”）。甲公司 投入开发资金，乙公司负责将该土地上原有的划拨土地使用权转变为出让土地使用权，然后 将出让土地使用权作为出资投入玫园公司。 玫园公司与丙劳务派遣公司签订协议，由其派遣王某到玫园公司担任保洁员。不久， 甲、乙产生纠纷，经营停顿。玫园公司以签订派遣协议时所依据的客观情况发生重大变化为 由，将王某退回丙公司，丙公司遂以此为由解除王某的劳动合同。关于该土地使用权由划拨 转为出让，下列说法正确的是：",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2012"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2012
-    },
-    {
-      "answer": [
-        "A"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "A 项考查房地产开发合同。依据《城市房地产管理法》第 2 条规定，房地产开发，是指\n在依据本法取得国有土地使用权的土地上进行基础设施、房屋建设的行为。本题甲房地产公\n司与乙国有工业公司签订《合作协议》，开发商品房。A 项正确。\nBCD 项从不同角度考查合作协议的性质据此，此协议是房地产开发合同。其中，房地产\n转让显然不符，C 项土地转让也不符，D 项国有资产合作经营也不符，法律上没有这一说\n法，D 项错误。",
-      "id": "law:fakao-app:2012年客观题-卷一#一#93",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "房地产开发合同"
-        },
-        {
-          "label": "B",
-          "text": "房地产转让合同"
-        },
-        {
-          "label": "C",
-          "text": "土地使用权转让合同"
-        },
-        {
-          "label": "D",
-          "text": "国有资产合作经营合同"
-        }
-      ],
-      "source": {
-        "nativeId": "2012年客观题-卷一#一#93",
-        "path": "真题库/客观题/2012年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲房地产公司与乙国有工业公司签订《合作协议》，在乙公司原有的仓库用地上开 发商品房。双方约定，共同成立“玫园置业有限公司”（以下简称“玫园公司”）。甲公司 投入开发资金，乙公司负责将该土地上原有的划拨土地使用权转变为出让土地使用权，然后 将出让土地使用权作为出资投入玫园公司。 玫园公司与丙劳务派遣公司签订协议，由其派遣王某到玫园公司担任保洁员。不久， 甲、乙产生纠纷，经营停顿。玫园公司以签订派遣协议时所依据的客观情况发生重大变化为 由，将王某退回丙公司，丙公司遂以此为由解除王某的劳动合同。关于甲、乙双方签订的 《合作协议》的性质，下列选项正确的是：",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2012"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2012
-    },
-    {
-      "answer": [
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "A 项考查用工单位能否将劳动者退回劳务派遣公司。依据《劳动合同法》第 65 条第 2\n款过多，被派遣劳动者有本法第 39 条和第 40 条第 1 项、第 2 项规定情形的，用工单位可以\n将劳动者退回劳务派遣单位，劳务派遣单位依照本法有关规定，可以与劳动者解除劳动合\n同。题中王某没有类似法律规定的情形，用工单位无权退回。A 项错误。\nB 项扣除劳动合同解除。依据《劳动合同法》第 40 条规定，有下列情形之一的，用人单\n位提前 30 日以书面形式通知劳动者本人或者额外支付劳动者一个月工资后，可以解除劳动\n合同：（1）劳动者患病或者非因工负伤，在规定的医疗期满后不能从事原工作，也不能从\n事由用人单位另行安排的工作的；（2）劳动者不能胜任工作，经过培训或者调整工作岗\n位，仍不能胜任工作的；（3）劳动合同订立时所依据的客观情况发生重大变化，致使劳动\n合同无法履行，经用人单位与劳动者协商，未能就变更劳动合同内容达成协议的。题中王某\n没有类似法律规定的情形，用人单位无权解除劳动合同。B 项错误。\n定，用人单位违反本法规定解除或者终止劳动合同，劳动者要求继续履行劳动合同的，用人\n单位应当继续履行；劳动者不要求继续履行劳动合同或者劳动合同已经不能继续履行的，用\n人单位应当依照本法第 87 条规定支付赔偿金。C、D 正确。",
-      "id": "law:fakao-app:2012年客观题-卷一#一#96",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "玫园公司有权将王某退回丙公司"
-        },
-        {
-          "label": "B",
-          "text": "丙公司有权解除与王某的劳动合同"
-        },
-        {
-          "label": "C",
-          "text": "王某有权要求丙公司继续履行劳动合同"
-        },
-        {
-          "label": "D",
-          "text": "王某如不愿回到丙公司，有权要求其支付赔偿金"
-        },
-        {
-          "label": "C",
-          "text": "D 项考查用人单位违法解除劳动合同的法律责任。依据《劳动合同法》第 48 条规"
-        }
-      ],
-      "source": {
-        "nativeId": "2012年客观题-卷一#一#96",
-        "path": "真题库/客观题/2012年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲房地产公司与乙国有工业公司签订《合作协议》，在乙公司原有的仓库用地上开 发商品房。双方约定，共同成立“玫园置业有限公司”（以下简称“玫园公司”）。甲公司 投入开发资金，乙公司负责将该土地上原有的划拨土地使用权转变为出让土地使用权，然后 将出让土地使用权作为出资投入玫园公司。 玫园公司与丙劳务派遣公司签订协议，由其派遣王某到玫园公司担任保洁员。不久， 甲、乙产生纠纷，经营停顿。玫园公司以签订派遣协议时所依据的客观情况发生重大变化为 由，将王某退回丙公司，丙公司遂以此为由解除王某的劳动合同。关于王某劳动关系解除问 题，下列选项正确的是：",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2012"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2012
-    },
-    {
-      "answer": [
-        "A"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "A 选项，甲作为个体干洗店老板，受他人委托，在洗衣期间代为保管他人财物，发现衣\n袋内有钱时将钱藏匿，属于侵占代为保管的他人财物，构成侵占罪。\nB 选项，乙利用职务之便，将自己占有但公司所有的财物隐匿，成立职务侵占罪。\nC 选项有一定的争议，有人认为，钱包属于他人的遗忘物，应成立侵占罪。也有人认\n为，航空器相对封闭，旅客人数有限，不同于人员流动性大、开放性较强的火车、公共汽车\n等，且空乘人员对航空器的控制、监视力度大，因此，如果失主还在飞机上，该财物由失主\n占有；如果失主已经下飞机，该财物由空乘人员占有，因此，丙从他人占有下把钱包拿走，\n构成盗窃罪。2012 年司法考试命题人持第二种观点。\nD 选项，客人将礼品存于前台让朋友自取，该财物是主人特别声明或者故意放置在特定\n场所的财物。根据一般的社会观念，在其他客人来领取财物之间，该财物由放置者占有，丁\n窃取了他人占有的财物，成立盗窃罪。",
-      "id": "law:fakao-app:2012年客观题-卷二#二#18_1",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "甲是个体干洗店老板，洗衣时发现衣袋内有钱，将钱藏匿"
-        },
-        {
-          "label": "B",
-          "text": "乙受公司委托外出收取货款，隐匿收取的部分货款"
-        },
-        {
-          "label": "C",
-          "text": "丙下飞机时发现乘客钱包掉在座位底下，捡起钱包离去"
-        },
-        {
-          "label": "D",
-          "text": "丁是宾馆前台服务员，客人将礼品存于前台让朋友自取。丁见久无人取，私吞礼品"
-        }
-      ],
-      "source": {
-        "nativeId": "2012年客观题-卷二#二#18",
-        "path": "真题库/客观题/2012年客观题-卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "不计数额，下列哪一选项构成侵占罪？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2012"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2012
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "国家工作人员甲的财产 300 万元经查明系受贿所得，其构成受贿罪，不再构成巨额财产\n来源不明罪。乙没有国家工作人员身份，也没有说明财产来源的义务，不构成巨额财产来源\n不明罪，故 ABC 说法正确。D 项乙只是单纯拒绝说明财产来源，不构成掩饰、隐瞒犯罪所得\n罪。",
-      "id": "law:fakao-app:2012年客观题-卷二#二#63",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "甲构成受贿罪"
-        },
-        {
-          "label": "B",
-          "text": "甲不构成巨额财产来源不明罪"
-        },
-        {
-          "label": "C",
-          "text": "乙不构成巨额财产来源不明罪"
-        },
-        {
-          "label": "D",
-          "text": "乙构成掩饰、隐瞒犯罪所得罪"
-        }
-      ],
-      "source": {
-        "nativeId": "2012年客观题-卷二#二#63",
-        "path": "真题库/客观题/2012年客观题-卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "国家工作人员甲与民办小学教师乙是夫妻。甲、乙支出明显超过合法收入，差额达 300 万元。甲、乙拒绝说明财产来源。一审中，甲交代 300 万元系受贿所得，经查证属实。 关于本案，下列哪些选项是正确的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2012"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2012
-    },
-    {
-      "answer": [
-        "A",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "A 项正确。《香港特别行政区基本法》第 154 条第 2 款规定：“对世界各国或各地区的\n人入境、逗留和离境，香港特别行政区政府可实行出入境管制。”《澳门特别行政区基本\n法》第 139 条第 2 款规定：“对世界各国或各地区的人入境、逗留和离境，澳门特别行政区\n政府可实行出入境管制。”，可知 A 项正确，应选。\nB 项错误。《香港特别行政区基本法》第 48 条规定：“香港特别行政区行政长官行使下\n列职权(六)依照法定程序任免各级法院法官”《澳门特别行政区基本法》第 50 条规定：“澳\n门特别行政区行政长官行使下列职权(九)依照法定程序任免各级法院院长和法官，任免检察\n官(十)依照法定程序提名并报请中央人民政府任命检察长，建议中央人民政府免除检察长的\n职务”根据上述条文规定，澳门特区检察长并非由行政长官任免，故 B 项不正确，不选。\nC 项正确。《香港特别行政区基本法》第 79 条规定：“香港特别行政区立法会议员如有\n下列情况之一，由立法会主席宣告其丧失立法会议员的资格：??(七)行为不检或违反誓言而\n经立法会出席会议的议员三分之二通过谴责。”可知，C 项正确，应选。\nD 项正确《香港特别行政区基本法》第 158 条第 1 款规定：“本法的解释权属于全国人\n民代表大会常务委员会。”《澳门特别行政区基本法》第 143 条第 1 款规定：“本法的解释\n权属于全国人民代表大会常务委员会。”可知，D 项正确，应选。",
-      "id": "law:fakao-app:2013年客观题-卷一#一#61",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "对世界各国或各地区的人入境、逗留和离境，特别行政区政府可以实行入境管制"
-        },
-        {
-          "label": "B",
-          "text": "特别行政区行政长官依照法定程序任免各级法院法官、任免检察官"
-        },
-        {
-          "label": "C",
-          "text": "香港特别行政区立法会议员因行为不检或违反誓言而经出席会议的议员三分之二通过"
-        },
-        {
-          "label": "D",
-          "text": "基本法的解释权属于全国人大常委会"
-        }
-      ],
-      "source": {
-        "nativeId": "2013年客观题-卷一#一#61",
-        "path": "真题库/客观题/2013年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "根据《香港特别行政区基本法》和《澳门特别行政区基本法》的规定，下列哪些选 项是正确的？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2013"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2013
-    },
-    {
-      "answer": [
-        "A",
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "本题考查商业银行的监管措施。依据《银行业监督管理法》第 37 条第 1 款规定，“银\n行业金融机构违反审慎经营规则的，国务院银行业监督管理机构或者其省一级派出机构应当\n责令限期改正；逾期未改正的，或者其行为严重危及该银行业金融机构的稳健运行、损害存\n款人和其他客户合法权益的，经国务院银行业监督管理机构或者其省一级派出机构负责人批\n准，可以区别情形，采取下列措施：（一）责令暂停部分业务、停止批准开办新业务;（二）\n限制分配红利和其他收入;（三）限制资产转让;（四）责令控股股东转让股权或者限制有关\n股东的权利;（五）责令调整董事、高级管理人员或者限制其权利;（六）停止批准增设分支\n机构。”A、C 项正确，B、D 错误。",
-      "id": "law:fakao-app:2013年客观题-卷一#一#69",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "限制分配红利和其他收入"
-        },
-        {
-          "label": "B",
-          "text": "限制工资总额"
-        },
-        {
-          "label": "C",
-          "text": "责令调整高级管理人员"
-        },
-        {
-          "label": "D",
-          "text": "责令减员增效"
-        }
-      ],
-      "source": {
-        "nativeId": "2013年客观题-卷一#一#69",
-        "path": "真题库/客观题/2013年客观题-卷一.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "某商业银行违反审慎经营规则，造成资本和资产状况恶化，严重危及稳健运行，损 害存款人和其他客户合法权益。对此，银行业监督管理机构对该银行依法可采取下列哪些措 施？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2013"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2013
-    },
-    {
-      "answer": [
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "A 选项错误。虚报注册资本罪是指申请公司登记使用虚假证明文件或者采取其他欺诈手\n段虚报注册资本，欺骗公司登记主管部门，取得公司登记，虚报注册资本数额巨大、后果严\n重或者有其他严重情节的行为。本案中，甲不存在使用虚假证明文件或者其他欺诈手段的行\n为，故不成立虚报注册资本罪。\nBC 选项错误。虚假出资、抽逃出资罪是指公司发起人、股东违反公司法的规定未交付货\n币、实物或者未转移财产权，虚假出资，或者在公司成立后又抽逃其出资，数额巨大、后果\n严重或者有其他严重情节的行为。本案中，甲实际上已经出资，不存在虚假出资的行为；成\n立公司之后，甲将公司资金借给其他公司的行为也不属于抽逃出资的行为。故甲的行为不成\n立虚假出资、抽逃出资罪。\nD 选项正确。本案中，A 公司取得营业执照后，由甲经手将 A 公司 50 万元借给 B 公\n司，这一行为并没导致公司资金丧失。实际上，该行为不过是单位向单位借款的行为，不成\n立抽逃出资罪，也不构成挪用资金罪等，属于无罪行为。\n需要注意的是，按照《公司法》最新规定，只有涉及注册资本未采取实缴登记制的公\n司，才有可能成立虚报注册资本罪、虚假出资、抽逃出资罪。",
-      "id": "law:fakao-app:2013年客观题-卷二#二#13",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "虚报注册资本罪"
-        },
-        {
-          "label": "B",
-          "text": "虚假出资罪"
-        },
-        {
-          "label": "C",
-          "text": "抽逃出资罪"
-        },
-        {
-          "label": "D",
-          "text": "无罪"
-        }
-      ],
-      "source": {
-        "nativeId": "2013年客观题-卷二#二#13",
-        "path": "真题库/客观题/2013年客观题-卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲向乙借款 50 万元注册成立 A 公司，乙与甲约定在 A 公司取得营业执照的第二 天，乙的 B 公司向 A 公司借款 50 万元。A 公司取得营业执照后，由甲经手将 A 公司 50 万元 借给 B 公司。关于甲的行为性质，下列哪一选项是正确的?",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2013"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2013
-    },
-    {
-      "answer": [
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "A 选项考查国务院国务院行政机构的规章制度主体。国务院行政机构中有权制定规章的\n是国务院组成部门和直属机构，A 选项错误。\nB 选项考查国务院组成部门管理的行政机构的职能。需要区分容易混淆的三种情形：国\n务院组成部门是履行国务院基本的行政管理职能，国务院直属机构是主管某项专门业务，国\n务院组成部门管理的国家局是主管组成部门的特定专门业务，B 选项错误。\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\nC 选项考查国务院组成部门管理的行政机构的设立、撤销与合并。其设立、撤销和合\n并，由国务院机构编制管理部门提出方案，报国务院决定，C 选项正确。\nD 选项考查国务院行政机构的内设机构。国务院行政机构的司级内设机构的增设、撤销\n或者合并，经国务院机构编制管理机关审核方案，报国务院批准。国务院行政管理机构的处\n级内设机构的设立、撤销或者合并，由国务院行政机构根据国家有关规定决定，按年度报国\n务院机构编制管理机关备案，D 选项错误。",
-      "id": "law:fakao-app:2013年客观题-卷二#二#44",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "有权制定规章"
-        },
-        {
-          "label": "B",
-          "text": "主管国务院的某项专门业务，具有独立的行政管理职能"
-        },
-        {
-          "label": "C",
-          "text": "该局的设立由国务院编制管理机关提出方案，报国务院决定"
-        },
-        {
-          "label": "D",
-          "text": "该局增设司级内设机构，由国务院编制管理机关审核批准"
-        }
-      ],
-      "source": {
-        "nativeId": "2013年客观题-卷二#二#44",
-        "path": "真题库/客观题/2013年客观题-卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "国家海洋局为国务院组成部门管理的国家局。关于国家海洋局，下列哪一说法是正 确的?",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2013"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2013
-    },
-    {
-      "answer": [
-        "B",
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "A 项错误，不选；B 正确，当选。《高法解释》第 286 条规定：审判期间，被告单位被\n撤销、注销、吊销营业执照或者宣告破产的，对单位犯罪直接负责的主管人员和其他直接责\n任人员应当继续审理。A 项所述错误，对被注销单位不再继续追究刑事责任，只能对直接负\n责的主管人员和其他直接责任人员继续审理。B 项所述正确。\nC 项正确，当选；D 项错误，不选。《高法解释》第 287 条规定：审判期间，被告单位\n合并、分立的，应当将原单位列为被告单位，并注明合并、分立情况。对被告单位所判处的\n罚金以其在新单位的财产及收益为限。”C 项所述公司合并，对被告单位所判处的罚金以其\n关注希律网在线题库或下载希律法考 app，随时随地在线刷题！\n加群可获取更多法考资料：343325550。\n\n希律（www.xilvlaw.com）-- 科技助力法考\n\n在新单位的财产及收益为限，符合法律规定，故 C 项正确；审判期间，被告单位分立的，应\n当将原单位列为被告单位，而不是将分立后的单位列为被告单位，故 D 项错误。",
-      "id": "law:fakao-app:2013年客观题-卷二#二#94",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "公司被撤销，不能免除单位和单位主管人员的刑事责任"
-        },
-        {
-          "label": "B",
-          "text": "公司被注销，对单位不再追诉，对主管人员继续审理"
-        },
-        {
-          "label": "C",
-          "text": "公司被合并，仍应将迅辉公司列为被告单位，并以其在新单位的财产范围承担责任"
-        },
-        {
-          "label": "D",
-          "text": "公司被分立，应将分立后的单位列为被告单位，并以迅辉公司在新单位的财产范围承"
-        }
-      ],
-      "source": {
-        "nativeId": "2013年客观题-卷二#二#94",
-        "path": "真题库/客观题/2013年客观题-卷二.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "迅辉制药股份公司主要生产健骨消痛丸，公司法定代表人陆某指令保管员韩某采用 不登记入库、销售人员打白条领取产品的方法销售，逃避缴税 65 万元。迅辉公司及陆某以 逃税罪被起诉到法院。 如迅辉公司在案件审理期间发生下列变故，法院的做法正确的是：",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:不定项选择题",
-        "year:2013"
-      ],
-      "type": "indefinite_choice",
-      "typeRaw": "不定项选择题",
-      "year": 2013
-    },
-    {
-      "answer": [
-        "A"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "依据《涉外民事关系法律适用法》第14条规定，法人及其分支机构的民事权利能力、民事行为能力、组织机构、股东权利义务等事项，适用登记地法律。法人的主营业地与登记地不一致的，可以适用主营业地法律。法人的经常居所地，为其主营业地。可见，对法人权利能力和行为能力的法律适用，我国原则上采用登记地国法律，同时以法人的经常居所地作为补充。题中，甲公司以确认其在合资公司的股东权利为由向中国某法院提起诉讼，因该合资有限责任公司在中国设立，故应适用中国法律。 A 项当选。其余三项均于法无据。",
-      "id": "law:fakao-app:2014年客观题#一#35",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "因合资公司登记地在中国，故应适用中国法"
-        },
-        {
-          "label": "B",
-          "text": "因侵权行为地在中国，故应适用中国法"
-        },
-        {
-          "label": "C",
-          "text": "因争议与中国的联系更密切，故应适用中国法蜜蜂考资微信： f89082933"
-        },
-        {
-          "label": "D",
-          "text": "当事人可协议选择纠纷应适用的法律"
-        }
-      ],
-      "source": {
-        "nativeId": "2014年客观题#一#35",
-        "path": "真题库/客观题/2014年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "德国甲公司与中国乙公司在中国共同设立了某合资有限责任公司，后甲公司以确认其在合资公司的股东权利为由向中国某法院提起诉讼。关于木案的法律适用，下列哪一选项是正确的?",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2014"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2014
-    },
-    {
-      "answer": [
         "D"
       ],
       "answerText": null,
@@ -359176,6 +355550,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "甲公司通知乙公司将其对乙公司的1 0万元债权出质给了丙银行，担保其9万元贷款。出质前，乙公司对甲公司享有2万元到期债权。如乙公司提出抗辩，关于丙银行可向乙公司行使质权的最大数额，下列哪一选项是正确的?",
+      "subjectId": "shangfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2014"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2014
+    },
+    {
+      "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "保险法",
+      "chapterConfidence": "low",
+      "chapterOfficial": "保险法",
+      "difficulty": null,
+      "explanation": "《民法典》第979条规定，管理人没有法定的或者约定的义务，为避免他人利益受损失而管理他人事务的，可以请求受益人偿还因管理事务而支出的必要费用。据此可知，要构成无因管理必须同时满足如下三个要件：(1)没有法定或约定的义务；(2)  主观上具有管理他人事务的意思；(3)客观上实施了管理他人事务的行为。此处的第二要件，又分为三种情况：主观上纯粹为他人而管理他人事务，构成无因管理；主观上纯粹为自己而管理他人事务，不构成无因管理；主观上既为自己也为他人而管理他人事务，构成无因管理。可见，无因管理之构成，并不绝对地排斥“为自己的主观”因素，而是强调需要具有“为他人的主观” 因素。据此，本题中虽然甲主观上为避免自家房屋受损，但也不乏为邻居利益的考虑。因此构成无因管理.  A 项错误，不当选。\n《民法通则意见》第132条规定：《民法通则》第93条规定的管理人或者服务人可以要求受益人偿付的必要费用，包括在管理或者服务活动中直接支出的费用，以及在该活动中受到的实际损失。(《民法通则》第93条现为《民法典》第979条)据此可知，就请求权客体而言，甲作为无因管理是可以向被管理人主张医疗费赔偿的，关键是，此处的被管理人是谁?此处备选的有三人：邻居、房屋所有人乙；房屋承租人丙；火灾保险 A 公司。应该说，这三个人客观上都是甲从事无因管理的受益人，但按照常理推断，甲可能并不知道邻居投保之事，所以主观上也就不可能为A 公司的利益而为救火行为。所以，D 项正确。又依据生活常理，甲知道邻居家的房屋出租给他人，应该并不意外，所以甲救火的时\n候主观上为乙、丙之利益的考虑，应该是可能的。所以，乙、丙都是此处的被管理人，故此，B 、C项都错在 “只能”二字了。综上，本题答案为D 项。",
+      "id": "law:fakao-app:2014年客观题#三#20",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲主观上为避免自家房屋受损，不构成无因管理，应自行承担医疗费用"
+        },
+        {
+          "label": "B",
+          "text": "甲依据无因管理只能向乙主张医疗费赔偿，因乙是房屋所有人"
+        },
+        {
+          "label": "C",
+          "text": "甲依据无因管理只能向丙主张医疗费赔偿，因丙是房屋实际使用人"
+        },
+        {
+          "label": "D",
+          "text": "甲依据无因管理不能向A 公司主张医疗费赔偿，因甲欠缺为A 公司的利益实施管理的主观意思"
+        }
+      ],
+      "source": {
+        "nativeId": "2014年客观题#三#20",
+        "path": "真题库/客观题/2014年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲的房屋与乙的房屋相邻。乙把房屋出租给丙居住，并为该房屋在 A 公司买了火灾保险。某日甲见乙的房屋起火，唯恐大火蔓延自家受损，遂率家人救火，火势得到及时控制，但甲被烧伤住院治疗。下列哪一表述是正确的?",
       "subjectId": "shangfa",
       "tags": [
         "fakao-app",
@@ -359559,6 +355981,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "依据我国《海商法》和《物权法》的相关规定，关于船舶所有权，下列哪一表述是正确的?",
+      "subjectId": "shangfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2014"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2014
+    },
+    {
+      "answer": [
+        "C"
+      ],
+      "answerText": null,
+      "chapter": "保险法",
+      "chapterConfidence": "high",
+      "chapterOfficial": "保险法",
+      "difficulty": null,
+      "explanation": "《保险法解释(二)》第3条规定：投保人或者投保人的代理人订立保险合同时没有亲自签字或者盖章，而由保险人或者保险人的代理人代为签字或者盖章的，对投保人不生效。但投保人已经交纳保险费的，视为其对代签字或者盖章行为的追认。可见本题中，何某缴纳保险费应视为其对谢某代签字行为的追认，所以该保险合同有效，应由甲公司承担保险责任，保险代理人的行为后果由保险公司承担，C 项正确，ABD 项错误。本题答案为C 项。",
+      "id": "law:fakao-app:2014年客观题#三#34",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "谢某代签字，应由谢某承担保险责任"
+        },
+        {
+          "label": "B",
+          "text": "甲公司承保错误，无须承担保险责任，"
+        },
+        {
+          "label": "C",
+          "text": "何某已经交纳了保险费，应由甲公司承担保险责任"
+        },
+        {
+          "label": "D",
+          "text": "何某默认谢某代签字有过错，应由何某和甲公司按过错比例承担责任"
+        }
+      ],
+      "source": {
+        "nativeId": "2014年客观题#三#34",
+        "path": "真题库/客观题/2014年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲公司代理人谢某代投保人何某签字，签订了保险合同，何某也依约交纳了保险费。在保险期间内发生保险事故，何某要求甲公司承担保险责任。下列哪一表述是正确的?",
       "subjectId": "shangfa",
       "tags": [
         "fakao-app",
@@ -360164,41 +356634,41 @@
     },
     {
       "answer": [
-        "B"
+        "D"
       ],
       "answerText": null,
-      "chapter": "公司法",
+      "chapter": "合伙企业法",
       "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
+      "chapterOfficial": "合伙企业法",
       "difficulty": null,
-      "explanation": "A 选项考查审计对象。本题中某高速公路投资公司属于国有企业，根据《审计法》第2条，审计局有权进行审计。因此，A 选项错误。\nC 选项考查审计局的审查权限。根据《审计法》第33条，审计机关经批准可以自行查询被审计单位的账户。因此 .C 选项错误。\nD 选项考查审计程序。根据《审计法》第32条，审计机关有权查询被审计单位的与财政收支有关的资产和资料。因此，D 选项错误。",
-      "id": "law:fakao-app:2015年客观题#一#28",
+      "explanation": "法人的分类包括两种，即中国法人分类和外国法人分类。首先，中国法人分类，以法人是否营利为目的，分为企业法人(营利性)和非企业法人(公益性)。其中，非企业法人又分为机关法人、事业单位法人和社会团体法人三类。本题中的基金会法人在中国法人分类中属于典型的社会团体法人。其次，外国法人分类，以法人的设立基础不同，分为社团法人和财\n团法人；以法人的设立目的不同，分为营利法人和公益法人。其中，社团法人既可以是营利法人亦可以是公益法人；但财团法人只能是公益法人。本题中的基金会法人在外国法人分类中属于典型的财团法人和公益法人。据此可知，不管在中国法人分类中抑或在外国法人分类中，基金会法人均是公益法人。根据财团法人的基本原理，财团法人的本质是财产的集合而非人的集合，即只有钱而没有人。因此，财团法人只有管理机关而没有意思机关。据此可知，甲在捐资后，捐资的财产则与甲及其家庭成员无关，甲及其家庭成员均不得干涉该基金会的决策，故 A 、C项错误，不当选。根据国务院民政部颁布的《基金会管理条例》第21条第1款的规定，理事会是基金会的决策机构，依法行使章程规定的职权。同时，该条第3款规定，下列重要事项的决议，须经出席理事表决，2/3以上通过方为有效：(一) 章程的修改；据此可知，作为理事长的乙不得单独决定修改章程，故 B 项错误，不当选。",
+      "id": "law:fakao-app:2015年客观题#三#1",
       "knowledgePoints": [],
       "options": [
         {
           "label": "A",
-          "text": "该公司既非政府机关，也非事业单位，审计局无权审计"
+          "text": "甲作出决定即可，因甲是创始人和出资人"
         },
         {
           "label": "B",
-          "text": "审计局应在实施审计3日前，向该公司送达审计通知书"
+          "text": "乙作出决定即可，因乙是法定代表人"
         },
         {
           "label": "C",
-          "text": "审计局欲查询该公司在金融机构的账户，应经局长批准并委托该市人民法院查询"
+          "text": "应由甲的家庭成员共同决定，因甲是用家庭共有财产捐资的"
         },
         {
           "label": "D",
-          "text": "审计局欲检查该公司与财政收支有关的资料和资产，应委托该市税务局检查"
+          "text": "应由基金会法人按照程序申请，经过上级主管部门批准"
         }
       ],
       "source": {
-        "nativeId": "2015年客观题#一#28",
+        "nativeId": "2015年客观题#三#1",
         "path": "真题库/客观题/2015年客观题.md",
         "repo": "fakao-app",
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
-      "stem": "为大力发展交通，某市出资设立了某高速公路投资公司。该市审计局欲对其实施年度审计监督。关于审计事宜，下列哪一说法是正确的?",
+      "stem": "甲以自己的名义，用家庭共有财产捐资设立以资助治疗麻风病为目的的基金会法人，由乙任理事长。后因对该病的防治工作卓有成效使其几乎绝迹，为实现基金会的公益性，现欲改变宗旨和目的。下列哪一选项是正确的?",
       "subjectId": "shangfa",
       "tags": [
         "fakao-app",
@@ -360212,41 +356682,41 @@
     },
     {
       "answer": [
-        "C"
+        "D"
       ],
       "answerText": null,
       "chapter": "公司法",
       "chapterConfidence": "low",
       "chapterOfficial": "公司法",
       "difficulty": null,
-      "explanation": "根据《地方各级人民政府机构设置和编制管理条例》第10条规定：“地方各级人民政府行政机构职责相同或者相近的，原则上由一个行政机构承担。行政机构之间对职责划分有异议的，应当主动协商解决。协商一致的，报本级人民政府机构编制管理机关备案；协商不一致的，应当提请本级人民政府机构编制管理机关提出协调意见，由机构编制管理机关报本级人民政府决定。”本案情形属于上条规定的调整对象，C 选项即解决这类冲突的唯一合法途径。其中\nA、B 选项均不符合该条规定。关于D 选项中的县政府提出处理方案，经甲市政府机构编制管理机关审核后报甲市政府批准，《地方各级政府机构设置和编制管理条例》第9条规定：“地方各级人民政府行政机构的设立、撤销、合并或者变更规格、名称，由本级人民政府提出方案，经上一级人民政府机构编制管理机关审核后，报上一级人民政府批准；其中，县级以上地方各级人民政府行政机构的设立、撤销或者合并，还应当依法报本级人民代表大会常务委员会备案。”可见，只有在地方政府行政机构的设立、撤销、合并或者变更规格、名称时，才需要由本级政府提出方案，经上一级政府机构编制管理机关审核后，报上一级政府决定。本案属于两个行政机构之间的职责划分争议问题，不适用该规定，故 D 选项错误。",
-      "id": "law:fakao-app:2015年客观题#二#45",
+      "explanation": "首先，甲、乙两公司签订协议购买的  “面包券”在性质上属于债权凭证而非物权凭证，故 A   项错误，不当选。其次，根据《民法典》第563条的规定，有下列情形之一的，当事人可以解除合同：(一)因不可抗力致使不能实现合同目的；(二)在履行期限届满之前，当事人一方明确表示或者以自己的行为表明不履行主要债务；(三)当事人一方迟延履行主要债务，经催告后在合理期限内仍未履行；(四)当事人一方迟延履行债务或者有其他违约行为致使不能实现合同目的；(五)法律规定的其他情形。本题中，甲乙两公司签订协议后，交割完毕，即使甲公司与张某的合同因张某未付款等原因被判处合同诈骗罪，但对甲乙之间的合同不产生任何影响。因此，甲公司无权解除与乙公司\n的协议，故B 项错误，不当选。最后，面包券本身属于债权凭证，且凭证中载明“凭券提货”,则乙公司见到面包券后即负有履行之义务，故C 项错误，D 项正确。",
+      "id": "law:fakao-app:2015年客观题#三#12",
       "knowledgePoints": [],
       "options": [
         {
           "label": "A",
-          "text": "提请双方各自上一级主管机关协商确定"
+          "text": "面包券是一种物权凭证"
         },
         {
           "label": "B",
-          "text": "提请县政府机构编制管理机关决定"
+          "text": "甲公司有权解除与乙公司的协议"
         },
         {
           "label": "C",
-          "text": "提请县政府机构编制管理机关提出协调意见，并由该机构编制管理机关报县政府决定"
+          "text": "如甲公司通知乙公司停止兑付面包券，乙公司应停止兑付"
         },
         {
           "label": "D",
-          "text": "提请县政府提出处理方案，经甲市政府机构编制管理机关审核后报甲市政府批准"
+          "text": "如某顾客以合理价格从张某处受让面包券，该顾客有权请求乙公司兑付"
         }
       ],
       "source": {
-        "nativeId": "2015年客观题#二#45",
+        "nativeId": "2015年客观题#三#12",
         "path": "真题库/客观题/2015年客观题.md",
         "repo": "fakao-app",
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
-      "stem": "甲市某县环保局与水利局对职责划分有异议，双方协商无法达成一致意见。关于异议的处理，下列哪一说法是正确的?",
+      "stem": "甲、乙两公司签订协议，约定甲公司向乙公司采购面包券。双方交割完毕，面包券上载明 “不记名、不挂失，凭券提货”。甲公司将面包券转让给张某，后张某因未付款等原因被判处合同诈骗罪。面包券全部流入市场。关于协议和面包券的法律性质，下列哪一表述是正确的?",
       "subjectId": "shangfa",
       "tags": [
         "fakao-app",
@@ -360845,7 +357315,7 @@
       ],
       "answerText": null,
       "chapter": "合伙企业法",
-      "chapterConfidence": "low",
+      "chapterConfidence": "high",
       "chapterOfficial": "合伙企业法",
       "difficulty": null,
       "explanation": "《合伙企业法》第42条第1款规定：“合伙人的自有财产不足清偿其与合伙企业无关的债务的，该合伙人可以以其从合伙企业中分取的收益用于清偿；债权人也可以依法请求人民法院强制执行该合伙人在合伙企业中的财产份额用于清偿。”据此\nA、B 两项都正确。法院强制执行合伙人的财产份额时，应当通知全体合伙人，其他合伙人有优先购买权，这样做是为了维护普通合伙企业的人合性，所以C 项错误。\n只有在其他合伙人未购买，又不同意将该财产份额转让给他人的，才为该合伙人办理退伙结算，或者办理削减该合伙人相应财产份额的结算。因此顾谐不可以直接向合伙企业要求对刘璋进行退伙处理，D  项错误。",
@@ -361231,205 +357701,6 @@
     },
     {
       "answer": [
-        "A",
-        "B"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "根据《消费者权益保护法》第8条的规定，消费者享有知悉其购买、使用的商品或者接受的服务的真实情况的权利。消费者有权根据商品或者服务的不同情况，要求经营者提供商品的价格、产地、生产者、用途、性能、规格、等级、主要成分、生产日期、有效期限、检验合格证明、使用方法说明书、售后服务，或者服务的内容、规格、费用等有关情况。乙公司在甲办理手机通讯服务时未能全面说明有关业务的重要规定，导致甲未能获知与服务有关的重要规定，属于侵犯消费者知情权的情形，乙公司理应在甲方办理业务时说明有关暂停服务等情形的特别规定，故 A、B项说法正确。根据《消费者权益保护法》第53条的规定，经营者以预收款方式提供商品或者服务的，应当按照约定提供。未按照约定提供的，应当按照消费者的要求履行约定或者退回预付款；并应当承担预付款的利息、消费者必须支付的合理费用。本案例中乙方提供了服务，只是没有提醒甲有关暂停服务的特殊规定，故C 项说法错误。乙公司在交易过程中并没有欺诈行为，因而不适用惩罚性赔偿的规定，故D 项说法错误。",
-      "id": "law:fakao-app:2016年客观题#一#69",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "乙公司侵犯了甲的知情权"
-        },
-        {
-          "label": "B",
-          "text": "乙公司提供格式条款时应提醒甲注意暂停服务的情形"
-        },
-        {
-          "label": "C",
-          "text": "甲有权要求乙公司退还全部预付费"
-        },
-        {
-          "label": "D",
-          "text": "法院应支持甲要求乙公司承担惩罚性赔偿的请求"
-        }
-      ],
-      "source": {
-        "nativeId": "2016年客观题#一#69",
-        "path": "真题库/客观题/2016年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲在乙公司办理了手机通讯服务，业务单约定：如甲方(甲)预付费使用完毕而未及时补交款项，乙方(乙公司)有权暂停甲方的通讯服务，由此造成损失，乙方概不担责。甲预付了费用，1年后发现所用手机被停机，经查询方得知公司有“话费有效期满暂停服务”的规定，此时账户 尚有余额，遂诉之。关于此事，下列哪些说法是正确的 ?",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2016"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2016
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "根据《银行业监督管理法》第2条第3款的规定，对在中华人民共和国境内设立的金融资产管理公司、信托投资公司、财务公司、金融租赁公司以及经国务院银行业监督管理机构批准设立的其他金融机构的监督管理，适用本法对银行业金融机构监督管理的规定，故信托公司应当适用《银行业监督管理法》的有关金融机构监督管理的规定。根据《银行业监督管理法》第21条的规定，银行业金融机构的审慎经营规则，由法律、行政法规规定，也可以由国务院银行业监督管理机构依照法律、行政法规制定。前款规定的审慎经营规则，包括风险管理、内部控制、资本充足率、资产质量、损失准备金、风险集中、关联交易、资产流动性等内容。银行业金融机构应当严格遵守审慎经营规则。因而该公司未按照金融企业会计制度和公司财务规则严格管理和审核资金使用属于违反审慎经营规则的表现，故A 项说法正确。根据《银行业监督管理法》第46条的规定，银行业金融机构有下列情形之\n一 .由国务院银行业监督管理机构责令改正，并处二十万元以上五十万元以下罚款：情节特别严重或者逾期未改正的，可以责令停业整顿或者吊销其经营许可证；构成犯罪的，依法追究刑事责任： ……(五)严重违反审慎经营规则的；故 B 项说法正确，C 项说法错误(金融许可证由银监会吊销)。根据《银行业金融机构董事  (理事)和高级管理人员任职资格管理办法》第29条的\n规定，金融机构有下列情形之一，监管机构可视情节轻重及其后果，取消直接负责的董事(理事)和高级管理人员十年以上直至终身的任职资格：(一)违法违规经\n营，情节特别严重或造成损失数额特别巨大的；(二)内部管理与控制制度不健全或执行监督不力，造成损失数额特别巨大或引发特别重大金融犯罪案件的；(三)严重违反审慎经营规则，造成损失数额特别巨大或引发特别重大金融犯罪案件的； ……,故D 项说法正确。",
-      "id": "law:fakao-app:2016年客观题#一#72",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "该公司严重违反审慎经营规则"
-        },
-        {
-          "label": "B",
-          "text": "银监会可责令该公司停业整顿"
-        },
-        {
-          "label": "C",
-          "text": "国家工商总局可吊销该公司的金融许可证"
-        },
-        {
-          "label": "D",
-          "text": "银监会可取消陈某一定期限直至终身的任职资格"
-        }
-      ],
-      "source": {
-        "nativeId": "2016年客观题#一#72",
-        "path": "真题库/客观题/2016年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "陈某在担任某信托公司总经理期间，该公司未按照金融企业会计制度和公司财务规则严格管理和审核资金使用，违法开展信托业务，造成公司重大损失。对此，陈某负有直接管理责任。关于此事，下列哪些说法是正确的?",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2016"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2016
-    },
-    {
-      "answer": [
-        "A",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "根据《审计法》第22条的规定，审计机关对政府投资和以政府投资为主的建设项目的预算执行情况和决算，进行审计监督，故 A 项说法正确。根据《审计法》第34条的规定，审计机关进行审计时，被审计单位不得转移、隐匿、篡改、毁弃会计凭证、会计账簿、财务会计报告以及其他与财政收支或者财务收支有关的资料，不得转移、隐匿所持有的违反国家规定取得的资产。审计机关对被审计单位违反前款规定的行为，有权予以制止；必要时，经县级以上人民政府审计机关负责人批准，有权封存有关资料和违反国家规定取得的资产；对其中在金融机构的有关存款需要予以冻结的，应当向法院提出申请，故 B 项说法错误。根据《审计法》第40条的规定，审计组对审计事项实施审计后，应当向审计机关提出审计组的审计报告。审计组的审计报告报送审计机关前，应当征求被审计对象的意见。被审计对象应当自接到审计组的审计报告之日起十日内，将其书面意见送交审计组。审计组应当将被审计对象的书面意见一并报送审计机关，故 C 项说法错误。根据《审计法》第42条的规定，上级审计机关认为下级审计机关作出的审计决定违反国家有关规定的，可以责成下级审计机关予以变更或者撤销，必要时也可以直接作出变更或者撤销的决定，故 D 项说法正确。",
-      "id": "law:fakao-app:2016年客观题#一#74",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "审计机关对该项目的预算执行情况和决算，进行审计监督"
-        },
-        {
-          "label": "B",
-          "text": "审计机关经银监局局长批准，可冻结该项目在银行的存款"
-        },
-        {
-          "label": "C",
-          "text": "审计组应在向审计机关报送审计报告后，向该公司征求对该报告的意见"
-        },
-        {
-          "label": "D",
-          "text": "审计机关对该项目作出审计决定，而上级审计机关认为其违反国家规定的，可直接作出变更或撤销的决定"
-        }
-      ],
-      "source": {
-        "nativeId": "2016年客观题#一#74",
-        "path": "真题库/客观题/2016年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "某县污水处理厂系扶贫项目，由地方财政投资数千万元，某公司负责建设。关于此项目的审计监督，下列哪些说法是正确的?",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2016"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2016
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "A 选项，公立高校普通任课老师不属于国家工作人员，但其受学校委派开展招生工作属于公务活动. 甲的行为成立受贿罪。 A 正确。B  选项，无论是国有医院还是非国有医院的医生“开单提成”行为，均应按非国家工作人员受贿罪论处。主要理由是医生的处方行为不具有公务的性质。《全国法院审理经济犯罪案件工作座谈会纪要》规定：“从事公务，是指代表国家机关、国有公司、企业事业单位、人民团体等履行组织、领导、监督、管理等职责。公务主要表现为与职权相联系的公共事务以及监督、管理国有财产的职务活动。如国家机关工作人员依法履行职责，国有公司的董事、经理、监事、会计、出纳人员等管理、监督国有财产等活动，属于从事公务。那些不具备职权内容的劳务活动、技术服务工作，如售货员、售票员等所从事的工作，一般不认为是公务。”医生的处方行为虽然是一种职务行为，但不具有从事公务的性质，因而不符合受贿罪的主体特征 · 应当按非国家工作人员受贿论处。B 正确。C 选项，村委会主任不属于国家工作人员，其在村集体企业招投标过程中收受贿赂的行为构成非国家工作人员受贿罪。 C 正确。 D 选项. 国有公司临时工不属于国家工作人员，但按照共同犯罪理论其与副总经理构成受贿罪的共同犯罪。 D 正确。",
-      "id": "law:fakao-app:2016年客观题#二#62",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "甲是公立高校普通任课教师，在学校委派其招生时，利用职务便利收受考生家长10万元。甲成立受贿罪"
-        },
-        {
-          "label": "B",
-          "text": "乙是国有医院副院长，收受医药代表10万元，承诺为病人开处方时多开相关药品。乙成立非国家工作人员受贿罪"
-        },
-        {
-          "label": "C",
-          "text": "丙是村委会主任，在村集体企业招投标过程中，利用职务收受他人财物10万元，为其谋利。丙成立非国家工作人员受贿罪"
-        },
-        {
-          "label": "D",
-          "text": "丁为国有公司临时工，与本公司办理采购业务的副总经理相勾结，收受10万元回扣归二人所有。丁构成受贿罪"
-        }
-      ],
-      "source": {
-        "nativeId": "2016年客观题#二#62",
-        "path": "真题库/客观题/2016年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "关于贿赂犯罪的认定，下列哪些选项是正确的?",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2016"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2016
-    },
-    {
-      "answer": [
         "C"
       ],
       "answerText": null,
@@ -361465,6 +357736,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "甲企业是由自然人安琚与乙企业(个人独资)各出资50%设立的普通合伙企业，欠丙企业货款50万元，由于经营不善，甲企业全部资产仅剩20万元。现所欠货款到期，相关各方因货款清偿发生纠纷。对此，下列哪一表述是正确的?",
+      "subjectId": "shangfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2016"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2016
+    },
+    {
+      "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "公司法",
+      "chapterConfidence": "low",
+      "chapterOfficial": "公司法",
+      "difficulty": null,
+      "explanation": "(1)题涉买卖合同中，唐某是甲公司的代理人，唐某与乙公司私下商定将净化机单价比正常售价提高200元，乙公司给唐某每台100元的回扣；商定后，唐某以甲公司名义与乙公司签订了买卖合同。此间，无以合法形式掩盖非法目的之行为；唐某受甲公\n司委托，有代理权，不存在无权代理情形；乙公司也非对甲公司进行欺诈，所以A、B、C选项均错误。\n(2)代理人是以被代理人的名义从事活动，由此产生的一些权益、责任都应归属于被代理人。所以，代理人实施代理行为时应像处理自己的事务一样谨慎、勤勉，尽可能使被代理人得到最大利益，不得以任何方式侵吞被代理人应得的权益。代理人在行使代理权时，违背代理权的设定宗旨和代理行为的基本准则，从事有损被代理人利益的代理行为，属于滥用代理权。本题中，唐某作为甲公司的代理人，与乙公司私下商定将净化机单价比正常售价提高200元，乙公司给唐某每台100元的回扣，此为明显的恶意串通滥用代理权的行为，必然损害甲公司的利益。依《民法典》第164条\n第2款的规定，“代理人和相对人恶意串通，损害被代理人合法权益的，代理人和相对人应当承担连带责任”,即唐某与乙公司恶意串通损害甲公司的利益，应对甲公司承担连带责任。由此，D 选项正确。",
+      "id": "law:fakao-app:2016年客观题#三#4",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "该买卖合同以合法形式掩盖非法目的，因而无效"
+        },
+        {
+          "label": "B",
+          "text": "唐某的行为属无权代理，买卖合同效力待定"
+        },
+        {
+          "label": "C",
+          "text": "乙公司行为构成对甲公司的欺诈，买卖合同属可变更、可撤销合同"
+        },
+        {
+          "label": "D",
+          "text": "唐某与乙公司恶意串通损害甲公司的利益，应对甲公司承担连带责任"
+        }
+      ],
+      "source": {
+        "nativeId": "2016年客观题#三#4",
+        "path": "真题库/客观题/2016年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲公司员工唐某受公司委托从乙公司订购一批空气净化机，甲公司对净化机单价未作明确限定。唐某与乙公司私下商定将净化机单价比正常售价提高200元，乙公司给唐某每台100元的回扣。商定后，唐某以甲公司名义与乙公司签订了买卖合同。对此，下列哪一选项是正确的?",
       "subjectId": "shangfa",
       "tags": [
         "fakao-app",
@@ -361862,6 +358181,54 @@
     },
     {
       "answer": [
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "票据法",
+      "chapterConfidence": "high",
+      "chapterOfficial": "票据法",
+      "difficulty": null,
+      "explanation": "《票据法》第22条规定：“汇票必须记载下列事项：(一)表明‘汇票’的字样；(二)无条件支付的委托；(三)确定的金额；(四)付款人名称；(五)收款人名称；(六)出票日期；(七)出票人签章。汇票上未记载前款规定事项之一的，汇票无效。”票据讲究形式性，票据无效的事由通常是因为票据不满足法定形式。本题中，票据形式合法，而且签发汇票也不存在非法交\n易的情形，不存在任何无效事由，故A 项错误。\n《票据法》第13条规定：“票据债务人不得以自己与出票人或者与持票人的前手之间的抗辩事由，对抗持票人。但是，持票人明知存在抗辩事由而取得票据的除外。票据债务人可以对不履行约定义务的与自己有直接债权债务关系的持票人，进行抗辩。本法所称抗辩，是指票据债务人根据本法规定对票据债权人拒绝履行义务的行为。”据此，票据抗辩虽然受到限制，但直接前后手之间可以主张票据抗辩，故甲公司可以拒绝乙公司的票据权利请求，B 项错误。\n《票据法》第11条规定：“因税收、继承、赠与可以依法无偿取得票据的，不受给付对价的限制。但是，所享有的票据权利不得优于其前手的权利。前手是指在票据签章人或者持票人之前签章的其他票据债务人。” 因为丙是通过从乙公司接受赠与而获得票据，其享有的票据权利不能优于乙公司，所以甲公司可以拒绝丙的票据权利请求，据此 C 项错误。\n《票据法》第44条规定：“付款人承兑汇票后，应当承担到期付款的责任。”据此，D 项正确。",
+      "id": "law:fakao-app:2016年客观题#三#32",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "该票据无效"
+        },
+        {
+          "label": "B",
+          "text": "甲公司不能拒绝乙公司的票据权利请求"
+        },
+        {
+          "label": "C",
+          "text": "丙应享有票据权利"
+        },
+        {
+          "label": "D",
+          "text": "银行应承担票据责任"
+        }
+      ],
+      "source": {
+        "nativeId": "2016年客观题#三#32",
+        "path": "真题库/客观题/2016年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲公司为履行与乙公司的箱包买卖合同，签发一张以乙公司为收款人、某银行为付款人的汇票，银行也予以了承兑。后乙公司将该汇票背书赠与给丙。此时，甲公司发现乙公司的箱包为假冒伪劣产品。关于本案，下列哪一选项是正确的?",
+      "subjectId": "shangfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2016"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2016
+    },
+    {
+      "answer": [
         "C"
       ],
       "answerText": null,
@@ -362205,6 +358572,56 @@
     },
     {
       "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "answerText": null,
+      "chapter": "票据法",
+      "chapterConfidence": "high",
+      "chapterOfficial": "票据法",
+      "difficulty": null,
+      "explanation": "《票据法》第26条规定：“出票人签发汇票后，即承担保证该汇票承兑和付款的责任。出票人在汇票得不到承兑或者付款时，应当向持票人清偿本法第70条、第71条规定的金额和费用。”故 A   项正确。\n李某是被伪造人，不承担票据责任。 B 项正确。\n《票据法》第14条第1款规定：“票据上的记载事项应当真实，不得伪造、变造。伪造、变造票据上的签章和其他记载事项的，应当承担法律责任。”故 C 项错误。\n《票据法》第14条第2、第3款规定：“票据上有伪造、变造的签章的，不影响票据上其他真实签章的效力。票据上其他记载事项被变造的，在变造之前签章的人，对原记载事项负责；在变造之后签章的人，对变造之后的记载事项负责；不能辨别是在票据被变造之前或者之后签章的，视同在变造之前签章。”丙公司作为票据的合法持有人，享有票据权利，故 D 项正确。",
+      "id": "law:fakao-app:2016年客观题#三#74",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "甲公司应当承担票据责任"
+        },
+        {
+          "label": "B",
+          "text": "李某不承担票据责任"
+        },
+        {
+          "label": "C",
+          "text": "王某应当承担票据责任"
+        },
+        {
+          "label": "D",
+          "text": "丙公司应当享有票据权利"
+        }
+      ],
+      "source": {
+        "nativeId": "2016年客观题#三#74",
+        "path": "真题库/客观题/2016年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲公司为清偿对乙公司的欠款，开出一张收款人是乙公司财务部长李某的汇票。李某不慎将汇票丢失，王某拾得后在汇票上伪造了李某的签章，并将汇票背书转让给外地的丙公司，用来支付购买丙公司电缆的货款，王某收到电缆后转卖得款，之后不知所踪。关于本案，下列哪些说法是正确的?",
+      "subjectId": "shangfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2016"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2016
+    },
+    {
+      "answer": [
         "B",
         "C"
       ],
@@ -362241,6 +358658,55 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "吉达公司是一家上市公司，公告称其已获得某地块的国有土地使用权。嘉豪公司资本雄厚，看中了该地块的潜在市场价值，经过细致财务分析后，拟在证券市场上对吉达公司进行收购。下列哪些说法是正确的?",
+      "subjectId": "shangfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:多项选择题",
+        "year:2016"
+      ],
+      "type": "multiple_choice",
+      "typeRaw": "多项选择题",
+      "year": 2016
+    },
+    {
+      "answer": [
+        "A",
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "保险法",
+      "chapterConfidence": "high",
+      "chapterOfficial": "保险法",
+      "difficulty": null,
+      "explanation": "《保险法》第27条第3款规定：“保险事故发生后，投保人、被保险人或者受益人以伪造、变造的有关证明、资料或者其他证据，编造虚假的事故\n原因或者夸大损失程度的，保险人对其虚报的部分不承担赔偿或者给付保险金的责任。”据此，在投保人等夸大损失的情形，保险人对于夸大的部分不支付保险金，对于实际损失则需要按照约定支付保险金，故A 项正确，C 项错误。\n《保险法》第27条第4款规定：“投保人、被保险人或者受益人有前3款规定行为之一，致使保险人支付保险金或者支出费用的，应当退回或者赔偿。”据此，B 项正确。\nD 项，投保人等夸大保险损失并非解除保险合同的理由，故 D 项错误。",
+      "id": "law:fakao-app:2016年客观题#三#76",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "应当向甲公司给付约定的保险金"
+        },
+        {
+          "label": "B",
+          "text": "有权向甲公司主张5万元花费损失"
+        },
+        {
+          "label": "C",
+          "text": "有权拒绝向甲公司给付保险金"
+        },
+        {
+          "label": "D",
+          "text": "有权解除与甲公司的保险合同"
+        }
+      ],
+      "source": {
+        "nativeId": "2016年客观题#三#76",
+        "path": "真题库/客观题/2016年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "甲公司投保了财产损失险的厂房被烧毁，甲公司伪造证明，夸大此次火灾的损失，向保险公司索赔100万元，保险公司为查清此事，花费5万元。关于保险公司的权责，下列哪些选项是正确的?",
       "subjectId": "shangfa",
       "tags": [
         "fakao-app",
@@ -362447,201 +358913,6 @@
       "type": "indefinite_choice",
       "typeRaw": "不定项选择题",
       "year": 2016
-    },
-    {
-      "answer": [
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "根据《审计法》第17条的规定，审计署在国务院总理领导下，对中央预算执行情况和其他财政收支情况进行审计监督，向国务院总理提出审计结果报告。地方各级审计机关分别在省长、自治区主席、市长、州长、县长、区长和上一级审计机关的领导下，对本级预算执行情况和其他财政收支情况进行审计监督，向本级人民政府和上一级审计机关提出审计结果报告。根据《审计法》第18条的规定，审计署对中\n央银行的财务收支，进行审计监督。审计机关对国有金融机构的资产、负债、损益，进行审计监督。因而 A、 B项说法错误，地方审计机关可以对国有金融机构进行审计监督，且不需要被审计对象的行业主管部门同意。根据《审计法》第33条第2款规定，审计机关经县级以上人民政府审计机关负责人批准，有权查询被审计单位在金融机构的账户，故C 项说法正确，事实上只需要经该县审计局局长批准即可，如果是上一级的副职领导也可以归类为负责人。 D 项说法错误，虽然该企业不是国有企业，但是由于其接受和使用了财政资金，因而属于“依法应当接受审计机关审计监督的其他单位”。",
-      "id": "law:fakao-app:2017年客观题#一#31",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "只有审计署才能对当地农业银行的财政收支情况进行审计监督"
-        },
-        {
-          "label": "B",
-          "text": "只有经银监机构同意，该县审计局才能对当地农业银行的财务收支进行审计监督"
-        },
-        {
-          "label": "C",
-          "text": "该县审计局经上一级审计局副职领导批准，有权查询当地扶贫办在银行的账户"
-        },
-        {
-          "label": "D",
-          "text": "申请财政贴息的该企业并非国有企业，故该县审计局无权对其进行审计调查"
-        }
-      ],
-      "source": {
-        "nativeId": "2017年客观题#一#31",
-        "path": "真题库/客观题/2017年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "某县开展扶贫资金专项调查，对申请财政贴息贷款的企业进行核查。审计中发现某企业申请了数百万元贴息贷款，但其生产规模并不需要这么多，遂要求当地农业银行、扶贫办和该企业提供贷款记录。对此，下列哪一说法是正确的 ?",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2017"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2017
-    },
-    {
-      "answer": [
-        "C"
-      ],
-      "answerText": null,
-      "chapter": "保险法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "保险法",
-      "difficulty": null,
-      "explanation": "本题中，收货人一栏写明“凭指示” 的字样的提单为指示提单，此类提单经背书可以转让，故 A 错误。\n《海牙规则》规定，对17项原因引起或造成的货物灭失或损害，承运人不承担责任：(1)船长、船员、引水员或承运人的雇佣人在驾驶或管理船舶中的行为、疏忽或不履行职责；(2)火灾，但由于承运人实际过失或私谋所造成者除外；(3)海上或其他可航水域的风险、危险或意外事故；(4)天灾；(5)战争行为；(6)公敌行为；(7)君主、统治者或人民的扣留或拘禁或依法扣押；\n(8)检疫限制；(9)货物托运人或货主、其代理人或代表的行为或不行为；(10)不论由于何种原因引起的局部或全面的罢工、关厂、停工或劳动力受到限制；(11)暴乱和民变；(12)救助或企图救助海上人命或财产；\n(13)由于货物的固有瑕疵、性质或缺陷所造成的容积或重量的损失，或任何其他灭失或损害；(14)包装不当；(15)标志不清或不当；(16)尽适当的谨慎所不能发现的潜在缺陷；(17)不是由于承运人的实际过失或私谋，或是承运人的代理人或受雇人员的过失或疏忽所引起的任何其他原因。本题中，因船方过失致货轮与他船相撞属于第一项免责事由，承运人不承担责任，故 B 错误。\n本题中的仪器受损的损失属于“由于运输工具遭受搁浅、触礁、沉没、互撞、与流冰或其他物体碰撞以及失火、爆炸等意外事故造成货物的全部或部分损失”, 在水渍险的保险范围之内，故C 正确。\n《海牙规则》规定 ·承运人的责任期间是从货物装上船起至卸完船为止，故D 错误。",
-      "id": "law:fakao-app:2017年客观题#一#41",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "该提单交付即可转让"
-        },
-        {
-          "label": "B",
-          "text": "因船舶碰撞是由船方过失导致，故承运人应对仪器受损承担赔偿责任"
-        },
-        {
-          "label": "C",
-          "text": "保险人应向货主赔偿部分仪器受损的损失"
-        },
-        {
-          "label": "D",
-          "text": "承运人的责任期间是从其接收货物时起至交付货物时止"
-        }
-      ],
-      "source": {
-        "nativeId": "2017年客观题#一#41",
-        "path": "真题库/客观题/2017年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "中国某公司进口了一批仪器，采取海运方式并投保了水渍险，提单上的收货人一栏写明 “凭指示”的字样。途中因船方过失致货轮与他船相撞，部分仪器受损。依《海牙规则》及相关保险条款，下列哪一选项是正确的?",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2017"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2017
-    },
-    {
-      "answer": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "根据《企业所得税法》第2条的规定，居民企业，是指依法在中国境内成立，或者依照外国(地区)法律成立但实际管理机构在中国境内的企业。本法所称非居民企业，是指依照外国(地区)法律成立且实际管理机构不在中国境内，但在中国境内设立机构、场所的，或者在中国境内未设立机构、场所，但有来源于中国境内所得的企业。 A 基金注册在境外某群岛并在当地设置总部，实际管理机构不在中国境内，因而系非居民企业。 D 公司是注册在中国境内的，因而系居民企业。 A、B项说法正确。由于 A 基金转让 F   公司股权实质上是转让D 公司股权，因而应当向我国税务机关进行纳税申报，故C 项说法正确。根据《企业所得税法》第47条的规定，企业实施其他不具有合理商业目的的安排而减少其应纳税收入或者所得额的，\n税务机关有权按照合理方法调整。题述案例通过转让海外空壳公司股权的方式来实质转让境内公司的权益，当其适用的税率较低时，可以判定其不具有合理的商业目的，对其进行纳税调整，故D 项说法正确。",
-      "id": "law:fakao-app:2017年客观题#一#70",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "A  基金系非居民企业"
-        },
-        {
-          "label": "B",
-          "text": "D   公司系居民企业"
-        },
-        {
-          "label": "C",
-          "text": "A   基金应就股权转让所得向我国税务机关进行纳税申报"
-        },
-        {
-          "label": "D",
-          "text": "如 A 基金进行纳税申报，我国税务机关有权按照合理方法调整其应纳税收入"
-        }
-      ],
-      "source": {
-        "nativeId": "2017年客观题#一#70",
-        "path": "真题库/客观题/2017年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "A 基金在我国境外某群岛注册并设置总部，该群岛系低税率地区。香港 B 公司和浙江 C 公司在浙江签约设立杭州 D 公司，其中 B 公司占95%的股权，后 D 公司获杭州公路收费权。F 公司在该群岛注册成立，持有 B 公司1 0 0 % 的股权。随后，A 基金通过认购新股方式获得了 F 公司26%的股权，多年后又将该股权转让给境外 M 上市公司。 M 公司对外披露其实际收购标的为 D 公司股权。经查，A 基金、F 公司和 M 公司均不从事实质性经营活动，F 公司股权的转让价主要取决于 D 公司的估值。对此，根据我国税法，下列哪些说法是正确的?",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:多项选择题",
-        "year:2017"
-      ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2017
-    },
-    {
-      "answer": [
-        "D"
-      ],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "依据《国务院行政机构设置和编制管理条例》第11条规定：“国务院议事协调机构的设立、撤销或者合并，由国务院机构编制管理机关审核方案，报国务院决定。”故 A 选项错误。\n依据《国务院行政机构设置和编制管理条例》第14条第1款规定：“国务院行政机构的司级内设机构的增设、撤销或者合并，经国务院机构编制管理机关审核方案，报国务院批准。”故B 选项错误。\n关于C 选项，依据《国务院行政机构设置和编制管理条例》第20条规定：“国务院议事协调机构不单独确定编制，所需要的编制由承担具体工作的国务院行政机构解决。”故C 选项错误。\n关于D 选项，依据《国务院行政机构设置和编制管理条例》第18条第1款规定：“国务院行政机构的编制在国务院行政机构设立时确定。 ”D 选项正确。",
-      "id": "law:fakao-app:2017年客观题#二#43",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "国务院议事协调机构的撤销经由国务院常务会议讨论通过后，由国务院总理提交国务院全体会议讨论决定"
-        },
-        {
-          "label": "B",
-          "text": "国务院行政机构增设司级内设机构，由国务院机构编制管理机关提出方案，报国务院决定"
-        },
-        {
-          "label": "C",
-          "text": "国务院议事协调机构的编制根据工作需要单独确定"
-        },
-        {
-          "label": "D",
-          "text": "国务院行政机构的编制在国务院行政机构设立时确定"
-        }
-      ],
-      "source": {
-        "nativeId": "2017年客观题#二#43",
-        "path": "真题库/客观题/2017年客观题.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "关于国务院行政机构设置和编制管理的说法，下列哪一选项是正确的?",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "section:单项选择题",
-        "year:2017"
-      ],
-      "type": "single_choice",
-      "typeRaw": "单项选择题",
-      "year": 2017
     },
     {
       "answer": [
@@ -363064,6 +359335,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "思瑞公司不能清偿到期债务，债权人向法院申请破产清算。法院受理并指定了管理人。在宣告破产前，持股20%的股东甲认为如引进战略投资者乙公司，思瑞公司仍有生机，于是向法院申请重整。关于重整，下列哪一选项是正确的?",
+      "subjectId": "shangfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2017"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2017
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "证券法",
+      "chapterConfidence": "low",
+      "chapterOfficial": "证券法",
+      "difficulty": null,
+      "explanation": "《证券投资基金法》第78条规定： “按照基金合同的约定或者基金份额持有人大会的决议，基金可以转换运作方式或者与其他基金合并。”《证券投资基金法》第79条规定：“封闭式基金扩募或者延长基金合同期限，应当符合下列条件，并报国务院证券监督管理机构备案：(一)基金运营业绩良好；(二)基金管理人最近二年内没有因违法违规行为受到行政处罚或者刑事处罚；(三)基金份额持有人大会决议通过； \t(四)本法规定的其他条件。”据此，转换基金的运作方式，需要报证监会备案而不是经证监会核准，故 A 项错误。\n《证券投资基金法》第68条规定：“开放式基金应当保持足够的现金或者政府债券，以备支付基金份额持有人的赎回款项。基金财产中应当保持的现金或者政府债券的具体比例，由国务院证券监督管理机构规定。”据此，“基金利达”由封闭式基金转换为开放式基金后，应当保持一定比例的现金或政府债券，故 B 项正确。\n《证券投资基金法》第86条第3款规定：“基金份额持有人大会就审议事项作出决定，应当经参加大会的基金份额持有人所持表决权的二分之一以上通过；但是，转换基金的运作方式、更换基金管理人或者基金托管人、提前终止基金合同、与其他基金合并，应当经参加大会的基金份额持有人所持表决权的三分之二以上通过。”据此，转换基金运作方式应当由2/3以上的表决权通过而不是1/2以上的表决权通过，故 C 项错误。\nD项没有法律根据。《证券投资基金法》第76条规定了基金的信息披露义务，包括公开财务状况与财\n务报表，但基金份额持有人并无查阅或复制基金会计账簿等财务资料的权利，故 D 项错误。",
+      "id": "law:fakao-app:2017年客观题#三#33",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "须经国务院证券监督管理机构核准"
+        },
+        {
+          "label": "B",
+          "text": "转换后该基金应保持一定比例的现金或政府债券"
+        },
+        {
+          "label": "C",
+          "text": "基金份额持有人大会就该转换事宜的决定应经有效表决权的1/2以上通过"
+        },
+        {
+          "label": "D",
+          "text": "转换后基金份额持有人有权查阅或复制该基金的相关会计账簿等财务资料"
+        }
+      ],
+      "source": {
+        "nativeId": "2017年客观题#三#33",
+        "path": "真题库/客观题/2017年客观题.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "某基金管理公司在2003年曾公开发售一只名为“基金利达”的封闭式基金。该基金原定封闭期15年，现即将到期，拟转换为开放式基金继续运行。关于该基金的转换，下列哪一选项是正确的 ?",
       "subjectId": "shangfa",
       "tags": [
         "fakao-app",
@@ -363706,6 +360025,54 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "4月20日，贺某因购买制造假酒设备和原材料向宫某借款50万元，期限1年，月息2 % ,并告知 借款用途，宫某当即同意，并于次日向贺某交付现金 20万元，4月22日向贺某银行卡转账30万元。应宫某要求，董某以自己所持有某有限公司的股权为该笔贷款提供担保，A 为其办理了质押登记，下列哪些选项是正确的?",
+      "subjectId": "shangfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "section:单项选择题",
+        "year:2022"
+      ],
+      "type": "single_choice",
+      "typeRaw": "单项选择题",
+      "year": 2022
+    },
+    {
+      "answer": [
+        "B"
+      ],
+      "answerText": null,
+      "chapter": "公司法",
+      "chapterConfidence": "high",
+      "chapterOfficial": "公司法",
+      "difficulty": null,
+      "explanation": "A 项错误，《商业银行法》第二十七条第四项规定，个人所负数额较大的债务到期未清偿的，不得担任商业银行董事，该项规定与《公司法》规定一致。王虎存在大额债务到期未清偿，且属于失信名单，自然不能担任银行董事。 B 项正确，《商业银行法》第二十七条第一项规定，因犯有贪污、贿赂、侵占财产、挪用财产罪或者破坏社会经济秩序罪，被判处刑罚，或者因犯罪被剥夺政治权利的，不得担任商业银行的董事。虽然《公司法》第一百四十六条规定，犯有前述罪行，被判处刑罚的，只要执行期满五年即满足公司法的董事任职资格，但是显然商业银行法的规定更为严格。因此，张政犯有经济犯罪，且被判处刑罚，虽然执行期已满五年，但是依然不能担保商业银行董事。 C 项错误，《商业银行法》第二十七条第二项规定，担任因经营不善破产清算的公司、企业的董事、经理，并对该公司、企业的破产负有个人责任的，不得担任商业银行的董事；虽然《公司法》第一百四十六条的规定存在三年的限制，但是在商业银行法有特别规定时，应当适用商业银行法。综上所述，D 项错误。",
+      "id": "law:fakao-app:2022年客观题-回忆版#二#14",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "王虎可以担任"
+        },
+        {
+          "label": "B",
+          "text": "张政不能担任"
+        },
+        {
+          "label": "C",
+          "text": "李遥可以担任"
+        },
+        {
+          "label": "D",
+          "text": "三人均可担任"
+        }
+      ],
+      "source": {
+        "nativeId": "2022年客观题-回忆版#二#14",
+        "path": "真题库/客观题/2022年客观题-回忆版.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "2022年平昌县拟设立平昌城商银行。在筹 备中，申请人准备了向中国银行保险监督管理委员会提交的拟聘任董事名单，包括王虎、张政、李遥等三人。经调查发现，王虎系法院认定的失信人员，尚 存在大额个人债务未能执行法院判决；张政因财产犯罪，曾在十年前被判处有期徒刑一年；李遥在2010年作为某公司董事长，为弥补公司财务缺口向银行 借贷了2000余万元的资金，最终因个人原因不能偿 还导致该公司被法院裁定破产清算。关于平昌城商银行董事的职位人选，下列哪一说法是正确的?",
       "subjectId": "shangfa",
       "tags": [
         "fakao-app",
@@ -364654,248 +361021,6 @@
       "chapterOfficial": "公司法",
       "difficulty": null,
       "explanation": "",
-      "id": "law:fakao-app:2024年客观题-卷一-卷二-回忆版#一#21",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "甲公司违法。构成虚开增值税专用发票罪"
-        },
-        {
-          "label": "B",
-          "text": "乙公司违法,是虚开增值税专用发票罪的帮助犯"
-        },
-        {
-          "label": "C",
-          "text": "甲公司和乙公司是共犯,构成逃税罪"
-        },
-        {
-          "label": "D",
-          "text": "甲公司的做法没有谋取不当利益"
-        }
-      ],
-      "source": {
-        "nativeId": "2024年客观题-卷一-卷二-回忆版#一#21",
-        "path": "真题库/客观题/2024年客观题-卷一-卷二-回忆版.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "农民卖给甲公司价值300 万元的蘑菇。但是农民没有办法给甲公司开增值税专用发票。于是甲公 司找到乙公司请求帮开300万元的增值税专用发票,乙公司同意。关于甲公司的做法,下列说法正确的是?",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "year:2024",
-        "answer-missing"
-      ],
-      "type": "unknown",
-      "typeRaw": null,
-      "year": 2024
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2024年客观题-卷一-卷二-回忆版#一#27",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "甲构成受贿既遂。受贿款 1600万元"
-        },
-        {
-          "label": "C",
-          "text": "甲构成 700万元受贿既遂,"
-        },
-        {
-          "label": "D",
-          "text": "甲构成 800 万元受贿既遂。"
-        }
-      ],
-      "source": {
-        "nativeId": "2024年客观题-卷一-卷二-回忆版#一#27",
-        "path": "真题库/客观题/2024年客观题-卷一-卷二-回忆版.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "国家工作人员甲利用职务给乙提供便利, 乙给予甲一套 1600 万元的别墅, 该别墅登记在乙名下。 并且乙已支付首付加月供总计700万元。剩余 900万元继续由乙承担,案发时别墅价值 800 万元。对此, 下列说法正确是?",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "year:2024",
-        "answer-missing"
-      ],
-      "type": "unknown",
-      "typeRaw": null,
-      "year": 2024
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2024年客观题-卷一-卷二-回忆版#一#28",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "股份是分红的依据,丙还未取得分红,故不成立受贿既遂"
-        },
-        {
-          "label": "B",
-          "text": "甲。乙构成行贿未遂犯。丙构成受贿中止,因为丙自动放弃持有的代持股协议"
-        },
-        {
-          "label": "C",
-          "text": "甲。乙的行贿数额与丙的受贿数额应按代持股协议的数额计算"
-        },
-        {
-          "label": "D",
-          "text": "丙要求甲代持股份并保有两份协议的行为可评价为索取贿赂"
-        }
-      ],
-      "source": {
-        "nativeId": "2024年客观题-卷一-卷二-回忆版#一#28",
-        "path": "真题库/客观题/2024年客观题-卷一-卷二-回忆版.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲与乙成立4公司。两人为谋取不正当利益送给国家工作人员丙20%的股份。丙要求甲为自己代 持股份。甲与丙签订两份代持股协议并由丙保存。三个月后丙与甲。乙发生纠纷。丙担心甲 乙两人检举 自己受贿事实。就当着甲。乙两人的面销毁了代持股协议。下面选项正确的是?",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "year:2024",
-        "answer-missing"
-      ],
-      "type": "unknown",
-      "typeRaw": null,
-      "year": 2024
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2024年客观题-卷一-卷二-回忆版#一#70",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "行政机关制作的询问笔录"
-        },
-        {
-          "label": "B",
-          "text": "营业执照"
-        },
-        {
-          "label": "C",
-          "text": "对于有毒产品的检查报告"
-        },
-        {
-          "label": "D",
-          "text": "甲代表A公司签署的认罪认罚具结书"
-        }
-      ],
-      "source": {
-        "nativeId": "2024年客观题-卷一-卷二-回忆版#一#70",
-        "path": "真题库/客观题/2024年客观题-卷一-卷二-回忆版.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "甲是4公司的董事兼法定代表人。甲和4公司销售有毒有害产品。造成特别严重的后果。被检察院 审查起诉。法院判决死刑 最高院死刑核准。下列行政机关掌握的哪些材料可以作为刑事诉讼证据,移送 最高人民法院?",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "year:2024",
-        "answer-missing"
-      ],
-      "type": "unknown",
-      "typeRaw": null,
-      "year": 2024
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2024年客观题-卷一-卷二-回忆版#一#74",
-      "knowledgePoints": [],
-      "options": [
-        {
-          "label": "A",
-          "text": "法院"
-        },
-        {
-          "label": "B",
-          "text": "监狱"
-        },
-        {
-          "label": "C",
-          "text": "政府涉外部门"
-        },
-        {
-          "label": "D",
-          "text": "公安机关"
-        },
-        {
-          "label": "A",
-          "text": "李某发现小肖另有辩护人后,应及时向法律援助机构报告"
-        },
-        {
-          "label": "B",
-          "text": "如小肖明确拒绝合适成年人到场,检察官可不再安排合适成年人到场"
-        },
-        {
-          "label": "C",
-          "text": "如值班律师对小肖认罪认罚有异议, 小肖不需要签署具结书"
-        },
-        {
-          "label": "D",
-          "text": "法庭应在小肖最后陈述后,询问肖父是否补充陈述"
-        }
-      ],
-      "source": {
-        "nativeId": "2024年客观题-卷一-卷二-回忆版#一#74",
-        "path": "真题库/客观题/2024年客观题-卷一-卷二-回忆版.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "外国公民余某开设赌场罪和骚奸罪。被法院判处有期徒刑13年。罚金9万元。附加驱逐出境。下列 选项中属于本案执行机关的是?",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "year:2024",
-        "answer-missing"
-      ],
-      "type": "unknown",
-      "typeRaw": null,
-      "year": 2024
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
       "id": "law:fakao-app:2024年客观题-卷一-卷二-回忆版#二#5",
       "knowledgePoints": [],
       "options": [
@@ -365057,6 +361182,52 @@
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
       "stem": "落魄山有限责任公司因经营不善陷入困境, 债权人张三提起诉讼得到生效判决。并申请执行。执 行中发现: (1) 所欠张三的50万元货款, 已于去年12 月到期;(2)因公司章程规定的出资期限未至。股 东裴钱尚有 50 万元出资未缴纳。(3) 公司对外有多起案件终本执行。对此。以下说法正确的是?",
+      "subjectId": "shangfa",
+      "tags": [
+        "fakao-app",
+        "md-真题",
+        "year:2024",
+        "answer-missing"
+      ],
+      "type": "unknown",
+      "typeRaw": null,
+      "year": 2024
+    },
+    {
+      "answer": [],
+      "answerText": null,
+      "chapter": "公司法",
+      "chapterConfidence": "low",
+      "chapterOfficial": "公司法",
+      "difficulty": null,
+      "explanation": "",
+      "id": "law:fakao-app:2024年客观题-卷一-卷二-回忆版#二#18",
+      "knowledgePoints": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "因晨阳公司已进入破产程序,因此法院应驳回富民银行的起诉并要求其向管理人申报债权"
+        },
+        {
+          "label": "B",
+          "text": "因富民银行与晨阳公司的诉讼尚未完结,"
+        },
+        {
+          "label": "C",
+          "text": "富民银行需在其与晨阳公司的诉讼完结后方可申报债权"
+        },
+        {
+          "label": "D",
+          "text": "王某可在 6月30日前向法院申请债权确认"
+        }
+      ],
+      "source": {
+        "nativeId": "2024年客观题-卷一-卷二-回忆版#二#18",
+        "path": "真题库/客观题/2024年客观题-卷一-卷二-回忆版.md",
+        "repo": "fakao-app",
+        "url": "https://github.com/Methu-Xie/fakao-app"
+      },
+      "stem": "晨阳公司曾向富民锒行借款1000万元。王某为其提供一般保证。2024年1月。因晨阳公司到期 未能偿还借款 富民银行将其起诉至法院。3 月。晨阳公司向法院提出破产申请。法院裁定受理并指定了 破产管理人。5月 IS 日。壬某申报债权 1500 万元。管理人认可为 1000 万元。王某提出异议。管理人不 予理睬。6月 I5 日,第一次债权人会议完成债权核查。此时富民银行仍未申报债权,其与晨阳公司的诉 讼仍在继续。下列选项正确的是?",
       "subjectId": "shangfa",
       "tags": [
         "fakao-app",
@@ -366061,49 +362232,44 @@
     {
       "answer": [],
       "answerText": null,
-      "chapter": "企业破产法",
+      "chapter": "公司法",
       "chapterConfidence": "low",
-      "chapterOfficial": "企业破产法",
+      "chapterOfficial": "公司法",
       "difficulty": null,
       "explanation": "",
-      "id": "law:fakao-app:2025年客观题-卷一-回忆版#一#72",
+      "id": "law:fakao-app:2024年客观题-卷一-卷二-回忆版#二#95",
       "knowledgePoints": [],
       "options": [
         {
-          "label": "A",
-          "text": "甲以个人名义借出去单位的资金，构成挪用资金罪"
-        },
-        {
           "label": "B",
-          "text": "甲构成受贿罪"
+          "text": "经调查后。可对四家公司负责人处以罚款"
         },
         {
           "label": "C",
-          "text": "甲构成贪污罪"
+          "text": "启动调杳前,"
         },
         {
           "label": "D",
-          "text": "甲应当数罪并罚"
+          "text": "经调查后,可对四家公司处以罚款"
         }
       ],
       "source": {
-        "nativeId": "2025年客观题-卷一-回忆版#一#72",
-        "path": "真题库/客观题/2025年客观题-卷一-回忆版.md",
+        "nativeId": "2024年客观题-卷一-卷二-回忆版#二#95",
+        "path": "真题库/客观题/2024年客观题-卷一-卷二-回忆版.md",
         "repo": "fakao-app",
         "url": "https://github.com/Methu-Xie/fakao-app"
       },
-      "stem": "甲是国有企业的经理（属于国家工作人员），民营企业老板乙找到甲想要获取工程。甲利用职务便利，以个人名义将国有企业的资金200万元借给乙，约定利息按3倍 LPR 计算。后债务期限届满，乙公司经营不善无法偿还。甲与乙商量，让乙向甲的国有企业借款300万元，甲利用职务便利促使国有企业借款给乙，乙随后用这300万元偿还了欠甲的个人债务（本金和利息）。此后，乙公司因经营不力破产，导致国有企业300万元借款无法收回。下列说法正确的是？",
+      "stem": "某省汽车工业协会负责人郭某, 召集省内四家新能源汽车公司的负责人,签订了《新能源汽车行 业维护公平市场秩序承诺书》。提出共度时艰。共谋发展。四家公司对旗下所有新能源汽车的降价幅度不 得高于5%。统计显示。四家公司在省内新能源汽车市场的占有率合计达75%。依据《反垄断法》。该省市 场监管局接到举报后。关于其针对上述行为可以采取的措施。下列说法正确的是? 经调查后,可对汽车工业协会处以罚款 第38页:",
       "subjectId": "shangfa",
       "tags": [
         "fakao-app",
         "md-真题",
-        "section:多项选择题",
-        "year:2025",
+        "year:2024",
         "answer-missing"
       ],
-      "type": "multiple_choice",
-      "typeRaw": "多项选择题",
-      "year": 2025
+      "type": "unknown",
+      "typeRaw": null,
+      "year": 2024
     },
     {
       "answer": [],
@@ -367019,66 +363185,6 @@
       "chapterOfficial": "公司法",
       "difficulty": null,
       "explanation": "",
-      "id": "law:fakao-app:2002年主观题卷四#subj#17",
-      "knowledgePoints": [],
-      "options": [],
-      "source": {
-        "nativeId": "2002年主观题卷四#subj#17",
-        "path": "真题库/主观题/2002年主观题卷四.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "1、不可以。生产经营为主的公司注册资本需要人民币 五十万元。该公司的实际注册资本为49万，因此，不能 成立。 2、对作为出资的实物、工业产权、非专利技术或者土 地使用权，必须进行评估作价，核实财产，不得高估或 者低估作价。土地使用权的评估作价，依照法律、行政 法规的规定办理。以实物、工业产权、非专利技术或者 土地使用权出资的，应当依法办理其财产权的转移手续 。 3、股东应当足额缴纳公司章程中规定的各自所认缴的 出资额。股东以货币出资的，应当将货币出资足额存入 准备设立的有限责任公司在银行开设的临时帐户，股东 不按照前款规定缴纳所认缴的出资，应当向已足额缴纳 出资的股东承担违约责任。 N lQøSàz t„vÓY N ûNlQøSÅ_{˜¥b经审批的，还应当提交有关的批准文件。 5、 不符合。法律要求不能超过20%，而协议出资为52万，15 万的出资已经超过了20%的比例。",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "subjective",
-        "year:2002",
-        "answer-unmatched"
-      ],
-      "type": "comprehensive",
-      "typeRaw": "（本题10分）",
-      "year": 2002
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2003年主观题卷三#subj#1",
-      "knowledgePoints": [],
-      "options": [],
-      "source": {
-        "nativeId": "2003年主观题卷三#subj#1",
-        "path": "真题库/主观题/2003年主观题卷三.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "。本部分1—30题，每题1分，共30分。 1.甲、乙、丙共有一套房屋，其应有部分各为1／3。为 提高房屋的价值，甲主张将此房的地面铺上木地板，乙 表示赞同，但丙反对。下列选项哪一个是正确的？ A.因没有经过全体共有人的同意，甲乙不得铺木地板 B.因甲乙的应有部分合计已过半数，故甲乙可以铺木地 板 C.甲乙只能在自己的应有部分上铺木地板 D.若甲乙坚持铺木地板，则需先分割共有房屋 2.小女孩甲（8岁）与小男孩乙（12岁）放学后常结伴回 家。一日，甲对乙讲：“听说我们回家途中的王家昨日 买了一条狗，我们能否绕道回家？”乙答：“不要怕！ 被狗咬了我负责。”后甲和乙路经王家同时被狗咬伤住 院。该案赔偿责任应如何承担？ A.甲和乙明知有恶犬而不绕道，应自行承担责任 B.乙自行承担责任，乙的家长和王家共同赔偿甲的损失 C.王家承担全部赔偿责任 D.甲、乙和王家均有过错，共同分担责任 3.甲公司得知乙公司正在与丙公司谈判。甲公司本来并 不需要这个合同，但为排挤乙公司，就向丙公司提出了 更好的条件。乙公司退出后，甲公司也借故中止谈判， 给丙公司造成了损失。甲公司的行为如何定性？ A.欺诈 B.以合法形式掩盖非法目的 C.恶意磋商 D.正常的商业竞争 4.甲（男，22周岁）为达到与乙（女，19周岁）结婚的目 的，故意隐瞒乙的真实年龄办理了结婚登记。两年后， 因双方经常吵架，乙以办理结婚登记时未达到法定婚龄 为由向法院起诉，请求宣告婚姻无效。人民法院应如何 处理？ A.以办理结婚登记时未达到法定婚龄为由宣告婚姻无效 B.对乙的请求不予支持 C.宣告婚姻无效，确认为非法同居关系，并予以解除 D.认定为可撤销婚姻，乙可行使撤销权 5.甲欲购买乙的汽车。经协商，甲同意3天后签订正式的 买卖合同，并先交1000元给乙，乙出具的收条上写明为 “收到甲订金1000元。”3天后，甲了解到乙故意隐瞒了 该车证照不齐的情况，故拒绝签订合同。下列哪一个说 法是正确的？ A.甲有权要求乙返还2000元并赔偿在买车过程中受到的损 失 B.甲有权要求乙返还1000元并赔偿在买车过程中受到的损 失 C.甲只能要求乙赔偿在磋商买车过程中受到的损失 D.甲有权要求乙承担违约责任 6.依我国法律，当事人对下列哪一合同可以请求人民法 院或仲裁机构变更或撤销？ A.因重大误解订立的合同 B.包含因重大过失造成对方财产损失的免责条款的合同 C.因欺诈而订立且损害国家利益的合同 D.无权代理订立的合同 7.周某与林某协议离婚时约定，孩子归女方林某抚养， 周某每年给付1000元抚养费。离婚后，因林某将孩子由 姓周改姓林，周某就停止给付抚养费。因这一年年景不 好，周某就将卖粮仅得的1000元捐献给了希望工程，自 己出去打工了。林某能请求法院撤销该赠与吗？ A.不能，因为赠与物已经交付 B.不能，因为是公益性捐赠 C.不能，因为周某处分的是自己的合法财产 D.能，因为周某逃避法定义务进行赠与 8.甲为了能在自己的房子里欣赏远处的风景。便与相邻 的乙约定：乙不在自己的土地上从事高层建筑；作为补 偿，甲每年支付给乙4000元。两年后，乙将该土地使用 权转让给丙。丙在该土地上建了一座高楼，与甲发生了 纠纷。对此纠纷，下列判断哪一个是正确的？ A.甲对乙的土地不享有地役权 B.甲有权不让丙建高楼，但得每年支付其4000元 C.丙有权建高楼，但须补偿甲由此受到的损失 D.甲与乙之间的合同因没有办理登记而无效 9.甲被宣告死亡后，其妻乙改嫁于丙，其后丙死亡。1年 后乙确知甲仍然在世，遂向法院申请撤销对甲的死亡宣 告。依我国法律，该死亡宣告撤销后，甲与乙原有的婚 姻关系如何？ A.自行恢复 B.不得自行恢复 C.经乙同意后恢复 D.经甲同意后恢复 ñ]„v¾‹¡‹ºNXT¾‹¡‹?z T¹eù[W„\\OCg„vR_^\\ÑSu†NN®‹0,gHh-NW„\\OCg”^R_^\\ŽNUO人 ？ A.红旗中学 B.工艺美术院 C.李某 D.三方共有 11.周某以公司债券出质，债券上未进行任何记载。周某 按约定将债券交付给质权人。下列说法哪项是正确的？ A.质押合同成立但不生效 B.质押合同不成立 C.质押合同生效，但不具有对抗效力 D.质押合同生效且具有对抗效力 12.甲于1999年3月1日开始使用“建华”牌商标，乙于同年 4月1日开始使用相同的商标。甲、乙均于2000年5月1日向 商标局寄出注册“建华”商标的申请文件，但甲的申请 文件于5月8日寄至，乙的文件于5月5日寄至。商标局应 初步审定公告谁的申请？ A.同时公告，因甲、乙申请日期相同 B.公告乙的申请，因乙申请在先 C.公告甲的申请，虽然甲、乙同时申请，但甲使用在先 D.由商标局自由裁定 13.住所地在长春的四海公司在北京设立了一家分公司。 该分公司以自己的名义与北京实达公司签订了一份房屋 租赁合同，租赁实达公司的楼房一层，年租金为30万元 。现分公司因拖欠租金而与实达公司发生纠纷。下列判 断哪一个是正确的？ A.房屋租赁合同有效，法律责任由合同的当事人独立承 担 B.该分公司不具有民事主体资格，又无四海公司的授权 ，租赁合同无效 C.合同有效，依该合同产生的法律责任由四海公司承担 D.合同有效，依该合同产生的法律责任由四海公司及其 分公司承担连带责任 14.公民甲通过保险代理人乙为其5岁的儿子丙投保一份 幼儿平安成长险，保险公司为丁。下列有关本事例的哪 一表述是正确的？ A.该份保险合同中不得含有以丙的死亡为给付保险金条 件的条款 B.受益人请求丁给付保险金的权利自其知道保险事故发 生之日起5年内不行使而消灭 C.当保险事故发生时，乙与丁对给付保险金承担连带赔 偿责任 D.保险代理人乙只能是依法成立的公司，不能是个人 15.张某向李某背书转让面额为10万元的汇票作为购买房 屋的价金，李某接受汇票后背书转让给第三人。如果张 某与李某之间的房屋买卖合同被合意解除，则张某可以 行使下列哪一权利？ A.请求李某返还汇票 B.请求李某返还10万元现金 C.请求从李某处受让汇票的第三人返还汇票 D.请求付款人停止支付票据上的款项 16.某合伙组织起字号为“兴达商行”，其中甲出资60％ ，乙、丙各出资20％，甲被推举为负责人。在与兴达商 行的债务人丁的一场诉讼中，甲未与乙、丙商量而放弃 兴达商行对丁的债权5万元，乙、丙知道后表示反对。 甲放弃债权的行为的效力应如何认定？ A.是有效行为 B.是无效行为 C.是可撤销行为 D.是效力未定行为 17.乙公司在与甲公司交易中获金额为300万元的汇票一张 ，付款人为丙公司。乙公司请求承兑时，丙公司在汇票 上签注：“承兑。甲公司款到后支付。”下列关于丙公 司付款责任的表述哪个是正确的？ A.丙公司已经承兑，应承担付款责任 B.应视为丙公司拒绝承兑，丙公司不承担付款责任 C.甲公司给丙公司付款后，丙公司才承担付款责任 D.按甲公司给丙公司付款的多少确定丙公司应承担的付 款责任 18.陈某将自己的轿车投保于保险公司。一日，其车被房 东之子（未成年）损坏，花去修理费1500元。陈遂与房 东达成协议：房东免收陈某2个月房租1300元，陈不再要 求房东赔偿修车费。后陈某将该次事故报保险公司要求 索赔。在此情形下，以下哪一个判断是正确的？ A.保险公司应赔偿1500元 B.保险公司应赔偿200元 C.保险公司应赔偿1300元 D.保险公司不再承担赔偿责任 19.下列所作的各种关于公司的分类，哪一种是以公司的 信用基础为标准的分类？ A.总公司与分公司 B.母公司与子公司 C.人合公司与资合公司 D.封闭式公司与开放式公司 20.某外国公司在向我国政府申请设立外资企业时，存在 以下情况，请问其中哪一项违反了我国法律的规定？ A.该外资企业由申请人独家出资设立 B.申请人要求将该外资企业登记为有限责任公司 C.申请人声明该外资企业将采用先进技术和设备，但其 产品仅有40％出口 D.申请人声明该外资企业的各项保险将向中国境外的保 险公司投保 21.甲与同事丙路过一居民楼时，三楼乙家阳台上的花盆 坠落，砸在甲的头上，致其脑震荡，共花费医疗费1万 元。甲以乙为被告诉至法院要求赔偿，而乙否认甲受伤 系自家花盆坠落所致。对这一争议事实，应由谁承担举 证责任？ A.甲承担举证责任 B.甲、乙均应承担举证责任 C.乙承担举证责任 D.丙作为证人承担举证责任 22.甲婚后经常被其丈夫乙打骂，向某区人民法院提起离 婚诉讼，该区人民法院审理后认为双方感情确已破裂， 判决准予离婚，并对共有财产进行了分割。甲认为区人 民法院对财产的处理不公平，于是向中级人民法院提起 上诉。在二审审理期间，乙因意外事故死亡，二审法院 遂裁定终结诉讼。关于本案，下列何种说法是正确的？ A.二审法院裁定终结诉讼后，区人民法院的离婚判决即 发生法律效力 B.二审法院裁定终结诉讼后，区人民法院的离婚判决不 发生法律效力 C.区人民法院的离婚判决是否发生法律效力，取决于上 诉期间是否届满，只要上诉期间届满，该判决即发生法 律效力 D.区人民法院的判决中，解除婚姻关系的部分发生法律 效力，而财产分割部分不发生法律效力 23.拓海公司系私营独资企业，因欠债被诉诸法院，后被 判令履行金钱给付义务。履行期限届满后，拓海公司仍 未还债。经债权人申请，人民法院对其予以强制执行。 经查，该公司无偿还能力。在下列后续措施中何种是正 确的？ A.裁定中止执行，待被执行人有履行能力时再恢复执行 B.裁定终结执行 C.裁定宣告该公司破产 D.裁定执行该公司投资人的其他财产 24.郑某诉刘某离婚一案，一审法院判决不准离婚。郑某 不服提出上诉。二审法院审理后认为当事人双方感情确 已破裂，应当判决离婚。二审法院采取以下何种做法是 正确的？ A.直接改判离婚，子女抚养和财产问题另案解决 B.直接改判离婚，子女抚养和财产问题一并判决 C.在当事人自愿的情况下，通过调解解决离婚、子女抚 养和财产分割问题，调解不成的，发回重审 D.只对离婚事项作出判决，子女抚养和财产分割问题发 回重审 25.居住在甲市的吴某与居住在乙市的王某在丁市签订了 一份协议，吴某将一幅名人字画以10万元的价格卖给王 某并约定双方在丙市一手交钱一手交货，后吴某翻悔并 电告王某自己已将字画卖给他人。王若想追究吴的违约 责任，应向何地法院起诉？ A.甲市法院 B.乙市法院 C.丙市法院 D.丁市法院 26.个体工商户崔某从1994年起在某市经营一饭店，领有 营业执照，1997年因妻子生病急需用钱因而将饭店转让 给赵某经营，但双方并未到工商局办理营业执照的更名 手续。赵某经营过程中，致使多名顾客食物中毒，这些 顾客决定向法院起诉要求赔偿损失。此案中当事人的诉 讼地位应如何确定？ A.顾客是原告，赵某是被告，崔某与本案无关 B.顾客是原告，崔某是被告，赵某与本案无关 C.顾客是原告，崔某与赵某是共同被告 D.顾客是原告，赵某是被告，崔某是无独立请求权的第 三人 27.甲乙发生口角，乙将甲房屋的门窗砸坏。甲起诉要求 乙赔偿财产损失，法院审理后，判决认定甲的诉讼请求 成立。判决生效后，甲认为自己不仅财产上受到损失， 精神上也受到损害，于是又向法院起诉，要求乙赔偿因 该侵权行为导致的精神损害。关于本案，以下何种观点 是正确的？ A.精神损害应当予以赔偿，人民法院对甲的起诉应当受 理 B.甲未在前诉中主张精神损害赔偿，判决生效后又基于 同一侵权事实起诉精神损害赔偿，人民法院不应当受理 C.对于该起诉是否受理，要区分受害人甲是否在诉前意 识到精神损害的存在。如果没有意识到，就可以向法院 起诉；如果已经意识到，但当时没有请求的，人民法院 不应当受理 D.在前诉中没有提出精神损害赔偿请求，但声明保留的 ，人民法院对关于精神损害的起诉应予受理 28.甲乙两公司因贸易合同纠纷进行仲裁，裁决后甲公司 申请执行仲裁裁决，乙公司申请撤销仲裁裁决，此时受 理申请的人民法院应如何处理？ A.裁定撤销裁决 B.裁定终结执行 C.裁定中止执行 D.将案件移交上级人民法院处理 29.人民法院在审查民事起诉时，发现当事人起诉已经超 过了诉讼时效，在这种情况下，人民法院应当如何处理 ？ A.通知当事人已经超过诉讼时效，不予受理 B.裁定不予受理 C.应予受理，审理后确认超过诉讼时效的，判决驳回诉 讼请求 D.应予受理，审理后确认超过诉讼时效的，裁定驳回起 诉 30.刘某夫妻与杨某是大学同学，关系甚密。后来刘某与 杨某在生意中发生纠纷，刘某起诉至法院，要求杨某给 付货款4000元。法院受理后依法开庭审理，在审理中杨 某提出刘某的妻子曾向其借款5000元，至今未还，要求 刘某夫妻用货款抵债并偿还其余1000元。法院对此应如 何处理？ A.将杨某的请求作为反诉与原诉讼合并审理 B.中止给付货款的诉讼 C.追加刘某的妻子为第三人 D.告知被告杨某另行起诉",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "subjective",
-        "year:2003",
-        "answer-unmatched"
-      ],
-      "type": "comprehensive",
-      "typeRaw": "单项选择题，每题所给的选项中只有一个正确答案",
-      "year": 2003
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
       "id": "law:fakao-app:2003年主观题卷四#subj#5",
       "knowledgePoints": [],
       "options": [],
@@ -367130,36 +363236,6 @@
       "type": "comprehensive",
       "typeRaw": "（本题11分）",
       "year": 2003
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2004年主观题卷三#subj#3",
-      "knowledgePoints": [],
-      "options": [],
-      "source": {
-        "nativeId": "2004年主观题卷三#subj#3",
-        "path": "真题库/主观题/2004年主观题卷三.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "正确答案，少答或多答均不得分。本部分81—100题，每 题2分，共40分。 （一） 2000年2月，甲公司与乙公司签订施工合同，约定由乙公 司为甲建房一栋。乙与丙签订《内部承包协议》，约定 由丙承包建设该楼房并承担全部经济和法律责任，乙收 取丙支付的工程价款总额5％的管理费。丙实际施工至 主体封顶。2004年1月，乙向法院起诉请求甲支付拖欠工 程款并解除施工合同。甲辩称乙起诉时已超过2年诉讼 时效，要求法院驳回乙的诉讼请求。请回答以下81—84 题。 81．下列关于乙与丙签订的《内部承包协议》的说法， 何者正确？ A.该《协议》为转包合同，有效 B.该《协议》为转包合同，无效 C.该《协议》为分包合同，有效 D.该《协议》为违法分包合同，无效 82．下列关于合同解除的说法，何者正确？ A.乙起诉请求解除合同时已超过诉讼时效 B.乙起诉请求解除合同时未超过诉讼时效 C.乙起诉请求解除合同不适用诉讼时效规定 D.乙起诉请求解除合同适用特殊诉讼时效规定 83．下列关于丙在本案中的诉讼地位的说法，何者正确 ？ A.可以作为原告以甲为被告提起诉讼 B.法院应将其追加为共同原告 C.法院应将其追加为共同被告 D.可以作为无独立请求权的第三人申请参加诉讼 84．下列说法何者正确？ A.乙有权对讼争楼房折价或拍卖的价款优先受偿 B.乙无权对讼争楼房折价或拍卖的价款优先受偿 C.丙有权对讼争楼房折价或拍卖的价款优先受偿 D.丙无权对讼争楼房折价或拍卖的价款优先受偿 （二） 2ulQøS 00年12月丁公司也根据该杂志开始生产该节油装置。2003 年5月7日国务院专利行政部门授予甲公司发明专利，2003 年7月甲公司向法院提起诉讼，分别要求丙公司和丁公 司停止侵害并赔偿损失。请回答以下85—88题。 85．在丙公司已研制出样品，丁公司已开始生产的情况 下，甲公司的发明为何仍因具有新颖性而被授予专利权 ？ A.因该发明在申请日前未在国内公开 B.因该发明在申请日前未在国际上公开使用 C.因该发明的核心技术在论文中被透露未经甲公司同意 D.因该发明达到国际领先水平 86．甲公司能否要求丙公司停止侵害并赔偿损失？ A.甲公司有权要求丙公司停止侵害并赔偿损失 B.甲公司有权要求丙公司停止侵害，但无权要求赔偿损 失 C.甲公司无权要求，因丙公司有权在2004年5月7日前制造 该专利产品 D.甲公司无权要求，因丙公司有权在原有范围内继续制 造该专利产品 87．丁公司实施甲公司发明的行为是否构成侵权行为？ A.构成侵权行为 B.不构成侵权行为 C.2003年5月7日后的实施行为构成侵权行为 D.2003年7月后的实施行为构成侵权行为 88．甲公司可以在起诉前向法院申请采取什么措施保护 自己的合法权益？ A.申请诉前禁令 B.申请诉前先予执行 C.申请诉前财产保全 D.申请诉前证据保全 （三） ºN:Ny{žR°eGY¡€ýNlQøSqQT6R¢‹†NlQøSàz T登记机关提出了设立公司的申请。请回答以下89—93题 。 89．对碧海公司等3家国有企业设立股份有限公司的申请 ，公司登记机关的下列何种答复是正确的？ A.设立股份有限公司一般至少应有5家发起人，3家发起 人不能设立股份有限公司 B.由于本案属于国有企业改建为股份公司，因此发起人 可以为3人 C.因为是国有企业改建为股份公司，故新奇公司只能采 用发起设立方式 D.国有企业改建为股份公司，发起人若少于5人，应采用 募集设立方式 90．碧海公司拟认购新奇公司股份1亿元以成为第一大股 东，但其主要是以厂房、设备、专利技术和土地使用权 等非货币形式出资。对碧海公司的这种出资，下列何种 意见符合我国《公司法》的规定？ A.进行评估作价，核实财产，并折合成一定股份 B.考虑到专利技术的市场前景，允许高于评估值协商作 价 C.新奇公司是高新技术企业，其专利技术的出资比例可 超出其注册资本20％的比例限制，但不得超过国务院规 定的比例 D.必须依法办理厂房、设备、专利技术和土地使用权的 财产权转移手续 91．新奇公司召开创立大会时通过了公司章程，但参会 股东仅代表新奇公司股份总额的60％，公司登记机关按 该章程准予新奇公司登记并颁发营业执照后，该章程效 力如何？ A.对新奇公司产生效力 B.只对召开公司创立大会时的股东有约束力 C.新奇公司的董事、经理和监事必须遵守 D.对新奇公司的债权人也有一定的约束力 92．现新奇公司业已成立，其股票获准上市交易，大股 东碧海公司欲将其持有的1亿股法人股减少至6000万股。 对碧海公司减持股份的计划，下列说法何者正确？ A.碧海公司须经新奇公司股东大会同意才能出售其所持 股份 B.碧海公司要等新奇公司成立3年后才能出售其所持股份 C.碧海公司原则上只能原价出售股份，若加价出售，应 征得新奇公司董事会的同意 D.碧海公司必须将其法人股分期分批出售，不得一次性 出售 93．碧海公司减持新奇公司法人股后，将所获资金用于 购买了600万股新奇公司的社会公众股，3个月后，碧海 公司将该600万股社会公众股卖出，获利1800万元。对碧 海公司的这一买卖行为应如何处理？ A.碧海公司违法操作，1800万元收益应收缴国库 B.碧海公司违规操作，应处以违法所得1倍以上5倍以下 的罚款 C.碧海公司有权自由买卖新奇公司股票，故1800万元收益 应归碧海公司所有 D.碧海公司可以买卖新奇公司股票，但所获1800万元收益 应归新奇公司所有 （四） 某纺织公司诉某服装公司欠款20万元，法院判决纺织公 司胜诉，执行过程中法院发现服装公司无力偿还，但某 商场欠服装公司货款10万元，早已到期，一直未还。请 回答以下94—97题。 94．此种情况下，谁可以提出执行商场的到期债务？ A.纺织公司 B.服装公司 C.法院依职权主动执行 D.法院征得商场同意予以执行 95．法院如果执行商场对服装公司的到期债务，应当通 知商场向谁履行？ A.纺织公司 B.服装公司 C.纺织公司或服装公司 D.向法院交付，然后再由法院转交 96．商场在履行通知指定的期间内提出异议的，法院应 当如何处理？ A.对异议进行审查，异议成立的，停止执行 B.对异议进行审查，异议不成立的，予以强制执行 C.对异议不进行审查，但也不得强制执行 D.商场对债务部分承认、部分有异议的，可以对其承认 的部分强制执行 97．商场如提出下列意见，何者不构成异议？ A.商场与纺织公司之间不存在债权债务关系 B.商场没有偿还能力 C.商场与服装公司之间互有债务拖欠，债务抵消后，商 场不欠服装公司款项 D.服装公司的服装不合格，商场对所欠服装公司10万元 的货款不同意支付 （五） 某省电视剧制作中心摄制的作品《星空》正式播出前， 邻省的某音像公司制作了盗版光盘。制作中心发现后即 向音像公司所在地的某区法院起诉，并在法院立案后， 请求法院裁定音像公司停止生产光盘。音像公司在接到 应诉通知书及停止生产光盘的裁定后，认为自己根本不 是盗版，故继续生产光盘。请回答以下98—100题。 98．对于本案，何种确定管辖的方式是正确的？ A.以被告所在地确定管辖法院 B.以该光盘销售地确定管辖法院 C.以光盘生产地确定管辖法院 D.以原告所在地确定管辖 99．法院裁定音像公司停止生产光盘是什么措施？ A.诉前财产保全 B.诉讼财产保全 C.证据保全 D.先予执行 100．被告在法院作出停止生产光盘的裁定后仍继续生产 ，法院可如何处理？ A.尽快判决被告败诉并开始执行 B.采取强制执行措施 C.对主要负责人或直接责任人员实施拘留 D.对音像公司处以罚款 参 考 答 案",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "subjective",
-        "year:2004",
-        "answer-unmatched"
-      ],
-      "type": "comprehensive",
-      "typeRaw": "不定项选择题，每题所给选项中有一个或一个以上",
-      "year": 2004
     },
     {
       "answer": [],
@@ -367229,66 +363305,6 @@
       "chapterOfficial": "公司法",
       "difficulty": null,
       "explanation": "",
-      "id": "law:fakao-app:2005年主观题卷四#subj#3",
-      "knowledgePoints": [],
-      "options": [],
-      "source": {
-        "nativeId": "2005年主观题卷四#subj#3",
-        "path": "真题库/主观题/2005年主观题卷四.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "T N)R O3u÷‹£[JTå‹ N)RàeHe，理由是丁公司已于1999年12月20日开始生产相同 的灯具并在市场上销售，该发明不具有新颖性。经查， 丁公司在获悉甲公司开发出新型灯具后，以不正当手段 获取了甲公司的有关技术资料并一直在生产、销售该新 型灯具。 问题： 1．唐某作为发明人，依法应享有哪些权利？ 2．甲公司在未获得专利前，与乙公司签订的专利实施 许可合同是否有效？如甲乙双方因此合同发生纠纷，应 如何适用有关法律？ 3．甲公司为何将专利技术出让给唐某？该专利技术转 让合同成立后，对甲公司和乙公司之间的专利实施许可 合同的效力有何影响？ 4．唐某拟以该专利作价80万元设立注册资本为300万元的 有限责任公司，是否符合法律规定？为什么？ 5．该专利是否应当因为不具有新颖性而被宣告无效？ 为什么？ 6．对丁公司的违法行为应如何定性？为什么？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "subjective",
-        "year:2005",
-        "answer-unmatched"
-      ],
-      "type": "comprehensive",
-      "typeRaw": "（本题18分）",
-      "year": 2005
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2005年主观题卷四#subj#4",
-      "knowledgePoints": [],
-      "options": [],
-      "source": {
-        "nativeId": "2005年主观题卷四#subj#4",
-        "path": "真题库/主观题/2005年主观题卷四.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "R+R°‹ŽN*NºN T O¨‹º‹€/f董事会为了公司利益在征得周某同意后 决定实施的。后法院判决该公司偷税罪成立，判处公司 罚金140万元，宋某等亦分别被判处相应的刑罚。 问题： 1．宋某、周某、李某、王某在1998年改制时所取得的股 权是否有效？为什么？ 2．川南公司的管理机构设置及人事安排是否合法？为 什么？ 3．川南公司董事会的增资决议和公司的增资行为是否 有效？为什么？ 4．蓝某可否根据补偿协议获得王某所持股权的50%？为 什么？ 5．川南公司因被判处罚金所造成的140万元损失，应由 谁承担赔偿责任？为什么？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "subjective",
-        "year:2005",
-        "answer-unmatched"
-      ],
-      "type": "comprehensive",
-      "typeRaw": "（本题15分）",
-      "year": 2005
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
       "id": "law:fakao-app:2005年主观题卷四#subj#11",
       "knowledgePoints": [],
       "options": [],
@@ -367310,66 +363326,6 @@
       "type": "comprehensive",
       "typeRaw": "（本题18分）",
       "year": 2005
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2005年主观题卷四#subj#12",
-      "knowledgePoints": [],
-      "options": [],
-      "source": {
-        "nativeId": "2005年主观题卷四#subj#12",
-        "path": "真题库/主观题/2005年主观题卷四.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "„vÅ`µQ R‹N责任外，可以收缴其股权用于偿还被挪用资金，但 此时只涉及股权转让问题，而不是股权无效。均可得分 。 2. 公司管理机构设置合法；公司管理人员安排不合法。公 司财务负责人不能担任监事，也不能担任监事会主席。 3. 无效。公司注册资本的增加应由股东会作出决议，该决 议应在股东会上经代表2/3以上表决权的股东通过方为有 效。川南公司董事会成员及监事会主席虽代表公司2/3以 上的表决权，但不能就增资事项作决议，故该决议无效 。基于无效决议而实施的增资行为也应归于无效。 4. 不能。离婚协议约定的是由王某补偿其25万元现金，王 某将股权抵偿给蓝某的实质是股权的对外转让；按照公 司法的规定，有限公司股东对外出让股权应经过公司全 体股东过半数同意，董事会无权批准股东对外转让股权 。 5. 应由宋某、李某、王某、周某等4人承担。公司的损失 源于公司犯罪被判处的罚金，宋某等人担任执行董事、 监事、经理职务时违法是导致这一损失的直接原因，故 该损失应由宋某等4人承担。",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "subjective",
-        "year:2005",
-        "answer-unmatched"
-      ],
-      "type": "comprehensive",
-      "typeRaw": "（本题15分）",
-      "year": 2005
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "high",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2006年主观题卷四#subj#2",
-      "knowledgePoints": [],
-      "options": [],
-      "source": {
-        "nativeId": "2006年主观题卷四#subj#2",
-        "path": "真题库/主观题/2006年主观题卷四.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "案情：甲公司签发金额为1000万元、到期日为2006年5 月30日、付款人为大满公司的汇票一张，向乙公司购买A 楼房。甲乙双方同时约定：汇票承兑前，A楼房不过户 。 其后，甲公司以A楼房作价1000万元、丙公司以现金1 000万元出资共同设立丁有限公司。某会计师事务所将未 过户的A楼房作为甲公司对丁公司的出资予以验资。丁 公司成立后占有使用A楼房。 2005年9月，丙公司欲退出丁公司。经甲公司、丙公 司协商达成协议：丙公司从丁公司取得退款1000万元后 退出丁公司；但顾及公司的稳定性，丙公司仍为丁公司 名义上的股东，其原持有丁公司50%的股份，名义上仍由 丙公司持有40%，其余10%由丁公司总经理贾某持有，贾某 暂付200万元给丙公司以获得上述10%的股权。丙公司依此 协议获款后退出，据此，丁公司变更登记为：甲公司、 丙公司、贾某分别持有50%、40%和10%的股权；注册资本仍 为2000万元。 丙公司退出后，甲公司要求丁公司为其贷款提供担 保，在丙公司代表未到会、贾某反对的情况下，丁公司 股东会通过了该担保议案。丁公司遂为甲公司从B银行 借款500万元提供了连带责任保证担保，同时，乙公司亦 将其持有的上述1000万元汇票背书转让给陈某。陈某要 求丁公司提供担保，丁公司在汇票上签注：\"同意担保 ，但A楼房应过户到本公司。\"陈某向大满公司提示承兑 该汇票时，大满公司在汇票上批注：\"承兑，到期丁公 司不垮则付款。\" n—{Ä~3u÷‹Lˆ使取回权。 问题： 1．丁公司的设立是否有效？为什么？ 2．丙退出丁公司的做法是否合法？为什么？ 3．丁公司股东会关于为甲公司提供担保的决议是 否有效？为什么？ 4．陈某和贾某所申报的债权是否构成破产债权？ 为什么？ 5．B银行和乙公司的请求是否应当支持？为什么？ 6．各债权人若在破产程序中得不到完全清偿，还可以 向谁追索？他们各自应承担什么责任？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "subjective",
-        "year:2006",
-        "answer-unmatched"
-      ],
-      "type": "comprehensive",
-      "typeRaw": "（本题20分）",
-      "year": 2006
     },
     {
       "answer": [],
@@ -367430,36 +363386,6 @@
       "type": "comprehensive",
       "typeRaw": "（本题20分）",
       "year": 2007
-    },
-    {
-      "answer": [],
-      "answerText": null,
-      "chapter": "公司法",
-      "chapterConfidence": "low",
-      "chapterOfficial": "公司法",
-      "difficulty": null,
-      "explanation": "",
-      "id": "law:fakao-app:2008年主观题卷四#subj#2",
-      "knowledgePoints": [],
-      "options": [],
-      "source": {
-        "nativeId": "2008年主观题卷四#subj#2",
-        "path": "真题库/主观题/2008年主观题卷四.md",
-        "repo": "fakao-app",
-        "url": "https://github.com/Methu-Xie/fakao-app"
-      },
-      "stem": "„v TINÎNlQøS„vvQÖNlQ>k中取出1万元送给周某。周某收下 该款后，出具了隐瞒该100万元虚假的应付款的评估报告 。随后，国有资产管理部门经研究批准了公司的改制方 案。在尚未办理产权过户手续时，徐某等人因被举报而 案发。 问题： 1.徐某与顾某构成贪污罪还是私分国有资产罪？为 什么？ 2.徐某与顾某的犯罪数额如何计算？为什么？ 3.徐某与顾某的犯罪属于既遂还是未遂？为什么？ 4.给周某送的1万元是单位行贿还是个人行贿？为什 么？ 5.周某的行为是否以非国家工作人员受贿罪与提供 虚假证明文件罪实行数罪并罚？为什么？ 6.周某是否构成徐某与顾某的共犯？为什么？",
-      "subjectId": "shangfa",
-      "tags": [
-        "fakao-app",
-        "md-真题",
-        "subjective",
-        "year:2008",
-        "answer-unmatched"
-      ],
-      "type": "comprehensive",
-      "typeRaw": "（本题20分）",
-      "year": 2008
     },
     {
       "answer": [],
