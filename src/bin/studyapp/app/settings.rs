@@ -233,6 +233,7 @@ impl App {
                     ui.end_row();
                 };
                 row(ui, "应用名称", APP_TITLE.to_string());
+                row(ui, "版本", env!("CARGO_PKG_VERSION").to_string());
                 row(ui, "法考数据", self.law_root.display().to_string());
                 row(ui, "注会数据", self.cpa_root.display().to_string());
                 row(ui, "状态目录", self.state_dir.display().to_string());
