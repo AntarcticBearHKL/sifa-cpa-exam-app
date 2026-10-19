@@ -765,11 +765,13 @@ impl App {
                 .rect_filled(rule, 0.0, tokens.palette.glass.divider);
             ui.add_space(tokens.space.sm);
             ui.horizontal_wrapped(|ui| {
-                ui.label(
-                    RichText::new("来源/出处：")
-                        .size(12.5)
-                        .color(tokens.palette.ink.secondary),
-                );
+                // Every part is a `LayoutJob` at 12.5 / 18 px: see
+                // `provenance_part` for why that keeps one baseline.
+                ui.label(provenance_part(
+                    "来源/出处：",
+                    tokens.palette.ink.secondary,
+                    false,
+                ));
                 match &q.source {
                     Some(src) => {
                         // `provenance_job` — not a plain RichText: see its doc.
@@ -778,15 +780,18 @@ impl App {
                             tokens.palette.ink.muted,
                         ));
                         if let Some(u) = src.url.as_ref().filter(|s| !s.is_empty()) {
-                            ui.hyperlink_to("原文", u);
+                            ui.hyperlink_to(
+                                provenance_part("原文", tokens.palette.ink.muted, false),
+                                u,
+                            );
                         }
                     }
                     None => {
-                        ui.label(
-                            RichText::new("（无出处信息）")
-                                .size(12.5)
-                                .color(tokens.palette.ink.muted),
-                        );
+                        ui.label(provenance_part(
+                            "（无出处信息）",
+                            tokens.palette.ink.muted,
+                            false,
+                        ));
                     }
                 }
             });
@@ -1267,6 +1272,43 @@ fn small_button(
     )
 }
 
+/// The one line height every part of the 来源/出处 row is laid out at.
+///
+/// Fixed rather than the font's own row height: the row is a wrapped one, and
+/// a wrapped row centres each item only once it has its final height, which the
+/// first item is placed before. One height for all three parts is what puts
+/// them on one baseline.
+const PROVENANCE_LINE_HEIGHT: f32 = 18.0;
+
+/// One part of the 来源/出处 row — the label, the provenance or the link.
+///
+/// Every part is a `LayoutJob` with the same `line_height`, because
+/// `horizontal_wrapped` centres each item in the row only once the row has
+/// reached its final height, and the first item is placed *before* the later
+/// ones grow it. Parts whose galleys differ in height therefore land on
+/// different baselines (the label sat ~7 px above the provenance). A fixed
+/// line height gives all three the same height, and one baseline follows.
+/// It also pins the link, which used the body size instead of 12.5.
+fn provenance_part(
+    text: &str,
+    color: egui::Color32,
+    break_anywhere: bool,
+) -> egui::text::LayoutJob {
+    let mut job = egui::text::LayoutJob::default();
+    job.append(
+        text,
+        0.0,
+        egui::TextFormat {
+            font_id: egui::FontId::proportional(12.5),
+            color,
+            line_height: Some(PROVENANCE_LINE_HEIGHT),
+            ..Default::default()
+        },
+    );
+    job.wrap.break_anywhere = break_anywhere;
+    job
+}
+
 /// The 来源/出处 provenance, laid out with `break_anywhere`.
 ///
 /// A path or a URL is one long unbreakable token, and the default line
@@ -1278,23 +1320,12 @@ fn small_button(
 /// wrapping-row indentation (past 「来源/出处：」) and the wrap width itself, so
 /// this is the whole override.
 fn provenance_job(text: &str, color: egui::Color32) -> egui::text::LayoutJob {
-    let mut job = egui::text::LayoutJob::default();
-    job.append(
-        text,
-        0.0,
-        egui::TextFormat {
-            font_id: egui::FontId::proportional(12.5),
-            color,
-            ..Default::default()
-        },
-    );
-    job.wrap.break_anywhere = true;
-    job
+    provenance_part(text, color, true)
 }
 
 #[cfg(test)]
 mod tests {
-    use super::provenance_job;
+    use super::{provenance_job, provenance_part, PROVENANCE_LINE_HEIGHT};
 
     /// Lay the same text out twice inside one frame (fonts need a frame to
     /// exist) and report the first row's width for both settings.
@@ -1320,6 +1351,41 @@ mod tests {
         // headless-render tests panic if they don't).
         output.textures_delta.clear();
         widths
+    }
+
+    /// The three parts of the 来源/出处 row must come out one height, or the
+    /// wrapped row centres each in a row whose final height only the last item
+    /// knows: the label used to sit ~7 px above the provenance, and the 原文
+    /// link (which used the body size) sat between them.
+    #[test]
+    fn provenance_row_parts_share_one_line_height() {
+        let ctx = egui::Context::default();
+        let mut heights = Vec::new();
+        let mut output = ctx.run_ui(egui::RawInput::default(), |ui| {
+            heights = ui.fonts_mut(|fonts| {
+                [
+                    provenance_part("来源/出处：", egui::Color32::WHITE, false),
+                    provenance_part(
+                        "fakao-app · 真题库/客观题/2002年客观题卷一.md · \
+                         https://github.com/Methu-Xie/fakao-app",
+                        egui::Color32::WHITE,
+                        true,
+                    ),
+                    provenance_part("原文", egui::Color32::WHITE, false),
+                ]
+                .iter()
+                .map(|job| fonts.layout_job(job.clone()).size().y)
+                .collect::<Vec<_>>()
+            });
+        });
+        output.textures_delta.clear();
+        assert_eq!(heights.len(), 3);
+        assert!(
+            heights
+                .iter()
+                .all(|h| (*h - PROVENANCE_LINE_HEIGHT).abs() < f32::EPSILON),
+            "each part must be laid out at {PROVENANCE_LINE_HEIGHT} px, got {heights:?}"
+        );
     }
 
     /// The real cause of the half-empty 来源/出处 row, pinned: with the default

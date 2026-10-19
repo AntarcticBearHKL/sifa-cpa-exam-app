@@ -12883,7 +12883,7 @@
         "repo": "hf-cflue",
         "url": "https://huggingface.co/datasets/DianJin/CFLUE"
       },
-      "stem": "请从以下四个选项中选择，哪一个费用不被归类为质量预防成本（ ）。",
+      "stem": "请从以下四个选项中选择，哪一个费用不被归类为质量预防成本（）。",
       "subjectId": "unknown",
       "subquestions": [],
       "tags": [
@@ -13171,7 +13171,7 @@
         "repo": "hf-cflue",
         "url": "https://huggingface.co/datasets/DianJin/CFLUE"
       },
-      "stem": "在以下行为中，哪一种通常无法有效防御可能产生的重大误报风险？（     ）",
+      "stem": "在以下行为中，哪一种通常无法有效防御可能产生的重大误报风险？（）",
       "subjectId": "unknown",
       "subquestions": [],
       "tags": [
@@ -13267,7 +13267,7 @@
         "repo": "hf-cflue",
         "url": "https://huggingface.co/datasets/DianJin/CFLUE"
       },
-      "stem": "请判断下列选项中，对于管理层书面声明作用的描绘，哪一项是不准确的（　　 ）。",
+      "stem": "请判断下列选项中，对于管理层书面声明作用的描绘，哪一项是不准确的（　　）。",
       "subjectId": "unknown",
       "subquestions": [],
       "tags": [
@@ -13411,7 +13411,7 @@
         "repo": "hf-cflue",
         "url": "https://huggingface.co/datasets/DianJin/CFLUE"
       },
-      "stem": "请根据当前资本市场的弱式有效状况，判断以下陈述的正确性（        ）。",
+      "stem": "请根据当前资本市场的弱式有效状况，判断以下陈述的正确性（）。",
       "subjectId": "unknown",
       "subquestions": [],
       "tags": [
@@ -14035,7 +14035,7 @@
         "repo": "hf-financeiq",
         "url": "https://huggingface.co/datasets/Duxiaoman-DI/FinanceIQ"
       },
-      "stem": "在以下针对法律渊源的描述之中，哪个选项是正确的（ ）。",
+      "stem": "在以下针对法律渊源的描述之中，哪个选项是正确的（）。",
       "subjectId": "unknown",
       "subquestions": [],
       "tags": [
@@ -14179,7 +14179,7 @@
         "repo": "hf-financeiq",
         "url": "https://huggingface.co/datasets/Duxiaoman-DI/FinanceIQ"
       },
-      "stem": "请找出以下关于公司董事长和副董事长产生方式的描述中，哪一项是不准确的 （　　）。",
+      "stem": "请找出以下关于公司董事长和副董事长产生方式的描述中，哪一项是不准确的（　　）。",
       "subjectId": "unknown",
       "subquestions": [],
       "tags": [
@@ -14227,7 +14227,7 @@
         "repo": "hf-financeiq",
         "url": "https://huggingface.co/datasets/Duxiaoman-DI/FinanceIQ"
       },
-      "stem": "假设甲与乙经过协商，乙作为实际出资的人，而甲只是名义上的股东。但后来，甲没有经过乙的同意，私自以低价将他名下的股权转让给了丙。那么，哪一句描述是错误的（     ）。",
+      "stem": "假设甲与乙经过协商，乙作为实际出资的人，而甲只是名义上的股东。但后来，甲没有经过乙的同意，私自以低价将他名下的股权转让给了丙。那么，哪一句描述是错误的（）。",
       "subjectId": "unknown",
       "subquestions": [],
       "tags": [
@@ -14275,7 +14275,7 @@
         "repo": "hf-financeiq",
         "url": "https://huggingface.co/datasets/Duxiaoman-DI/FinanceIQ"
       },
-      "stem": "在以下四个法律事实之中，哪一个性质上应该被视为法律事件呢 （）？",
+      "stem": "在以下四个法律事实之中，哪一个性质上应该被视为法律事件呢（）？",
       "subjectId": "unknown",
       "subquestions": [],
       "tags": [
@@ -14371,7 +14371,7 @@
         "repo": "hf-financeiq",
         "url": "https://huggingface.co/datasets/Duxiaoman-DI/FinanceIQ"
       },
-      "stem": "请在以下各项法律规定中，判断哪一项是明确性规定（    ）",
+      "stem": "请在以下各项法律规定中，判断哪一项是明确性规定（）",
       "subjectId": "unknown",
       "subquestions": [],
       "tags": [
@@ -15235,7 +15235,7 @@
         "repo": "hf-financeiq",
         "url": "https://huggingface.co/datasets/Duxiaoman-DI/FinanceIQ"
       },
-      "stem": "在寻求解决上下班高峰期间地铁拥挤的问题，一个城市推出了一个定价策略，非高峰时段的地铁票价定低于高峰时段。这种策略应被归类为（ ）。",
+      "stem": "在寻求解决上下班高峰期间地铁拥挤的问题，一个城市推出了一个定价策略，非高峰时段的地铁票价定低于高峰时段。这种策略应被归类为（）。",
       "subjectId": "unknown",
       "subquestions": [],
       "tags": [
@@ -15523,7 +15523,7 @@
         "repo": "hf-financeiq",
         "url": "https://huggingface.co/datasets/Duxiaoman-DI/FinanceIQ"
       },
-      "stem": "请从下述四种融资方式中，选择一种不属于债权融资方式的（ ）。",
+      "stem": "请从下述四种融资方式中，选择一种不属于债权融资方式的（）。",
       "subjectId": "unknown",
       "subquestions": [],
       "tags": [
@@ -15571,7 +15571,7 @@
         "repo": "hf-financeiq",
         "url": "https://huggingface.co/datasets/Duxiaoman-DI/FinanceIQ"
       },
-      "stem": "作为一个成功的管理员，是必要的建立榜样权和专家权。请问对于榜样权和专家权，哪一个描述是正确的（ ）？",
+      "stem": "作为一个成功的管理员，是必要的建立榜样权和专家权。请问对于榜样权和专家权，哪一个描述是正确的（）？",
       "subjectId": "unknown",
       "subquestions": [],
       "tags": [
@@ -15955,7 +15955,7 @@
         "repo": "hf-financeiq",
         "url": "https://huggingface.co/datasets/Duxiaoman-DI/FinanceIQ"
       },
-      "stem": "哪一项不是人力资源规划所包含的内容（ ）？",
+      "stem": "哪一项不是人力资源规划所包含的内容（）？",
       "subjectId": "unknown",
       "subquestions": [],
       "tags": [
@@ -16003,7 +16003,7 @@
         "repo": "hf-financeiq",
         "url": "https://huggingface.co/datasets/Duxiaoman-DI/FinanceIQ"
       },
-      "stem": "请从以下描述中挑选出一个关于波士顿矩阵的错误陈述（ ）。",
+      "stem": "请从以下描述中挑选出一个关于波士顿矩阵的错误陈述（）。",
       "subjectId": "unknown",
       "subquestions": [],
       "tags": [
@@ -16627,7 +16627,7 @@
         "repo": "hf-financeiq",
         "url": "https://huggingface.co/datasets/Duxiaoman-DI/FinanceIQ"
       },
-      "stem": "请选择以下选项中，你认为注册会计师并不需要和他们依赖的外部专家取得共识的是（   ）。",
+      "stem": "请选择以下选项中，你认为注册会计师并不需要和他们依赖的外部专家取得共识的是（）。",
       "subjectId": "unknown",
       "subquestions": [],
       "tags": [
@@ -17011,7 +17011,7 @@
         "repo": "hf-financeiq",
         "url": "https://huggingface.co/datasets/Duxiaoman-DI/FinanceIQ"
       },
-      "stem": "在以下各项之中，请选择最能作为舞弊事件发生的重要条件的是（ ）。",
+      "stem": "在以下各项之中，请选择最能作为舞弊事件发生的重要条件的是（）。",
       "subjectId": "unknown",
       "subquestions": [],
       "tags": [
@@ -18547,7 +18547,7 @@
         "repo": "hf-financeiq",
         "url": "https://huggingface.co/datasets/Duxiaoman-DI/FinanceIQ"
       },
-      "stem": "在以下所给的选项中，哪一项应被核算为存货成本？（ ）",
+      "stem": "在以下所给的选项中，哪一项应被核算为存货成本？（）",
       "subjectId": "unknown",
       "subquestions": [],
       "tags": [
@@ -18931,7 +18931,7 @@
         "repo": "hf-financeiq",
         "url": "https://huggingface.co/datasets/Duxiaoman-DI/FinanceIQ"
       },
-      "stem": "在2017年8月8日，一个烟草公司向相邻的县镇支付了880万元作为烟叶的购买金额，还为烟草农民支付了附加的10万元作为补贴。关于这个事件的税务处理，以下哪种陈述是准确的? （      ）",
+      "stem": "在2017年8月8日，一个烟草公司向相邻的县镇支付了880万元作为烟叶的购买金额，还为烟草农民支付了附加的10万元作为补贴。关于这个事件的税务处理，以下哪种陈述是准确的? （）",
       "subjectId": "unknown",
       "subquestions": [],
       "tags": [
@@ -19267,7 +19267,7 @@
         "repo": "hf-financeiq",
         "url": "https://huggingface.co/datasets/Duxiaoman-DI/FinanceIQ"
       },
-      "stem": "请指出哪种税形的性质与\"市肆门摊税\"最类似（ ）。",
+      "stem": "请指出哪种税形的性质与\"市肆门摊税\"最类似（）。",
       "subjectId": "unknown",
       "subquestions": [],
       "tags": [

@@ -510,10 +510,89 @@ pub fn load_summary(root: &Path) -> Result<Summary, String> {
     serde_json::from_str(&text).map_err(|e| format!("解析 {} 失败: {e}", p.display()))
 }
 
+/// Join the stray spaces a reflowed source left inside Chinese text.
+///
+/// The corpus was reflowed with a space at every source line break, which is
+/// right for English and wrong for Chinese: `不是公\n民获得` arrived as
+/// `不是公 民获得`. In prose a space whose neighbours are **both** non-ASCII is
+/// always that artefact, so it is dropped (the whole run, so `站  在`
+/// collapses too). A space with an ASCII neighbour is kept: `Word 文档`,
+/// `A 项` and `2002 年` are either real or read correctly either way.
+///
+/// Deliberately **not** applied to `explanation`: it is Markdown, where
+/// `### 第一章 法的本体` uses the same CJK-space-CJK shape on purpose.
+///
+/// Applied on load on top of the same fix in the shipped data, so a
+/// regenerated subject file cannot put the artefact back on screen.
+pub fn join_cjk_spaces(text: &str) -> String {
+    if !text.contains(' ') {
+        return text.to_owned();
+    }
+    let chars: Vec<char> = text.chars().collect();
+    let mut out = String::with_capacity(text.len());
+    let mut i = 0;
+    while i < chars.len() {
+        if chars[i] != ' ' {
+            out.push(chars[i]);
+            i += 1;
+            continue;
+        }
+        let mut j = i;
+        while j < chars.len() && chars[j] == ' ' {
+            j += 1;
+        }
+        let inside_cjk =
+            i > 0 && !chars[i - 1].is_ascii() && j < chars.len() && !chars[j].is_ascii();
+        if !inside_cjk {
+            out.extend(&chars[i..j]);
+        }
+        i = j;
+    }
+    out
+}
+
+/// [`join_cjk_spaces`] over the prose lines of a Markdown block.
+///
+/// Explanations are Markdown, so a heading or a table row keeps its spacing:
+/// `### 第一章 法的本体` and `| 第一章 法的本体 | 甲 |` have exactly the shape
+/// of the artefact. Every other line is prose and is joined.
+pub fn join_cjk_spaces_in_markdown(text: &str) -> String {
+    if !text.contains(' ') {
+        return text.to_owned();
+    }
+    let mut out = String::with_capacity(text.len());
+    for (i, line) in text.split('\n').enumerate() {
+        if i > 0 {
+            out.push('\n');
+        }
+        let head = line.trim_start();
+        if head.starts_with('#') || line.contains('|') {
+            out.push_str(line);
+        } else {
+            out.push_str(&join_cjk_spaces(line));
+        }
+    }
+    out
+}
+
 pub fn load_subject(root: &Path, subject_id: &str) -> Result<SubjectFile, String> {
     let p = subject_file_path(root, subject_id);
     let text = read_text(&p).map_err(|e| format!("读取 {} 失败: {e}", p.display()))?;
-    serde_json::from_str(&text).map_err(|e| format!("解析 {} 失败: {e}", p.display()))
+    let mut file: SubjectFile =
+        serde_json::from_str(&text).map_err(|e| format!("解析 {} 失败: {e}", p.display()))?;
+    for q in &mut file.questions {
+        q.stem = join_cjk_spaces(&q.stem);
+        for o in &mut q.options {
+            o.text = join_cjk_spaces(&o.text);
+        }
+        if let Some(t) = q.answer_text.as_mut() {
+            *t = join_cjk_spaces(t);
+        }
+        if let Some(e) = q.explanation.as_mut() {
+            *e = join_cjk_spaces_in_markdown(e);
+        }
+    }
+    Ok(file)
 }
 
 /// Subject list for a domain, preferring `summary.json` but tolerating its absence.
@@ -1207,6 +1286,41 @@ fn civil_from_days(z: i64) -> (i64, i64, i64) {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    /// The artefact this exists for: a source line break reflowed into a space
+    /// inside Chinese prose (`data/law/subjects/xianfa.json` really holds
+    /// `不是公 民获得…`). ASCII neighbours must be left alone -- those spaces
+    /// are real or read correctly.
+    #[test]
+    fn join_cjk_spaces_drops_only_the_reflow_artefact() {
+        assert_eq!(
+            join_cjk_spaces("下列选项中哪一种情况不是公 民获得物质帮助权的条件?"),
+            "下列选项中哪一种情况不是公民获得物质帮助权的条件?"
+        );
+        // A break can land after punctuation, and a run can be longer than one.
+        assert_eq!(join_cjk_spaces("交付使用；未 经验收"), "交付使用；未经验收");
+        assert_eq!(join_cjk_spaces("行人在人行道上站  立"), "行人在人行道上站立");
+        // Kept: real separators around ASCII.
+        assert_eq!(join_cjk_spaces("见 Word 文档第 3 条"), "见 Word 文档第 3 条");
+        assert_eq!(join_cjk_spaces("2022 年客观题"), "2022 年客观题");
+        assert_eq!(join_cjk_spaces("A 项正确"), "A 项正确");
+        // An ideographic space (U+3000) is not the artefact.
+        assert_eq!(join_cjk_spaces("公\u{3000}民"), "公\u{3000}民");
+        // The rule is not Markdown-aware, which is exactly why `explanation` is
+        // never run through it: a heading separator has the same shape.
+        assert_eq!(join_cjk_spaces("### 第一章 法的本体"), "### 第一章法的本体");
+    }
+
+    #[test]
+    fn join_cjk_spaces_leaves_markdown_structure_alone() {
+        // Prose is joined; a heading and a table row keep their separators.
+        assert_eq!(
+            join_cjk_spaces_in_markdown(
+                "解析】并非所有的法院判决都 能引起变动\n### 第一章 法的本体\n| 第一章 法的本体 | 甲 |"
+            ),
+            "解析】并非所有的法院判决都能引起变动\n### 第一章 法的本体\n| 第一章 法的本体 | 甲 |"
+        );
+    }
 
     #[test]
     fn iso_roundtrip_shape() {

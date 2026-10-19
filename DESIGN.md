@@ -266,8 +266,22 @@ GUI 拆成入口 + 六个模块：`main.rs`（入口，仅 `mod` 声明 + `fn ma
 还有 `scrollbars_are_hidden_everywhere`（**两种模式**：滚动条宽 0、各状态不透明度全为 0，任何状态都画不出滚动条）
 和 `scrim_keeps_body_text_at_aa_over_the_worst_case_desktop`（scrim 在最坏桌面底色上仍让正文达到 AA 对比）。
 
-**测试（不开窗口、不点鼠标）**：`cargo test` 直接跑 —— 共 **104 passed, 0 failed**
-（14 lib + 18 classify + 72 sfzklearning），UI 只负责渲染结果。
+**来源/出处 行**（会话页）：三段（`来源/出处：` / 出处文本 / `原文` 链接）走同一个 `LayoutJob`
+（12.5px，`PROVENANCE_LINE_HEIGHT = 18`）。`horizontal_wrapped` 只在行高最终确定之后才把每项居中，
+而第一项是在后面的项把行撑高**之前**放下的 —— 高度不一致的三段就落在不同基线上（`原文` 原本用正文号，
+比另两段高，正好夹在中间）。统一字号 + 固定行高后三段同高、同一条基线，
+`provenance_row_parts_share_one_line_height` 守住它（去掉固定行高该测试就会红）。
+
+**题干里的空格**：语料是按「每个换行处补一个空格」重新折行的，这对英文对、对中文错 ——
+`不是公\n民获得` 到了数据里就是 `不是公 民获得`。`lib.rs::join_cjk_spaces` 把**两侧都是非 ASCII**
+的空格去掉（连同整段连续空格）；邻接 ASCII 的保留（`Word 文档` / `A 项` / `2002 年` 要么是真的、
+要么读起来没问题）。载入时对题干 / 选项 / `answerText` 生效；解析是 Markdown，走
+`join_cjk_spaces_in_markdown`，跳过以 `#` 开头的行和含 `|` 的行 —— `### 第一章 法的本体` 与表格行
+里的间距是有意的。出厂数据按同一规则清过一遍（题干 / 选项 / `answerText` 共 3.3 万处；解析保留
+源 Markdown 的间距，由载入时处理）。
+
+**测试（不开窗口、不点鼠标）**：`cargo test` 直接跑 —— 共 **107 passed, 0 failed**
+（16 lib + 18 classify + 73 sfzklearning），UI 只负责渲染结果。
 
 * `logic.rs`（16 个）：按题型 / 章节（可多选）/ 来源（错题 · 未做过 · 做错过）/ 收藏（不限 · 已收藏 · 未收藏）/
   正确率（不限 · 未作答 · 低于 60% / 低于 100% / 全对）/ 关键词筛选（新条件与旧条件 AND 组合、不限是真 no-op）、
