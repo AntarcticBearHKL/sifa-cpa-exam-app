@@ -1,4 +1,4 @@
-﻿[package]
+[package]
 name = "sfzklearning"
 version = "0.14.0"
 edition = "2021"
