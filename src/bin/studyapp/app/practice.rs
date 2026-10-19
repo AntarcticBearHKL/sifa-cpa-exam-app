@@ -314,6 +314,7 @@ impl App {
                                     ui.add(
                                         egui::TextEdit::singleline(&mut self.set_query)
                                             .hint_text("题干 / 解析关键词")
+                                            .margin(tokens.text_input_margin())
                                             .desired_width(260.0),
                                     );
                                 },
@@ -391,12 +392,16 @@ impl App {
                             ui.add(
                                 egui::TextEdit::singleline(&mut self.set_chapter_filter)
                                     .hint_text("筛选章节")
+                                    .margin(tokens.text_input_margin())
                                     .desired_width(f32::INFINITY),
                             );
 
                             let needle = self.set_chapter_filter.trim().to_lowercase();
                             egui::ScrollArea::vertical()
                                 .id_salt("set_chapters")
+                                .scroll_bar_visibility(
+                                    egui::scroll_area::ScrollBarVisibility::AlwaysHidden,
+                                )
                                 .max_height(ui.available_height())
                                 .auto_shrink([false, false])
                                 .show(ui, |ui| {
@@ -589,7 +594,9 @@ impl App {
 
         const FOOTER_H: f32 = 74.0;
         let body_h = (ui.available_height() - FOOTER_H).max(180.0);
-        let mut area = egui::ScrollArea::vertical().id_salt("session_scroll");
+        let mut area = egui::ScrollArea::vertical()
+            .id_salt("session_scroll")
+            .scroll_bar_visibility(egui::scroll_area::ScrollBarVisibility::AlwaysHidden);
         let scroll_top = self.session.as_ref().map(|s| s.pos).unwrap_or(0);
         let last_top = ui.data(|d| d.get_temp::<usize>(egui::Id::new("session_last_top")));
         if last_top != Some(scroll_top) {
@@ -674,6 +681,7 @@ impl App {
                     egui::TextEdit::multiline(&mut self.note_draft)
                         .desired_rows(2)
                         .desired_width(f32::INFINITY)
+                        .margin(tokens.text_input_margin())
                         .hint_text("写点备注…（失焦自动保存）"),
                 );
                 if note.lost_focus() {

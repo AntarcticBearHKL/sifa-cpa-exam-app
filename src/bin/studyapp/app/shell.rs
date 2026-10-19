@@ -96,6 +96,7 @@ impl App {
 
                 egui::ScrollArea::vertical()
                     .id_salt("rail_scroll")
+                    .scroll_bar_visibility(egui::scroll_area::ScrollBarVisibility::AlwaysHidden)
                     .auto_shrink([false, false])
                     .show(ui, |ui| {
                         for (group, subjects) in &groups {

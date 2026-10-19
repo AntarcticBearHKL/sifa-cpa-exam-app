@@ -131,6 +131,14 @@ pub struct Tokens {
 }
 
 impl Tokens {
+    /// Inner padding for a text input. egui's own default is
+    /// `Margin::symmetric(4, 2)`, which leaves the text (and the hint text)
+    /// almost touching the border; this uses the same spacing scale as the
+    /// rows around it so an input reads as a box rather than as bare text.
+    pub fn text_input_margin(&self) -> egui::Margin {
+        egui::Margin::symmetric(self.space.sm as i8, self.space.xs as i8)
+    }
+
     pub fn new(mode: Mode) -> Self {
         Self {
             palette: match mode {
