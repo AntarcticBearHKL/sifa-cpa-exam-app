@@ -17,7 +17,7 @@ impl App {
     fn practice_setup(&mut self, ui: &mut egui::Ui) {
         let tokens = self.tokens;
         let matched = self.matching_questions().len();
-        let wrong = self.wrong_ids.len();
+        let wrong = self.wrong_count();
         let chapter_list = self
             .subject
             .as_ref()
@@ -46,7 +46,11 @@ impl App {
         // The footer bar keeps a fixed slice of the height; the body takes all
         // the rest, so the chapter list can fill whatever is left.
         const FOOTER_H: f32 = 66.0;
-        let left_w = 380.0f32.min((ui.available_width() - 260.0).max(300.0));
+        // Wide enough for the widest row — the 正确率 segmented control (5
+        // items) — so every row's hairline spans its whole control; below this
+        // the column is still content-sized (the divider follows the widest
+        // control), only the rules would come up short.
+        let left_w = 410.0f32.min((ui.available_width() - 260.0).max(300.0));
 
         // A hairline from the palette — the page is structured with rules,
         // never with a second surface fill and never with egui's separator.
@@ -158,11 +162,6 @@ impl App {
                                     {
                                         self.set_sources.wrong = !sources.wrong;
                                     }
-                                    if glass::widgets::toggle_chip(ui, &tokens, "仅收藏", sources.fav)
-                                        .clicked()
-                                    {
-                                        self.set_sources.fav = !sources.fav;
-                                    }
                                     if glass::widgets::toggle_chip(
                                         ui,
                                         &tokens,
@@ -182,6 +181,58 @@ impl App {
                                     .clicked()
                                     {
                                         self.set_sources.missed = !sources.missed;
+                                    }
+                                },
+                            );
+                            hairline(ui, left_w);
+
+                            ui.allocate_ui_with_layout(
+                                egui::vec2(ui.available_width(), ROW_H),
+                                egui::Layout::left_to_right(egui::Align::Center),
+                                |ui| {
+                                    cell(ui, "收藏", None);
+                                    let favs = ["不限", "已收藏", "未收藏"];
+                                    let sel = match self.set_fav {
+                                        logic::Fav::Any => 0,
+                                        logic::Fav::Yes => 1,
+                                        logic::Fav::No => 2,
+                                    };
+                                    if let Some(i) = glass::widgets::segmented(
+                                        ui, &tokens, "set_fav", &favs, sel,
+                                    ) {
+                                        self.set_fav = match i {
+                                            1 => logic::Fav::Yes,
+                                            2 => logic::Fav::No,
+                                            _ => logic::Fav::Any,
+                                        };
+                                    }
+                                },
+                            );
+                            hairline(ui, left_w);
+
+                            ui.allocate_ui_with_layout(
+                                egui::vec2(ui.available_width(), ROW_H),
+                                egui::Layout::left_to_right(egui::Align::Center),
+                                |ui| {
+                                    cell(ui, "正确率", None);
+                                    let accs = ["不限", "未作答", "低于 60%", "低于 100%", "全对"];
+                                    let sel = match self.set_accuracy {
+                                        logic::Accuracy::Any => 0,
+                                        logic::Accuracy::Unanswered => 1,
+                                        logic::Accuracy::Below60 => 2,
+                                        logic::Accuracy::Below100 => 3,
+                                        logic::Accuracy::Perfect => 4,
+                                    };
+                                    if let Some(i) = glass::widgets::segmented(
+                                        ui, &tokens, "set_accuracy", &accs, sel,
+                                    ) {
+                                        self.set_accuracy = match i {
+                                            1 => logic::Accuracy::Unanswered,
+                                            2 => logic::Accuracy::Below60,
+                                            3 => logic::Accuracy::Below100,
+                                            4 => logic::Accuracy::Perfect,
+                                            _ => logic::Accuracy::Any,
+                                        };
                                     }
                                 },
                             );
@@ -455,7 +506,6 @@ impl App {
             .unwrap_or((false, false, false));
         let revealed = submitted || answer_shown;
         let can_next = logic::can_advance(&q, submitted, answer_shown, self_assessed);
-        let wrong_now = self.wrong_ids.contains(&qid);
 
         let q_fade = motion::change_progress(
             ui.ctx(),
@@ -575,13 +625,6 @@ impl App {
                         RichText::new(format!("{y} 年"))
                             .size(12.5)
                             .color(tokens.palette.ink.muted),
-                    );
-                }
-                if wrong_now {
-                    ui.label(
-                        RichText::new("错题")
-                            .size(12.5)
-                            .color(tokens.palette.accent.danger),
                     );
                 }
                 ui.with_layout(egui::Layout::right_to_left(egui::Align::Center), |ui| {

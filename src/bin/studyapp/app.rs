@@ -101,6 +101,10 @@ struct App {
     set_kind: logic::Kind,
     set_chapters: HashSet<String>,
     set_sources: logic::Sources,
+    /// 收藏 condition: 不限 / 已收藏 / 未收藏.
+    set_fav: logic::Fav,
+    /// 正确率 condition: 不限 / 未作答 / 低于 60% / 低于 100% / 全对.
+    set_accuracy: logic::Accuracy,
     set_draw: logic::Draw,
     /// Numeric value used when `set_draw` is `Draw::Custom`; always kept in
     /// the valid range by the input and by `Draw::limit`.
@@ -110,7 +114,6 @@ struct App {
     set_query: String,
     session: Option<Session>,
 
-    wrong_ids: HashSet<String>,
     user: UserStore,
     note_open: bool,
     note_draft: String,
@@ -272,13 +275,14 @@ impl App {
             set_kind: logic::Kind::All,
             set_chapters: HashSet::new(),
             set_sources: logic::Sources::default(),
+            set_fav: logic::Fav::default(),
+            set_accuracy: logic::Accuracy::default(),
             set_draw: logic::Draw::default(),
             set_draw_custom: logic::DEFAULT_CUSTOM_DRAW,
             set_order: logic::Order::default(),
             set_chapter_filter: String::new(),
             set_query: String::new(),
             session: None,
-            wrong_ids: HashSet::new(),
             user,
             note_open: false,
             note_draft: String::new(),
@@ -409,6 +413,8 @@ impl App {
         self.session = None;
         self.set_chapters.clear();
         self.set_sources = logic::Sources::default();
+        self.set_fav = logic::Fav::default();
+        self.set_accuracy = logic::Accuracy::default();
         self.set_draw = logic::Draw::default();
         self.set_draw_custom = logic::DEFAULT_CUSTOM_DRAW;
         self.set_order = logic::Order::default();
@@ -439,14 +445,18 @@ impl App {
                     self.kp_title_map.entry(kp.title.clone()).or_insert(i);
                 }
 
-                self.wrong_ids = load_wrong_ids(&self.state_dir, self.domain, &self.subject_id)
-                    .into_iter()
-                    .collect();
+                // `wrong-*.json` is a derived projection of the per-question
+                // stats now: prune ids that do not satisfy `logic::is_wrong`
+                // (an older build could insert one without recording an
+                // attempt — a question that was only *viewed* ended up as
+                // 错题) and write the file back, so those stale entries
+                // disappear. The stats stay the only truth; the file is never
+                // consulted for filtering.
+                prune_wrong_file(&self.state_dir, self.domain, &self.subject_id, &self.user);
                 self.subject = Some(s);
             }
             Err(e) => {
                 self.subject_error = Some(e);
-                self.wrong_ids.clear();
             }
         }
         self.dirty = true;
@@ -461,6 +471,8 @@ impl App {
             kind: self.set_kind,
             chapters: self.set_chapters.clone(),
             sources: self.set_sources,
+            fav: self.set_fav,
+            accuracy: self.set_accuracy,
             query: self.set_query.clone(),
         }
     }
@@ -469,7 +481,7 @@ impl App {
         let Some(s) = &self.subject else {
             return Vec::new();
         };
-        logic::select(&s.questions, &self.filter(), &self.wrong_ids, &self.user)
+        logic::select(&s.questions, &self.filter(), &self.user)
     }
 
     fn start_session(&mut self, wrong_random: bool) {
@@ -477,7 +489,7 @@ impl App {
             return;
         };
         let (order, label) = if wrong_random {
-            let idx = logic::wrong_sample(&s.questions, &self.wrong_ids, 10, rand_seed());
+            let idx = logic::wrong_sample(&s.questions, &self.user, 10, rand_seed());
             (idx, "错题随机抽查".to_string())
         } else {
             let idx = logic::draw_plan(
@@ -563,14 +575,13 @@ impl App {
                 sess.correct += 1;
             }
         }
-        if ok {
-            self.wrong_ids.remove(&qid);
-        } else {
-            self.wrong_ids.insert(qid.clone());
+        if !ok {
             self.anim.trigger_shake(question_key(&q), now);
         }
         self.reveal_epoch = self.reveal_epoch.wrapping_add(1);
         self.user.record_answer(&qid, ok, &now_iso());
+        // The wrong file is a projection of the stats, which were just
+        // updated: it is rewritten from them, never edited by hand.
         self.persist_wrong();
         self.persist_user();
         self.dirty = true;
@@ -599,11 +610,6 @@ impl App {
             if remembered {
                 sess.correct += 1;
             }
-        }
-        if remembered {
-            self.wrong_ids.remove(&qid);
-        } else {
-            self.wrong_ids.insert(qid.clone());
         }
         self.user.record_answer(&qid, remembered, &now_iso());
         self.persist_wrong();
@@ -702,8 +708,37 @@ impl App {
     // persistence
     // ------------------------------------------------------------------
 
+    /// The 错题 set of the current subject, **derived from the per-question
+    /// stats** — the single source of truth (see [`logic::is_wrong`]).
+    /// `wrong-<domain>-<subject>.json` is only a projection of this for
+    /// tooling that reads it; the app never filters by the file.
+    fn derived_wrong_ids(&self) -> Vec<String> {
+        let Some(s) = &self.subject else {
+            return Vec::new();
+        };
+        s.questions
+            .iter()
+            .filter(|q| logic::is_wrong(self.user.stat(&q.id)))
+            .map(|q| q.id.clone())
+            .collect()
+    }
+
+    /// How many questions of the current subject are 错题, derived the same
+    /// way — the number behind the practice panel's 错题随机 button.
+    fn wrong_count(&self) -> usize {
+        self.subject
+            .as_ref()
+            .map(|s| {
+                s.questions
+                    .iter()
+                    .filter(|q| logic::is_wrong(self.user.stat(&q.id)))
+                    .count()
+            })
+            .unwrap_or(0)
+    }
+
     fn persist_wrong(&self) {
-        let ids: Vec<String> = self.wrong_ids.iter().cloned().collect();
+        let ids = self.derived_wrong_ids();
         if let Err(e) = save_wrong_ids(&self.state_dir, self.domain, &self.subject_id, &ids) {
             diag::log(&self.state_dir, &format!("写入错题文件失败: {e}"));
         }
@@ -1068,6 +1103,34 @@ fn load_domain_data(root: &Path) -> DomainData {
     }
 }
 
+/// Prunes `wrong-<domain>-<subject>.json` to the ids that actually satisfy
+/// [`logic::is_wrong`] per the per-question stats, and writes it back when
+/// anything was dropped. Returns the pruned ids.
+///
+/// The file exists only because tooling reads it — the stats in `user.json`
+/// are the single source of truth — so this is where a stale file written by
+/// an older build (which could insert an id without recording an attempt, so
+/// a question that was only *viewed* showed up as 错题) gets corrected.
+fn prune_wrong_file(
+    state_dir: &Path,
+    domain: Domain,
+    subject_id: &str,
+    user: &UserStore,
+) -> Vec<String> {
+    let stored = load_wrong_ids(state_dir, domain, subject_id);
+    let kept: Vec<String> = stored
+        .iter()
+        .filter(|id| logic::is_wrong(user.stat(id)))
+        .cloned()
+        .collect();
+    if kept != stored {
+        if let Err(e) = save_wrong_ids(state_dir, domain, subject_id, &kept) {
+            diag::log(state_dir, &format!("修剪错题文件失败: {e}"));
+        }
+    }
+    kept
+}
+
 /// Install a CJK font from `C:\Windows\Fonts` so Chinese renders.
 /// Returns a warning when none was found.
 fn install_fonts(ctx: &egui::Context) -> Option<String> {
@@ -1130,8 +1193,10 @@ pub fn run() -> eframe::Result<()> {
 
 #[cfg(test)]
 mod tests {
-    use super::{glass_work, logic, uv_in_capture, GlassWork, Session};
-    use sfzklearning::{OptionItem, Question};
+    use super::{glass_work, logic, prune_wrong_file, uv_in_capture, GlassWork, Session};
+    use sfzklearning::{
+        load_wrong_ids, save_wrong_ids, Domain, OptionItem, Question, UserStore,
+    };
 
     /// A one-question session with a picked answer, ready to be revealed.
     fn choice_session() -> Session {
@@ -1411,5 +1476,48 @@ mod tests {
             "outside the capture means outside the unit square, got {:?}",
             uv.min,
         );
+    }
+
+    /// The wrong file is derived from the stats, so loading prunes ids that
+    /// were never answered — the bug: a question that was only *viewed* had
+    /// been classified as 错题 by an older build — and writes the pruned file
+    /// back, while a genuinely wrong id stays.
+    #[test]
+    fn loading_prunes_unanswered_ids_from_the_wrong_file() {
+        let dir = std::env::temp_dir()
+            .join(format!("sfzklearning-wrong-prune-{}", std::process::id()));
+        let _ = std::fs::remove_dir_all(&dir);
+
+        save_wrong_ids(
+            &dir,
+            Domain::Law,
+            "demo",
+            &["law:viewed".to_string(), "law:wrong".to_string()],
+        )
+        .unwrap();
+        let mut user = UserStore::default();
+        user.record_seen("law:viewed", "2026-01-01T00:00:00Z"); // viewed only
+        user.record_answer("law:wrong", false, "2026-01-01T00:00:00Z");
+
+        let kept = prune_wrong_file(&dir, Domain::Law, "demo", &user);
+        assert_eq!(
+            kept,
+            vec!["law:wrong".to_string()],
+            "the never-answered id must be pruned, the genuinely wrong one kept"
+        );
+
+        let on_disk = load_wrong_ids(&dir, Domain::Law, "demo");
+        assert_eq!(
+            on_disk,
+            vec!["law:wrong".to_string()],
+            "the pruned file was written back"
+        );
+        assert!(
+            user.stat("law:viewed")
+                .is_some_and(|s| s.attempts == 0 && s.seen == 1),
+            "pruning must not touch the stats themselves"
+        );
+
+        let _ = std::fs::remove_dir_all(&dir);
     }
 }

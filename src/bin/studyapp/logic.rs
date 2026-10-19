@@ -4,7 +4,7 @@
 
 use std::collections::HashSet;
 
-use sfzklearning::{Question, UserStore};
+use sfzklearning::{Question, QStat, UserStore};
 
 #[derive(Clone, Copy, PartialEq, Eq, Debug, Default)]
 pub enum Kind {
@@ -32,14 +32,62 @@ impl Kind {
     }
 }
 
-/// Where a question may come from: 仅错题 / 仅收藏 / 未做过 / 做错过.
-/// Every enabled flag must pass (AND).
+/// Where a question may come from: 仅错题 / 未做过 / 做错过.
+/// Every enabled flag must pass (AND). 仅错题 and 做错过 are the same
+/// stats-derived predicate ([`is_wrong`]); both chips stay because they read
+/// as different questions to the user.
 #[derive(Clone, Copy, PartialEq, Eq, Debug, Default)]
 pub struct Sources {
     pub wrong: bool,
-    pub fav: bool,
     pub unseen: bool,
     pub missed: bool,
+}
+
+/// 收藏 filter: 不限 / 已收藏 / 未收藏. Replaces the old 仅收藏 chip, so the
+/// favourite condition is expressed in exactly one place.
+#[derive(Clone, Copy, PartialEq, Eq, Debug, Default)]
+pub enum Fav {
+    #[default]
+    Any,
+    Yes,
+    No,
+}
+
+/// 正确率 filter: 不限 / 未作答 / 低于 60% / 低于 100% / 全对.
+#[derive(Clone, Copy, PartialEq, Eq, Debug, Default)]
+pub enum Accuracy {
+    #[default]
+    Any,
+    Unanswered,
+    Below60,
+    Below100,
+    Perfect,
+}
+
+impl Accuracy {
+    /// Does this condition hold for a question's stats? [`Accuracy::Any`] is a
+    /// true no-op: it adds no condition at all.
+    pub fn matches(self, stat: Option<&QStat>) -> bool {
+        let attempts = stat.map_or(0, |s| s.attempts);
+        match self {
+            Accuracy::Any => true,
+            Accuracy::Unanswered => attempts == 0,
+            Accuracy::Below60 => stat.is_some_and(|s| s.attempts > 0 && s.accuracy() < 0.6),
+            Accuracy::Below100 => is_wrong(stat),
+            Accuracy::Perfect => stat.is_some_and(|s| s.attempts > 0 && s.correct == s.attempts),
+        }
+    }
+}
+
+/// The one 错题 predicate, derived from the per-question stats: a question is
+/// 错题 when it has been answered at least once and not every attempt was
+/// correct. A question that was only *viewed* (`seen > 0`, `attempts == 0`) is
+/// never wrong, and one that was answered correctly every time stops being
+/// wrong. The stats in `user.json` are the single source of truth;
+/// `wrong-<domain>-<subject>.json` is only a derived projection of this (see
+/// `App::persist_wrong`) and is never consulted for filtering.
+pub fn is_wrong(stat: Option<&QStat>) -> bool {
+    stat.is_some_and(|s| s.attempts > 0 && s.correct < s.attempts)
 }
 
 /// Default value shown by the 自定义 number field.
@@ -109,35 +157,40 @@ pub struct Filter {
     /// Empty means every chapter.
     pub chapters: HashSet<String>,
     pub sources: Sources,
+    /// 收藏: 不限 / 已收藏 / 未收藏.
+    pub fav: Fav,
+    /// 正确率: 不限 / 未作答 / 低于 60% / 低于 100% / 全对.
+    pub accuracy: Accuracy,
     pub query: String,
 }
 
 /// Does one question pass the current filter?
-pub fn matches(
-    q: &Question,
-    f: &Filter,
-    wrong: &HashSet<String>,
-    user: &UserStore,
-) -> bool {
+pub fn matches(q: &Question, f: &Filter, user: &UserStore) -> bool {
     if !f.kind.matches(q) {
         return false;
     }
     if !f.chapters.is_empty() && !f.chapters.contains(&q.chapter_label()) {
         return false;
     }
+    let stat = user.stat(&q.id);
     let sources = f.sources;
-    let attempts = user.stat(&q.id).map_or(0, |st| st.attempts);
-    let correct = user.stat(&q.id).map_or(0, |st| st.correct);
-    if sources.wrong && !wrong.contains(&q.id) {
+    if sources.wrong && !is_wrong(stat) {
         return false;
     }
-    if sources.fav && !user.is_favorite(&q.id) {
+    if sources.unseen && stat.map_or(0, |st| st.attempts) != 0 {
         return false;
     }
-    if sources.unseen && attempts != 0 {
+    if sources.missed && !is_wrong(stat) {
         return false;
     }
-    if sources.missed && !(attempts > 0 && correct < attempts) {
+    let favorite = user.is_favorite(&q.id);
+    if f.fav == Fav::Yes && !favorite {
+        return false;
+    }
+    if f.fav == Fav::No && favorite {
+        return false;
+    }
+    if !f.accuracy.matches(stat) {
         return false;
     }
     let needle = f.query.trim().to_lowercase();
@@ -157,14 +210,9 @@ pub fn matches(
 }
 
 /// Indices of every question passing the filter, in subject order.
-pub fn select(
-    questions: &[Question],
-    f: &Filter,
-    wrong: &HashSet<String>,
-    user: &UserStore,
-) -> Vec<usize> {
+pub fn select(questions: &[Question], f: &Filter, user: &UserStore) -> Vec<usize> {
     (0..questions.len())
-        .filter(|&i| matches(&questions[i], f, wrong, user))
+        .filter(|&i| matches(&questions[i], f, user))
         .collect()
 }
 
@@ -181,15 +229,16 @@ pub fn shuffled(mut idx: Vec<usize>, seed: u64) -> Vec<usize> {
     idx
 }
 
-/// A random draw from the wrong-answer pool, capped at `take`.
+/// A random draw from the wrong-answer pool (see [`is_wrong`]), capped at
+/// `take`.
 pub fn wrong_sample(
     questions: &[Question],
-    wrong: &HashSet<String>,
+    user: &UserStore,
     take: usize,
     seed: u64,
 ) -> Vec<usize> {
     let pool: Vec<usize> = (0..questions.len())
-        .filter(|&i| wrong.contains(&questions[i].id))
+        .filter(|&i| is_wrong(user.stat(&questions[i].id)))
         .collect();
     let mut out = shuffled(pool, seed);
     out.truncate(take);
@@ -307,16 +356,16 @@ mod tests {
         ]
     }
 
-    fn empty() -> (HashSet<String>, UserStore) {
-        (HashSet::new(), UserStore::default())
+    fn empty() -> UserStore {
+        UserStore::default()
     }
 
     #[test]
     fn filter_by_kind() {
         let qs = questions();
-        let (w, u) = empty();
+        let u = empty();
 
-        let all = select(&qs, &Filter::default(), &w, &u);
+        let all = select(&qs, &Filter::default(), &u);
         assert_eq!(all, vec![0, 1, 2, 3]);
 
         let choice = select(
@@ -325,7 +374,6 @@ mod tests {
                 kind: Kind::Choice,
                 ..Default::default()
             },
-            &w,
             &u,
         );
         assert_eq!(choice, vec![0, 1, 2], "记忆自测 must be excluded");
@@ -336,20 +384,56 @@ mod tests {
                 kind: Kind::Memory,
                 ..Default::default()
             },
-            &w,
             &u,
         );
         assert_eq!(memory, vec![3]);
     }
 
+    /// The single 错题 predicate: no attempts (never answered, or only viewed)
+    /// is not wrong; all attempts correct is not wrong; any wrong attempt is.
+    #[test]
+    fn is_wrong_needs_an_attempt_and_a_miss() {
+        assert!(!is_wrong(None), "no stats entry at all is not wrong");
+
+        let viewed = QStat {
+            seen: 3,
+            ..Default::default()
+        };
+        assert!(
+            !is_wrong(Some(&viewed)),
+            "viewed but never answered (attempts == 0) is not wrong"
+        );
+
+        let perfect = QStat {
+            attempts: 2,
+            correct: 2,
+            ..Default::default()
+        };
+        assert!(!is_wrong(Some(&perfect)), "all attempts correct is not wrong");
+
+        let missed_once = QStat {
+            attempts: 3,
+            correct: 2,
+            ..Default::default()
+        };
+        assert!(is_wrong(Some(&missed_once)), "a miss among the attempts is wrong");
+
+        let all_wrong = QStat {
+            attempts: 1,
+            correct: 0,
+            ..Default::default()
+        };
+        assert!(is_wrong(Some(&all_wrong)));
+    }
+
     #[test]
     fn filter_by_chapter_wrong_and_favorite() {
         let qs = questions();
-        let mut wrong = HashSet::new();
-        wrong.insert("q2".to_string());
-        wrong.insert("q4".to_string());
         let mut user = UserStore::default();
         user.toggle_favorite("q1");
+        // 错题 comes from the stats now: q2 and q4 were answered wrong.
+        user.record_answer("q2", false, "");
+        user.record_answer("q4", false, "");
 
         let ch2 = select(
             &qs,
@@ -357,7 +441,6 @@ mod tests {
                 chapters: ["第二章".to_string()].into(),
                 ..Default::default()
             },
-            &wrong,
             &user,
         );
         assert_eq!(ch2, vec![2, 3]);
@@ -368,7 +451,6 @@ mod tests {
                 chapters: ["第一章".to_string(), "第二章".to_string()].into(),
                 ..Default::default()
             },
-            &wrong,
             &user,
         );
         assert_eq!(both, vec![0, 1, 2, 3]);
@@ -382,7 +464,6 @@ mod tests {
                 },
                 ..Default::default()
             },
-            &wrong,
             &user,
         );
         assert_eq!(only_wrong, vec![1, 3]);
@@ -390,29 +471,180 @@ mod tests {
         let only_fav = select(
             &qs,
             &Filter {
-                sources: Sources {
-                    fav: true,
-                    ..Default::default()
-                },
+                fav: Fav::Yes,
                 ..Default::default()
             },
-            &wrong,
             &user,
         );
         assert_eq!(only_fav, vec![0]);
     }
 
+    /// 收藏 is three-state: 不限 adds nothing, 已收藏 and 未收藏 partition the
+    /// pool.
+    #[test]
+    fn favorite_filter_is_three_state_and_any_is_a_no_op() {
+        let qs = questions();
+        let mut user = UserStore::default();
+        user.toggle_favorite("q2");
+
+        let any = select(&qs, &Filter::default(), &user);
+        assert_eq!(any, vec![0, 1, 2, 3], "不限 adds no condition");
+
+        let only = select(
+            &qs,
+            &Filter {
+                fav: Fav::Yes,
+                ..Default::default()
+            },
+            &user,
+        );
+        assert_eq!(only, vec![1]);
+
+        let none = select(
+            &qs,
+            &Filter {
+                fav: Fav::No,
+                ..Default::default()
+            },
+            &user,
+        );
+        assert_eq!(none, vec![0, 2, 3]);
+    }
+
+    /// The 正确率 conditions, each on its own: 不限 is a no-op, 未作答 is
+    /// `attempts == 0`, 低于 60% and 低于 100% are strict upper bounds, and
+    /// 全对 needs attempts with `correct == attempts`.
+    #[test]
+    fn accuracy_filter_conditions() {
+        let qs = questions();
+        let mut user = UserStore::default();
+        user.record_answer("q1", true, "t"); // 2/2 = 100%
+        user.record_answer("q1", true, "t");
+        user.record_answer("q2", true, "t"); // 2/3 ≈ 67%: below 100, not below 60
+        user.record_answer("q2", true, "t");
+        user.record_answer("q2", false, "t");
+        user.record_answer("q3", false, "t"); // 0/1 = 0%: below 60
+        // q4 was never answered.
+
+        let pick = |a: Accuracy| {
+            select(
+                &qs,
+                &Filter {
+                    accuracy: a,
+                    ..Default::default()
+                },
+                &user,
+            )
+        };
+        assert_eq!(pick(Accuracy::Any), vec![0, 1, 2, 3], "不限 is a no-op");
+        assert_eq!(pick(Accuracy::Unanswered), vec![3]);
+        assert_eq!(pick(Accuracy::Below60), vec![2]);
+        assert_eq!(pick(Accuracy::Below100), vec![1, 2]);
+        assert_eq!(pick(Accuracy::Perfect), vec![0]);
+    }
+
+    /// The new conditions compose (AND) with the existing filters: 题型,
+    /// 章节, the 来源 chips, 关键词.
+    #[test]
+    fn new_conditions_compose_with_the_existing_filters() {
+        let qs = questions();
+        let mut user = UserStore::default();
+        user.toggle_favorite("q1");
+        user.record_answer("q1", true, "");
+        user.record_answer("q2", false, "");
+
+        // 已收藏 ∧ 全对 ∧ 第一章 ∧ 选择题 → q1 only.
+        let hit = select(
+            &qs,
+            &Filter {
+                kind: Kind::Choice,
+                chapters: ["第一章".to_string()].into(),
+                fav: Fav::Yes,
+                accuracy: Accuracy::Perfect,
+                ..Default::default()
+            },
+            &user,
+        );
+        assert_eq!(hit, vec![0]);
+
+        // 未收藏 ∧ 低于 100% ∧ 第一章 ∧ 选择题 → q2 only (q1 is favourited).
+        let hit = select(
+            &qs,
+            &Filter {
+                kind: Kind::Choice,
+                chapters: ["第一章".to_string()].into(),
+                fav: Fav::No,
+                accuracy: Accuracy::Below100,
+                ..Default::default()
+            },
+            &user,
+        );
+        assert_eq!(hit, vec![1]);
+
+        // 未作答 ∧ 记忆自测 → q4.
+        let hit = select(
+            &qs,
+            &Filter {
+                kind: Kind::Memory,
+                accuracy: Accuracy::Unanswered,
+                ..Default::default()
+            },
+            &user,
+        );
+        assert_eq!(hit, vec![3]);
+
+        // 仅错题 (stats-derived) ∧ 未收藏 → q2.
+        let hit = select(
+            &qs,
+            &Filter {
+                sources: Sources {
+                    wrong: true,
+                    ..Default::default()
+                },
+                fav: Fav::No,
+                ..Default::default()
+            },
+            &user,
+        );
+        assert_eq!(hit, vec![1]);
+
+        // 关键词 ∧ 未收藏 ∧ 未作答 → q4 (matches its own explanation, unfav,
+        // never answered).
+        let hit = select(
+            &qs,
+            &Filter {
+                query: "q4".to_string(),
+                fav: Fav::No,
+                accuracy: Accuracy::Unanswered,
+                ..Default::default()
+            },
+            &user,
+        );
+        assert_eq!(hit, vec![3], "q4 matches its own explanation, is unfav and unanswered");
+
+        let none = select(
+            &qs,
+            &Filter {
+                query: "q2".to_string(),
+                fav: Fav::No,
+                accuracy: Accuracy::Unanswered,
+                ..Default::default()
+            },
+            &user,
+        );
+        assert!(none.is_empty(), "q2 was answered: 未作答 excludes it");
+    }
+
     #[test]
     fn filter_by_query_searches_stem_and_explanation() {
         let qs = questions();
-        let (w, u) = empty();
+        let u = empty();
         let hit = select(
             &qs,
             &Filter {
                 query: "q3".to_string(),
                 ..Default::default()
             },
-            &w,
             &u,
         );
         assert_eq!(hit, vec![2], "matches the explanation of q3 only");
@@ -423,22 +655,24 @@ mod tests {
                 query: "不存在的关键词".to_string(),
                 ..Default::default()
             },
-            &w,
             &u,
         );
         assert!(none.is_empty());
     }
 
+    /// The 来源 chips read the per-question stats: 未做过 is `attempts == 0`,
+    /// and 仅错题 / 做错过 are the same stats-derived predicate ([`is_wrong`]).
+    /// The old separate wrong-id set is gone, so a stale entry cannot mark an
+    /// unanswered question as 错题.
     #[test]
-    fn sources_unseen_missed_wrong_and_fav() {
+    fn sources_unseen_missed_and_wrong_come_from_the_stats() {
         let qs = questions();
-        let mut wrong = HashSet::new();
-        wrong.insert("q3".to_string());
         let mut user = UserStore::default();
         user.toggle_favorite("q1");
         user.record_answer("q1", true, "");
         user.record_answer("q1", true, "");
         user.record_answer("q2", false, "");
+        user.record_answer("q3", false, "");
 
         let unseen = select(
             &qs,
@@ -449,10 +683,9 @@ mod tests {
                 },
                 ..Default::default()
             },
-            &wrong,
             &user,
         );
-        assert_eq!(unseen, vec![2, 3], "q1/q2 have attempts");
+        assert_eq!(unseen, vec![3], "only q4 has no attempts");
 
         let missed = select(
             &qs,
@@ -463,10 +696,9 @@ mod tests {
                 },
                 ..Default::default()
             },
-            &wrong,
             &user,
         );
-        assert_eq!(missed, vec![1], "attempted but never fully correct");
+        assert_eq!(missed, vec![1, 2], "attempted but never fully correct");
 
         let wrong_only = select(
             &qs,
@@ -477,21 +709,16 @@ mod tests {
                 },
                 ..Default::default()
             },
-            &wrong,
             &user,
         );
-        assert_eq!(wrong_only, vec![2]);
+        assert_eq!(wrong_only, vec![1, 2], "仅错题 is the same predicate as 做错过");
 
         let fav_only = select(
             &qs,
             &Filter {
-                sources: Sources {
-                    fav: true,
-                    ..Default::default()
-                },
+                fav: Fav::Yes,
                 ..Default::default()
             },
-            &wrong,
             &user,
         );
         assert_eq!(fav_only, vec![0]);
@@ -501,12 +728,11 @@ mod tests {
             &Filter {
                 sources: Sources {
                     unseen: true,
-                    fav: true,
                     ..Default::default()
                 },
+                fav: Fav::Yes,
                 ..Default::default()
             },
-            &wrong,
             &user,
         );
         assert!(
@@ -518,17 +744,21 @@ mod tests {
     #[test]
     fn wrong_sample_only_draws_wrong_and_caps() {
         let qs = questions();
-        let mut wrong = HashSet::new();
-        wrong.insert("q1".to_string());
-        wrong.insert("q3".to_string());
+        let mut user = UserStore::default();
+        user.record_answer("q1", false, "");
+        user.record_answer("q3", false, "");
+        user.record_seen("q4", "t"); // viewed but never answered: not 错题
 
-        let draw = wrong_sample(&qs, &wrong, 10, 7);
-        assert_eq!(draw.len(), 2);
+        let draw = wrong_sample(&qs, &user, 10, 7);
+        assert_eq!(draw.len(), 2, "the viewed-only question must not be drawn");
         for i in &draw {
-            assert!(wrong.contains(&qs[*i].id), "only wrong questions may be drawn");
+            assert!(
+                is_wrong(user.stat(&qs[*i].id)),
+                "only wrong questions may be drawn"
+            );
         }
 
-        let capped = wrong_sample(&qs, &wrong, 1, 7);
+        let capped = wrong_sample(&qs, &user, 1, 7);
         assert_eq!(capped.len(), 1);
     }
 
