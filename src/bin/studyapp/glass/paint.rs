@@ -121,6 +121,12 @@ pub(crate) fn radial_mesh(
 pub fn fill(painter: &Painter, rect: Rect, tokens: &Tokens, strong: bool) {
     let g = &tokens.palette.glass;
     let color = if strong { g.fill_strong } else { g.fill };
+    // A region may deliberately carry no fill of its own — the light theme's
+    // regions are the sheet, as the reference app's panels are — so skip the
+    // shape rather than painting a fully transparent one every frame.
+    if color.a() == 0 {
+        return;
+    }
     painter.rect_filled(rect, CornerRadius::ZERO, color);
 }
 

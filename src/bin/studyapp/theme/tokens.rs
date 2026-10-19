@@ -270,10 +270,13 @@ impl Palette {
                 scrim: rgba(244, 245, 247, 228),
             },
             glass: Glass {
-                // Opaque, like the reference's surfaces: the desktop must not
-                // tint the body. Opaque-white panels over the pale sheet are
-                // what keep the light theme bright.
-                fill: rgb(255, 255, 255),
+                // The reference's split, and the reason its light theme is both
+                // see-through and bright: its panels are `transparent` (the root
+                // paints `window-bg` once) and only its surfaces are opaque. So
+                // our regions are the sheet itself -- the frosted desktop shows
+                // through the body -- while rows, wells and the modal stay
+                // opaque and crisp.
+                fill: rgba(255, 255, 255, 0),
                 fill_strong: rgb(240, 241, 244),
                 fill_sunken: rgb(242, 243, 246),
                 solid: rgb(255, 255, 255),
@@ -442,9 +445,10 @@ mod tests {
     #[test]
     fn surfaces_are_translucent_but_visible() {
         // Dark keeps translucent washes over the sheet. Light copies the
-        // reference app, where every surface is opaque and only the window
-        // background is translucent -- that is what keeps a light theme bright
-        // over a dark desktop instead of grey.
+        // reference app's split: its panels are transparent and the root paints
+        // the translucent `window-bg` once, so our regions carry no fill of
+        // their own and the frosted desktop shows through the body -- while the
+        // rows, wells and modal stay opaque and crisp.
         let g = Tokens::new(Mode::Dark).palette.glass;
         assert!(g.fill.a() > 8, "a dark surface must be visible against the backdrop");
         assert!(g.fill.a() < 70, "but translucent, not an opaque slab");
@@ -455,13 +459,13 @@ mod tests {
         assert!(g.divider.a() > 0 && g.divider.a() < 80, "a hairline, not a line");
 
         let l = Tokens::new(Mode::Light).palette.glass;
-        assert_eq!(l.fill.a(), 255, "light surfaces are opaque");
-        assert_eq!(l.solid.a(), 255);
-        assert_eq!(l.fill_strong.a(), 255);
-        assert_eq!(l.fill_sunken.a(), 255);
+        assert_eq!(l.fill.a(), 0, "light regions are the sheet, as the reference's panels are");
+        assert_eq!(l.solid.a(), 255, "the modal stays opaque, as the reference's surface");
+        assert_eq!(l.fill_strong.a(), 255, "rows and buttons are opaque");
+        assert_eq!(l.fill_sunken.a(), 255, "and so are wells");
         assert_eq!(l.divider.a(), 255, "opaque hairline colours, as in the reference");
         assert_eq!(l.stroke.a(), 255);
-        assert!(l.fill.r() > 240, "and light, got {l:?}");
+        assert!(l.fill_strong.r() > 200 && l.fill_strong.g() > 200, "and light, got {l:?}");
 
         // Floating layers (popups / menus) are opaque in both modes -- a
         // translucent popup over the app reads as frosted glass, not a raised
