@@ -1,8 +1,8 @@
-[package]
+﻿[package]
 name = "sfzklearning"
-version = "0.13.0"
+version = "0.14.0"
 edition = "2021"
-description = "法考 / 注会 native study helper (CMF data)"
+description = "娉曡€?/ 娉ㄤ細 native study helper (CMF data)"
 # Keep off so module files under src/bin/studyapp/ are never auto-discovered as binaries.
 autobins = false
 
@@ -36,3 +36,4 @@ raw-window-handle = "0.6"
 
 [profile.release]
 opt-level = 3
+

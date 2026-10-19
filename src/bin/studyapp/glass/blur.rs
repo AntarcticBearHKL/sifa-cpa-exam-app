@@ -461,37 +461,12 @@ pub fn gaussian(rgb: &[[f32; 3]], w: usize, h: usize, sigma: f32) -> Vec<[f32; 3
 }
 
 /// `[f32; 3]` in `0.0..=1.0` back to an opaque `egui::ColorImage`.
-/// Convert to an egui image, washing the result toward `tint` by `amount`.
-///
-/// `amount` is 0 for the dark theme — a dark desktop under a dark scrim needs
-/// no help — and high for the light one. A light theme cannot be light over an
-/// arbitrary desktop by translucency alone: the scrim is only ~80 % opaque, so
-/// a dark desktop pulls the body down to a mid grey (measured: the body
-/// rendered 193 instead of ~248, while the settings modal, which is painted
-/// with the opaque `glass.solid`, looked right at 250). Washing the captured
-/// desktop toward the theme colour is what the OS's own light acrylic does:
-/// the material is tinted toward the theme, so the frosted texture survives
-/// while the body stays light.
-pub fn to_color_image(
-    rgb: &[[f32; 3]],
-    w: usize,
-    h: usize,
-    tint: [f32; 3],
-    amount: f32,
-) -> ColorImage {
+pub fn to_color_image(rgb: &[[f32; 3]], w: usize, h: usize) -> ColorImage {
     let n = (w * h).min(rgb.len());
-    let a = amount.clamp(0.0, 1.0);
     let channel = |v: f32| (v.clamp(0.0, 1.0) * 255.0).round() as u8;
-    let mix = |v: f32, t: f32| v + (t - v) * a;
     let mut pixels: Vec<Color32> = rgb[..n]
         .iter()
-        .map(|p| {
-            Color32::from_rgb(
-                channel(mix(p[0], tint[0])),
-                channel(mix(p[1], tint[1])),
-                channel(mix(p[2], tint[2])),
-            )
-        })
+        .map(|p| Color32::from_rgb(channel(p[0]), channel(p[1]), channel(p[2])))
         .collect();
     pixels.resize(w * h, Color32::BLACK);
     ColorImage::new([w, h], pixels)
@@ -500,29 +475,6 @@ pub fn to_color_image(
 #[cfg(test)]
 mod tests {
     use super::*;
-
-    /// The light theme's whole point: a dark desktop must be washed toward the
-    /// theme colour, or the body renders mid grey instead of near-white.
-    #[test]
-    fn the_wash_lightens_a_dark_desktop_toward_the_tint() {
-        let dark = vec![[0.0f32, 0.0, 0.0]; 4];
-        let tint = [0.97, 0.97, 0.98];
-
-        // No wash: untouched.
-        let plain = to_color_image(&dark, 2, 2, tint, 0.0);
-        assert_eq!(plain.pixels[0], egui::Color32::from_rgb(0, 0, 0));
-
-        // Full wash: exactly the tint.
-        let full = to_color_image(&dark, 2, 2, tint, 1.0);
-        assert_eq!(full.pixels[0], egui::Color32::from_rgb(247, 247, 250));
-
-        // The light theme's 0.80 lands near the tint, and strictly lighter
-        // than the desktop it started from.
-        let light = to_color_image(&dark, 2, 2, tint, 0.80);
-        let p = light.pixels[0];
-        assert!(p.r() > 190, "washed black must be near-white, got {}", p.r());
-        assert!(p.r() < 250, "and must not be clipped to the tint");
-    }
 
     #[test]
     fn gaussian_of_a_flat_image_preserves_the_mean() {
