@@ -60,8 +60,10 @@ pub struct Background {
     pub scrim: Color32,
 }
 
-/// Translucent surfaces. A surface is a flat wash of ink over the sheet: no
-/// gradient of its own, its appearance varies only with what is behind it.
+/// Region surfaces. Dark keeps them as flat washes of light ink over the sheet
+/// -- no gradient of their own, appearance varies with what is behind. Light
+/// makes them opaque (the reference app's `surface` / `surface-2` / `well`), so
+/// a dark desktop cannot tint the body.
 #[derive(Clone, Copy, Debug)]
 pub struct Glass {
     pub fill: Color32,
@@ -236,10 +238,25 @@ impl Palette {
     /// darkening washes, and the semantic colours are deepened so they keep
     /// their contrast on a bright sheet.
     pub fn light() -> Self {
+        // Values copied from the reference app's light theme
+        // (`D:\Dev\asset-library-desktop\ui\theme.slint`), including the
+        // structural point that matters here: there, **only** `window-bg` is
+        // translucent and every surface is opaque. That is why its light theme
+        // is bright over any desktop while this one went grey -- our panels
+        // were translucent washes over the sheet, so a dark desktop showed
+        // through the whole body.
+        //
+        //   reference window-bg   #F4F5F7   -> our scrim's colour
+        //   reference surface     #FFFFFF   -> our fill / solid
+        //   reference surface-2   #F0F1F4   -> our fill_strong
+        //   reference well        #F2F3F6   -> our fill_sunken
+        //   reference divider     #E1E3E8   -> our divider
+        //   reference border      #D5D8E0   -> our stroke
+        //   reference text / text-dim / text-faint / accent / ok / warn / danger
         Palette {
             background: Background {
-                base_top: rgb(247, 247, 249),
-                base_bottom: rgb(236, 236, 240),
+                base_top: rgb(247, 248, 250),
+                base_bottom: rgb(238, 239, 243),
                 blobs: [
                     rgba(255, 255, 255, 110),
                     rgba(0, 0, 0, 10),
@@ -247,29 +264,33 @@ impl Palette {
                     rgba(0, 0, 0, 8),
                     rgba(255, 255, 255, 80),
                 ],
-                // The light mirror of the dark scrim, held at the same alpha so
-                // both modes obey one rule.
-                scrim: rgba(248, 248, 250, 228),
+                // The sheet behind the panels -- the only translucent layer, as
+                // in the reference. Its alpha is the 透明度 setting at paint
+                // time; the RGB is the reference's `window-bg`.
+                scrim: rgba(244, 245, 247, 228),
             },
             glass: Glass {
-                fill: rgba(0, 0, 0, 12),
-                fill_strong: rgba(0, 0, 0, 20),
-                fill_sunken: rgba(0, 0, 0, 30),
-                solid: rgb(250, 250, 252),
-                stroke: rgba(0, 0, 0, 22),
-                divider: rgba(0, 0, 0, 18),
+                // Opaque, like the reference's surfaces: the desktop must not
+                // tint the body. Opaque-white panels over the pale sheet are
+                // what keep the light theme bright.
+                fill: rgb(255, 255, 255),
+                fill_strong: rgb(240, 241, 244),
+                fill_sunken: rgb(242, 243, 246),
+                solid: rgb(255, 255, 255),
+                stroke: rgb(213, 216, 224),
+                divider: rgb(225, 227, 232),
             },
             ink: Ink {
-                primary: rgb(28, 28, 32),
-                secondary: rgb(96, 96, 106),
-                muted: rgb(140, 140, 150),
+                primary: rgb(21, 22, 26),
+                secondary: rgb(76, 78, 87),
+                muted: rgb(99, 102, 111),
             },
             accent: Accent {
-                base: rgb(72, 94, 130),
-                soft: rgba(72, 94, 130, 56),
-                success: rgb(56, 124, 88),
-                danger: rgb(178, 74, 74),
-                warn: rgb(150, 112, 44),
+                base: rgb(10, 99, 194),
+                soft: rgba(10, 99, 194, 56),
+                success: rgb(12, 112, 50),
+                danger: rgb(194, 47, 47),
+                warn: rgb(154, 90, 10),
             },
         }
     }
@@ -398,43 +419,56 @@ mod tests {
 
     #[test]
     fn accent_is_muted_not_saturated() {
-        for mode in [Mode::Dark, Mode::Light] {
-            let a = Tokens::new(mode).palette.accent.base;
-            let max = a.r().max(a.g()).max(a.b()) as i32;
-            let min = a.r().min(a.g()).min(a.b()) as i32;
-            assert!(
-                max - min < 70,
-                "the accent must stay close to neutral ({mode:?}), got span {}",
-                max - min
-            );
-        }
+        // Dark keeps the muted accent this app has always had. The light
+        // accent is the reference app's real blue (`#0A63C2`), copied along
+        // with the rest of its light palette -- a saturated accent is
+        // deliberate there, so only dark is held to "near neutral".
+        let dark = Tokens::new(Mode::Dark).palette.accent.base;
+        let max = dark.r().max(dark.g()).max(dark.b()) as i32;
+        let min = dark.r().min(dark.g()).min(dark.b()) as i32;
+        assert!(
+            max - min < 70,
+            "the dark accent must stay close to neutral, got span {}",
+            max - min
+        );
+
+        let light = Tokens::new(Mode::Light).palette.accent.base;
+        assert!(
+            light.b() > light.r() + 80,
+            "the light accent is the reference's blue, got {light:?}"
+        );
     }
 
     #[test]
     fn surfaces_are_translucent_but_visible() {
+        // Dark keeps translucent washes over the sheet. Light copies the
+        // reference app, where every surface is opaque and only the window
+        // background is translucent -- that is what keeps a light theme bright
+        // over a dark desktop instead of grey.
+        let g = Tokens::new(Mode::Dark).palette.glass;
+        assert!(g.fill.a() > 8, "a dark surface must be visible against the backdrop");
+        assert!(g.fill.a() < 70, "but translucent, not an opaque slab");
+        assert!(
+            g.fill_strong.a() > g.fill.a(),
+            "the raised surface is stronger"
+        );
+        assert!(g.divider.a() > 0 && g.divider.a() < 80, "a hairline, not a line");
+
+        let l = Tokens::new(Mode::Light).palette.glass;
+        assert_eq!(l.fill.a(), 255, "light surfaces are opaque");
+        assert_eq!(l.solid.a(), 255);
+        assert_eq!(l.fill_strong.a(), 255);
+        assert_eq!(l.fill_sunken.a(), 255);
+        assert_eq!(l.divider.a(), 255, "opaque hairline colours, as in the reference");
+        assert_eq!(l.stroke.a(), 255);
+        assert!(l.fill.r() > 240, "and light, got {l:?}");
+
+        // Floating layers (popups / menus) are opaque in both modes -- a
+        // translucent popup over the app reads as frosted glass, not a raised
+        // surface.
         for mode in [Mode::Dark, Mode::Light] {
             let g = Tokens::new(mode).palette.glass;
-            assert!(
-                g.fill.a() > 8,
-                "a surface must be visible against the backdrop ({mode:?})"
-            );
-            assert!(
-                g.fill.a() < 70,
-                "but translucent, not an opaque slab ({mode:?})"
-            );
-            assert!(
-                g.fill_strong.a() > g.fill.a(),
-                "the raised surface is stronger ({mode:?})"
-            );
-            assert!(
-                g.divider.a() > 0 && g.divider.a() < 80,
-                "dividers must be visible but not a hard rule ({mode:?})"
-            );
-            assert_eq!(
-                g.solid.a(),
-                255,
-                "floating layers must be opaque — a translucent popup over the app reads as frosted glass ({mode:?})"
-            );
+            assert_eq!(g.solid.a(), 255, "floating layers must be opaque ({mode:?})");
             let in_family = match mode {
                 Mode::Dark => g.solid.r() < 60 && g.solid.g() < 60 && g.solid.b() < 60,
                 Mode::Light => g.solid.r() > 200 && g.solid.g() > 200 && g.solid.b() > 200,

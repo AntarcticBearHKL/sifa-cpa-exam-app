@@ -223,18 +223,25 @@ GUI 拆成入口 + 六个模块：`main.rs`（入口，仅 `mod` 声明 + `fn ma
 
 | 想要的效果 | 改哪里 |
 | --- | --- |
-| 界面更黑 / 更灰 | `background.base_top` / `base_bottom`（深色 30→16；浅色 247→236） |
+| 界面更黑 / 更灰 | `background.base_top` / `base_bottom`（深色 30→16；浅色 247→238） |
 | 背景更透（看到更多桌面） | 设置 → 外观的**透明度**滑杆（scrim alpha = `255*(1-t/100)`，默认 20 → 204） |
-| 表面更亮 / 更分明 | `glass.fill` / `fill_strong` 的 alpha（深色白 18 / 32；浅色黑 12 / 20） |
-| 描边更淡 / 边缘不抢戏 | `glass.stroke`（深色白 **14**，低于 `fill` 18；浅色黑 22） |
-| 分隔线更明显 / 更淡 | `glass.divider` 的 alpha（深色 24；浅色 18） |
-| 下拉 / 提示浮层更亮或更暗 | `glass.solid`（浮层实心底色：深色 rgb(30,30,33) / 浅色 rgb(250,250,252)） |
-| 换色调 | `background.blobs` 与 `accent.*`（深色 rgb(110,132,168) / 浅色 rgb(72,94,130)） |
+| 表面更亮 / 更分明 | 深色：`glass.fill` / `fill_strong` 的 alpha（白 18 / 32）；浅色：**不透明**表面色（`rgb(255,255,255)` / `rgb(240,241,244)`） |
+| 描边更淡 / 边缘不抢戏 | `glass.stroke`（深色白 **14**，低于 `fill` 18；浅色 `rgb(213,216,224)`） |
+| 分隔线更明显 / 更淡 | `glass.divider`（深色 alpha 24；浅色 `rgb(225,227,232)`） |
+| 下拉 / 提示浮层更亮或更暗 | `glass.solid`（浮层实心底色：深色 rgb(30,30,33) / 浅色 rgb(255,255,255)） |
+| 换色调 | `background.blobs` 与 `accent.*`（深色 rgb(110,132,168) / 浅色 rgb(10,99,194)） |
 
-> `scrim` 是两种模式的关键：它必须够不透明，否则窗口后面若是浅色桌面，深色 UI 会被冲成灰白；
-> 浅色模式的 scrim 则是**浅色且近乎实心**（`rgba(248,248,250,228)`）—— 理由完全相同，
-> 否则亮色桌面会把浅色 UI 洗淡（踩过这个坑）。现在它的 alpha 由**透明度**设置驱动
-> （默认 20 → 204）；颜色仍取自 `background.scrim`。
+> `scrim` 是两种模式的关键：它必须够不透明，否则窗口后面若是浅色桌面，深色 UI 会被冲成灰白。
+> 浅色模式的 scrim 颜色取自参考项目 3D 资源库的 `window-bg`（`rgba(244,245,247,alpha)`），
+> alpha 仍由**透明度**设置驱动（默认 20 → 204）。
+>
+> **浅色模式的表面是不透明的**（`rgb(255,255,255)` / `rgb(240,241,244)` / `rgb(242,243,246)`，
+> 依次对应参考项目的 `surface` / `surface-2` / `well`）。这是浅色主题唯一站得住的做法：只要表面还是
+> 「半透明白 / 黑洗」，窗口后面是深色桌面时整个正文就会被拉到 ~192 的灰；而设置弹窗
+> （`glass.solid`，不透明）永远是对的 —— 两者的差别就在这里，浅色主题应当长得像那个弹窗。
+> 深色模式维持原来的半透明白洗（18 / 32）：它本来就压在同为深色的桌面上，读数约 34，
+> 与参考项目的 `#1E1E1E` 几乎一致，所以不动。**代价是透明度 / 模糊现在只对深色模式可见** ——
+> 浅色主题的表面把桌面完全挡住了。
 
 > **选中 = 染色填充，不是描边。** 六个「选中 / 主要」状态（分段指示器、开关 chip、勾选框、主按钮、
 > chip、左栏选中行）一律用 `accent.soft` 系的**低透明染色填充**表达；描边保持中性（`glass.stroke`）
@@ -247,8 +254,8 @@ GUI 拆成入口 + 六个模块：`main.rs`（入口，仅 `mod` 声明 + `fn ma
 
 `theme/` 里十个测试守住两种模式的调色与浮层规则：`palette_is_dark_and_readable` /
 `light_palette_is_light_and_readable`（各自的底色 / 文字对比，浅色 scrim 浅且近乎实心，深色 scrim 深且近乎实心）/
-`accent_is_muted_not_saturated`（**两种模式**共守） / `surfaces_are_translucent_but_visible`（**两种模式**：
-表面够透但可辨、浮层实心且留在本模式色系） / `edges_recede_and_selection_is_a_tint`（描边低于表面、
+`accent_is_muted_not_saturated`（深色保持中性；浅色是参考项目的实蓝色） / `surfaces_are_translucent_but_visible`（深色：
+表面够透但可辨；浅色：表面**不透明**、浮层实心且留在本模式色系） / `edges_recede_and_selection_is_a_tint`（描边低于表面、
 染色填充是透明色不是实心块） / `mode_ids_round_trip`（`user.json` 的 `theme` 值解析），
 以及 `popups_are_flush_not_floating_glass`（**两种模式**：`Frame::popup` 读的 `window_fill` 必须不透明、
 `popup_shadow` 必须为 `NONE`、无顶边亮带、`menu_corner_radius` 与按钮一致）
