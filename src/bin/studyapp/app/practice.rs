@@ -65,6 +65,13 @@ impl App {
                 egui::vec2(LABEL_W, ROW_H),
                 egui::Layout::left_to_right(egui::Align::Center),
                 |ui| {
+                    // `allocate_ui_with_layout` only *caps* the width at
+                    // `LABEL_W`; the space it hands back is the content's. That
+                    // left every row's control starting right after its own
+                    // label, so 正确率 (three glyphs) pushed its segmented
+                    // control out of line with the two-glyph rows. A minimum
+                    // width makes the cell actually occupy the column.
+                    ui.set_min_width(LABEL_W);
                     ui.label(
                         RichText::new(text)
                             .size(13.5)

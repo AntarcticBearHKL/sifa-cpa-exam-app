@@ -79,6 +79,20 @@ impl App {
     pub(super) fn rail(&mut self, ui: &mut egui::Ui) {
         let tokens = self.tokens;
         let frame = glass::frame(&tokens);
+        // A resizable panel paints a line on its edge while hovered or dragged
+        // (`show_separator_line(false)` only suppresses the *resting* line —
+        // see egui's `panel.rs`, which picks `widgets.hovered.fg_stroke` /
+        // `widgets.active.fg_stroke` for those two states). Both are the
+        // "highly visible" strokes, so the rail flashed a bright bar whenever
+        // the pointer came near its edge. Zeroing just those two strokes for
+        // the duration of the panel keeps the drag-to-resize behaviour and
+        // removes the bar; the rail's own rows paint their own hover, so
+        // nothing inside it depends on them.
+        let saved = ui.style().clone();
+        let mut quiet = (*saved).clone();
+        quiet.visuals.widgets.hovered.fg_stroke = egui::Stroke::NONE;
+        quiet.visuals.widgets.active.fg_stroke = egui::Stroke::NONE;
+        ui.set_style(quiet);
         egui::Panel::left("rail")
             .resizable(true)
             .default_size(268.0)
@@ -138,6 +152,7 @@ impl App {
                     self.select_subject(id);
                 }
             });
+        ui.set_style(saved);
     }
     /// A subject row in the rail: name left, count right, accent bar when selected.
 fn rail_row(
