@@ -270,18 +270,30 @@ impl Palette {
                 scrim: rgba(244, 245, 247, 228),
             },
             glass: Glass {
-                // The reference's split, and the reason its light theme is both
-                // see-through and bright: its panels are `transparent` (the root
-                // paints `window-bg` once) and only its surfaces are opaque. So
-                // our regions are the sheet itself -- the frosted desktop shows
-                // through the body -- while rows, wells and the modal stay
-                // opaque and crisp.
+                // Regions are the sheet itself -- the reference's panels are
+                // `transparent` and the root paints `window-bg` once -- so the
+                // frosted desktop shows through the body.
+                //
+                // The raised and sunken surfaces are *washes* rather than the
+                // reference's opaque `#F0F1F4` / `#F2F3F6`. A translucent body
+                // reads ~200 over a dark desktop and ~244 over a light one, so
+                // an opaque surface cannot stay on the right side of it: those
+                // two colours read as white slabs floating on the frosted body
+                // (a segmented track brighter than everything around it). A
+                // light wash lifts a row and a dark wash recesses a track,
+                // whatever the body happens to read at that moment.
                 fill: rgba(255, 255, 255, 0),
-                fill_strong: rgb(240, 241, 244),
-                fill_sunken: rgb(242, 243, 246),
+                fill_strong: rgba(255, 255, 255, 140),
+                fill_sunken: rgba(0, 0, 0, 26),
+                // Floating layers stay opaque: their backdrop is the app, not
+                // the desktop, so nothing may show through them.
                 solid: rgb(255, 255, 255),
-                stroke: rgb(213, 216, 224),
-                divider: rgb(225, 227, 232),
+                // Hairlines are washes too, for the same reason: an opaque
+                // #D5D8E0 is a light line over a dark desktop and a dark one
+                // over a bright desktop. Below `fill_sunken`, so an edge still
+                // recedes under the well it outlines.
+                stroke: rgba(0, 0, 0, 24),
+                divider: rgba(0, 0, 0, 22),
             },
             ink: Ink {
                 primary: rgb(21, 22, 26),
@@ -444,11 +456,13 @@ mod tests {
 
     #[test]
     fn surfaces_are_translucent_but_visible() {
-        // Dark keeps translucent washes over the sheet. Light copies the
-        // reference app's split: its panels are transparent and the root paints
-        // the translucent `window-bg` once, so our regions carry no fill of
-        // their own and the frosted desktop shows through the body -- while the
-        // rows, wells and modal stay opaque and crisp.
+        // Dark keeps translucent washes over the sheet. Light keeps the
+        // reference app's split -- its panels are transparent and the root
+        // paints the translucent `window-bg` once, so our regions carry no fill
+        // of their own and the frosted desktop shows through the body -- but
+        // its raised and sunken surfaces are washes too, because an opaque
+        // surface cannot stay on the right side of a body whose reading follows
+        // the desktop. The modal stays opaque: its backdrop is the app.
         let g = Tokens::new(Mode::Dark).palette.glass;
         assert!(g.fill.a() > 8, "a dark surface must be visible against the backdrop");
         assert!(g.fill.a() < 70, "but translucent, not an opaque slab");
@@ -460,12 +474,25 @@ mod tests {
 
         let l = Tokens::new(Mode::Light).palette.glass;
         assert_eq!(l.fill.a(), 0, "light regions are the sheet, as the reference's panels are");
-        assert_eq!(l.solid.a(), 255, "the modal stays opaque, as the reference's surface");
-        assert_eq!(l.fill_strong.a(), 255, "rows and buttons are opaque");
-        assert_eq!(l.fill_sunken.a(), 255, "and so are wells");
-        assert_eq!(l.divider.a(), 255, "opaque hairline colours, as in the reference");
-        assert_eq!(l.stroke.a(), 255);
-        assert!(l.fill_strong.r() > 200 && l.fill_strong.g() > 200, "and light, got {l:?}");
+        assert_eq!(l.solid.a(), 255, "the modal stays opaque: its backdrop is the app");
+        // The raised and sunken surfaces are washes, not opaque colours: the
+        // body is translucent, so an opaque #F0F1F4 / #F2F3F6 track reads as a
+        // white slab on it (a track brighter than everything around it).
+        assert!(
+            l.fill_strong.a() > 60 && l.fill_strong.a() < 200,
+            "a raised row is a light wash, not a slab, got alpha {}",
+            l.fill_strong.a()
+        );
+        assert!(
+            l.fill_sunken.a() > 0 && l.fill_sunken.a() < 60,
+            "a track is a dark wash, got alpha {}",
+            l.fill_sunken.a()
+        );
+        assert!(
+            l.stroke.a() > 0 && l.stroke.a() <= l.fill_sunken.a(),
+            "and the edge recedes under the well it outlines"
+        );
+        assert!(l.divider.a() > 0 && l.divider.a() < 60, "a hairline, not a rule");
 
         // Floating layers (popups / menus) are opaque in both modes -- a
         // translucent popup over the app reads as frosted glass, not a raised
