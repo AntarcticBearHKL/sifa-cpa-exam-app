@@ -920,13 +920,16 @@ fn default_theme() -> String {
     "dark".to_string()
 }
 
-/// ≈ today's scrim: `255 * (1 - 0.12) ≈ 224`.
+/// Frosted-glass defaults: 20 % see-through (`255 * (1 - 0.20) = 204` scrim
+/// alpha) and the maximum blur. Chosen by the user, so both are the values a
+/// fresh install — and any `user.json` written before these fields existed —
+/// starts from.
 fn default_glass_transparency() -> u8 {
-    12
+    20
 }
 
 fn default_glass_blur() -> u8 {
-    45
+    100
 }
 
 impl Default for UserStore {
