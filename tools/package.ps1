@@ -36,18 +36,17 @@ Push-Location $root
 try {
     # No `--locked`: a version bump changes Cargo.toml, and the lock records the
     # package version, so `--locked` would refuse until the lock is refreshed.
-    # CI keeps `--locked` -- that is where catching a stale lock belongs.
     cargo build --release
     if ($LASTEXITCODE -ne 0) { throw "cargo build --release failed" }
 
-    # ...but the refreshed lock must be *committed*, or CI's `cargo build
-    # --locked` fails on the very commit this zip was built from. That is
-    # exactly how v0.13 and v0.14 went red. Refuse to package in that state.
+    # ...but the refreshed lock must be *committed*, so that the tree this zip
+    # was built from is the tree that is actually recorded. A version bump that
+    # ships without its lock leaves the next `cargo build --locked` failing.
     $dirty = & git status --porcelain -- Cargo.lock Cargo.toml
     if ($dirty) {
         throw ("Cargo.lock/Cargo.toml changed during the build and are not committed:`n" +
                ($dirty -join "`n") +
-               "`nCommit them, then re-run this script. (CI builds with --locked.)")
+               "`nCommit them, then re-run this script.")
     }
 } finally { Pop-Location }
 
