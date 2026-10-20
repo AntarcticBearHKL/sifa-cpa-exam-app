@@ -453,8 +453,8 @@ mod tests {
         let mut user = UserStore::default();
         user.toggle_favorite("q1");
         // 错题 comes from the stats now: q2 and q4 were answered wrong.
-        user.record_answer("q2", false, "");
-        user.record_answer("q4", false, "");
+        user.record_answer("q2", false, 0);
+        user.record_answer("q4", false, 0);
 
         let ch2 = select(
             &qs,
@@ -539,12 +539,12 @@ mod tests {
     fn accuracy_filter_conditions() {
         let qs = questions();
         let mut user = UserStore::default();
-        user.record_answer("q1", true, "t"); // 2/2 = 100%
-        user.record_answer("q1", true, "t");
-        user.record_answer("q2", true, "t"); // 2/3 ≈ 67%: below 100, not below 60
-        user.record_answer("q2", true, "t");
-        user.record_answer("q2", false, "t");
-        user.record_answer("q3", false, "t"); // 0/1 = 0%: below 60
+        user.record_answer("q1", true, 0); // 2/2 = 100%
+        user.record_answer("q1", true, 0);
+        user.record_answer("q2", true, 0); // 2/3 ≈ 67%: below 100, not below 60
+        user.record_answer("q2", true, 0);
+        user.record_answer("q2", false, 0);
+        user.record_answer("q3", false, 0); // 0/1 = 0%: below 60
         // q4 was never answered.
 
         let pick = |a: Accuracy| {
@@ -571,8 +571,8 @@ mod tests {
         let qs = questions();
         let mut user = UserStore::default();
         user.toggle_favorite("q1");
-        user.record_answer("q1", true, "");
-        user.record_answer("q2", false, "");
+        user.record_answer("q1", true, 0);
+        user.record_answer("q2", false, 0);
 
         // 已收藏 ∧ 全对 ∧ 第一章 ∧ 选择题 → q1 only.
         let hit = select(
@@ -690,10 +690,10 @@ mod tests {
         let qs = questions();
         let mut user = UserStore::default();
         user.toggle_favorite("q1");
-        user.record_answer("q1", true, "");
-        user.record_answer("q1", true, "");
-        user.record_answer("q2", false, "");
-        user.record_answer("q3", false, "");
+        user.record_answer("q1", true, 0);
+        user.record_answer("q1", true, 0);
+        user.record_answer("q2", false, 0);
+        user.record_answer("q3", false, 0);
 
         let unseen = select(
             &qs,
@@ -766,9 +766,9 @@ mod tests {
     fn wrong_sample_only_draws_wrong_and_caps() {
         let qs = questions();
         let mut user = UserStore::default();
-        user.record_answer("q1", false, "");
-        user.record_answer("q3", false, "");
-        user.record_seen("q4", "t"); // viewed but never answered: not 错题
+        user.record_answer("q1", false, 0);
+        user.record_answer("q3", false, 0);
+        user.record_seen("q4", 0); // viewed but never answered: not 错题
 
         let draw = wrong_sample(&qs, &user, 10, 7);
         assert_eq!(draw.len(), 2, "the viewed-only question must not be drawn");

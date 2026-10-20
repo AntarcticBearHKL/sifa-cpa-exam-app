@@ -1043,6 +1043,80 @@ pub struct QStat {
     /// view; see [`UserStore::record_answer`] / [`UserStore::record_seen`]).
     #[serde(default)]
     pub last: String,
+    /// Consecutive correct answers, reset by a miss. [`MASTER_STREAK`] in a row
+    /// graduates the question out of the weak set (see [`mastery`]).
+    #[serde(default)]
+    pub streak: u32,
+    /// Unix day (UTC days since 1970-01-01) this question is next due for
+    /// review; `0` when it has never been scheduled. Kept as a day number
+    /// because a day is all the schedule needs: one comparison against today.
+    #[serde(default)]
+    pub due_day: i64,
+}
+
+/// Consecutive correct answers that graduate a question out of the weak set.
+pub const MASTER_STREAK: u32 = 2;
+
+/// How well a question is known, derived from its stats.
+#[derive(Clone, Copy, PartialEq, Eq, Debug)]
+pub enum Mastery {
+    /// Never answered (`attempts == 0`), including questions only viewed.
+    New,
+    /// Answered at least once, and not yet [`MASTER_STREAK`] correct in a row.
+    Weak,
+    /// [`MASTER_STREAK`] correct in a row. It leaves the weak set and comes
+    /// back as due once its interval elapses, so "已掌握" is a state, not a
+    /// one-way door.
+    Mastered,
+}
+
+/// [`Mastery`] of one question from its saved record.
+pub fn mastery(stat: Option<&QStat>) -> Mastery {
+    match stat {
+        Some(s) if s.attempts > 0 && s.streak >= MASTER_STREAK => Mastery::Mastered,
+        Some(s) if s.attempts > 0 => Mastery::Weak,
+        _ => Mastery::New,
+    }
+}
+
+/// Days until a question is due again, by consecutive-correct streak: a miss
+/// comes back tomorrow, then 3, 7, 14 and 30 days. Deliberately short and
+/// explainable rather than an SM-2 score — this is a study app, and the learner
+/// should be able to predict when a question returns.
+pub fn interval_days(streak: u32) -> i64 {
+    match streak {
+        0 => 1,
+        1 => 3,
+        2 => 7,
+        3 => 14,
+        _ => 30,
+    }
+}
+
+/// Unix day (UTC) of a timestamp in seconds.
+pub fn unix_day(secs: u64) -> i64 {
+    (secs / 86_400) as i64
+}
+
+/// Today as a unix day (UTC).
+pub fn today_unix_day() -> i64 {
+    std::time::SystemTime::now()
+        .duration_since(std::time::UNIX_EPOCH)
+        .map(|d| unix_day(d.as_secs()))
+        .unwrap_or(0)
+}
+
+/// Is this question due for review today?
+///
+/// New questions are not "due" — they are new, and the today queue counts them
+/// separately. A question that was answered and never scheduled (a `user.json`
+/// written before `due_day` existed) is due immediately, which is what makes the
+/// migration land the existing 错题 set in the queue instead of hiding it.
+pub fn is_due(stat: Option<&QStat>, today: i64) -> bool {
+    match stat {
+        Some(s) if s.attempts > 0 => s.due_day <= today,
+        _ => false,
+    }
 }
 
 impl QStat {
@@ -1076,25 +1150,32 @@ impl UserStore {
         self.favorites.len()
     }
 
-    /// Records one answer, updating the per-question attempts/accuracy record.
-    pub fn record_answer(&mut self, question_id: &str, correct: bool, timestamp: &str) {
+    /// Records one answer: bumps attempts/accuracy, the consecutive-correct
+    /// streak, and schedules the next review (see [`interval_days`]).
+    pub fn record_answer(&mut self, question_id: &str, correct: bool, now: u64) {
         let entry = self.stats.entry(question_id.to_string()).or_default();
         entry.attempts = entry.attempts.saturating_add(1);
         if correct {
             entry.correct = entry.correct.saturating_add(1);
+            entry.streak = entry.streak.saturating_add(1);
+        } else {
+            // A miss resets the streak, so the question returns to the weak
+            // set and is scheduled for tomorrow rather than in 7 days.
+            entry.streak = 0;
         }
-        entry.last = timestamp.to_string();
+        entry.last = iso8601_from_unix(now);
+        entry.due_day = unix_day(now) + interval_days(entry.streak);
     }
 
     /// Records one view of a question: it became the current question of a
     /// practice session. Bumps `seen` and the interaction timestamp only —
-    /// `attempts` / `correct` are answer-only and are never touched here.
-    /// Called once per visit (entering a session, 下一题, 上一题), not per
-    /// frame, so re-showing the same question counts again.
-    pub fn record_seen(&mut self, question_id: &str, timestamp: &str) {
+    /// `attempts` / `correct` / the review schedule are answer-only and are
+    /// never touched here. Called once per visit (entering a session, 下一题,
+    /// 上一题), not per frame, so re-showing the same question counts again.
+    pub fn record_seen(&mut self, question_id: &str, now: u64) {
         let entry = self.stats.entry(question_id.to_string()).or_default();
         entry.seen = entry.seen.saturating_add(1);
-        entry.last = timestamp.to_string();
+        entry.last = iso8601_from_unix(now);
     }
 
     pub fn stat(&self, question_id: &str) -> Option<&QStat> {
@@ -1252,11 +1333,15 @@ pub fn domain_root(domain: Domain, args: &CliArgs) -> PathBuf {
 
 /// ISO-8601 UTC timestamp (e.g. `2026-10-15T03:49:09Z`).
 pub fn now_iso() -> String {
-    let secs = std::time::SystemTime::now()
+    iso8601_from_unix(now_unix())
+}
+
+/// Seconds since the Unix epoch, for the review schedule.
+pub fn now_unix() -> u64 {
+    std::time::SystemTime::now()
         .duration_since(std::time::UNIX_EPOCH)
         .map(|d| d.as_secs())
-        .unwrap_or(0);
-    iso8601_from_unix(secs)
+        .unwrap_or(0)
 }
 
 pub fn iso8601_from_unix(secs: u64) -> String {
@@ -1509,16 +1594,21 @@ mod tests {
         assert!(store.accuracy("q1").is_none());
         assert!(store.overall_accuracy().is_none());
 
-        store.record_answer("q1", true, "t1");
-        store.record_answer("q1", false, "t2");
-        store.record_answer("q1", true, "t3");
-        store.record_answer("q2", false, "t4");
+        store.record_answer("q1", true, 0);
+        store.record_answer("q1", false, 86_400);
+        store.record_answer("q1", true, 2 * 86_400);
+        store.record_answer("q2", false, 0);
 
         let s = store.stat("q1").expect("q1 recorded");
         assert_eq!(s.attempts, 3);
         assert_eq!(s.correct, 2);
-        assert_eq!(s.last, "t3");
+        assert_eq!(s.last, "1970-01-03T00:00:00Z");
         assert!((s.accuracy() - 2.0 / 3.0).abs() < 1e-5);
+        // Right, miss, right: the miss reset the streak, so it is 1 -- not
+        // mastered yet -- and the next review is `interval_days(1)` days out.
+        assert_eq!(s.streak, 1);
+        assert_eq!(s.due_day, 2 + interval_days(1));
+        assert_eq!(mastery(Some(s)), Mastery::Weak);
 
         assert_eq!(store.attempted_count(), 2);
         assert_eq!(store.total_attempts(), 4);
@@ -1531,8 +1621,8 @@ mod tests {
         let _ = fs::remove_dir_all(&dir);
 
         let mut store = UserStore::default();
-        store.record_answer("law:a", true, "t1");
-        store.record_answer("law:a", true, "t2");
+        store.record_answer("law:a", true, 0);
+        store.record_answer("law:a", true, 0);
         save_user_store(&dir, &store).unwrap();
 
         let loaded = load_user_store(&dir);
@@ -1577,22 +1667,60 @@ mod tests {
     #[test]
     fn seen_increments_per_view_and_leaves_attempts_alone() {
         let mut store = UserStore::default();
-        store.record_seen("q1", "t1");
+        store.record_seen("q1", 0);
         assert_eq!(store.stat("q1").unwrap().seen, 1);
         assert_eq!(store.stat("q1").unwrap().attempts, 0, "a view is not an answer");
         assert_eq!(store.stat("q1").unwrap().correct, 0);
 
-        store.record_answer("q1", true, "t2");
-        store.record_seen("q1", "t3");
+        store.record_answer("q1", true, 86_400);
+        store.record_seen("q1", 3 * 86_400);
         let s = store.stat("q1").unwrap();
         assert_eq!(s.seen, 2, "re-showing the same question counts again");
         assert_eq!(s.attempts, 1);
         assert_eq!(s.correct, 1);
-        assert_eq!(s.last, "t3", "the timestamp follows both kinds of record");
+        assert_eq!(s.last, "1970-01-04T00:00:00Z", "the timestamp follows both kinds of record");
+        // A view updates `last` and nothing else: the answer's schedule stands.
+        assert_eq!(s.streak, 1);
+        assert_eq!(s.due_day, 1 + interval_days(1));
 
         // A view must not invent an attempt either.
-        store.record_seen("q2", "t4");
+        store.record_seen("q2", 0);
         assert_eq!(store.attempted_count(), 1);
         assert_eq!(store.total_attempts(), 1);
+    }
+
+    /// The review model: new until answered, weak until two correct in a row,
+    /// then mastered -- and a miss drops it back to weak. A `user.json` written
+    /// before the schedule existed is weak and due immediately, which is what
+    /// lands the existing 错题 set in today's queue.
+    #[test]
+    fn mastery_and_due_follow_the_streak() {
+        let mut store = UserStore::default();
+        assert_eq!(mastery(store.stat("q1")), Mastery::New);
+        assert!(!is_due(store.stat("q1"), 0), "a question never answered is not due");
+
+        store.record_answer("q1", true, 0);
+        assert_eq!(mastery(store.stat("q1")), Mastery::Weak, "one correct is not mastery");
+        assert_eq!(store.stat("q1").unwrap().streak, 1);
+        assert_eq!(store.stat("q1").unwrap().due_day, interval_days(1));
+        assert!(!is_due(store.stat("q1"), 1), "not due before its interval");
+        assert!(is_due(store.stat("q1"), interval_days(1)), "due on the day");
+
+        store.record_answer("q1", true, 2 * 86_400);
+        assert_eq!(mastery(store.stat("q1")), Mastery::Mastered);
+        assert_eq!(store.stat("q1").unwrap().streak, 2);
+
+        store.record_answer("q1", false, 3 * 86_400);
+        assert_eq!(mastery(store.stat("q1")), Mastery::Weak, "a miss drops it back");
+        assert_eq!(store.stat("q1").unwrap().streak, 0);
+        assert_eq!(store.stat("q1").unwrap().due_day, 3 + interval_days(0));
+
+        let migrated = QStat {
+            attempts: 1,
+            correct: 0,
+            ..Default::default()
+        };
+        assert_eq!(mastery(Some(&migrated)), Mastery::Weak);
+        assert!(is_due(Some(&migrated), 20_000), "an unscheduled miss is due at once");
     }
 }

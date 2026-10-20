@@ -34,6 +34,23 @@ serde_json = "1"
 # Reaches the Win32 HWND so DWM can give the borderless window a real acrylic backdrop.
 raw-window-handle = "0.6"
 
+# Compile speed first: the dev profile exists for the edit/verify loop, not for
+# shipping. This crate is unoptimized -- it is what gets rebuilt on every edit --
+# while dependencies stay optimized (2), because they are compiled once and own
+# the runtime-heavy code (eframe/egui/wgpu). `debug = 1` keeps line numbers and
+# backtraces but drops the local-variable info that made PDBs and incremental
+# sessions multi-GB; incremental is on for this crate only.
+[profile.dev]
+opt-level = 0
+debug = 1
+incremental = true
+
+# Dependencies: optimized once, no incremental state (they never change).
+[profile.dev.package."*"]
+opt-level = 2
+debug = 1
+incremental = false
+
 [profile.release]
 opt-level = 3
 

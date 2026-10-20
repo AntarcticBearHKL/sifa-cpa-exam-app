@@ -9,7 +9,7 @@ use egui_commonmark::{CommonMarkCache, CommonMarkViewer};
 pub(crate) use crate::{anim, diag, glass, logic, theme, win};
 
 use sfzklearning::{
-    domain_root, load_subject, load_user_store, load_wrong_ids, now_iso, parse_cli_args,
+    domain_root, load_subject, load_user_store, load_wrong_ids, now_iso, now_unix, parse_cli_args,
     resolve_state_dir, save_user_store, save_wrong_ids, write_current, CurrentContext, Domain,
     KnowledgePoint, Question, StateKp, StateOption, StateQuestion, SubjectFile, SummarySubject,
     UserStore,
@@ -586,7 +586,7 @@ impl App {
         let Some(q) = self.session_question() else {
             return;
         };
-        self.user.record_seen(&q.id, &now_iso());
+        self.user.record_seen(&q.id, now_unix());
         self.persist_user();
     }
 
@@ -614,7 +614,7 @@ impl App {
             self.anim.trigger_shake(question_key(&q), now);
         }
         self.reveal_epoch = self.reveal_epoch.wrapping_add(1);
-        self.user.record_answer(&qid, ok, &now_iso());
+        self.user.record_answer(&qid, ok, now_unix());
         // The wrong file is a projection of the stats, which were just
         // updated: it is rewritten from them, never edited by hand.
         self.persist_wrong();
@@ -1581,8 +1581,8 @@ mod tests {
         )
         .unwrap();
         let mut user = UserStore::default();
-        user.record_seen("law:viewed", "2026-01-01T00:00:00Z"); // viewed only
-        user.record_answer("law:wrong", false, "2026-01-01T00:00:00Z");
+        user.record_seen("law:viewed", 0); // viewed only
+        user.record_answer("law:wrong", false, 0);
 
         let kept = prune_wrong_file(&dir, Domain::Law, "demo", &user);
         assert_eq!(
