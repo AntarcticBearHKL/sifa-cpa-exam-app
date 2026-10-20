@@ -485,6 +485,18 @@ pub struct Summary {
     pub subjects: Vec<SummarySubject>,
 }
 
+/// The domain's question total as `summary.json` states it. Subjects with no
+/// recorded count contribute nothing, so an absent `questions` field cannot turn
+/// the 新题 figure into a wild number.
+pub fn subject_question_total(subjects: &[SummarySubject]) -> usize {
+    subjects
+        .iter()
+        .filter_map(|s| s.questions)
+        .filter(|n| *n > 0)
+        .map(|n| n as usize)
+        .sum()
+}
+
 // ---------------------------------------------------------------------------
 // Loaders
 // ---------------------------------------------------------------------------
@@ -1106,6 +1118,84 @@ pub fn today_unix_day() -> i64 {
         .unwrap_or(0)
 }
 
+/// `YYYY-MM-DD` of a unix day. The 今天 block compares a stat's `last`
+/// timestamp against this prefix, so "done today" survives a restart without
+/// re-parsing every timestamp.
+pub fn date_from_unix_day(day: i64) -> String {
+    let (y, m, d) = civil_from_days(day);
+    format!("{y:04}-{m:02}-{d:02}")
+}
+
+/// Chinese weekday of a unix day, Monday first. 1970-01-01 was a Thursday.
+pub fn weekday_label(day: i64) -> &'static str {
+    const NAMES: [&str; 7] = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"];
+    NAMES[(day + 3).rem_euclid(7) as usize]
+}
+
+/// Is this question id in `domain`? Ids carry the domain as their prefix
+/// (`law:…` / `cpa:…`), which is what lets `user.json` be one file.
+pub fn id_in_domain(id: &str, domain: Domain) -> bool {
+    id.strip_prefix(domain.id())
+        .is_some_and(|rest| rest.starts_with(':'))
+}
+
+/// The counts behind the 今天 block. Derived from `user.json` alone — no
+/// subject file is opened for it.
+#[derive(Clone, Copy, Debug, Default, PartialEq, Eq)]
+pub struct TodayCounts {
+    /// Answered questions of this domain whose review day has arrived.
+    pub due: usize,
+    /// Domain questions never answered (the summary total minus attempted).
+    pub new: usize,
+    /// Domain favourites that are not [`Mastery::Mastered`].
+    pub favorites: usize,
+    /// Domain stats touched today (an answer or a view; see `QStat::last`).
+    pub done: usize,
+}
+
+/// [`TodayCounts`] for one domain.
+///
+/// `total_questions` is the domain total from `summary.json`
+/// ([`subject_question_total`]); `today_day` / `today_date` are
+/// [`today_unix_day`] and [`date_from_unix_day`] of the same moment.
+pub fn today_counts(
+    stats: &std::collections::BTreeMap<String, QStat>,
+    favorites: &[String],
+    domain: Domain,
+    total_questions: usize,
+    today_day: i64,
+    today_date: &str,
+) -> TodayCounts {
+    let mut attempted = 0;
+    let mut due = 0;
+    let mut done = 0;
+    for (id, stat) in stats {
+        if !id_in_domain(id, domain) {
+            continue;
+        }
+        if stat.attempts > 0 {
+            attempted += 1;
+        }
+        if is_due(Some(stat), today_day) {
+            due += 1;
+        }
+        if stat.last.starts_with(today_date) {
+            done += 1;
+        }
+    }
+    let favorites = favorites
+        .iter()
+        .filter(|id| id_in_domain(id, domain))
+        .filter(|id| mastery(stats.get(id.as_str())) != Mastery::Mastered)
+        .count();
+    TodayCounts {
+        due,
+        new: total_questions.saturating_sub(attempted),
+        favorites,
+        done,
+    }
+}
+
 /// Is this question due for review today?
 ///
 /// New questions are not "due" — they are new, and the today queue counts them
@@ -1722,5 +1812,118 @@ mod tests {
         };
         assert_eq!(mastery(Some(&migrated)), Mastery::Weak);
         assert!(is_due(Some(&migrated), 20_000), "an unscheduled miss is due at once");
+    }
+
+    /// The 今天 block's date line: the day number of an ISO timestamp is the
+    /// same day its `last` prefix names, and the weekday follows the calendar
+    /// (1970-01-01 was a Thursday).
+    #[test]
+    fn date_and_weekday_come_from_the_unix_day() {
+        assert_eq!(date_from_unix_day(0), "1970-01-01");
+        assert_eq!(weekday_label(0), "周四");
+        assert_eq!(weekday_label(5), "周二", "1970-01-06 was a Tuesday");
+
+        // 1_700_000_000 s = 2023-11-14T22:13:20Z, a Tuesday.
+        assert_eq!(date_from_unix_day(19_675), "2023-11-14");
+        assert_eq!(weekday_label(19_675), "周二");
+        assert!(iso8601_from_unix(1_700_000_000).starts_with(&date_from_unix_day(19_675)));
+    }
+
+    /// The 今天 numbers are domain-scoped and come from `user.json` alone:
+    /// 到期 only counts answered questions whose day arrived, 新题 is the
+    /// summary total minus the domain's attempted entries, 收藏 skips mastered
+    /// ones, and 今日 counts every entry touched today (a view included).
+    #[test]
+    fn today_counts_are_derived_from_stats_and_favorites_only() {
+        let today = 20_000;
+        let date = date_from_unix_day(today);
+        let mut stats = std::collections::BTreeMap::new();
+        stats.insert(
+            "law:due-weak".to_string(),
+            QStat {
+                attempts: 2,
+                correct: 1,
+                streak: 0,
+                due_day: today - 1,
+                last: format!("{date}T08:00:00Z"),
+                ..Default::default()
+            },
+        );
+        stats.insert(
+            "law:due-mastered".to_string(),
+            QStat {
+                attempts: 2,
+                correct: 2,
+                streak: 2,
+                due_day: today,
+                last: "2020-01-01T00:00:00Z".to_string(),
+                ..Default::default()
+            },
+        );
+        stats.insert(
+            "law:future".to_string(),
+            QStat {
+                attempts: 1,
+                correct: 1,
+                streak: 1,
+                due_day: today + 3,
+                last: String::new(),
+                ..Default::default()
+            },
+        );
+        stats.insert(
+            "law:viewed".to_string(),
+            QStat {
+                seen: 1,
+                last: format!("{date}T09:00:00Z"),
+                ..Default::default()
+            },
+        );
+        stats.insert(
+            "cpa:due".to_string(),
+            QStat {
+                attempts: 1,
+                correct: 0,
+                due_day: 0,
+                last: format!("{date}T10:00:00Z"),
+                ..Default::default()
+            },
+        );
+        let favorites = vec![
+            "law:due-mastered".to_string(), // mastered: still a favourite, not today's
+            "law:future".to_string(),
+            "law:new".to_string(),
+            "cpa:due".to_string(), // other domain
+        ];
+
+        let law = today_counts(&stats, &favorites, Domain::Law, 100, today, &date);
+        assert_eq!(law.due, 2, "the two answered law questions whose day arrived");
+        assert_eq!(law.new, 97, "100 summary questions minus 3 attempted law entries");
+        assert_eq!(law.favorites, 2, "mastered favourites are not 今天's favourites");
+        assert_eq!(law.done, 2, "an answer and a view both touch `last` today");
+
+        let cpa = today_counts(&stats, &favorites, Domain::Cpa, 7, today, &date);
+        assert_eq!(cpa.due, 1, "only cpa entries count");
+        assert_eq!(cpa.new, 6);
+        assert_eq!(cpa.favorites, 1);
+        assert_eq!(cpa.done, 1);
+
+        // Domain ids are matched on the `id:` prefix, not a bare substring.
+        assert!(id_in_domain("law:a", Domain::Law));
+        assert!(!id_in_domain("lawful:a", Domain::Law));
+        assert!(!id_in_domain("cpa:a", Domain::Law));
+
+        let subs = [
+            SummarySubject {
+                questions: Some(10),
+                ..Default::default()
+            },
+            SummarySubject {
+                questions: Some(32),
+                ..Default::default()
+            },
+            SummarySubject::default(),
+        ];
+        assert_eq!(subject_question_total(&subs), 42);
     }
 }

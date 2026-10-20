@@ -7,21 +7,83 @@ impl App {
     // ---- 做题 ----
 
     pub(super) fn practice_view(&mut self, ui: &mut egui::Ui) {
-        if self.session.is_some() {
+        if self.exam_result.is_some() {
+            self.exam_result_view(ui);
+        } else if self.session.is_some() {
             self.session_view(ui);
         } else {
             self.practice_setup(ui);
         }
     }
 
+    /// 年份: 全部 + every year present in the loaded subject, newest first.
+    /// Wrapped in a horizontal scroll because a subject can hold 30+ years and
+    /// one row must not push the column wider than `left_w`.
+    fn year_row(
+        &mut self,
+        ui: &mut egui::Ui,
+        tokens: &theme::Tokens,
+        label_w: f32,
+        row_h: f32,
+    ) {
+        let years = self
+            .subject
+            .as_ref()
+            .map(|s| logic::years(&s.questions))
+            .unwrap_or_default();
+        ui.allocate_ui_with_layout(
+            egui::vec2(ui.available_width(), row_h),
+            egui::Layout::left_to_right(egui::Align::Center),
+            |ui| {
+                label_cell(ui, tokens, "年份", None, label_w, row_h);
+                let mut items: Vec<&str> = Vec::with_capacity(years.len() + 1);
+                items.push("全部");
+                items.extend(years.iter().map(String::as_str));
+                let sel = self
+                    .set_year
+                    .as_ref()
+                    .and_then(|y| years.iter().position(|x| x == y))
+                    .map_or(0, |i| i + 1);
+                egui::ScrollArea::horizontal()
+                    .id_salt("set_year_scroll")
+                    .scroll_bar_visibility(
+                        egui::scroll_area::ScrollBarVisibility::AlwaysHidden,
+                    )
+                    .max_height(row_h)
+                    .show(ui, |ui| {
+                        if let Some(i) =
+                            glass::widgets::segmented(ui, tokens, "set_year", &items, sel)
+                        {
+                            self.set_year = if i == 0 {
+                                None
+                            } else {
+                                years.get(i - 1).cloned()
+                            };
+                        }
+                    });
+            },
+        );
+    }
+
     fn practice_setup(&mut self, ui: &mut egui::Ui) {
         let tokens = self.tokens;
+        let now = ui.input(|i| i.time);
         let matched = self.matching_questions().len();
         let wrong = self.wrong_count();
         let chapter_list = self
             .subject
             .as_ref()
             .map(|s| logic::chapter_counts(&s.questions))
+            .unwrap_or_default();
+        let coverage: std::collections::HashMap<String, (usize, usize)> = self
+            .subject
+            .as_ref()
+            .map(|s| {
+                logic::chapter_progress(&s.questions, &self.user)
+                    .into_iter()
+                    .map(|(name, total, attempted)| (name, (total, attempted)))
+                    .collect()
+            })
             .unwrap_or_default();
         let real_chapters = self
             .subject
@@ -46,7 +108,7 @@ impl App {
         // The footer bar keeps a fixed slice of the height; the body takes all
         // the rest, so the chapter list can fill whatever is left.
         const FOOTER_H: f32 = 66.0;
-        // Wide enough for the widest row — the 正确率 segmented control (5
+        // Wide enough for the widest row — the 题量 segmented control (5
         // items) — so every row's hairline spans its whole control; below this
         // the column is still content-sized (the divider follows the widest
         // control), only the rules would come up short.
@@ -61,32 +123,7 @@ impl App {
         // Fixed label cell; its optional small tag stays inside the label
         // column, so a hint can never push a row's controls onto a second line.
         let cell = |ui: &mut egui::Ui, text: &str, tag: Option<&str>| {
-            ui.allocate_ui_with_layout(
-                egui::vec2(LABEL_W, ROW_H),
-                egui::Layout::left_to_right(egui::Align::Center),
-                |ui| {
-                    // `allocate_ui_with_layout` only *caps* the width at
-                    // `LABEL_W`; the space it hands back is the content's. That
-                    // left every row's control starting right after its own
-                    // label, so 正确率 (three glyphs) pushed its segmented
-                    // control out of line with the two-glyph rows. A minimum
-                    // width makes the cell actually occupy the column.
-                    ui.set_min_width(LABEL_W);
-                    ui.label(
-                        RichText::new(text)
-                            .size(13.5)
-                            .color(tokens.palette.ink.secondary),
-                    );
-                    if let Some(tag) = tag {
-                        ui.add_space(2.0);
-                        ui.label(
-                            RichText::new(tag)
-                                .size(10.5)
-                                .color(tokens.palette.ink.muted),
-                        );
-                    }
-                },
-            );
+            label_cell(ui, &tokens, text, tag, LABEL_W, ROW_H);
         };
 
         // ---- page header: the title block is closed by a hairline and sits on
@@ -125,207 +162,281 @@ impl App {
                                             .strong()
                                             .color(tokens.palette.ink.secondary),
                                     );
+                                    ui.add_space(tokens.space.md);
+                                    let modes = [
+                                        logic::RunMode::Practice.label(),
+                                        logic::RunMode::Exam.label(),
+                                    ];
+                                    let sel = match self.set_run {
+                                        logic::RunMode::Practice => 0,
+                                        logic::RunMode::Exam => 1,
+                                    };
+                                    if let Some(i) = glass::widgets::segmented(
+                                        ui, &tokens, "set_run", &modes, sel,
+                                    ) {
+                                        self.set_run = if i == 1 {
+                                            logic::RunMode::Exam
+                                        } else {
+                                            logic::RunMode::Practice
+                                        };
+                                    }
                                 },
                             );
                             ui.add_space(tokens.space.xs);
 
-                            ui.allocate_ui_with_layout(
-                                egui::vec2(ui.available_width(), ROW_H),
-                                egui::Layout::left_to_right(egui::Align::Center),
-                                |ui| {
-                                    cell(ui, "题型", None);
-                                    let kinds = ["全部", "选择题", "主观题"];
-                                    let sel = match self.set_kind {
-                                        logic::Kind::All => 0,
-                                        logic::Kind::Choice => 1,
-                                        logic::Kind::Subjective => 2,
-                                    };
-                                    if let Some(i) = glass::widgets::segmented(
-                                        ui, &tokens, "set_kind", &kinds, sel,
-                                    ) {
-                                        self.set_kind = match i {
-                                            1 => logic::Kind::Choice,
-                                            2 => logic::Kind::Subjective,
-                                            _ => logic::Kind::All,
-                                        };
-                                    }
-                                },
-                            );
-                            hairline(ui, left_w);
+                            if self.set_run == logic::RunMode::Exam {
+                                // 模考 replaces the lower setup rows: only the
+                                // year row survives (it narrows the paper), and
+                                // the paper itself is fixed and shown as text.
+                                self.year_row(ui, &tokens, LABEL_W, ROW_H);
+                                hairline(ui, left_w);
 
-                            ui.allocate_ui_with_layout(
-                                egui::vec2(ui.available_width(), ROW_H),
-                                egui::Layout::left_to_right(egui::Align::Center),
-                                |ui| {
-                                    cell(ui, "来源", Some("可多选"));
-                                    let sources = self.set_sources;
-                                    if glass::widgets::toggle_chip(
-                                        ui,
-                                        &tokens,
-                                        "仅错题",
-                                        sources.wrong,
-                                    )
-                                    .clicked()
-                                    {
-                                        self.set_sources.wrong = !sources.wrong;
-                                    }
-                                    if glass::widgets::toggle_chip(
-                                        ui,
-                                        &tokens,
-                                        "未做过",
-                                        sources.unseen,
-                                    )
-                                    .clicked()
-                                    {
-                                        self.set_sources.unseen = !sources.unseen;
-                                    }
-                                    if glass::widgets::toggle_chip(
-                                        ui,
-                                        &tokens,
-                                        "做错过",
-                                        sources.missed,
-                                    )
-                                    .clicked()
-                                    {
-                                        self.set_sources.missed = !sources.missed;
-                                    }
-                                },
-                            );
-                            hairline(ui, left_w);
+                                ui.allocate_ui_with_layout(
+                                    egui::vec2(ui.available_width(), ROW_H),
+                                    egui::Layout::left_to_right(egui::Align::Center),
+                                    |ui| {
+                                        cell(ui, "题量", None);
+                                        ui.label(
+                                            RichText::new(format!(
+                                                "{} 题",
+                                                logic::EXAM_QUESTIONS
+                                            ))
+                                            .size(13.5)
+                                            .color(tokens.palette.ink.primary),
+                                        );
+                                    },
+                                );
+                                hairline(ui, left_w);
 
-                            ui.allocate_ui_with_layout(
-                                egui::vec2(ui.available_width(), ROW_H),
-                                egui::Layout::left_to_right(egui::Align::Center),
-                                |ui| {
-                                    cell(ui, "收藏", None);
-                                    let favs = ["不限", "已收藏", "未收藏"];
-                                    let sel = match self.set_fav {
-                                        logic::Fav::Any => 0,
-                                        logic::Fav::Yes => 1,
-                                        logic::Fav::No => 2,
-                                    };
-                                    if let Some(i) = glass::widgets::segmented(
-                                        ui, &tokens, "set_fav", &favs, sel,
-                                    ) {
-                                        self.set_fav = match i {
-                                            1 => logic::Fav::Yes,
-                                            2 => logic::Fav::No,
-                                            _ => logic::Fav::Any,
+                                ui.allocate_ui_with_layout(
+                                    egui::vec2(ui.available_width(), ROW_H),
+                                    egui::Layout::left_to_right(egui::Align::Center),
+                                    |ui| {
+                                        cell(ui, "时长", None);
+                                        ui.label(
+                                            RichText::new(format!(
+                                                "{} 分钟",
+                                                logic::EXAM_MINUTES
+                                            ))
+                                            .size(13.5)
+                                            .color(tokens.palette.ink.primary),
+                                        );
+                                    },
+                                );
+                            } else {
+                                ui.allocate_ui_with_layout(
+                                    egui::vec2(ui.available_width(), ROW_H),
+                                    egui::Layout::left_to_right(egui::Align::Center),
+                                    |ui| {
+                                        cell(ui, "题型", None);
+                                        let kinds = ["全部", "选择题", "主观题"];
+                                        let sel = match self.set_kind {
+                                            logic::Kind::All => 0,
+                                            logic::Kind::Choice => 1,
+                                            logic::Kind::Subjective => 2,
                                         };
-                                    }
-                                },
-                            );
-                            hairline(ui, left_w);
+                                        if let Some(i) = glass::widgets::segmented(
+                                            ui, &tokens, "set_kind", &kinds, sel,
+                                        ) {
+                                            self.set_kind = match i {
+                                                1 => logic::Kind::Choice,
+                                                2 => logic::Kind::Subjective,
+                                                _ => logic::Kind::All,
+                                            };
+                                        }
+                                    },
+                                );
+                                hairline(ui, left_w);
 
-                            ui.allocate_ui_with_layout(
-                                egui::vec2(ui.available_width(), ROW_H),
-                                egui::Layout::left_to_right(egui::Align::Center),
-                                |ui| {
-                                    cell(ui, "正确率", None);
-                                    let accs = ["不限", "未作答", "低于 60%", "低于 100%", "全对"];
-                                    let sel = match self.set_accuracy {
-                                        logic::Accuracy::Any => 0,
-                                        logic::Accuracy::Unanswered => 1,
-                                        logic::Accuracy::Below60 => 2,
-                                        logic::Accuracy::Below100 => 3,
-                                        logic::Accuracy::Perfect => 4,
-                                    };
-                                    if let Some(i) = glass::widgets::segmented(
-                                        ui, &tokens, "set_accuracy", &accs, sel,
-                                    ) {
-                                        self.set_accuracy = match i {
-                                            1 => logic::Accuracy::Unanswered,
-                                            2 => logic::Accuracy::Below60,
-                                            3 => logic::Accuracy::Below100,
-                                            4 => logic::Accuracy::Perfect,
-                                            _ => logic::Accuracy::Any,
+                                ui.allocate_ui_with_layout(
+                                    egui::vec2(ui.available_width(), ROW_H),
+                                    egui::Layout::left_to_right(egui::Align::Center),
+                                    |ui| {
+                                        cell(ui, "掌握", None);
+                                        let chips = ["不限", "未做过", "薄弱", "已掌握"];
+                                        let sel = match self.set_mastery {
+                                            logic::MasteryFilter::Any => 0,
+                                            logic::MasteryFilter::Unseen => 1,
+                                            logic::MasteryFilter::Weak => 2,
+                                            logic::MasteryFilter::Mastered => 3,
                                         };
-                                    }
-                                },
-                            );
-                            hairline(ui, left_w);
-
-                            ui.allocate_ui_with_layout(
-                                egui::vec2(ui.available_width(), ROW_H),
-                                egui::Layout::left_to_right(egui::Align::Center),
-                                |ui| {
-                                    cell(ui, "题量", None);
-                                    let sizes = [
-                                        logic::Draw::All.label(),
-                                        logic::Draw::N10.label(),
-                                        logic::Draw::N20.label(),
-                                        logic::Draw::N50.label(),
-                                        logic::Draw::Custom.label(),
-                                    ];
-                                    let sel = match self.set_draw {
-                                        logic::Draw::All => 0,
-                                        logic::Draw::N10 => 1,
-                                        logic::Draw::N20 => 2,
-                                        logic::Draw::N50 => 3,
-                                        logic::Draw::Custom => 4,
-                                    };
-                                    if let Some(i) = glass::widgets::segmented(
-                                        ui, &tokens, "set_draw", &sizes, sel,
-                                    ) {
-                                        self.set_draw = match i {
-                                            1 => logic::Draw::N10,
-                                            2 => logic::Draw::N20,
-                                            3 => logic::Draw::N50,
-                                            4 => logic::Draw::Custom,
-                                            _ => logic::Draw::All,
-                                        };
-                                    }
-                                    if self.set_draw == logic::Draw::Custom {
-                                        ui.add_space(tokens.space.xs);
-                                        glass::widgets::number_input(
+                                        if let Some(i) = glass::widgets::segmented(
                                             ui,
                                             &tokens,
-                                            &mut self.set_draw_custom,
-                                            1..=logic::MAX_CUSTOM_DRAW,
-                                        );
-                                    }
-                                },
-                            );
-                            hairline(ui, left_w);
+                                            "set_mastery",
+                                            &chips,
+                                            sel,
+                                        ) {
+                                            self.set_mastery = match i {
+                                                1 => logic::MasteryFilter::Unseen,
+                                                2 => logic::MasteryFilter::Weak,
+                                                3 => logic::MasteryFilter::Mastered,
+                                                _ => logic::MasteryFilter::Any,
+                                            };
+                                        }
+                                    },
+                                );
+                                hairline(ui, left_w);
 
-                            ui.allocate_ui_with_layout(
-                                egui::vec2(ui.available_width(), ROW_H),
-                                egui::Layout::left_to_right(egui::Align::Center),
-                                |ui| {
-                                    cell(ui, "顺序", None);
-                                    let orders = [
-                                        logic::Order::Sequential.label(),
-                                        logic::Order::Shuffled.label(),
-                                    ];
-                                    let sel = match self.set_order {
-                                        logic::Order::Sequential => 0,
-                                        logic::Order::Shuffled => 1,
-                                    };
-                                    if let Some(i) = glass::widgets::segmented(
-                                        ui, &tokens, "set_order", &orders, sel,
-                                    ) {
-                                        self.set_order = match i {
-                                            1 => logic::Order::Shuffled,
-                                            _ => logic::Order::Sequential,
+                                ui.allocate_ui_with_layout(
+                                    egui::vec2(ui.available_width(), ROW_H),
+                                    egui::Layout::left_to_right(egui::Align::Center),
+                                    |ui| {
+                                        cell(ui, "收藏", None);
+                                        let favs = ["不限", "已收藏", "未收藏"];
+                                        let sel = match self.set_fav {
+                                            logic::Fav::Any => 0,
+                                            logic::Fav::Yes => 1,
+                                            logic::Fav::No => 2,
                                         };
-                                    }
-                                },
-                            );
-                            hairline(ui, left_w);
+                                        if let Some(i) = glass::widgets::segmented(
+                                            ui, &tokens, "set_fav", &favs, sel,
+                                        ) {
+                                            self.set_fav = match i {
+                                                1 => logic::Fav::Yes,
+                                                2 => logic::Fav::No,
+                                                _ => logic::Fav::Any,
+                                            };
+                                        }
+                                    },
+                                );
+                                hairline(ui, left_w);
 
-                            ui.allocate_ui_with_layout(
-                                egui::vec2(ui.available_width(), ROW_H),
-                                egui::Layout::left_to_right(egui::Align::Center),
-                                |ui| {
-                                    cell(ui, "搜索", None);
-                                    ui.add(
-                                        egui::TextEdit::singleline(&mut self.set_query)
-                                            .hint_text("题干 / 解析关键词")
-                                            .margin(tokens.text_input_margin())
-                                            .desired_width(260.0),
-                                    );
-                                },
-                            );
+                                ui.allocate_ui_with_layout(
+                                    egui::vec2(ui.available_width(), ROW_H),
+                                    egui::Layout::left_to_right(egui::Align::Center),
+                                    |ui| {
+                                        cell(ui, "正确率", None);
+                                        let accs = ["不限", "低于 60%", "低于 100%", "全对"];
+                                        let sel = match self.set_accuracy {
+                                            logic::Accuracy::Any => 0,
+                                            logic::Accuracy::Below60 => 1,
+                                            logic::Accuracy::Below100 => 2,
+                                            logic::Accuracy::Perfect => 3,
+                                        };
+                                        if let Some(i) = glass::widgets::segmented(
+                                            ui,
+                                            &tokens,
+                                            "set_accuracy",
+                                            &accs,
+                                            sel,
+                                        ) {
+                                            self.set_accuracy = match i {
+                                                1 => logic::Accuracy::Below60,
+                                                2 => logic::Accuracy::Below100,
+                                                3 => logic::Accuracy::Perfect,
+                                                _ => logic::Accuracy::Any,
+                                            };
+                                        }
+                                    },
+                                );
+                                hairline(ui, left_w);
+
+                                ui.allocate_ui_with_layout(
+                                    egui::vec2(ui.available_width(), ROW_H),
+                                    egui::Layout::left_to_right(egui::Align::Center),
+                                    |ui| {
+                                        cell(ui, "题量", None);
+                                        let sizes = [
+                                            logic::Draw::All.label(),
+                                            logic::Draw::N10.label(),
+                                            logic::Draw::N20.label(),
+                                            logic::Draw::N50.label(),
+                                            logic::Draw::Custom.label(),
+                                        ];
+                                        let sel = match self.set_draw {
+                                            logic::Draw::All => 0,
+                                            logic::Draw::N10 => 1,
+                                            logic::Draw::N20 => 2,
+                                            logic::Draw::N50 => 3,
+                                            logic::Draw::Custom => 4,
+                                        };
+                                        if let Some(i) = glass::widgets::segmented(
+                                            ui, &tokens, "set_draw", &sizes, sel,
+                                        ) {
+                                            self.set_draw = match i {
+                                                1 => logic::Draw::N10,
+                                                2 => logic::Draw::N20,
+                                                3 => logic::Draw::N50,
+                                                4 => logic::Draw::Custom,
+                                                _ => logic::Draw::All,
+                                            };
+                                        }
+                                        if self.set_draw == logic::Draw::Custom {
+                                            ui.add_space(tokens.space.xs);
+                                            glass::widgets::number_input(
+                                                ui,
+                                                &tokens,
+                                                &mut self.set_draw_custom,
+                                                1..=logic::MAX_CUSTOM_DRAW,
+                                            );
+                                        }
+                                    },
+                                );
+                                hairline(ui, left_w);
+
+                                ui.allocate_ui_with_layout(
+                                    egui::vec2(ui.available_width(), ROW_H),
+                                    egui::Layout::left_to_right(egui::Align::Center),
+                                    |ui| {
+                                        cell(ui, "顺序", None);
+                                        let orders = [
+                                            logic::Order::Sequential.label(),
+                                            logic::Order::Shuffled.label(),
+                                        ];
+                                        let sel = match self.set_order {
+                                            logic::Order::Sequential => 0,
+                                            logic::Order::Shuffled => 1,
+                                        };
+                                        if let Some(i) = glass::widgets::segmented(
+                                            ui, &tokens, "set_order", &orders, sel,
+                                        ) {
+                                            self.set_order = match i {
+                                                1 => logic::Order::Shuffled,
+                                                _ => logic::Order::Sequential,
+                                            };
+                                        }
+                                    },
+                                );
+                                hairline(ui, left_w);
+
+                                self.year_row(ui, &tokens, LABEL_W, ROW_H);
+                                hairline(ui, left_w);
+
+                                ui.allocate_ui_with_layout(
+                                    egui::vec2(ui.available_width(), ROW_H),
+                                    egui::Layout::left_to_right(egui::Align::Center),
+                                    |ui| {
+                                        cell(ui, "范围", None);
+                                        if glass::widgets::toggle_chip(
+                                            ui,
+                                            &tokens,
+                                            "仅练有答案的题",
+                                            self.set_answered_only,
+                                        )
+                                        .clicked()
+                                        {
+                                            self.set_answered_only =
+                                                !self.set_answered_only;
+                                        }
+                                    },
+                                );
+                                hairline(ui, left_w);
+
+                                ui.allocate_ui_with_layout(
+                                    egui::vec2(ui.available_width(), ROW_H),
+                                    egui::Layout::left_to_right(egui::Align::Center),
+                                    |ui| {
+                                        cell(ui, "搜索", None);
+                                        ui.add(
+                                            egui::TextEdit::singleline(&mut self.set_query)
+                                                .hint_text("题干 / 解析关键词")
+                                                .margin(tokens.text_input_margin())
+                                                .desired_width(260.0),
+                                        );
+                                    },
+                                );
+                            }
 
                         },
                     );
@@ -421,14 +532,19 @@ impl App {
                                         }
                                         any = true;
                                         let checked = self.set_chapters.contains(name);
+                                        let percent = coverage
+                                            .get(name)
+                                            .and_then(|&(total, attempted)| {
+                                                logic::coverage_percent(attempted, total)
+                                            });
                                         let row = glass::widgets::check_row(
                                             ui,
                                             &tokens,
                                             ui.id().with(name),
                                             name,
                                             &format!("{count} 题"),
+                                            percent,
                                             checked,
-                                            ui.available_width(),
                                         );
                                         if row.clicked() {
                                             if checked {
@@ -465,21 +581,30 @@ impl App {
                         .strong(),
                 );
                 ui.with_layout(egui::Layout::right_to_left(egui::Align::Center), |ui| {
-                    if glass::widgets::primary_button(ui, &tokens, "开始练习", matched > 0).clicked()
+                    let start_label = match self.set_run {
+                        logic::RunMode::Practice => "开始练习",
+                        logic::RunMode::Exam => "开始模考",
+                    };
+                    if glass::widgets::primary_button(ui, &tokens, start_label, matched > 0)
+                        .clicked()
                     {
-                        self.start_session(false);
+                        match self.set_run {
+                            logic::RunMode::Practice => self.start_session(false),
+                            logic::RunMode::Exam => self.start_exam_session(now),
+                        }
                     }
                     ui.add_space(tokens.space.sm);
-                    if glass::widgets::button(
-                        ui,
-                        &tokens,
-                        "wrong_sample",
-                        RichText::new("错题随机 10 题").size(14.5),
-                        egui::vec2(152.0, 38.0),
-                        wrong > 0,
-                    )
-                    .on_hover_text("从错题里随机抽 10 道")
-                    .clicked()
+                    if self.set_run == logic::RunMode::Practice
+                        && glass::widgets::button(
+                            ui,
+                            &tokens,
+                            "wrong_sample",
+                            RichText::new("错题随机 10 题").size(14.5),
+                            egui::vec2(152.0, 38.0),
+                            wrong > 0,
+                        )
+                        .on_hover_text("从错题里随机抽 10 道")
+                        .clicked()
                     {
                         self.start_session(true);
                     }
@@ -540,6 +665,31 @@ impl App {
             1.0
         };
 
+        // 模考 runs on the frame clock: the paper's start time is in the
+        // session, so the countdown survives repaints (and every repaint asks
+        // for the next one). A reached zero queues 交卷 for the end of this
+        // frame rather than tearing the session down mid-render.
+        let (is_exam, exam_started) = self
+            .session
+            .as_ref()
+            .map(|s| (s.exam, s.started))
+            .unwrap_or((false, 0.0));
+        let remaining = logic::EXAM_MINUTES as f64 * 60.0 - (now - exam_started);
+        let (countdown_text, countdown_urgent) = logic::countdown(remaining);
+        let cross_subject = match self.session.as_ref() {
+            Some(s) if s.cross() => s
+                .order
+                .get(s.pos)
+                .and_then(|&flat| s.subject_name(flat))
+                .map(str::to_string),
+            _ => None,
+        };
+        let mut do_finish_exam = is_exam && remaining <= 0.0;
+        if is_exam {
+            ui.ctx()
+                .request_repaint_after(std::time::Duration::from_millis(500));
+        }
+
         ui.add_space(tokens.space.sm);
         ui.horizontal(|ui| {
             ui.label(
@@ -547,6 +697,14 @@ impl App {
                     .size(13.0)
                     .color(tokens.palette.ink.secondary),
             );
+            if let Some(name) = &cross_subject {
+                ui.add_space(tokens.space.xs);
+                ui.label(
+                    RichText::new(name)
+                        .size(13.0)
+                        .color(tokens.palette.ink.muted),
+                );
+            }
             ui.add_space(tokens.space.sm);
             ui.label(
                 RichText::new(format!("第 {pos} / {total} 题"))
@@ -554,20 +712,39 @@ impl App {
                     .strong(),
             );
             ui.with_layout(egui::Layout::right_to_left(egui::Align::Center), |ui| {
+                let end_label = if is_exam { "交卷" } else { "结束练习" };
                 if glass::widgets::button(
                     ui,
                     &tokens,
                     "end_session",
-                    "结束练习",
+                    end_label,
                     egui::vec2(0.0, 0.0),
                     true,
                 )
                 .clicked()
                 {
-                    self.flush_note();
-                    self.session = None;
-                    self.note_draft_for = None;
-                    self.dirty = true;
+                    if is_exam {
+                        do_finish_exam = true;
+                    } else {
+                        self.flush_note();
+                        self.session = None;
+                        self.note_draft_for = None;
+                        self.dirty = true;
+                    }
+                }
+                if is_exam {
+                    ui.add_space(tokens.space.sm);
+                    let color = if countdown_urgent {
+                        tokens.palette.accent.base
+                    } else {
+                        tokens.palette.ink.muted
+                    };
+                    ui.label(
+                        RichText::new(&countdown_text)
+                            .size(14.0)
+                            .strong()
+                            .color(color),
+                    );
                 }
             });
         });
@@ -710,6 +887,17 @@ impl App {
                     .strong()
                     .line_height(Some(34.0)),
             );
+            // 范围 → 仅练有答案的题 off: the pool may contain questions whose
+            // `answer` is empty. Say so under the stem instead of letting an
+            // empty 正确答案 look like a bug.
+            if q.answer.is_empty() {
+                ui.add_space(tokens.space.xs);
+                ui.label(
+                    RichText::new("此题无答案，仅供阅读")
+                        .size(12.5)
+                        .color(tokens.palette.ink.muted),
+                );
+            }
             // 刷题信息：one muted line right after the title — 看过 / 作答 /
             // 正确. Shown only once the question has actually been seen (a
             // fresh question shows nothing, so it never prints 看过 0 次). It is
@@ -955,6 +1143,192 @@ impl App {
         }
         if do_prev {
             self.prev_question();
+        }
+        if do_finish_exam {
+            self.flush_note();
+            self.finish_exam();
+        }
+    }
+
+    /// 交卷 result view: 对 N / M, the percentage, a 6px accent bar, then the
+    /// per-chapter breakdown (weak chapters below 60 % in `accent.warn`) and
+    /// the two actions.
+    fn exam_result_view(&mut self, ui: &mut egui::Ui) {
+        let tokens = self.tokens;
+        let Some(result) = self.exam_result.clone() else {
+            return;
+        };
+        let full_w = ui.available_width();
+        let col_w = (full_w - 96.0).clamp(320.0, 720.0);
+        let pad = ((full_w - col_w) * 0.5).max(0.0);
+        let mut replay = false;
+        let mut again = false;
+
+        ui.add_space(tokens.space.xl);
+        ui.horizontal(|ui| {
+            ui.add_space(pad);
+            ui.vertical(|ui| {
+                ui.set_max_width(col_w);
+                ui.label(RichText::new("交卷").size(15.0).strong());
+                ui.add_space(tokens.space.md);
+                ui.label(
+                    RichText::new(format!("对 {} / {}", result.correct, result.total))
+                        .size(28.0)
+                        .strong(),
+                );
+                ui.add_space(tokens.space.xs);
+                ui.label(
+                    RichText::new(format!("正确率 {}%", result.percent()))
+                        .size(14.0)
+                        .color(tokens.palette.ink.secondary),
+                );
+                ui.add_space(tokens.space.md);
+
+                let (bar, _) = ui.allocate_exact_size(
+                    egui::vec2(ui.available_width(), 6.0),
+                    egui::Sense::hover(),
+                );
+                ui.painter().rect_filled(
+                    bar,
+                    egui::CornerRadius::same(3),
+                    tokens.palette.glass.fill_strong,
+                );
+                let ratio = if result.total == 0 {
+                    0.0
+                } else {
+                    result.correct as f32 / result.total as f32
+                };
+                if ratio > 0.0 {
+                    ui.painter().rect_filled(
+                        egui::Rect::from_min_size(
+                            bar.min,
+                            egui::vec2(bar.width() * ratio, 6.0),
+                        ),
+                        egui::CornerRadius::same(3),
+                        tokens.palette.accent.base,
+                    );
+                }
+
+                ui.add_space(tokens.space.lg);
+                ui.horizontal(|ui| {
+                    let head = |ui: &mut egui::Ui, text: &str, w: f32| {
+                        ui.allocate_ui_with_layout(
+                            egui::vec2(w, 20.0),
+                            egui::Layout::left_to_right(egui::Align::Center),
+                            |ui| {
+                                // A minimum width, not just the cap: the cell
+                                // would otherwise shrink to the label and pull
+                                // every column out of line.
+                                ui.set_min_width(w);
+                                ui.label(
+                                    RichText::new(text)
+                                        .size(11.5)
+                                        .color(tokens.palette.ink.muted),
+                                );
+                            },
+                        );
+                    };
+                    head(ui, "章节", col_w - 210.0);
+                    head(ui, "题", 50.0);
+                    head(ui, "对", 50.0);
+                    head(ui, "%", 60.0);
+                });
+                let (rule, _) = ui.allocate_exact_size(
+                    egui::vec2(ui.available_width(), 1.0),
+                    egui::Sense::hover(),
+                );
+                ui.painter()
+                    .rect_filled(rule, 0.0, tokens.palette.glass.divider);
+
+                for chapter in &result.chapters {
+                    let weak = chapter.weak();
+                    let color = if weak {
+                        tokens.palette.accent.warn
+                    } else {
+                        tokens.palette.ink.primary
+                    };
+                    ui.allocate_ui_with_layout(
+                        egui::vec2(ui.available_width(), 30.0),
+                        egui::Layout::left_to_right(egui::Align::Center),
+                        |ui| {
+                            ui.allocate_ui_with_layout(
+                                egui::vec2(col_w - 210.0, 30.0),
+                                egui::Layout::left_to_right(egui::Align::Center),
+                                |ui| {
+                                    ui.set_min_width(col_w - 210.0);
+                                    ui.label(
+                                        RichText::new(&chapter.chapter).size(13.0).color(color),
+                                    );
+                                },
+                            );
+                            let cell = |ui: &mut egui::Ui, text: String, w: f32, tone| {
+                                ui.allocate_ui_with_layout(
+                                    egui::vec2(w, 30.0),
+                                    egui::Layout::left_to_right(egui::Align::Center),
+                                    |ui| {
+                                        ui.set_min_width(w);
+                                        ui.label(RichText::new(text).size(12.5).color(tone));
+                                    },
+                                );
+                            };
+                            cell(
+                                ui,
+                                chapter.total.to_string(),
+                                50.0,
+                                tokens.palette.ink.secondary,
+                            );
+                            cell(
+                                ui,
+                                chapter.correct.to_string(),
+                                50.0,
+                                tokens.palette.ink.secondary,
+                            );
+                            cell(ui, format!("{}%", chapter.percent()), 60.0, color);
+                        },
+                    );
+                    let (rule, _) = ui.allocate_exact_size(
+                        egui::vec2(ui.available_width(), 1.0),
+                        egui::Sense::hover(),
+                    );
+                    ui.painter()
+                        .rect_filled(rule, 0.0, tokens.palette.glass.divider);
+                }
+
+                ui.add_space(tokens.space.lg);
+                ui.horizontal(|ui| {
+                    let wrong = result.wrong.len();
+                    if glass::widgets::primary_button(
+                        ui,
+                        &tokens,
+                        "错题入库并复盘",
+                        wrong > 0,
+                    )
+                    .clicked()
+                    {
+                        replay = true;
+                    }
+                    ui.add_space(tokens.space.sm);
+                    if glass::widgets::button(
+                        ui,
+                        &tokens,
+                        "exam_again",
+                        RichText::new("再来一卷").size(14.0),
+                        egui::vec2(120.0, 38.0),
+                        true,
+                    )
+                    .clicked()
+                    {
+                        again = true;
+                    }
+                });
+            });
+        });
+
+        if replay {
+            self.replay_exam_wrong();
+        } else if again {
+            self.exam_result = None;
+            self.start_exam_session(ui.input(|i| i.time));
         }
     }
 
@@ -1255,6 +1629,43 @@ impl App {
         ui.label(RichText::new("解析").size(15.0).strong());
         CommonMarkViewer::new().show(ui, &mut self.md_cache, exp);
     }
+}
+
+/// Fixed label cell for one setup row.
+///
+/// `allocate_ui_with_layout` only *caps* the width at `w`; the space it hands
+/// back is the content's. That left every row's control starting right after
+/// its own label, so 正确率 (three glyphs) pushed its segmented control out of
+/// line with the two-glyph rows. A minimum width makes the cell actually
+/// occupy the column.
+fn label_cell(
+    ui: &mut egui::Ui,
+    tokens: &theme::Tokens,
+    text: &str,
+    tag: Option<&str>,
+    w: f32,
+    h: f32,
+) {
+    ui.allocate_ui_with_layout(
+        egui::vec2(w, h),
+        egui::Layout::left_to_right(egui::Align::Center),
+        |ui| {
+            ui.set_min_width(w);
+            ui.label(
+                RichText::new(text)
+                    .size(13.5)
+                    .color(tokens.palette.ink.secondary),
+            );
+            if let Some(tag) = tag {
+                ui.add_space(2.0);
+                ui.label(
+                    RichText::new(tag)
+                        .size(10.5)
+                        .color(tokens.palette.ink.muted),
+                );
+            }
+        },
+    );
 }
 
 fn small_button(

@@ -176,17 +176,29 @@ pub fn toggle_chip(ui: &mut Ui, tokens: &Tokens, label: &str, on: bool) -> Respo
 
 /// Full-width selectable row: painted square checkbox, label, right-aligned
 /// note. Drawn rather than text-based because the CJK font has no ✔glyph.
+///
+/// `coverage` is the chapter's attempted share in whole percent (see
+/// `logic::coverage_percent`): `Some` prints it muted right after the label and
+/// draws a 2 px accent bar under the row; `None` draws neither — a 0 % chapter
+/// gets no empty bar and no `0%` text.
 pub fn check_row(
     ui: &mut Ui,
     tokens: &Tokens,
     id: Id,
     label: &str,
     trailing: &str,
+    coverage: Option<u32>,
     checked: bool,
-    width: f32,
 ) -> Response {
-    const HEIGHT: f32 = 26.0;
+    // 26 px of row plus the 2 px coverage bar under it. The content stays in
+    // the top 26 px, so a chapter with no coverage reads exactly like the old
+    // row; the height is fixed, never animated.
+    const CONTENT_H: f32 = 26.0;
+    const HEIGHT: f32 = CONTENT_H + 2.0;
+    let width = ui.available_width();
     let (rect, response) = ui.allocate_exact_size(Vec2::new(width, HEIGHT), Sense::CLICK);
+    let content = Rect::from_min_size(rect.min, Vec2::new(rect.width(), CONTENT_H));
+    let center_y = content.center().y;
 
     let hover = motion::ease_bool(
         ui.ctx(),
@@ -206,7 +218,7 @@ pub fn check_row(
 
     let painter = ui.painter();
     if strength > 0.001 {
-        let pill = rect.shrink2(Vec2::new(0.0, 1.0));
+        let pill = content.shrink2(Vec2::new(0.0, 1.0));
         let target = mix(
             tokens.palette.glass.fill_strong,
             tokens.palette.accent.soft,
@@ -221,7 +233,7 @@ pub fn check_row(
 
     let box_size = 14.0;
     let box_rect = Rect::from_min_size(
-        Pos2::new(rect.left() + tokens.space.sm, rect.center().y - box_size * 0.5),
+        Pos2::new(rect.left() + tokens.space.sm, center_y - box_size * 0.5),
         Vec2::splat(box_size),
     );
     let box_radius = CornerRadius::same(tokens.radius.sm);
@@ -244,23 +256,47 @@ pub fn check_row(
         StrokeKind::Inside,
     );
     if sel > 0.001 {
-        let a = Pos2::new(box_rect.left() + box_size * 0.24, box_rect.center().y + box_size * 0.02);
-        let b = Pos2::new(box_rect.left() + box_size * 0.43, box_rect.center().y + box_size * 0.21);
-        let c = Pos2::new(box_rect.left() + box_size * 0.76, box_rect.center().y - box_size * 0.20);
+        let a = Pos2::new(box_rect.left() + box_size * 0.24, center_y + box_size * 0.02);
+        let b = Pos2::new(box_rect.left() + box_size * 0.43, center_y + box_size * 0.21);
+        let c = Pos2::new(box_rect.left() + box_size * 0.76, center_y - box_size * 0.20);
         let stroke = Stroke::new(1.5, tokens.palette.ink.primary.gamma_multiply(sel));
         painter.line_segment([a, b], stroke);
         painter.line_segment([b, c], stroke);
     }
 
+    let name_font = FontId::proportional(13.0);
+    let name_x = box_rect.right() + tokens.space.sm;
     painter.text(
-        Pos2::new(box_rect.right() + tokens.space.sm, rect.center().y),
+        Pos2::new(name_x, center_y),
         Align2::LEFT_CENTER,
         label,
-        FontId::proportional(13.0),
+        name_font.clone(),
         tokens.palette.ink.primary,
     );
+    if let Some(pct) = coverage {
+        let name_w = painter
+            .layout_no_wrap(label.to_owned(), name_font, tokens.palette.ink.primary)
+            .size()
+            .x;
+        painter.text(
+            Pos2::new(name_x + name_w + 6.0, center_y),
+            Align2::LEFT_CENTER,
+            format!("{pct}%"),
+            FontId::proportional(11.5),
+            tokens.palette.ink.muted,
+        );
+        // The bar spans the row and sits under its 26 px content. A chapter
+        // with no attempts has `None`, so there is no 0-width bar to see.
+        if pct > 0 {
+            let bar = Rect::from_min_size(
+                Pos2::new(rect.left(), rect.top() + CONTENT_H),
+                Vec2::new(rect.width(), 2.0),
+            );
+            painter.rect_filled(bar, 0.0, tokens.palette.accent.base.gamma_multiply(0.65));
+        }
+    }
     painter.text(
-        Pos2::new(rect.right() - tokens.space.sm, rect.center().y),
+        Pos2::new(rect.right() - tokens.space.sm, center_y),
         Align2::RIGHT_CENTER,
         trailing,
         FontId::proportional(11.5),
@@ -705,5 +741,54 @@ mod tests {
             (placed.y - base.y).abs() < 0.5,
             "the shake is horizontal only: base={base:?} placed={placed:?}"
         );
+    }
+
+    /// The chapter 覆盖条: `Some(pct)` draws exactly one 2 px bar spanning the
+    /// row, `None` draws none — never an empty 0-width bar. Row height stays
+    /// the fixed 28 px, so no row can animate its height.
+    #[test]
+    fn chapter_coverage_draws_one_two_pixel_bar_only_when_attempted() {
+        let tokens = Tokens::new(crate::theme::Mode::Dark);
+        let run = |coverage| {
+            let ctx = egui::Context::default();
+            let mut row_h = 0.0;
+            let mut out = ctx.run_ui(egui::RawInput::default(), |ui| {
+                let inner = ui.allocate_ui_with_layout(
+                    egui::vec2(300.0, 28.0),
+                    egui::Layout::top_down(egui::Align::Min),
+                    |ui| {
+                        check_row(
+                            ui,
+                            &tokens,
+                            ui.id().with("row"),
+                            "第一章",
+                            "12 题",
+                            coverage,
+                            false,
+                        )
+                    },
+                );
+                row_h = inner.inner.rect.height();
+            });
+            let bars: Vec<(f32, f32)> = out
+                .shapes
+                .iter()
+                .filter_map(|clipped| match &clipped.shape {
+                    egui::Shape::Rect(r) if (r.rect.height() - 2.0).abs() < 0.01 => {
+                        Some((r.rect.width(), r.rect.height()))
+                    }
+                    _ => None,
+                })
+                .collect();
+            out.textures_delta.clear();
+            (row_h, bars)
+        };
+
+        let (height, bars) = run(Some(42));
+        assert_eq!(height, 28.0, "26 px row + 2 px bar, fixed");
+        assert_eq!(bars, vec![(300.0, 2.0)], "one bar, the row's full width");
+
+        let (_, none) = run(None);
+        assert!(none.is_empty(), "0 % draws no bar at all");
     }
 }

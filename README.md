@@ -4,7 +4,7 @@
 
 ## 直接使用
 
-1. 从 [Releases](../../releases) 下载 `sfzklearning-v0.11-windows-x64.zip`
+1. 从 [Releases](../../releases) 下载 `sfzklearning-v0.19-windows-x64.zip`
 2. 解压到任意目录，运行 `sfzklearning.exe`
 
 **解压即可用** —— 题目数据（`data\`）就在包内，不需要任何配置或外部路径。
@@ -33,7 +33,7 @@ cargo build --release
 ```
 
 产出 `target\release\{sfzklearning.exe, classify.exe}`。
-`cargo test` 可跑数据层与逻辑层单测（当前 104 passed, 0 failed）。
+`cargo test` 可跑数据层与逻辑层单测（当前 119 passed, 0 failed）。
 
 ## 目录结构
 

@@ -9,12 +9,14 @@ use egui_commonmark::{CommonMarkCache, CommonMarkViewer};
 pub(crate) use crate::{anim, diag, glass, logic, theme, win};
 
 use sfzklearning::{
-    domain_root, load_subject, load_user_store, load_wrong_ids, now_iso, now_unix, parse_cli_args,
-    resolve_state_dir, save_user_store, save_wrong_ids, write_current, CurrentContext, Domain,
-    KnowledgePoint, Question, StateKp, StateOption, StateQuestion, SubjectFile, SummarySubject,
-    UserStore,
+    date_from_unix_day, domain_root, load_subject, load_user_store, load_wrong_ids, now_iso,
+    now_unix, parse_cli_args, resolve_state_dir, save_user_store, save_wrong_ids,
+    subject_question_total, today_counts, today_unix_day, TodayCounts, weekday_label, write_current,
+    CurrentContext, Domain, KnowledgePoint, Question, StateKp, StateOption, StateQuestion,
+    SubjectFile, SummarySubject, UserStore,
 };
 
+mod knowledge;
 mod practice;
 mod settings;
 mod shell;
@@ -27,9 +29,27 @@ struct DomainData {
     error: Option<String>,
 }
 
+/// One subject's questions, shared with the session rather than copied. A
+/// cross-subject run holds several of these, one per subject.
+struct SessionPool {
+    name: String,
+    file: Arc<SubjectFile>,
+}
+
 /// One practice run: a fixed order of questions plus its live state.
+///
+/// `order` holds **flat** indices into the concatenation of `pools`. A normal
+/// run has one pool (the selected subject); 今天的复习 has every subject of the
+/// domain, which is why the machinery indexes a `Vec<Question>` rather than
+/// `self.subject` directly.
 struct Session {
+    pools: Vec<SessionPool>,
+    /// Flat index of each pool's first question.
+    starts: Vec<usize>,
     order: Vec<usize>,
+    /// One outcome per `order` slot, `None` until 提交答案. 交卷 reads this;
+    /// revisiting a question and submitting again overwrites its slot.
+    answers: Vec<Option<bool>>,
     pos: usize,
     single: Option<String>,
     multi: Vec<String>,
@@ -44,9 +64,45 @@ struct Session {
     answered: usize,
     correct: usize,
     label: String,
+    /// 模考 paper: a countdown runs and 交卷 replaces 结束练习.
+    exam: bool,
+    /// `ctx.input(|i| i.time)` at the start of the paper (0 for practice).
+    started: f64,
 }
 
 impl Session {
+    fn new(
+        pools: Vec<SessionPool>,
+        order: Vec<usize>,
+        label: String,
+        exam: bool,
+        started: f64,
+    ) -> Self {
+        let mut starts = Vec::with_capacity(pools.len());
+        let mut total = 0usize;
+        for pool in &pools {
+            starts.push(total);
+            total += pool.file.questions.len();
+        }
+        let answers = vec![None; order.len()];
+        Session {
+            pools,
+            starts,
+            order,
+            answers,
+            pos: 0,
+            single: None,
+            multi: Vec::new(),
+            submitted: false,
+            shown: false,
+            answered: 0,
+            correct: 0,
+            label,
+            exam,
+            started,
+        }
+    }
+
     fn clear_answer(&mut self) {
         self.single = None;
         self.multi.clear();
@@ -66,6 +122,52 @@ impl Session {
     /// the point of studying it.
     fn reveal(&mut self) {
         self.shown = true;
+    }
+
+    /// The pool a flat index falls into (and that pool's own index).
+    fn locate(&self, flat: usize) -> Option<(usize, &SessionPool)> {
+        let i = match self.starts.binary_search(&flat) {
+            Ok(i) => i,
+            Err(i) => i.checked_sub(1)?,
+        };
+        let pool = self.pools.get(i)?;
+        (flat - self.starts[i] < pool.file.questions.len()).then_some((i, pool))
+    }
+
+    fn question(&self, flat: usize) -> Option<&Question> {
+        let (i, pool) = self.locate(flat)?;
+        pool.file.questions.get(flat - self.starts[i])
+    }
+
+    /// The subject name for a flat index; the session header shows it when the
+    /// run spans more than one subject.
+    fn subject_name(&self, flat: usize) -> Option<&str> {
+        self.locate(flat).map(|(_, pool)| pool.name.as_str())
+    }
+
+    /// More than one pool means 今天的复习: questions carry their subject name.
+    fn cross(&self) -> bool {
+        self.pools.len() > 1
+    }
+}
+
+/// The 交卷 view: the paper's tally, its per-chapter breakdown and the wrong
+/// flat indices 错题入库并复盘 replays.
+#[derive(Clone)]
+struct ExamResult {
+    total: usize,
+    correct: usize,
+    chapters: Vec<logic::ChapterScore>,
+    wrong: Vec<usize>,
+}
+
+impl ExamResult {
+    fn percent(&self) -> u32 {
+        if self.total == 0 {
+            0
+        } else {
+            ((self.correct as f32 / self.total as f32) * 100.0).round() as u32
+        }
     }
 }
 
@@ -89,17 +191,30 @@ struct App {
     subject: Option<Arc<SubjectFile>>,
     subject_error: Option<String>,
 
-    /// title -> index into `subject.knowledge_points` (first match wins).
-    kp_title_map: std::collections::HashMap<String, usize>,
+    /// 知识点 overlay: open state, entrance-fade clock, the selected point
+    /// (index into `subject.knowledge_points`), collapsed chapter headings, and
+    /// each point's (questions, attempted) counts — computed when it opens.
+    kp_open: bool,
+    kp_epoch: u64,
+    kp_selected: Option<usize>,
+    kp_collapsed: HashSet<String>,
+    kp_counts: Vec<(usize, usize)>,
 
     // 做题 — setup
     set_kind: logic::Kind,
     set_chapters: HashSet<String>,
-    set_sources: logic::Sources,
+    /// 掌握 condition: 不限 / 未做过 / 薄弱 / 已掌握.
+    set_mastery: logic::MasteryFilter,
     /// 收藏 condition: 不限 / 已收藏 / 未收藏.
     set_fav: logic::Fav,
-    /// 正确率 condition: 不限 / 未作答 / 低于 60% / 低于 100% / 全对.
+    /// 正确率 condition: 不限 / 低于 60% / 低于 100% / 全对.
     set_accuracy: logic::Accuracy,
+    /// 年份 condition; `None` = 全部. The list comes from the loaded subject.
+    set_year: Option<String>,
+    /// 仅练有答案的题, on by default.
+    set_answered_only: bool,
+    /// 练习 / 模考.
+    set_run: logic::RunMode,
     set_draw: logic::Draw,
     /// Numeric value used when `set_draw` is `Draw::Custom`; always kept in
     /// the valid range by the input and by `Draw::limit`.
@@ -108,6 +223,8 @@ struct App {
     set_chapter_filter: String,
     set_query: String,
     session: Option<Session>,
+    /// The 交卷 view; while it is shown, `session` is `None`.
+    exam_result: Option<ExamResult>,
 
     user: UserStore,
     note_open: bool,
@@ -293,18 +410,26 @@ impl App {
             subject_name: String::new(),
             subject: None,
             subject_error: None,
-            kp_title_map: std::collections::HashMap::new(),
+            kp_open: false,
+            kp_epoch: 0,
+            kp_selected: None,
+            kp_collapsed: HashSet::new(),
+            kp_counts: Vec::new(),
             set_kind: logic::Kind::All,
             set_chapters: HashSet::new(),
-            set_sources: logic::Sources::default(),
+            set_mastery: logic::MasteryFilter::default(),
             set_fav: logic::Fav::default(),
             set_accuracy: logic::Accuracy::default(),
+            set_year: None,
+            set_answered_only: true,
+            set_run: logic::RunMode::default(),
             set_draw: logic::Draw::default(),
             set_draw_custom: logic::DEFAULT_CUSTOM_DRAW,
             set_order: logic::Order::default(),
             set_chapter_filter: String::new(),
             set_query: String::new(),
             session: None,
+            exam_result: None,
             user,
             note_open: false,
             note_draft: String::new(),
@@ -356,6 +481,15 @@ impl App {
             };
         }
 
+        // Test hook: `CMF_START_RUN=exam` opens the setup in 模考 mode (without
+        // starting the paper), so the fixed 题量 / 时长 rows can be screenshotted.
+        if std::env::var("CMF_START_RUN")
+            .map(|v| v.trim().eq_ignore_ascii_case("exam"))
+            .unwrap_or(false)
+        {
+            app.set_run = logic::RunMode::Exam;
+        }
+
         // Test hook: `CMF_START_SESSION=1` opens a practice session for the
         // starting subject right away, so the session view can be reached
         // (and screenshotted) without synthesised clicks. Any value but an
@@ -368,6 +502,26 @@ impl App {
             .unwrap_or(false);
         if start_session {
             app.start_session(false);
+        }
+
+        // Test hooks for the three new surfaces, in the same spirit as
+        // `CMF_START_SESSION`: each lets a screenshot reach the view without a
+        // synthesised click. A session wins over the overlay because the
+        // overlay's trigger lives behind it.
+        let on = |name: &str| {
+            std::env::var(name)
+                .map(|v| {
+                    let v = v.trim();
+                    !v.is_empty() && v != "0"
+                })
+                .unwrap_or(false)
+        };
+        if on("CMF_START_TODAY") {
+            app.start_today_session();
+        } else if on("CMF_START_EXAM") {
+            app.start_exam_session(0.0);
+        } else if on("CMF_OPEN_KNOWLEDGE") {
+            app.open_knowledge();
         }
         app
     }
@@ -445,12 +599,18 @@ impl App {
         self.subject = None;
         self.subject_error = None;
         self.subject_name.clear();
-        self.kp_title_map.clear();
         self.session = None;
+        self.exam_result = None;
+        self.kp_open = false;
+        self.kp_selected = None;
+        self.kp_counts.clear();
         self.set_chapters.clear();
-        self.set_sources = logic::Sources::default();
+        self.set_mastery = logic::MasteryFilter::default();
         self.set_fav = logic::Fav::default();
         self.set_accuracy = logic::Accuracy::default();
+        self.set_year = None;
+        self.set_answered_only = true;
+        self.set_run = logic::RunMode::default();
         self.set_draw = logic::Draw::default();
         self.set_draw_custom = logic::DEFAULT_CUSTOM_DRAW;
         self.set_order = logic::Order::default();
@@ -477,10 +637,6 @@ impl App {
                     s.name.clone()
                 };
 
-                for (i, kp) in s.knowledge_points.iter().enumerate() {
-                    self.kp_title_map.entry(kp.title.clone()).or_insert(i);
-                }
-
                 // `wrong-*.json` is a derived projection of the per-question
                 // stats now: prune ids that do not satisfy `logic::is_wrong`
                 // (an older build could insert one without recording an
@@ -506,9 +662,11 @@ impl App {
         logic::Filter {
             kind: self.set_kind,
             chapters: self.set_chapters.clone(),
-            sources: self.set_sources,
+            mastery: self.set_mastery,
             fav: self.set_fav,
             accuracy: self.set_accuracy,
+            year: self.set_year.clone(),
+            answered_only: self.set_answered_only,
             query: self.set_query.clone(),
         }
     }
@@ -518,6 +676,15 @@ impl App {
             return Vec::new();
         };
         logic::select(&s.questions, &self.filter(), &self.user)
+    }
+
+    /// The single currently selected subject as a session pool.
+    fn subject_pool(&self) -> Option<SessionPool> {
+        let file = self.subject.clone()?;
+        Some(SessionPool {
+            name: self.subject_name.clone(),
+            file,
+        })
     }
 
     fn start_session(&mut self, wrong_random: bool) {
@@ -553,28 +720,108 @@ impl App {
         if order.is_empty() {
             return;
         }
-        self.session = Some(Session {
-            order,
-            pos: 0,
-            single: None,
-            multi: Vec::new(),
-            submitted: false,
-            shown: false,
-            answered: 0,
-            correct: 0,
-            label,
-        });
+        let Some(pool) = self.subject_pool() else {
+            return;
+        };
+        self.session = Some(Session::new(vec![pool], order, label, false, 0.0));
+        self.exam_result = None;
         self.dirty = true;
         // The first question of the run is shown right away, so it counts as
         // seen here — the same place every later move is counted.
         self.record_current_seen();
     }
 
+    /// 开始今天的复习: load **every** subject of the domain, concatenate their
+    /// questions behind one flat index space, and queue due Weak → due
+    /// Mastered → New, capped at [`logic::TODAY_CAP`]. No subject has to be
+    /// selected for it — the counts it starts from never opened one either.
+    fn start_today_session(&mut self) {
+        let root = self.root(self.domain).to_path_buf();
+        let subs = self.data(self.domain).subjects.clone();
+        let mut pools: Vec<SessionPool> = Vec::new();
+        for s in &subs {
+            match load_subject(&root, &s.id) {
+                Ok(mut file) => {
+                    if file.name.trim().is_empty() {
+                        file.name = s.name.clone();
+                    }
+                    if file.questions.is_empty() {
+                        continue;
+                    }
+                    pools.push(SessionPool {
+                        name: file.name.clone(),
+                        file: Arc::new(file),
+                    });
+                }
+                Err(e) => diag::log(
+                    &self.state_dir,
+                    &format!("今天的复习：跳过科目 {}：{e}", s.id),
+                ),
+            }
+        }
+        if pools.is_empty() {
+            return;
+        }
+        let all: Vec<&Question> = pools
+            .iter()
+            .flat_map(|p| p.file.questions.iter())
+            .collect();
+        let order = logic::today_queue(
+            &all,
+            &self.user,
+            logic::TODAY_CAP,
+            today_unix_day(),
+            self.set_answered_only,
+        );
+        if order.is_empty() {
+            return;
+        }
+        self.exam_result = None;
+        self.session = Some(Session::new(
+            pools,
+            order,
+            "今天的复习".to_string(),
+            false,
+            0.0,
+        ));
+        self.dirty = true;
+        self.record_current_seen();
+    }
+
+    /// 模考: a random draw of up to 100 from the current filter, with a
+    /// countdown. `now` is `ctx.input(|i| i.time)`, the clock the countdown and
+    /// the auto-交卷 read.
+    fn start_exam_session(&mut self, now: f64) {
+        let order = logic::exam_plan(self.matching_questions(), rand_seed());
+        if order.is_empty() {
+            return;
+        }
+        let Some(pool) = self.subject_pool() else {
+            return;
+        };
+        let label = format!(
+            "模考 · {} 题 · {} 分钟",
+            order.len(),
+            logic::EXAM_MINUTES
+        );
+        self.session = Some(Session::new(vec![pool], order, label, true, now));
+        self.exam_result = None;
+        self.dirty = true;
+        self.record_current_seen();
+    }
+
     fn session_question(&self) -> Option<Question> {
-        let s = self.subject.clone()?;
         let sess = self.session.as_ref()?;
-        let qi = *sess.order.get(sess.pos)?;
-        s.questions.get(qi).cloned()
+        let flat = *sess.order.get(sess.pos)?;
+        sess.question(flat).cloned()
+    }
+
+    /// The pool holding the current question. For 今天的复习 that is the
+    /// question's own subject, not whichever subject was selected in the rail.
+    fn session_pool(&self) -> Option<&SessionPool> {
+        let sess = self.session.as_ref()?;
+        let flat = *sess.order.get(sess.pos)?;
+        sess.locate(flat).map(|(_, pool)| pool)
     }
 
     /// Counts the current question as **seen**. Called exactly where the
@@ -608,6 +855,9 @@ impl App {
             sess.answered += 1;
             if ok {
                 sess.correct += 1;
+            }
+            if let Some(slot) = sess.answers.get_mut(sess.pos) {
+                *slot = Some(ok);
             }
         }
         if !ok {
@@ -671,6 +921,61 @@ impl App {
         self.record_current_seen();
     }
 
+    /// 交卷 (or the countdown reaching zero): summarise the paper and show the
+    /// result view. The per-question stats were already recorded by
+    /// [`App::submit`], so the wrong list is only a queue to replay.
+    fn finish_exam(&mut self) {
+        let Some(sess) = self.session.take() else {
+            return;
+        };
+        let mut items: Vec<(String, Option<bool>)> = Vec::new();
+        let mut correct = 0;
+        let mut wrong = Vec::new();
+        for (i, &flat) in sess.order.iter().enumerate() {
+            let Some(q) = sess.question(flat) else {
+                continue;
+            };
+            let ok = sess.answers.get(i).copied().flatten();
+            if ok == Some(true) {
+                correct += 1;
+            } else {
+                wrong.push(flat);
+            }
+            items.push((q.chapter_label(), ok));
+        }
+        self.exam_result = Some(ExamResult {
+            total: items.len(),
+            correct,
+            chapters: logic::exam_scores(&items),
+            wrong,
+        });
+        self.note_draft_for = None;
+        self.dirty = true;
+    }
+
+    /// 错题入库并复盘: the exam's wrong (and unanswered) questions as a plain
+    /// practice session. Nothing new is written — the stats are already there.
+    fn replay_exam_wrong(&mut self) {
+        let Some(result) = self.exam_result.take() else {
+            return;
+        };
+        if result.wrong.is_empty() {
+            return;
+        }
+        let Some(pool) = self.subject_pool() else {
+            return;
+        };
+        self.session = Some(Session::new(
+            vec![pool],
+            result.wrong,
+            "模考错题复盘".to_string(),
+            false,
+            0.0,
+        ));
+        self.dirty = true;
+        self.record_current_seen();
+    }
+
     // ------------------------------------------------------------------
     // keyboard
     // ------------------------------------------------------------------
@@ -692,8 +997,17 @@ impl App {
         });
 
         if esc {
+            if self.kp_open {
+                self.kp_open = false;
+                return;
+            }
             if self.settings_open {
                 self.settings_open = false;
+                return;
+            }
+            if self.exam_result.is_some() {
+                self.exam_result = None;
+                self.dirty = true;
                 return;
             }
             if self.session.is_some() {
@@ -790,8 +1104,12 @@ impl App {
             knowledge_points: Vec::new(),
         };
 
-        let Some(subject) = &self.subject else {
-            return c;
+        let subject = match self.session_pool() {
+            Some(pool) => pool.file.as_ref(),
+            None => match &self.subject {
+                Some(s) => s.as_ref(),
+                None => return c,
+            },
         };
 
         if let Some(q) = self.session_question() {
@@ -799,11 +1117,13 @@ impl App {
             sq.note = self.user.note(&q.id).map(str::to_owned);
             sq.favorite = self.user.is_favorite(&q.id);
             c.question = Some(sq);
-            for title in &q.knowledge_points {
-                if let Some(&i) = self.kp_title_map.get(title) {
-                    if let Some(kp) = subject.knowledge_points.get(i) {
-                        c.knowledge_points.push(state_from_kp(kp));
-                    }
+            for tag in &q.knowledge_points {
+                if let Some(kp) = subject
+                    .knowledge_points
+                    .iter()
+                    .find(|kp| logic::kp_matches(kp, tag))
+                {
+                    c.knowledge_points.push(state_from_kp(kp));
                 }
             }
         }
@@ -1022,6 +1342,9 @@ impl eframe::App for App {
         if self.settings_open {
             self.settings_modal(&ctx);
         }
+        if self.kp_open {
+            self.knowledge_modal(&ctx);
+        }
 
         self.anim.prune(now);
         if self.anim.is_live(now) {
@@ -1229,17 +1552,9 @@ mod tests {
 
     /// A one-question session with a picked answer, ready to be revealed.
     fn choice_session() -> Session {
-        Session {
-            order: vec![0],
-            pos: 0,
-            single: Some("A".to_string()),
-            multi: Vec::new(),
-            submitted: false,
-            shown: false,
-            answered: 0,
-            correct: 0,
-            label: "测试".to_string(),
-        }
+        let mut session = Session::new(Vec::new(), vec![0], "测试".to_string(), false, 0.0);
+        session.single = Some("A".to_string());
+        session
     }
 
     fn choice_question() -> Question {
